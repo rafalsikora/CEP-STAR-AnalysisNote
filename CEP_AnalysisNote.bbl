@@ -1,0 +1,10 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{STAR2}
+{\bfseries STAR} Collaboration, K.~Ackermann {\em et~al.}, ``{STAR detector
+  overview},''
+\href{http://dx.doi.org/10.1016/S0168-9002(02)01960-5}{{\em Nucl.Instrum.Meth.}
+  {\bfseries A499} (2003) 624--632}.
+%%CITATION = NUIMA,A499,624;%%.
+
+\end{thebibliography}\endgroup

@@ -1,0 +1,90 @@
+\documentclass[a4paper,10pt,notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+
+
+\pdfinfo{%
+  /Title    ()
+  /Author   (Rafal Sikora)
+}
+
+
+
+
+%chapter heading
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+ \vspace*{18\p@}%
+  {\parindent \z@ \raggedright
+%     \LARGE \bfseries \thechapter. #1\par\nobreak
+%     \vskip 40\p@
+      \Huge \bfseries \thechapter. #1\par\nobreak
+      \vskip 40\p@
+  }}
+\makeatother
+
+
+% Title Page
+\title{\textbf{Measurement of Central Exclusive Production\\with Roman Pot detectors in diffractive proton-proton interactions at~$\sqrt{s}=$~200~GeV}\vspace*{10pt}}
+\author[1]{Leszek Adamczyk}
+\author[1]{Rafal Sikora}
+\affil[1]{AGH University of Science and Technology, Krakow, Poland}
+
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+\renewcommand{\bibname}{References}
+
+\begin{document}
+
+\begin{center}
+\begin{minipage}[c]{0.12\linewidth}%
+\vspace{5.5pt}\textbf{\LARGE{of the}}
+\end{minipage}
+\begin{minipage}[c]{0.15\linewidth}%
+\hspace*{-8pt}\includegraphics[width=\linewidth]{graphics/STAR_logo.pdf}
+\end{minipage}~
+\begin{minipage}[c]{0.24\linewidth}%
+\vspace{9pt}\hspace*{-8pt}\textbf{\LARGE{Experiment}}
+\end{minipage}\\[-50pt]
+\textbf{\LARGE{Analysis Note}}
+
+\vspace*{150pt}
+\begin{minipage}{\linewidth}
+\maketitle
+\begin{abstract}
+In this note we present an analysis of the Central Exclusive Production (CEP) process using the data from proton-proton collisions collected in 2015. This data was collected using the Roman Pot detectors which ensured efficient triggering on and measuring diffractively scattered protons. We describe all intermediate stages of analysis involving extraction of the acceptance and effciency corrections, comparison of data with Monte Carlo simulations of detector response, and study of systematic uncertainties. Finally, we show the physics outcome of the analysis.
+\end{abstract}
+\thispagestyle{empty}
+\end{minipage}
+
+\vspace{50pt}
+
+ DRAFT
+\end{center}
+
+
+\clearpage
+\thispagestyle{empty}
+\newgeometry{hmargin={2cm, 2cm}, height=10.0in}
+\tableofcontents
+
+\chapter{Introduction}
+\section{Bla bla}
+Some introduction
+\section{Other Bla bla}
+Some introduction~\cite{STAR2}
+\chapter{Data set}
+
+\clearpage
+\thispagestyle{empty}
+\newgeometry{hmargin={2cm, 2cm}, height=10.0in}
+
+\addcontentsline{toc}{chapter}{References}
+\bibliography{references.bib}{}
+\bibliographystyle{utphys}
+
+\end{document}          
