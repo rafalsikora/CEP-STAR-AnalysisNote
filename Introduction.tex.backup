@@ -15,17 +15,15 @@ p~~+~~p~~~\rightarrow~~~p~~+~~X~~+~~p
 \end{equation}
 and depicted as in Fig.~\ref{fig:eta_phi}. Mass and rapidity of state $X$ is given by
 \begin{equation}\label{eq:mass_X}
-M_{X} = \sqrt{s\Big(\xi_{1}\xi_{2}\sin^{2}{(\alpha/2)}-(1-\xi_{1}-\xi_{2})\cos^{2}{(\alpha/2)}\Big)},
+M_{X} = \sqrt{s\Big(\xi_{1}\xi_{2}\sin^{2}{(\alpha/2)}-(1-\xi_{1}-\xi_{2})\cos^{2}{(\alpha/2)}\Big)} \stackrel{\alpha=\pi}{=} \sqrt{s\xi_{1}\xi_{2}},
 \end{equation}
 \begin{equation}\label{eq:rapidity_X}
-y_{X} = \xi_{1}/\xi_{2},
+y_{X} = \frac{1}{2}\ln{\frac{\xi_{1}}{\xi_{2}}},
 \end{equation}
 where $\alpha$ is angle between scattered protons and $\xi=(p_{0}-p)/p_{0}$ is the fractional momentum loss of proton.
 
 \section{Double \Pom omeron Exchange}
 Reaction from Eq.~\ref{eq:cep} can exhibit purely electromagnetic ($\gamma$-$\gamma$), mixed ($\gamma$-$\mathcal{O}$) or purely strong nature ($\mathcal{O}$-$\mathcal{O}$). The last type is dominant at RHIC energies. It is characterized by the lack of hard scale (if protons are scattered at small angles), therefore perturbative QCD cannot be applied and Regge theory~\cite{IntroductionToRegge} is used instead. An object $\mathcal{O}$ does not have direct QCD representation - in Regge framework it is the so-called ``trajectory`` (\Reg eggeon, \Reg). \Reg eggeon with quantum numbers of vacuum is called ''\Pom omeron`` (\Pom) and \Pom-\Pom\ reaction (Fig.~\ref{fig:DPE}) is called ''Double \Pom omeron Exchange``. %
-
-Processes involing \Pom omeron exchange are referred as diffraction due to cross-section in scattering angle resembling similar shape to instesity pattern of diffracted light. This group have specific property of the ''rapidity gap`` which is an angular region free of hadrons. In \DPE\ two such gaps are present, shown in Fig.~\ref{fig:eta_phi} as $\Delta\eta_{1}$ and $\Delta\eta_{2}$. For detailed introduction to the topic of diffraction see \cite{pomeronAndQCD,barone}.
 
 %---------------------------
 \begin{figure}
@@ -45,3 +43,16 @@ Processes involing \Pom omeron exchange are referred as diffraction due to cross
 }
 \end{figure}
 %---------------------------
+
+Processes involing \Pom omeron exchange are referred as diffraction due to cross-section in scattering angle resembling similar shape to instesity pattern of diffracted light. Diffractive events have specific property of the ''rapidity gap`` which is an angular region free of hadrons. In \DPE\ two such gaps are present, marked in Fig.~\ref{fig:eta_phi} as $\Delta\eta_{1}$ and $\Delta\eta_{2}$.
+
+\DPE\ is a spin-parity filter - from the fact that scattered particles have all quantum numbers conserved after the interaction, central states must have
+\begin{equation}\label{eq:DPE_IGJPC}
+ I^{G}J^{PC}=0^{+}\textrm{even}^{++}.
+\end{equation}
+
+The lowest pQCD
+
+For detailed introduction to the topic of diffraction see \cite{pomeronAndQCD,barone}.
+
+\section{Physics motivation for the measurement}
