@@ -15,8 +15,10 @@
   /Author   (Rafał Sikora)
 }
 
-
-
+%additional symbols
+\newcommand{\Pom}{I$\!$P}             % gives pomeron symbol
+\newcommand{\Reg}{I$\!$R}               % gives pomeron symbol
+\newcommand{\DPE}{D\Pom E}
 
 %chapter heading
 \makeatletter
@@ -37,10 +39,10 @@
 \author[1]{Łukasz Fulek}
 \author[1]{Mariusz Przybycień}
 \author[2]{Wlodek Guryn}
-\author[1,$\dag$]{\underline{Rafał Sikora}}
-\affil[1]{AGH University of Science and Technology, Krakow, Poland}
+\author[1]{\underline{Rafał Sikora}}
+\affil[1]{AGH University of Science and Technology, FPACS, Krakow, Poland}
 \affil[2]{Brookhaven National Laboratory, Upton, NY, USA}
-\affil[$\dag$]{Primary author}
+% \affil[$\dag$]{Primary author}
 
 \setcounter{Maxaffil}{0}
 \renewcommand\Affilfont{\itshape\small}
@@ -64,7 +66,7 @@
 \begin{minipage}{\linewidth}
 \maketitle
 \begin{abstract}
-In this note we present an analysis of the Central Exclusive Production (CEP) process using the data from proton-proton collisions collected in 2015. This data was collected using the Roman Pot detectors which ensured efficient triggering and measuring diffractively scattered protons. We describe all intermediate stages of analysis involving extraction of the acceptance and effciency corrections, comparison of data with Monte Carlo simulations of detector response, and study of systematic uncertainties. Finally, we show the physics outcome of the analysis.
+In this note we present analysis of the Central Exclusive Production process using data from proton-proton collisions collected in 2015. This data was collected using the Roman Pot detectors which ensured efficient triggering and measuring diffractively scattered protons. We describe all intermediate stages of analysis involving extraction of the acceptance and effciency corrections, comparison of data with Monte Carlo simulations of detector response, and study of systematic uncertainties. Finally, we show the physics outcome of the analysis.
 \end{abstract}
 \thispagestyle{empty}
 \end{minipage}
@@ -80,12 +82,9 @@ In this note we present an analysis of the Central Exclusive Production (CEP) pr
 \newgeometry{hmargin={2cm, 2cm}, height=10.0in}
 \tableofcontents
 
-\chapter{Introduction}
-\section{Bla bla}
-Some introduction
-\section{Other Bla bla}
-Some introduction~\cite{STAR2}
 
+%% =====  INTRODUCTION ====
+\input{Introduction.tex}
 
 %% =====  DATASET ====
 \input{Dataset.tex}
@@ -100,8 +99,9 @@ Some introduction~\cite{STAR2}
 % \end{appendices}
 
 
-\addcontentsline{toc}{chapter}{References}
+
 \bibliography{references.bib}{}
 \bibliographystyle{utphys}
+\addcontentsline{toc}{chapter}{References}
 
 \end{document}          
