@@ -27,4 +27,45 @@ V.~Barone and E.~Predazzi, {\em {High-Energy Particle Diffraction}}, vol.~v.565
 \newblock
 %%CITATION = INSPIRE-588021;%%.
 
+\bibitem{LSmodel}
+P.~Lebiedowicz and A.~Szczurek, ``{Exclusive $pp \to pp \pi^{+}\pi^{-}$
+  reaction: From the threshold to LHC},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.81.036003}{{\em Phys. Rev.}
+  {\bfseries D81} (2010) 036003},
+\href{http://arxiv.org/abs/0912.0190}{{\ttfamily arXiv:0912.0190 [hep-ph]}}.
+%%CITATION = ARXIV:0912.0190;%%.
+
+\bibitem{LSmodel2}
+P.~Lebiedowicz, O.~Nachtmann, and A.~Szczurek, ``{Central exclusive diffractive
+  production of $\pi^{+}\pi^{-}$ continuum, scalar and tensor resonances in
+  $pp$ and $p \bar{p}$ scattering within tensor pomeron approach},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.93.054015}{{\em Phys. Rev.}
+  {\bfseries D93} no.~5, (2016) 054015},
+\href{http://arxiv.org/abs/1601.04537}{{\ttfamily arXiv:1601.04537 [hep-ph]}}.
+%%CITATION = ARXIV:1601.04537;%%.
+
+\bibitem{DurhamModel}
+L.~A. Harland-Lang, V.~A. Khoze, and M.~G. Ryskin, ``{Modelling exclusive meson
+  pair production at hadron colliders},''
+  \href{http://dx.doi.org/10.1140/epjc/s10052-014-2848-9}{{\em Eur. Phys. J.}
+  {\bfseries C74} (2014) 2848},
+\href{http://arxiv.org/abs/1312.4553}{{\ttfamily arXiv:1312.4553 [hep-ph]}}.
+%%CITATION = ARXIV:1312.4553;%%.
+
+\bibitem{Schicker}
+R.~Fiore, L.~Jenkovszky, and R.~Schicker, ``{Resonance production in
+  Pomeron–Pomeron collisions at the LHC},''
+  \href{http://dx.doi.org/10.1140/epjc/s10052-015-3846-2}{{\em Eur. Phys. J.}
+  {\bfseries C76} no.~1, (2016) 38},
+\href{http://arxiv.org/abs/1512.04977}{{\ttfamily arXiv:1512.04977 [hep-ph]}}.
+%%CITATION = ARXIV:1512.04977;%%.
+
+\bibitem{DPtFilter}
+F.~E. Close and A.~Kirk, ``{A Glueball - q anti-q filter in central hadron
+  production},'' \href{http://dx.doi.org/10.1016/S0370-2693(97)00222-0}{{\em
+  Phys. Lett.} {\bfseries B397} (1997) 333--338},
+\href{http://arxiv.org/abs/hep-ph/9701222}{{\ttfamily arXiv:hep-ph/9701222
+  [hep-ph]}}.
+%%CITATION = HEP-PH/9701222;%%.
+
 \end{thebibliography}\endgroup

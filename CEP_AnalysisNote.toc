@@ -2,6 +2,9 @@
 \contentsline {section}{\numberline {1.1}Central Exclusive Production}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Double I$\mskip -\thinmuskip $Pomeron\ Exchange}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}Physics motivation for the measurement}{4}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}DI$\mskip -\thinmuskip $PE\ differential cross-sections, mass spectrum}{4}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Absorption effects}{4}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Size of interaction region}{4}{subsection.1.3.3}
 \contentsline {chapter}{\numberline {2}Data set}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Bad runs}{5}{section.2.1}
 \contentsline {chapter}{References}{6}{chapter*.4}
