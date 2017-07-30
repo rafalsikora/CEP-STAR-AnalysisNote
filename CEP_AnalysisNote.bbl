@@ -68,6 +68,15 @@ F.~E. Close and A.~Kirk, ``{A Glueball - q anti-q filter in central hadron
   [hep-ph]}}.
 %%CITATION = HEP-PH/9701222;%%.
 
+\bibitem{onlineRpTriggersMonitoring}
+\url{https://online.star.bnl.gov/rp/pp200/}.
+
+\bibitem{RunLog}
+\url{https://online.star.bnl.gov/RunLogRun15/}.
+
+\bibitem{Luminosity}
+\url{http://www.star.bnl.gov/protected/common/common2015/trigger2015/lumipp200GeV/}.
+
 \bibitem{RpTriggers}
 I.~Alekseev and J.~H. Lee, ``{Trigger Definitions for RP phase-II* for
   Run15}.''
@@ -78,12 +87,6 @@ I.~Alekseev and J.~H. Lee, ``{Trigger Definitions for RP phase-II* for
 I.~Alekseev, ``{Trigger with Roman Pots Phase II*}.''
   \url{https://drupal.star.bnl.gov/STAR/system/files/trigger4RP2_v2.pdf},
   December, 2014.
-
-\bibitem{Luminosity}
-\url{http://www.star.bnl.gov/protected/common/common2015/trigger2015/lumipp200GeV/}.
-
-\bibitem{onlineRpTriggersMonitoring}
-\url{https://online.star.bnl.gov/rp/pp200/}.
 
 \bibitem{Labeling}
 R.~Sikora, ``{Naming convention and layout of the Roman Pot Phase II* subsystem

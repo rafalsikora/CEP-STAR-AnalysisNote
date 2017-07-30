@@ -15,26 +15,25 @@ The main trigger designed for studies of Central Diffraction in run 15 was RP\_C
  \item \textbf{!BBCE \&\& !BBCW \&\& !ZDCE \&\& !ZDCW} = veto on any signal in small BBC tiles or ZDCs on any side of STAR central detector - such requirement is in accordance with the double-gap topology of CEP events, it mostly filtered out CEP events with parallel pile-up event(s),
  \item \textbf{TOF$\geq$2} = at least 2 hits in TOF - aim of this condition was to ensure activity in the mid-rapidity; since the lowest multiplicity allowed in CEP is 2, that was the lower threshold of L0 TOF multiplicity.
 \end{enumerate}%
-Components used in definitions of all diffractive triggers are outlined in Fig.~\ref{fig:triggerBits}. Detailed explanation of all trigger bits can be found in Refs.~\cite{RpTriggers,RpTriggers2}.
+This trigger was running with an average prescale of 5 and average DAQ rate of 250~Hz, which allow to collect in total about 560~M events corresponding to 16.5~pb$^{-1}$ of integrated luminosity.  More information about number of events per run, rates etc. can be found under link provided in Ref.~\cite{onlineRpTriggersMonitoring}, which contains selected data from STAR run log~\cite{RunLog}. Luminosity data used in this analysis comes from Ref.~\cite{Luminosity}.
 
-Main RP triggers which were intended for usage in diffractive physics analyses or efficiency studies are listed in Tab.~\ref{tab:triggers}. ~\cite{Luminosity} ~\cite{onlineRpTriggersMonitoring} ~\cite{Labeling}
+All RP triggers which were intended for usage in diffractive physics analyses or efficiency studies are listed in Tab.~\ref{tab:triggers}. Components used in definitions of these triggers are outlined in Fig.~\ref{fig:triggerBits}. Detailed explanation of all trigger bits can be found in Refs.~\cite{RpTriggers,RpTriggers2}. Explanation of naming convention in Roman Pot system can be found in Ref.~\cite{Labeling}.
 
 \begin{figure}[h]
  \centering%
- \includegraphics[width=0.7\linewidth]{graphics/dataset/bits.png}%
+ \includegraphics[width=0.71\linewidth]{graphics/dataset/bits.png}%
  \caption{Sketch of the trigger components used in definitions of diffractive triggers in run 15.}\label{fig:triggerBits}%
  \end{figure}
 
 
-
-\begin{table}[h!]\centering
- \begin{tabular}{|l|c|c|c|}\hline
+\begin{table}[hb!]\centering
+ \begin{tabular}{l|c|c|c}%\hline
  \textbf{\specialcell{Trigger\\name}} &  \textbf{Definition} &  \textbf{\specialcell{Events [M]\\(available)}} &  \textbf{Comment} \\ \hline
- RP\_CP & {EOR \&\& WOR} & 73.3 (46.0) & \specialcell{Very loose trigger (mostly elastic events)\\ designed for monitoring/trigger efficiency study}\\ \hline
+ RP\_CP & {EOR \&\& WOR} & 73.3 (46.0) & \specialcell{Loose trigger (mostly elastic events) designed\\for monitoring/trigger efficiency study}\\ \hline
  RP\_CPT & {\specialcell{\specialcell{EOR \&\& WOR\\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$1}} & 38.9 (0.0) & \specialcell{Intended to be main CEP trigger (later\\switched to RP\_CPT2 due to large prescale)}\\ \hline
  RP\_CPT2 & {\specialcell{\specialcell{(ET \&\& !IT) $||$ (!ET \&\& IT) \\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$2}} & 556.5 (493.8) & \specialcell{Main CEP trigger\\Note: On Apr 14 added upper TOF limit (10)} \\ \hline
- RP\_CPX & {\specialcell{\specialcell{IT\\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$2}} & 40.1 (0.0) & The same as RP\_CPT2 but only IT configuration\\ \hline
- RP\_CPEI & {\specialcell{\specialcell{ET \&\& IT\\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$2}} & 15.6 (11.8) & \specialcell{Control trigger for CPT2 to estimate\\ effect of !(ET \&\& IT) veto } \\ \hline
+ RP\_CPX & {\specialcell{\specialcell{IT\\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$2}} & 40.1 (0.0) & \specialcell{The same as RP\_CPT2\\but only IT configuration}\\ \hline
+ RP\_CPEI & {\specialcell{\specialcell{ET \&\& IT\\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$2}} & 15.6 (11.8) & \specialcell{Control trigger for CPT2 to estimate\\ effect of !(ET \&\& IT) veto } %\\ \hline
 \end{tabular}\caption{Central Diffraction physics triggers and control triggers involving Roman Pot detectors in run 15.}\label{tab:triggers}
 \end{table}
 
