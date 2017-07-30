@@ -23,6 +23,11 @@
 \newcommand{\Pomeron}{\Pom omeron}
 \newcommand{\Reggeon}{\Reg eggeon}
 
+%additional commands
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+
 %chapter heading
 \makeatletter
 \renewcommand{\@makechapterhead}[1]{%
@@ -37,7 +42,7 @@
 
 
 % Title Page
-\title{\textbf{Measurement of Central Exclusive Production\\with Roman Pot detectors in diffractive proton-proton interactions at~$\sqrt{s}=$~200~GeV}\vspace*{10pt}}
+\title{\textbf{Measurement of Central Exclusive Production\\of $h\bar{h}$ pairs ($h=\pi,K,p$) with Roman Pot detectors in diffractive proton-proton interactions at~$\sqrt{s}=$~200~GeV}\vspace*{10pt}}
 \author[1]{Leszek Adamczyk}
 \author[1]{Łukasz Fulek}
 \author[2]{Wlodek Guryn}
@@ -85,12 +90,17 @@ In this note we present analysis of the Central Exclusive Production process usi
 \newgeometry{hmargin={2cm, 2cm}, height=10.0in}
 \tableofcontents
 
-
 %% =====  INTRODUCTION ====
 \input{Introduction.tex}
 
 %% =====  DATASET ====
 \input{Dataset.tex}
+
+%% =====  EVENT SELECTION ====
+\input{EventSelection.tex}
+
+
+
 
 
 % %% ===== DODATKI ===== ------------
@@ -101,7 +111,13 @@ In this note we present analysis of the Central Exclusive Production process usi
 % \input{Appendix_BunchProfiles.tex}
 % \end{appendices}
 
-
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\begingroup
+\let\clearpage\relax
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+\endgroup
 
 \bibliography{references.bib}{}
 \bibliographystyle{utphys}

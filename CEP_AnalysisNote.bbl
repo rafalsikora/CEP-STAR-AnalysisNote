@@ -1,4 +1,4 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{IntroductionToRegge}
 P.~D.~B. Collins, {\em {An Introduction to Regge Theory and High-Energy
@@ -67,5 +67,28 @@ F.~E. Close and A.~Kirk, ``{A Glueball - q anti-q filter in central hadron
 \href{http://arxiv.org/abs/hep-ph/9701222}{{\ttfamily arXiv:hep-ph/9701222
   [hep-ph]}}.
 %%CITATION = HEP-PH/9701222;%%.
+
+\bibitem{RpTriggers}
+I.~Alekseev and J.~H. Lee, ``{Trigger Definitions for RP phase-II* for
+  Run15}.''
+  \url{https://drupal.star.bnl.gov/STAR/system/files/trigger_updated_run15_v2.doc},
+  December, 2014.
+
+\bibitem{RpTriggers2}
+I.~Alekseev, ``{Trigger with Roman Pots Phase II*}.''
+  \url{https://drupal.star.bnl.gov/STAR/system/files/trigger4RP2_v2.pdf},
+  December, 2014.
+
+\bibitem{Luminosity}
+\url{http://www.star.bnl.gov/protected/common/common2015/trigger2015/lumipp200GeV/}.
+
+\bibitem{onlineRpTriggersMonitoring}
+\url{https://online.star.bnl.gov/rp/pp200/}.
+
+\bibitem{Labeling}
+R.~Sikora, ``{Naming convention and layout of the Roman Pot Phase II* subsystem
+  in the STAR experiment}.''
+  \url{https://drupal.star.bnl.gov/STAR/system/files/RomanPotNomenclature_0.pdf},
+  October, 2014.
 
 \end{thebibliography}\endgroup

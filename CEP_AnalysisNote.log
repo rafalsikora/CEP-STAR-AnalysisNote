@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.12.19)  27 JUL 2017 21:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.12.19)  30 JUL 2017 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,20 +475,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./CEP_AnalysisNote.aux)
 \openout1 = `CEP_AnalysisNote.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -542,7 +542,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 54.
+Package hyperref Info: Link coloring OFF on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -551,35 +551,35 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
 
 (./CEP_AnalysisNote.out) (./CEP_AnalysisNote.out)
 \@outlinefile=\write3
 \openout3 = `CEP_AnalysisNote.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 59.
+(Font)              <7> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 59.
+(Font)              <5> on input line 64.
 
-<graphics/STAR_logo.pdf, id=43, 283.68053pt x 199.9972pt>
+<graphics/STAR_logo.pdf, id=67, 283.68053pt x 199.9972pt>
 File: graphics/STAR_logo.pdf Graphic file (type pdf)
 
 <use graphics/STAR_logo.pdf>
-Package pdftex.def Info: graphics/STAR_logo.pdf used on input line 61.
+Package pdftex.def Info: graphics/STAR_logo.pdf used on input line 66.
 (pdftex.def)             Requested size: 62.73549pt x 44.2284pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 71.
+(Font)              <17.28> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 71.
+(Font)              <12> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 71.
+(Font)              <8> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 71.
+(Font)              <6> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 71.
+(Font)              <9> on input line 76.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./graphics/STAR_logo.pdf>]
@@ -644,7 +644,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 28.
 
-<graphics/introduction/eta_phi.pdf, id=90, 569.12625pt x 358.33875pt>
+<graphics/introduction/eta_phi.pdf, id=120, 569.12625pt x 358.33875pt>
 File: graphics/introduction/eta_phi.pdf Graphic file (type pdf)
 
 <use graphics/introduction/eta_phi.pdf>
@@ -660,7 +660,7 @@ Overfull \hbox (12.9773pt too wide) in paragraph at lines 39--39
 
 pdfTeX warning: /usr/bin/pdflatex (file ./graphics/introduction/DPE.pdf): PDF i
 nclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<graphics/introduction/DPE.pdf, id=91, 291.0875pt x 243.91125pt>
+<graphics/introduction/DPE.pdf, id=121, 291.0875pt x 243.91125pt>
 File: graphics/introduction/DPE.pdf Graphic file (type pdf)
 
 <use graphics/introduction/DPE.pdf>
@@ -688,46 +688,74 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ) (./Dataset.tex [4]
 Chapter 2.
-<graphics/badRuns/positionHistograms.pdf, id=184, 569.12625pt x 552.0625pt>
-File: graphics/badRuns/positionHistograms.pdf Graphic file (type pdf)
+<graphics/dataset/bits.png, id=221, 498.36188pt x 132.495pt>
+File: graphics/dataset/bits.png Graphic file (type png)
 
-<use graphics/badRuns/positionHistograms.pdf>
-Package pdftex.def Info: graphics/badRuns/positionHistograms.pdf used on input 
-line 23.
+<use graphics/dataset/bits.png>
+Package pdftex.def Info: graphics/dataset/bits.png used on input line 24.
+(pdftex.def)             Requested size: 338.58632pt x 90.01857pt.
+
+Overfull \hbox (11.42061pt too wide) in paragraph at lines 31--38
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<graphics/dataset/positionHistograms.pdf, id=223, 569.12625pt x 552.0625pt>
+File: graphics/dataset/positionHistograms.pdf Graphic file (type pdf)
+
+<use graphics/dataset/positionHistograms.pdf>
+Package pdftex.def Info: graphics/dataset/positionHistograms.pdf used on input 
+line 52.
 (pdftex.def)             Requested size: 193.47578pt x 187.6735pt.
 
-<graphics/badRuns/positionVsRunGraph.pdf, id=185, 569.12625pt x 408.52625pt>
-File: graphics/badRuns/positionVsRunGraph.pdf Graphic file (type pdf)
+<graphics/dataset/positionVsRunGraph.pdf, id=224, 569.12625pt x 408.52625pt>
+File: graphics/dataset/positionVsRunGraph.pdf Graphic file (type pdf)
 
-<use graphics/badRuns/positionVsRunGraph.pdf>
-Package pdftex.def Info: graphics/badRuns/positionVsRunGraph.pdf used on input 
-line 30.
+<use graphics/dataset/positionVsRunGraph.pdf>
+Package pdftex.def Info: graphics/dataset/positionVsRunGraph.pdf used on input 
+line 59.
 (pdftex.def)             Requested size: 263.6139pt x 189.23341pt.
-) (./CEP_AnalysisNote.bbl [5
+) (./EventSelection.tex [5
 
- <./graphics/badRuns/positionHistograms.pdf, page is rotated 90 degrees> <./gra
-phics/badRuns/positionVsRunGraph.pdf, page is rotated 90 degrees>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
- [6
+ <./graphics/dataset/bits.png>] [6 <./graphics/dataset/positionHistograms.pdf, 
+page is rotated 90 degrees> <./graphics/dataset/positionVsRunGraph.pdf, page is
+ rotated 90 degrees>]
+Chapter 3.
+) [7
+
+] (./CEP_AnalysisNote.lof)
+\tf@lof=\write5
+\openout5 = `CEP_AnalysisNote.lof'.
+
+ (./CEP_AnalysisNote.lot)
+\tf@lot=\write6
+\openout6 = `CEP_AnalysisNote.lot'.
+
+ (./CEP_AnalysisNote.bbl [8
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+ [9
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
-
-(./CEP_AnalysisNote.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+ (./CEP_AnalysisNote.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `CEP_AnalysisNote.out' has not changed.
-(rerunfilecheck)             Checksum: 7CEBC62627F065C1C0793C4A328B395F;671.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
+(rerunfilecheck)             Checksum: A8DA6E0CDAD38817D4313F4EB8B025CF;999.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 7124 strings out of 494997
- 107170 string characters out of 6180841
- 198309 words of memory out of 5000000
- 10221 multiletter control sequences out of 15000+600000
+ 7177 strings out of 494997
+ 107936 string characters out of 6180841
+ 199886 words of memory out of 5000000
+ 10244 multiletter control sequences out of 15000+600000
  13172 words of font info for 45 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 36i,14n,51p,785b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,20n,51p,790b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -747,9 +775,9 @@ dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb>
-Output written on CEP_AnalysisNote.pdf (6 pages, 519618 bytes).
+Output written on CEP_AnalysisNote.pdf (9 pages, 550112 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
