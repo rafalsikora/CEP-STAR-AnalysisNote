@@ -8,9 +8,21 @@
 \BOOKMARK [0][-]{chapter.2}{Data set}{}% 8
 \BOOKMARK [1][-]{section.2.1}{Trigger}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.2}{Bad runs}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Event selection}{}% 11
-\BOOKMARK [1][-]{section.3.1}{List of cuts}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Primary vertex}{chapter.3}% 13
-\BOOKMARK [0][-]{chapter*.6}{List of Figures}{}% 14
-\BOOKMARK [0][-]{chapter*.7}{List of Tables}{}% 15
-\BOOKMARK [0][-]{chapter*.8}{References}{}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{RP distance from the beamline}{section.2.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Event selection}{}% 12
+\BOOKMARK [1][-]{section.3.1}{List of cuts}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Description of cuts}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.2.1}{\(C1,C2\) Primary vertex}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.2}{\(C3\) TPC tracks}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.3}{\(C4\) RP tracks}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.4}{\(C5\) TPC-RP z-vertex cut}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.5}{\(C6\) BBC-large signal veto}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.6}{\(C7\) TOF clusters}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.7}{\(C8\) Exclusivity cut \(missing pT cut\)}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{Cut flow}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{Acceptance and efficiency}{}% 23
+\BOOKMARK [0][-]{chapter.5}{Backgrounds}{}% 24
+\BOOKMARK [0][-]{chapter.6}{Systematic errors}{}% 25
+\BOOKMARK [0][-]{chapter*.6}{List of Figures}{}% 26
+\BOOKMARK [0][-]{chapter*.7}{List of Tables}{}% 27
+\BOOKMARK [0][-]{chapter*.8}{References}{}% 28

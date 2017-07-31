@@ -8,9 +8,21 @@
 \contentsline {chapter}{\numberline {2}Data set}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Trigger}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Bad runs}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}RP distance from the beamline}{6}{subsection.2.2.1}
 \contentsline {chapter}{\numberline {3}Event selection}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}List of cuts}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Primary vertex}{7}{section.3.2}
-\contentsline {chapter}{List of Figures}{8}{chapter*.6}
-\contentsline {chapter}{List of Tables}{8}{chapter*.7}
-\contentsline {chapter}{References}{9}{chapter*.8}
+\contentsline {section}{\numberline {3.2}Description of cuts}{7}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}(\ref {enum:CutPrimVx},\ref {enum:zVx})\nobreakspace {}Primary vertex}{7}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}(\ref {enum:CutTpcTrks})\nobreakspace {}TPC tracks}{8}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}(\ref {enum:CutRpTrks})\nobreakspace {}RP tracks}{8}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}(\ref {enum:CutDeltaZVx})\nobreakspace {}TPC-RP $z$-vertex cut}{8}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}(\ref {enum:CutBbcLarge})\nobreakspace {}BBC-large signal veto}{8}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}(\ref {enum:CutTofClusters})\nobreakspace {}TOF clusters}{8}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{T}$ cut)}{8}{subsection.3.2.7}
+\contentsline {section}{\numberline {3.3}Cut flow}{8}{section.3.3}
+\contentsline {chapter}{\numberline {4}Acceptance and efficiency}{9}{chapter.4}
+\contentsline {chapter}{\numberline {5}Backgrounds}{10}{chapter.5}
+\contentsline {chapter}{\numberline {6}Systematic errors}{11}{chapter.6}
+\contentsline {chapter}{List of Figures}{12}{chapter*.6}
+\contentsline {chapter}{List of Tables}{12}{chapter*.7}
+\contentsline {chapter}{References}{13}{chapter*.8}

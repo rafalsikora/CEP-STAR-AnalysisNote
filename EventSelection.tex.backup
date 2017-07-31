@@ -34,16 +34,14 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
  \itemm No signal in any tile of BBC-large (east or west) with $\textrm{ADC}>40$ and $\textrm{TDC}>100$.\label{enum:CutBbcLarge}
  \itemm Maximally 2 reconstructed TOF clusters $N^{\textrm{TOF}}_{\textrm{clstrs}}\leq 2$.\label{enum:CutTofClusters}
  \itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\textrm{miss}}<75~\textrm{MeV}/c$.\label{enum:CutMissingPt}
- \itemm Particle (pair) identification:\\
- \textbf{~~if~~} $n\sigma_{\textrm{pion}}^{\textrm{pair}}>3$ \textbf{~~\&~~} $n\sigma_{\textrm{kaon}}^{\textrm{pair}}>3$ \textbf{~~\&~~} $n\sigma_{\textrm{proton}}^{\textrm{pair}}<3$ \textbf{~~\&~~} $m^{2}_{\textrm{TOF}}>0.6~\textrm{GeV}/c^{2}~~\rightarrow~~pp$\\%
-\textbf{elif~~} $n\sigma_{\textrm{pion}}^{\textrm{pair}}>3$ \textbf{~~\&~~} $n\sigma_{\textrm{kaon}}^{\textrm{pair}}<3$ \textbf{~~\&~~} $n\sigma_{\textrm{proton}}^{\textrm{pair}}>3$ \textbf{~~\&~~} $m^{2}_{\textrm{TOF}}>0.15~\textrm{GeV}/c^{2}~~\rightarrow~~KK$\\%
-\textbf{elif~~} $|n\sigma_{\textrm{pion}}^{\textrm{trk1}}|<3$ \textbf{~~\&~~} $|n\sigma_{\textrm{pion}}^{\textrm{trk2}}|<3~~\rightarrow~~\pi\pi$\\%
-\textbf{else~~} event rejected.
+ \itemm Pair identification\\
+ \textbf{~~if} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{\&} $n\sigma_{\text{kaon}}^{\text{pair}}>3$ \textbf{\&} $n\sigma_{\text{proton}}^{\text{pair}}<3$ \textbf{\&} $m^{2}_{\text{TOF}}>0.6\rightarrow pp$\\%
+\textbf{elif} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{\&} $n\sigma_{\text{kaon}}^{\text{pair}}<3$ \textbf{\&} $n\sigma_{\text{proton}}^{\text{pair}}>3$ \textbf{\&} $m^{2}_{\text{TOF}}>0.15\rightarrow KK$\\%
+\textbf{elif} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{\&} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3 \rightarrow \pi\pi$}
 \end{enumerate}
 
 \section{Description of cuts}\label{sec:descriptionOfCuts}
 \subsection{(\ref{enum:CutPrimVx},\ref{enum:zVx})~Primary vertex}
-Bla bla
 \subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
 \subsection{(\ref{enum:CutRpTrks})~RP tracks}
 \subsection{(\ref{enum:CutDeltaZVx})~TPC-RP $z$-vertex cut}
