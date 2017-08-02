@@ -38,6 +38,14 @@ All RP triggers which were intended for usage in diffractive physics analyses or
 \end{table}
 
 
+\section{Reconstruction software}\label{sec:recoSoftware}
+
+Raw data was processed with STAR libraries in versions SL15k (trigger datasets: production\_pp200trans\_2015, production\_pp200long2\_2015, production\_pp200long3\_2015) and SL16d (production\_pp200long\_2015)~\cite{ProductionList}.
+
+\section{Data format}\label{sec:dataFormat}
+
+The analyzed data was stored in ROOT files in the picoDST format which was in large part a skimmed MuDST (standard STAR format). The picoDST format was introduced in Ref.~\cite{PicoDstDescription}. PicoDST description files (C++ headers etc.) can be found in the analysis code repository~\cite{AnalysisCodeRepo}.
+
 \section{Bad runs}\label{sec:badRuns}
 
 Analysis of CEP was performed on the data from runs with completion status ``Successful'' in the STAR run log. However, based on additional requirements explained below, some runs were omitted from analysis.
@@ -60,7 +68,6 @@ Analysis of CEP was performed on the data from runs with completion status ``Suc
                 \subcaptionbox{\label{fig:positionVsRunGraph}}{\includegraphics[width=\linewidth]{graphics/dataset/positionVsRunGraph.pdf}}}
   \end{subfigure}
 }%
-\caption[Hit map of elastic proton hits in .]{map of elastic proton hits in .}
-% \label{fig:xy_recoEff}
+\caption[Beam-detector distance of the Roman Pots in run 15.]{Histogram of beam-detector distance $|y|$ (\ref{fig:positionHistograms}) and graph showing run-dependence of $|y|$ (\ref{fig:positionVsRunGraph}) for all Roman Pots.}%\label{fig:xy_recoEff}
 \end{figure}
 %---------------------------

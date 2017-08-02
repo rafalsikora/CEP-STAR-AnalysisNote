@@ -1,0 +1,22 @@
+%%===========================================================%%
+%%                                                           %%
+%%                        CORRECTIONS                        %%
+%%                                                           %%
+%%===========================================================%%
+
+
+\chapter{Corrections}\label{chap:corrections}
+
+\section{Trigger efficiency}\label{sec:triggerEff}
+\subsection{Online veto (BBC-small and ZDC veto)}
+\subsection{Up and Down RP combination veto}
+\subsection{}
+\section{Cuts efficiency}\label{sec:cutsEff}
+\subsection{\texorpdfstring{$z$}{z}-vertex cut~(\ref{enum:CutZVx})}
+\subsection{Offline BBC-large veto~(\ref{enum:CutBbcLarge}) and \texorpdfstring{$N^{\textrm{TOF}}_{\textrm{clstrs}}$}{NTofClstrs} limit~(\ref{enum:CutTofClusters})}
+\subsection{Missing \texorpdfstring{$p_{T}$}{pT} cut~(\ref{enum:CutMissingPt})}
+
+\section{RP track acceptance and reconstruction efficiency}\label{sec:rpAccAndEff}
+\section{TPC track acceptance and reconstruction efficiency}\label{sec:tpcAccAndEff}
+\section{TOF acceptance, reconstruction and track-matching efficiency}\label{sec:tofAccAndEff}
+\section{TPC vertex reconstruction efficiency}\label{sec:tpcVxRecoEff}

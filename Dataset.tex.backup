@@ -38,7 +38,13 @@ All RP triggers which were intended for usage in diffractive physics analyses or
 \end{table}
 
 
+\section{Data format}\label{sec:dataFormat}
+
+
+
 \section{Bad runs}\label{sec:badRuns}
+
+Analysis of CEP was performed on the data from runs with completion status ``Successful'' in the STAR run log. However, based on additional requirements explained below, some runs were omitted from analysis.
 
 \subsection{RP distance from the beamline}
 

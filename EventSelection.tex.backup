@@ -11,10 +11,10 @@
 
 Complete list of analysis cuts used for signal extraction is presented in Sec.~\ref{sec:listOfCuts}. Detailed description of each cut can be found in Sec.~\ref{sec:descriptionOfCuts}.
 
-\section[List of cuts]{List of cuts\footnote{Some cuts (e.g.~\ref{enum:CutTpcTrks}) are decomposed to constituent sub-cuts to help in later refferals. Cut is formed by the logical AND of all its sub-cuts.}}\label{sec:listOfCuts}
+\section[List of cuts]{List of cuts\footnote{Some cuts (e.g.~\ref{enum:CutTpcTrks}) are decomposed to constituent sub-cuts. Cut is formed by the logical AND of all its sub-cuts.}}\label{sec:listOfCuts}
 \begin{enumerate}[label=C\arabic*]
  \itemm Exactly 1 primary vertex with TPC track(s) matched with hits in TOF.\label{enum:CutPrimVx}
- \itemm Vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\textrm{vx}}|<100$~cm.\label{enum:zVx}
+ \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\textrm{vx}}|<100$~cm.\label{enum:CutZVx}
  \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality and within high TPC acceptance region~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}).\label{enum:CutTpcTrks}
     \begin{enumerate}[label=\theenumi.\arabic*]
       \itemm Exactly 2 TOF-matched primary tracks,\label{enum:TpcTofMatched}
@@ -34,19 +34,21 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
  \itemm No signal in any tile of BBC-large (east or west) with $\textrm{ADC}>40$ and $\textrm{TDC}>100$.\label{enum:CutBbcLarge}
  \itemm Maximally 2 reconstructed TOF clusters $N^{\textrm{TOF}}_{\textrm{clstrs}}\leq 2$.\label{enum:CutTofClusters}
  \itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\textrm{miss}}<75~\textrm{MeV}/c$.\label{enum:CutMissingPt}
- \itemm Pair identification\\
- \textbf{~~if} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{\&} $n\sigma_{\text{kaon}}^{\text{pair}}>3$ \textbf{\&} $n\sigma_{\text{proton}}^{\text{pair}}<3$ \textbf{\&} $m^{2}_{\text{TOF}}>0.6\rightarrow pp$\\%
-\textbf{elif} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{\&} $n\sigma_{\text{kaon}}^{\text{pair}}<3$ \textbf{\&} $n\sigma_{\text{proton}}^{\text{pair}}>3$ \textbf{\&} $m^{2}_{\text{TOF}}>0.15\rightarrow KK$\\%
-\textbf{elif} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{\&} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3 \rightarrow \pi\pi$}
+ \itemm Particle (pair) identification:\\
+ \textbf{~~if~~} $n\sigma_{\textrm{pion}}^{\textrm{pair}}>3$ \textbf{~~\&~~} $n\sigma_{\textrm{kaon}}^{\textrm{pair}}>3$ \textbf{~~\&~~} $n\sigma_{\textrm{proton}}^{\textrm{pair}}<3$ \textbf{~~\&~~} $m^{2}_{\textrm{TOF}}>0.6~\textrm{GeV}/c^{2}~~\rightarrow~~pp$\\%
+\textbf{elif~~} $n\sigma_{\textrm{pion}}^{\textrm{pair}}>3$ \textbf{~~\&~~} $n\sigma_{\textrm{kaon}}^{\textrm{pair}}<3$ \textbf{~~\&~~} $n\sigma_{\textrm{proton}}^{\textrm{pair}}>3$ \textbf{~~\&~~} $m^{2}_{\textrm{TOF}}>0.15~\textrm{GeV}/c^{2}~~\rightarrow~~KK$\\%
+\textbf{elif~~} $|n\sigma_{\textrm{pion}}^{\textrm{trk1}}|<3$ \textbf{~~\&~~} $|n\sigma_{\textrm{pion}}^{\textrm{trk2}}|<3~~\rightarrow~~\pi\pi$\\%
+\textbf{else~~} event rejected.
 \end{enumerate}
 
 \section{Description of cuts}\label{sec:descriptionOfCuts}
-\subsection{(\ref{enum:CutPrimVx},\ref{enum:zVx})~Primary vertex}
+\subsection{(\ref{enum:CutPrimVx},\ref{enum:CutZVx})~Primary vertex}
+Bla bla
 \subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
 \subsection{(\ref{enum:CutRpTrks})~RP tracks}
-\subsection{(\ref{enum:CutDeltaZVx})~TPC-RP $z$-vertex cut}
+\subsection{(\ref{enum:CutDeltaZVx})~TPC-RP \texorpdfstring{$z$}{z}-vertex matching}
 \subsection{(\ref{enum:CutBbcLarge})~BBC-large signal veto}
-\subsection{(\ref{enum:CutTofClusters})~TOF clusters}
-\subsection{(\ref{enum:CutMissingPt})~Exclusivity cut (missing $p_{T}$ cut)}
+\subsection{(\ref{enum:CutTofClusters})~TOF clusters limit}
+\subsection{(\ref{enum:CutMissingPt})~Exclusivity cut (missing \texorpdfstring{$p_{T}$}{pT} cut)}
 
 \section{Cut flow}\label{sec:cutFlow}
