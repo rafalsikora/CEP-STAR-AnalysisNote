@@ -4,18 +4,27 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{tabulary}
+\usepackage{amsmath}
+\usepackage{mathtools}
 \usepackage{float}
 \usepackage{cite}
+\usepackage{color}
 \usepackage{caption}
 \usepackage{subcaption}
+% \usepackage[pdfborder={0 0 0.6}]{hyperref}
 \usepackage{hyperref}
 \usepackage{enumitem}
-
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{bm}
 
 \pdfinfo{%
   /Title    ()
   /Author   (Rafał Sikora)
 }
+
+%colors
+\definecolor{gray}{rgb}{0.5, 0.5, 0.5}
 
 %additional symbols
 \newcommand{\Pom}{\texorpdfstring{I$\!$P}{P}}             % gives pomeron symbol
@@ -24,10 +33,33 @@
 \newcommand{\Pomeron}{\Pom omeron}
 \newcommand{\Reggeon}{\Reg eggeon}
 
-%additional commands
+% ---- ---- additional commands ---- ----
 \newcommand{\specialcell}[2][c]{%
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
+\makeatletter
+\def\tagform@#1{\maketag@@@{(\ignorespaces#1\unskip\@@italiccorr)}}
+\renewcommand{\eqref}[1]{\textup{{\normalfont(\ref{#1}}\normalfont)}}
+\makeatother
+  
+\makeatletter
+\newcommand{\Spvek}[2][l]{%
+  \gdef\@VORNE{1}
+  \left[\hskip-\arraycolsep%
+    \begin{array}{#1}\vekSp@lten{#2}\end{array}%
+  \hskip-\arraycolsep\right]}
+\def\vekSp@lten#1{\xvekSp@lten#1;vekL@stLine;}
+\def\vekL@stLine{vekL@stLine}
+\def\xvekSp@lten#1;{\def\temp{#1}%
+  \ifx\temp\vekL@stLine
+  \else
+    \ifnum\@VORNE=1\gdef\@VORNE{0}
+    \else\@arraycr\fi%
+    #1%
+    \expandafter\xvekSp@lten
+  \fi}
+\makeatother
+% ---- ---- ---- ---- ---- ---- ---- ----
 
 %chapter heading
 \makeatletter
@@ -43,7 +75,7 @@
 
 
 % Title Page
-\title{\textbf{Measurement of Central Exclusive Production\\of $h\bar{h}$ pairs ($h=\pi,K,p$) with Roman Pot detectors in diffractive proton-proton interactions at~$\sqrt{s}=$~200~GeV}\vspace*{10pt}}
+\title{\textbf{Measurement of Central Exclusive Production\\of $\bm{h\bar{h}}$ pairs ($\bm{h=\pi,K,p}$) with Roman Pot detectors in diffractive proton-proton interactions at~$\bm{\sqrt{s}=}$~200~GeV}\vspace*{10pt}}
 \author[1]{Leszek Adamczyk}
 \author[1]{Łukasz Fulek}
 \author[2]{Włodek Guryn}
@@ -89,6 +121,9 @@ In this note we present analysis of the Central Exclusive Production process usi
 \clearpage
 \thispagestyle{empty}
 \newgeometry{hmargin={2cm, 2cm}, height=10.0in}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{4}
 \tableofcontents
 
 %% =====  INTRODUCTION ====

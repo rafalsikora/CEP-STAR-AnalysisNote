@@ -1,8 +1,8 @@
 \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
 \contentsline {section}{\numberline {1.1}Central Exclusive Production}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Double I$\mskip -\thinmuskip $Pomeron\ Exchange}{4}{section.1.2}
+\contentsline {section}{\numberline {1.2}Double I$\tmspace -\thinmuskip {.1667em}$Pomeron\ Exchange}{4}{section.1.2}
 \contentsline {section}{\numberline {1.3}Physics motivation for the measurement}{5}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}DI$\mskip -\thinmuskip $PE\ differential cross-sections, mass spectrum}{5}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.1}DI$\tmspace -\thinmuskip {.1667em}$PE\ differential cross-sections, mass spectrum}{5}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Absorption effects}{5}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}Size of interaction region}{5}{subsection.1.3.3}
 \contentsline {chapter}{\numberline {2}Data set}{6}{chapter.2}
@@ -22,26 +22,33 @@
 \contentsline {subsection}{\numberline {3.2.6}(\ref {enum:CutTofClusters})\nobreakspace {}TOF clusters limit}{9}{subsection.3.2.6}
 \contentsline {subsection}{\numberline {3.2.7}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{T}$ cut)}{9}{subsection.3.2.7}
 \contentsline {subsection}{\numberline {3.2.8}(\ref {enum:CutPid})\nobreakspace {}Particle identification}{9}{subsection.3.2.8}
-\contentsline {section}{\numberline {3.3}Cut flow}{9}{section.3.3}
-\contentsline {chapter}{\numberline {4}Corrections}{10}{chapter.4}
-\contentsline {section}{\numberline {4.1}Trigger efficiency}{10}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Online veto (BBC-small and ZDC veto)}{10}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}RP triggering efficiency}{10}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Up and Down RP combination veto}{10}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Cuts efficiency}{10}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}TPC $z$-vertex cut\nobreakspace {}(\ref {enum:CutZVx})}{10}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}TPC-RP $z$-vertex matching\nobreakspace {}(\ref {enum:CutDeltaZVx})}{10}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Offline BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}) and TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters})}{10}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Missing $p_{T}$ cut\nobreakspace {}(\ref {enum:CutMissingPt})}{10}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Particle identification\nobreakspace {}(\ref {enum:CutPid})}{10}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}RP track acceptance and reconstruction efficiency}{10}{section.4.3}
-\contentsline {section}{\numberline {4.4}TPC track acceptance and reconstruction efficiency}{10}{section.4.4}
-\contentsline {section}{\numberline {4.5}TOF acceptance, reconstruction and track-matching efficiency}{10}{section.4.5}
-\contentsline {section}{\numberline {4.6}TPC vertex reconstruction efficiency}{10}{section.4.6}
-\contentsline {chapter}{\numberline {5}Backgrounds}{11}{chapter.5}
-\contentsline {section}{\numberline {5.1}Non-exclusive background}{11}{section.5.1}
-\contentsline {section}{\numberline {5.2}Exclusive background}{11}{section.5.2}
-\contentsline {chapter}{\numberline {6}Systematic errors}{12}{chapter.6}
-\contentsline {chapter}{List of Figures}{13}{chapter*.6}
-\contentsline {chapter}{List of Tables}{13}{chapter*.7}
-\contentsline {chapter}{References}{14}{chapter*.8}
+\contentsline {section}{\numberline {3.3}Working point for cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}Signal per integrated luminosity}{9}{section.3.4}
+\contentsline {section}{\numberline {3.5}Cut flow}{9}{section.3.5}
+\contentsline {chapter}{\numberline {4}Corrections}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Method of corrections application}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}Efficiencies and acceptances}{11}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Trigger efficiency}{11}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Online veto (BBC-small and ZDC veto)}{11}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}RP triggering efficiency}{12}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.3}Up and Down RP combination veto}{12}{subsubsection.4.2.1.3}
+\contentsline {subsection}{\numberline {4.2.2}Cuts efficiency}{12}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}TPC $z$-vertex cut\nobreakspace {}(\ref {enum:CutZVx})}{12}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}TPC-RP $z$-vertex matching\nobreakspace {}(\ref {enum:CutDeltaZVx})}{12}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Primary vertices limit\nobreakspace {}(\ref {enum:CutPrimVx}), BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}) and TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters})}{12}{subsubsection.4.2.2.3}
+\contentsline {subsubsection}{\numberline {4.2.2.4}Missing $p_{T}$ cut\nobreakspace {}(\ref {enum:CutMissingPt})}{12}{subsubsection.4.2.2.4}
+\contentsline {subsubsection}{\numberline {4.2.2.5}Particle identification\nobreakspace {}(\ref {enum:CutPid})}{12}{subsubsection.4.2.2.5}
+\contentsline {subsection}{\numberline {4.2.3}RP track acceptance and reconstruction efficiency}{13}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}TPC track acceptance and reconstruction efficiency}{13}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}TOF acceptance, reconstruction and track-matching efficiency}{13}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}TPC vertex reconstruction efficiency}{13}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Particle energy loss}{13}{section.4.3}
+\contentsline {section}{\numberline {4.4}Background subtraction}{13}{section.4.4}
+\contentsline {section}{\numberline {4.5}Unfolding}{13}{section.4.5}
+\contentsline {chapter}{\numberline {5}Backgrounds}{14}{chapter.5}
+\contentsline {section}{\numberline {5.1}Non-exclusive background}{14}{section.5.1}
+\contentsline {section}{\numberline {5.2}Exclusive background (particle misidentification)}{14}{section.5.2}
+\contentsline {chapter}{\numberline {6}Systematic errors}{15}{chapter.6}
+\contentsline {chapter}{List of Figures}{16}{chapter*.13}
+\contentsline {chapter}{List of Tables}{16}{chapter*.14}
+\contentsline {chapter}{References}{17}{chapter*.15}

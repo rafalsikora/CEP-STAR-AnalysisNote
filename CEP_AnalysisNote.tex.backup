@@ -4,10 +4,14 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{tabulary}
+\usepackage{amsmath}
+\usepackage{mathtools}
 \usepackage{float}
 \usepackage{cite}
+\usepackage{color}
 \usepackage{caption}
 \usepackage{subcaption}
+% \usepackage[pdfborder={0 0 0.6}]{hyperref}
 \usepackage{hyperref}
 \usepackage{enumitem}
 
@@ -17,9 +21,12 @@
   /Author   (Rafał Sikora)
 }
 
+%colors
+\definecolor{gray}{rgb}{0.5, 0.5, 0.5}
+
 %additional symbols
-\newcommand{\Pom}{I$\!$P}             % gives pomeron symbol
-\newcommand{\Reg}{I$\!$R}               % gives pomeron symbol
+\newcommand{\Pom}{\texorpdfstring{I$\!$P}{P}}             % gives pomeron symbol
+\newcommand{\Reg}{\texorpdfstring{I$\!$R}{R}}               % gives pomeron symbol
 \newcommand{\DPE}{D\Pom E}
 \newcommand{\Pomeron}{\Pom omeron}
 \newcommand{\Reggeon}{\Reg eggeon}
@@ -46,12 +53,12 @@
 \title{\textbf{Measurement of Central Exclusive Production\\of $h\bar{h}$ pairs ($h=\pi,K,p$) with Roman Pot detectors in diffractive proton-proton interactions at~$\sqrt{s}=$~200~GeV}\vspace*{10pt}}
 \author[1]{Leszek Adamczyk}
 \author[1]{Łukasz Fulek}
-\author[2]{Wlodek Guryn}
+\author[2]{Włodek Guryn}
 \author[1]{Mariusz Przybycień}
-\author[1]{\underline{Rafał Sikora}}
+\author[1,$\dag$]{\underline{Rafał Sikora}}
 \affil[1]{AGH University of Science and Technology, FPACS, Kraków, Poland}
 \affil[2]{Brookhaven National Laboratory, Upton, NY, USA}
-% \affil[$\dag$]{Primary author}
+\affil[$\dag$]{e-mail:~\href{mailto:rafal.sikora@fis.agh.edu.pl}{rafal.sikora@fis.agh.edu.pl}}
 
 \setcounter{Maxaffil}{0}
 \renewcommand\Affilfont{\itshape\small}
@@ -99,6 +106,15 @@ In this note we present analysis of the Central Exclusive Production process usi
 
 %% =====  EVENT SELECTION ====
 \input{EventSelection.tex}
+
+%% =====  CORRECTIONS ====
+\input{Corrections.tex}
+
+%% =====  BACKGROUNDS ====
+\input{Backgrounds.tex}
+
+%% =====  SYSTEMATIC ERRORS ====
+\input{SystematicErrors.tex}
 
 
 
