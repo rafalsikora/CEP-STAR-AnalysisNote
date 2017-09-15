@@ -75,33 +75,38 @@ From above we get formulae for parameters of the transformation:
 AlternativeToCrystallBall~\cite{AlternativeToCrystallBall}~Eq.~\eqref{eq:expTail}
 
 \begin{equation}\label{eq:expTail}
-	f(x)=\left\{
+	f(dE/dx)=\left\{
                 \begin{array}{ll}
-                  A\exp{\left(-\frac{x-\bar{x}}{\sigma^{2}}\right)}\\
-                  A\exp{\left(-\frac{x-\bar{x}}{\sigma^{2}}\right)}
+                  \frac{A}{\sqrt{2\pi}\cdot \sigma\cdot dE/dx}\exp{\Bigg(-\frac{1}{2}\Big(\frac{\ln{\frac{dE/dx}{\langle dE/dx\rangle}}}{\sigma}\Big)^{2}\Bigg)} & \textrm{for}~\frac{\ln{\frac{dE/dx}{\langle dE/dx\rangle}}}{\sigma} \leq k \\
+                  \frac{A}{\sqrt{2\pi}\cdot \sigma\cdot dE/dx}\exp{\Bigg(-k\cdot \frac{\ln{\frac{dE/dx}{\langle dE/dx\rangle}}}{\sigma} + \frac{1}{2}k^{2} - k^{-1}\left(\frac{\frac{\ln{\frac{dE/dx}{\langle dE/dx\rangle}}}{\sigma}}{k}-1\right)^{k} \Bigg)} & \textrm{for}~\frac{\ln{\frac{dE/dx}{\langle dE/dx\rangle}}}{\sigma} > k
                 \end{array}
               \right.
 \end{equation}
 
 
-
 %---------------------------
-\begin{figure}[ht!]
+\begin{figure}[hb]
 \centering
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:dEdxMeanOffsetMC}}{\includegraphics[width=\linewidth]{graphics/corrections/dEdxMeanOffset_allPIDs.pdf}}}
+                \subcaptionbox{\label{fig:dEdxMeanOffsetMC}}{\includegraphics[width=\linewidth]{graphics/corrections/dEdxMeanOffset_allPIDs.pdf}\vspace*{-10pt}}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}{
+                \subcaptionbox{\label{fig:dEdxMeanOffsetData}}{\includegraphics[width=\linewidth]{graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf}\vspace*{-10pt}}}
   \end{subfigure}
 }
 \quad
 \parbox{0.4725\textwidth}{
   \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:dEdxWidthMC}}{\includegraphics[width=\linewidth]{graphics/corrections/dEdxWidth_allPIDs.pdf}}}
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}{
+                \subcaptionbox{\label{fig:dEdxWidthMC}}{\includegraphics[width=\linewidth]{graphics/corrections/dEdxWidth_allPIDs.pdf}\vspace*{-10pt}}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}{
+                \subcaptionbox{\label{fig:dEdxWidthData}}{\includegraphics[width=\linewidth]{graphics/corrections/dEdxWidth_allPIDs_data.pdf}\vspace*{-10pt}}}
   \end{subfigure}
 }%
-\caption[Parameters of track dE/dx as a function of reconstructed momentum for a few particle species (STARsim MC).]{Difference between MPV of dE/dx predicted by Bichsel parametrization and obtained from the fit of Eq.~\eqref{eq:expTail} to dE/dx distribution from MC sample (\ref{fig:dEdxMeanOffsetMC}) and dE/dx width parameter (\ref{fig:dEdxWidthMC}) as a function of reconstructed particle momentum for a few particle species. Solid lines represent fits to points of corresponding color.}
+\caption[Parameters of track dE/dx as a function of reconstructed momentum for a few particle species.]{Difference between MPV of dE/dx predicted by Bichsel parametrization and obtained from the fit of Eq.~\eqref{eq:expTail} to dE/dx distribution in the data (\ref{fig:dEdxMeanOffsetData}) and MC sample (\ref{fig:dEdxMeanOffsetMC}) and dE/dx width parameter in data (\ref{fig:dEdxWidthData}) and MC (\ref{fig:dEdxWidthMC}) as a function of reconstructed particle momentum for a few particle species. Solid lines represent fits to points of corresponding color.}\label{fig:dEdxParametersMC}
 \end{figure}
 %---------------------------
 
@@ -113,6 +118,7 @@ AlternativeToCrystallBall~\cite{AlternativeToCrystallBall}~Eq.~\eqref{eq:expTail
 
 
 \begin{table}[ht!]\centering
+\subcaptionbox{\label{fig:vvv}}{
  \begin{tabular}{r||c|c|c|c|c|c||c|c|c|c|c|c}%\hline
  \multirow{2}{*}{\textbf{PID}} &  \multicolumn{6}{c||}{\bm{$\langle dE/dx\rangle_{\textrm{\textbf{Bichsel}}} - \langle dE/dx\rangle_{\textrm{\textbf{MC}}}$}} & \multicolumn{6}{c}{\bm{$\sigma(dE/dx)_{\textrm{\textbf{MC}}}$}} \\ \cline{2-13}
   & $P_{1}$ & $P_{2}$ & $P_{3}$ & $P_{4}$ & $P_{5}$ & $P_{6}$ & $P_{1}$ & $P_{2}$ & $P_{3}$ & $P_{4}$ & $P_{5}$ & $P_{6}$ \\ \Xhline{2\arrayrulewidth}
@@ -121,8 +127,31 @@ AlternativeToCrystallBall~\cite{AlternativeToCrystallBall}~Eq.~\eqref{eq:expTail
  $\bm{p,\bar{p}}$ & \scriptsize-3.061e-8 & \scriptsize-1.061e-5 & \scriptsize4.08 & \scriptsize& \scriptsize& \scriptsize& \scriptsize0.0674 & \scriptsize0.103 & \scriptsize-5.952 & \scriptsize& \scriptsize& \scriptsize\\ \hline
  $\bm{e^{\pm}}$ & \scriptsize-1.483e-7 & \scriptsize3.710e-7 & \scriptsize5.639 & \scriptsize& \scriptsize& \scriptsize& \scriptsize0.0590 & \scriptsize-0.009 & \scriptsize-194.421 & \scriptsize-1.81e-3 & \scriptsize26.392 & \scriptsize0.607 \\ \hline
  $\bm{d,\bar{d}}$ & \scriptsize-2.474e-6 & \scriptsize0.385 & \scriptsize21.719 & \scriptsize5.165e-7 & \scriptsize29.642 & \scriptsize0.781 & \scriptsize0.131 & \scriptsize-0.999 & \scriptsize4.749 & \scriptsize& \scriptsize& \scriptsize%\hline
-\end{tabular}\caption{Parameters of track dE/dx as a function of reconstructed momentum for a few particle species (STARsim MC).}\label{tab:dEdxParametersMC}
+\end{tabular}
+}
+\subcaptionbox{\label{fig:aaa}}{
+\begin{tabular}{r||c|c|c|c|c|c||c|c|c|c|c|c}%\hline
+ \multirow{2}{*}{\textbf{PID}} &  \multicolumn{6}{c||}{\bm{$\langle dE/dx\rangle_{\textrm{\textbf{Bichsel}}} - \langle dE/dx\rangle_{\textrm{\textbf{Data}}}$}} & \multicolumn{6}{c}{\bm{$\sigma(dE/dx)_{\textrm{\textbf{Data}}}$}} \\ \cline{2-13}
+  & $P_{1}$ & $P_{2}$ & $P_{3}$ & $P_{4}$ & $P_{5}$ & $P_{6}$ & $P_{1}$ & $P_{2}$ & $P_{3}$ & $P_{4}$ & $P_{5}$ & $P_{6}$ \\ \Xhline{2\arrayrulewidth}
+ $\bm{\pi^{\pm}}$ & \scriptsize-1.23566e-08 & \scriptsize1.77676e-07 & \scriptsize-9.93828 & \scriptsize& \scriptsize& \scriptsize& \scriptsize0.0737535 & \scriptsize16.8593 & \scriptsize39.4355 & \scriptsize-0.00170383 & \scriptsize6.482 & \scriptsize0.627973\\ \hline
+ $\bm{K^{\pm}}$ & \scriptsize5.48985e-10 & \scriptsize-2.73173e-06 & \scriptsize-7.71189 & \scriptsize& \scriptsize& \scriptsize& \scriptsize0.0742717 & \scriptsize2.66519e-05 & \scriptsize7.17089 & \scriptsize& \scriptsize& \scriptsize\\ \hline
+ $\bm{p,\bar{p}}$ & \scriptsize-2.13964e-07 & \scriptsize0.0420651 & \scriptsize48.3052 & \scriptsize7.51248e-08 & \scriptsize15.5444 & \scriptsize0.575036 & \scriptsize0.0778463 & \scriptsize1.82157 & \scriptsize22.4277 & \scriptsize& \scriptsize& \scriptsize\\ \hline
+ $\bm{e^{\pm}}$ & \scriptsize6.70105e-08 & \scriptsize3.30384e-07 & \scriptsize-7.84536 & \scriptsize& \scriptsize& \scriptsize& \scriptsize0.0677798 & \scriptsize468.863 & \scriptsize59.4001 & \scriptsize& \scriptsize& \scriptsize\\ \hline
+ $\bm{d,\bar{d}}$ & \scriptsize-1.63128e-07 & \scriptsize0.0818135 & \scriptsize-18.9142 & \scriptsize& \scriptsize& \scriptsize& \scriptsize0.125934 & \scriptsize-0.28839 & \scriptsize3.28733 & \scriptsize& \scriptsize& \scriptsize%\\ \hline
+\end{tabular}
+}\caption[Parameters of functions from Fig.~\ref{fig:dEdxParametersMC} describing track dE/dx as a function of reconstructed momentum for a few particle species (STARsim MC).]{Parameters of functions from Fig.~\ref{fig:dEdxParametersMC} describing track dE/dx as a function of reconstructed momentum for a few particle species. Units of parameters $P_{i}$ are such that if one provides momentum in Eq.~\eqref{eq:dEdxParametrization} in GeV/$c$ the resultant offset of dE/dx MPV with respect to Bichsel parametrization is in GeV/cm, and the resultant $\sigma$ parameter is unitless.}\label{tab:dEdxParametersMC}
 \end{table}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
