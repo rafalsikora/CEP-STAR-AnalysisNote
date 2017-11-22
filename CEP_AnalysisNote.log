@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.4.8)  20 OCT 2017 13:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.12.19)  21 NOV 2017 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **CEP_AnalysisNote.tex
 (./CEP_AnalysisNote.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 3 languages loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 3 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -25,19 +25,19 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -187,7 +187,7 @@ Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -218,7 +218,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -249,11 +249,11 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@authors=\count89
 \c@affil=\count90
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/share/texmf/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -281,7 +281,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -289,8 +289,8 @@ Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
@@ -309,10 +309,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@width=\dimen112
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
-Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
+Package: tabulary 2008/12/01 v0.9 tabulary package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen113
 \extrarowheight=\dimen114
 \NC@list=\toks18
@@ -383,23 +383,23 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2014/07/16 v1.15 mathematical typesetting tools
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count108
 \calc@Bcount=\count109
 \calc@Adimen=\dimen128
 \calc@Bdimen=\dimen129
 \calc@Askip=\skip50
 \calc@Bskip=\skip51
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count110
 \calc@Cskip=\skip52
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
@@ -428,12 +428,12 @@ LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+(/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 130.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
@@ -587,29 +587,39 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \TeXr@lab=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
-LaTeX Info: Redefining \bm on input line 203.
-) (./CEP_AnalysisNote.aux)
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen151
+\WF@size=\dimen152
+\c@WF@wrappedlines=\count128
+\WF@box=\box31
+\WF@everypar=\toks28
+Package: wrapfig 2003/01/31  v 3.6
+)
+(./CEP_AnalysisNote.aux)
 \openout1 = `CEP_AnalysisNote.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -646,60 +656,46 @@ LaTeX Font Info:    ... okay on input line 92.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count128
-\scratchdimen=\dimen151
-\scratchbox=\box31
-\nofMPsegments=\count129
-\nofMParguments=\count130
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count131
-\MPscratchDim=\dimen152
-\MPnumerator=\count132
-\makeMPintoPDFobject=\count133
-\everyMPtoPDFconversion=\toks29
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+\scratchcounter=\count129
+\scratchdimen=\dimen153
+\scratchbox=\box32
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen154
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks30
 )
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 92.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring OFF on input line 93.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count134
+\c@section@level=\count135
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
 
 (./CEP_AnalysisNote.out) (./CEP_AnalysisNote.out)
 \@outlinefile=\write3
 \openout3 = `CEP_AnalysisNote.out'.
 
 
-<graphics/STAR_logo.pdf, id=221, 283.68053pt x 199.9972pt>
+<graphics/STAR_logo.pdf, id=219, 283.68053pt x 199.9972pt>
 File: graphics/STAR_logo.pdf Graphic file (type pdf)
 
 <use graphics/STAR_logo.pdf>
-Package pdftex.def Info: graphics/STAR_logo.pdf used on input line 99.
+Package pdftex.def Info: graphics/STAR_logo.pdf used on input line 100.
 (pdftex.def)             Requested size: 62.73549pt x 44.2284pt.
  [1
 
@@ -747,7 +743,7 @@ Package pdftex.def Info: graphics/STAR_logo.pdf used on input line 99.
 
 (./Introduction.tex [3]
 Chapter 1.
-<graphics/introduction/eta_phi.pdf, id=349, 569.12625pt x 358.33875pt>
+<graphics/introduction/eta_phi.pdf, id=346, 569.12625pt x 358.33875pt>
 File: graphics/introduction/eta_phi.pdf Graphic file (type pdf)
 
 <use graphics/introduction/eta_phi.pdf>
@@ -759,7 +755,11 @@ Overfull \hbox (12.9773pt too wide) in paragraph at lines 39--39
  []| [] 
  []
 
-<graphics/introduction/DPE.pdf, id=350, 291.0875pt x 243.91125pt>
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./graphics/introduction/DPE.pdf): PDF i
+nclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<graphics/introduction/DPE.pdf, id=347, 291.0875pt x 243.91125pt>
 File: graphics/introduction/DPE.pdf Graphic file (type pdf)
 
 <use graphics/introduction/DPE.pdf>
@@ -771,7 +771,7 @@ Package pdftex.def Info: graphics/introduction/DPE.pdf used on input line 46.
 introduction/DPE.pdf>]) (./Dataset.tex
 [5]
 Chapter 2.
-<graphics/dataset/bits.png, id=450, 498.36188pt x 97.86563pt>
+<graphics/dataset/bits.png, id=447, 498.36188pt x 97.86563pt>
 File: graphics/dataset/bits.png Graphic file (type png)
 
 <use graphics/dataset/bits.png>
@@ -780,7 +780,7 @@ Package pdftex.def Info: graphics/dataset/bits.png used on input line 24.
  [6
 
  <./graphics/dataset/bits.png>]
-<graphics/dataset/positionHistograms.pdf, id=471, 569.12625pt x 552.0625pt>
+<graphics/dataset/positionHistograms.pdf, id=468, 569.12625pt x 552.0625pt>
 File: graphics/dataset/positionHistograms.pdf Graphic file (type pdf)
 
 <use graphics/dataset/positionHistograms.pdf>
@@ -788,7 +788,7 @@ Package pdftex.def Info: graphics/dataset/positionHistograms.pdf used on input
 line 74.
 (pdftex.def)             Requested size: 193.47578pt x 187.6735pt.
 
-<graphics/dataset/positionVsRunGraph.pdf, id=472, 569.12625pt x 408.52625pt>
+<graphics/dataset/positionVsRunGraph.pdf, id=469, 569.12625pt x 408.52625pt>
 File: graphics/dataset/positionVsRunGraph.pdf Graphic file (type pdf)
 
 <use graphics/dataset/positionVsRunGraph.pdf>
@@ -799,53 +799,236 @@ line 81.
 rotated 90 degrees> <./graphics/dataset/positionVsRunGraph.pdf, page is rotated
  90 degrees>]
 Chapter 3.
-[8
 
-] <graphics/eventSelection/TofScheme.pdf, id=609, 282.96358pt x 103.878pt>
+<graphics/eventSelection/LocalAngles.pdf, id=588, page=1, 569.12625pt x 552.062
+5pt>
+File: graphics/eventSelection/LocalAngles.pdf Graphic file (type pdf)
+ <use graphics/eventSelection/LocalAngles.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/LocalAngles.pdf, page1 used on
+ input line 59.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+
+<graphics/eventSelection/LocalAngles.pdf, id=589, page=2, 569.12625pt x 552.062
+5pt>
+File: graphics/eventSelection/LocalAngles.pdf Graphic file (type pdf)
+ <use graphics/eventSelection/LocalAngles.pdf, page 2>
+Package pdftex.def Info: graphics/eventSelection/LocalAngles.pdf, page2 used on
+ input line 66.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+
+<graphics/eventSelection/LocalAngles.pdf, id=590, page=3, 569.12625pt x 552.062
+5pt>
+File: graphics/eventSelection/LocalAngles.pdf Graphic file (type pdf)
+ <use graphics/eventSelection/LocalAngles.pdf, page 3>
+Package pdftex.def Info: graphics/eventSelection/LocalAngles.pdf, page3 used on
+ input line 73.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+
+<graphics/eventSelection/zVertexRpVsTpc.pdf, id=592, 569.12625pt x 552.0625pt>
+File: graphics/eventSelection/zVertexRpVsTpc.pdf Graphic file (type pdf)
+
+<use graphics/eventSelection/zVertexRpVsTpc.pdf>
+Package pdftex.def Info: graphics/eventSelection/zVertexRpVsTpc.pdf used on inp
+ut line 91.
+(pdftex.def)             Requested size: 193.47578pt x 187.6735pt.
+
+<graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf, id=593, 569.12625pt x 40
+8.52625pt>
+File: graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf Graphic file (type p
+df)
+ <use graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf>
+Package pdftex.def Info: graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf u
+sed on input line 98.
+(pdftex.def)             Requested size: 263.6139pt x 189.23341pt.
+
+<graphics/eventSelection/DeltaZVx.pdf, id=598, page=1, 569.12625pt x 552.0625pt
+>
+File: graphics/eventSelection/DeltaZVx.pdf Graphic file (type pdf)
+ <use graphics/eventSelection/DeltaZVx.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/DeltaZVx.pdf, page1 used on in
+put line 108.
+(pdftex.def)             Requested size: 229.75896pt x 222.86806pt.
+
+<graphics/eventSelection/MaxAdcBbcLarge.pdf, id=600, page=1, 569.12625pt x 552.
+0625pt>
+File: graphics/eventSelection/MaxAdcBbcLarge.pdf Graphic file (type pdf)
+ <use graphics/eventSelection/MaxAdcBbcLarge.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/MaxAdcBbcLarge.pdf, page1 used
+ on input line 121.
+(pdftex.def)             Requested size: 229.75896pt x 222.86806pt.
+
+<graphics/eventSelection/NTofClusters.pdf, id=602, page=1, 569.12625pt x 552.06
+25pt>
+File: graphics/eventSelection/NTofClusters.pdf Graphic file (type pdf)
+ <use graphics/eventSelection/NTofClusters.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/NTofClusters.pdf, page1 used o
+n input line 135.
+(pdftex.def)             Requested size: 229.75896pt x 222.86806pt.
+ [8
+
+]
+
+LaTeX Warning: Text page 9 contains only floats.
+
+[9 <./graphics/eventSelection/LocalAngles.pdf, page is rotated 90 degrees> <./g
+raphics/eventSelection/LocalAngles.pdf, page is rotated 90 degrees> <./graphics
+/eventSelection/LocalAngles.pdf, page is rotated 90 degrees> <./graphics/eventS
+election/zVertexRpVsTpc.pdf, page is rotated 90 degrees> <./graphics/eventSelec
+tion/zVertexRpMinusZVertexTpc.pdf, page is rotated 90 degrees> <./graphics/even
+tSelection/DeltaZVx.pdf, page is rotated 90 degrees>]
+<graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf, id=795, 569.12625pt x
+ 552.0625pt>
+File: graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf Graphic file (typ
+e pdf)
+ <use graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf>
+Package pdftex.def Info: graphics/eventSelection/PxCentralTrksVsProtons_pion.pd
+f used on input line 153.
+(pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
+
+<graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf, id=796, 569.12625pt x
+ 552.0625pt>
+File: graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf Graphic file (typ
+e pdf)
+ <use graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf>
+Package pdftex.def Info: graphics/eventSelection/PyCentralTrksVsProtons_pion.pd
+f used on input line 160.
+(pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
+
+<graphics/eventSelection/MissingPt.pdf, id=801, page=1, 569.12625pt x 408.52625
+pt>
+File: graphics/eventSelection/MissingPt.pdf Graphic file (type pdf)
+ <use graphics/eventSelection/MissingPt.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/MissingPt.pdf, page1 used on i
+nput line 171.
+(pdftex.def)             Requested size: 306.17798pt x 219.79051pt.
+ [10 <./graphics/eventSelection/MaxAdcBbcLarge.pdf, page is rotated 90 degrees>
+ <./graphics/eventSelection/NTofClusters.pdf, page is rotated 90 degrees>]
+<graphics/eventSelection/TofScheme.pdf, id=897, 282.96358pt x 103.878pt>
 File: graphics/eventSelection/TofScheme.pdf Graphic file (type pdf)
 
 <use graphics/eventSelection/TofScheme.pdf>
 Package pdftex.def Info: graphics/eventSelection/TofScheme.pdf used on input li
-ne 64.
+ne 189.
 (pdftex.def)             Requested size: 140.26883pt x 51.49504pt.
+ [11 <./graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf, page is rotate
+d 90 degrees> <./graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf, page 
+is rotated 90 degrees> <./graphics/eventSelection/MissingPt.pdf, page is rotate
+d 90 degrees> <./graphics/eventSelection/TofScheme.pdf>]
+<graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf, id=1042, 569.12625pt x 552
+.0625pt>
+File: graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf Graphic file (type pdf
+)
+ <use graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf>
+Package pdftex.def Info: graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf use
+d on input line 238.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
 
-<graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf, id=613, 569.12625
+<graphics/eventSelection/SqRootNSigmaPionVsProton.pdf, id=1043, 569.12625pt x 5
+52.0625pt>
+File: graphics/eventSelection/SqRootNSigmaPionVsProton.pdf Graphic file (type p
+df)
+ <use graphics/eventSelection/SqRootNSigmaPionVsProton.pdf>
+Package pdftex.def Info: graphics/eventSelection/SqRootNSigmaPionVsProton.pdf u
+sed on input line 245.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+
+<graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf, id=1044, 569.12625pt x 5
+52.0625pt>
+File: graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf Graphic file (type p
+df)
+ <use graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf>
+Package pdftex.def Info: graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf u
+sed on input line 252.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+
+<graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf, id=1045, 569.12625pt
+ x 552.0625pt>
+File: graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf Graphic file (ty
+pe pdf)
+ <use graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf>
+Package pdftex.def Info: graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.p
+df used on input line 266.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+
+<graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf, id=1046, 569.12625pt
+ x 552.0625pt>
+File: graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf Graphic file (ty
+pe pdf)
+ <use graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf>
+Package pdftex.def Info: graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.p
+df used on input line 273.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+
+<graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf, id=1047, 569.12625
 pt x 552.0625pt>
+File: graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf Graphic file (
+type pdf)
+
+<use graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf>
+Package pdftex.def Info: graphics/eventSelection/SqMassTofVsSqRootNSigma_proton
+.pdf used on input line 280.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+
+<graphics/eventSelection/sqMassFromTof.pdf, id=1048, page=1, 569.12625pt x 408.
+52625pt>
+File: graphics/eventSelection/sqMassFromTof.pdf Graphic file (type pdf)
+ <use graphics/eventSelection/sqMassFromTof.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/sqMassFromTof.pdf, page1 used 
+on input line 294.
+(pdftex.def)             Requested size: 314.40001pt x 225.6875pt.
+
+<graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf, id=1052, 569.1262
+5pt x 552.0625pt>
 File: graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf Graphic file 
 (type pdf)
 
 <use graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf>
 Package pdftex.def Info: graphics/eventSelection/SignificanceVsEfficiency_pTmis
-s.pdf used on input line 127.
+s.pdf used on input line 327.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
 
-<graphics/eventSelection/ROC_pTmiss.pdf, id=614, 569.12625pt x 552.0625pt>
+<graphics/eventSelection/ROC_pTmiss.pdf, id=1053, 569.12625pt x 552.0625pt>
 File: graphics/eventSelection/ROC_pTmiss.pdf Graphic file (type pdf)
 
 <use graphics/eventSelection/ROC_pTmiss.pdf>
 Package pdftex.def Info: graphics/eventSelection/ROC_pTmiss.pdf used on input l
-ine 127.
+ine 327.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
 
-<graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf, id=615, 569.12625
-pt x 552.0625pt>
+<graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf, id=1054, 569.1262
+5pt x 552.0625pt>
 File: graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf Graphic file 
 (type pdf)
 
 <use graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf>
 Package pdftex.def Info: graphics/eventSelection/BkgdFractionVsEfficiency_pTmis
-s.pdf used on input line 137.
+s.pdf used on input line 337.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-)
-(./Corrections.tex [9 <./graphics/eventSelection/TofScheme.pdf>] [10 <./graphic
-s/eventSelection/SignificanceVsEfficiency_pTmiss.pdf, page is rotated 90 degree
-s> <./graphics/eventSelection/ROC_pTmiss.pdf, page is rotated 90 degrees> <./gr
-aphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf, page is rotated 90 d
-egrees>]
+ [12 <./graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf, page is rotated 90 
+degrees> <./graphics/eventSelection/SqRootNSigmaPionVsProton.pdf, page is rotat
+ed 90 degrees> <./graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf, page is
+ rotated 90 degrees> <./graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pd
+f, page is rotated 90 degrees> <./graphics/eventSelection/SqMassTofVsSqRootNSig
+ma_kaon.pdf, page is rotated 90 degrees> <./graphics/eventSelection/SqMassTofVs
+SqRootNSigma_proton.pdf, page is rotated 90 degrees>]
+<graphics/eventSelection/CutFlow.pdf, id=1338, page=1, 569.12625pt x 408.52625p
+t>
+File: graphics/eventSelection/CutFlow.pdf Graphic file (type pdf)
+ <use graphics/eventSelection/CutFlow.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/CutFlow.pdf, page1 used on inp
+ut line 350.
+(pdftex.def)             Requested size: 411.14528pt x 295.13605pt.
+) (./Corrections.tex
+[13 <./graphics/eventSelection/sqMassFromTof.pdf, page is rotated 90 degrees>]
+[14 <./graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf, page is rot
+ated 90 degrees> <./graphics/eventSelection/ROC_pTmiss.pdf, page is rotated 90 
+degrees> <./graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf, page i
+s rotated 90 degrees>] [15 <./graphics/eventSelection/CutFlow.pdf, page is rota
+ted 90 degrees>]
 Chapter 4.
 
-<graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf, id=791, page=1, 569.12
-625pt x 408.52625pt>
+<graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf, id=1576, page=1, 569.1
+2625pt x 408.52625pt>
 File: graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf Graphic file (type
  pdf)
 
@@ -854,8 +1037,8 @@ Package pdftex.def Info: graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf
 , page1 used on input line 43.
 (pdftex.def)             Requested size: 314.40001pt x 225.6875pt.
 
-<graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf, id=797, page
-=1, 569.12625pt x 408.52625pt>
+<graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf, id=1582, pag
+e=1, 569.12625pt x 408.52625pt>
 File: graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf Graphic 
 file (type pdf)
 
@@ -864,13 +1047,13 @@ Package pdftex.def Info: graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi
 _graph.pdf, page1 used on input line 56.
 (pdftex.def)             Requested size: 314.40001pt x 225.6875pt.
 
-[11
+[16
 
  <./graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf, page is rotated 90 
-degrees>] [12 <./graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.p
+degrees>] [17 <./graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.p
 df, page is rotated 90 degrees>]
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=916, page=4, 
-569.12625pt x 203.76125pt>
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=1700, page=4,
+ 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
 
@@ -879,8 +1062,8 @@ Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
 on.pdf, page4 used on input line 97.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
 
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=917, page=14,
- 569.12625pt x 203.76125pt>
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=1701, page=14
+, 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
 
@@ -889,8 +1072,8 @@ Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
 on.pdf, page14 used on input line 97.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
 
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=918, page=24,
- 569.12625pt x 203.76125pt>
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=1702, page=24
+, 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
 
@@ -899,8 +1082,8 @@ Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
 on.pdf, page24 used on input line 97.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
 
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=919, page=34,
- 569.12625pt x 203.76125pt>
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=1703, page=34
+, 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
 
@@ -909,8 +1092,8 @@ Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
 on.pdf, page34 used on input line 97.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
 
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=920, page=9, 
-569.12625pt x 203.76125pt>
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=1704, page=9,
+ 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
 
@@ -919,8 +1102,8 @@ Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
 on.pdf, page9 used on input line 104.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
 
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=921, page=19,
- 569.12625pt x 203.76125pt>
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=1705, page=19
+, 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
 
@@ -929,8 +1112,8 @@ Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
 on.pdf, page19 used on input line 104.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
 
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=922, page=29,
- 569.12625pt x 203.76125pt>
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=1706, page=29
+, 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
 
@@ -939,8 +1122,8 @@ Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
 on.pdf, page29 used on input line 104.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
 
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=923, page=39,
- 569.12625pt x 203.76125pt>
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=1707, page=39
+, 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
 
@@ -949,16 +1132,16 @@ Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
 on.pdf, page39 used on input line 104.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
 
-<graphics/corrections/dEdxMeanOffset_allPIDs.pdf, id=926, 569.12625pt x 408.526
-25pt>
+<graphics/corrections/dEdxMeanOffset_allPIDs.pdf, id=1710, 569.12625pt x 408.52
+625pt>
 File: graphics/corrections/dEdxMeanOffset_allPIDs.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdxMeanOffset_allPIDs.pdf>
 Package pdftex.def Info: graphics/corrections/dEdxMeanOffset_allPIDs.pdf used o
 n input line 122.
 (pdftex.def)             Requested size: 228.54854pt x 164.0559pt.
 
-<graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf, id=927, 569.12625pt x 40
-8.52625pt>
+<graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf, id=1711, 569.12625pt x 4
+08.52625pt>
 File: graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf Graphic file (type p
 df)
  <use graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf>
@@ -966,129 +1149,167 @@ Package pdftex.def Info: graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf u
 sed on input line 122.
 (pdftex.def)             Requested size: 228.54854pt x 164.0559pt.
 
-<graphics/corrections/dEdxWidth_allPIDs.pdf, id=928, 569.12625pt x 408.52625pt>
+<graphics/corrections/dEdxWidth_allPIDs.pdf, id=1712, 569.12625pt x 408.52625pt
+>
 File: graphics/corrections/dEdxWidth_allPIDs.pdf Graphic file (type pdf)
-<use graphics/corrections/dEdxWidth_allPIDs.pdf>
+ <use graphics/corrections/dEdxWidth_allPIDs.pdf>
 Package pdftex.def Info: graphics/corrections/dEdxWidth_allPIDs.pdf used on inp
 ut line 132.
 (pdftex.def)             Requested size: 228.54854pt x 164.0559pt.
 
-<graphics/corrections/dEdxWidth_allPIDs_data.pdf, id=929, 569.12625pt x 408.526
-25pt>
+<graphics/corrections/dEdxWidth_allPIDs_data.pdf, id=1713, 569.12625pt x 408.52
+625pt>
 File: graphics/corrections/dEdxWidth_allPIDs_data.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdxWidth_allPIDs_data.pdf>
 Package pdftex.def Info: graphics/corrections/dEdxWidth_allPIDs_data.pdf used o
 n input line 132.
 (pdftex.def)             Requested size: 228.54854pt x 164.0559pt.
 
-<graphics/corrections/dEdx_DataVsMC.pdf, id=944, page=4, 569.12625pt x 275.0275
-pt>
+<graphics/corrections/dEdx_DataVsMC.pdf, id=1728, page=4, 569.12625pt x 275.027
+5pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdx_DataVsMC.pdf, page 4>
 Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page4 used on 
 input line 181.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
 
-<graphics/corrections/dEdx_DataVsMC.pdf, id=945, page=14, 569.12625pt x 275.027
-5pt>
+<graphics/corrections/dEdx_DataVsMC.pdf, id=1729, page=14, 569.12625pt x 275.02
+75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdx_DataVsMC.pdf, page 14>
 Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page14 used on
  input line 181.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
 
-<graphics/corrections/dEdx_DataVsMC.pdf, id=946, page=24, 569.12625pt x 275.027
-5pt>
+<graphics/corrections/dEdx_DataVsMC.pdf, id=1730, page=24, 569.12625pt x 275.02
+75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdx_DataVsMC.pdf, page 24>
 Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page24 used on
  input line 181.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
 
-<graphics/corrections/dEdx_DataVsMC.pdf, id=947, page=34, 569.12625pt x 275.027
-5pt>
+<graphics/corrections/dEdx_DataVsMC.pdf, id=1731, page=34, 569.12625pt x 275.02
+75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdx_DataVsMC.pdf, page 34>
 Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page34 used on
  input line 181.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
 
-<graphics/corrections/dEdx_DataVsMC.pdf, id=948, page=9, 569.12625pt x 275.0275
-pt>
+<graphics/corrections/dEdx_DataVsMC.pdf, id=1732, page=9, 569.12625pt x 275.027
+5pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdx_DataVsMC.pdf, page 9>
 Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page9 used on 
 input line 188.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
 
-<graphics/corrections/dEdx_DataVsMC.pdf, id=949, page=19, 569.12625pt x 275.027
-5pt>
+<graphics/corrections/dEdx_DataVsMC.pdf, id=1733, page=19, 569.12625pt x 275.02
+75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdx_DataVsMC.pdf, page 19>
 Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page19 used on
  input line 188.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
 
-<graphics/corrections/dEdx_DataVsMC.pdf, id=950, page=29, 569.12625pt x 275.027
-5pt>
+<graphics/corrections/dEdx_DataVsMC.pdf, id=1734, page=29, 569.12625pt x 275.02
+75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdx_DataVsMC.pdf, page 29>
 Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page29 used on
  input line 188.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
 
-<graphics/corrections/dEdx_DataVsMC.pdf, id=951, page=39, 569.12625pt x 275.027
-5pt>
+<graphics/corrections/dEdx_DataVsMC.pdf, id=1735, page=39, 569.12625pt x 275.02
+75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
  <use graphics/corrections/dEdx_DataVsMC.pdf, page 39>
 Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page39 used on
  input line 188.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
-) (./Backgrounds.tex
-[13 <./graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page is ro
-tated 90 degrees> <./graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.p
-df, page is rotated 90 degrees> <./graphics/corrections/dEdx_fitPerMomentumBin_
-3rdIteration.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_fitP
-erMomentumBin_3rdIteration.pdf, page is rotated 90 degrees> <./graphics/correct
-ions/dEdx_fitPerMomentumBin_3rdIteration.pdf, page is rotated 90 degrees> <./gr
-aphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page is rotated 90 
-degrees> <./graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page 
-is rotated 90 degrees> <./graphics/corrections/dEdx_fitPerMomentumBin_3rdIterat
-ion.pdf, page is rotated 90 degrees>] [14 <./graphics/corrections/dEdxMeanOffse
-t_allPIDs.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdxMeanOffs
-et_allPIDs_data.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdxWi
-dth_allPIDs.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdxWidth_
-allPIDs_data.pdf, page is rotated 90 degrees>] [15 <./graphics/corrections/dEdx
-_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_DataVsM
-C.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, p
-age is rotated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, page is r
-otated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, page is rotated 9
-0 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, page is rotated 90 degree
-s> <./graphics/corrections/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./gr
-aphics/corrections/dEdx_DataVsMC.pdf, page is rotated 90 degrees>]
-Chapter 5.
-<graphics/backgrounds/pid-crop.pdf, id=1231, 196.735pt x 92.345pt>
-File: graphics/backgrounds/pid-crop.pdf Graphic file (type pdf)
 
-<use graphics/backgrounds/pid-crop.pdf>
-Package pdftex.def Info: graphics/backgrounds/pid-crop.pdf used on input line 1
-8.
+<graphics/corrections/sqMassTof_DataVsMC.pdf, id=1736, page=1, 569.12625pt x 40
+8.52625pt>
+File: graphics/corrections/sqMassTof_DataVsMC.pdf Graphic file (type pdf)
+ <use graphics/corrections/sqMassTof_DataVsMC.pdf, page 1>
+Package pdftex.def Info: graphics/corrections/sqMassTof_DataVsMC.pdf, page1 use
+d on input line 208.
+(pdftex.def)             Requested size: 152.36569pt x 109.36852pt.
+
+<graphics/corrections/sqMassTof_DataVsMC.pdf, id=1737, page=2, 569.12625pt x 40
+8.52625pt>
+File: graphics/corrections/sqMassTof_DataVsMC.pdf Graphic file (type pdf)
+ <use graphics/corrections/sqMassTof_DataVsMC.pdf, page 2>
+Package pdftex.def Info: graphics/corrections/sqMassTof_DataVsMC.pdf, page2 use
+d on input line 215.
+(pdftex.def)             Requested size: 152.36569pt x 109.36852pt.
+
+<graphics/corrections/sqMassTof_DataVsMC.pdf, id=1738, page=3, 569.12625pt x 40
+8.52625pt>
+File: graphics/corrections/sqMassTof_DataVsMC.pdf Graphic file (type pdf)
+ <use graphics/corrections/sqMassTof_DataVsMC.pdf, page 3>
+Package pdftex.def Info: graphics/corrections/sqMassTof_DataVsMC.pdf, page3 use
+d on input line 222.
+(pdftex.def)             Requested size: 152.36569pt x 109.36852pt.
+)
+(./Backgrounds.tex [18 <./graphics/corrections/dEdx_fitPerMomentumBin_3rdIterat
+ion.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_fitPerMomentu
+mBin_3rdIteration.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx
+_fitPerMomentumBin_3rdIteration.pdf, page is rotated 90 degrees> <./graphics/co
+rrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page is rotated 90 degrees> 
+<./graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page is rotate
+d 90 degrees> <./graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, 
+page is rotated 90 degrees> <./graphics/corrections/dEdx_fitPerMomentumBin_3rdI
+teration.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_fitPerMo
+mentumBin_3rdIteration.pdf, page is rotated 90 degrees>] [19 <./graphics/correc
+tions/dEdxMeanOffset_allPIDs.pdf, page is rotated 90 degrees> <./graphics/corre
+ctions/dEdxMeanOffset_allPIDs_data.pdf, page is rotated 90 degrees> <./graphics
+/corrections/dEdxWidth_allPIDs.pdf, page is rotated 90 degrees> <./graphics/cor
+rections/dEdxWidth_allPIDs_data.pdf, page is rotated 90 degrees>] [20 <./graphi
+cs/corrections/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/corre
+ctions/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/corrections/d
+Edx_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_Data
+VsMC.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf
+, page is rotated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, page i
+s rotated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, page is rotate
+d 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, page is rotated 90 deg
+rees> <./graphics/corrections/sqMassTof_DataVsMC.pdf, page is rotated 90 degree
+s> <./graphics/corrections/sqMassTof_DataVsMC.pdf, page is rotated 90 degrees> 
+<./graphics/corrections/sqMassTof_DataVsMC.pdf, page is rotated 90 degrees>]
+Chapter 5.
+
+<graphics/backgrounds/Raw_MissingPtPid.pdf, id=2061, page=1, 569.12625pt x 408.
+52625pt>
+File: graphics/backgrounds/Raw_MissingPtPid.pdf Graphic file (type pdf)
+ <use graphics/backgrounds/Raw_MissingPtPid.pdf, page 1>
+Package pdftex.def Info: graphics/backgrounds/Raw_MissingPtPid.pdf, page1 used 
+on input line 14.
+(pdftex.def)             Requested size: 314.40001pt x 225.6875pt.
+
+<graphics/backgrounds/pid-crop2.pdf, id=2062, 196.735pt x 92.345pt>
+File: graphics/backgrounds/pid-crop2.pdf Graphic file (type pdf)
+
+<use graphics/backgrounds/pid-crop2.pdf>
+Package pdftex.def Info: graphics/backgrounds/pid-crop2.pdf used on input line 
+28.
 (pdftex.def)             Requested size: 228.54854pt x 107.27666pt.
 
-Overfull \hbox (1.66663pt too wide) detected at line 56
+Overfull \hbox (1.66663pt too wide) detected at line 66
 [][]|  [] \OT1/cmr/m/n/10 = [] []
  []
 
 
-Overfull \hbox (1.66663pt too wide) detected at line 56
+Overfull \hbox (1.66663pt too wide) detected at line 66
 [][] [] \OT1/cmr/m/n/10 = ^^C[] []
  []
 
-) (./SystematicErrors.tex [16
+) (./SystematicErrors.tex [21
 
- <./graphics/backgrounds/pid-crop.pdf>]
+ <./graphics/backgrounds/Raw_MissingPtPid.pdf, page is rotated 90 degrees> <./g
+raphics/backgrounds/pid-crop2.pdf>] [22]
 Chapter 6.
-) [17
+) [23
 
 ] (./CEP_AnalysisNote.lof)
 \tf@lof=\write5
@@ -1099,26 +1320,26 @@ Chapter 6.
 \openout6 = `CEP_AnalysisNote.lot'.
 
 
-(./CEP_AnalysisNote.bbl [18
+(./CEP_AnalysisNote.bbl [24
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
- [19
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
+ [25
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
  (./CEP_AnalysisNote.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
 Package rerunfilecheck Info: File `CEP_AnalysisNote.out' has not changed.
-(rerunfilecheck)             Checksum: 18C9D19A7B892889FBE8129C1E3335F1;4082.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
+(rerunfilecheck)             Checksum: B0FC4616E182B44F631A954297AE0C4A;4082.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
  ) 
 Here is how much of TeX's memory you used:
- 9360 strings out of 494985
- 144065 string characters out of 6180449
- 253471 words of memory out of 5000000
- 12233 multiletter control sequences out of 15000+600000
+ 9461 strings out of 494997
+ 148741 string characters out of 6180841
+ 255118 words of memory out of 5000000
+ 12296 multiletter control sequences out of 15000+600000
  22421 words of font info for 77 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
  36i,24n,51p,1001b,638s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1150,10 +1371,9 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on CEP_AnalysisNote.pdf (19 pages, 2744977 bytes).
+Output written on CEP_AnalysisNote.pdf (25 pages, 3714571 bytes).
 PDF statistics:
- 1455 PDF objects out of 1728 (max. 8388607)
- 978 compressed objects within 10 object streams
- 153 named destinations out of 1000 (max. 500000)
- 598 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2363 PDF objects out of 2487 (max. 8388607)
+ 172 named destinations out of 1000 (max. 500000)
+ 713 words of extra memory for PDF output out of 10000 (max. 10000000)
 

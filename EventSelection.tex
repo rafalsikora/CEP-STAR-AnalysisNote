@@ -47,10 +47,135 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 Bla bla
 \subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
 \subsection{(\ref{enum:CutRpTrks})~RP tracks}
+
+%---------------------------
+\begin{figure}[ht!]
+\centering
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:LocalAngles_2D}}{\includegraphics[width=\linewidth,page=1]{graphics/eventSelection/LocalAngles.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:LocalAngles_1D_x}}{\includegraphics[width=\linewidth,page=2]{graphics/eventSelection/LocalAngles.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:LocalAngles_1D_y}}{\includegraphics[width=\linewidth,page=3]{graphics/eventSelection/LocalAngles.pdf}}}
+  \end{subfigure}
+}%
+\caption{Local angles of global tracks in Roman Pots.}
+\end{figure}
+%---------------------------
+
+
+
 \subsection{(\ref{enum:CutDeltaZVx})~TPC-RP \texorpdfstring{$z$}{z}-vertex matching}
+
+
+%---------------------------
+\begin{figure}[ht!]
+\centering
+\parbox{0.4\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:zVertexRpVsTpc}}{\includegraphics[width=\linewidth]{graphics/eventSelection/zVertexRpVsTpc.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.545\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:zVertexRpMinusZVertexTpc}}{\includegraphics[width=\linewidth]{graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf}}}
+  \end{subfigure}
+}%
+\caption[Correlation and difference of $z$-vertex position measured in Roman Pots and TPC.]{Correlation (Fig.~\ref{fig:zVertexRpVsTpc}) and difference (Fig.~\ref{fig:zVertexRpMinusZVertexTpc}) of $z$-vertex position measured in Roman Pots and TPC.}
+\end{figure}
+%---------------------------
+
+
+%---------------------------
+\begin{figure}[ht!]
+% \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
+\centering%
+\includegraphics[width=0.475\linewidth,page=1]{graphics/eventSelection/DeltaZVx.pdf}%
+% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/DeltaZVx.pdf}%
+\caption{Delta z-vx.}\label{fig:DeltaZVx}%
+\end{figure}
+% \end{wrapfigure}
+%---------------------------
+
 \subsection{(\ref{enum:CutBbcLarge})~BBC-large signal veto}
+
+%---------------------------
+\begin{figure}[ht!]
+% \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
+\centering%
+\includegraphics[width=0.475\linewidth,page=1]{graphics/eventSelection/MaxAdcBbcLarge.pdf}%
+% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/MaxAdcBbcLarge.pdf}%
+\caption{MaxAdcBbcLarge.}\label{fig:MaxAdcBbcLarge}%
+\end{figure}
+% \end{wrapfigure}
+%---------------------------
+
+
 \subsection{(\ref{enum:CutTofClusters})~TOF clusters limit}
+
+%---------------------------
+\begin{figure}[ht!]
+% \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
+\centering%
+\includegraphics[width=0.475\linewidth,page=1]{graphics/eventSelection/NTofClusters.pdf}%
+% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/NTofClusters.pdf}%
+\caption{NTofClusters.}\label{fig:NTofClusters}%
+\end{figure}
+% \end{wrapfigure}
+%---------------------------
+
 \subsection{(\ref{enum:CutMissingPt})~Exclusivity cut (missing \texorpdfstring{$p_{T}$}{pT} cut)}
+
+
+%---------------------------
+\begin{figure}[ht!]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:PxCentralTrksVsProtons_pion}}{\includegraphics[width=\linewidth]{graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:PyCentralTrksVsProtons_pion}}{\includegraphics[width=\linewidth]{graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf}}}
+  \end{subfigure}
+}%
+\caption{Correlation between sum of corresponding momentum components ($x$ in Fig.~\ref{fig:PxCentralTrksVsProtons_pion} and $y$ in Fig.~\ref{fig:PyCentralTrksVsProtons_pion}) of Roman Pot proton tracks and TPC tracks.}
+\end{figure}
+Tutaj dodac rysunki z suma 1D tych wielkosci i uzasadnic stosowanie ciecia na missing pT takimi samymi rozdzielczosciami w x i y
+%---------------------------
+
+
+%---------------------------
+\begin{figure}[ht!]
+% \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
+\centering%
+\includegraphics[width=0.633\linewidth,page=1]{graphics/eventSelection/MissingPt.pdf}%
+% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/MissingPt.pdf}%
+\caption{MissingPt.}\label{fig:MissingPt}%
+\end{figure}
+% \end{wrapfigure}
+%---------------------------
+
+
 \subsection{(\ref{enum:CutPid})~Particle identification}
 
 In addition to information from the TPC we use time of hit detection in the barrel TOF subsystem. From the simple algebra describing relation between track lengths, momenta and times of hit detection one can derive formula for the squared mass of two particles, assuming that their masses are equal (particles are of the same type):
@@ -98,6 +223,81 @@ m^{2}_{\textrm{\tiny TOF}} = \frac{-\mathcal{B}+\sqrt{\mathcal{B}^2-4\mathcal{A}
 \end{equation}
 
 
+
+
+
+
+%---------------------------
+\begin{figure}[ht!]
+\centering
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:SqRootNSigmaPionVsKaon}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:SqRootNSigmaPionVsProton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaPionVsProton.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:SqRootNSigmaKaonVsProton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf}}}
+  \end{subfigure}
+}%
+\caption{Correlation between $n\sigma^{\textrm{pair}}$ from TPC for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.}
+\end{figure}
+%---------------------------
+
+
+%---------------------------
+\begin{figure}[ht!]
+\centering
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:SqMassTofVsSqRootNSigma_pion}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:SqMassTofVsSqRootNSigma_kaon}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:SqMassTofVsSqRootNSigma_proton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf}}}
+  \end{subfigure}
+}%
+\caption{Correlation between $m^{2}$ from TOF and $n\sigma^{\textrm{pair}}$ from TPC for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.}
+\end{figure}
+%---------------------------
+
+
+
+
+
+
+
+%---------------------------
+\begin{figure}[ht!]
+\centering%
+\includegraphics[width=0.65\linewidth,page=1]{graphics/eventSelection/sqMassFromTof.pdf}%
+\caption{Squared particle mass from TOF for candidates of given PID selected based on $dE/dx$ in TPC.}\label{fig:sqMassFromTof}%
+\end{figure}
+%---------------------------
+
+
+
 \section{Working point for cuts~\ref{enum:CutBbcLarge}, \ref{enum:CutTofClusters} and \ref{enum:CutMissingPt}}
 
 \begin{tabulary}{\textwidth}{LLL}
@@ -143,3 +343,11 @@ m^{2}_{\textrm{\tiny TOF}} = \frac{-\mathcal{B}+\sqrt{\mathcal{B}^2-4\mathcal{A}
 \section{Signal per integrated luminosity}
 
 \section{Cut flow}\label{sec:cutFlow}
+
+%---------------------------
+\begin{figure}[ht!]
+\centering%
+\includegraphics[width=0.85\linewidth,page=1]{graphics/eventSelection/CutFlow.pdf}%
+\caption{Cut flow.}\label{fig:CutFlow}%
+\end{figure}
+%---------------------------

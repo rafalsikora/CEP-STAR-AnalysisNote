@@ -5,14 +5,27 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Sketch of the trigger components used in definitions of diffractive triggers in run 15.\relax }}{6}{figure.caption.3}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Beam-detector distance of the Roman Pots in run 15.}}{7}{figure.caption.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Scheme of two central tracks with common vertex, hitting cells in TOF detector.}}{9}{figure.caption.6}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Relation between $\pi ^{+}\pi ^{-}$ significance, efficiency and purity vs. thresholds in cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Local angles of global tracks in Roman Pots.\relax }}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Correlation and difference of $z$-vertex position measured in Roman Pots and TPC.}}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Delta z-vx.\relax }}{9}{figure.caption.8}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces MaxAdcBbcLarge.\relax }}{10}{figure.caption.9}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces NTofClusters.\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Correlation between sum of corresponding momentum components ($x$ in Fig.\nobreakspace {}\ref {fig:PxCentralTrksVsProtons_pion} and $y$ in Fig.\nobreakspace {}\ref {fig:PyCentralTrksVsProtons_pion}) of Roman Pot proton tracks and TPC tracks.\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces MissingPt.\relax }}{11}{figure.caption.12}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Scheme of two central tracks with common vertex, hitting cells in TOF detector.}}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Correlation between $n\sigma ^{\textrm {pair}}$ from TPC for $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{12}{figure.caption.14}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Correlation between $m^{2}$ from TOF and $n\sigma ^{\textrm {pair}}$ from TPC for $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{12}{figure.caption.15}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Squared particle mass from TOF for candidates of given PID selected based on $dE/dx$ in TPC.\relax }}{13}{figure.caption.16}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Relation between $\pi ^{+}\pi ^{-}$ significance, efficiency and purity vs. thresholds in cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Cut flow.\relax }}{15}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Overall efficiency of the online BBC-small and ZDC veto as a function of instantaneous luminosity.\relax }}{11}{figure.caption.8}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Overall efficiency of the online BBC-small and ZDC veto, primary vertices limit\nobreakspace {}(\ref {enum:CutPrimVx}), BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}) and TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters}) as a function of instantaneous luminosity.\relax }}{12}{figure.caption.9}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Fits to dE/dx spectra from the data.}}{13}{figure.caption.10}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Parameters of track dE/dx as a function of reconstructed momentum for a few particle species.}}{14}{figure.caption.11}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison of dE/dx spectra between data and MC.}}{15}{figure.caption.13}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overall efficiency of the online BBC-small and ZDC veto as a function of instantaneous luminosity.\relax }}{16}{figure.caption.19}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Overall efficiency of the online BBC-small and ZDC veto, primary vertices limit\nobreakspace {}(\ref {enum:CutPrimVx}), BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}) and TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters}) as a function of instantaneous luminosity.\relax }}{17}{figure.caption.20}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Fits to dE/dx spectra from the data.}}{18}{figure.caption.21}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Parameters of track dE/dx as a function of reconstructed momentum for a few particle species.}}{19}{figure.caption.22}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison of dE/dx spectra between data and MC.}}{20}{figure.caption.24}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of $m^{2}$ from TOF between data and MC for exclusive $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{20}{figure.caption.25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Graph illustrating the misidentification problem.}}{16}{figure.caption.14}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Missing pT.\relax }}{21}{figure.caption.26}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Graph illustrating the misidentification problem.}}{21}{figure.caption.27}
 \addvspace {10\p@ }
