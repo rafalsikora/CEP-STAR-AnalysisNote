@@ -40,7 +40,16 @@ All RP triggers which were intended for usage in diffractive physics analyses or
 
 \section{Reconstruction software}\label{sec:recoSoftware}
 
-Raw data was processed with STAR libraries in versions SL15k (trigger datasets: production\_pp200trans\_2015, production\_pp200long2\_2015, production\_pp200long3\_2015) and SL16d (production\_pp200long\_2015)~\cite{ProductionList}.
+Raw data was processed with STAR libraries in versions SL15f. All four trigger datasets were processed: production\_pp200trans\_2015, production\_pp200long2\_2015, production\_pp200long3\_2015 and production\_pp200long\_2015 (see~\cite{ProductionList}).
+
+The following BFC options were used in the reconstruction:\vspace{-5pt}
+\begin{verbatim}
+DbV20160418,pp2015c,btof,mtd,mtdCalib,pp2pp,-beamline,beamline3D,useBTOFmatchOnly,VFStoreX,
+fmsDat,fmsPoint,fpsDat,BEmcChkStat,-evout,CorrX,OSpaceZ2,OGridLeak3D,-hitfilt
+\end{verbatim}
+Main attention should be put on option \textbf{useBTOFmatchOnly} which forced vertexing algorithm to form vertices only from the global TPC tracks which are matched with hits in the TOF system. This solution was found to yield significantly larger signal reconstruction efficiency (vertexing efficiency) and better resolutions. The study which lead to above conclusions, presented in Ref.~\cite{RevertexingProposal}, was performed on the same dataset processed with older libraries SL15k (without useBTOFmatchOnly option).
+
+
 
 \section{Data format}\label{sec:dataFormat}
 

@@ -40,15 +40,15 @@
 \contentsline {subsubsection}{\numberline {4.2.2.5}Particle identification\nobreakspace {}(\ref {enum:CutPid})}{17}{subsubsection.4.2.2.5}
 \contentsline {subsection}{\numberline {4.2.3}RP track acceptance and reconstruction efficiency}{18}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}TPC track acceptance and reconstruction efficiency}{18}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}TOF acceptance, reconstruction and track-matching efficiency}{18}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}TPC vertex reconstruction efficiency}{18}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Particle energy loss}{18}{section.4.3}
-\contentsline {section}{\numberline {4.4}Background subtraction}{18}{section.4.4}
-\contentsline {section}{\numberline {4.5}Unfolding}{18}{section.4.5}
-\contentsline {chapter}{\numberline {5}Backgrounds}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Non-exclusive background}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}Exclusive background (particle misidentification)}{21}{section.5.2}
-\contentsline {chapter}{\numberline {6}Systematic errors}{23}{chapter.6}
-\contentsline {chapter}{List of Figures}{24}{chapter*.28}
-\contentsline {chapter}{List of Tables}{24}{chapter*.29}
-\contentsline {chapter}{References}{25}{chapter*.30}
+\contentsline {subsection}{\numberline {4.2.5}TOF acceptance, reconstruction and track-matching efficiency}{19}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}TPC vertex reconstruction efficiency}{19}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Particle energy loss}{19}{section.4.3}
+\contentsline {section}{\numberline {4.4}Background subtraction}{19}{section.4.4}
+\contentsline {section}{\numberline {4.5}Unfolding}{19}{section.4.5}
+\contentsline {chapter}{\numberline {5}Backgrounds}{22}{chapter.5}
+\contentsline {section}{\numberline {5.1}Non-exclusive background}{22}{section.5.1}
+\contentsline {section}{\numberline {5.2}Exclusive background (particle misidentification)}{22}{section.5.2}
+\contentsline {chapter}{\numberline {6}Systematic errors}{24}{chapter.6}
+\contentsline {chapter}{List of Figures}{25}{chapter*.28}
+\contentsline {chapter}{List of Tables}{25}{chapter*.29}
+\contentsline {chapter}{References}{26}{chapter*.30}
