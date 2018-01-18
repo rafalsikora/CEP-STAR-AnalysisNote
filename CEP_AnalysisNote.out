@@ -14,7 +14,7 @@
 \BOOKMARK [0][-]{chapter.3}{Event selection}{}% 14
 \BOOKMARK [1][-]{section.3.1}{List of cuts}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.2}{Description of cuts}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.2.1}{\(C1,C2\) Primary vertex}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{\(C1,C2\) Primary vertex and its z-position}{section.3.2}% 17
 \BOOKMARK [2][-]{subsection.3.2.2}{\(C3\) TPC tracks}{section.3.2}% 18
 \BOOKMARK [2][-]{subsection.3.2.3}{\(C4\) RP tracks}{section.3.2}% 19
 \BOOKMARK [2][-]{subsection.3.2.4}{\(C5\) TPC-RP z-vertex matching}{section.3.2}% 20
@@ -49,6 +49,6 @@
 \BOOKMARK [1][-]{section.5.1}{Non-exclusive background}{chapter.5}% 49
 \BOOKMARK [1][-]{section.5.2}{Exclusive background \(particle misidentification\)}{chapter.5}% 50
 \BOOKMARK [0][-]{chapter.6}{Systematic errors}{}% 51
-\BOOKMARK [0][-]{chapter*.28}{List of Figures}{}% 52
-\BOOKMARK [0][-]{chapter*.29}{List of Tables}{}% 53
-\BOOKMARK [0][-]{chapter*.30}{References}{}% 54
+\BOOKMARK [0][-]{chapter*.29}{List of Figures}{}% 52
+\BOOKMARK [0][-]{chapter*.30}{List of Tables}{}% 53
+\BOOKMARK [0][-]{chapter*.31}{References}{}% 54

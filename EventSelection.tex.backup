@@ -15,13 +15,16 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 \begin{enumerate}[label=\textbf{C\arabic*},ref=C\arabic*]
  \itemm Exactly 1 primary vertex with TPC track(s) matched with hits in TOF.\label{enum:CutPrimVx}
  \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\textrm{vx}}|<100$~cm.\label{enum:CutZVx}
- \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality and within high TPC acceptance region~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}).\label{enum:CutTpcTrks}
+ \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}), reconstructed within region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}) and with small distance of closest approach (DCA) to the vertex~(\ref{enum:TpcDcaCuts}).\label{enum:CutTpcTrks}
     \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
       \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks,\label{enum:TpcTofMatched}
       \itemm Tracks are of opposite signs,\label{enum:TpcOppoSign}
-      \itemm Both tracks satisfy criteria below:\label{enum:TpcQualityCuts}\\[2pt]
-      $|\eta|<1$,~~~~$p_{T}>0.2~\textrm{GeV}/c$,~~~~$\textrm{DCA}(R)<1.5$~cm,~~~~$\textrm{DCA}(z)<1$~cm,\\[2pt]
-      $N_{\textrm{hits}}^{\textrm{fit}}\geq25$,~~~~$N_{\textrm{hits}}^{\textrm{dE/dx}}\geq15$,~~~~$N_{\textrm{hits}}^{\textrm{fit}}/N_{\textrm{hits}}^{\textrm{poss}}\geq0.52$,
+      \itemm Both tracks are contained within the kinematic range:\label{enum:TpcKinematicCuts}\\[2pt]
+      $|\eta|<1$,~~~~$p_{T}>0.2~\textrm{GeV}/c$,
+      \itemm Both tracks satisfy quality criteria:\label{enum:TpcQualityCuts}\\[2pt]
+      $N_{\textrm{hits}}^{\textrm{fit}}\geq25$,~~~~$N_{\textrm{hits}}^{\textrm{dE/dx}}\geq15$,~~~~$N_{\textrm{hits}}^{\textrm{fit}}/N_{\textrm{hits}}^{\textrm{poss}}\geq0.52$,~~~~$d_{0}<2$~cm,~~~~$|z_{0}|<200$~cm,
+      \itemm Both tracks are well associated with the primary vertex (DCA is small):\label{enum:TpcDcaCuts}\\[2pt]
+      $\textrm{DCA}(R)<1.5$~cm,~~~~$\textrm{DCA}(z)<1$~cm.
     \end{enumerate}
  \itemm Exactly 1 RP track on each side of STAR central detector~(\ref{enum:RpOneTrkPerSide}) of good quality~(\ref{enum:RpQualityCuts}), with local angles consistent with the IP being the track origin~(\ref{enum:RpLocalAngles}), lying within fiducial region of high geometrical acceptance~(\ref{enum:RpFiducial}).\label{enum:CutRpTrks}
       \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
@@ -32,7 +35,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
       $(p_{x}/(\textrm{GeV}/c)+0.3)^{2}+(p_{y}/(\textrm{GeV}/c))^{2}<0.46^{2}$,~~~~~~~$(p_{x}/(\textrm{GeV}/c)-0.15)^{2}+(p_{y}/(\textrm{GeV}/c))^{2}<0.42^{2}$.
     \end{enumerate}
  \itemm Vertex $z$-positions measured in TPC and reconstructed from the difference of proton detection time in west and east RPs are consistent with each other within the resolution: $|z_{\textrm{vx}}^{\textrm{TPC}}-z_{\textrm{vx}}^{\textrm{RP}}|<36$~cm.\label{enum:CutDeltaZVx}
- \itemm No signal in any tile of BBC-large (east or west) with $\textrm{ADC}>40$ and $\textrm{TDC}>100$.\label{enum:CutBbcLarge}
+ \itemm No signal in any tile of BBC-large (east or west) with $\textrm{ADC}>40$ and $100<\textrm{TDC}<2400$.\label{enum:CutBbcLarge}
  \itemm Maximally 2 reconstructed TOF clusters $N^{\textrm{TOF}}_{\textrm{clstrs}}\leq 2$.\label{enum:CutTofClusters}
  \itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\textrm{miss}}<75~\textrm{MeV}/c$.\label{enum:CutMissingPt}
  \itemm Particle (pair) identification:\label{enum:CutPid}\\
@@ -43,8 +46,10 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 \end{enumerate}
 
 \section{Description of cuts}\label{sec:descriptionOfCuts}
-\subsection{(\ref{enum:CutPrimVx},\ref{enum:CutZVx})~Primary vertex}
-Bla bla
+\subsection{(\ref{enum:CutPrimVx},\ref{enum:CutZVx})~Primary vertex and its \texorpdfstring{$z$}{z}-position}
+
+
+
 \subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
 \subsection{(\ref{enum:CutRpTrks})~RP tracks}
 
