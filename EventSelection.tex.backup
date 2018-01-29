@@ -22,8 +22,8 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
       \itemm Both tracks are contained within the kinematic range:\label{enum:TpcKinematicCuts}\\[2pt]
       $|\eta|<1$,~~~~$p_{T}>0.2~\textrm{GeV}/c$,
       \itemm Both tracks satisfy quality criteria:\label{enum:TpcQualityCuts}\\[2pt]
-      $N_{\textrm{hits}}^{\textrm{fit}}\geq25$,~~~~$N_{\textrm{hits}}^{\textrm{dE/dx}}\geq15$,~~~~$N_{\textrm{hits}}^{\textrm{fit}}/N_{\textrm{hits}}^{\textrm{poss}}\geq0.52$,~~~~$d_{0}<2$~cm,~~~~$|z_{0}|<200$~cm,
-      \itemm Both tracks are well associated with the primary vertex (DCA is small):\label{enum:TpcDcaCuts}\\[2pt]
+      $N_{\textrm{hits}}^{\textrm{fit}}\geq25$,~~~~$N_{\textrm{hits}}^{\textrm{dE/dx}}\geq15$,~~~~$N_{\textrm{hits}}^{\textrm{fit}}/N_{\textrm{hits}}^{\textrm{poss}}\geq0.52$,~~~~$|d_{0}|<2$~cm,~~~~$|z_{0}|<200$~cm,
+      \itemm Both tracks match well to the primary vertex (DCA is small):\label{enum:TpcDcaCuts}\\[2pt]
       $\textrm{DCA}(R)<1.5$~cm,~~~~$\textrm{DCA}(z)<1$~cm.
     \end{enumerate}
  \itemm Exactly 1 RP track on each side of STAR central detector~(\ref{enum:RpOneTrkPerSide}) of good quality~(\ref{enum:RpQualityCuts}), with local angles consistent with the IP being the track origin~(\ref{enum:RpLocalAngles}), lying within fiducial region of high geometrical acceptance~(\ref{enum:RpFiducial}).\label{enum:CutRpTrks}
@@ -48,7 +48,25 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 \section{Description of cuts}\label{sec:descriptionOfCuts}
 \subsection{(\ref{enum:CutPrimVx},\ref{enum:CutZVx})~Primary vertex and its \texorpdfstring{$z$}{z}-position}
 
-
+%---------------------------
+\begin{figure}[ht!]
+\centering
+\parbox{0.4\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:NumberOfPrimaryVertices}}{\includegraphics[width=\linewidth]{graphics/eventSelection/NumberOfPrimaryVertices.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.545\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:zVertexTpc}}{\includegraphics[width=\linewidth]{graphics/eventSelection/zVertex_oneTof.pdf}}}
+  \end{subfigure}
+}%
+\caption[Primary vertex multiplicty and \texorpdfstring{$z$}{z}-position of the single primary vertex.]{Primary vertex multiplicty (Fig.~\ref{fig:NumberOfPrimaryVertices}) and \texorpdfstring{$z$}{z}-position of the single primary vertex (Fig.~\ref{fig:zVertexTpc}).}
+\end{figure}
+%---------------------------
 
 \subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
 \subsection{(\ref{enum:CutRpTrks})~RP tracks}
