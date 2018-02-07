@@ -46,9 +46,11 @@
 \BOOKMARK [1][-]{section.4.4}{Background subtraction}{chapter.4}% 46
 \BOOKMARK [1][-]{section.4.5}{Unfolding}{chapter.4}% 47
 \BOOKMARK [0][-]{chapter.5}{Backgrounds}{}% 48
-\BOOKMARK [1][-]{section.5.1}{Non-exclusive background}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.2}{Exclusive background \(particle misidentification\)}{chapter.5}% 50
-\BOOKMARK [0][-]{chapter.6}{Systematic errors}{}% 51
-\BOOKMARK [0][-]{chapter*.33}{List of Figures}{}% 52
-\BOOKMARK [0][-]{chapter*.34}{List of Tables}{}% 53
-\BOOKMARK [0][-]{chapter*.35}{References}{}% 54
+\BOOKMARK [1][-]{section.5.1}{Sources of background}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.1.1}{Non-exclusive background}{section.5.1}% 50
+\BOOKMARK [2][-]{subsection.5.1.2}{Exclusive background \(particle misidentification\)}{section.5.1}% 51
+\BOOKMARK [1][-]{section.5.2}{Background and signal normalization}{chapter.5}% 52
+\BOOKMARK [0][-]{chapter.6}{Systematic errors}{}% 53
+\BOOKMARK [0][-]{chapter*.33}{List of Figures}{}% 54
+\BOOKMARK [0][-]{chapter*.34}{List of Tables}{}% 55
+\BOOKMARK [0][-]{chapter*.35}{References}{}% 56

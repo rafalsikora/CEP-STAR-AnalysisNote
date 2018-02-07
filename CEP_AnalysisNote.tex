@@ -19,6 +19,19 @@
 \usepackage{bm}
 \usepackage{wrapfig}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% making figures in the subsection where placed (according to https://tex.stackexchange.com/questions/279/how-do-i-ensure-that-figures-appear-in-the-section-theyre-associated-with/235312#235312 )
+\usepackage{placeins}
+
+\let\Oldsection\section
+\renewcommand{\section}{\FloatBarrier\Oldsection}
+
+\let\Oldsubsection\subsection
+\renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
+
+\let\Oldsubsubsection\subsubsection
+\renewcommand{\subsubsection}{\FloatBarrier\Oldsubsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
 \pdfinfo{%
   /Title    ()
   /Author   (Rafał Sikora)
