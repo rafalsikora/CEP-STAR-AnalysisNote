@@ -15,15 +15,15 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 \begin{enumerate}[label=\textbf{C\arabic*},ref=C\arabic*]
  \itemm Exactly 1 primary vertex with TPC track(s) matched with hits in TOF.\label{enum:CutPrimVx}
  \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\textrm{vx}}|<100$~cm.\label{enum:CutZVx}
- \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}), reconstructed within region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}) and with small distance of closest approach (DCA) to the vertex~(\ref{enum:TpcDcaCuts}).\label{enum:CutTpcTrks}
+ \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}), reconstructed within kinematic region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}) and with small distance of closest approach (DCA) to the vertex~(\ref{enum:TpcDcaCuts}).\label{enum:CutTpcTrks}
     \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
-      \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks,\label{enum:TpcTofMatched}
+      \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks and no addional primary tracks matched with BEMC clusters,\label{enum:TpcTofMatched}
       \itemm Tracks are of opposite signs,\label{enum:TpcOppoSign}
       \itemm Both tracks are contained within the kinematic range:\label{enum:TpcKinematicCuts}\\[2pt]
       $|\eta|<1$,~~~~$p_{T}>0.2~\textrm{GeV}/c$,
       \itemm Both tracks satisfy quality criteria:\label{enum:TpcQualityCuts}\\[2pt]
       $N_{\textrm{hits}}^{\textrm{fit}}\geq25$,~~~~$N_{\textrm{hits}}^{\textrm{dE/dx}}\geq15$,~~~~$N_{\textrm{hits}}^{\textrm{fit}}/N_{\textrm{hits}}^{\textrm{poss}}\geq0.52$,~~~~$|d_{0}|<2$~cm,~~~~$|z_{0}|<200$~cm,
-      \itemm Both tracks match well to the primary vertex (DCA is small):\label{enum:TpcDcaCuts}\\[2pt]
+      \itemm Both tracks match well to the primary vertex:\label{enum:TpcDcaCuts}\\[2pt]
       $\textrm{DCA}(R)<1.5$~cm,~~~~$\textrm{DCA}(z)<1$~cm.
     \end{enumerate}
  \itemm Exactly 1 RP track on each side of STAR central detector~(\ref{enum:RpOneTrkPerSide}) of good quality~(\ref{enum:RpQualityCuts}), with local angles consistent with the IP being the track origin~(\ref{enum:RpLocalAngles}), lying within fiducial region of high geometrical acceptance~(\ref{enum:RpFiducial}).\label{enum:CutRpTrks}
@@ -47,28 +47,54 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 
 \section{Description of cuts}\label{sec:descriptionOfCuts}
 \subsection{(\ref{enum:CutPrimVx},\ref{enum:CutZVx})~Primary vertex and its \texorpdfstring{$z$}{z}-position}
+As it was designed in the trigger logic, we aim to perform CEP analysis in a clean, pile-up-free environment, therefore we cut on primary vertex multiplicty~(Fig.~\ref{fig:NumberOfPrimaryVertices}) to reject events with more than one interaction per bunch crossing. We require exactly one primary vertex containing TPC tracks matched with hits in TOF (matching of the track with hit in TOF is identified with the TOF match flag being different from 0). Later in the text we refer to such events as a single ``TOF vertex`` events.
 
 %---------------------------
-\begin{figure}[ht!]
-\centering
-\parbox{0.4\textwidth}{
+\begin{figure}[ht!]%
+\centering%
+\begin{minipage}{.4725\textwidth}%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/eventSelection/NumberOfPrimaryVertices.pdf}%
+  \caption{Primary vertex multiplicty. Red arrow marks bin with events with exactly one primary vertex (with track(s) matched with hit in TOF), which are used in physics analysis.\newline}\label{fig:NumberOfPrimaryVertices}
+\end{minipage}%
+\quad\quad%
+\begin{minipage}{.4725\textwidth}%
   \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:NumberOfPrimaryVertices}}{\includegraphics[width=\linewidth]{graphics/eventSelection/NumberOfPrimaryVertices.pdf}}}
-  \end{subfigure}
-}
-\quad
-\parbox{0.545\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:zVertexTpc}}{\includegraphics[width=\linewidth]{graphics/eventSelection/zVertex_oneTof.pdf}}}
-  \end{subfigure}
-}%
-\caption[Primary vertex multiplicty and \texorpdfstring{$z$}{z}-position of the single primary vertex.]{Primary vertex multiplicty (Fig.~\ref{fig:NumberOfPrimaryVertices}) and \texorpdfstring{$z$}{z}-position of the single primary vertex (Fig.~\ref{fig:zVertexTpc}).}
-\end{figure}
+  \includegraphics[width=\linewidth]{graphics/eventSelection/zVertex_oneTof.pdf}\newline\newline\newline%
+  \caption{\texorpdfstring{$z$}{z}-position of the primary vertex in single TOF vertex events. Red dashed line indicate range of longitudinal vertex position accepted in analysis.}\label{fig:zVertexTpc}
+\end{minipage}%
+\end{figure}%
 %---------------------------
+
+
+The single TOF vertex is required to be placed within a range $(-100~\textrm{cm},~100~\textrm{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons, therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties.
 
 \subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
+
+The TPC track selection starts from the selection of events with exactly two primary tracks matched with hit in TOF~(Fig.~\ref{fig:NumberOfTofTracksInSingleTofVertex}). It is in accordance with the trigger logic (requirement of at least 2 L0 TOF hits), as well as it enables more accurate particle identification with merged time-of-flight and $dE/dx$ method, comparing to usage of $dE/dx$ only. Primary tracks which are matched with hit in TOF are in vast majority an in-time tracks of real particles, whereas primary tracks not matched with hit in TOF, whose average multiplicty in single TOF vertex is $\sim$8, are hardly distinguished between real and fake (off-time) tracks. This is an additional reason to not analyze events with only one TOF-matched primary TPC track (the other track might be unmatched due to TOF inefficiency).
+
+%---------------------------
+\begin{figure}[hb!]%
+\centering%
+\begin{minipage}{.4725\textwidth}%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/NumberOfTofTracksInSingleTofVertex.pdf}%
+  \caption[Multiplicty of primary TPC tracks matched with hit in TOF for single TOF vertex events]{Multiplicty of primary TPC tracks matched with hit in TOF for single TOF vertex events. Red arrow marks bin with events with exactly two primary tracks matched with hit in TOF, which are used in physics analysis.\newline}\label{fig:NumberOfTofTracksInSingleTofVertex}
+\end{minipage}%
+\quad\quad%
+\begin{minipage}{.4725\textwidth}%
+  \centering
+  \includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/Rmin.pdf}%
+  \caption[Distribution of a distance in $\eta-\phi$ space between the BEMC cluster closest to primary TPC track ($R_{\textrm{min}}$)]{Distribution of a distance in $\eta-\phi$ space between the BEMC cluster closest to primary TPC track matched (filled circle) or not matched (opened circle) with hit in TOF, for single TOF vertex events. Red dashed line indicate matching threshold $R^{\textrm{match}}_{\textrm{max}} = 0.05$.}\label{fig:Rmin} %which are expected to reack BEMC
+\end{minipage}%
+\end{figure}%
+%---------------------------
+
+Primary TPC tracks from the single TOF vertex which are matched with TOF are allowed to be also matched with BEMC clusters. Matching with BEMC cluster is claimed if the distance in $\eta-\phi$ space between the BEMC cluster position $(\eta_{\textrm{clus}},~\phi_{\textrm{clus}})$ and projected position of the track in BEMC $(\eta_{\textrm{proj}},~\phi_{\textrm{proj}})$, defined as
+\begin{equation}
+ R=\sqrt{(\eta_{\textrm{clus}}-\eta_{\textrm{proj}})^{2} + (\phi_{\textrm{clus}}-\phi_{\textrm{proj}})^{2}},
+\end{equation}
+is less than $R^{\textrm{match}}_{\textrm{max}} = 0.05$. Distribution of the minimum distance between the primary TPC track and the closest BEMC cluster is shown in~Fig.~\ref{fig:Rmin}. However, if there are any primary TPC tracks matched with BEMC cluster and not matched with TOF in the single TOF vertex with two TOF-matched tracks, an event is rejected. Such configuration implies higher-than-2 multiplicty of the real tracks in the vertex, hence an event is unlikely a Central Exclusive Production of two particles.
 
 
 
@@ -84,7 +110,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
                 \subcaptionbox{\label{fig:NHitsFit_to_NHitsPos}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/NHitsFit_to_NHitsPos.pdf}}
   \end{subfigure}
 }%
-\quad%
+\quad\quad%
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
@@ -92,7 +118,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
   \end{subfigure}\\
   \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
     \caption[Comparison of distribution of $N_{\textrm{hits}}^{\textrm{fit}}$,~$N_{\textrm{hits}}^{\textrm{dE/dx}}$ and $N_{\textrm{hits}}^{\textrm{fit}}/N_{\textrm{hits}}^{\textrm{poss}}$ in the data and embedded MC]
-    {Comparison of distribution of the number of hits used in TPC track reconstrucion $N_{\textrm{hits}}^{\textrm{fit}}$ (\ref{fig:NHitsFit}), number of hits used in specific energy loss reconstrucion $N_{\textrm{hits}}^{\textrm{dE/dx}}$ (\ref{fig:NHits_dEdx}) and fraction of number of hits potentially generated by the track and finally used in the reconstrucion $N_{\textrm{hits}}^{\textrm{fit}}/N_{\textrm{hits}}^{\textrm{poss}}$ (\ref{fig:NHitsFit_to_NHitsPos}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\textrm{miss}}$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed line and red arrow indicate the range of each quantity which is accepted in analysis.}\label{fig:NHits}
+    {Comparison of distribution of the number of hits used in TPC track reconstrucion $N_{\textrm{hits}}^{\textrm{fit}}$ (\ref{fig:NHitsFit}), number of hits used in specific energy loss reconstrucion $N_{\textrm{hits}}^{\textrm{dE/dx}}$ (\ref{fig:NHits_dEdx}) and fraction of number of hits potentially generated by the track and finally used in the reconstrucion $N_{\textrm{hits}}^{\textrm{fit}}/N_{\textrm{hits}}^{\textrm{poss}}$ (\ref{fig:NHitsFit_to_NHitsPos}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\textrm{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed line and red arrow indicate the range of each quantity which is accepted in analysis.}\label{fig:NHits}
   \end{minipage}
 }%
 
@@ -113,16 +139,16 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
   \begin{subfigure}[b]{\linewidth}{
                 \subcaptionbox{\label{fig:d0}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/d0.pdf}}}
   \end{subfigure}
-}
-\quad
-\parbox{0.4725\textwidth}{
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{%
   \centering
   \begin{subfigure}[b]{\linewidth}{
                 \subcaptionbox{\label{fig:z0}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/z0.pdf}}}
   \end{subfigure}
 }%
 \caption[Comparison of distribution of $d_{0}$ and $z_{0}$ in the data and embedded MC]
-{Comparison of distribution of the transverse impact parameter $d_{0}$ (\ref{fig:d0}) and the longitudinal impact parameter $z_{0}$ (\ref{fig:z0}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\textrm{miss}}$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:d0z0}
+{Comparison of distribution of the transverse impact parameter $d_{0}$ (\ref{fig:d0}) and the longitudinal impact parameter $z_{0}$ (\ref{fig:z0}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\textrm{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:d0z0}
 \end{figure}
 %---------------------------
 
@@ -139,16 +165,16 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
   \begin{subfigure}[b]{\linewidth}{
                 \subcaptionbox{\label{fig:RadialDca}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/RadialDCA.pdf}}}
   \end{subfigure}
-}
-\quad
-\parbox{0.4725\textwidth}{
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{%
   \centering
   \begin{subfigure}[b]{\linewidth}{
                 \subcaptionbox{\label{fig:LongitudinalDca}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf}}}
   \end{subfigure}
 }%
 \caption[Comparison of distribution of $\textrm{DCA}(R)$ and $\textrm{DCA}(z)$ in the data and embedded MC]
-{Comparison of distribution of the distance of closest approach of the track to the vertex in the $xy$-plane $\textrm{DCA}(R)$ (\ref{fig:RadialDca}) and the the distance of closest approach of the track to the vertex along the $z$-axis $\textrm{DCA}(z)$ (\ref{fig:LongitudinalDca}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\textrm{miss}}$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:DCA}
+{Comparison of distribution of the distance of closest approach of the track to the vertex in the $xy$-plane $\textrm{DCA}(R)$ (\ref{fig:RadialDca}) and the the distance of closest approach of the track to the vertex along the $z$-axis $\textrm{DCA}(z)$ (\ref{fig:LongitudinalDca}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\textrm{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:DCA}
 \end{figure}
 %---------------------------
 
@@ -162,16 +188,16 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
   \begin{subfigure}[b]{\linewidth}{
                 \subcaptionbox{\label{fig:TrackEta}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/TrackEta.pdf}}}
   \end{subfigure}
-}
-\quad
-\parbox{0.4725\textwidth}{
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{%
   \centering
   \begin{subfigure}[b]{\linewidth}{
                 \subcaptionbox{\label{fig:TrackPhi}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/TrackPhi.pdf}}}
   \end{subfigure}
 }%
 \caption[Comparison of distribution of track $\eta$ and $\phi$ in the data and embedded MC]
-{Comparison of the track pseudorapidity $\eta$ (\ref{fig:TrackEta}) and the track azimuthal angle $\phi$ (\ref{fig:TrackPhi}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\textrm{miss}}$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:TrackEtaPhi}
+{Comparison of the track pseudorapidity $\eta$ (\ref{fig:TrackEta}) and the track azimuthal angle $\phi$ (\ref{fig:TrackPhi}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\textrm{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:TrackEtaPhi}
 \end{figure}
 %---------------------------
 
@@ -457,7 +483,7 @@ m^{2}_{\textrm{\tiny TOF}} = \frac{-\mathcal{B}+\sqrt{\mathcal{B}^2-4\mathcal{A}
                 \subcaptionbox{\label{fig:EffVsBkgdFrac}}{\includegraphics[width=\linewidth]{graphics/eventSelection/ROC_pTmiss.pdf}}
   \end{subfigure}
 }%
-\quad%
+\quad\quad%
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
