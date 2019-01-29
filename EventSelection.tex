@@ -14,25 +14,26 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 \section[List of cuts]{List of cuts\footnote{Some cuts (e.g.~\ref{enum:CutTpcTrks}) are decomposed to constituent sub-cuts. Cut is formed by the logical AND of all its sub-cuts.}}\label{sec:listOfCuts}
 \begin{enumerate}[label=\textbf{C\arabic*},ref=C\arabic*]
  \itemm Exactly 1 primary vertex with TPC track(s) matched with hits in TOF.\label{enum:CutPrimVx}
- \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\textrm{vx}}|<100$~cm.\label{enum:CutZVx}
+ \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\textrm{vx}}|<80$~cm.\label{enum:CutZVx}
  \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}), reconstructed within kinematic region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}) and with small distance of closest approach (DCA) to the vertex~(\ref{enum:TpcDcaCuts}).\label{enum:CutTpcTrks}
     \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
       \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks and no addional primary tracks matched with BEMC clusters,\label{enum:TpcTofMatched}
       \itemm Tracks are of opposite signs,\label{enum:TpcOppoSign}
       \itemm Both tracks are contained within the kinematic range:\label{enum:TpcKinematicCuts}\\[2pt]
-      $|\eta|<1$,~~~~$p_{T}>0.2~\textrm{GeV}/c$,
+      $|\eta|<0.7$,~~~~$p_{T}>0.2~\textrm{GeV}/c$,
       \itemm Both tracks satisfy quality criteria:\label{enum:TpcQualityCuts}\\[2pt]
-      $N_{\textrm{hits}}^{\textrm{fit}}\geq25$,~~~~$N_{\textrm{hits}}^{\textrm{dE/dx}}\geq15$,~~~~$N_{\textrm{hits}}^{\textrm{fit}}/N_{\textrm{hits}}^{\textrm{poss}}\geq0.52$,~~~~$|d_{0}|<2$~cm,~~~~$|z_{0}|<200$~cm,
+      $N_{\textrm{hits}}^{\textrm{fit}}\geq25$,~~~~$N_{\textrm{hits}}^{\textrm{dE/dx}}\geq15$,~~~~$|d_{0}|<1.5$~cm,%~~~~$|z_{0}|<200$~cm,
       \itemm Both tracks match well to the primary vertex:\label{enum:TpcDcaCuts}\\[2pt]
       $\textrm{DCA}(R)<1.5$~cm,~~~~$\textrm{DCA}(z)<1$~cm.
     \end{enumerate}
  \itemm Exactly 1 RP track on each side of STAR central detector~(\ref{enum:RpOneTrkPerSide}) of good quality~(\ref{enum:RpQualityCuts}), with local angles consistent with the IP being the track origin~(\ref{enum:RpLocalAngles}), lying within fiducial region of high geometrical acceptance~(\ref{enum:RpFiducial}).\label{enum:CutRpTrks}
       \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
       \itemm RP tracks contain only track-points with at least 3 (out of 4) planes used in reconstrucion,\label{enum:RpQualityCuts}
-      \itemm Local angles $[\textrm{mrad}]$ lie within $-1.2<\theta_{x}^{\textrm{RP}}<5.0$ and $1.5<|\theta_{y}^{\textrm{RP}}|<4.5$,\label{enum:RpLocalAngles}
+      \itemm Local angles $[\textrm{mrad}]$ consistent with expectation for protons originating from the IP\label{enum:RpLocalAngles}%
+      \[-2~\text{mrad}<\theta_{x}^{\text{RP}}-x^{\text{RP}}/|z^{\text{RP}}|<4~\text{mrad},~~~~~-2~\text{mrad}<\theta_{y}^{\text{RP}}-y^{\text{RP}}/|z^{\text{RP}}|<2~\text{mrad},\]
       \itemm Exactly 1 track passing cuts \ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles} per side,\label{enum:RpOneTrkPerSide}
-      \itemm Tracks passing cut~\ref{enum:RpOneTrkPerSide} lie within the $(p_{x},p_{y})$ region defined as\label{enum:RpFiducial}:~~~~~~$|p_{y}|>0.2~\textrm{GeV}/c$,\\[4pt]
-      $(p_{x}/(\textrm{GeV}/c)+0.3)^{2}+(p_{y}/(\textrm{GeV}/c))^{2}<0.46^{2}$,~~~~~~~$(p_{x}/(\textrm{GeV}/c)-0.15)^{2}+(p_{y}/(\textrm{GeV}/c))^{2}<0.42^{2}$.
+      \itemm Tracks passing cut~\ref{enum:RpOneTrkPerSide} lie within the $(p_{x},p_{y})$ region defined as\label{enum:RpFiducial}:\\
+      \[0.2<|p_{y}|<0.4,~~~-0.2<p_{x},~~~(p_{x}+0.3)^{2}+p_{y}^{2}<0.5^{2}~~~(\text{all in GeV}).\]
     \end{enumerate}
  \itemm Vertex $z$-positions measured in TPC and reconstructed from the difference of proton detection time in west and east RPs are consistent with each other within the resolution: $|z_{\textrm{vx}}^{\textrm{TPC}}-z_{\textrm{vx}}^{\textrm{RP}}|<36$~cm.\label{enum:CutDeltaZVx}
  \itemm No signal in any tile of BBC-large (east or west) with $\textrm{ADC}>40$ and $100<\textrm{TDC}<2400$.\label{enum:CutBbcLarge}
@@ -67,11 +68,11 @@ As it was designed in the trigger logic, we aim to perform CEP analysis in a cle
 %---------------------------
 
 
-The single TOF vertex is required to be placed within a range $(-100~\textrm{cm},~100~\textrm{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons, therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties.
+The single TOF vertex is required to be placed within a range $(-100~\textrm{cm},~100~\textrm{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons (comparing to events with vertices close to nominal IP), therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties.
 
 \subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
 
-The TPC track selection starts from the selection of events with exactly two primary tracks matched with hit in TOF~(Fig.~\ref{fig:NumberOfTofTracksInSingleTofVertex}). It is in accordance with the trigger logic (requirement of at least 2 L0 TOF hits), as well as it enables more accurate particle identification with merged time-of-flight and $dE/dx$ method, comparing to usage of $dE/dx$ only. Primary tracks which are matched with hit in TOF are in vast majority an in-time tracks of real particles, whereas primary tracks not matched with hit in TOF, whose average multiplicty in single TOF vertex is $\sim$8, are hardly distinguished between real and fake (off-time) tracks. This is an additional reason to not analyze events with only one TOF-matched primary TPC track (the other track might be unmatched due to TOF inefficiency).
+The TPC track selection starts from the selection of events with exactly two primary tracks matched with hit in TOF~(Fig.~\ref{fig:NumberOfTofTracksInSingleTofVertex}). Matching with TOF guarantee that analyzed tracks originate from the triggered bunch crossing (ensures that tracks are ''in-time``). It is in accordance with the trigger logic which required at least 2 L0 TOF hits, as well as it enables more accurate particle identification with merged time-of-flight and $dE/dx$ method, comparing to sole usage of $dE/dx$. Primary tracks not matched with hit in TOF, whose average multiplicty in single TOF vertex is $\sim$8, are hardly distinguished between real and fake (off-time) tracks, which is an additional reason for not analyzing events with only one TOF-matched primary TPC track (the other track might be unmatched due to TOF inefficiency).
 
 %---------------------------
 \begin{figure}[hb!]%
@@ -94,7 +95,9 @@ Primary TPC tracks from the single TOF vertex which are matched with TOF are all
 \begin{equation}
  R=\sqrt{(\eta_{\textrm{clus}}-\eta_{\textrm{proj}})^{2} + (\phi_{\textrm{clus}}-\phi_{\textrm{proj}})^{2}},
 \end{equation}
-is less than $R^{\textrm{match}}_{\textrm{max}} = 0.05$. Distribution of the minimum distance between the primary TPC track and the closest BEMC cluster is shown in~Fig.~\ref{fig:Rmin}. However, if there are any primary TPC tracks matched with BEMC cluster and not matched with TOF in the single TOF vertex with two TOF-matched tracks, an event is rejected. Such configuration implies higher-than-2 multiplicty of the real tracks in the vertex, hence an event is unlikely a Central Exclusive Production of two particles.
+is less than $R^{\textrm{match}}_{\textrm{max}} = 0.05$. Distribution of the distance between the primary TPC track and the closest BEMC cluster is shown in~Fig.~\ref{fig:Rmin}.
+
+However, if there are any primary TPC tracks matched with BEMC cluster and not matched with TOF in the single TOF vertex with two TOF-matched tracks, an event is rejected. Such configuration implies higher-than-2 multiplicty of the real tracks in the vertex, hence an event is unlikely a Central Exclusive Production of two particles.
 
 
 

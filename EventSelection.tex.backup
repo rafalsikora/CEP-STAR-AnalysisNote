@@ -67,11 +67,11 @@ As it was designed in the trigger logic, we aim to perform CEP analysis in a cle
 %---------------------------
 
 
-The single TOF vertex is required to be placed within a range $(-100~\textrm{cm},~100~\textrm{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons, therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties.
+The single TOF vertex is required to be placed within a range $(-100~\textrm{cm},~100~\textrm{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons (comparing to events with vertices close to nominal IP), therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties.
 
 \subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
 
-The TPC track selection starts from the selection of events with exactly two primary tracks matched with hit in TOF~(Fig.~\ref{fig:NumberOfTofTracksInSingleTofVertex}). It is in accordance with the trigger logic (requirement of at least 2 L0 TOF hits), as well as it enables more accurate particle identification with merged time-of-flight and $dE/dx$ method, comparing to usage of $dE/dx$ only. Primary tracks which are matched with hit in TOF are in vast majority an in-time tracks of real particles, whereas primary tracks not matched with hit in TOF, whose average multiplicty in single TOF vertex is $\sim$8, are hardly distinguished between real and fake (off-time) tracks. This is an additional reason to not analyze events with only one TOF-matched primary TPC track (the other track might be unmatched due to TOF inefficiency).
+The TPC track selection starts from the selection of events with exactly two primary tracks matched with hit in TOF~(Fig.~\ref{fig:NumberOfTofTracksInSingleTofVertex}) to ensure that analyzed tracks originate from the triggered bunch crossing (to ensure that tracks are ''in-time``). It is in accordance with the trigger logic which required at least 2 L0 TOF hits, as well as it enables more accurate particle identification with merged time-of-flight and $dE/dx$ method, comparing to sole usage of $dE/dx$. Primary tracks not matched with hit in TOF, whose average multiplicty in single TOF vertex is $\sim$8, are hardly distinguished between real and fake (off-time) tracks, which is an additional reason for not analyzing events with only one TOF-matched primary TPC track (the other track might be unmatched due to TOF inefficiency).
 
 %---------------------------
 \begin{figure}[hb!]%
@@ -94,7 +94,9 @@ Primary TPC tracks from the single TOF vertex which are matched with TOF are all
 \begin{equation}
  R=\sqrt{(\eta_{\textrm{clus}}-\eta_{\textrm{proj}})^{2} + (\phi_{\textrm{clus}}-\phi_{\textrm{proj}})^{2}},
 \end{equation}
-is less than $R^{\textrm{match}}_{\textrm{max}} = 0.05$. Distribution of the minimum distance between the primary TPC track and the closest BEMC cluster is shown in~Fig.~\ref{fig:Rmin}. However, is there is any primary track not matched with TOF but matched with BEMC cluster, an event is rejected.
+is less than $R^{\textrm{match}}_{\textrm{max}} = 0.05$. Distribution of the distance between the primary TPC track and the closest BEMC cluster is shown in~Fig.~\ref{fig:Rmin}.
+
+However, if there are any primary TPC tracks matched with BEMC cluster and not matched with TOF in the single TOF vertex with two TOF-matched tracks, an event is rejected. Such configuration implies higher-than-2 multiplicty of the real tracks in the vertex, hence an event is unlikely a Central Exclusive Production of two particles.
 
 
 

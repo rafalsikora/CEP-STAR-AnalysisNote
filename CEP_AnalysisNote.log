@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.4.8)  21 FEB 2018 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.29)  29 JAN 2019 12:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **CEP_AnalysisNote.tex
 (./CEP_AnalysisNote.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 3 languages loaded.
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -25,22 +25,24 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C0 (decimal 192)
@@ -105,50 +107,94 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00FD (decimal 253)
    defining Unicode char U+00FE (decimal 254)
    defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
    defining Unicode char U+0102 (decimal 258)
    defining Unicode char U+0103 (decimal 259)
    defining Unicode char U+0104 (decimal 260)
    defining Unicode char U+0105 (decimal 261)
    defining Unicode char U+0106 (decimal 262)
    defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
    defining Unicode char U+010C (decimal 268)
    defining Unicode char U+010D (decimal 269)
    defining Unicode char U+010E (decimal 270)
    defining Unicode char U+010F (decimal 271)
    defining Unicode char U+0110 (decimal 272)
    defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
    defining Unicode char U+0118 (decimal 280)
    defining Unicode char U+0119 (decimal 281)
    defining Unicode char U+011A (decimal 282)
    defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
    defining Unicode char U+011E (decimal 286)
    defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
    defining Unicode char U+0130 (decimal 304)
    defining Unicode char U+0131 (decimal 305)
    defining Unicode char U+0132 (decimal 306)
    defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
    defining Unicode char U+0139 (decimal 313)
    defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
    defining Unicode char U+013D (decimal 317)
    defining Unicode char U+013E (decimal 318)
    defining Unicode char U+0141 (decimal 321)
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0143 (decimal 323)
    defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
    defining Unicode char U+0147 (decimal 327)
    defining Unicode char U+0148 (decimal 328)
    defining Unicode char U+014A (decimal 330)
    defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
    defining Unicode char U+0150 (decimal 336)
    defining Unicode char U+0151 (decimal 337)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
    defining Unicode char U+0154 (decimal 340)
    defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
    defining Unicode char U+0158 (decimal 344)
    defining Unicode char U+0159 (decimal 345)
    defining Unicode char U+015A (decimal 346)
    defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
    defining Unicode char U+015E (decimal 350)
    defining Unicode char U+015F (decimal 351)
    defining Unicode char U+0160 (decimal 352)
@@ -157,10 +203,22 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+0163 (decimal 355)
    defining Unicode char U+0164 (decimal 356)
    defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
    defining Unicode char U+016E (decimal 366)
    defining Unicode char U+016F (decimal 367)
    defining Unicode char U+0170 (decimal 368)
    defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
    defining Unicode char U+0178 (decimal 376)
    defining Unicode char U+0179 (decimal 377)
    defining Unicode char U+017A (decimal 378)
@@ -168,9 +226,40 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+017C (decimal 380)
    defining Unicode char U+017D (decimal 381)
    defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -182,14 +271,18 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00B8 (decimal 184)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C5 (decimal 197)
@@ -207,6 +300,14 @@ File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2018 (decimal 8216)
@@ -218,7 +319,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -253,15 +354,14 @@ Package: authblk 2001/02/27 1.3 (PWD)
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
@@ -281,94 +381,126 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count94
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
+Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen113
 \extrarowheight=\dimen114
 \NC@list=\toks18
 \extratabsurround=\skip45
 \backup@length=\skip46
 )
-\TY@count=\count95
+\TY@count=\count94
 \TY@linewidth=\dimen115
 \tymin=\dimen116
 \tymax=\dimen117
 \TY@tablewidth=\dimen118
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
+Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen119
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen120
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count96
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count97
-\leftroot@=\count98
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count99
-\DOTSCASE@=\count100
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen121
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count101
-\c@MaxMatrixCols=\count102
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count103
-\dspbrk@lvl=\count104
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks20
-\row@=\count105
-\column@=\count106
-\maxfields@=\count107
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks21
 \eqnshift@=\dimen122
 \alignsep@=\dimen123
@@ -380,31 +512,43 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip48
 \multlinetaggap=\skip49
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2014/07/16 v1.15 mathematical typesetting tools
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count108
-\calc@Bcount=\count109
+\calc@Acount=\count107
+\calc@Bcount=\count108
 \calc@Adimen=\dimen128
 \calc@Bdimen=\dimen129
 \calc@Askip=\skip50
 \calc@Bskip=\skip51
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count110
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count109
 \calc@Cskip=\skip52
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count111
+\g_MT_multlinerow_int=\count110
 \l_MT_multwidth_dim=\dimen130
 \origjot=\skip53
 \l_MT_shortvdotswithinadjustabove_dim=\dimen131
@@ -416,7 +560,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count112
+\c@float@type=\count111
 \float@exts=\toks24
 \float@box=\box28
 \@float@everytoks=\toks25
@@ -424,23 +568,23 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 147.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen137
 \captionmargin@=\dimen138
 \captionwidth=\dimen139
@@ -449,158 +593,319 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen142
 \caption@hangindent=\dimen143
 )
-\c@ContinuedFloat=\count113
+\c@ContinuedFloat=\count112
 Package caption Info: float package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count114
-\c@subtable=\count115
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count113
+\c@subtable=\count114
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
-)
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen144
-\Hy@linkcounter=\count116
-\Hy@pagecounter=\count117
+\Hy@linkcounter=\count115
+\Hy@pagecounter=\count116
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count118
+\Hy@SavedSpaceFactor=\count117
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Option `linktocpage' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count119
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count118
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5041.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen145
-\Fld@menulength=\count120
+\Fld@menulength=\count119
 \Field@Width=\dimen146
 \Fld@charsize=\dimen147
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count121
-\c@Item=\count122
-\c@Hfootnote=\count123
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count120
+\c@Item=\count121
+\c@Hfootnote=\count122
 )
-
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count124
-\c@bookmark@seq@number=\count125
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count123
+\c@bookmark@seq@number=\count124
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip54
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listliketab/listliketab.sty
+Package: listliketab 2005/01/09 v1.0a Create list-like tabulars
+\llt@labelwidth=\skip55
+\llt@labelsep=\skip56
+\llt@topsep=\skip57
+\llt@rightmargin=\skip58
+\llt@tab@indent=\skip59
+\llt@bot@sep=\skip60
+\llt@arraystretch=\skip61
+\llt@list@box=\box30
+)
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip55
+\labelindent=\skip62
 \enit@outerparindent=\dimen148
 \enit@toks=\toks26
-\enit@inbox=\box30
-\enitdp@description=\count126
+\enit@inbox=\box31
+\enitdp@description=\count125
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip63
+\multirow@cntb=\count126
+\multirow@dima=\skip64
 \bigstrutjot=\dimen149
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count127
+\mult@box=\box32
+\multicol@leftmargin=\dimen150
+\c@unbalance=\count128
+\c@collectmore=\count129
+\doublecol@number=\count130
+\multicoltolerance=\count131
+\multicolpretolerance=\count132
+\full@width=\dimen151
+\page@free=\dimen152
+\premulticols=\dimen153
+\postmulticols=\dimen154
+\multicolsep=\skip65
+\multicolbaselineskip=\skip66
+\partial@page=\box33
+\last@line=\box34
+\maxbalancingoverflow=\dimen155
+\mult@rightbox=\box35
+\mult@grightbox=\box36
+\mult@gfirstbox=\box37
+\mult@firstbox=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\c@columnbadness=\count133
+\c@finalcolumnbadness=\count134
+\last@try=\dimen156
+\multicolovershoot=\dimen157
+\multicolundershoot=\dimen158
+\mult@nat@firstbox=\box56
+\colbreak@box=\box57
+\mc@col@check@num=\count135
 )
 (/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen150
-\c@nlinenum=\count127
+\rotheadsize=\dimen159
+\c@nlinenum=\count136
 \TeXr@lab=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup4
-\symboldletters=\mathgroup5
-\symboldsymbols=\mathgroup6
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
-LaTeX Info: Redefining \bm on input line 203.
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen151
-\WF@size=\dimen152
-\c@WF@wrappedlines=\count128
-\WF@box=\box31
+\wrapoverhang=\dimen160
+\WF@size=\dimen161
+\c@WF@wrappedlines=\count137
+\WF@box=\box58
 \WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+\l_EQ_equationtype_int=\count138
+\l_EQ_alignmentmode_int=\count139
+\l_EQ_totalwidth_dim=\dimen162
+\l_EQ_displaywidth_dim=\dimen163
+\l_EQ_temp_linewidth_dim=\dimen164
+\EmphEqdelimitershortfall=\dimen165
+\EmphEqdelimiterfactor=\count140
+\g_EQ_toptag_height_dim=\dimen166
+\g_EQ_bottomtag_depth_dim=\dimen167
+\g_EQ_toprow_height_dim=\dimen168
+\g_EQ_bottomrow_depth_dim=\dimen169
+\g_EQ_widesttag_dim=\dimen170
+\EQ_mathdisplay_box=\box59
+\EQ_tag_box=\box60
+\g_EQ_temprow_int=\count141
+)
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count142
+\c@@ppsavesec=\count143
+\c@@ppsaveapp=\count144
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/02/08 v0.21.1 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2301.
+LaTeX Info: Redefining \cref on input line 2301.
+LaTeX Info: Redefining \Cref on input line 2301.
+LaTeX Info: Redefining \crefrange on input line 2301.
+LaTeX Info: Redefining \Crefrange on input line 2301.
+LaTeX Info: Redefining \cpageref on input line 2301.
+LaTeX Info: Redefining \Cpageref on input line 2301.
+LaTeX Info: Redefining \cpagerefrange on input line 2301.
+LaTeX Info: Redefining \Cpagerefrange on input line 2301.
+LaTeX Info: Redefining \labelcref on input line 2301.
+LaTeX Info: Redefining \labelcpageref on input line 2301.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks29
+\footnotemargin=\dimen171
+\c@pp@next@reset=\count145
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count146
+\c@Blindtext=\count147
+\c@blind@countparstart=\count148
+\blind@countxx=\count149
+\blindtext@numBlindtext=\count150
+\blind@countyy=\count151
+\c@blindlist=\count152
+\c@blindlistlevel=\count153
+\c@blindlist@level=\count154
+\blind@listitem=\count155
+\c@blind@listcount=\count156
+\c@blind@levelcount=\count157
+\blind@mathformula=\count158
+\blind@Mathformula=\count159
+\c@blind@randomcount=\count160
+\c@blind@randommax=\count161
+\c@blind@pangramcount=\count162
+\c@blind@pangrammax=\count163
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks30
+\minrowclearance=\skip67
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/morefloats/morefloats.sty
+Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
+Package morefloats Info: Maximum number of possible floats asked for: 80
+(morefloats)             (i.e. 62 more floats).
+(morefloats)             LaTeX might run out of memory before this
+(morefloats)             (in which case it will notify you).
 )
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
@@ -608,20 +913,20 @@ Package: placeins 2005/04/18  v 2.2
 (./CEP_AnalysisNote.aux)
 \openout1 = `CEP_AnalysisNote.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -657,29 +962,31 @@ LaTeX Font Info:    ... okay on input line 107.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
-\scratchdimen=\dimen153
-\scratchbox=\box32
-\nofMPsegments=\count130
-\nofMParguments=\count131
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count132
-\MPscratchDim=\dimen154
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count164
+\scratchdimen=\dimen172
+\scratchbox=\box61
+\nofMPsegments=\count165
+\nofMParguments=\count166
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count167
+\MPscratchDim=\dimen173
+\MPnumerator=\count168
+\makeMPintoPDFobject=\count169
+\everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
+(grfext)             \AppendGraphicsExtensions on input line 456.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -689,33 +996,46 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 107.
+\AtBeginShipoutBox=\box62
+Package hyperref Info: Link coloring OFF on input line 140.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count135
+\c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 107.
-LaTeX Info: Redefining \pageref on input line 107.
-LaTeX Info: Redefining \nameref on input line 107.
+LaTeX Info: Redefining \ref on input line 140.
+LaTeX Info: Redefining \pageref on input line 140.
+LaTeX Info: Redefining \nameref on input line 140.
 
 (./CEP_AnalysisNote.out) (./CEP_AnalysisNote.out)
 \@outlinefile=\write3
 \openout3 = `CEP_AnalysisNote.out'.
 
+LaTeX Font Info:    Try loading font information for U+msa on input line 145.
 
-<graphics/STAR_logo.pdf, id=229, 283.68053pt x 199.9972pt>
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 145.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<graphics/STAR_logo.pdf, id=237, 283.68053pt x 199.9972pt>
 File: graphics/STAR_logo.pdf Graphic file (type pdf)
-
 <use graphics/STAR_logo.pdf>
-Package pdftex.def Info: graphics/STAR_logo.pdf used on input line 114.
+Package pdftex.def Info: graphics/STAR_logo.pdf  used on input line 147.
 (pdftex.def)             Requested size: 62.73549pt x 44.2284pt.
- [1
+
+Overfull \hbox (33.46106pt too wide) in paragraph at lines 157--157
+ | $[]$ 
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./graphics/STAR_logo.pdf>]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -758,38 +1078,48 @@ Package pdftex.def Info: graphics/STAR_logo.pdf used on input line 114.
 \tf@toc=\write4
 \openout4 = `CEP_AnalysisNote.toc'.
 
+ [3] (./ListOfContributions.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--21
 
-(./Introduction.tex [3]
+ []
+
+)
+Overfull \hbox (11.81366pt too wide) in paragraph at lines 23--182
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--182
+
+ []
+
+(./Introduction.tex [4]
 Chapter 1.
-<graphics/introduction/eta_phi.pdf, id=361, 569.12625pt x 358.33875pt>
+<graphics/introduction/eta_phi.pdf, id=375, 569.12625pt x 358.33875pt>
 File: graphics/introduction/eta_phi.pdf Graphic file (type pdf)
-
 <use graphics/introduction/eta_phi.pdf>
-Package pdftex.def Info: graphics/introduction/eta_phi.pdf used on input line 3
-9.
-(pdftex.def)             Requested size: 252.73625pt x 159.12944pt.
+Package pdftex.def Info: graphics/introduction/eta_phi.pdf  used on input line 
+39.
+(pdftex.def)             Requested size: 298.68733pt x 188.07051pt.
 
-Overfull \hbox (12.9773pt too wide) in paragraph at lines 39--39
+Overfull \hbox (50.92838pt too wide) in paragraph at lines 39--39
  []| [] 
  []
 
-<graphics/introduction/DPE.pdf, id=362, 291.0875pt x 243.91125pt>
+<graphics/introduction/DPE.pdf, id=376, 291.0875pt x 243.91125pt>
 File: graphics/introduction/DPE.pdf Graphic file (type pdf)
-
 <use graphics/introduction/DPE.pdf>
-Package pdftex.def Info: graphics/introduction/DPE.pdf used on input line 46.
-(pdftex.def)             Requested size: 147.04558pt x 123.217pt.
- [4
+Package pdftex.def Info: graphics/introduction/DPE.pdf  used on input line 46.
+(pdftex.def)             Requested size: 188.40402pt x 157.87422pt.
+[5
 
  <./graphics/introduction/eta_phi.pdf, page is rotated 90 degrees> <./graphics/
-introduction/DPE.pdf>]) (./Dataset.tex
-[5]
+introduction/DPE.pdf>]) (./Dataset.tex [6]
 Chapter 2.
-<graphics/dataset/bits.png, id=462, 498.36188pt x 97.86563pt>
+<graphics/dataset/bits.png, id=477, 498.36188pt x 97.86563pt>
 File: graphics/dataset/bits.png Graphic file (type png)
-
 <use graphics/dataset/bits.png>
-Package pdftex.def Info: graphics/dataset/bits.png used on input line 24.
+Package pdftex.def Info: graphics/dataset/bits.png  used on input line 24.
 (pdftex.def)             Requested size: 343.42802pt x 67.44221pt.
 
 Overfull \hbox (7.66003pt too wide) in paragraph at lines 43--44
@@ -797,25 +1127,22 @@ Overfull \hbox (7.66003pt too wide) in paragraph at lines 43--44
 -tion[]pp200long3[]2015 and pro-duc-tion[]pp200long[]2015
  []
 
-[6
+[7
 
  <./graphics/dataset/bits.png>]
-<graphics/dataset/positionHistograms.pdf, id=484, 569.12625pt x 552.0625pt>
+<graphics/dataset/positionHistograms.pdf, id=501, 569.12625pt x 552.0625pt>
 File: graphics/dataset/positionHistograms.pdf Graphic file (type pdf)
-
 <use graphics/dataset/positionHistograms.pdf>
-Package pdftex.def Info: graphics/dataset/positionHistograms.pdf used on input 
-line 83.
+Package pdftex.def Info: graphics/dataset/positionHistograms.pdf  used on input
+ line 83.
 (pdftex.def)             Requested size: 193.47578pt x 187.6735pt.
-
-<graphics/dataset/positionVsRunGraph.pdf, id=485, 569.12625pt x 408.52625pt>
+<graphics/dataset/positionVsRunGraph.pdf, id=502, 569.12625pt x 408.52625pt>
 File: graphics/dataset/positionVsRunGraph.pdf Graphic file (type pdf)
-
 <use graphics/dataset/positionVsRunGraph.pdf>
-Package pdftex.def Info: graphics/dataset/positionVsRunGraph.pdf used on input 
-line 90.
+Package pdftex.def Info: graphics/dataset/positionVsRunGraph.pdf  used on input
+ line 90.
 (pdftex.def)             Requested size: 263.6139pt x 189.23341pt.
-) (./EventSelection.tex [7 <./graphics/dataset/positionHistograms.pdf, page is 
+) (./EventSelection.tex [8 <./graphics/dataset/positionHistograms.pdf, page is 
 rotated 90 degrees> <./graphics/dataset/positionVsRunGraph.pdf, page is rotated
  90 degrees>]
 Chapter 3.
@@ -825,331 +1152,294 @@ Overfull \hbox (1.58076pt too wide) in paragraph at lines 18--19
  of good qual-ity ([]C3.4[]) matched with hits in TOF ([]C3.1[]),
  []
 
-
-<graphics/eventSelection/NumberOfPrimaryVertices.pdf, id=608, 569.12625pt x 552
+<graphics/eventSelection/NumberOfPrimaryVertices.pdf, id=623, 569.12625pt x 552
 .0625pt>
 File: graphics/eventSelection/NumberOfPrimaryVertices.pdf Graphic file (type pd
 f)
- <use graphics/eventSelection/NumberOfPrimaryVertices.pdf>
-Package pdftex.def Info: graphics/eventSelection/NumberOfPrimaryVertices.pdf us
-ed on input line 57.
+<use graphics/eventSelection/NumberOfPrimaryVertices.pdf>
+Package pdftex.def Info: graphics/eventSelection/NumberOfPrimaryVertices.pdf  u
+sed on input line 57.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
+<graphics/eventSelection/zVertex_oneTof.pdf, id=624, 569.12625pt x 408.52625pt>
 
-<graphics/eventSelection/zVertex_oneTof.pdf, id=609, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/zVertex_oneTof.pdf Graphic file (type pdf)
 <use graphics/eventSelection/zVertex_oneTof.pdf>
-Package pdftex.def Info: graphics/eventSelection/zVertex_oneTof.pdf used on inp
-ut line 63.
+Package pdftex.def Info: graphics/eventSelection/zVertex_oneTof.pdf  used on in
+put line 63.
 (pdftex.def)             Requested size: 228.54854pt x 164.0559pt.
- [8
+[9
 
 ]
 <graphics/eventSelection/TpcTracks/NumberOfTofTracksInSingleTofVertex.pdf, id=6
-29, 569.12625pt x 552.0625pt>
+46, 569.12625pt x 552.0625pt>
 File: graphics/eventSelection/TpcTracks/NumberOfTofTracksInSingleTofVertex.pdf 
 Graphic file (type pdf)
-
 <use graphics/eventSelection/TpcTracks/NumberOfTofTracksInSingleTofVertex.pdf>
 Package pdftex.def Info: graphics/eventSelection/TpcTracks/NumberOfTofTracksInS
-ingleTofVertex.pdf used on input line 81.
+ingleTofVertex.pdf  used on input line 81.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/Rmin.pdf, id=630, 569.12625pt x 552.0625pt>
+<graphics/eventSelection/TpcTracks/Rmin.pdf, id=647, 569.12625pt x 552.0625pt>
 File: graphics/eventSelection/TpcTracks/Rmin.pdf Graphic file (type pdf)
-
 <use graphics/eventSelection/TpcTracks/Rmin.pdf>
-Package pdftex.def Info: graphics/eventSelection/TpcTracks/Rmin.pdf used on inp
-ut line 87.
+Package pdftex.def Info: graphics/eventSelection/TpcTracks/Rmin.pdf  used on in
+put line 87.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/NHitsFit.pdf, id=632, 569.12625pt x 552.0625
+<graphics/eventSelection/TpcTracks/NHitsFit.pdf, id=649, 569.12625pt x 552.0625
 pt>
 File: graphics/eventSelection/TpcTracks/NHitsFit.pdf Graphic file (type pdf)
- <use graphics/eventSelection/TpcTracks/NHitsFit.pdf>
-Package pdftex.def Info: graphics/eventSelection/TpcTracks/NHitsFit.pdf used on
- input line 112.
+<use graphics/eventSelection/TpcTracks/NHitsFit.pdf>
+Package pdftex.def Info: graphics/eventSelection/TpcTracks/NHitsFit.pdf  used o
+n input line 114.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/NHitsFit_to_NHitsPos.pdf, id=633, 569.12625p
+<graphics/eventSelection/TpcTracks/NHitsFit_to_NHitsPos.pdf, id=650, 569.12625p
 t x 552.0625pt>
 File: graphics/eventSelection/TpcTracks/NHitsFit_to_NHitsPos.pdf Graphic file (
 type pdf)
-
 <use graphics/eventSelection/TpcTracks/NHitsFit_to_NHitsPos.pdf>
 Package pdftex.def Info: graphics/eventSelection/TpcTracks/NHitsFit_to_NHitsPos
-.pdf used on input line 112.
+.pdf  used on input line 114.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/NHits_dEdx.pdf, id=634, 569.12625pt x 552.06
+<graphics/eventSelection/TpcTracks/NHits_dEdx.pdf, id=651, 569.12625pt x 552.06
 25pt>
 File: graphics/eventSelection/TpcTracks/NHits_dEdx.pdf Graphic file (type pdf)
- <use graphics/eventSelection/TpcTracks/NHits_dEdx.pdf>
-Package pdftex.def Info: graphics/eventSelection/TpcTracks/NHits_dEdx.pdf used 
-on input line 123.
+<use graphics/eventSelection/TpcTracks/NHits_dEdx.pdf>
+Package pdftex.def Info: graphics/eventSelection/TpcTracks/NHits_dEdx.pdf  used
+ on input line 125.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/d0.pdf, id=643, 569.12625pt x 552.0625pt>
+<graphics/eventSelection/TpcTracks/d0.pdf, id=660, 569.12625pt x 552.0625pt>
 File: graphics/eventSelection/TpcTracks/d0.pdf Graphic file (type pdf)
-
 <use graphics/eventSelection/TpcTracks/d0.pdf>
-Package pdftex.def Info: graphics/eventSelection/TpcTracks/d0.pdf used on input
- line 142.
+Package pdftex.def Info: graphics/eventSelection/TpcTracks/d0.pdf  used on inpu
+t line 144.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/z0.pdf, id=644, 569.12625pt x 552.0625pt>
+<graphics/eventSelection/TpcTracks/z0.pdf, id=661, 569.12625pt x 552.0625pt>
 File: graphics/eventSelection/TpcTracks/z0.pdf Graphic file (type pdf)
-
 <use graphics/eventSelection/TpcTracks/z0.pdf>
-Package pdftex.def Info: graphics/eventSelection/TpcTracks/z0.pdf used on input
- line 149.
+Package pdftex.def Info: graphics/eventSelection/TpcTracks/z0.pdf  used on inpu
+t line 151.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/RadialDCA.pdf, id=651, 569.12625pt x 552.062
+<graphics/eventSelection/TpcTracks/RadialDCA.pdf, id=668, 569.12625pt x 552.062
 5pt>
 File: graphics/eventSelection/TpcTracks/RadialDCA.pdf Graphic file (type pdf)
- <use graphics/eventSelection/TpcTracks/RadialDCA.pdf>
-Package pdftex.def Info: graphics/eventSelection/TpcTracks/RadialDCA.pdf used o
-n input line 168.
+<use graphics/eventSelection/TpcTracks/RadialDCA.pdf>
+Package pdftex.def Info: graphics/eventSelection/TpcTracks/RadialDCA.pdf  used 
+on input line 170.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf, id=652, 569.12625pt x 5
+<graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf, id=669, 569.12625pt x 5
 52.0625pt>
 File: graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf Graphic file (type 
 pdf)
- <use graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf>
+<use graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf>
 Package pdftex.def Info: graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf 
-used on input line 175.
+ used on input line 177.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/TrackEta.pdf, id=659, 569.12625pt x 552.0625
+<graphics/eventSelection/TpcTracks/TrackEta.pdf, id=676, 569.12625pt x 552.0625
 pt>
 File: graphics/eventSelection/TpcTracks/TrackEta.pdf Graphic file (type pdf)
- <use graphics/eventSelection/TpcTracks/TrackEta.pdf>
-Package pdftex.def Info: graphics/eventSelection/TpcTracks/TrackEta.pdf used on
- input line 191.
+<use graphics/eventSelection/TpcTracks/TrackEta.pdf>
+Package pdftex.def Info: graphics/eventSelection/TpcTracks/TrackEta.pdf  used o
+n input line 193.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/TpcTracks/TrackPhi.pdf, id=660, 569.12625pt x 552.0625
+<graphics/eventSelection/TpcTracks/TrackPhi.pdf, id=677, 569.12625pt x 552.0625
 pt>
 File: graphics/eventSelection/TpcTracks/TrackPhi.pdf Graphic file (type pdf)
- <use graphics/eventSelection/TpcTracks/TrackPhi.pdf>
-Package pdftex.def Info: graphics/eventSelection/TpcTracks/TrackPhi.pdf used on
- input line 198.
+<use graphics/eventSelection/TpcTracks/TrackPhi.pdf>
+Package pdftex.def Info: graphics/eventSelection/TpcTracks/TrackPhi.pdf  used o
+n input line 200.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
- [9 <./graphics/eventSelection/NumberOfPrimaryVertices.pdf, page is rotated 90 
-degrees> <./graphics/eventSelection/zVertex_oneTof.pdf, page is rotated 90 degr
-ees>] [10 <./graphics/eventSelection/TpcTracks/NumberOfTofTracksInSingleTofVert
-ex.pdf, page is rotated 90 degrees> <./graphics/eventSelection/TpcTracks/Rmin.p
-df, page is rotated 90 degrees>] [11 <./graphics/eventSelection/TpcTracks/NHits
-Fit.pdf, page is rotated 90 degrees> <./graphics/eventSelection/TpcTracks/NHits
-Fit_to_NHitsPos.pdf, page is rotated 90 degrees> <./graphics/eventSelection/Tpc
-Tracks/NHits_dEdx.pdf, page is rotated 90 degrees>] [12 <./graphics/eventSelect
-ion/TpcTracks/d0.pdf, page is rotated 90 degrees> <./graphics/eventSelection/Tp
-cTracks/z0.pdf, page is rotated 90 degrees> <./graphics/eventSelection/TpcTrack
-s/RadialDCA.pdf, page is rotated 90 degrees> <./graphics/eventSelection/TpcTrac
-ks/LongitudinalDCA.pdf, page is rotated 90 degrees>] [13 <./graphics/eventSelec
-tion/TpcTracks/TrackEta.pdf, page is rotated 90 degrees> <./graphics/eventSelec
-tion/TpcTracks/TrackPhi.pdf, page is rotated 90 degrees>]
-<graphics/eventSelection/LocalAngles.pdf, id=1257, page=1, 569.12625pt x 552.06
+ [10 <./graphics/eventSelection/NumberOfPrimaryVertices.pdf, page is rotated 90
+ degrees> <./graphics/eventSelection/zVertex_oneTof.pdf, page is rotated 90 deg
+rees>] [11 <./graphics/eventSelection/TpcTracks/NumberOfTofTracksInSingleTofVer
+tex.pdf, page is rotated 90 degrees> <./graphics/eventSelection/TpcTracks/Rmin.
+pdf, page is rotated 90 degrees>] [12 <./graphics/eventSelection/TpcTracks/NHit
+sFit.pdf, page is rotated 90 degrees> <./graphics/eventSelection/TpcTracks/NHit
+sFit_to_NHitsPos.pdf, page is rotated 90 degrees> <./graphics/eventSelection/Tp
+cTracks/NHits_dEdx.pdf, page is rotated 90 degrees>] [13 <./graphics/eventSelec
+tion/TpcTracks/d0.pdf, page is rotated 90 degrees> <./graphics/eventSelection/T
+pcTracks/z0.pdf, page is rotated 90 degrees> <./graphics/eventSelection/TpcTrac
+ks/RadialDCA.pdf, page is rotated 90 degrees> <./graphics/eventSelection/TpcTra
+cks/LongitudinalDCA.pdf, page is rotated 90 degrees>] [14 <./graphics/eventSele
+ction/TpcTracks/TrackEta.pdf, page is rotated 90 degrees> <./graphics/eventSele
+ction/TpcTracks/TrackPhi.pdf, page is rotated 90 degrees>]
+<graphics/eventSelection/LocalAngles.pdf, id=1274, page=1, 569.12625pt x 552.06
 25pt>
 File: graphics/eventSelection/LocalAngles.pdf Graphic file (type pdf)
- <use graphics/eventSelection/LocalAngles.pdf, page 1>
-Package pdftex.def Info: graphics/eventSelection/LocalAngles.pdf, page1 used on
- input line 217.
+<use graphics/eventSelection/LocalAngles.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/LocalAngles.pdf , page1 used o
+n input line 219.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-
-<graphics/eventSelection/LocalAngles.pdf, id=1258, page=2, 569.12625pt x 552.06
+<graphics/eventSelection/LocalAngles.pdf, id=1275, page=2, 569.12625pt x 552.06
 25pt>
 File: graphics/eventSelection/LocalAngles.pdf Graphic file (type pdf)
- <use graphics/eventSelection/LocalAngles.pdf, page 2>
-Package pdftex.def Info: graphics/eventSelection/LocalAngles.pdf, page2 used on
- input line 224.
+<use graphics/eventSelection/LocalAngles.pdf, page 2>
+Package pdftex.def Info: graphics/eventSelection/LocalAngles.pdf , page2 used o
+n input line 226.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-
-<graphics/eventSelection/LocalAngles.pdf, id=1259, page=3, 569.12625pt x 552.06
+<graphics/eventSelection/LocalAngles.pdf, id=1276, page=3, 569.12625pt x 552.06
 25pt>
 File: graphics/eventSelection/LocalAngles.pdf Graphic file (type pdf)
- <use graphics/eventSelection/LocalAngles.pdf, page 3>
-Package pdftex.def Info: graphics/eventSelection/LocalAngles.pdf, page3 used on
- input line 231.
+<use graphics/eventSelection/LocalAngles.pdf, page 3>
+Package pdftex.def Info: graphics/eventSelection/LocalAngles.pdf , page3 used o
+n input line 233.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+<graphics/eventSelection/zVertexRpVsTpc.pdf, id=1278, 569.12625pt x 552.0625pt>
 
-<graphics/eventSelection/zVertexRpVsTpc.pdf, id=1261, 569.12625pt x 552.0625pt>
 File: graphics/eventSelection/zVertexRpVsTpc.pdf Graphic file (type pdf)
 <use graphics/eventSelection/zVertexRpVsTpc.pdf>
-Package pdftex.def Info: graphics/eventSelection/zVertexRpVsTpc.pdf used on inp
-ut line 249.
+Package pdftex.def Info: graphics/eventSelection/zVertexRpVsTpc.pdf  used on in
+put line 251.
 (pdftex.def)             Requested size: 193.47578pt x 187.6735pt.
-
-<graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf, id=1262, 569.12625pt x 4
+<graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf, id=1279, 569.12625pt x 4
 08.52625pt>
 File: graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf Graphic file (type p
 df)
- <use graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf>
-Package pdftex.def Info: graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf u
-sed on input line 256.
+<use graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf>
+Package pdftex.def Info: graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf  
+used on input line 258.
 (pdftex.def)             Requested size: 263.6139pt x 189.23341pt.
-
-<graphics/eventSelection/DeltaZVx.pdf, id=1267, page=1, 569.12625pt x 552.0625p
+<graphics/eventSelection/DeltaZVx.pdf, id=1284, page=1, 569.12625pt x 552.0625p
 t>
 File: graphics/eventSelection/DeltaZVx.pdf Graphic file (type pdf)
- <use graphics/eventSelection/DeltaZVx.pdf, page 1>
-Package pdftex.def Info: graphics/eventSelection/DeltaZVx.pdf, page1 used on in
-put line 266.
+<use graphics/eventSelection/DeltaZVx.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/DeltaZVx.pdf , page1 used on i
+nput line 268.
 (pdftex.def)             Requested size: 229.75896pt x 222.86806pt.
- [14
+ [15
 
  <./graphics/eventSelection/LocalAngles.pdf, page is rotated 90 degrees> <./gra
 phics/eventSelection/LocalAngles.pdf, page is rotated 90 degrees> <./graphics/e
 ventSelection/LocalAngles.pdf, page is rotated 90 degrees> <./graphics/eventSel
 ection/zVertexRpVsTpc.pdf, page is rotated 90 degrees> <./graphics/eventSelecti
 on/zVertexRpMinusZVertexTpc.pdf, page is rotated 90 degrees>]
-<graphics/eventSelection/MaxAdcBbcLarge.pdf, id=1405, page=1, 569.12625pt x 552
+<graphics/eventSelection/MaxAdcBbcLarge.pdf, id=1422, page=1, 569.12625pt x 552
 .0625pt>
 File: graphics/eventSelection/MaxAdcBbcLarge.pdf Graphic file (type pdf)
- <use graphics/eventSelection/MaxAdcBbcLarge.pdf, page 1>
-Package pdftex.def Info: graphics/eventSelection/MaxAdcBbcLarge.pdf, page1 used
- on input line 279.
+<use graphics/eventSelection/MaxAdcBbcLarge.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/MaxAdcBbcLarge.pdf , page1 use
+d on input line 281.
 (pdftex.def)             Requested size: 229.75896pt x 222.86806pt.
-
-<graphics/eventSelection/NTofClusters.pdf, id=1407, page=1, 569.12625pt x 552.0
+<graphics/eventSelection/NTofClusters.pdf, id=1424, page=1, 569.12625pt x 552.0
 625pt>
 File: graphics/eventSelection/NTofClusters.pdf Graphic file (type pdf)
- <use graphics/eventSelection/NTofClusters.pdf, page 1>
-Package pdftex.def Info: graphics/eventSelection/NTofClusters.pdf, page1 used o
-n input line 293.
+<use graphics/eventSelection/NTofClusters.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/NTofClusters.pdf , page1 used 
+on input line 295.
 (pdftex.def)             Requested size: 229.75896pt x 222.86806pt.
- [15 <./graphics/eventSelection/DeltaZVx.pdf, page is rotated 90 degrees> <./gr
+ [16 <./graphics/eventSelection/DeltaZVx.pdf, page is rotated 90 degrees> <./gr
 aphics/eventSelection/MaxAdcBbcLarge.pdf, page is rotated 90 degrees>]
-<graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf, id=1501, 569.12625pt 
+<graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf, id=1518, 569.12625pt 
 x 552.0625pt>
 File: graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf Graphic file (typ
 e pdf)
- <use graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf>
+<use graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf>
 Package pdftex.def Info: graphics/eventSelection/PxCentralTrksVsProtons_pion.pd
-f used on input line 311.
+f  used on input line 313.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf, id=1502, 569.12625pt 
+<graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf, id=1519, 569.12625pt 
 x 552.0625pt>
 File: graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf Graphic file (typ
 e pdf)
- <use graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf>
+<use graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf>
 Package pdftex.def Info: graphics/eventSelection/PyCentralTrksVsProtons_pion.pd
-f used on input line 318.
+f  used on input line 320.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/MissingPt.pdf, id=1507, page=1, 569.12625pt x 408.5262
+<graphics/eventSelection/MissingPt.pdf, id=1524, page=1, 569.12625pt x 408.5262
 5pt>
 File: graphics/eventSelection/MissingPt.pdf Graphic file (type pdf)
- <use graphics/eventSelection/MissingPt.pdf, page 1>
-Package pdftex.def Info: graphics/eventSelection/MissingPt.pdf, page1 used on i
-nput line 329.
+<use graphics/eventSelection/MissingPt.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/MissingPt.pdf , page1 used on 
+input line 331.
 (pdftex.def)             Requested size: 306.17798pt x 219.79051pt.
- [16 <./graphics/eventSelection/NTofClusters.pdf, page is rotated 90 degrees> <
+ [17 <./graphics/eventSelection/NTofClusters.pdf, page is rotated 90 degrees> <
 ./graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf, page is rotated 90 d
 egrees> <./graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf, page is rot
 ated 90 degrees>]
-<graphics/eventSelection/TofScheme.pdf, id=1646, 282.96358pt x 103.878pt>
+<graphics/eventSelection/TofScheme.pdf, id=1663, 282.96358pt x 103.878pt>
 File: graphics/eventSelection/TofScheme.pdf Graphic file (type pdf)
-
 <use graphics/eventSelection/TofScheme.pdf>
-Package pdftex.def Info: graphics/eventSelection/TofScheme.pdf used on input li
-ne 347.
+Package pdftex.def Info: graphics/eventSelection/TofScheme.pdf  used on input l
+ine 349.
 (pdftex.def)             Requested size: 140.26883pt x 51.49504pt.
-
-<graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf, id=1647, 569.12625pt x 552
+<graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf, id=1664, 569.12625pt x 552
 .0625pt>
 File: graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf Graphic file (type pdf
 )
- <use graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf>
-Package pdftex.def Info: graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf use
-d on input line 396.
+<use graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf>
+Package pdftex.def Info: graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf  us
+ed on input line 398.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-
-<graphics/eventSelection/SqRootNSigmaPionVsProton.pdf, id=1648, 569.12625pt x 5
+<graphics/eventSelection/SqRootNSigmaPionVsProton.pdf, id=1665, 569.12625pt x 5
 52.0625pt>
 File: graphics/eventSelection/SqRootNSigmaPionVsProton.pdf Graphic file (type p
 df)
- <use graphics/eventSelection/SqRootNSigmaPionVsProton.pdf>
-Package pdftex.def Info: graphics/eventSelection/SqRootNSigmaPionVsProton.pdf u
-sed on input line 403.
+<use graphics/eventSelection/SqRootNSigmaPionVsProton.pdf>
+Package pdftex.def Info: graphics/eventSelection/SqRootNSigmaPionVsProton.pdf  
+used on input line 405.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-
-<graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf, id=1649, 569.12625pt x 5
+<graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf, id=1666, 569.12625pt x 5
 52.0625pt>
 File: graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf Graphic file (type p
 df)
- <use graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf>
-Package pdftex.def Info: graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf u
-sed on input line 410.
+<use graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf>
+Package pdftex.def Info: graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf  
+used on input line 412.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-
-<graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf, id=1650, 569.12625pt
+<graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf, id=1667, 569.12625pt
  x 552.0625pt>
 File: graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf Graphic file (ty
 pe pdf)
- <use graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf>
+<use graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf>
 Package pdftex.def Info: graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.p
-df used on input line 424.
+df  used on input line 426.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-
-<graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf, id=1651, 569.12625pt
+<graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf, id=1668, 569.12625pt
  x 552.0625pt>
 File: graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf Graphic file (ty
 pe pdf)
- <use graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf>
+<use graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf>
 Package pdftex.def Info: graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.p
-df used on input line 431.
+df  used on input line 433.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-
-<graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf, id=1652, 569.12625
+<graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf, id=1669, 569.12625
 pt x 552.0625pt>
 File: graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf Graphic file (
 type pdf)
-
 <use graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf>
 Package pdftex.def Info: graphics/eventSelection/SqMassTofVsSqRootNSigma_proton
-.pdf used on input line 438.
+.pdf  used on input line 440.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-
-<graphics/eventSelection/sqMassFromTof.pdf, id=1653, page=1, 569.12625pt x 408.
+<graphics/eventSelection/sqMassFromTof.pdf, id=1670, page=1, 569.12625pt x 408.
 52625pt>
 File: graphics/eventSelection/sqMassFromTof.pdf Graphic file (type pdf)
- <use graphics/eventSelection/sqMassFromTof.pdf, page 1>
-Package pdftex.def Info: graphics/eventSelection/sqMassFromTof.pdf, page1 used 
-on input line 452.
+<use graphics/eventSelection/sqMassFromTof.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/sqMassFromTof.pdf , page1 used
+ on input line 454.
 (pdftex.def)             Requested size: 314.40001pt x 225.6875pt.
- [17 <./graphics/eventSelection/MissingPt.pdf, page is rotated 90 degrees> <./g
+ [18 <./graphics/eventSelection/MissingPt.pdf, page is rotated 90 degrees> <./g
 raphics/eventSelection/TofScheme.pdf>]
-<graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf, id=1721, 569.1262
+<graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf, id=1738, 569.1262
 5pt x 552.0625pt>
 File: graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf Graphic file 
 (type pdf)
-
 <use graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf>
 Package pdftex.def Info: graphics/eventSelection/SignificanceVsEfficiency_pTmis
-s.pdf used on input line 485.
+s.pdf  used on input line 487.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/ROC_pTmiss.pdf, id=1722, 569.12625pt x 552.0625pt>
+<graphics/eventSelection/ROC_pTmiss.pdf, id=1739, 569.12625pt x 552.0625pt>
 File: graphics/eventSelection/ROC_pTmiss.pdf Graphic file (type pdf)
-
 <use graphics/eventSelection/ROC_pTmiss.pdf>
-Package pdftex.def Info: graphics/eventSelection/ROC_pTmiss.pdf used on input l
-ine 485.
+Package pdftex.def Info: graphics/eventSelection/ROC_pTmiss.pdf  used on input 
+line 487.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-<graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf, id=1723, 569.1262
+<graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf, id=1740, 569.1262
 5pt x 552.0625pt>
 File: graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf Graphic file 
 (type pdf)
-
 <use graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf>
 Package pdftex.def Info: graphics/eventSelection/BkgdFractionVsEfficiency_pTmis
-s.pdf used on input line 495.
+s.pdf  used on input line 497.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
- [18 <./graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf, page is rotated 90 
+ [19 <./graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf, page is rotated 90 
 degrees> <./graphics/eventSelection/SqRootNSigmaPionVsProton.pdf, page is rotat
 ed 90 degrees> <./graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf, page is
  rotated 90 degrees> <./graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pd
@@ -1157,247 +1447,212 @@ f, page is rotated 90 degrees> <./graphics/eventSelection/SqMassTofVsSqRootNSig
 ma_kaon.pdf, page is rotated 90 degrees> <./graphics/eventSelection/SqMassTofVs
 SqRootNSigma_proton.pdf, page is rotated 90 degrees> <./graphics/eventSelection
 /sqMassFromTof.pdf, page is rotated 90 degrees>]
-<graphics/eventSelection/CutFlow.pdf, id=2045, page=1, 569.12625pt x 408.52625p
+<graphics/eventSelection/CutFlow.pdf, id=2064, page=1, 569.12625pt x 408.52625p
 t>
 File: graphics/eventSelection/CutFlow.pdf Graphic file (type pdf)
- <use graphics/eventSelection/CutFlow.pdf, page 1>
-Package pdftex.def Info: graphics/eventSelection/CutFlow.pdf, page1 used on inp
-ut line 508.
+<use graphics/eventSelection/CutFlow.pdf, page 1>
+Package pdftex.def Info: graphics/eventSelection/CutFlow.pdf , page1 used on in
+put line 510.
 (pdftex.def)             Requested size: 411.14528pt x 295.13605pt.
-) (./Corrections.tex
-[19 <./graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf, page is rot
-ated 90 degrees> <./graphics/eventSelection/ROC_pTmiss.pdf, page is rotated 90 
-degrees> <./graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf, page i
-s rotated 90 degrees>] [20 <./graphics/eventSelection/CutFlow.pdf, page is rota
-ted 90 degrees>]
+)
+(./Corrections.tex [20 <./graphics/eventSelection/SignificanceVsEfficiency_pTmi
+ss.pdf, page is rotated 90 degrees> <./graphics/eventSelection/ROC_pTmiss.pdf, 
+page is rotated 90 degrees> <./graphics/eventSelection/BkgdFractionVsEfficiency
+_pTmiss.pdf, page is rotated 90 degrees>] [21 <./graphics/eventSelection/CutFlo
+w.pdf, page is rotated 90 degrees>]
 Chapter 4.
-
-<graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf, id=2236, page=1, 569.1
+<graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf, id=2254, page=1, 569.1
 2625pt x 408.52625pt>
 File: graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf Graphic file (type
  pdf)
-
 <use graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf, page 1>
 Package pdftex.def Info: graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf
-, page1 used on input line 43.
+ , page1 used on input line 43.
 (pdftex.def)             Requested size: 314.40001pt x 225.6875pt.
-
-<graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf, id=2242, pag
+<graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf, id=2260, pag
 e=1, 569.12625pt x 408.52625pt>
 File: graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf Graphic 
 file (type pdf)
-
 <use graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf, page 1>
 Package pdftex.def Info: graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi
-_graph.pdf, page1 used on input line 56.
+_graph.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 314.40001pt x 225.6875pt.
-
-[21
+[22
 
  <./graphics/corrections/OnlineVetoEffVsInstLumi_graph.pdf, page is rotated 90 
 degrees>]
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2309, page=4,
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2326, page=4,
  569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
-
 <use graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page 4>
 Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
-on.pdf, page4 used on input line 97.
+on.pdf , page4 used on input line 97.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
-
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2310, page=14
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2327, page=14
 , 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
-
 <use graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page 14>
 Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
-on.pdf, page14 used on input line 97.
+on.pdf , page14 used on input line 97.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
-
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2311, page=24
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2328, page=24
 , 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
-
 <use graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page 24>
 Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
-on.pdf, page24 used on input line 97.
+on.pdf , page24 used on input line 97.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
-
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2312, page=34
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2329, page=34
 , 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
-
 <use graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page 34>
 Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
-on.pdf, page34 used on input line 97.
+on.pdf , page34 used on input line 97.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
-
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2313, page=9,
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2330, page=9,
  569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
-
 <use graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page 9>
 Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
-on.pdf, page9 used on input line 104.
+on.pdf , page9 used on input line 104.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
-
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2314, page=19
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2331, page=19
 , 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
-
 <use graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page 19>
 Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
-on.pdf, page19 used on input line 104.
+on.pdf , page19 used on input line 104.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
-
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2315, page=29
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2332, page=29
 , 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
-
 <use graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page 29>
 Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
-on.pdf, page29 used on input line 104.
+on.pdf , page29 used on input line 104.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
-
-<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2316, page=39
+<graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, id=2333, page=39
 , 569.12625pt x 203.76125pt>
 File: graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf Graphic file
  (type pdf)
-
 <use graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page 39>
 Package pdftex.def Info: graphics/corrections/dEdx_fitPerMomentumBin_3rdIterati
-on.pdf, page39 used on input line 104.
+on.pdf , page39 used on input line 104.
 (pdftex.def)             Requested size: 239.42758pt x 85.72215pt.
-
-<graphics/corrections/dEdxMeanOffset_allPIDs.pdf, id=2319, 569.12625pt x 408.52
+<graphics/corrections/dEdxMeanOffset_allPIDs.pdf, id=2336, 569.12625pt x 408.52
 625pt>
 File: graphics/corrections/dEdxMeanOffset_allPIDs.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdxMeanOffset_allPIDs.pdf>
-Package pdftex.def Info: graphics/corrections/dEdxMeanOffset_allPIDs.pdf used o
-n input line 122.
+<use graphics/corrections/dEdxMeanOffset_allPIDs.pdf>
+Package pdftex.def Info: graphics/corrections/dEdxMeanOffset_allPIDs.pdf  used 
+on input line 122.
 (pdftex.def)             Requested size: 228.54854pt x 164.0559pt.
-
-<graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf, id=2320, 569.12625pt x 4
+<graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf, id=2337, 569.12625pt x 4
 08.52625pt>
 File: graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf Graphic file (type p
 df)
- <use graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf>
-Package pdftex.def Info: graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf u
-sed on input line 122.
+<use graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf>
+Package pdftex.def Info: graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf  
+used on input line 122.
 (pdftex.def)             Requested size: 228.54854pt x 164.0559pt.
-
-<graphics/corrections/dEdxWidth_allPIDs.pdf, id=2321, 569.12625pt x 408.52625pt
+<graphics/corrections/dEdxWidth_allPIDs.pdf, id=2338, 569.12625pt x 408.52625pt
 >
 File: graphics/corrections/dEdxWidth_allPIDs.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdxWidth_allPIDs.pdf>
-Package pdftex.def Info: graphics/corrections/dEdxWidth_allPIDs.pdf used on inp
-ut line 132.
+<use graphics/corrections/dEdxWidth_allPIDs.pdf>
+Package pdftex.def Info: graphics/corrections/dEdxWidth_allPIDs.pdf  used on in
+put line 132.
 (pdftex.def)             Requested size: 228.54854pt x 164.0559pt.
-
-<graphics/corrections/dEdxWidth_allPIDs_data.pdf, id=2322, 569.12625pt x 408.52
+<graphics/corrections/dEdxWidth_allPIDs_data.pdf, id=2339, 569.12625pt x 408.52
 625pt>
 File: graphics/corrections/dEdxWidth_allPIDs_data.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdxWidth_allPIDs_data.pdf>
-Package pdftex.def Info: graphics/corrections/dEdxWidth_allPIDs_data.pdf used o
-n input line 132.
+<use graphics/corrections/dEdxWidth_allPIDs_data.pdf>
+Package pdftex.def Info: graphics/corrections/dEdxWidth_allPIDs_data.pdf  used 
+on input line 132.
 (pdftex.def)             Requested size: 228.54854pt x 164.0559pt.
-
-<graphics/corrections/dEdx_DataVsMC.pdf, id=2337, page=4, 569.12625pt x 275.027
+<graphics/corrections/dEdx_DataVsMC.pdf, id=2354, page=4, 569.12625pt x 275.027
 5pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdx_DataVsMC.pdf, page 4>
-Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page4 used on 
-input line 181.
-(pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
-
-<graphics/corrections/dEdx_DataVsMC.pdf, id=2338, page=14, 569.12625pt x 275.02
-75pt>
-File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdx_DataVsMC.pdf, page 14>
-Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page14 used on
+<use graphics/corrections/dEdx_DataVsMC.pdf, page 4>
+Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf , page4 used on
  input line 181.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
-
-<graphics/corrections/dEdx_DataVsMC.pdf, id=2339, page=24, 569.12625pt x 275.02
+<graphics/corrections/dEdx_DataVsMC.pdf, id=2355, page=14, 569.12625pt x 275.02
 75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdx_DataVsMC.pdf, page 24>
-Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page24 used on
- input line 181.
+<use graphics/corrections/dEdx_DataVsMC.pdf, page 14>
+Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf , page14 used o
+n input line 181.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
-
-<graphics/corrections/dEdx_DataVsMC.pdf, id=2340, page=34, 569.12625pt x 275.02
+<graphics/corrections/dEdx_DataVsMC.pdf, id=2356, page=24, 569.12625pt x 275.02
 75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdx_DataVsMC.pdf, page 34>
-Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page34 used on
- input line 181.
+<use graphics/corrections/dEdx_DataVsMC.pdf, page 24>
+Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf , page24 used o
+n input line 181.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
-
-<graphics/corrections/dEdx_DataVsMC.pdf, id=2341, page=9, 569.12625pt x 275.027
+<graphics/corrections/dEdx_DataVsMC.pdf, id=2357, page=34, 569.12625pt x 275.02
+75pt>
+File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
+<use graphics/corrections/dEdx_DataVsMC.pdf, page 34>
+Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf , page34 used o
+n input line 181.
+(pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
+<graphics/corrections/dEdx_DataVsMC.pdf, id=2358, page=9, 569.12625pt x 275.027
 5pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdx_DataVsMC.pdf, page 9>
-Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page9 used on 
-input line 188.
-(pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
-
-<graphics/corrections/dEdx_DataVsMC.pdf, id=2342, page=19, 569.12625pt x 275.02
-75pt>
-File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdx_DataVsMC.pdf, page 19>
-Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page19 used on
+<use graphics/corrections/dEdx_DataVsMC.pdf, page 9>
+Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf , page9 used on
  input line 188.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
-
-<graphics/corrections/dEdx_DataVsMC.pdf, id=2343, page=29, 569.12625pt x 275.02
+<graphics/corrections/dEdx_DataVsMC.pdf, id=2359, page=19, 569.12625pt x 275.02
 75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdx_DataVsMC.pdf, page 29>
-Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page29 used on
- input line 188.
+<use graphics/corrections/dEdx_DataVsMC.pdf, page 19>
+Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf , page19 used o
+n input line 188.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
-
-<graphics/corrections/dEdx_DataVsMC.pdf, id=2344, page=39, 569.12625pt x 275.02
+<graphics/corrections/dEdx_DataVsMC.pdf, id=2360, page=29, 569.12625pt x 275.02
 75pt>
 File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/dEdx_DataVsMC.pdf, page 39>
-Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf, page39 used on
- input line 188.
+<use graphics/corrections/dEdx_DataVsMC.pdf, page 29>
+Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf , page29 used o
+n input line 188.
 (pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
-
-<graphics/corrections/sqMassTof_DataVsMC.pdf, id=2345, page=1, 569.12625pt x 40
+<graphics/corrections/dEdx_DataVsMC.pdf, id=2361, page=39, 569.12625pt x 275.02
+75pt>
+File: graphics/corrections/dEdx_DataVsMC.pdf Graphic file (type pdf)
+<use graphics/corrections/dEdx_DataVsMC.pdf, page 39>
+Package pdftex.def Info: graphics/corrections/dEdx_DataVsMC.pdf , page39 used o
+n input line 188.
+(pdftex.def)             Requested size: 239.42758pt x 115.7038pt.
+<graphics/corrections/sqMassTof_DataVsMC.pdf, id=2362, page=1, 569.12625pt x 40
 8.52625pt>
 File: graphics/corrections/sqMassTof_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/sqMassTof_DataVsMC.pdf, page 1>
-Package pdftex.def Info: graphics/corrections/sqMassTof_DataVsMC.pdf, page1 use
-d on input line 208.
+<use graphics/corrections/sqMassTof_DataVsMC.pdf, page 1>
+Package pdftex.def Info: graphics/corrections/sqMassTof_DataVsMC.pdf , page1 us
+ed on input line 208.
 (pdftex.def)             Requested size: 152.36569pt x 109.36852pt.
-
-<graphics/corrections/sqMassTof_DataVsMC.pdf, id=2346, page=2, 569.12625pt x 40
+<graphics/corrections/sqMassTof_DataVsMC.pdf, id=2363, page=2, 569.12625pt x 40
 8.52625pt>
 File: graphics/corrections/sqMassTof_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/sqMassTof_DataVsMC.pdf, page 2>
-Package pdftex.def Info: graphics/corrections/sqMassTof_DataVsMC.pdf, page2 use
-d on input line 215.
+<use graphics/corrections/sqMassTof_DataVsMC.pdf, page 2>
+Package pdftex.def Info: graphics/corrections/sqMassTof_DataVsMC.pdf , page2 us
+ed on input line 215.
 (pdftex.def)             Requested size: 152.36569pt x 109.36852pt.
-
-<graphics/corrections/sqMassTof_DataVsMC.pdf, id=2347, page=3, 569.12625pt x 40
+<graphics/corrections/sqMassTof_DataVsMC.pdf, id=2364, page=3, 569.12625pt x 40
 8.52625pt>
 File: graphics/corrections/sqMassTof_DataVsMC.pdf Graphic file (type pdf)
- <use graphics/corrections/sqMassTof_DataVsMC.pdf, page 3>
-Package pdftex.def Info: graphics/corrections/sqMassTof_DataVsMC.pdf, page3 use
-d on input line 222.
+<use graphics/corrections/sqMassTof_DataVsMC.pdf, page 3>
+Package pdftex.def Info: graphics/corrections/sqMassTof_DataVsMC.pdf , page3 us
+ed on input line 222.
 (pdftex.def)             Requested size: 152.36569pt x 109.36852pt.
- [22 <./graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf, page 
-is rotated 90 degrees>] [23 <./graphics/corrections/dEdx_fitPerMomentumBin_3rdI
+ [23 <./graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf, page 
+is rotated 90 degrees>] [24 <./graphics/corrections/dEdx_fitPerMomentumBin_3rdI
 teration.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_fitPerMo
 mentumBin_3rdIteration.pdf, page is rotated 90 degrees> <./graphics/corrections
 /dEdx_fitPerMomentumBin_3rdIteration.pdf, page is rotated 90 degrees> <./graphi
@@ -1406,41 +1661,37 @@ ees> <./graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.pdf, page is r
 otated 90 degrees> <./graphics/corrections/dEdx_fitPerMomentumBin_3rdIteration.
 pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_fitPerMomentumBin
 _3rdIteration.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_fit
-PerMomentumBin_3rdIteration.pdf, page is rotated 90 degrees>] [24 <./graphics/c
-orrections/dEdxMeanOffset_allPIDs.pdf, page is rotated 90 degrees> <./graphics/
-corrections/dEdxMeanOffset_allPIDs_data.pdf, page is rotated 90 degrees> <./gra
-phics/corrections/dEdxWidth_allPIDs.pdf, page is rotated 90 degrees> <./graphic
-s/corrections/dEdxWidth_allPIDs_data.pdf, page is rotated 90 degrees>] [25 <./g
-raphics/corrections/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/
-corrections/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/correcti
-ons/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx
-_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_DataVsM
-C.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, p
-age is rotated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, page is r
-otated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, page is rotated 9
-0 degrees> <./graphics/corrections/sqMassTof_DataVsMC.pdf, page is rotated 90 d
-egrees> <./graphics/corrections/sqMassTof_DataVsMC.pdf, page is rotated 90 degr
-ees> <./graphics/corrections/sqMassTof_DataVsMC.pdf, page is rotated 90 degrees
->])
-(./Backgrounds.tex [26
+PerMomentumBin_3rdIteration.pdf, page is rotated 90 degrees>]
+[25 <./graphics/corrections/dEdxMeanOffset_allPIDs.pdf, page is rotated 90 degr
+ees> <./graphics/corrections/dEdxMeanOffset_allPIDs_data.pdf, page is rotated 9
+0 degrees> <./graphics/corrections/dEdxWidth_allPIDs.pdf, page is rotated 90 de
+grees> <./graphics/corrections/dEdxWidth_allPIDs_data.pdf, page is rotated 90 d
+egrees>] [26 <./graphics/corrections/dEdx_DataVsMC.pdf, page is rotated 90 degr
+ees> <./graphics/corrections/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./
+graphics/corrections/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./graphics
+/corrections/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/correct
+ions/dEdx_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/corrections/dEd
+x_DataVsMC.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_DataVs
+MC.pdf, page is rotated 90 degrees> <./graphics/corrections/dEdx_DataVsMC.pdf, 
+page is rotated 90 degrees> <./graphics/corrections/sqMassTof_DataVsMC.pdf, pag
+e is rotated 90 degrees> <./graphics/corrections/sqMassTof_DataVsMC.pdf, page i
+s rotated 90 degrees> <./graphics/corrections/sqMassTof_DataVsMC.pdf, page is r
+otated 90 degrees>]) (./Backgrounds.tex [27
 
 ]
 Chapter 5.
-
-<graphics/backgrounds/Raw_MissingPtPid.pdf, id=2743, page=1, 569.12625pt x 408.
+<graphics/backgrounds/Raw_MissingPtPid.pdf, id=2760, page=1, 569.12625pt x 408.
 52625pt>
 File: graphics/backgrounds/Raw_MissingPtPid.pdf Graphic file (type pdf)
- <use graphics/backgrounds/Raw_MissingPtPid.pdf, page 1>
-Package pdftex.def Info: graphics/backgrounds/Raw_MissingPtPid.pdf, page1 used 
-on input line 15.
+<use graphics/backgrounds/Raw_MissingPtPid.pdf, page 1>
+Package pdftex.def Info: graphics/backgrounds/Raw_MissingPtPid.pdf , page1 used
+ on input line 15.
 (pdftex.def)             Requested size: 314.40001pt x 225.6875pt.
-
-<graphics/backgrounds/pid-crop2.pdf, id=2744, 196.735pt x 92.345pt>
+<graphics/backgrounds/pid-crop2.pdf, id=2761, 196.735pt x 92.345pt>
 File: graphics/backgrounds/pid-crop2.pdf Graphic file (type pdf)
-
 <use graphics/backgrounds/pid-crop2.pdf>
-Package pdftex.def Info: graphics/backgrounds/pid-crop2.pdf used on input line 
-29.
+Package pdftex.def Info: graphics/backgrounds/pid-crop2.pdf  used on input line
+ 29.
 (pdftex.def)             Requested size: 228.54854pt x 107.27666pt.
 
 Overfull \hbox (1.66663pt too wide) detected at line 67
@@ -1452,79 +1703,84 @@ Overfull \hbox (1.66663pt too wide) detected at line 67
 [][] [] \OT1/cmr/m/n/10 = ^^C[] []
  []
 
-[27
+[28
 
  <./graphics/backgrounds/Raw_MissingPtPid.pdf, page is rotated 90 degrees> <./g
-raphics/backgrounds/pid-crop2.pdf>]) (./SystematicErrors.tex [28]
+raphics/backgrounds/pid-crop2.pdf>]) (./SystematicErrors.tex [29]
 Chapter 6.
-) [29
+) [30
 
-] (./CEP_AnalysisNote.lof)
+] (./CEP_AnalysisNote.lof
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+ [][]  
+ []
+
+)
 \tf@lof=\write5
 \openout5 = `CEP_AnalysisNote.lof'.
 
- (./CEP_AnalysisNote.lot [30
+ (./CEP_AnalysisNote.lot [31
 
 ])
 \tf@lot=\write6
 \openout6 = `CEP_AnalysisNote.lot'.
 
-
-(./CEP_AnalysisNote.bbl [31])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
- [32
+ (./CEP_AnalysisNote.bbl [32])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
+ [33
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
- (./CEP_AnalysisNote.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
+
+(./CEP_AnalysisNote.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
 Package rerunfilecheck Info: File `CEP_AnalysisNote.out' has not changed.
-(rerunfilecheck)             Checksum: 9EE4E878678AC2C7955B4A6127843C7F;4274.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
+(rerunfilecheck)             Checksum: 0420DC365577ADACFE54AD9136C58CD3;4382.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 225.
  ) 
 Here is how much of TeX's memory you used:
- 9721 strings out of 494985
- 155439 string characters out of 6180449
- 263748 words of memory out of 5000000
- 12510 multiletter control sequences out of 15000+600000
- 22421 words of font info for 77 fonts, out of 8000000 for 9000
- 34 hyphenation exceptions out of 8191
- 36i,24n,51p,1001b,638s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt10.pfb>
-Output written on CEP_AnalysisNote.pdf (32 pages, 3793287 bytes).
+ 13337 strings out of 492982
+ 225240 string characters out of 6134895
+ 337603 words of memory out of 5000000
+ 16447 multiletter control sequences out of 15000+600000
+ 25766 words of font info for 94 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 73i,26n,67p,1001b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on CEP_AnalysisNote.pdf (33 pages, 3769448 bytes).
 PDF statistics:
- 3078 PDF objects out of 3580 (max. 8388607)
- 1721 compressed objects within 18 object streams
- 196 named destinations out of 1000 (max. 500000)
- 794 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3082 PDF objects out of 3580 (max. 8388607)
+ 1727 compressed objects within 18 object streams
+ 200 named destinations out of 1000 (max. 500000)
+ 810 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,8 +3,10 @@
 \usepackage{authblk}
 \usepackage{geometry}
 \usepackage{graphicx}
+\usepackage{grffile}
 \usepackage{tabulary}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{float}
 \usepackage{cite}
@@ -12,14 +14,27 @@
 \usepackage{caption}
 \usepackage{subcaption}
 % \usepackage[pdfborder={0 0 0.6}]{hyperref}
-\usepackage{hyperref}
+\usepackage[linktocpage=true]{hyperref}
+\usepackage{listliketab}
 \usepackage{enumitem}
 \usepackage{multirow}
+\usepackage{multicol}
 \usepackage{makecell}
 \usepackage{bm}
 \usepackage{wrapfig}
+\usepackage{empheq}
+\usepackage[titletoc]{appendix}
+\usepackage{cleveref}
+\usepackage[bottom]{footmisc}
+\usepackage{blindtext}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[maxfloats=80]{morefloats}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% making figures in the subsection where placed (according to https://tex.stackexchange.com/questions/279/how-do-i-ensure-that-figures-appear-in-the-section-theyre-associated-with/235312#235312 )
+%\usepackage{lineno}
+%\linenumbers  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% making figures in the subsection where placed (according to https://tex.stackexchange.com/questions/279/how-do-i-ensure-that-figures-appear-in-the-section-theyre-associated-with/235312#235312 ) 
 \usepackage{placeins}
 
 \let\Oldsection\section
@@ -31,6 +46,11 @@
 \let\Oldsubsubsection\subsubsection
 \renewcommand{\subsubsection}{\FloatBarrier\Oldsubsubsection}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% 
+% \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
 
 \pdfinfo{%
   /Title    ()
@@ -47,6 +67,8 @@
 \newcommand{\DPE}{D\Pom E}
 \newcommand{\Pomeron}{\Pom omeron}
 \newcommand{\Reggeon}{\Reg eggeon}
+\newcommand{\bis}{\prime\prime}
+
 
 % ---- ---- additional commands ---- ----
 \newcommand{\specialcell}[2][c]{%
@@ -88,17 +110,28 @@
   }}
 \makeatother
 
+\Crefname{figure}{Fig.}{Figs.}
 
 % Title Page
-\title{\textbf{Measurement of Central Exclusive Production\\of $\bm{h\bar{h}}$ pairs ($\bm{h=\pi,K,p}$) with Roman Pot detectors in diffractive proton-proton interactions at~$\bm{\sqrt{s}=}$~200~GeV}\vspace*{10pt}}
-\author[1]{Leszek Adamczyk}
-\author[1]{Łukasz Fulek}
-\author[2]{Włodek Guryn}
-\author[1]{Mariusz Przybycień}
-\author[1,$\dag$]{\underline{Rafał Sikora}}
-\affil[1]{AGH University of Science and Technology, FPACS, Kraków, Poland}
-\affil[2]{Brookhaven National Laboratory, Upton, NY, USA}
-\affil[$\dag$]{e-mail:~\href{mailto:rafal.sikora@fis.agh.edu.pl}{rafal.sikora@fis.agh.edu.pl}}
+\title{%
+\centering\hspace*{-0.08\linewidth}\begin{minipage}{1.16\linewidth}\centering%
+\textbf{Measurement of diffractive Central Exclusive Production of $\bm{h\bar{h}}$ pairs ($\bm{h=\pi,K,p}$) in proton-proton collisions at~$\bm{\sqrt{s}=}$~200~GeV with forward proton reconstruction\\in Roman Pot detectors}
+\end{minipage}%
+\vspace*{10pt}}
+% \author[1]{Leszek Adamczyk}
+% \author[1]{Łukasz Fulek}
+% \author[2]{Włodek Guryn}
+% \author[1]{Mariusz Przybycień}
+% \author[1,$\dag$]{\underline{Rafał Sikora}}
+% \affil[1]{AGH University of Science and Technology, FPACS, Kraków, Poland} 
+% \affil[2]{Brookhaven National Laboratory, Upton, NY, USA}
+% \affil[$\dag$]{e-mail:~\href{mailto:rafal.sikora@fis.agh.edu.pl}{rafal.sikora@fis.agh.edu.pl}}
+
+\author[ ]{\href{mailto:leszek.adamczyk@agh.edu.pl}{Leszek Adamczyk}}
+\author[ ]{\href{mailto:lukasz.fulek@fis.agh.edu.pl}{Łukasz Fulek}}
+\author[ ]{\href{mailto:mariusz.przybycien@agh.edu.pl}{Mariusz Przybycień}}
+\author[ ]{\href{mailto:rafal.sikora@fis.agh.edu.pl}{Rafał Sikora}}
+\affil[ ]{AGH University of Science and Technology, FPACS, Kraków, Poland}
 
 \setcounter{Maxaffil}{0}
 \renewcommand\Affilfont{\itshape\small}
@@ -122,14 +155,16 @@
 \begin{minipage}{\linewidth}
 \maketitle
 \begin{abstract}
-In this note we present analysis of diffractive Central Exclusive Production using 2015 data from proton-proton collisions at $\sqrt{s}=200$~GeV. This dataset was collected with newly installed Roman Pot detectors in Phase II* configuration which ensured efficient triggering and measuring diffractively scattered protons. We describe all intermediate stages of analysis involving extraction of the acceptance and effciency corrections, comparison of data with Monte Carlo models folded into detector response, and study of systematic uncertainties. Finally, we show the physics outcome of the analysis.
+In this note we present analysis of diffractive Central Exclusive Production using 2015 data from proton-proton collisions at $\sqrt{s}=200$~GeV. This dataset was collected with newly installed Roman Pot detectors in Phase II* configuration which ensured efficient triggering and measuring diffractively scattered protons. We describe intermediate stages of analysis involving choice of selection cuts, comparison of data with Monte Carlo models folded into detector acceptance, and study of systematic uncertainties specific to the analysis. Finally, we show the physics outcome of the analysis. Parts of the analysis which are of more technical nature (calculation of efficiencies, derivation of corrections to efficiencies, adjustment of the STAR simulation, systematic uncertainty of efficiencies) are described in a supplementary analysis note~\cite{supplementaryNote}.
 \end{abstract}
 \thispagestyle{empty}
 \end{minipage}
 
 \vspace{50pt}
 
- \Huge{\textbf{\textit{DRAFT}}}
+%  \Huge{\textbf{\textit{DRAFT}}}
+% \vspace{10pt}
+ver.~0.9
 \end{center}
 
 
@@ -140,6 +175,10 @@ In this note we present analysis of diffractive Central Exclusive Production usi
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{4}
 \tableofcontents
+
+\newpage
+%% =====  LIST OF CONTRIBUTIONS,  CHANGE LOG ====
+\input{ListOfContributions.tex}
 
 %% =====  INTRODUCTION ====
 \input{Introduction.tex}

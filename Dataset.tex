@@ -54,40 +54,40 @@ Main attention should be put on option \textbf{useBTOFmatchOnly} which forced ve
 \section{Data format}\label{sec:dataFormat}
 
 The analyzed data was stored in ROOT files in the picoDST format which was in large part a skimmed MuDST (standard STAR format). The picoDST format was introduced in Ref.~\cite{PicoDstDescription}. PicoDST description files (C++ headers etc.) can be found in the analysis code repository~\cite{AnalysisCodeRepo}.
-
-\section{Bad runs}\label{sec:badRuns}
-
-Analysis of CEP was performed on the data from runs with completion status ``Successful'' in the STAR run log. However, based on additional requirements explained below, some runs were omitted from analysis.
-
-\subsection{RP distance from the beamline}
-
-16065025
-16065026
-16065027
-16065028
-16072057
-16072058
-16077055
-16083006
-16083007
-16106031
-
-%---------------------------
-\begin{figure}[hb]
-\centering
-\parbox{0.4\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:positionHistograms}}{\includegraphics[width=\linewidth]{graphics/dataset/positionHistograms.pdf}}}
-  \end{subfigure}
-}
-\quad
-\parbox{0.545\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:positionVsRunGraph}}{\includegraphics[width=\linewidth]{graphics/dataset/positionVsRunGraph.pdf}}}
-  \end{subfigure}
-}%
-\caption[Beam-detector distance of the Roman Pots in run 15.]{Histogram of beam-detector distance $|y|$ (\ref{fig:positionHistograms}) and graph showing run-dependence of $|y|$ (\ref{fig:positionVsRunGraph}) for all Roman Pots.}%\label{fig:xy_recoEff}
-\end{figure}
-%---------------------------
+% 
+% \section{Bad runs}\label{sec:badRuns}
+% 
+% Analysis of CEP was performed on the data from runs with completion status ``Successful'' in the STAR run log. However, based on additional requirements explained below, some runs were omitted from analysis.
+% 
+% \subsection{RP distance from the beamline}
+% 
+% 16065025
+% 16065026
+% 16065027
+% 16065028
+% 16072057
+% 16072058
+% 16077055
+% 16083006
+% 16083007
+% 16106031
+% 
+% %---------------------------
+% \begin{figure}[hb]
+% \centering
+% \parbox{0.4\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:positionHistograms}}{\includegraphics[width=\linewidth]{graphics/dataset/positionHistograms.pdf}}}
+%   \end{subfigure}
+% }
+% \quad
+% \parbox{0.545\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:positionVsRunGraph}}{\includegraphics[width=\linewidth]{graphics/dataset/positionVsRunGraph.pdf}}}
+%   \end{subfigure}
+% }%
+% \caption[Beam-detector distance of the Roman Pots in run 15.]{Histogram of beam-detector distance $|y|$ (\ref{fig:positionHistograms}) and graph showing run-dependence of $|y|$ (\ref{fig:positionVsRunGraph}) for all Roman Pots.}%\label{fig:xy_recoEff}
+% \end{figure}
+% %---------------------------

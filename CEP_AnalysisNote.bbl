@@ -1,5 +1,11 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
+\bibitem{supplementaryNote}
+L.~Adamczyk, L.~Fulek, and R.~Sikora, ``{Supplementary note on diffractive
+  analyses of 2015 proton-proton data}.''
+  \url{https://drupal.star.bnl.gov/STAR/blog/rafals/supplementary-note-diffractive-analyses-2015-proton-proton-data},
+  January, 2019.
+
 \bibitem{IntroductionToRegge}
 P.~D.~B. Collins, {\em {An Introduction to Regge Theory and High-Energy
   Physics}}.
