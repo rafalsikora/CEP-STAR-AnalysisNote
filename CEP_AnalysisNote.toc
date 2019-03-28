@@ -16,15 +16,15 @@
 \contentsline {section}{\numberline {3.2}Description of cuts}{10}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}(\ref {enum:CutPrimVx},\ref {enum:CutZVx})\nobreakspace {}Primary vertex and its $z$-position}{10}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}(\ref {enum:CutTpcTrks})\nobreakspace {}TPC tracks}{10}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}(\ref {enum:CutRpTrks})\nobreakspace {}RP tracks}{15}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}(\ref {enum:CutDeltaZVx})\nobreakspace {}TPC-RP $z$-vertex matching}{15}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}(\ref {enum:CutBbcLarge})\nobreakspace {}BBC-large signal veto}{16}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.3}(\ref {enum:CutRpTrks})\nobreakspace {}RP tracks}{14}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}(\ref {enum:CutDeltaZVx})\nobreakspace {}TPC-RP $z$-vertex matching}{14}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}(\ref {enum:CutBbcLarge})\nobreakspace {}BBC-large signal veto}{15}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}(\ref {enum:CutTofClusters})\nobreakspace {}TOF clusters limit}{16}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{T}$ cut)}{17}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}(\ref {enum:CutPid})\nobreakspace {}Particle identification}{18}{subsection.3.2.8}
-\contentsline {section}{\numberline {3.3}Working point for cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}{20}{section.3.3}
-\contentsline {section}{\numberline {3.4}Signal per integrated luminosity}{20}{section.3.4}
-\contentsline {section}{\numberline {3.5}Cut flow}{20}{section.3.5}
+\contentsline {subsection}{\numberline {3.2.7}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{T}$ cut)}{16}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}(\ref {enum:CutPid})\nobreakspace {}Particle identification}{17}{subsection.3.2.8}
+\contentsline {section}{\numberline {3.3}Working point for cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}{19}{section.3.3}
+\contentsline {section}{\numberline {3.4}Signal per integrated luminosity}{21}{section.3.4}
+\contentsline {section}{\numberline {3.5}Cut flow}{21}{section.3.5}
 \contentsline {chapter}{\numberline {4}Corrections}{22}{chapter.4}
 \contentsline {section}{\numberline {4.1}Method of corrections application}{22}{section.4.1}
 \contentsline {section}{\numberline {4.2}Efficiencies and acceptances}{22}{section.4.2}
@@ -50,6 +50,6 @@
 \contentsline {section}{\numberline {5.2}Relative normalization of background and signal}{26}{section.5.2}
 \contentsline {chapter}{\numberline {6}Systematic errors}{27}{chapter.6}
 \contentsline {chapter}{\numberline {7}Physics results}{28}{chapter.7}
-\contentsline {chapter}{List of Figures}{34}{chapter*.36}
-\contentsline {chapter}{List of Tables}{34}{chapter*.37}
-\contentsline {chapter}{References}{35}{chapter*.38}
+\contentsline {chapter}{List of Figures}{34}{chapter*.35}
+\contentsline {chapter}{List of Tables}{34}{chapter*.36}
+\contentsline {chapter}{References}{35}{chapter*.37}

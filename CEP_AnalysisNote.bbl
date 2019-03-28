@@ -113,9 +113,4 @@ L.~Adamczyk. \url{https://drupal.star.bnl.gov/STAR/system/files/talk_42.pdf},
 \bibitem{AnalysisCodeRepo}
 \url{https://github.com/rafalsikora/CEP-STAR}.
 
-\bibitem{AlternativeToCrystallBall}
-S.~Das, ``{A simple alternative to the Crystal Ball function},''
-\href{http://arxiv.org/abs/1603.08591}{{\ttfamily arXiv:1603.08591 [hep-ex]}}.
-%%CITATION = ARXIV:1603.08591;%%.
-
 \end{thebibliography}\endgroup

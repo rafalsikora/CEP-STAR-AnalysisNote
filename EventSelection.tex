@@ -11,7 +11,7 @@
 
 Complete list of analysis cuts used for signal extraction is presented in Sec.~\ref{sec:listOfCuts}. Detailed description of each cut can be found in Sec.~\ref{sec:descriptionOfCuts}.
 
-\section[List of cuts]{List of cuts\footnote{Some cuts (e.g.~\ref{enum:CutTpcTrks}) are decomposed to constituent sub-cuts. Cut is formed by the logical AND of all its sub-cuts.}}\label{sec:listOfCuts}
+\section[List of cuts]{List of cuts\footnote{Some cuts (e.g.~\ref{enum:CutTpcTrks}) are decomposed to constituent sub-cuts. Cut is formed by the logical AND of all its sub-cuts. Events must pass all cuts to be identified as a signal.}}\label{sec:listOfCuts}
 \begin{enumerate}[label=\textbf{C\arabic*},ref=C\arabic*]
  \itemm Exactly 1 primary vertex with TPC track(s) matched with hits in TOF.\label{enum:CutPrimVx}
  \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\text{vx}}|<80$~cm.\label{enum:CutZVx}
@@ -19,11 +19,11 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
     \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
       \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks and no addional primary tracks matched with BEMC clusters,\label{enum:TpcTofMatched}
       \itemm Tracks are of opposite signs,\label{enum:TpcOppoSign}
-      \itemm Both tracks are contained within the kinematic range:\label{enum:TpcKinematicCuts}\\[2pt]
+      \itemm Both tracks are contained within the kinematic range:\label{enum:TpcKinematicCuts}\hspace*{13pt}
       $|\eta|<0.7$,~~~~$p_{T}>0.2~\text{GeV}/c$,
-      \itemm Both tracks satisfy quality criteria:\label{enum:TpcQualityCuts}\\[2pt]
-      $N_{\text{hits}}^{\text{fit}}\geq25$,~~~~$N_{\text{hits}}^{\text{dE/dx}}\geq15$,~~~~$|d_{0}|<1.5$~cm,%~~~~$|z_{0}|<200$~cm,
-      \itemm Both tracks match well to the primary vertex:\label{enum:TpcDcaCuts}\\[2pt]
+      \itemm Both tracks satisfy quality criteria:\label{enum:TpcQualityCuts}\hspace*{100pt}
+      $N_{\text{hits}}^{\text{fit}}\geq25$,~~~~$N_{\text{hits}}^{\text{dE/dx}}\geq15$,~~~~$|d_{0}|<1.5$~cm,
+      \itemm Both tracks match well to the primary vertex:\label{enum:TpcDcaCuts}\hspace*{47pt}
       $\text{DCA}(R)<1.5$~cm,~~~~$\text{DCA}(z)<1$~cm.
     \end{enumerate}
  \itemm Exactly 1 RP track on each side of STAR central detector~(\ref{enum:RpOneTrkPerSide}) of good quality~(\ref{enum:RpQualityCuts}), with local angles consistent with the IP being the track origin~(\ref{enum:RpLocalAngles}), lying within fiducial region of high geometrical acceptance~(\ref{enum:RpFiducial}).\label{enum:CutRpTrks}
@@ -36,14 +36,27 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
       \[0.2<|p_{y}|<0.4,~~~-0.2<p_{x},~~~(p_{x}+0.3)^{2}+p_{y}^{2}<0.5^{2}~~~(\text{all in GeV}).\]
     \end{enumerate}
  \itemm Vertex $z$-positions measured in TPC and reconstructed from the difference of proton detection time in west and east RPs are consistent with each other within the resolution: $|z_{\text{vx}}^{\text{TPC}}-z_{\text{vx}}^{\text{RP}}|<36$~cm ($3\sigma_{\Delta z_{\text{vtx}}}$).\label{enum:CutDeltaZVx}
- \itemm No signal in any tile of BBC-large (east or west) with $\text{ADC}>\text{ADC}_{\text{thr}}$ and $100<\text{TDC}<2400$, where $\text{ADC}_{\text{thr}}$ is specific for each channel.\label{enum:CutBbcLarge}
- \itemm Maximally 3 reconstructed TOF clusters $N^{\text{TOF}}_{\text{clstrs}}\leq 3$.\label{enum:CutTofClusters}
- \itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\text{miss}}<75~\text{MeV}/c$.\label{enum:CutMissingPt}
- \itemm Particle (pair) identification:\label{enum:CutPid}\\
- \textbf{~~if~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~\&~~} $n\sigma_{\text{kaon}}^{\text{pair}}>3$ \textbf{~~\&~~} $n\sigma_{\text{proton}}^{\text{pair}}<3$ \textbf{~~\&~~} $m^{2}_{\text{TOF}}>0.6~\text{GeV}/c^{2}~~\rightarrow~~pp$\\%
-\textbf{elif~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~\&~~} $n\sigma_{\text{kaon}}^{\text{pair}}<3$ \textbf{~~\&~~} $n\sigma_{\text{proton}}^{\text{pair}}>3$ \textbf{~~\&~~} $m^{2}_{\text{TOF}}>0.15~\text{GeV}/c^{2}~~\rightarrow~~KK$\\%
-\textbf{elif~~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~~\&~~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi\pi$\\%
-\textbf{else~~} event rejected.
+ \itemm No signal in any tile of BBC-large (east or west) with $\text{ADC}>\text{ADC}_{\text{thr}}$ and $100<\text{TDC}<2400$, where $\text{ADC}_{\text{thr}}$ is specific for each channel.\label{enum:CutBbcLarge}%
+ %
+ \itemm Maximally 3 reconstructed TOF clusters $N^{\text{TOF}}_{\text{clstrs}}\leq 3$.\label{enum:CutTofClusters}%
+ %
+ \itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\text{miss}}<75~\text{MeV}/c$.\label{enum:CutMissingPt}%
+ %
+ \itemm Particle (pair) identification:\label{enum:CutPid}
+ \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
+      \itemm Identification of particle pairs based on $dE/dx$ and $m^{2}_{\text{TOF}}$:\\[2pt]
+        \textbf{~~if~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}<3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.6~\text{GeV}/c^{2}~~\rightarrow~~p\bar{p}$\\%
+        %
+        \textbf{elif~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}<3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}>3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.15~\text{GeV}/c^{2}~~\rightarrow~~K^{+}K^{-}$\\%
+        %
+        \textbf{elif~~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~~and~~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi^{+}\pi^{-}$\\%
+        \textbf{else~~} event rejected.
+      \itemm Restricting fiducial cuts on $K^{+}K^{-}$ and $p\bar{p}$:\\[2pt]
+      \textbf{~if~} $p\bar{p}$:~~~~~~~~~~~~\hspace*{1.7pt}$p_{T}>0.4~\text{GeV}/c$,~~~~$min(p_{T}^{+},p_{T}^{-})<1.1~\text{GeV}/c$\\%
+      \textbf{~if~} $K^{+}K^{-}$:~~~~~~$p_{T}>0.3~\text{GeV}/c$,~~~~$min(p_{T}^{+},p_{T}^{-})<0.7~\text{GeV}/c$\\%
+        %
+        
+\end{enumerate}
 \end{enumerate}
 
 \section{Description of cuts}\label{sec:descriptionOfCuts}
@@ -152,52 +165,52 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 
 
 
-%---------------------------
-\begin{figure}[ht!]
-\centering
-\parbox{0.4725\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:d0}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/d0.pdf}}}
-  \end{subfigure}
-}%
-\quad\quad%
-\parbox{0.4725\textwidth}{%
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:z0}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/z0.pdf}}}
-  \end{subfigure}
-}%
-\caption[Comparison of distribution of $d_{0}$ and $z_{0}$ in the data and embedded MC]
-{Comparison of distribution of the transverse impact parameter $d_{0}$ (\ref{fig:d0}) and the longitudinal impact parameter $z_{0}$ (\ref{fig:z0}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:d0z0}
-\end{figure}
-%---------------------------
+% %---------------------------
+% \begin{figure}[ht!]
+% \centering
+% \parbox{0.4725\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:d0}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/d0.pdf}}}
+%   \end{subfigure}
+% }%
+% \quad\quad%
+% \parbox{0.4725\textwidth}{%
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:z0}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/z0.pdf}}}
+%   \end{subfigure}
+% }%
+% \caption[Comparison of distribution of $d_{0}$ and $z_{0}$ in the data and embedded MC]
+% {Comparison of distribution of the transverse impact parameter $d_{0}$ (\ref{fig:d0}) and the longitudinal impact parameter $z_{0}$ (\ref{fig:z0}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:d0z0}
+% \end{figure}
+% %---------------------------
 
 
 
 
 
-
-%---------------------------
-\begin{figure}[ht!]
-\centering
-\parbox{0.4725\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:RadialDca}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/RadialDCA.pdf}}}
-  \end{subfigure}
-}%
-\quad\quad%
-\parbox{0.4725\textwidth}{%
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:LongitudinalDca}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf}}}
-  \end{subfigure}
-}%
-\caption[Comparison of distribution of $\text{DCA}(R)$ and $\text{DCA}(z)$ in the data and embedded MC]
-{Comparison of distribution of the distance of closest approach of the track to the vertex in the $xy$-plane $\text{DCA}(R)$ (\ref{fig:RadialDca}) and the the distance of closest approach of the track to the vertex along the $z$-axis $\text{DCA}(z)$ (\ref{fig:LongitudinalDca}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:DCA}
-\end{figure}
-%---------------------------
+% 
+% %---------------------------
+% \begin{figure}[ht!]
+% \centering
+% \parbox{0.4725\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:RadialDca}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/RadialDCA.pdf}}}
+%   \end{subfigure}
+% }%
+% \quad\quad%
+% \parbox{0.4725\textwidth}{%
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:LongitudinalDca}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf}}}
+%   \end{subfigure}
+% }%
+% \caption[Comparison of distribution of $\text{DCA}(R)$ and $\text{DCA}(z)$ in the data and embedded MC]
+% {Comparison of distribution of the distance of closest approach of the track to the vertex in the $xy$-plane $\text{DCA}(R)$ (\ref{fig:RadialDca}) and the the distance of closest approach of the track to the vertex along the $z$-axis $\text{DCA}(z)$ (\ref{fig:LongitudinalDca}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:DCA}
+% \end{figure}
+% %---------------------------
 
 
 
@@ -308,6 +321,42 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 \end{figure}
 % \end{wrapfigure}
 %---------------------------
+
+
+
+
+
+\begin{table}
+	\begin{minipage}{0.7\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{graphics/eventSelection/bbc/BbbLargeThreshold.pdf}
+		\captionof{figure}{2-D scatterplot of the Student Database}
+		\label{fig:bbcLargeThresholds}
+	\end{minipage}\hfill
+	\begin{minipage}{0.25\linewidth}
+		\centering
+		\begin{tabular}{cc|cc}
+			\multicolumn{2}{c|}{East} & \multicolumn{2}{c}{West} \\ \hline
+			$i$  & $\text{ADC}_{\text{thr}}$ & $i$  & $\text{ADC}_{\text{thr}}$ \\
+			1 & 1.0 & 17 & 1.0 \\
+			2 & 1.0 & 18 & 1.0 \\
+			3 & 1.0 & 19 & 1.0 \\
+			4 & 1.0 & 20 & 1.0 \\
+			5 & 1.0 & 21 & 1.0 \\
+			6 & 1.0 & 22 & 1.0 \\
+			7 & 1.0 & 23 & 1.0 \\
+			8 & 1.0 & 24 & 1.0 \\
+		\end{tabular}
+		\caption[Student]{Student database raz daw rzy\newline\newline\newline\newline\newline\newline\newline\newline}
+		\label{table:student}
+	\end{minipage}
+
+\end{table}
+
+
+
+
+
 
 
 \subsection{(\ref{enum:CutTofClusters})~TOF clusters limit}
