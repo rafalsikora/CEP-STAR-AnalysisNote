@@ -4,8 +4,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Sketch of the trigger components used in definitions of diffractive triggers in run 15.\relax }}{7}{figure.caption.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Primary vertex multiplicty. Red arrow marks bin with events with exactly one primary vertex (with track(s) matched with hit in TOF), which are used in physics analysis.\newline \relax }}{10}{figure.caption.7}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces $z$-position of the primary vertex in single TOF vertex events. Red dashed line indicate range of longitudinal vertex position accepted in analysis.\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Primary vertex multiplicty. Red arrow marks bin with events with exactly one primary vertex (with track(s) matched with hit in TOF), which are used in physics analysis.\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces $z$-position of the primary vertex in single TOF vertex events. Red dashed line indicate range of longitudinal vertex position accepted in analysis.\newline \relax }}{10}{figure.caption.7}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Multiplicty of primary TPC tracks matched with hit in TOF for single TOF vertex events}}{11}{figure.caption.8}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of a distance in $\eta -\phi $ space between the BEMC cluster closest to primary TPC track ($R_{\text {min}}$)}}{11}{figure.caption.8}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison of distribution of $N_{\text {hits}}^{\text {fit}}$,\nobreakspace {}$N_{\text {hits}}^{\text {dE/dx}}$ and $N_{\text {hits}}^{\text {fit}}/N_{\text {hits}}^{\text {poss}}$ in the data and embedded MC}}{12}{figure.caption.9}
@@ -26,18 +26,18 @@
 \contentsline {figure}{\numberline {3.20}{\ignorespaces Cut flow.\relax }}{21}{figure.caption.24}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Overall efficiency of the online BBC-small and ZDC veto as a function of instantaneous luminosity.\relax }}{22}{figure.caption.25}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Overall efficiency of the online BBC-small and ZDC veto, primary vertices limit\nobreakspace {}(\ref {enum:CutPrimVx}), BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}) and TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters}) as a function of instantaneous luminosity.\relax }}{23}{figure.caption.26}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of $m^{2}$ from TOF between data and MC for exclusive $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{23}{figure.caption.27}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Overall efficiency of the online BBC-small and ZDC veto, primary vertices limit\nobreakspace {}(\ref {enum:CutPrimVx}), BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}) and TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters}) as a function of instantaneous luminosity.\relax }}{24}{figure.caption.26}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of $m^{2}$ from TOF between data and MC for exclusive $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{25}{figure.caption.27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Missing pT.\relax }}{25}{figure.caption.28}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Graph illustrating the misidentification problem.}}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Missing pT.\relax }}{26}{figure.caption.28}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Graph illustrating the misidentification problem.}}{26}{figure.caption.29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces ...}}{28}{figure.caption.30}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces ...}}{29}{figure.caption.31}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces ...}}{30}{figure.caption.32}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces ...}}{31}{figure.caption.33}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Cut flow.\relax }}{32}{figure.caption.34}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces ...}}{29}{figure.caption.30}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces ...}}{30}{figure.caption.31}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces ...}}{31}{figure.caption.32}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces ...}}{32}{figure.caption.33}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Cut flow.\relax }}{33}{figure.caption.34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Distribution of ADC vs. TAC counts per BBC-small channel in abort gaps and colliding bunches.}}{33}{figure.caption.35}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Distribution of ADC vs. TAC counts per BBC-large channel in abort gaps and colliding bunches.}}{41}{figure.caption.44}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Distribution of ADC vs. TAC counts per BBC-small channel in abort gaps and colliding bunches.}}{34}{figure.caption.35}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Distribution of ADC vs. TAC counts per BBC-large channel in abort gaps and colliding bunches.}}{42}{figure.caption.44}

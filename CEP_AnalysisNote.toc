@@ -32,25 +32,25 @@
 \contentsline {subsubsection}{\numberline {4.2.1.1}Online veto (BBC-small and ZDC veto)}{22}{subsubsection.4.2.1.1}
 \contentsline {subsubsection}{\numberline {4.2.1.2}RP triggering efficiency}{23}{subsubsection.4.2.1.2}
 \contentsline {subsubsection}{\numberline {4.2.1.3}Up and Down RP combination veto}{23}{subsubsection.4.2.1.3}
-\contentsline {subsection}{\numberline {4.2.2}Cuts efficiency}{23}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}TPC $z$-vertex cut\nobreakspace {}(\ref {enum:CutZVx})}{23}{subsubsection.4.2.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2.2}TPC-RP $z$-vertex matching\nobreakspace {}(\ref {enum:CutDeltaZVx})}{23}{subsubsection.4.2.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.3}Primary vertices limit\nobreakspace {}(\ref {enum:CutPrimVx}), BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}) and TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters})}{23}{subsubsection.4.2.2.3}
-\contentsline {subsubsection}{\numberline {4.2.2.4}Missing $p_{T}$ cut\nobreakspace {}(\ref {enum:CutMissingPt})}{23}{subsubsection.4.2.2.4}
-\contentsline {subsubsection}{\numberline {4.2.2.5}Particle identification\nobreakspace {}(\ref {enum:CutPid})}{23}{subsubsection.4.2.2.5}
-\contentsline {subsection}{\numberline {4.2.3}RP track acceptance and reconstruction efficiency}{23}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}TPC vertex reconstruction efficiency}{23}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Particle energy loss}{24}{section.4.3}
-\contentsline {section}{\numberline {4.4}Background subtraction}{24}{section.4.4}
-\contentsline {section}{\numberline {4.5}Unfolding}{24}{section.4.5}
-\contentsline {chapter}{\numberline {5}Backgrounds}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}Sources of background}{25}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Non-exclusive background}{25}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Exclusive background (particle misidentification)}{25}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Relative normalization of background and signal}{26}{section.5.2}
-\contentsline {chapter}{\numberline {6}Systematic errors}{27}{chapter.6}
-\contentsline {chapter}{\numberline {7}Physics results}{28}{chapter.7}
-\contentsline {chapter}{Appendix \numberline {A}BBC response}{33}{Appendix.1.A}
-\contentsline {chapter}{List of Figures}{47}{chapter*.49}
-\contentsline {chapter}{List of Tables}{47}{chapter*.50}
-\contentsline {chapter}{References}{48}{chapter*.51}
+\contentsline {subsection}{\numberline {4.2.2}Cuts efficiency}{24}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}TPC $z$-vertex cut\nobreakspace {}(\ref {enum:CutZVx})}{24}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}TPC-RP $z$-vertex matching\nobreakspace {}(\ref {enum:CutDeltaZVx})}{24}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Primary vertices limit\nobreakspace {}(\ref {enum:CutPrimVx}), BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}) and TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters})}{24}{subsubsection.4.2.2.3}
+\contentsline {subsubsection}{\numberline {4.2.2.4}Missing $p_{T}$ cut\nobreakspace {}(\ref {enum:CutMissingPt})}{24}{subsubsection.4.2.2.4}
+\contentsline {subsubsection}{\numberline {4.2.2.5}Particle identification\nobreakspace {}(\ref {enum:CutPid})}{24}{subsubsection.4.2.2.5}
+\contentsline {subsection}{\numberline {4.2.3}RP track acceptance and reconstruction efficiency}{25}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}TPC vertex reconstruction efficiency}{25}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Particle energy loss}{25}{section.4.3}
+\contentsline {section}{\numberline {4.4}Background subtraction}{25}{section.4.4}
+\contentsline {section}{\numberline {4.5}Unfolding}{25}{section.4.5}
+\contentsline {chapter}{\numberline {5}Backgrounds}{26}{chapter.5}
+\contentsline {section}{\numberline {5.1}Sources of background}{26}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Non-exclusive background}{26}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Exclusive background (particle misidentification)}{26}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Relative normalization of background and signal}{27}{section.5.2}
+\contentsline {chapter}{\numberline {6}Systematic errors}{28}{chapter.6}
+\contentsline {chapter}{\numberline {7}Physics results}{29}{chapter.7}
+\contentsline {chapter}{Appendix \numberline {A}BBC response}{34}{Appendix.1.A}
+\contentsline {chapter}{List of Figures}{48}{chapter*.49}
+\contentsline {chapter}{List of Tables}{48}{chapter*.50}
+\contentsline {chapter}{References}{49}{chapter*.51}
