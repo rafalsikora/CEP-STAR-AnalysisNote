@@ -51,57 +51,28 @@ In this section we present calculation of all efficiencies except TPC track reco
 \end{figure}
 %---------------------------
 \subsubsection{RP triggering efficiency}
+
+
+% Wydajnosc samego trygerowania
+% \begin{equation}
+% \mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right) = \mbox{\LARGE$\varepsilon$}\left(\TRE\right) \times \mbox{\LARGE$\varepsilon$}\left(\TRW\right),
+% \end{equation}
+% \begin{equation}
+% \mbox{\LARGE$\varepsilon$}\left(\TRE\right) = \mbox{\LARGE$\varepsilon$}\left(\TRE_{1}\vee\TRE_{2}\right),~~~~\mbox{\LARGE$\varepsilon$}\left(\TRW\right) = \mbox{\LARGE$\varepsilon$}\left(\TRW_{1}\vee\TRW_{2}\right),
+% \end{equation}
+% dobrze bedzie policzyc już z danych, najlepiej elastycznych (ale można też z CD) patrzac jak czesto stacje z dobrymi sladami maja sygnal trygerowy.
+% 
+% \begin{equation}\begin{split}
+% \mbox{\LARGE$\varepsilon$}\left(\TRW\right) = \mbox{\LARGE$\varepsilon$}\left(\TRW\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right) = \mbox{\LARGE$\varepsilon$}\left(\TRW_{1}\vee\TRW_{2}\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right)=\\
+% =\mbox{\LARGE$\varepsilon$}\left(\TRW_{1}\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right)+\mbox{\LARGE$\varepsilon$}\left(\TRW_{2}\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right)+\\-\mbox{\LARGE$\varepsilon$}\left(\TRW_{1}\land\TRW_{2}\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right)~~~~~\text{(analogicznie po stronie EAST)}
+% \end{split}\end{equation}
+
+
 \subsubsection{Up and Down RP combination veto}
 
 
-\textbf{Oznaczenia:}\\[4pt]$\RPE$ - zrekonstruowany dokladnie jeden dobry slad po stronie EAST\\
-$\RPW$ - zrekonstruowany dokladnie jeden dobry slad po stronie WEST\\
-$\TRE$ - tryger w galezi z dobrym sladem po stronie EAST\\
-$\TRNE$ - tryger w galezi bez dobrego sladu po stronie EAST\\
-$\TRW$ - tryger w galezi z dobrym sladem po stronie WEST\\
-$\TRNW$ - tryger w galezi bez dobrego sladu po stronie WEST\\
-$\Vpu$ - weto trygera na jednoczesna kombinacje gora-dol spodowane przez pile-up\\
-$\Vdm$ - weto trygera na jednoczesna kombinacje gora-dol spodowane przez oddzialywanie z materialem detektora\\
-$\V$ - weto trygera na jednoczesna kombinacje gora-dol\\[20pt]\noindent%
-%
-Do tej pory sprawdzilem poprawke na wydajnosc rekonstrukcji sladow w Roman Potach po obu stronach:
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\right.\right) = 
-\frac{\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\right.\right) \times \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\right.\right)}{1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\Big.\right)}
-\end{equation}  
-Aby poprawic na calkowita wydajnosc przyadku zwiazana z trygerem i rekonstrukcja sladow w Roman Potach trzeba policzyc:
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\land\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right)
-\end{equation}
-W przypadku czesci zwiazanej z wydajnoscia rekonstrukcji wystarczy zmodyfikowac dotychczas obliczone wydajnosci dodajac weta na jednoczesne kombinacje gora-dol w trygerze:
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)=\frac{\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\land~!\TRNE\right.\right) \times \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\land~!\TRNW\right.\right)}{1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right)}
-\end{equation}
-Jesli chodzi o wydajnosc trygera to mysle, że trzeba oddzielic sama szanse detekcji protonow w Roman Potach w ktorych protony zostawiaja slad, oraz szanse na zawetowanie przypadku przez jednoczesny sygnal trygerowy gora-dol:
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right)
-\end{equation}
-Prawdopodobieństwo weta proponuje rozdzielic na dwie osobne komponenty - jedna zwiazana z pile-up'em, druga zwiazana z pojawieniem sie sygnalu w detektorze po drugiej stronie wiazki w wyniku interakcji protonu z materialem detektora:
-\begin{equation}
-\begin{split}
-\mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)=\Bigg|\V=\Vpu\vee\Vdm\Bigg|=\\=1-\mbox{\LARGE$\varepsilon$}\left(\Vpu\left|\TRE\land\TRW\right.\right)-\mbox{\LARGE$\varepsilon$}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right)
-\end{split}
-\end{equation}
-Wydajnosc zwiazana z materialem martwym bede liczyl tak samo jak wydajnosc rekonstrukcji - w funkcji $z_{\text{vtx}}$, $p_{x}$ oraz $p_{y}$, natomiast wydajnosc zwiazana z pile-up'em chyba trzeba potraktowac jako jedna liczbe (osobna dla 4 kombinacji galezi) ktora policze osobno dla każdego runu a nastepnie dopasuje funkcje okreslajaca zależnosc tej poprawki od chwilowego lumi (dokladnie tak jak to robie z poprawka na weto na BBC, ZDC i slady w TPC/TOF).\\
-Trzeba tutaj uważac żeby nie poprawiac weta przez pile-up dwukrotnie, tzn. może byc jednoczesne weto trygera w BBC-small i w RP spowodowane jakims przypadkiem dyfrakcyjnym (np. pojedyncza dyfrakcja, dyfrakcyjna dysocjacja). Mysle, że najlepiej bedzie policzyc laczna poprawke na weto w RP, BBC itd. z danych zerobias (wlaczyc RP do dotychczasowej poprawki na weto BBC + ...).\\
-Wydajnosc samego trygerowania
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right) = \mbox{\LARGE$\varepsilon$}\left(\TRE\right) \times \mbox{\LARGE$\varepsilon$}\left(\TRW\right),
-\end{equation}
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\TRE\right) = \mbox{\LARGE$\varepsilon$}\left(\TRE_{1}\vee\TRE_{2}\right),~~~~\mbox{\LARGE$\varepsilon$}\left(\TRW\right) = \mbox{\LARGE$\varepsilon$}\left(\TRW_{1}\vee\TRW_{2}\right),
-\end{equation}
-dobrze bedzie policzyc już z danych, najlepiej elastycznych (ale można też z CD) patrzac jak czesto stacje z dobrymi sladami maja sygnal trygerowy.
 
-\begin{equation}\begin{split}
-\mbox{\LARGE$\varepsilon$}\left(\TRW\right) = \mbox{\LARGE$\varepsilon$}\left(\TRW\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right) = \mbox{\LARGE$\varepsilon$}\left(\TRW_{1}\vee\TRW_{2}\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right)=\\
-=\mbox{\LARGE$\varepsilon$}\left(\TRW_{1}\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right)+\mbox{\LARGE$\varepsilon$}\left(\TRW_{2}\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right)+\\-\mbox{\LARGE$\varepsilon$}\left(\TRW_{1}\land\TRW_{2}\left|\RPE\&\RPW\&~!\TRNE\&~!\TRNW\right.\right)~~~~~\text{(analogicznie po stronie EAST)}
-\end{split}\end{equation}
+
 
 
 \subsection{Cuts efficiency}\label{sec:cutsEff}
@@ -156,13 +127,56 @@ dobrze bedzie policzyc już z danych, najlepiej elastycznych (ale można też z 
 
 \subsection{RP track acceptance and reconstruction efficiency}\label{sec:rpAccAndEff}
 
+
+
+\textbf{Definitions:}\\[4pt]
+\begin{tabular}{ll}
+$\RPE$ &- single good quality track (\ref{enum:CutRpTrks}) on the east side,\\
+$\RPW$ & - single good quality track (\ref{enum:CutRpTrks}) on the west side,\\
+$\TRE$ & - trigger signal in the RP branch with single good track on the east side,\\
+$\TRNE$ & - trigger signal in the RP branch othar than branch with single good track on the east side,\\
+$\TRW$ & - trigger signal in the RP branch with single good track on the west side,\\
+$\TRNW$ & - trigger signal in the RP branch othar than branch with single good track on the west side,\\
+$\V$ & - trigger veto on the simultaneous trigger signal in Up and Down RPs (ET\&IT),\\
+$\Vpu$ & - trigger veto on ET\&IT ($\V$) due to pile-up interactions,\\
+$\Vdm$ & - trigger veto on ET\&IT ($\V$) due to forward proton interaction with dead material.\\ 
+\end{tabular}\vspace{10pt}
+
+Do tej pory sprawdzilem poprawke na wydajnosc rekonstrukcji sladow w Roman Potach po obu stronach:
+\begin{equation}
+\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\right.\right) = 
+\frac{\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\right.\right) \times \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\right.\right)}{1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\Big.\right)}
+\end{equation}  
+Aby poprawic na calkowita wydajnosc przyadku zwiazana z trygerem i rekonstrukcja sladow w Roman Potach trzeba policzyc:
+\begin{equation}
+\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\land\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right)
+\end{equation}
+W przypadku czesci zwiazanej z wydajnoscia rekonstrukcji wystarczy zmodyfikowac dotychczas obliczone wydajnosci dodajac weta na jednoczesne kombinacje gora-dol w trygerze:
+\begin{equation}
+\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)=\frac{\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\land~!\TRNE\right.\right) \times \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\land~!\TRNW\right.\right)}{1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right)}
+\end{equation}
+Jesli chodzi o wydajnosc trygera to mysle, że trzeba oddzielic sama szanse detekcji protonow w Roman Potach w ktorych protony zostawiaja slad, oraz szanse na zawetowanie przypadku przez jednoczesny sygnal trygerowy gora-dol:
+\begin{equation}
+\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right)
+\end{equation}
+Prawdopodobieństwo weta proponuje rozdzielic na dwie osobne komponenty - jedna zwiazana z pile-up'em, druga zwiazana z pojawieniem sie sygnalu w detektorze po drugiej stronie wiazki w wyniku interakcji protonu z materialem detektora:
+\begin{equation}
+\begin{split}
+\mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)=\Bigg|\V=\Vpu\vee\Vdm\Bigg|=\\=1-\mbox{\LARGE$\varepsilon$}\left(\Vpu\left|\TRE\land\TRW\right.\right)-\mbox{\LARGE$\varepsilon$}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right)
+\end{split}
+\end{equation}
+Wydajnosc zwiazana z materialem martwym bede liczyl tak samo jak wydajnosc rekonstrukcji - w funkcji $z_{\text{vtx}}$, $p_{x}$ oraz $p_{y}$, natomiast wydajnosc zwiazana z pile-up'em chyba trzeba potraktowac jako jedna liczbe (osobna dla 4 kombinacji galezi) ktora policze osobno dla każdego runu a nastepnie dopasuje funkcje okreslajaca zależnosc tej poprawki od chwilowego lumi (dokladnie tak jak to robie z poprawka na weto na BBC, ZDC i slady w TPC/TOF).\\
+Trzeba tutaj uważac żeby nie poprawiac weta przez pile-up dwukrotnie, tzn. może byc jednoczesne weto trygera w BBC-small i w RP spowodowane jakims przypadkiem dyfrakcyjnym (np. pojedyncza dyfrakcja, dyfrakcyjna dysocjacja). Mysle, że najlepiej bedzie policzyc laczna poprawke na weto w RP, BBC itd. z danych zerobias (wlaczyc RP do dotychczasowej poprawki na weto BBC + ...).\\
+
+
+
 \subsection{TPC vertex reconstruction efficiency}\label{sec:tpcVxRecoEff}
 
 The definition of vertex reconstruction efficiency established in this analysis is the probability that two global tracks, both associated with true-level primary particles from the kinematic region of the measurement, both satisfying kinematic and quality criteria (cuts~\ref{enum:TpcKinematicCuts} and ~\ref{enum:TpcQualityCuts}) and both matched with hits in TOF, form a vertex listed in the collection of reconstructed primary vertices and DCA(R) and DCA(z) of both global tracks calculated w.r.t. this vertex is contained within the limits of cut~\ref{enum:TpcDcaCuts}.
 
 \section{Particle energy loss}\label{sec:energyLoss}
 \section{Background subtraction}\label{sec:bkgdSubtraction}
-\section{Unfolding}\label{sec:unfolding}
+% \section{Unfolding}\label{sec:unfolding}
 
 % 
 %   W analizie CEP wydajnosc werteksowania to prawdopodobieństwo że
