@@ -127,6 +127,42 @@ In this section we present calculation of all efficiencies except TPC track reco
 
 \subsection{RP track acceptance and reconstruction efficiency}\label{sec:rpAccAndEff}
 
+To calculate RP acceptance and track reconstruction efficiency the embedded MC technique was used (see Sec.~6.3 in Ref.~\cite{supplementaryNote} for details of RP simulation in Geant4). Forward protons from CEP process provided by GenEx~\cite{GenEx} were simultaneously generated from the interaction point spatially distributed the same as in the data. MC samples for all runs with RP\_CPT2 triggers were produced to account for non-constant positions of the RP detectors throughout the run 15. Number of simulated events for each run was proportional to number of RP\_CPT2 triggers in given run. The angular divergence of the beams was also simulated.
+
+The joint RP acceptance and track reconstruction efficiency for a given STAR side, $\epsilon_{\text{RP}}^{\text{side}}$, was calculated as a probability that a single good quality RP track (satisfying cuts~\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) matched with true-level primary forward proton is reconstructed on given side in the branch expected based on sign of $p_{y}$ of the proton, under condition that there is a trigger signal in that branch and there is no trigger signal in the other branch on the same side.
+
+Technically the $\epsilon_{\text{RP}}^{\text{side}}$ was obtained in the following procedure:
+\begin{enumerate}
+	\item It was verified if there is a trigger signal in the branch that the primary forward proton is expected to reach based on its $p_{y}$ ($p_{y}>0$ - branch UP, $p_{y}<0$ - branch DOWN). Additionally required lack of trigger signal in the other branch on the same side. These events formed $set~A$.
+	\item The nominal RP track selection algorithm was used to find a single good quality track (cuts~\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on given side. If exactly one such track was find, it was additionally checked if it is matched with true-level primary proton. These events formed $set~B$.
+	\item The efficiency was calculated by the ratio of histograms from $set~B$ and $set~A$:
+	\begin{equation}\label{eq:rpEffDef}
+ \epsilon_{\text{RP}}^{\text{side}} = \mbox{\LARGE$\varepsilon$}\left(\RPSIDE\left|\TRSIDE\land~!\TRNSIDE\right.\right) = %
+ \frac{(p_{x}, p_{y})~\text{histogram for protons from}~set~B}{(p_{x}, p_{y})~\text{histogram for protons from}~set~A}
+  \end{equation}
+	
+\end{enumerate}
+
+It should be noted that the momentum components $(p_{x}, p_{y})$ were taken from the proton with accounted effect of the beam divergence (after the original initial momentum smearing).
+
+%---------------------------
+\begin{figure}[ht!]%
+\centering%
+\begin{minipage}{.4725\textwidth}%
+  \centering%
+  \includegraphics[width=\linewidth,page=10]{graphics/corrections/mcFullEffPxPy.pdf}%
+  \caption[Sample RP track reconstruction efficiency in a single $z$-vertex bin.]{Sample RP track reconstruction efficiency in a single $z$-vertex bin on the east STAR side. The efficiency was calculated using forward proton MC simulation embedded into zero-bias data. Green envelopes mark the fiducial region of the measurement, while dashed yellow lines mark the part of the fiducial region with a data-driven efficiency correction needed, as explained in Sec.~10.3.1 of Ref.~\cite{supplementaryNote}.}\label{fig:rpEffSample}
+\end{minipage}%
+\quad\quad%
+\begin{minipage}{.4725\textwidth}%
+  \centering
+  \includegraphics[width=\linewidth]{graphics/corrections/SimultaneousEastWestRpTrackLoss.pdf}%
+  \caption{Probability of simultaneous inefficiency of the RP track reconstruction calculated from the CEP MC embedded into zero-bias data.\newline\newline\newline\newline\newline}\label{fig:SimultaneousEastWestRpTrackLoss}
+\end{minipage}%
+\end{figure}%
+%---------------------------
+
+
 
 
 \textbf{Definitions:}\\[4pt]
@@ -142,11 +178,7 @@ $\Vpu$ & - trigger veto on ET\&IT ($\V$) due to pile-up interactions,\\
 $\Vdm$ & - trigger veto on ET\&IT ($\V$) due to forward proton interaction with dead material.\\ 
 \end{tabular}\vspace{10pt}
 
-Do tej pory sprawdzilem poprawke na wydajnosc rekonstrukcji sladow w Roman Potach po obu stronach:
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\right.\right) = 
-\frac{\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\right.\right) \times \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\right.\right)}{1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\Big.\right)}
-\end{equation}  
+
 Aby poprawic na calkowita wydajnosc przyadku zwiazana z trygerem i rekonstrukcja sladow w Roman Potach trzeba policzyc:
 \begin{equation}
 \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\land\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right)
