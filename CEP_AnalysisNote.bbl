@@ -113,4 +113,12 @@ L.~Adamczyk. \url{https://drupal.star.bnl.gov/STAR/system/files/talk_42.pdf},
 \bibitem{AnalysisCodeRepo}
 \url{https://github.com/rafalsikora/CEP-STAR}.
 
+\bibitem{GenEx}
+R.~A. Kycia, J.~Chwastowski, R.~Staszewski, and J.~Turnau, ``{GenEx: A simple
+  generator structure for exclusive processes in high energy collisions},''
+  \href{http://dx.doi.org/10.4208/cicp.OA-2017-0105}{{\em Commun. Comput.
+  Phys.} {\bfseries 24} no.~3, (2018) 860--884},
+\href{http://arxiv.org/abs/1411.6035}{{\ttfamily arXiv:1411.6035 [hep-ph]}}.
+%%CITATION = ARXIV:1411.6035;%%.
+
 \end{thebibliography}\endgroup

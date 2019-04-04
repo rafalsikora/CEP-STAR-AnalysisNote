@@ -40,17 +40,17 @@
 \contentsline {subsubsection}{\numberline {4.2.2.5}Particle identification\nobreakspace {}(\ref {enum:CutPid})}{23}{subsubsection.4.2.2.5}
 \contentsline {subsection}{\numberline {4.2.3}RP track acceptance and reconstruction efficiency}{23}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}TPC vertex reconstruction efficiency}{25}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Particle energy loss}{25}{section.4.3}
-\contentsline {section}{\numberline {4.4}Background subtraction}{25}{section.4.4}
-\contentsline {chapter}{\numberline {5}Backgrounds}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Sources of background}{26}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Non-exclusive background}{26}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Exclusive background (particle misidentification)}{26}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Relative normalization of background and signal}{27}{section.5.2}
-\contentsline {chapter}{\numberline {6}Systematic errors}{28}{chapter.6}
-\contentsline {chapter}{\numberline {7}Physics results}{29}{chapter.7}
-\contentsline {chapter}{Appendix \numberline {A}BBC response}{34}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}RP efficiency}{47}{Appendix.1.B}
-\contentsline {chapter}{List of Figures}{60}{chapter*.62}
-\contentsline {chapter}{List of Tables}{60}{chapter*.63}
-\contentsline {chapter}{References}{61}{chapter*.64}
+\contentsline {section}{\numberline {4.3}Particle energy loss}{26}{section.4.3}
+\contentsline {section}{\numberline {4.4}Background subtraction}{26}{section.4.4}
+\contentsline {chapter}{\numberline {5}Backgrounds}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Sources of background}{27}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Non-exclusive background}{27}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Exclusive background (particle misidentification)}{27}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Relative normalization of background and signal}{28}{section.5.2}
+\contentsline {chapter}{\numberline {6}Systematic errors}{29}{chapter.6}
+\contentsline {chapter}{\numberline {7}Physics results}{30}{chapter.7}
+\contentsline {chapter}{Appendix \numberline {A}BBC response}{35}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}RP efficiency}{48}{Appendix.1.B}
+\contentsline {chapter}{List of Figures}{61}{chapter*.62}
+\contentsline {chapter}{List of Tables}{61}{chapter*.63}
+\contentsline {chapter}{References}{63}{chapter*.64}
