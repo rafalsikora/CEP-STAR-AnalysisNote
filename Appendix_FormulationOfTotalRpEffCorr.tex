@@ -1,0 +1,46 @@
+%%===========================================================%%
+%%                                                           %%
+%%   FORMULATION OF TOTAL RP EFFICIENCY CORRECTION APPENDIX  %%
+%%                                                           %%
+%%===========================================================%%
+
+\chapter{Formulation of total RP efficiency}\label{appendix:totalRpEffFormulation}
+
+
+\textbf{Definitions:}\\[4pt]
+\begin{tabular}{ll}
+$\RPE$ &- single good quality track (\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on the east side,\\
+$\RPW$ & - single good quality track (\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on the west side,\\
+$\TRE$ & - trigger signal in the RP branch with single good track on the east side,\\
+$\TRNE$ & - trigger signal in the RP branch othar than branch with single good track on the east side,\\
+$\TRW$ & - trigger signal in the RP branch with single good track on the west side,\\
+$\TRNW$ & - trigger signal in the RP branch othar than branch with single good track on the west side,\\
+$\V$ & - trigger veto on the simultaneous trigger signal in Up and Down RPs (ET\&IT),\\
+$\Vpu$ & - trigger veto on ET\&IT ($\V$) due to pile-up interactions,\\
+$\Vdm$ & - trigger veto on ET\&IT ($\V$) due to forward proton interaction with dead material.\\ 
+\end{tabular}\vspace{10pt}
+
+
+The total efficiency related to both east and west forward protons in CEP event has the following form:
+\begin{equation}
+\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\land\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right),
+\end{equation}
+where the right hand part of the equation is factorized to two components describing reconstruction and selection efficiency (first) and trigger efficiency (second).
+
+
+W przypadku czesci zwiazanej z wydajnoscia rekonstrukcji wystarczy zmodyfikowac dotychczas obliczone wydajnosci dodajac weta na jednoczesne kombinacje gora-dol w trygerze:
+\begin{equation}
+\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)=\frac{\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\land~!\TRNE\right.\right) \times \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\land~!\TRNW\right.\right)}{1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right)}
+\end{equation}
+Jesli chodzi o wydajnosc trygera to mysle, że trzeba oddzielic sama szanse detekcji protonow w Roman Potach w ktorych protony zostawiaja slad, oraz szanse na zawetowanie przypadku przez jednoczesny sygnal trygerowy gora-dol:
+\begin{equation}
+\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right)
+\end{equation}
+Prawdopodobieństwo weta proponuje rozdzielic na dwie osobne komponenty - jedna zwiazana z pile-up'em, druga zwiazana z pojawieniem sie sygnalu w detektorze po drugiej stronie wiazki w wyniku interakcji protonu z materialem detektora:
+\begin{equation}
+\begin{split}
+\mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)=\Bigg|\V=\Vpu\vee\Vdm\Bigg|=\\=1-\mbox{\LARGE$\varepsilon$}\left(\Vpu\left|\TRE\land\TRW\right.\right)-\mbox{\LARGE$\varepsilon$}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right)
+\end{split}
+\end{equation}
+Wydajnosc zwiazana z materialem martwym bede liczyl tak samo jak wydajnosc rekonstrukcji - w funkcji $z_{\text{vtx}}$, $p_{x}$ oraz $p_{y}$, natomiast wydajnosc zwiazana z pile-up'em chyba trzeba potraktowac jako jedna liczbe (osobna dla 4 kombinacji galezi) ktora policze osobno dla każdego runu a nastepnie dopasuje funkcje okreslajaca zależnosc tej poprawki od chwilowego lumi (dokladnie tak jak to robie z poprawka na weto na BBC, ZDC i slady w TPC/TOF).\\
+Trzeba tutaj uważac żeby nie poprawiac weta przez pile-up dwukrotnie, tzn. może byc jednoczesne weto trygera w BBC-small i w RP spowodowane jakims przypadkiem dyfrakcyjnym (np. pojedyncza dyfrakcja, dyfrakcyjna dysocjacja). Mysle, że najlepiej bedzie policzyc laczna poprawke na weto w RP, BBC itd. z danych zerobias (wlaczyc RP do dotychczasowej poprawki na weto BBC + ...).\\

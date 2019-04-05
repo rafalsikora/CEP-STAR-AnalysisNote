@@ -163,46 +163,13 @@ It should be noted that the momentum components $(p_{x}, p_{y})$ were taken from
 %---------------------------
 
 
-The efficiency calculated in the way described above is, by design, the reconstruction and selection efficiency for a single proton on one side of the IP. In CEP event there are two independent forward protons which may be simultaneously not reconstructed or rejected by the selection algorithm due to e.g. elastic pile-up interaction providing additional good quality proton tracks on both sides of IP. One could, in principle, calculate 5-dimensional efficiency for both forward protons (in variables $p_{x}^{\text{E}}, p_{y}^{\text{E}}, p_{x}^{\text{W}}, p_{y}^{\text{W}}$ and $z_{\text{vtx}}$) which would ultimately account for the simultaneous east and west inefficiency, however this would require orders of magnitude larger statistics of MC to provide reasonably low statistical uncertainty of the efficiency. Instead, on top of the 3-dimensional reconstruction and selection efficiencies for east and west RPs we calculate (from embedded MC) probability that the proton tracks are simultaneously not reconstructed or selected on the east and west side, despite the trigger signal in solely in expected RP branches (no trigger veto) and true-level $(p_{x}, p_{y})$ of both forward protons contained in the fiducial region. This probability, denoted as
+The efficiency calculated in the way described above is, by design, the reconstruction and selection efficiency for a single proton on one side of the IP. In CEP event there are two independent forward protons which may be simultaneously not reconstructed or rejected by the selection algorithm due to e.g. elastic pile-up interaction providing additional good quality proton tracks on both sides of IP. One could, in principle, calculate 5-dimensional efficiency for both forward protons (in variables $p_{x}^{\text{E}}, p_{y}^{\text{E}}, p_{x}^{\text{W}}, p_{y}^{\text{W}}$ and $z_{\text{vtx}}$) which would ultimately account for the simultaneous east and west inefficiency, however this would require orders of magnitude larger statistics of MC to provide reasonably low statistical uncertainty of the efficiency. Instead, on top of the 3-dimensional reconstruction and selection efficiencies for east and west RPs we calculate (from embedded MC) probability that the proton tracks are simultaneously not reconstructed or selected on the east and west side, despite the trigger signal solely in expected RP branches (no trigger veto) and true-level $(p_{x}, p_{y})$ of both forward protons contained in the fiducial region. This probability, denoted as
 \begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right),
+\mathcal{P}^{\text{E\&W}}_{\text{loss}} = \mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right),
 \end{equation}
  is presented in Fig.~\ref{fig:SimultaneousEastWestRpTrackLoss} for all four comibnations of east and west RP branches.
 
-\textbf{Definitions:}\\[4pt]
-\begin{tabular}{ll}
-$\RPE$ &- single good quality track (\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on the east side,\\
-$\RPW$ & - single good quality track (\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on the west side,\\
-$\TRE$ & - trigger signal in the RP branch with single good track on the east side,\\
-$\TRNE$ & - trigger signal in the RP branch othar than branch with single good track on the east side,\\
-$\TRW$ & - trigger signal in the RP branch with single good track on the west side,\\
-$\TRNW$ & - trigger signal in the RP branch othar than branch with single good track on the west side,\\
-$\V$ & - trigger veto on the simultaneous trigger signal in Up and Down RPs (ET\&IT),\\
-$\Vpu$ & - trigger veto on ET\&IT ($\V$) due to pile-up interactions,\\
-$\Vdm$ & - trigger veto on ET\&IT ($\V$) due to forward proton interaction with dead material.\\ 
-\end{tabular}\vspace{10pt}
 
-
-Aby poprawic na calkowita wydajnosc przyadku zwiazana z trygerem i rekonstrukcja sladow w Roman Potach trzeba policzyc:
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\land\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right)
-\end{equation}
-W przypadku czesci zwiazanej z wydajnoscia rekonstrukcji wystarczy zmodyfikowac dotychczas obliczone wydajnosci dodajac weta na jednoczesne kombinacje gora-dol w trygerze:
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)=\frac{\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\land~!\TRNE\right.\right) \times \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\land~!\TRNW\right.\right)}{1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right)}
-\end{equation}
-Jesli chodzi o wydajnosc trygera to mysle, że trzeba oddzielic sama szanse detekcji protonow w Roman Potach w ktorych protony zostawiaja slad, oraz szanse na zawetowanie przypadku przez jednoczesny sygnal trygerowy gora-dol:
-\begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right)
-\end{equation}
-Prawdopodobieństwo weta proponuje rozdzielic na dwie osobne komponenty - jedna zwiazana z pile-up'em, druga zwiazana z pojawieniem sie sygnalu w detektorze po drugiej stronie wiazki w wyniku interakcji protonu z materialem detektora:
-\begin{equation}
-\begin{split}
-\mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)=\Bigg|\V=\Vpu\vee\Vdm\Bigg|=\\=1-\mbox{\LARGE$\varepsilon$}\left(\Vpu\left|\TRE\land\TRW\right.\right)-\mbox{\LARGE$\varepsilon$}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right)
-\end{split}
-\end{equation}
-Wydajnosc zwiazana z materialem martwym bede liczyl tak samo jak wydajnosc rekonstrukcji - w funkcji $z_{\text{vtx}}$, $p_{x}$ oraz $p_{y}$, natomiast wydajnosc zwiazana z pile-up'em chyba trzeba potraktowac jako jedna liczbe (osobna dla 4 kombinacji galezi) ktora policze osobno dla każdego runu a nastepnie dopasuje funkcje okreslajaca zależnosc tej poprawki od chwilowego lumi (dokladnie tak jak to robie z poprawka na weto na BBC, ZDC i slady w TPC/TOF).\\
-Trzeba tutaj uważac żeby nie poprawiac weta przez pile-up dwukrotnie, tzn. może byc jednoczesne weto trygera w BBC-small i w RP spowodowane jakims przypadkiem dyfrakcyjnym (np. pojedyncza dyfrakcja, dyfrakcyjna dysocjacja). Mysle, że najlepiej bedzie policzyc laczna poprawke na weto w RP, BBC itd. z danych zerobias (wlaczyc RP do dotychczasowej poprawki na weto BBC + ...).\\
 
 
 
