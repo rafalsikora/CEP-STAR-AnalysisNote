@@ -7,7 +7,7 @@
 \chapter{Formulation of total RP efficiency}\label{appendix:totalRpEffFormulation}
 
 
-\textbf{Definitions:}\\[4pt]
+\textbf{Definitions:}\\[7pt]
 \begin{tabular}{ll}
 $\RPE$ &- single good quality track (\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on the east side,\\
 $\RPW$ & - single good quality track (\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on the west side,\\
@@ -28,10 +28,21 @@ The total efficiency related to both east and west forward protons in CEP event 
 where the right hand part of the equation is factorized to two components describing reconstruction and selection efficiency (first) and trigger efficiency (second).
 
 
-W przypadku czesci zwiazanej z wydajnoscia rekonstrukcji wystarczy zmodyfikowac dotychczas obliczone wydajnosci dodajac weta na jednoczesne kombinacje gora-dol w trygerze:
+The reconstruction and selection efficiency part can be represented as a product of single-proton reconstruction and selection efficiencies described in Sec.~\ref{sec:rpAccAndEff} with an additional scaling factor in the denominator:
+
+%\begin{equation}
+%\begin{split}
+%\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\land~!\TRNE\right.\right) \times %\mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\land~!\TRNW\right.\right) =\\= %\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right) \times %\Big(1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right)\Big)
+%\end{split}
+%\end{equation}
+
 \begin{equation}
 \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)=\frac{\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\land~!\TRNE\right.\right) \times \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\land~!\TRNW\right.\right)}{1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right)}
 \end{equation}
+
+This denominator accounts for the fact that the efficiencies of the east and west RPs are correlated. To be more precise, unsuccessful reconstruction/selection of RP track on the east and west side in the same event can be a result of a pile-up interaction, typically of elastic proton-proton scattering, producing additional tracks/showers simultaneously in east and west RPs and thus introducing simultaneous east and west RP inefficiency. Without this factor the sole product of east and west efficiencies would account for discussed inefficiency twice - the total RP efficiency woule be then underestimated. The effect is small (as can be read from Fig.~\ref{fig:SimultaneousEastWestRpTrackLoss}), but we correct for it for completeness.
+
+
 Jesli chodzi o wydajnosc trygera to mysle, że trzeba oddzielic sama szanse detekcji protonow w Roman Potach w ktorych protony zostawiaja slad, oraz szanse na zawetowanie przypadku przez jednoczesny sygnal trygerowy gora-dol:
 \begin{equation}
 \mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right)
