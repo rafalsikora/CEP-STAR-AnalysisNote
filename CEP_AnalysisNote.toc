@@ -51,9 +51,9 @@
 \contentsline {chapter}{\numberline {7}Physics results}{29}{chapter.7}
 \contentsline {chapter}{Appendix \numberline {A}BBC response}{34}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Formulation of total RP efficiency}{47}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}RP efficiency}{48}{Appendix.1.C}
-\contentsline {section}{\numberline {C.1}RP track reconstruction and selection efficiency}{48}{section.1.C.1}
-\contentsline {section}{\numberline {C.2}RP trigger veto probability related to dead material}{54}{section.1.C.2}
-\contentsline {chapter}{List of Figures}{61}{chapter*.62}
-\contentsline {chapter}{List of Tables}{61}{chapter*.63}
-\contentsline {chapter}{References}{63}{chapter*.64}
+\contentsline {chapter}{Appendix \numberline {C}RP efficiency}{49}{Appendix.1.C}
+\contentsline {section}{\numberline {C.1}RP track reconstruction and selection efficiency}{49}{section.1.C.1}
+\contentsline {section}{\numberline {C.2}RP trigger veto probability related to dead material}{55}{section.1.C.2}
+\contentsline {chapter}{List of Figures}{62}{chapter*.62}
+\contentsline {chapter}{List of Tables}{62}{chapter*.63}
+\contentsline {chapter}{References}{64}{chapter*.64}

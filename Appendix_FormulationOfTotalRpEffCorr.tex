@@ -25,7 +25,7 @@ The total efficiency related to both east and west forward protons in CEP event 
 \begin{equation}
 \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\land\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right),
 \end{equation}
-where the right hand part of the equation is factorized to two components describing reconstruction and selection efficiency (first) and trigger efficiency (second).
+where the r.h.s. part of the equation is factorized using the rules of conditional probability to two components describing reconstruction and selection efficiency (first) and trigger efficiency (second).
 
 
 The reconstruction and selection efficiency part can be represented as a product of single-proton reconstruction and selection efficiencies described in Sec.~\ref{sec:rpAccAndEff} with an additional scaling factor in the denominator:
@@ -43,15 +43,35 @@ The reconstruction and selection efficiency part can be represented as a product
 This denominator accounts for the fact that the efficiencies of the east and west RPs are correlated. To be more precise, unsuccessful reconstruction/selection of RP track on the east and west side in the same event can be a result of a pile-up interaction, typically of elastic proton-proton scattering, producing additional tracks/showers simultaneously in east and west RPs and thus introducing simultaneous east and west RP inefficiency. Without this factor the sole product of east and west efficiencies would account for discussed inefficiency twice - the total RP efficiency woule be then underestimated. The effect is small (as can be read from Fig.~\ref{fig:SimultaneousEastWestRpTrackLoss}), but we correct for it for completeness.
 
 
-Jesli chodzi o wydajnosc trygera to mysle, że trzeba oddzielic sama szanse detekcji protonow w Roman Potach w ktorych protony zostawiaja slad, oraz szanse na zawetowanie przypadku przez jednoczesny sygnal trygerowy gora-dol:
+In the component of RP efficiency related to the trigger we can use again the conditional probability and factorize it to part connected with the trigger veto (first) and the efficiency of detecting a signal of both forward protons by the trigger system (second):
 \begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right)
+\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right).
 \end{equation}
-Prawdopodobieństwo weta proponuje rozdzielic na dwie osobne komponenty - jedna zwiazana z pile-up'em, druga zwiazana z pojawieniem sie sygnalu w detektorze po drugiej stronie wiazki w wyniku interakcji protonu z materialem detektora:
-\begin{equation}
+
+Efficiency of the triggering $\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right)$ is basically 1. Efficiency of the (lack of) veto if forward protons are triggering in east and west RPs can be decomposed to efficiency of the veto induced by the pile-up interaction in the same bunch crossing ($\Vpu$) and efficiency of the veto induced by the interaction of the CEP protons with the material of the accelerator and detectors ($\Vdm$):
+\begin{equation}\label{eq:trigerEffFact}
 \begin{split}
-\mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)=\Bigg|\V=\Vpu\vee\Vdm\Bigg|=\\=1-\mbox{\LARGE$\varepsilon$}\left(\Vpu\left|\TRE\land\TRW\right.\right)-\mbox{\LARGE$\varepsilon$}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right)
+\mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)=\Bigg|\V=\Vpu\vee\Vdm\Bigg|=\\=1-\mbox{\LARGE$\varepsilon$}\left(\Vpu\left|\TRE\land\TRW\right.\right)-\mbox{\LARGE$\varepsilon$}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right).
 \end{split}
 \end{equation}
-Wydajnosc zwiazana z materialem martwym bede liczyl tak samo jak wydajnosc rekonstrukcji - w funkcji $z_{\text{vtx}}$, $p_{x}$ oraz $p_{y}$, natomiast wydajnosc zwiazana z pile-up'em chyba trzeba potraktowac jako jedna liczbe (osobna dla 4 kombinacji galezi) ktora policze osobno dla każdego runu a nastepnie dopasuje funkcje okreslajaca zależnosc tej poprawki od chwilowego lumi (dokladnie tak jak to robie z poprawka na weto na BBC, ZDC i slady w TPC/TOF).\\
-Trzeba tutaj uważac żeby nie poprawiac weta przez pile-up dwukrotnie, tzn. może byc jednoczesne weto trygera w BBC-small i w RP spowodowane jakims przypadkiem dyfrakcyjnym (np. pojedyncza dyfrakcja, dyfrakcyjna dysocjacja). Mysle, że najlepiej bedzie policzyc laczna poprawke na weto w RP, BBC itd. z danych zerobias (wlaczyc RP do dotychczasowej poprawki na weto BBC + ...).\\
+The equation above can be written as a product of two probabilities if the approximation is used:
+\[(1-\mathcal{P}_{1})(1-\mathcal{P}_{2})~~~=~~~1 - \mathcal{P}_{1} - \mathcal{P}_{2} + \mathcal{P}_{1}\mathcal{P}_{2}~~~\overset{\mathcal{P}_{1} \ll 1~\lor~\mathcal{P}_{2} \ll 1 }{\approx}~~~1 - \mathcal{P}_{1} - \mathcal{P}_{2}\]
+Then the Eq.~\eqref{eq:trigerEffFact} can be written as
+\begin{equation}
+\mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right) = \Big(1-\mbox{\LARGE$\varepsilon$}\left(\Vpu\left|\TRE\land\TRW\right.\right)\Big)\Big(1-\mbox{\LARGE$\varepsilon$}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right)\Big).
+\end{equation}
+The first part related with the pile-up is incorporated to overall efficiency of online and offline vetoes described in Sec.~\ref{sec:offlineVetoEff} - this is required by the correlation of vetoes, the possibility that vetoes in independent subdetectors take place in the same bunch crossing. This could happen if e.g. single diffraction event occurs on top of the CEP event, yielding a BBC signal and RP signal, both vetoing RP\_CPT2 trigger.
+
+The second part described in Sec.~\ref{sec:rpTrigEff}  can be safely factorized as the probability of veto induced by the primary CEP proton on the east side is totally independent from the similar probability on the west side:
+
+\begin{equation}
+\begin{split}
+1-\mbox{\LARGE$\varepsilon$}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right) =~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\=
+ 1-\mbox{\LARGE$\varepsilon$}^{E}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right) \times
+ \mbox{\LARGE$\varepsilon$}^{W}\left(\Vdm\land~!\Vpu\left|\TRE\land\TRW\right.\right).
+ \end{split}
+\end{equation}
+
+
+%Wydajnosc zwiazana z materialem martwym bede liczyl tak samo jak wydajnosc rekonstrukcji - w funkcji %$z_{\text{vtx}}$, $p_{x}$ oraz $p_{y}$, natomiast wydajnosc zwiazana z pile-up'em chyba trzeba %potraktowac jako jedna liczbe (osobna dla 4 kombinacji galezi) ktora policze osobno dla każdego runu a %nastepnie dopasuje funkcje okreslajaca zależnosc tej poprawki od chwilowego lumi (dokladnie tak jak to %robie z poprawka na weto na BBC, ZDC i slady w TPC/TOF).\\
+%Trzeba tutaj uważac żeby nie poprawiac weta przez pile-up dwukrotnie, tzn. może byc jednoczesne weto %trygera w BBC-small i w RP spowodowane jakims przypadkiem dyfrakcyjnym (np. pojedyncza dyfrakcja, %dyfrakcyjna dysocjacja). Mysle, że najlepiej bedzie policzyc laczna poprawke na weto w RP, BBC itd. z %danych zerobias (wlaczyc RP do dotychczasowej poprawki na weto BBC + ...).\\
