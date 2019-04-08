@@ -298,67 +298,85 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 %---------------------------
 
 
-%---------------------------
-\begin{figure}[ht!]
-% \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
-\centering%
-\includegraphics[width=0.475\linewidth,page=1]{graphics/eventSelection/DeltaZVx.pdf}%
-% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/DeltaZVx.pdf}%
-\caption{Delta z-vx.}\label{fig:DeltaZVx}%
-\end{figure}
-% \end{wrapfigure}
-%---------------------------
+% %---------------------------
+% \begin{figure}[ht!]
+% % \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
+% \centering%
+% \includegraphics[width=0.475\linewidth,page=1]{graphics/eventSelection/DeltaZVx.pdf}%
+% % % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/DeltaZVx.pdf}%
+% \caption{Delta z-vx.}\label{fig:DeltaZVx}%
+% \end{figure}
+% % \end{wrapfigure}
+% %---------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{(\ref{enum:CutBbcLarge})~BBC-large signal veto}
 
 %---------------------------
-\begin{figure}[ht!]
-% \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
-\centering%
-\includegraphics[width=0.475\linewidth,page=1]{graphics/eventSelection/MaxAdcBbcLarge.pdf}%
-% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/MaxAdcBbcLarge.pdf}%
-\caption{MaxAdcBbcLarge.}\label{fig:MaxAdcBbcLarge}%
+\begin{figure}[h]\label{fig:sampleBbcResponse}
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:sampleBbcSmallAdcVsTac}}{\includegraphics[width=\linewidth,page=1]{graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:sampleBbcSmallAdc}}{\includegraphics[width=\linewidth,page=1]{graphics/eventSelection/bbc/Bbc_ADC.pdf}}
+  \end{subfigure}
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:sampleBbcLargeAdcVsTac}}{\includegraphics[width=\linewidth,page=17]{graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:sampleBbcLargeAdc}}{\includegraphics[width=\linewidth,page=17]{graphics/eventSelection/bbc/Bbc_ADC.pdf}}
+  \end{subfigure}
+}%
+\caption[Sample BBC-small and BBC-large response in zero-bias triggers.]{Sample BBC-small (left column) and BBC-large (right column) response in zero-bias data. Top row shows TAC vs. ADC distributions, bottom row shows projection of the corresponding two-dimensional ditribution on $x$-axis (ADC) in the TAC range quoted in the legend, for both abort gaps and colliding bunches. Red lines and arrows indicate thresholds for a signal in presented channels.}
 \end{figure}
-% \end{wrapfigure}
 %---------------------------
-
-
 
 
 
 \begin{table}
-	\begin{minipage}{0.7\linewidth}
+	\begin{minipage}{0.65\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{graphics/eventSelection/bbc/BbbLargeThreshold.pdf}
-		\captionof{figure}{2-D scatterplot of the Student Database}
+		\captionof{figure}[Probability of false BBC-large signal (noise-induced).]{Percentage of events in abort gaps from zero-bias triggers with the ADC counts larger than the ADC threshold given in the $x$-axis, for each BBC-large channel.}
 		\label{fig:bbcLargeThresholds}
 	\end{minipage}\hfill
-	\begin{minipage}{0.25\linewidth}
+	\begin{minipage}{0.3\linewidth}
 		\centering
-		\begin{tabular}{cc|cc}
-			\multicolumn{2}{c|}{East} & \multicolumn{2}{c}{West} \\ \hline
-			$i$  & $\text{ADC}_{\text{thr}}$ & $i$  & $\text{ADC}_{\text{thr}}$ \\
-			1 & 1.0 & 17 & 1.0 \\
-			2 & 1.0 & 18 & 1.0 \\
-			3 & 1.0 & 19 & 1.0 \\
-			4 & 1.0 & 20 & 1.0 \\
-			5 & 1.0 & 21 & 1.0 \\
-			6 & 1.0 & 22 & 1.0 \\
-			7 & 1.0 & 23 & 1.0 \\
-			8 & 1.0 & 24 & 1.0 \\
+		\begin{tabular}{c|c||c|c}
+			\multicolumn{2}{c||}{East} & \multicolumn{2}{c}{West} \\ \hline
+			$i$  & $\text{ADC}_{\text{thr}}$ & $i$  & $\text{ADC}_{\text{thr}}$ \\ \hline
+			16 & 27 & 40 & 0 \\
+			17 & 30 & 41 & 31 \\
+			18 & 26 & 42 & 0 \\
+			19 & 37 & 43 & 14 \\
+			20 & 25 & 44 & 29 \\
+			21 & 55 & 45 & 30 \\
+			22 & 43 & 46 & 33 \\
+			23 & 27 & 47 & 22 \\
 		\end{tabular}
-		\caption[Student]{Student database raz daw rzy\newline\newline\newline\newline\newline\newline\newline\newline}
-		\label{table:student}
+		\caption[Offline ADC thresholds in BBC-large.]{Offline ADC thresholds in BBC-large.\newline\newline\newline\newline\newline\newline\newline\newline}
+		\label{tab:bbcLargeThresholds}
 	\end{minipage}
 
 \end{table}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{(\ref{enum:CutTofClusters})~TOF clusters limit}
 
 %---------------------------
