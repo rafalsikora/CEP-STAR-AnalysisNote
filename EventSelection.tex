@@ -429,49 +429,7 @@ Tutaj dodac rysunki z suma 1D tych wielkosci i uzasadnic stosowanie ciecia na mi
 
 \subsection{(\ref{enum:CutPid})~Particle identification}
 
-In addition to information from the TPC we use time of hit detection in the barrel TOF subsystem. From the simple algebra describing relation between track lengths, momenta and times of hit detection one can derive formula for the squared mass of two particles, assuming that their masses are equal (particles are of the same type):
-
-%---------------------------
-\begin{figure}[ht!]
-\centering%
-\parbox{0.29\textwidth}{%
-  \centering%
-  \includegraphics[width=\linewidth]{graphics/eventSelection/TofScheme.pdf}\label{fig:tofScheme}
-}%
-\quad\quad%
-\parbox{0.655\textwidth}{%
-    \caption[Scheme of two central tracks with common vertex, hitting cells in TOF detector.]{Scheme of two central tracks of lengths $L_{1}$ and $L_{2}$, produced in common vertex in moment $t_{0}$, hitting cells in TOF detector in moments $t_{1}$ and $t_{2}$.}
-}%
-
-\end{figure}
-%---------------------------
-
-\begin{equation}
- \left\{\begin{array}{l}%
- t_{1}-t_{0} = L_{1}\sqrt{1+\frac{m_{1}^{2}}{p_{1}^{2}}}, \\[3pt]
- t_{2}-t_{0} = L_{2}\sqrt{1+\frac{m_{2}^{2}}{p_{2}^{2}}},
-\end{array}\right.%
-\end{equation}
-
-\begin{equation}
- \Delta t = t_{1}-t_{2} = L_{1}\sqrt{1+\frac{m_{1}^{2}}{p_{1}^{2}}} - L_{2}\sqrt{1+\frac{m_{2}^{2}}{p_{2}^{2}}}.
-\end{equation}
-
-\[\text{Assuming}~m_{1}=m_{2}=m~~\rightarrow~~m^{2}~\text{from quadratic eq.}\]
-Parameters of the quadratic equation whose solution is suqared mass and the final formula for $m^{2}_{\text{TOF}}$ are given below:
-\begin{equation}
-\mathcal{A}= -2\frac{L^2_1L^2_2}{p^2_1p^2_2}+\frac{L^4_1}{p^4_1}+\frac{L^4_2}{p^4_2},
-\end{equation}
-\begin{equation}
-\mathcal{B}=-2L^2_1L^2_2\left({\frac{1}{p^2_1}} + {\frac{1}{p^2_2}}\right)+\frac{2L^4_1}{p_1^2}+\frac{2L^4_2}{p_2^2}-2\left(\Delta t\right)^2\left(\frac{L^2_1}{p_1^2}+\frac{L^2_2}{p_2^2}\right),
-\end{equation}
-\begin{equation}
-\mathcal{C}=\left(\Delta t\right)^4-2\left(\Delta t\right)^2\left(L^2_1+L^2_2\right)+L^4_1+L^4_2-2L^2_1L^2_2,
-\end{equation}
-\begin{equation}
- \label{eq:mSquared}
-m^{2}_{\text{\tiny TOF}} = \frac{-\mathcal{B}+\sqrt{\mathcal{B}^2-4\mathcal{A}\mathcal{C}}}{2\mathcal{A}}.
-\end{equation}
+In addition to information from the TPC we use time of hit detection in the barrel TOF subsystem. 
 
 
 

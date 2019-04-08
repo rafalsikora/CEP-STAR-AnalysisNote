@@ -22,9 +22,9 @@
 \contentsline {subsection}{\numberline {3.2.6}(\ref {enum:CutTofClusters})\nobreakspace {}TOF clusters limit}{16}{subsection.3.2.6}
 \contentsline {subsection}{\numberline {3.2.7}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{T}$ cut)}{16}{subsection.3.2.7}
 \contentsline {subsection}{\numberline {3.2.8}(\ref {enum:CutPid})\nobreakspace {}Particle identification}{17}{subsection.3.2.8}
-\contentsline {section}{\numberline {3.3}Working point for cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}{19}{section.3.3}
-\contentsline {section}{\numberline {3.4}Signal per integrated luminosity}{19}{section.3.4}
-\contentsline {section}{\numberline {3.5}Cut flow}{19}{section.3.5}
+\contentsline {section}{\numberline {3.3}Working point for cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}{18}{section.3.3}
+\contentsline {section}{\numberline {3.4}Signal per integrated luminosity}{20}{section.3.4}
+\contentsline {section}{\numberline {3.5}Cut flow}{20}{section.3.5}
 \contentsline {chapter}{\numberline {4}Corrections}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Method of corrections application}{21}{section.4.1}
 \contentsline {section}{\numberline {4.2}Efficiencies and acceptances}{21}{section.4.2}
@@ -51,9 +51,10 @@
 \contentsline {chapter}{\numberline {7}Physics results}{28}{chapter.7}
 \contentsline {chapter}{Appendix \numberline {A}BBC response}{33}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Formulation of total RP efficiency}{42}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}RP efficiency}{44}{Appendix.1.C}
-\contentsline {section}{\numberline {C.1}RP track reconstruction and selection efficiency}{44}{section.1.C.1}
-\contentsline {section}{\numberline {C.2}RP trigger veto probability related to dead material}{50}{section.1.C.2}
-\contentsline {chapter}{List of Figures}{57}{chapter*.56}
-\contentsline {chapter}{List of Tables}{57}{chapter*.57}
-\contentsline {chapter}{References}{59}{chapter*.58}
+\contentsline {chapter}{Appendix \numberline {C}Reconstruction of $\bf {m}^{2}_{\text {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip TOF}}$}{44}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {D}RP efficiency}{45}{Appendix.1.D}
+\contentsline {section}{\numberline {D.1}RP track acceptance, reconstruction and selection efficiency}{45}{section.1.D.1}
+\contentsline {section}{\numberline {D.2}RP trigger veto probability related to dead material}{51}{section.1.D.2}
+\contentsline {chapter}{List of Figures}{58}{chapter*.56}
+\contentsline {chapter}{List of Tables}{58}{chapter*.57}
+\contentsline {chapter}{References}{60}{chapter*.58}
