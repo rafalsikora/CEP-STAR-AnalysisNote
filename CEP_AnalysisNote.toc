@@ -27,7 +27,7 @@
 \contentsline {section}{\numberline {3.5}Cut flow}{19}{section.3.5}
 \contentsline {chapter}{\numberline {4}Corrections}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Method of corrections application}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}Efficiencies and acceptances}{21}{section.4.2}
+\contentsline {section}{\numberline {4.2}Acceptances and efficiencies}{21}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Trigger efficiency}{21}{subsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.1.1}Online veto (BBC-small and ZDC veto)}{21}{subsubsection.4.2.1.1}
 \contentsline {subsubsection}{\numberline {4.2.1.2}RP triggering efficiency}{22}{subsubsection.4.2.1.2}

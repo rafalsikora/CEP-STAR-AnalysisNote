@@ -40,8 +40,6 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
  %
  \itemm Maximally 3 reconstructed TOF clusters $N^{\text{TOF}}_{\text{clstrs}}\leq 3$.\label{enum:CutTofClusters}%
  %
- \itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\text{miss}}<75~\text{MeV}/c$.\label{enum:CutMissingPt}%
- %
  \itemm Particle (pair) identification:\label{enum:CutPid}
  \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
       \itemm Identification of particle pairs based on $dE/dx$ and $m^{2}_{\text{TOF}}$:\\[2pt]
@@ -53,10 +51,10 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
         \textbf{else~~} event rejected.
       \itemm Restricting fiducial cuts on $K^{+}K^{-}$ and $p\bar{p}$:\\[2pt]
       \textbf{~if~} $p\bar{p}$:~~~~~~~~~~~~\hspace*{1.7pt}$p_{T}>0.4~\text{GeV}/c$,~~~~$min(p_{T}^{+},p_{T}^{-})<1.1~\text{GeV}/c$\\%
-      \textbf{~if~} $K^{+}K^{-}$:~~~~~~$p_{T}>0.3~\text{GeV}/c$,~~~~$min(p_{T}^{+},p_{T}^{-})<0.7~\text{GeV}/c$\\%
-        %
-        
+      \textbf{~if~} $K^{+}K^{-}$:~~~~~~$p_{T}>0.3~\text{GeV}/c$,~~~~$min(p_{T}^{+},p_{T}^{-})<0.7~\text{GeV}/c$%
 \end{enumerate}
+\itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\text{miss}}<75~\text{MeV}/c$.\label{enum:CutMissingPt}%
+ %
 \end{enumerate}
 
 \section{Description of cuts}\label{sec:descriptionOfCuts}

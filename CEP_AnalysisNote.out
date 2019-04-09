@@ -20,14 +20,14 @@
 \BOOKMARK [2][-]{subsection.3.2.4}{\(C5\) TPC-RP z-vertex matching}{section.3.2}% 20
 \BOOKMARK [2][-]{subsection.3.2.5}{\(C6\) BBC-large signal veto}{section.3.2}% 21
 \BOOKMARK [2][-]{subsection.3.2.6}{\(C7\) TOF clusters limit}{section.3.2}% 22
-\BOOKMARK [2][-]{subsection.3.2.7}{\(C8\) Exclusivity cut \(missing pT cut\)}{section.3.2}% 23
-\BOOKMARK [2][-]{subsection.3.2.8}{\(C9\) Particle identification}{section.3.2}% 24
-\BOOKMARK [1][-]{section.3.3}{Working point for cuts C6, C7 and C8}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.2.7}{\(C9\) Exclusivity cut \(missing pT cut\)}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.8}{\(C8\) Particle identification}{section.3.2}% 24
+\BOOKMARK [1][-]{section.3.3}{Working point for cuts C6, C7 and C9}{chapter.3}% 25
 \BOOKMARK [1][-]{section.3.4}{Signal per integrated luminosity}{chapter.3}% 26
 \BOOKMARK [1][-]{section.3.5}{Cut flow}{chapter.3}% 27
 \BOOKMARK [0][-]{chapter.4}{Corrections}{}% 28
 \BOOKMARK [1][-]{section.4.1}{Method of corrections application}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.2}{Efficiencies and acceptances}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{Acceptances and efficiencies}{chapter.4}% 30
 \BOOKMARK [2][-]{subsection.4.2.1}{Trigger efficiency}{section.4.2}% 31
 \BOOKMARK [3][-]{subsubsection.4.2.1.1}{Online veto \(BBC-small and ZDC veto\)}{subsection.4.2.1}% 32
 \BOOKMARK [3][-]{subsubsection.4.2.1.2}{RP triggering efficiency}{subsection.4.2.1}% 33
@@ -36,8 +36,8 @@
 \BOOKMARK [3][-]{subsubsection.4.2.2.1}{TPC z-vertex cut \(C2\)}{subsection.4.2.2}% 36
 \BOOKMARK [3][-]{subsubsection.4.2.2.2}{TPC-RP z-vertex matching \(C5\)}{subsection.4.2.2}% 37
 \BOOKMARK [3][-]{subsubsection.4.2.2.3}{Primary vertices limit \(C1\), BBC-large veto \(C6\) and TOF clusters limit \(C7\)}{subsection.4.2.2}% 38
-\BOOKMARK [3][-]{subsubsection.4.2.2.4}{Missing pT cut \(C8\)}{subsection.4.2.2}% 39
-\BOOKMARK [3][-]{subsubsection.4.2.2.5}{Particle identification \(C9\)}{subsection.4.2.2}% 40
+\BOOKMARK [3][-]{subsubsection.4.2.2.4}{Missing pT cut \(C9\)}{subsection.4.2.2}% 39
+\BOOKMARK [3][-]{subsubsection.4.2.2.5}{Particle identification \(C8\)}{subsection.4.2.2}% 40
 \BOOKMARK [2][-]{subsection.4.2.3}{RP track acceptance and reconstruction efficiency}{section.4.2}% 41
 \BOOKMARK [2][-]{subsection.4.2.4}{TPC vertex reconstruction efficiency}{section.4.2}% 42
 \BOOKMARK [1][-]{section.4.3}{Particle energy loss}{chapter.4}% 43

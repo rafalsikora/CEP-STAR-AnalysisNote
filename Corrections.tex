@@ -37,7 +37,7 @@
 
 
 
-\section{Efficiencies and acceptances}
+\section{Acceptances and efficiencies}
 
 In this section we present calculation of all efficiencies except TPC track reconstruction and TOF hit reconstruction and matching efficiency, which were discussed and presented in Ref.~\cite{supplementaryNote}.
 
@@ -134,8 +134,8 @@ The joint RP acceptance and track reconstruction efficiency for a given STAR sid
 Technically the $\epsilon_{\text{RP}}^{\text{side}}$ was obtained in the following procedure:
 \begin{enumerate}
 	\item It was verified if there is a trigger signal in the branch that the primary forward proton is expected to reach based on its $p_{y}$ ($p_{y}>0$ - branch UP, $p_{y}<0$ - branch DOWN). Additionally required lack of trigger signal in the other branch on the same side. These events formed $set~A$.
-	\item The nominal RP track selection algorithm was used to find a single good quality track (cuts~\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on given side. If exactly one such track was find, it was additionally checked if it is matched with true-level primary proton. These events formed $set~B$.
-	\item The efficiency was calculated by the ratio of histograms from $set~B$ and $set~A$:
+	\item The nominal RP track selection algorithm was used to find a single good quality track (cuts~\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on given side. If exactly one such track was found, it was additionally checked if it is matched with true-level primary proton. These events formed $set~B$.
+	\item The efficiency was determined by the ratio of histograms from $set~B$ and $set~A$:
 	\begin{equation}\label{eq:rpEffDef}
  \epsilon_{\text{RP}}^{\text{side}}(p_{x}, p_{y}, z_{\text{vtx}}) = \mbox{\LARGE$\varepsilon$}\left(\RPSIDE\left|\TRSIDE\land~!\TRNSIDE\right.\right) = %
  \frac{(p_{x}, p_{y}, z_{\text{vtx}})~\text{histogram for protons from}~set~B}{(p_{x}, p_{y}, z_{\text{vtx}})~\text{histogram for protons from}~set~A}
@@ -178,6 +178,24 @@ The efficiency calculated in the way described above is, by design, the acceptan
 The definition of vertex reconstruction efficiency established in this analysis is the probability that two global tracks, both associated with true-level primary particles from the kinematic region of the measurement, both satisfying kinematic and quality criteria (cuts~\ref{enum:TpcKinematicCuts} and ~\ref{enum:TpcQualityCuts}) and both matched with hits in TOF, form a vertex listed in the collection of reconstructed primary vertices and DCA(R) and DCA(z) of both global tracks calculated w.r.t. this vertex is contained within the limits of cut~\ref{enum:TpcDcaCuts}.
 
 \section{Particle energy loss}\label{sec:energyLoss}
+
+Energy loss correction as a function of reconstructed particle $p_{T}$ in bins of $z$-position of reconstructed vertex has been calculated and presented in Chapter~5 of Ref.~\cite{supplementaryNote} for all analyzed particle species and both positive and negative charges. The correction was applied independetly for each particle in the following procedure:
+
+\begin{enumerate}
+	\item After central particles were identified (cut~\ref{enum:CutPid}) an absolute value of the particle transverse momentum correction ($-\Delta p_{T} = p_{T}^{\text{meas}}-p_{T}^{\text{true}}$) was read from the histogram corresponding to reconstructed $z_{\text{vtx}}$ and to assigned particle ID (Appendix~C of Ref.~\cite{supplementaryNote}).
+	\item The momentum correction factor $f_{p}^{\text{corr}}$ was calculated:
+	\begin{equation}\label{eq:pCorrFactor}
+ f_{p}^{\text{corr}} = \frac{p_{T}^{\text{meas}} + \Delta p_{T}}{p_{T}^{\text{meas}}}.
+  \end{equation}
+  \item New, corrected momentum $\vec{p}^{corr}$ was assigned to the particle:
+  \begin{equation}
+   \vec{p}^{~\text{corr}} = f_{p}^{\text{corr}} \cdot \vec{p}^{~\text{meas}}.
+  \end{equation}
+  In this way all three components of particle momentum are corrected so that the pseudorapidity of a particle remains unchanged.
+\end{enumerate}
+This new momentum was further used in determination of total transverse momentum of all reconstructed particles, $p_{T}^{\text{miss}}$, as well as in applying TPC and TOF efficiency corrections and preparing histograms (cross sections) of physics quantities (e.g. invariant mass, rapidity of a pair of central tracks).
+
+
 \section{Background subtraction}\label{sec:bkgdSubtraction}
 % \section{Unfolding}\label{sec:unfolding}
 
