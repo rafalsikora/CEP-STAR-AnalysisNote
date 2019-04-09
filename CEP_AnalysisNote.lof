@@ -13,12 +13,12 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Local angles of global tracks in Roman Pots.\relax }}{14}{figure.caption.11}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Correlation and difference of $z$-vertex position measured in Roman Pots and TPC.}}{14}{figure.caption.12}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Sample BBC-small and BBC-large response in zero-bias triggers.}}{15}{figure.caption.13}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Probability of false BBC-large signal (noise-induced).}}{15}{table.caption.14}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Probability of false BBC-large signal (noise-induced).}}{16}{table.caption.14}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces NTofClusters.\relax }}{16}{figure.caption.15}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Correlation between sum of corresponding momentum components ($x$ in Fig.\nobreakspace {}\ref {fig:PxCentralTrksVsProtons_pion} and $y$ in Fig.\nobreakspace {}\ref {fig:PyCentralTrksVsProtons_pion}) of Roman Pot proton tracks and TPC tracks.\relax }}{16}{figure.caption.16}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Correlation between sum of corresponding momentum components ($x$ in Fig.\nobreakspace {}\ref {fig:PxCentralTrksVsProtons_pion} and $y$ in Fig.\nobreakspace {}\ref {fig:PyCentralTrksVsProtons_pion}) of Roman Pot proton tracks and TPC tracks.\relax }}{17}{figure.caption.16}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces MissingPt.\relax }}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Correlation between $n\sigma ^{\text {pair}}$ from TPC for $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{17}{figure.caption.18}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Correlation between $m^{2}$ from TOF and $n\sigma ^{\text {pair}}$ from TPC for $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Correlation between $n\sigma ^{\text {pair}}$ from TPC for $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Correlation between $m^{2}$ from TOF and $n\sigma ^{\text {pair}}$ from TPC for $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{18}{figure.caption.19}
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Squared particle mass from TOF for candidates of given PID selected based on $dE/dx$ in TPC.\relax }}{18}{figure.caption.20}
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Relation between $\pi ^{+}\pi ^{-}$ significance, efficiency and purity vs. thresholds in cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}}{19}{figure.caption.21}
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Cut flow.\relax }}{20}{figure.caption.22}

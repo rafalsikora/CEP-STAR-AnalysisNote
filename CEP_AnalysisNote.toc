@@ -20,11 +20,11 @@
 \contentsline {subsection}{\numberline {3.2.4}(\ref {enum:CutDeltaZVx})\nobreakspace {}TPC-RP $z$-vertex matching}{14}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}(\ref {enum:CutBbcLarge})\nobreakspace {}BBC-large signal veto}{14}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}(\ref {enum:CutTofClusters})\nobreakspace {}TOF clusters limit}{16}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{T}$ cut)}{16}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.7}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{T}$ cut)}{17}{subsection.3.2.7}
 \contentsline {subsection}{\numberline {3.2.8}(\ref {enum:CutPid})\nobreakspace {}Particle identification}{17}{subsection.3.2.8}
-\contentsline {section}{\numberline {3.3}Working point for cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}{18}{section.3.3}
-\contentsline {section}{\numberline {3.4}Signal per integrated luminosity}{20}{section.3.4}
-\contentsline {section}{\numberline {3.5}Cut flow}{20}{section.3.5}
+\contentsline {section}{\numberline {3.3}Working point for cuts\nobreakspace {}\ref {enum:CutBbcLarge}, \ref {enum:CutTofClusters} and \ref {enum:CutMissingPt}}{19}{section.3.3}
+\contentsline {section}{\numberline {3.4}Signal per integrated luminosity}{19}{section.3.4}
+\contentsline {section}{\numberline {3.5}Cut flow}{19}{section.3.5}
 \contentsline {chapter}{\numberline {4}Corrections}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Method of corrections application}{21}{section.4.1}
 \contentsline {section}{\numberline {4.2}Efficiencies and acceptances}{21}{section.4.2}

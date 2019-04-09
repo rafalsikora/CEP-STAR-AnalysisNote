@@ -316,8 +316,13 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{(\ref{enum:CutBbcLarge})~BBC-large signal veto}
 
+At the trigger level a veto on signal in small BBC detectors was used. During offline analysis we found that the non-exclusive background can be efficiently rejected if an additional veto on signal in large BBC detectors is added. It is connected with the fact that vast majority of selected RP\_CPT2 triggers were from the central diffraction process to which CEP belongs. Many of central diffraction events have particles produced in the rapidity region outside the TPC and TOF acceptance, some hitting large BBC tiles. Presence of signal in large BBC is therefore a signature of background or a pile-up interaction.
+
+The response of large BBC tiles is different from that of small BBC tiles, as shown in sample plots in Fig.~\ref{fig:sampleBbcResponse} (similar distributions for all channels can be found in Appendix~\ref{appendix:bbc}). Typically in small BBC tiles a peak visible in ADC distribution around $100-150$ (Figs.~\ref{fig:sampleBbcSmallAdcVsTac},\ref{fig:sampleBbcSmallAdc}), a signature of good separation of the electronics noise and signal from the ionizing particle. No such feature is observed in corresponding distribution for large BBC tile (Figs.~\ref{fig:sampleBbcLargeAdcVsTac},\ref{fig:sampleBbcLargeAdc}), which can be explained by the difference in geometry (in size) of small and large tiles. In large BBC tiles the path that scintillation light must travel to reach PMT is much longer in comparison to smal BBC tiles (multiple reflections on the main tile surface due to small thickness of the tile) therefore it is highly attenuated and extended in time. This is possible reason of lack of signal peak in the ADC distribution in large BBC tile spectrum (Fig.~\ref{fig:sampleBbcLargeAdc}), as well as the late-TAC (TAC$<\sim600$, ADC$<100$) tail in the ADC vs. TAC spectrum (slewing effect, Fig.~\ref{fig:sampleBbcLargeAdcVsTac}). Nevertheless, the above features of BBC-large response does not disqualify this detector from being used as a veto detector, as in this case lower efficiency of the detector only reduce the background rejection power.
+
+
 %---------------------------
-\begin{figure}[h]\label{fig:sampleBbcResponse}
+\begin{figure}[h]
 \centering
 \parbox{0.4725\textwidth}{
   \centering
@@ -338,17 +343,29 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
                 \subcaptionbox{\label{fig:sampleBbcLargeAdc}}{\includegraphics[width=\linewidth,page=17]{graphics/eventSelection/bbc/Bbc_ADC.pdf}}
   \end{subfigure}
 }%
+\label{fig:sampleBbcResponse}%
 \caption[Sample BBC-small and BBC-large response in zero-bias triggers.]{Sample BBC-small (left column) and BBC-large (right column) response in zero-bias data. Top row shows TAC vs. ADC distributions, bottom row shows projection of the corresponding two-dimensional ditribution on $x$-axis (ADC) in the TAC range quoted in the legend, for both abort gaps and colliding bunches. Red lines and arrows indicate thresholds for a signal in presented channels.}
 \end{figure}
 %---------------------------
 
 
+Each channel of the BBC-large has different response to signal from ionizing particle, as well as different level of noise. We decided to set up a signal threshold for each channel based on a study of the noise in abort gaps (in zero-bias data). This noise, in principle, should be solely the electronics noise. We checked for each channel the probability to detect a signal with ADC above certain threshold and with TAC contained within 100 and 2400 (the same window is deafult for small BBC). The result is shown in Fig.~\ref{fig:bbcLargeThresholds}. Next, we established final ADC thresholds in each BBC-large channel by requiring that the noise in BBC-large would cause a veto in maximally $3.5\%$ of events. To transform it to $\text{ADC}_{thr}$ we first assumed that the noise is uncorrelated between the channels. With this assumption one can connect the probability of the veto in whole BBC-large detector (east and west) caused by noise $\mathcal{P}_{\text{veto}}^{\text{noise}}$ with the probability of the signal induced by noise in single BBC-large channel $\mathcal{P}_{i,\text{sig}}^{\text{noise}}$:
+\begin{equation}\label{eq:bbcNoise1}
+ \mathcal{P}_{\text{veto}}^{\text{noise}} = 1-\mathcal{P}_{!\text{veto}}^{\text{noise}} = 1-\left( 1-\mathcal{P}_{i,\text{sig}}^{\text{noise}} \right)^{N^{\text{BBC}}_{\text{ch}}}.
+\end{equation}
+In the equation above $N^{\text{BBC}}_{\text{ch}}$ denotes number of active channels in BBC-large. From plots contained in Appendix~\ref{appendix:bbc} one can read that there were 14 active channels in BBC-large. 2 dead channels were found on the west side (40 and 42). By transforming Eq.~\ref{eq:bbcNoise1} to the form presented below we can calculate the threshold probability for a single BBC-large channel:
+\begin{equation}\label{eq:bbcNoise2}
+ \mathcal{P}_{i,\text{sig}}^{\text{noise}} = 1-\sqrt[N^{\text{BBC}}_{\text{ch}}]{1-\mathcal{P}_{\text{veto}}^{\text{noise}}} = 1-\sqrt[14]{1-0.035} \approx 0.0025.
+\end{equation}
+In the last step we translated this number to ADC threshold for each channel of BBC-large. For this purpose we used Fig.~\ref{fig:bbcLargeThresholds}. The $x$-axis projection of the crossing point of each color line with the $y$-axis value of 0.0025 defines $\text{ADC}_{thr}$ for each particular channel. These numbers are listed in Tab.~\ref{tab:bbcLargeThresholds}. The event was dropped from analysis if any of the BBC-large channels registered signal of strength $\text{ADC}_{i}>\text{ADC}_{i,thr}$ and $100<\text{TAC}_{i}<2400$.
 
-\begin{table}
+
+
+\begin{table}[h]
 	\begin{minipage}{0.65\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{graphics/eventSelection/bbc/BbbLargeThreshold.pdf}
-		\captionof{figure}[Probability of false BBC-large signal (noise-induced).]{Percentage of events in abort gaps from zero-bias triggers with the ADC counts larger than the ADC threshold given in the $x$-axis, for each BBC-large channel.}
+		\captionof{figure}[Probability of false BBC-large signal (noise-induced).]{Percentage of events in abort gaps from zero-bias triggers with the ADC counts larger than the ADC threshold given in the $x$-axis, for each BBC-large channel. Measured points with statistical uncertainties are connected with a smooth line of corresponding color for better visualization.}
 		\label{fig:bbcLargeThresholds}
 	\end{minipage}\hfill
 	\begin{minipage}{0.3\linewidth}
@@ -371,6 +388,7 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 
 \end{table}
 
+Observation of high purification of CEP sample with described BBC-large veto in the data from run 15 was helpful to improve the CEP trigger for run 17. The improved trigger called RP\_CPT2noBBCL was similar to RP\_CPT2 with an addition of BBC-large veto using ADC threshold of 50.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
