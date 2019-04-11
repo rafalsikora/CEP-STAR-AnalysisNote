@@ -7,7 +7,7 @@
 
 \chapter{Corrections}\label{chap:corrections}
 
-\section{Method of corrections application}
+\section{Method of corrections application}\label{sec:correctionProcedure}
 \begin{equation}
   \frac{d\sigma}{dq} = \frac{1}{\Delta q} \times \frac{1}{\varepsilon} \times \frac{N^{\mathit{w}}-N^{\mathit{w}}_\textrm{bkgd}}{\mathit{L}_{\textrm{int}}^{\textrm{eff}}}
 \end{equation}
@@ -43,6 +43,8 @@ In this section we present calculation of all efficiencies except TPC track reco
 
 \subsection{Trigger efficiency}\label{sec:triggerEff}
 \subsubsection{Online veto (BBC-small and ZDC veto)}
+
+Vetoeing signal in BBC-small and ZDC detectors on both sides of STAR was implemented in the logic of RP\_CPT2 trigger. Common correction of the online and offline vetoes which is used in the correction procedure explained in Sec.~\ref{sec:correctionProcedure} is presented in. Sec.~\ref{sec:offlineVetoEff}. However, to help quantifiy effect of just the online vetoes in BBC-small and ZDCs we show the Fig.~\ref{fig:onlineVetoEff} with the efficiency of the joint BBC-small and ZDC veto as a function of the instantaneous luminosity calculated from the zero-bias data. Details of the way the efficiency was calculated as well as description of the data in the Figure is the same as explained in Sec.~\ref{sec:offlineVetoEff}.
 %---------------------------
 \begin{figure}[ht!]
 \centering%
@@ -79,13 +81,36 @@ In this section we present calculation of all efficiencies except TPC track reco
 \subsubsection{TPC \texorpdfstring{$z$}{z}-vertex cut~(\ref{enum:CutZVx})}
 \subsubsection{TPC-RP \texorpdfstring{$z$}{z}-vertex matching~(\ref{enum:CutDeltaZVx})}
 \subsubsection{Primary vertices limit~(\ref{enum:CutPrimVx}), BBC-large veto~(\ref{enum:CutBbcLarge}) and TOF clusters limit~(\ref{enum:CutTofClusters})}\label{sec:offlineVetoEff}
+
+
 %---------------------------
-\begin{figure}[ht!]
-\centering%
-\includegraphics[width=0.65\linewidth,page=1]{graphics/corrections/OnlineAndOfflineVetoEffVsInstLumi_graph.pdf}%
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:sampleBbcSmallAdcVsTac}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:sampleBbcSmallAdc}}{\includegraphics[width=\linewidth,page=3]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
+  \end{subfigure}
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:sampleBbcLargeAdcVsTac}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:sampleBbcLargeAdc}}{\includegraphics[width=\linewidth,page=4]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
+  \end{subfigure}
+}%
 \caption{Overall efficiency of the online BBC-small and ZDC veto, primary vertices limit~(\ref{enum:CutPrimVx}), BBC-large veto~(\ref{enum:CutBbcLarge}) and TOF clusters limit~(\ref{enum:CutTofClusters}) as a function of instantaneous luminosity.}\label{fig:onlineAndOfflineVetoEff}%
 \end{figure}
 %---------------------------
+
+
+
 \subsubsection{Missing \texorpdfstring{$p_{T}$}{pT} cut~(\ref{enum:CutMissingPt})}
 \subsubsection{Particle identification~(\ref{enum:CutPid})}
 
