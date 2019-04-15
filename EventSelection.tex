@@ -35,7 +35,8 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
       \itemm Tracks passing cut~\ref{enum:RpOneTrkPerSide} lie within the fiducial $(p_{x},p_{y})$ region defined as\label{enum:RpFiducial}:\\
       \[0.2<|p_{y}|<0.4,~~~-0.2<p_{x},~~~(p_{x}+0.3)^{2}+p_{y}^{2}<0.5^{2}~~~(\text{all in GeV}).\]
     \end{enumerate}
- \itemm Vertex $z$-positions measured in TPC and reconstructed from the difference of proton detection time in west and east RPs are consistent with each other within the resolution: $|z_{\text{vx}}^{\text{TPC}}-z_{\text{vx}}^{\text{RP}}|<36$~cm ($3\sigma_{\Delta z_{\text{vtx}}}$).\label{enum:CutDeltaZVx}
+ \itemm Vertex $z$-positions measured in TPC and reconstructed from the difference of proton detection time in west and east RPs are consistent with each other within the resolution (at $3.5\sigma_{\Delta z_{\text{vtx}}}$ level):
+ \[|\Delta z_{\text{vtx}}| = |z_{\text{vx}}^{\text{TPC}}-z_{\text{vx}}^{\text{RP}}|<36~\text{cm}.\vspace{-17pt}\]\label{enum:CutDeltaZVx}
  \itemm No signal in any tile of BBC-large (east or west) with $\text{ADC}>\text{ADC}_{\text{thr}}$ and $100<\text{TDC}<2400$, where $\text{ADC}_{\text{thr}}$ is specific for each channel.\label{enum:CutBbcLarge}%
  %
  \itemm Maximally 3 reconstructed TOF clusters $N^{\text{TOF}}_{\text{clstrs}}\leq 3$.\label{enum:CutTofClusters}%
@@ -269,12 +270,19 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 \caption{Local angles of global tracks in Roman Pots.}
 \end{figure}
 %---------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{(\ref{enum:CutDeltaZVx})~TPC-RP \texorpdfstring{$z$}{z}-vertex matching}
 
-
+In CEP tracks in the central detector and tracks in Roman Pots originate from the same interaction vertex. Measurement of the time of detection of forward protons in RPs gives access to reconstruction of the position of the vertex
+\begin{equation}
+z_{\text{vtx}}^{\text{RP}} = c\cdot\frac{t^{\text{RP}}_{\text{W}} - t^{\text{RP}}_{\text{E}}}{2}
+\end{equation}
+independently from TPC, which allows their comparison and rejection of the background if the two values disagree. Time of detection of proton in RP is provided in StMuRpsTrack object - it is an average of all TAC values from PMTs in RPs used to form a track, corrected for the slewing effect and adjusted to have the best correlation with the $z$-position of the vertex measured in TPC, translated to unit of time (all these steps are done at the level of raw data reconstrucion). In Fig.~\ref{fig:zVertexRpTpc} the comparisons of the $z_{\text{vtx}}^{\text{RP}}$ and $z_{\text{vtx}}^{\text{TPC}}$ are shown with some preselection cuts applied. A clear signal from the Central Diffraction (and thus CEP) process is manifesting in high correlation of the two values (diagonal in Fig.~\ref{fig:zVertexRpVsTpc}) or significant and relatively narrow peak centered at 0 for the difference of two values (Fig.~\ref{fig:zVertexRpMinusZVertexTpc}). %
 %---------------------------
 \begin{figure}[ht!]
 \centering
@@ -291,9 +299,10 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
                 \subcaptionbox{\label{fig:zVertexRpMinusZVertexTpc}}{\includegraphics[width=\linewidth]{graphics/eventSelection/zVertexRpMinusZVertexTpc.pdf}}}
   \end{subfigure}
 }%
-\caption[Correlation and difference of $z$-vertex position measured in Roman Pots and TPC.]{Correlation (Fig.~\ref{fig:zVertexRpVsTpc}) and difference (Fig.~\ref{fig:zVertexRpMinusZVertexTpc}) of $z$-vertex position measured in Roman Pots and TPC.}
-\end{figure}
+\caption[Correlation and difference of $z$-vertex position measured in Roman Pots and TPC.]{Correlation (Fig.~\ref{fig:zVertexRpVsTpc}) and difference (Fig.~\ref{fig:zVertexRpMinusZVertexTpc}) of $z$-vertex position measured in Roman Pots and TPC in RP\_CPT2 triggers, after preselection described in the plots.}\label{fig:zVertexRpTpc}
+\end{figure}%
 %---------------------------
+The sum of two Gaussian distributions was fitted to data in Fig.~\ref{fig:zVertexRpMinusZVertexTpc} yielding good description of the distribution of $\Delta z_{\text{vtx}}$ with the width parameters equal $10.3$~cm (CD signal) and $73.9$~cm (pile-up). The first parameter reflects the time resolution of RPs (the $z_{\text{vtx}}^{\text{RP}}$ measurement), as the TPC resolution is much better ($\sim 1$~cm). Value of the second parameter, roughly consistent with $\sqrt{2}\sigma_{z_{\text{vtx}}}\approx 71$~cm, confirms that the wide distribution under the narrow signal peak is uncorrelated background, in other words forward protons originating from a different vertex than the central tracks. To reject this background without significant loss of the signal, we introduce $3.5\sigma_{\Delta z_{\text{vtx}}}$ cut on $\Delta z_{\text{vtx}}$.
 
 
 % %---------------------------
@@ -528,57 +537,57 @@ In addition to information from the TPC we use time of hit detection in the barr
 
 
 
-
-\section{Working point for cuts~\ref{enum:CutBbcLarge}, \ref{enum:CutTofClusters} and \ref{enum:CutMissingPt}}
-
-\begin{tabulary}{\textwidth}{LLL}
-\begin{equation}\label{eq:significance}\hspace*{-10pt}
-	\text{Significance} = \frac{N_{\text{signal}}^{\text{cut}}}{\sqrt{N_{\text{signal}}^{\text{cut}} + N_{\text{bkgd}}^{\text{cut}}}},
-\end{equation}~~~~~~~~~~~~~~~~~&
-\begin{equation}\label{eq:efficiency}\hspace*{-10pt}
-	\text{Efficiency} = \frac{N_{\text{signal}}^{\text{cut}}}{N_{\text{signal}}^{\text{no~cut}}},
-\end{equation}~~~~~~~~~~~~~~&
-\begin{equation}\label{eq:purity}\hspace*{-9pt}
-	\text{Purity} = \frac{N_{\text{signal}}^{\text{cut}}}{N_{\text{signal}}^{\text{cut}}+N_{\text{bkgd}}^{\text{cut}}},
-\end{equation}~~~~~~~~~~~~~~~
-\end{tabulary}
-
-
-%---------------------------
-\begin{figure}[hb]
-\centering
-\parbox{0.4725\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:SignificanceVsEff}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:EffVsBkgdFrac}}{\includegraphics[width=\linewidth]{graphics/eventSelection/ROC_pTmiss.pdf}}
-  \end{subfigure}
-}%
-\quad\quad%
-\parbox{0.4725\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
-                \subcaptionbox{\label{fig:SignificanceVsBkgdFrac}}{\includegraphics[width=\linewidth]{graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf}}
-  \end{subfigure}\\
-  \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
-    \caption[Relation between $\pi^{+}\pi^{-}$ significance, efficiency and purity vs. thresholds in cuts~\ref{enum:CutBbcLarge}, \ref{enum:CutTofClusters} and \ref{enum:CutMissingPt}]{Relation between $\pi^{+}\pi^{-}$ signal significance and efficiency (\ref{fig:SignificanceVsEff}), significance and purity (\ref{fig:SignificanceVsBkgdFrac}), and efficiency and purity (\ref{fig:EffVsBkgdFrac}) as a function of cut thresholds in BBC-large veto (\ref{enum:CutBbcLarge}), TOF cluster limit (\ref{enum:CutTofClusters}) and exclusivity cut (\ref{enum:CutMissingPt}). Lines show forementioned relations with changing $p_{T}^\text{miss}$ cut whose some specific values are indicated with different markers. Color denotes ADC threshold in BBC-large veto (black, red or green). Style of line (solid or dashed) denotes $N^{\text{TOF}}_{\text{clstrs}}$ limit. Working point considered optimal is marked with opened blue circle.}\label{fig:workingPoint}
-  \end{minipage}
-}%
-
-\end{figure}
-%---------------------------
+% 
+% \section{Working point for cuts~\ref{enum:CutBbcLarge}, \ref{enum:CutTofClusters} and \ref{enum:CutMissingPt}}
+% 
+% \begin{tabulary}{\textwidth}{LLL}
+% \begin{equation}\label{eq:significance}\hspace*{-10pt}
+% 	\text{Significance} = \frac{N_{\text{signal}}^{\text{cut}}}{\sqrt{N_{\text{signal}}^{\text{cut}} + N_{\text{bkgd}}^{\text{cut}}}},
+% \end{equation}~~~~~~~~~~~~~~~~~&
+% \begin{equation}\label{eq:efficiency}\hspace*{-10pt}
+% 	\text{Efficiency} = \frac{N_{\text{signal}}^{\text{cut}}}{N_{\text{signal}}^{\text{no~cut}}},
+% \end{equation}~~~~~~~~~~~~~~&
+% \begin{equation}\label{eq:purity}\hspace*{-9pt}
+% 	\text{Purity} = \frac{N_{\text{signal}}^{\text{cut}}}{N_{\text{signal}}^{\text{cut}}+N_{\text{bkgd}}^{\text{cut}}},
+% \end{equation}~~~~~~~~~~~~~~~
+% \end{tabulary}
+% 
+% 
+% %---------------------------
+% \begin{figure}[hb]
+% \centering
+% \parbox{0.4725\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}
+%                 \subcaptionbox{\label{fig:SignificanceVsEff}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf}}
+%   \end{subfigure}\\
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+%                 \subcaptionbox{\label{fig:EffVsBkgdFrac}}{\includegraphics[width=\linewidth]{graphics/eventSelection/ROC_pTmiss.pdf}}
+%   \end{subfigure}
+% }%
+% \quad\quad%
+% \parbox{0.4725\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+%                 \subcaptionbox{\label{fig:SignificanceVsBkgdFrac}}{\includegraphics[width=\linewidth]{graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf}}
+%   \end{subfigure}\\
+%   \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
+%     \caption[Relation between $\pi^{+}\pi^{-}$ significance, efficiency and purity vs. thresholds in cuts~\ref{enum:CutBbcLarge}, \ref{enum:CutTofClusters} and \ref{enum:CutMissingPt}]{Relation between $\pi^{+}\pi^{-}$ signal significance and efficiency (\ref{fig:SignificanceVsEff}), significance and purity (\ref{fig:SignificanceVsBkgdFrac}), and efficiency and purity (\ref{fig:EffVsBkgdFrac}) as a function of cut thresholds in BBC-large veto (\ref{enum:CutBbcLarge}), TOF cluster limit (\ref{enum:CutTofClusters}) and exclusivity cut (\ref{enum:CutMissingPt}). Lines show forementioned relations with changing $p_{T}^\text{miss}$ cut whose some specific values are indicated with different markers. Color denotes ADC threshold in BBC-large veto (black, red or green). Style of line (solid or dashed) denotes $N^{\text{TOF}}_{\text{clstrs}}$ limit. Working point considered optimal is marked with opened blue circle.}\label{fig:workingPoint}
+%   \end{minipage}
+% }%
+% 
+% \end{figure}
+% %---------------------------
 
 
 \section{Signal per integrated luminosity}
 
 \section{Cut flow}\label{sec:cutFlow}
-
-%---------------------------
-\begin{figure}[ht!]
-\centering%
-\includegraphics[width=0.85\linewidth,page=1]{graphics/eventSelection/CutFlow.pdf}%
-\caption{Cut flow.}\label{fig:CutFlow}%
-\end{figure}
-%---------------------------
+% 
+% %---------------------------
+% \begin{figure}[ht!]
+% \centering%
+% \includegraphics[width=0.85\linewidth,page=1]{graphics/eventSelection/CutFlow.pdf}%
+% \caption{Cut flow.}\label{fig:CutFlow}%
+% \end{figure}
+% %---------------------------
