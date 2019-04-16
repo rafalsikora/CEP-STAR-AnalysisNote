@@ -44,7 +44,7 @@ In this section we present calculation of all efficiencies except TPC track reco
 \subsection{Trigger efficiency}\label{sec:triggerEff}
 \subsubsection{Online veto (BBC-small and ZDC veto)}\label{sec:onlineVetoEff}
 
-Vetoeing signal in BBC-small and ZDC detectors on both sides of STAR was implemented in the logic of RP\_CPT2 trigger. Common correction of the online and offline vetoes which is used in the correction procedure explained in Sec.~\ref{sec:correctionProcedure} is presented in. Sec.~\ref{sec:offlineVetoEff}. However, to help quantifiy effect of just the online vetoes in BBC-small and ZDCs we show the Fig.~\ref{fig:onlineVetoEff} with the efficiency of the joint BBC-small and ZDC veto as a function of the instantaneous luminosity calculated from the zero-bias data. Details of the way the efficiency was calculated as well as description of the data in the Figure is the same as explained in Sec.~\ref{sec:onlineAndOfflineVetoEff}.
+Vetoeing signal in BBC-small and ZDC detectors on both sides of STAR was implemented in the logic of RP\_CPT2 trigger. Common correction of the online and offline vetoes which is used in the correction procedure explained in Sec.~\ref{sec:correctionProcedure} is presented in. Sec.~\ref{sec:onlineAndOfflineVetoEff}. However, to help quantifiy effect of just the online vetoes in BBC-small and ZDCs we show the Fig.~\ref{fig:onlineVetoEff} with the efficiency of the joint BBC-small and ZDC veto as a function of the instantaneous luminosity calculated from the zero-bias data. Details of the way the efficiency was calculated as well as description of the data in the Figure is the same as explained in Sec.~\ref{sec:onlineAndOfflineVetoEff}.
 %---------------------------
 \begin{figure}[ht!]
 \centering%
@@ -140,6 +140,7 @@ In Fig.~\ref{fig:onlineAndOfflineVetoEff} this efficiency is presented as a func
 \end{equation}
 Comparison of the $\mu$ in Eq.~\eqref{eq:poisson} with the fit parameters in Fig.~\ref{fig:onlineAndOfflineVetoEff} leads to approximate determination of the average interaction probability per bunch crossing equal $0.2-0.9$. The result of the fit, $ \mbox{\LARGE$\epsilon$}^{\text{veto}}_{b_{E}b_{W}}(\mathcal{L})$, is finally used to correct measured data as described in Sec.~\ref{sec:correctionProcedure}. 
 
+Comparison of efficiencies in Fig.~\ref{fig:onlineAndOfflineVetoEff} with similar efficiency in Fig.~\ref{fig:onlineVetoEff} demonstrates that offline selection has much smaller impact on the loss of signal events than online selection. It has to be underlined that online vetoes were necessary to set trigger purity to satisfactory level, as well as reduce prescale of the trigger.
 %---------------------------
 \begin{figure}[h]
 \centering
@@ -258,6 +259,25 @@ The efficiency calculated in the way described above is, by design, the acceptan
 \subsection{TPC vertex reconstruction efficiency}\label{sec:tpcVxRecoEff}
 
 The definition of vertex reconstruction efficiency established in this analysis is the probability that two global tracks, both associated with true-level primary particles from the kinematic region of the measurement, both satisfying kinematic and quality criteria (cuts~\ref{enum:TpcKinematicCuts} and ~\ref{enum:TpcQualityCuts}) and both matched with hits in TOF, form a vertex listed in the collection of reconstructed primary vertices and DCA(R) and DCA(z) of both global tracks calculated w.r.t. this vertex is contained within the limits of cut~\ref{enum:TpcDcaCuts}.
+
+
+%---------------------------
+\begin{figure}[ht!]%
+\centering%
+\begin{minipage}{.4725\textwidth}%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/corrections/DeltaZ0WithBackground.pdf}%
+  \caption[Distribution of $\Delta z_{0}$ together with fraction of non-exclusive background.]{Distribution of $\Delta z_{0}$ between two CEP-candidate primary tracks (black points) together with fraction of non-exclusive background as a function of $\Delta z_{0}$ (violet points).}\label{fig:deltaZ0}
+\end{minipage}%
+\quad\quad%
+\begin{minipage}{.4725\textwidth}%
+  \centering
+  \includegraphics[width=\linewidth]{graphics/corrections/VertexingEfficiency.pdf}%
+  \caption[Vertexing efficiency.]{Vertexing efficiency calculated from the data (open black and full green points) and from embedded MC (red points) as a function of $\Delta z_{0}$ between two CEP-candidate primary tracks.}\label{fig:vertexingEff}
+\end{minipage}%
+\end{figure}%
+%---------------------------
+
 
 \section{Particle energy loss}\label{sec:energyLoss}
 
