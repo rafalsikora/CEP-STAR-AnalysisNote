@@ -212,15 +212,15 @@ Comparison of efficiencies in Fig.~\ref{fig:onlineAndOfflineVetoEff} with simila
 
 To calculate RP acceptance and track reconstruction efficiency the embedded MC technique was used. The same sample was used as that described in Sec.~\ref{sec:rpDeadMat}, used for calculation of the dead-material related trigger veto.
 
-The joint RP acceptance and track reconstruction efficiency for a given STAR side, $\epsilon_{\text{RP}}^{\text{side}}$, was calculated as a probability that a single good quality RP track (satisfying cuts~\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) matched with true-level primary forward proton is reconstructed on given side in the branch expected based on sign of $p_{y}$ of the proton, under condition that there is a trigger signal in that branch and there is no trigger signal in the other branch on the same side.
+The joint RP acceptance and track reconstruction efficiency for a given STAR side, $\mbox{\LARGE$\epsilon$}_{\text{RP}}^{\text{side}}$, was calculated as a probability that a single good quality RP track (satisfying cuts~\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) matched with true-level primary forward proton is reconstructed on given side in the branch expected based on sign of $p_{y}$ of the proton, under condition that there is a trigger signal in that branch and there is no trigger signal in the other branch on the same side.
 
-Technically the $\epsilon_{\text{RP}}^{\text{side}}$ was obtained in the following procedure:
+Technically the $\mbox{\LARGE$\epsilon$}_{\text{RP}}^{\text{side}}$ was obtained in the following procedure:
 \begin{enumerate}
 	\item It was verified if there is a trigger signal in the branch that the primary forward proton is expected to reach based on its $p_{y}$ ($p_{y}>0$ - branch UP, $p_{y}<0$ - branch DOWN). Additionally required lack of trigger signal in the other branch on the same side. These events formed $set~A$.
 	\item The nominal RP track selection algorithm was used to find a single good quality track (cuts~\ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles}) on given side. If exactly one such track was found, it was additionally checked if it is matched with true-level primary proton. These events formed $set~B$.
 	\item The efficiency was determined by the ratio of histograms from $set~B$ and $set~A$:
 	\begin{equation}\label{eq:rpEffDef}
- \epsilon_{\text{RP}}^{\text{side}}(p_{x}, p_{y}, z_{\text{vtx}}) = \mbox{\LARGE$\varepsilon$}\left(\RPSIDE\left|\TRSIDE\land~!\TRNSIDE\right.\right) = %
+ \mbox{\LARGE$\epsilon$}_{\text{RP}}^{\text{side}}(p_{x}, p_{y}, z_{\text{vtx}}) = \mbox{\LARGE$\varepsilon$}\left(\RPSIDE\left|\TRSIDE\land~!\TRNSIDE\right.\right) = %
  \frac{(p_{x}, p_{y}, z_{\text{vtx}})~\text{histogram for protons from}~set~B}{(p_{x}, p_{y}, z_{\text{vtx}})~\text{histogram for protons from}~set~A}
   \end{equation}
 	
@@ -258,8 +258,32 @@ The efficiency calculated in the way described above is, by design, the acceptan
 
 \subsection{TPC vertex reconstruction efficiency}\label{sec:tpcVxRecoEff}
 
-The definition of vertex reconstruction efficiency established in this analysis is the probability that two global tracks, both associated with true-level primary particles from the kinematic region of the measurement, both satisfying kinematic and quality criteria (cuts~\ref{enum:TpcKinematicCuts} and ~\ref{enum:TpcQualityCuts}) and both matched with hits in TOF, form a vertex listed in the collection of reconstructed primary vertices and DCA(R) and DCA(z) of both global tracks calculated w.r.t. this vertex is contained within the limits of cut~\ref{enum:TpcDcaCuts}.
+%---------------------------
+\begin{wrapfigure}{o}{0.365\textwidth}\vspace*{-9pt}
+  \centering
+  \includegraphics[width=0.365\textwidth]{graphics/corrections/deltaZ0Definition2.pdf}
+  \caption[Sketch with definition of $\Delta z_{0}$.]
+   {Sketch with definition of the longitudinal separation of two tracks (helices) $\Delta z_{0}$.}
+   \label{fig:deltaZ0Sketch}\vspace*{-9pt} 
+\end{wrapfigure}
+%---------------------------
 
+The definition of vertex reconstruction efficiency ($\mbox{\LARGE$\epsilon$}_{\text{vtx}}$) established in this analysis is the probability that two global tracks, both associated with true-level primary particles from the kinematic region of the measurement, both satisfying kinematic and quality criteria (cuts~\ref{enum:TpcKinematicCuts} and ~\ref{enum:TpcQualityCuts}) and both matched with hits in TOF, form a vertex listed in the collection of reconstructed primary vertices and DCA(R) and DCA(z) of both global tracks calculated w.r.t. this vertex is contained within the limits of cut~\ref{enum:TpcDcaCuts}.
+
+We calculated this efficiency as a function of the longitudinal separation between two tracks (global helices) $\Delta z_{0}$. Illustration of this quantity is given in Fig.~\ref{fig:deltaZ0Sketch}. We consider this a natural quantity to present the vertexing efficiency - the closer to each other the helices are on the beamline, the more probable it is that two tracks will form a common primary vertex. It is in accordance with the way the vertexing algorithm works.
+
+
+The vertexing efficiency was calculated from the data in the following way:
+\begin{enumerate}
+\item Data from RP\_CPT2 trigger were used. Events were selected with the cuts from nominal CEP analysis, except cuts
+% These events formed $set~B$.
+% 	\item The efficiency was determined by the ratio of histograms from $set~B$ and $set~A$:
+% 	\begin{equation}\label{eq:rpEffDef}
+%  \epsilon_{\text{RP}}^{\text{side}}(p_{x}, p_{y}, z_{\text{vtx}}) = \mbox{\LARGE$\varepsilon$}\left(\RPSIDE\left|\TRSIDE\land~!\TRNSIDE\right.\right) = %
+%  \frac{(p_{x}, p_{y}, z_{\text{vtx}})~\text{histogram for protons from}~set~B}{(p_{x}, p_{y}, z_{\text{vtx}})~\text{histogram for protons from}~set~A}
+%   \end{equation}
+	
+\end{enumerate}
 
 %---------------------------
 \begin{figure}[ht!]%
