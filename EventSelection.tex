@@ -15,7 +15,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 \begin{enumerate}[label=\textbf{C\arabic*},ref=C\arabic*]
  \itemm Exactly 1 primary vertex with TPC track(s) matched with hits in TOF.\label{enum:CutPrimVx}
  \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\text{vx}}|<80$~cm.\label{enum:CutZVx}
- \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}), reconstructed within kinematic region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}) and with small distance of closest approach (DCA) to the vertex~(\ref{enum:TpcDcaCuts}).\label{enum:CutTpcTrks}
+ \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}), reconstructed within kinematic region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}), with small distance of closest approach (DCA) to the vertex~(\ref{enum:TpcDcaCuts}) and high proximity to each other at the beamline~(\ref{enum:TpcDeltaZ0Cut}).\label{enum:CutTpcTrks}
     \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
       \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks and no addional primary tracks matched with BEMC clusters,\label{enum:TpcTofMatched}
       \itemm Tracks are of opposite signs,\label{enum:TpcOppoSign}
@@ -24,7 +24,9 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
       \itemm Both tracks satisfy quality criteria:\label{enum:TpcQualityCuts}\hspace*{100pt}
       $N_{\text{hits}}^{\text{fit}}\geq25$,~~~~$N_{\text{hits}}^{\text{dE/dx}}\geq15$,~~~~$|d_{0}|<1.5$~cm,
       \itemm Both tracks match well to the primary vertex:\label{enum:TpcDcaCuts}\hspace*{47pt}
-      $\text{DCA}(R)<1.5$~cm,~~~~$\text{DCA}(z)<1$~cm.
+      $\text{DCA}(R)<1.5$~cm,~~~~$|\text{DCA}(z)|<1$~cm,
+      \itemm Tracks are close to each other at the beamline:\label{enum:TpcDeltaZ0Cut}\hspace*{45pt}
+      $|\Delta z_{0}|<2$~cm.
     \end{enumerate}
  \itemm Exactly 1 RP track on each side of STAR central detector~(\ref{enum:RpOneTrkPerSide}) of good quality~(\ref{enum:RpQualityCuts}), with local angles consistent with the IP being the track origin~(\ref{enum:RpLocalAngles}), lying within fiducial region of high geometrical acceptance~(\ref{enum:RpFiducial}).\label{enum:CutRpTrks}
       \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]

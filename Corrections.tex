@@ -275,15 +275,21 @@ We calculated this efficiency as a function of the longitudinal separation betwe
 
 The vertexing efficiency was calculated from the data in the following way:
 \begin{enumerate}
-\item Data from RP\_CPT2 trigger were used. Events were selected with the cuts from nominal CEP analysis, except cuts
-% These events formed $set~B$.
-% 	\item The efficiency was determined by the ratio of histograms from $set~B$ and $set~A$:
-% 	\begin{equation}\label{eq:rpEffDef}
-%  \epsilon_{\text{RP}}^{\text{side}}(p_{x}, p_{y}, z_{\text{vtx}}) = \mbox{\LARGE$\varepsilon$}\left(\RPSIDE\left|\TRSIDE\land~!\TRNSIDE\right.\right) = %
-%  \frac{(p_{x}, p_{y}, z_{\text{vtx}})~\text{histogram for protons from}~set~B}{(p_{x}, p_{y}, z_{\text{vtx}})~\text{histogram for protons from}~set~A}
-%   \end{equation}
-	
+\item Data from RP\_CPT2 trigger were used. Events were selected with nearly the same cuts as in nominal CEP analysis (Sec.~\ref{sec:listOfCuts}). The requirement of exactly one primary vertex with exactly two primary TOF tracks was dropped. Instead, analysis utilized only global TOF tracks - exactly two global TOF tracks were required (cut~\ref{enum:TpcTofMatched} without primary track requirement), passing also cuts~\ref{enum:TpcOppoSign}-\ref{enum:TpcQualityCuts}. In this case the position of the vertex was reconstructed as\vspace*{-10pt}
+\begin{equation}
+ z_{\text{vtx}} = \frac{z_{0}^{+}+z_{0}^{-}}{2},\vspace*{-5pt}
+\end{equation}
+where $z_{0}^{+}$ and $z_{0}^{-}$ are longitudinal impact parameters ($z$-coordinates of points of closest approach to the beamline) of positive and negative charge particle tracks, respectively. The vertex position was normally required to satisfy cut~\ref{enum:CutZVx}. Events after full selection, classified as exclusive $\pi^{+}\pi^{-}$ candidates, formed $set~A$.
+
+\item The two global TOF tracks were checked if they have associated primary tracks, and the two primary tracks are assigned to the same primary vertex. If yes, the tracks were additionally subjected to cut~\ref{enum:TpcDcaCuts}. Events passing descibed selection formed $set~B$.
+
+	\item The efficiency was determined by the ratio of histograms from $set~B$ and $set~A$:
+	\begin{equation}\label{eq:vertexingEffDef}
+ \mbox{\LARGE$\epsilon$}_{\text{vtx}}(|\Delta z_{0}|) = \frac{|\Delta z_{0}|~\text{histogram for events from}~set~B}{|\Delta z_{0}|~\text{histogram for events from}~set~A}.
+  \end{equation}
 \end{enumerate}
+
+Distribution of $|\Delta z_{0}|$ between two CEP global track candidates after full selection ($set A$) is presented in Fig.~\ref{fig:deltaZ0}. The vertexing efficiency obtained with described method is shown in Fig.~\ref{fig:vertexingEff}. Solid green points represent efficiency calculated with the non-exclusive background preserved, while open black points represent efficiency with this background subtracted (using method described in Sec.~\ref{sec:bkgdSubtraction}). Since the vertexing efficiency does not depend on the physics process and background is purely of physics origin the black and green points should overlap. Such picture emerges from presented comparison. We have calculated the same efficiency using CEP MC embedded into zero-bias data, the result is shown in Fig.~\ref{fig:vertexingEff} with red points. There is very good agreement between vertexing efficiency in the data and embedded MC for $|\Delta z_{0}|<1$~cm, where most ($\sim80\%$) of the signal is present. The differences in high-$|\Delta z_{0}|$ tail are understood as a result of the imperfect description of the pointing resolution (here: the transverse resolution) of TPC tracks in STARsim. Although the pointing resolution is adjusted to gain more accurate description of the data by MC simulation as described in Chapter~8 of Ref.~\cite{supplementaryNote}, this does not help with the vertexing which is performed at the level of raw data (MC) processing to MuDst. Another reason could be different $p_{T}$ (thus also $d_{0}$) spectrum of CEP tracks in the data and MC (GenEx).
 
 %---------------------------
 \begin{figure}[ht!]%
@@ -291,16 +297,18 @@ The vertexing efficiency was calculated from the data in the following way:
 \begin{minipage}{.4725\textwidth}%
   \centering%
   \includegraphics[width=\linewidth]{graphics/corrections/DeltaZ0WithBackground.pdf}%
-  \caption[Distribution of $\Delta z_{0}$ together with fraction of non-exclusive background.]{Distribution of $\Delta z_{0}$ between two CEP-candidate primary tracks (black points) together with fraction of non-exclusive background as a function of $\Delta z_{0}$ (violet points).}\label{fig:deltaZ0}
-\end{minipage}%
+  \caption[Distribution of $\Delta z_{0}$ together with fraction of non-exclusive background.]{Distribution of $\Delta z_{0}$ between two CEP-candidate global tracks (green and black points) together with fraction of non-exclusive background in black distribution as a function of $\Delta z_{0}$ (violet points).}\label{fig:deltaZ0}
+\end{minipage}% 
 \quad\quad%
 \begin{minipage}{.4725\textwidth}%
   \centering
   \includegraphics[width=\linewidth]{graphics/corrections/VertexingEfficiency.pdf}%
-  \caption[Vertexing efficiency.]{Vertexing efficiency calculated from the data (open black and full green points) and from embedded MC (red points) as a function of $\Delta z_{0}$ between two CEP-candidate primary tracks.}\label{fig:vertexingEff}
+  \caption[Vertexing efficiency.]{Vertexing efficiency calculated from the data (open black and full green points) and from embedded MC (red points) as a function of $\Delta z_{0}$ between two CEP-candidate global tracks.}\label{fig:vertexingEff}
 \end{minipage}%
 \end{figure}%
 %---------------------------
+
+Based on the width of $|\Delta z_{0}|$ distribution, the background content as a function of $|\Delta z_{0}|$, and the value of $\mbox{\LARGE$\epsilon$}_{\text{vtx}}$ as a function of $|\Delta z_{0}|$, we decided to accept in analysis only tracks which satisfy $|\Delta z_{0}|<2$~cm. This assures that the vertexing efficiency does not drop below $\approx 30\%$, as well as it coincides with the primary tracks requirement of $|\text{DCA}(z)|<1$~cm. In the correction procedure we nominally use the vertexing efficiency represented by open black points in Fig.~\ref{fig:vertexingEff} (to correct the MC e.g. in closure tests we use red points instead). The additional correction factor connected with the cut on maximum $|\Delta z_{0}|$ (2~cm) was calculated from the data and equals $2.4\%$ (Fig.~\ref{fig:deltaZ0}). This correction is used as an additional normalization correction factor, which is different from $\mbox{\LARGE$\epsilon$}_{\text{vtx}}(|\Delta z_{0}|)$ applied in form of a weight to each selected CEP event.
 
 
 \section{Particle energy loss}\label{sec:energyLoss}
