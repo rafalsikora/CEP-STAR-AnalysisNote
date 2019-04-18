@@ -125,6 +125,36 @@ The efficiency of the discussed veto which is finally used to correct the data i
 
 \subsection{Selection efficiency}\label{sec:cutsEff}
 \subsubsection{TPC \texorpdfstring{$z$}{z}-vertex cut~(\ref{enum:CutZVx})}
+
+Removing from analysis specific range of $z$-positions of primary vertices effectively reduces accepted luminosity with respect to that delivered by the collider. This loss of luminosity has to be accounted when calculating the cross sections, which is the goal of presented analysis. Assuming that the distribution of $z_{\text{vtx}}$ of all primary interactions that take place when east and west beams overlap follows a normal distribution ($\mathcal{N}$), then the formula describing efficiency of the cut~\ref{enum:CutZVx} has the following form:
+\begin{equation}\label{eq:zVtxCutEff}
+ \mbox{\LARGE$\epsilon$}_{z_{\text{vtx}}} = \int\limits_{z_{\text{vtx}}^{\text{min}}}^{z_{\text{vtx}}^{\text{max}}} \mathcal{N}(z_{\text{vtx}}; \mu, \sigma)~\text{d}z_{\text{vtx}} = \frac{1}{2}\left[ \text{Erf}\left(\frac{z_{\text{vtx}}^{\text{max}} - \mu}{\sqrt{2}\sigma}\right) - \text{Erf}\left(\frac{z_{\text{vtx}}^{\text{min}} - \mu}{\sqrt{2}\sigma}\right) \right],
+\end{equation}
+where $z_{\text{vtx}}^{\text{min}}$ and $z_{\text{vtx}}^{\text{max}}$ are respectively minimum and maximum value of the longitudinal position of the vertex accepted in analysis (in our case these are -80~cm and 80~cm), and parameters $\mu$ and $\sigma$ are respectively the mean and standard deviation of the normal distribution:
+\[\mu = \langle z_{\text{vtx}}\rangle,~~~~~~~~~~~~~~~\sigma = \sigma(z_{\text{vtx}}).\]
+
+Real parameters of $z_{\text{vtx}}$ distribution were studied separately for every single fill of the collider. It is motivated by the fact that each fill of the machine is nearly independent from the previous thus the shape and position of $z_{\text{vtx}}$ may vary on fill by fill basis. We neglect possible changes within the fill (e.g. widening of the distribution due to intrabeam scattering etc.) arguing that this effect if expected to be smaller than the systematic uncertainties related to determination of position and width of $z_{\text{vtx}}$ distribution.
+
+For every fill of RHIC the distribution of $z_{\text{vtx}}$ of single TOF vertices was prepared, as shown in Fig.~\ref{fig:sampleZVtxHist}. This distribution was fitted with the Gaussian function in a range $z_{\text{vtx}}\in[-120~\text{cm}, 120~\text{cm}]$. The output parameters of all fits were plotted as a function of the fill number, as shown in Fig.~\ref{fig:zVxMeanAndSigmaVsFillNumber}. The efficiency used in the correction procedure was calculated independetly for each fill using presented values of $\langle z_{\text{vtx}}\rangle$ and $\sigma(z_{\text{vtx}})$. Typical numerical value of this efficiency amounts $\sim88\%$.
+
+%---------------------------
+\begin{figure}[ht!]% 
+\centering%
+\begin{minipage}{.4725\textwidth}%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/corrections/sampleZVtxHist.pdf}%
+  \caption[Sample distribution of $z_{\text{vtx}}$ with fitted normal distribution.]{Sample distribution of $z_{\text{vtx}}$ of single TOF vertices together with the fit of normal distribution (dashed blue) extended outside the range of the fit (solid red). Hashed red area represents part of the distribution rejected by cut~\ref{enum:CutZVx} with the cut value marked with dashed red vertical lines and arrows.}\label{fig:sampleZVtxHist}
+\end{minipage}% 
+\quad\quad%
+\begin{minipage}{.4725\textwidth}%
+  \centering
+  \includegraphics[width=\linewidth]{graphics/corrections/zVxMeanAndSigmaVsFillNumber.pdf}%
+  \caption[Mean and width of the $z_{\text{vtx}}$ distribution as a function of the RHIC fill number.]{Mean (top panel) and width (bottom panel) parameters of the normal distribution obtained from a fit of normal distribution to $z_{\text{vtx}}$ distribution in a range $[-120~\text{cm}, 120~\text{cm}]$ for each RHIC fill as a function of the fill number.\newline}\label{fig:zVxMeanAndSigmaVsFillNumber}
+\end{minipage}%
+\end{figure}%
+%---------------------------
+
+
 \subsubsection{TPC-RP \texorpdfstring{$z$}{z}-vertex matching~(\ref{enum:CutDeltaZVx})}
 \subsubsection{Primary vertices limit~(\ref{enum:CutPrimVx}), BBC-large veto~(\ref{enum:CutBbcLarge}), TOF clusters limit~(\ref{enum:CutTofClusters}) and Up and Down RP combination veto (due to pile-up)}\label{sec:onlineAndOfflineVetoEff}
 
@@ -172,33 +202,33 @@ Comparison of efficiencies in Fig.~\ref{fig:onlineAndOfflineVetoEff} with simila
 \subsubsection{Missing \texorpdfstring{$p_{T}$}{pT} cut~(\ref{enum:CutMissingPt})}
 \subsubsection{Particle identification~(\ref{enum:CutPid})}
 
-
-%---------------------------
-\begin{figure}[ht!]
-\centering
-\parbox{0.315\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:sqMassTof_DataVsMC_pion}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/sqMassTof_DataVsMC.pdf}}}
-  \end{subfigure}
-}
-\quad
-\parbox{0.315\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:sqMassTof_DataVsMC_kaon}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/sqMassTof_DataVsMC.pdf}}}
-  \end{subfigure}
-}
-\quad
-\parbox{0.315\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:sqMassTof_DataVsMC_proton}}{\includegraphics[width=\linewidth,page=3]{graphics/corrections/sqMassTof_DataVsMC.pdf}}}
-  \end{subfigure}
-}%
-\caption{Comparison of $m^{2}$ from TOF between data and MC for exclusive $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.}
-\end{figure}
-%---------------------------
+% 
+% %---------------------------
+% \begin{figure}[ht!]
+% \centering
+% \parbox{0.315\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:sqMassTof_DataVsMC_pion}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/sqMassTof_DataVsMC.pdf}}}
+%   \end{subfigure}
+% }
+% \quad
+% \parbox{0.315\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:sqMassTof_DataVsMC_kaon}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/sqMassTof_DataVsMC.pdf}}}
+%   \end{subfigure}
+% }
+% \quad
+% \parbox{0.315\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:sqMassTof_DataVsMC_proton}}{\includegraphics[width=\linewidth,page=3]{graphics/corrections/sqMassTof_DataVsMC.pdf}}}
+%   \end{subfigure}
+% }%
+% \caption{Comparison of $m^{2}$ from TOF between data and MC for exclusive $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.}
+% \end{figure}
+% %---------------------------
 
 
 
