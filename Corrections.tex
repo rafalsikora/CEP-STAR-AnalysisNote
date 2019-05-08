@@ -135,7 +135,7 @@ where $z_{\text{vtx}}^{\text{min}}$ and $z_{\text{vtx}}^{\text{max}}$ are respec
 
 Real parameters of $z_{\text{vtx}}$ distribution were studied separately for every single fill of the collider. It is motivated by the fact that each fill of the machine is nearly independent from the previous thus the shape and position of $z_{\text{vtx}}$ may vary on fill by fill basis. We neglect possible changes within the fill (e.g. widening of the distribution due to intrabeam scattering etc.) arguing that this effect if expected to be smaller than the systematic uncertainties related to determination of position and width of $z_{\text{vtx}}$ distribution.
 
-For every fill of RHIC the distribution of $z_{\text{vtx}}$ of single TOF vertices was prepared, as shown in Fig.~\ref{fig:sampleZVtxHist}. This distribution was fitted with the Gaussian function in a range $z_{\text{vtx}}\in[-120~\text{cm}, 120~\text{cm}]$. The output parameters of all fits were plotted as a function of the fill number, as shown in Fig.~\ref{fig:zVxMeanAndSigmaVsFillNumber}. The efficiency used in the correction procedure was calculated independetly for each fill using presented values of $\langle z_{\text{vtx}}\rangle$ and $\sigma(z_{\text{vtx}})$. Typical numerical value of this efficiency amounts $\sim88\%$.
+For every fill of RHIC the distribution of $z_{\text{vtx}}$ of single TOF vertices was prepared, as shown in Fig.~\ref{fig:sampleZVtxHist}. This distribution was fitted with the Gaussian function in a range $z_{\text{vtx}}\in[-120~\text{cm}, 120~\text{cm}]$. The output parameters of all fits were plotted as a function of the fill number, as shown in Fig.~\ref{fig:zVxMeanAndSigmaVsFillNumber}. The efficiency used in the correction procedure was calculated independetly for each fill using presented values of $\langle z_{\text{vtx}}\rangle$ and $\sigma(z_{\text{vtx}})$. Typical numerical value of this efficiency equals $\sim88\%$.
 
 %---------------------------
 \begin{figure}[ht!]% 
@@ -200,35 +200,72 @@ Comparison of efficiencies in Fig.~\ref{fig:onlineAndOfflineVetoEff} with simila
 
 
 \subsubsection{Missing \texorpdfstring{$p_{T}$}{pT} cut~(\ref{enum:CutMissingPt})}
-\subsubsection{Particle identification~(\ref{enum:CutPid})}
+\subsubsection{Particle identification~(\ref{enum:CutPid})}\label{sec:pidEff}
 
-% 
-% %---------------------------
-% \begin{figure}[ht!]
-% \centering
-% \parbox{0.315\textwidth}{
+Correction reflecting efficiency of identification requires good modeling of detector response in terms of $dE/dx$ and TOF time ($m^{2}$) measurement which were used for this purpose as described in Sec.~\ref{subsec:pidCuts}. In addition to this, significant number of simulated events is needed to reduce statistical uncertainties of efficiency. The former was provided by adjusting $dE/dx$ spectra from embedded MC to match the data, as elaborated in Chap.~7 of Ref.~\cite{supplementaryNote}. The latter, however, was not easy to achieve for exclusive $K^{+}K^{-}$ and $p\bar{p}$ whose identification is most challenging and information about identification efficiency is the most needed among studied species. Specially for study of particle (exlusive pair) identification a dedicated MC simulation was prepared.
+
+This dedicated MC simulation was designed to work as follows (simulation of single exclusive event of predefined pair ID is described):
+\begin{enumerate}
+ \item The position of $z_{\text{vtx}}$ was drawn from predefined distribution.
+ \item Kinematics of central state particles was set: momentum (magnitude) $p$, pseudorapidity $\eta$ and azimuthal angle $\phi$ of positive and negative charge particles were drawn from predefined distributions.
+ \item Both particles were tested if doubled radius of curvature $R$ of associated track in the magnetic field ($B=0.5$~T) of the TPC ($R \propto p_{T}/B$) is smaller than the radius of TOF detector barell (assumed 212~cm). If not then event was skipped and procedure was restared (back to 1.).
+ \item The particles were propagated from the vertex at $(0,0,z_{\text{vtx}})$ through the magnetic field of TPC using Newton's method with the time step (in the laboratory) equal 100~ps, corresponding to space step $<3$~cm.
+ \item After step 4. the position of the TOF cell was known allowing to calculate the TOF path length $L$ between the vertex and position of the TOF hit. Also the TOF hit time $t$ was then known, further smeared by adding random number from normal distribution with mean at 0 and standard deviation $\sigma_{\text{TOF}}=100$~ps to account for the finite TOF time resolution. In addition to this, reconstructed tracks' momenta were defined as the true momenta smeared by 3\%, to account for finite TPC momentum resolution. At this stage it was possible to calculate $m^{2}_{\text{TOF}}$ using Eq.~\eqref{eq:mSquared}.
+ \item The $dE/dx$ measurement was simulated.
+\end{enumerate}
+
+% For the purpose of presented analysis parameters of this distribution were set to match the data: $\langle z_{\text{vtx}}\rangle=0$ and $\sigma(z_{\text{vtx}})=50$~cm, as well as $z_{\text{vtx}}$ was required to lie within the analysis limits (cut~\ref{enum:CutZVx}).
+
+
+% \begin{figure}[ht!]\label{fig:correlationsTofPathLength}
 %   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:sqMassTof_DataVsMC_pion}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/sqMassTof_DataVsMC.pdf}}}
-%   \end{subfigure}
-% }
-% \quad
-% \parbox{0.315\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:sqMassTof_DataVsMC_kaon}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/sqMassTof_DataVsMC.pdf}}}
-%   \end{subfigure}
-% }
-% \quad
-% \parbox{0.315\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:sqMassTof_DataVsMC_proton}}{\includegraphics[width=\linewidth,page=3]{graphics/corrections/sqMassTof_DataVsMC.pdf}}}
-%   \end{subfigure}
-% }%
-% \caption{Comparison of $m^{2}$ from TOF between data and MC for exclusive $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.}
+%   \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}}
+%     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~a)}{graphics/corrections/DEdxErrorVsTofPathLength.pdf}\label{fig:dEdxErrorVsTofPathLength} &
+%     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~b)}{graphics/corrections/Log2dxVsTofPathLength.pdf}\label{fig:Log2dEdxVsTofPathLength}
+%   \end{tabular}
+%   \caption[$dE/dx$ error vs. TOF path length and $\log_{2}(dx)$ vs. TOF path length for exclusive event candidates.]{Correlation between uncertainty of the natural logarithm of $dE/dx / (1~\text{keV/cm})$ and track TOF path length (\ref{fig:dEdxErrorVsTofPathLength}) and correlation between base 2 logarithm of $dx$ and track TOF path length (\ref{fig:Log2dEdxVsTofPathLength}). The distributions were obtained for the exclusive event candidates after full selection, with all three types of particle pairs combined.} 
 % \end{figure}
-% %---------------------------
+
+
+%--------------------------- 
+\begin{figure}%[ht!] 
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:dEdxErrorVsTofPathLength}}{\includegraphics[width=\linewidth]{graphics/corrections/DEdxErrorVsTofPathLength.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:Log2dEdxVsTofPathLength}}{\includegraphics[width=\linewidth]{graphics/corrections/Log2dxVsTofPathLength.pdf}}}
+  \end{subfigure}
+}% 
+\caption[$dE/dx$ error vs. TOF path length and $\log_{2}(dx)$ vs. TOF path length for exclusive event candidates.]{Correlation between uncertainty of the natural logarithm of $dE/dx / (1~\text{keV/cm})$ and track TOF path length (\ref{fig:dEdxErrorVsTofPathLength}) and correlation between base 2 logarithm of $dx$ and track TOF path length (\ref{fig:Log2dEdxVsTofPathLength}). The distributions were obtained for the exclusive event candidates after full selection, with all three types of particle pairs combined.} 
+\end{figure}
+
+
+
+
+\begin{figure}[ht!]\label{fig:pidEffVsPt}
+  \centering
+  \begin{tabular}{@{}p{0.315\linewidth}@{\quad}p{0.315\linewidth}@{\quad}p{0.315\linewidth}@{}}
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~a)}{graphics/corrections/EffVsPt.pdf} &
+    \subfigimg[width=\linewidth,page=2]{~~~~~~~~~~~~~~~~~~~~~~~b)}{graphics/corrections/EffVsPt.pdf} &
+    \subfigimg[width=\linewidth,page=3]{~~~~~~~~~~~~~~~~~~~~~~~c)}{graphics/corrections/EffVsPt.pdf} \\
+    \subfigimg[width=\linewidth,page=4]{~~~~~~~~~~~~~~~~~~~~~~~d)}{graphics/corrections/EffVsPt.pdf} &
+    \subfigimg[width=\linewidth,page=5]{~~~~~~~~~~~~~~~~~~~~~~~e)}{graphics/corrections/EffVsPt.pdf} &
+    \subfigimg[width=\linewidth,page=6]{~~~~~~~~~~~~~~~~~~~~~~~f)}{graphics/corrections/EffVsPt.pdf} \\
+    \subfigimg[width=\linewidth,page=7]{~~~~~~~~~~~~~~~~~~~~~~~g)}{graphics/corrections/EffVsPt.pdf} &
+    \subfigimg[width=\linewidth,page=8]{~~~~~~~~~~~~~~~~~~~~~~~h)}{graphics/corrections/EffVsPt.pdf} &
+    \subfigimg[width=\linewidth,page=9]{~~~~~~~~~~~~~~~~~~~~~~~i)}{graphics/corrections/EffVsPt.pdf}    
+  \end{tabular}
+  \caption[Pair identification efficiency and misidentification probability as a function of tracks' $p_{T}$.]{Pair identification efficiency (diagonal) and misidentification probability (off-diagonal) as a function of tracks' $p_{T}$ for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ pairs. The results were obtained from the dedicated MC simulation described in the text. Blue lines and arrows mark the cut value on lower of the track $p_{T}$'s for kaons and protons.}
+\end{figure}
+
+%---------------------------
 
 
 
