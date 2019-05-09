@@ -45,19 +45,24 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
  %
  \itemm Particle (pair) identification:\label{enum:CutPid}
  \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
-      \itemm Identification of particle pairs based on $dE/dx$ and $m^{2}_{\text{TOF}}$:\\[2pt]
-        \textbf{~~if~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}<3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.6~\text{GeV}/c^{2}~~\rightarrow~~p\bar{p}$\\%
+      \itemm Identification of particle pairs based on $\chi^{2}$ or $n\sigma$ (from $dE/dx$) and $m^{2}_{\text{TOF}}$:\label{enum:CutPidNoPtLimit}\\[3pt]
+%         \textbf{~~if~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}<3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.6~\text{GeV}/c^{2}~~\rightarrow~~p\bar{p}$\\%
+%         %
+%         \textbf{elif~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}<3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}>3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.15~\text{GeV}/c^{2}~~\rightarrow~~K^{+}K^{-}$\\%
+%         %
+%         \textbf{elif~~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~~and~~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi^{+}\pi^{-}$\\%
+        \textbf{~~if~~~}\hspace*{4.5pt}$\chi^{2}(\pi\pi)>9$\textbf{~~and~~}$\chi^{2}(KK)>9$\textbf{~~and~~}$\chi^{2}(pp)<9$\textbf{~~and~~}$m^{2}_{\text{TOF}}>0.6~\text{GeV}/c^{2}~~\rightarrow~~p\bar{p}$\\[5pt]%
         %
-        \textbf{elif~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}<3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}>3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.15~\text{GeV}/c^{2}~~\rightarrow~~K^{+}K^{-}$\\%
+        \textbf{elif~~}$\chi^{2}(\pi\pi)>9$\textbf{~~and~~}$\chi^{2}(KK)<9$\textbf{~~and~~}$\chi^{2}(pp)>9$\textbf{~~and~~}$m^{2}_{\text{TOF}}>0.15~\text{GeV}/c^{2}~~\rightarrow~~K^{+}K^{-}$\\[5pt]%
         %
-        \textbf{elif~~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~~and~~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi^{+}\pi^{-}$\\%
-        \textbf{else~~} event rejected.
+        \textbf{elif~~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~~and~~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi^{+}\pi^{-}$.%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\textbf{otherwise~~} event rejected.
       \itemm Restricting fiducial cuts on $K^{+}K^{-}$ and $p\bar{p}$:\\[2pt]
       \textbf{~if~} $p\bar{p}$:~~~~~~~~~~~~\hspace*{1.7pt}$p_{T}>0.4~\text{GeV}/c$,~~~~$min(p_{T}^{+},p_{T}^{-})<1.1~\text{GeV}/c$\\%
       \textbf{~if~} $K^{+}K^{-}$:~~~~~~$p_{T}>0.3~\text{GeV}/c$,~~~~$min(p_{T}^{+},p_{T}^{-})<0.7~\text{GeV}/c$%
 \end{enumerate}
 \itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\text{miss}}<75~\text{MeV}/c$.\label{enum:CutMissingPt}%
  %
+ 
 \end{enumerate}
 
 \section{Description of cuts}\label{sec:descriptionOfCuts}
@@ -456,83 +461,139 @@ Tutaj dodac rysunki z suma 1D tych wielkosci i uzasadnic stosowanie ciecia na mi
 
 \subsection{(\ref{enum:CutPid})~Particle identification}\label{subsec:pidCuts}
 
-In addition to information from the TPC we use time of hit detection in the barrel TOF subsystem. 
+Particle identification was done using combined information from the TPC ($dE/dx$) and TOF (time of hit detection in the TOF subsystem). Merging informations from two sources leads to reduction of misidentifications, as well as gives access to higher kaon and proton momentum range where $dE/dx$ of different species overlap.
+
+Compatibility of track $dE/dx$ with that expected from particle of type $X$ was determined using the quantity $n\sigma_{X}$, defined as
+\protect \begin{equation}\label{eq:nSigmaDef} n\sigma_{X} =  \ln{\left[(dE/dx)^\text{measured} / (dE/dx)_{X}^\text{theory}\right]}~~/~~\sigma_{dE/dx}, \end{equation}
+%
+where $(dE/dx)^\text{measured}$ is the ionization energy loss of the TPC track, $(dE/dx)_{X}^\text{theory}$ is the Bethe-Bloch~\cite{Bichsel} expectation for the given particle type ($X=\pi$, $K$, $p$) at reconstructed track momentum, and $\sigma_{dE/dx}$ is the statistical uncertainty of $(dE/dx)^\text{measured}$. From $n\sigma_{X}$ of the two tracks the $\chi^{2}$ statistic for a $XX$ pair hypothesis was calculated:
+%
+\begin{equation}\label{eq:chiSqDef}\chi^{2}_{dE/dx}(XX) = \left(n\sigma_{X}^{\text{trk1}}\right)^{2} + \left(n\sigma_{X}^{\text{trk2}}\right)^{2}.\end{equation}
+%
+Sometimes we also quote $n\sigma^{\text{pair}}$ quantity connected with $\chi^{2}$ through relation
+%
+\begin{equation}\label{eq:nSigmaPairDef}n\sigma^{\text{pair}}_{X} = \sqrt{\chi^{2}_{dE/dx}(XX)} = \sqrt{\left(n\sigma_{X}^{\text{trk1}}\right)^{2} + \left(n\sigma_{X}^{\text{trk2}}\right)^{2}}.\end{equation}
+%
+The time of detection of particle in the TOF system was used to reconstruct its squared mass $m^{2}_{\text{TOF}}$. For this purpose the time of primary interaction is typically used (''start time``), reconstructed by detecting fragments of dissociated beam particles in VPD detectors on both sides of the interaction point\footnote{Time measured from protons in the RP detectors cannot be used because RP readout runs on clock independent from VPD and TOF.}. However, it is not accessible in CEP as the initial protons survive the interaction intact, therefore both central tracks are assumed to be of the same type. With this assumption the time difference between TOF hits and measured tracks' momenta and lengths of helical paths between the primary vertex and TOF then allow to calculate $m^{2}_{\text{TOF}}$. The derivation of formula used to obtain $m^{2}_{\text{TOF}}$ is presented in Appendix~\ref{appendix:squaredMass}.
+
+Particle identification involves a few steps. First, the $pp$ hypothesis was verified:
+\begin{equation}\label{eq:pidPPbar}\lefteqn{\overbrace{\phantom{\chi^{2}_{dE/dx}(pp)<9\;\;\; \& \;\;\; m^{2}_{\text{TOF}} > 0.6~\mbox{GeV}^{2}}}^{\text{likely}~pp}}\chi^{2}_{dE/dx}(pp)<9\;\;\; \& \;\;\; \underbrace{m^{2}_{\text{TOF}} > 0.6~\mbox{GeV}^{2}\;\;\; \& \;\;\; \chi^{2}_{dE/dx}(\pi\pi)>9\;\;\; \& \;\;\; \chi^{2}_{dE/dx}(KK)>9}_{\text{unlikely}~\pi\pi~\text{or}~KK}.\end{equation}
+If any of above was not satisfied, the pair was checked for compatibility with $KK$ hypothesis:
+%
+\begin{equation}\label{eq:pidKK}%
+\lefteqn{\overbrace{\phantom{\chi^{2}_{dE/dx}(KK)<9\;\;\; \& \;\;\; m^{2}_{\text{TOF}} > 0.15~\mbox{GeV}^{2}}}^{\text{likely}~KK}}\chi^{2}_{dE/dx}(KK)<9\;\;\; \& \;\;\; \underbrace{m^{2}_{\text{TOF}} > 0.15~\mbox{GeV}^{2}\;\;\; \& \;\;\; \chi^{2}_{dE/dx}(\pi\pi)>9}_{\text{unlikely}~\pi\pi}\;\;\; \& \;\;\; \underbrace{\chi^{2}_{dE/dx}(pp)>9}_{\text{unlikely}~pp}.
+\end{equation}
+%
+In case the pair was neither recognized as $p\bar{p}$ or $K^{+}K^{-}$, it was assumed to be a $\pi^{+}\pi^{-}$ pair if the $dE/dx$ of positive and negative charge track was consistent with pion hypothesis at $3\sigma$ level:
+\begin{equation}\label{eq:pidPiPi}|n\sigma_{\pi}^{\text{trk1}}|<3\;\;\; \& \;\;\; |n\sigma_{\pi}^{\text{trk2}}|<3.\end{equation}
 
 
 
+% %---------------------------
+% \begin{figure}[ht!]
+% \centering
+% \parbox{0.315\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:SqRootNSigmaPionVsKaon}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf}}}
+%   \end{subfigure}
+% }
+% \quad
+% \parbox{0.315\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:SqRootNSigmaPionVsProton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaPionVsProton.pdf}}}
+%   \end{subfigure}
+% }
+% \quad
+% \parbox{0.315\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:SqRootNSigmaKaonVsProton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf}}}
+%   \end{subfigure}
+% }%
+% \caption{Correlation between $n\sigma^{\text{pair}}$ from TPC for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.}
+% \end{figure}
+% %---------------------------
+% 
+% 
+% %---------------------------
+% \begin{figure}[ht!]
+% \centering
+% \parbox{0.315\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:SqMassTofVsSqRootNSigma_pion}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf}}}
+%   \end{subfigure}
+% }
+% \quad
+% \parbox{0.315\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:SqMassTofVsSqRootNSigma_kaon}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf}}}
+%   \end{subfigure}
+% }
+% \quad
+% \parbox{0.315\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}{
+%                 \subcaptionbox{\label{fig:SqMassTofVsSqRootNSigma_proton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf}}}
+%   \end{subfigure}
+% }%
+% \caption{Correlation between $m^{2}$ from TOF and $n\sigma^{\text{pair}}$ from TPC for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.}
+% \end{figure}
+% %---------------------------
+% 
+% 
+% 
+% 
+% 
+% 
+% 
+% %---------------------------
+% \begin{figure}[ht!]
+% \centering%
+% \includegraphics[width=0.65\linewidth,page=1]{graphics/eventSelection/sqMassFromTof.pdf}%
+% \caption{Squared particle mass from TOF for candidates of given PID selected based on $dE/dx$ in TPC.}\label{fig:sqMassFromTof}%
+% \end{figure}
+% %---------------------------
 
 
 
-%---------------------------
-\begin{figure}[ht!]
-\centering
-\parbox{0.315\textwidth}{
+% \begin{figure}[tbp]
+% \centering
+% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/Chi2NSigma_pion.pdf}
+% \hfill
+% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/SqMassTof_pion.pdf}
+% \newline
+% \newline
+% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/Chi2NSigma_kaon.pdf}
+% \hfill
+% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/SqMassTof_kaon.pdf}
+% \newline
+% \newline
+% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/Chi2NSigma_proton.pdf}
+% \hfill
+% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/SqMassTof_proton.pdf}
+% %
+% \caption{Raw distributions of $\chi^{2}_{dE/dx}$ (left column) and $m^{2}_{\text{TOF}}$ (right column) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) candidates after full event selection. Dashed red line and arrow indicate the value of cut imposed on plotted quantity to select exclusive pairs of given particle species.}
+% \label{fig:pid_plots}
+% \end{figure}
+
+
+
+\begin{figure}[ht!]\label{fig:pid_plots}
   \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:SqRootNSigmaPionVsKaon}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf}}}
-  \end{subfigure}
-}
-\quad
-\parbox{0.315\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:SqRootNSigmaPionVsProton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaPionVsProton.pdf}}}
-  \end{subfigure}
-}
-\quad
-\parbox{0.315\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:SqRootNSigmaKaonVsProton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf}}}
-  \end{subfigure}
-}%
-\caption{Correlation between $n\sigma^{\text{pair}}$ from TPC for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.}
+  \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}}
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~a)}{graphics/eventSelection/pid/Chi2NSigma_pion.pdf} &
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~c)}{graphics/eventSelection/pid/SqMassTof_pion.pdf} \\
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~d)}{graphics/eventSelection/pid/Chi2NSigma_kaon.pdf} &
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~f)}{graphics/eventSelection/pid/SqMassTof_kaon.pdf} \\
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~g)}{graphics/eventSelection/pid/Chi2NSigma_proton.pdf} &
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~i)}{graphics/eventSelection/pid/SqMassTof_proton.pdf}    
+  \end{tabular}
+  \caption{Raw distributions of $\chi^{2}_{dE/dx}$ (left column) and $m^{2}_{\text{TOF}}$ (right column) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) candidates after full event selection. Dashed red line and arrow indicate the value of cut imposed on plotted quantity to select exclusive pairs of given particle species.}
 \end{figure}
-%---------------------------
-
-
-%---------------------------
-\begin{figure}[ht!]
-\centering
-\parbox{0.315\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:SqMassTofVsSqRootNSigma_pion}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqMassTofVsSqRootNSigma_pion.pdf}}}
-  \end{subfigure}
-}
-\quad
-\parbox{0.315\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:SqMassTofVsSqRootNSigma_kaon}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqMassTofVsSqRootNSigma_kaon.pdf}}}
-  \end{subfigure}
-}
-\quad
-\parbox{0.315\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:SqMassTofVsSqRootNSigma_proton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqMassTofVsSqRootNSigma_proton.pdf}}}
-  \end{subfigure}
-}%
-\caption{Correlation between $m^{2}$ from TOF and $n\sigma^{\text{pair}}$ from TPC for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.}
-\end{figure}
-%---------------------------
-
-
-
-
-
-
-
-%---------------------------
-\begin{figure}[ht!]
-\centering%
-\includegraphics[width=0.65\linewidth,page=1]{graphics/eventSelection/sqMassFromTof.pdf}%
-\caption{Squared particle mass from TOF for candidates of given PID selected based on $dE/dx$ in TPC.}\label{fig:sqMassFromTof}%
-\end{figure}
-%---------------------------
-
-
 
 
 

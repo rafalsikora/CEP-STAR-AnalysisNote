@@ -4,45 +4,45 @@ The top-level auxiliary file: CEP_AnalysisNote.aux
 The style file: utphys.bst
 Database file #1: references.bib.bib
 Warning--empty publisher in pomeronAndQCD
-You've used 20 entries,
+You've used 21 entries,
             2328 wiz_defined-function locations,
-            698 strings with 7701 characters,
-and the built_in function-call counts, 4349 in all, are:
-= -- 443
-> -- 126
+            708 strings with 7905 characters,
+and the built_in function-call counts, 4694 in all, are:
+= -- 482
+> -- 130
 < -- 0
-+ -- 52
-- -- 32
-* -- 312
-:= -- 481
-add.period$ -- 36
-call.type$ -- 20
-change.case$ -- 42
++ -- 54
+- -- 33
+* -- 339
+:= -- 519
+add.period$ -- 38
+call.type$ -- 21
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 231
-empty$ -- 528
-format.name$ -- 32
-if$ -- 1157
+cite$ -- 22
+duplicate$ -- 250
+empty$ -- 564
+format.name$ -- 33
+if$ -- 1250
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 30
-newline$ -- 89
-num.names$ -- 14
-pop$ -- 135
+int.to.str$ -- 21
+missing$ -- 34
+newline$ -- 94
+num.names$ -- 15
+pop$ -- 140
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 176
+skip$ -- 190
 stack$ -- 0
-substring$ -- 92
-swap$ -- 68
+substring$ -- 120
+swap$ -- 78
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 22
-width$ -- 22
-write$ -- 166
+while$ -- 25
+width$ -- 23
+write$ -- 174
 (There was 1 warning)

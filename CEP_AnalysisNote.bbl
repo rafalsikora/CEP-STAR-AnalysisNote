@@ -113,6 +113,13 @@ L.~Adamczyk. \url{https://drupal.star.bnl.gov/STAR/system/files/talk_42.pdf},
 \bibitem{AnalysisCodeRepo}
 \url{https://github.com/rafalsikora/CEP-STAR}.
 
+\bibitem{Bichsel}
+H.~Bichsel, ``{A method to improve tracking and particle identification in TPCs
+  and silicon detectors},''
+\href{http://dx.doi.org/10.1016/j.nima.2006.03.009}{{\em Nucl. Instrum. Meth.}
+  {\bfseries A562} (2006) 154--197}.
+%%CITATION = NUIMA,A562,154;%%.
+
 \bibitem{GenEx}
 R.~A. Kycia, J.~Chwastowski, R.~Staszewski, and J.~Turnau, ``{GenEx: A simple
   generator structure for exclusive processes in high energy collisions},''

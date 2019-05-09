@@ -208,24 +208,12 @@ This dedicated MC simulation was designed to work as follows (simulation of sing
 \begin{enumerate}
  \item The position of $z_{\text{vtx}}$ was drawn from predefined distribution.
  \item Kinematics of central state particles was set: momentum (magnitude) $p$, pseudorapidity $\eta$ and azimuthal angle $\phi$ of positive and negative charge particles were drawn from predefined distributions.
- \item Both particles were tested if doubled radius of curvature $R$ of associated track in the magnetic field ($B=0.5$~T) of the TPC ($R \propto p_{T}/B$) is smaller than the radius of TOF detector barell (assumed 212~cm). If not then event was skipped and procedure was restared (back to 1.).
+ \item Both particles were tested if doubled radius of curvature $2R$ of associated track in the magnetic field of the TPC ($B=0.5$~T, $R \propto p_{T}/B$) is smaller than the radius of TOF detector barell (assumed 212~cm). If not then event was skipped and procedure was restared (back to 1.).
  \item The particles were propagated from the vertex at $(0,0,z_{\text{vtx}})$ through the magnetic field of TPC using Newton's method with the time step (in the laboratory) equal 100~ps, corresponding to space step $<3$~cm.
  \item After step 4. the position of the TOF cell was known allowing to calculate the TOF path length $L$ between the vertex and position of the TOF hit. Also the TOF hit time $t$ was then known, further smeared by adding random number from normal distribution with mean at 0 and standard deviation $\sigma_{\text{TOF}}=100$~ps to account for the finite TOF time resolution. In addition to this, reconstructed tracks' momenta were defined as the true momenta smeared by 3\%, to account for finite TPC momentum resolution. At this stage it was possible to calculate $m^{2}_{\text{TOF}}$ using Eq.~\eqref{eq:mSquared}.
- \item The $dE/dx$ measurement was simulated. For each particle a $dE/dx$ was drawn from the distribution of the form given by Eq.~(7.6) and of parameters (for given particle ID and momentum) which were extracted from the data and tabulated in Tab.~7.1, all contained in Chap.~7 of Ref.~\cite{supplementaryNote}. This assured that the simulated $dE/dx$ exactly matched the data. Once $dE/dx$ for both particles (tracks) was obtained, value of the $dE/dx$ error (more strictly: uncertainty of $\ln(dE/dx~[\text{keV/cm}])$) and $\log_{2}(dx)$ was also set up. These quantities depend on the number of TPC hit points used in the reconstruction of $dE/dx$ (the more hits in tracks, the better resolution of $dE/dx$ and higher $dx$), which obviously is not accessible without full STAR simulation in Geant. This problem was solved by extracting dependence of $\sigma(\ln(dE/dx))$ and $\log_{2}(dx)$ on the TOF path length from the data (from CEP events, Fig.~\ref{fig:correlationsTofPathLength}). Since the length of the TOF path is very strongly correlated with the number of hits forming the track and thus number of hits used to reconstruct $dE/dx$, one is allowed to draw $\sigma(\ln(dE/dx))$ and $\log_{2}(dx)$ from their distributions for particular TOF path lengths calculated in 5.. In this way the simulation preserves relevant connections between $dE/dx$-related quantities.
+ \item The $dE/dx$ measurement was simulated. For each particle a $dE/dx$ was drawn from the distribution of the form given by Eq.~(7.6) and of parameters (for given particle ID and momentum) which were extracted from the data and tabulated in Tab.~7.1, all contained in Chap.~7 of Ref.~\cite{supplementaryNote}. This assured that the simulated $dE/dx$ exactly matched the data. Once $dE/dx$ for both particles (tracks) was obtained, value of the $dE/dx$ error (more strictly: uncertainty of $\ln(dE/dx~[\text{keV/cm}])$) and $\log_{2}(dx)$ was also set up. These quantities depend on the number of TPC hit points used in the reconstruction of $dE/dx$ (the more hits in tracks, the better resolution of $dE/dx$ and higher $dx$), which obviously is not accessible without full STAR simulation in Geant. This problem was solved by extracting dependence of $\sigma(\ln(dE/dx))$ and $\log_{2}(dx)$ on the TOF path length from the data (from CEP events, Fig.~\ref{fig:correlationsTofPathLength}). Since the length of the TOF path is very strongly correlated with the number of hits forming the track and thus number of hits used to reconstruct $dE/dx$, one is allowed to draw $\sigma(\ln(dE/dx))$ and $\log_{2}(dx)$ from their distributions for particular TOF path lengths calculated in 5. and use as measured ones. In this way the simulation preserves relevant connections between $dE/dx$-related quantities. After these steps are taken the $n\sigma_{X}$ ($X=\pi$, $K$, $p$) variables are calculated for each track using the definition, in exactly the same way as it is done during standard data reconstruction.
+ \item Event information needed to study pair identification was stored in the ROOT tree: ID of particles forming a pair, their three-momenta, $m^{2}_{\text{TOF}}$, $n\sigma_{\pi}$, $n\sigma_{K}$ and $n\sigma_{p}$.
 \end{enumerate}
-
-% For the purpose of presented analysis parameters of this distribution were set to match the data: $\langle z_{\text{vtx}}\rangle=0$ and $\sigma(z_{\text{vtx}})=50$~cm, as well as $z_{\text{vtx}}$ was required to lie within the analysis limits (cut~\ref{enum:CutZVx}).
-
-
-% \begin{figure}[ht!]\label{fig:correlationsTofPathLength}
-%   \centering
-%   \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}}
-%     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~a)}{graphics/corrections/DEdxErrorVsTofPathLength.pdf}\label{fig:dEdxErrorVsTofPathLength} &
-%     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~b)}{graphics/corrections/Log2dxVsTofPathLength.pdf}\label{fig:Log2dEdxVsTofPathLength}
-%   \end{tabular}
-%   \caption[$dE/dx$ error vs. TOF path length and $\log_{2}(dx)$ vs. TOF path length for exclusive event candidates.]{Correlation between uncertainty of the natural logarithm of $dE/dx / (1~\text{keV/cm})$ and track TOF path length (\ref{fig:dEdxErrorVsTofPathLength}) and correlation between base 2 logarithm of $dx$ and track TOF path length (\ref{fig:Log2dEdxVsTofPathLength}). The distributions were obtained for the exclusive event candidates after full selection, with all three types of particle pairs combined.} 
-% \end{figure}
-
 
 %--------------------------- 
 \begin{figure}%[ht!] 
@@ -243,13 +231,15 @@ This dedicated MC simulation was designed to work as follows (simulation of sing
                 \subcaptionbox{\label{fig:Log2dEdxVsTofPathLength}}{\includegraphics[width=\linewidth]{graphics/corrections/Log2dxVsTofPathLength.pdf}}}
   \end{subfigure}
 }% 
-\caption[$dE/dx$ error vs. TOF path length and $\log_{2}(dx)$ vs. TOF path length for exclusive event candidates.]{Correlation between uncertainty of the natural logarithm of $dE/dx / (1~\text{keV/cm})$ and track TOF path length (\ref{fig:dEdxErrorVsTofPathLength}) and correlation between base 2 logarithm of $dx$ and track TOF path length (\ref{fig:Log2dEdxVsTofPathLength}). The distributions were obtained for the exclusive event candidates after full selection, with all three types of particle pairs combined.} 
-\end{figure}
+\caption[$dE/dx$ error vs. TOF path length and $\log_{2}(dx)$ vs. TOF path length for exclusive event candidates.]{Correlation between uncertainty of the natural logarithm of $dE/dx / (1~\text{keV/cm})$ and track TOF path length (\ref{fig:dEdxErrorVsTofPathLength}) and correlation between base 2 logarithm of $dx$ and track TOF path length (\ref{fig:Log2dEdxVsTofPathLength}). The distributions were obtained for the exclusive event candidates after full selection, with all three types of particle pairs combined.} \label{fig:correlationsTofPathLength}
+\end{figure} 
 
 
+For the purpose of determination of pair identification efficiency in CEP analysis descibed in this note, parameters of vertex distribution were set to match the data: $\langle z_{\text{vtx}}\rangle=0$ and $\sigma(z_{\text{vtx}})=50$~cm, as well as $z_{\text{vtx}}$ was required to lie within the analysis limits (cut~\ref{enum:CutZVx}). Distribution of particle $\eta$ was set to flat in a range -0.7 and 0.7, while particle $\phi$ was defined uniformly distributed in full azimuth ($2\pi$~rad), both fairly agreeing with expectations from physics models and observations in data.
 
+The identification efficiency/misidentification probability was studied in two dimensions - as a function of particles' momenta. Because of that the shape of momentum distribution for PID efficiency study was not required to match the data and was defined flat, spanning between $0.2$~GeV and 3~GeV, to provide low statistical uncertainties over full momentum space. We considered particles' momenta as the best quantities to study pair identification because $n\sigma_{X}$ and $m^{2}_{\text{TOF}}$ and their resolutions depend nearly solely on magnitude of momentum.
 
-\begin{figure}[ht!]\label{fig:pidEffVsPt}
+\begin{figure}[t!]\label{fig:pidEffVsPt}
   \centering
   \begin{tabular}{@{}p{0.315\linewidth}@{\quad}p{0.315\linewidth}@{\quad}p{0.315\linewidth}@{}}
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~a)}{graphics/corrections/EffVsPt.pdf} &
@@ -264,6 +254,10 @@ This dedicated MC simulation was designed to work as follows (simulation of sing
   \end{tabular}
   \caption[Pair identification efficiency and misidentification probability as a function of tracks' $p_{T}$.]{Pair identification efficiency (diagonal) and misidentification probability (off-diagonal) as a function of tracks' $p_{T}$ for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ pairs. The results were obtained from the dedicated MC simulation described in the text. Blue lines and arrows mark the cut value on lower of the track $p_{T}$'s for kaons and protons.}
 \end{figure}
+
+The identification efficiency and misidentification probability was calculated for each species using the pair selection cuts~\ref{enum:CutPidNoPtLimit} described in more detail in Sec.~\ref{subsec:pidCuts}, following the definition provided in the Eq.~():
+
+
 
 %---------------------------
 

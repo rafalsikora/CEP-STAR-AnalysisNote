@@ -17,42 +17,40 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces NTofClusters.\relax }}{16}{figure.caption.15}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Correlation between sum of corresponding momentum components ($x$ in Fig.\nobreakspace {}\ref {fig:PxCentralTrksVsProtons_pion} and $y$ in Fig.\nobreakspace {}\ref {fig:PyCentralTrksVsProtons_pion}) of Roman Pot proton tracks and TPC tracks.\relax }}{17}{figure.caption.16}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces MissingPt.\relax }}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Correlation between $n\sigma ^{\text {pair}}$ from TPC for $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{18}{figure.caption.18}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Correlation between $m^{2}$ from TOF and $n\sigma ^{\text {pair}}$ from TPC for $\pi ^{+}\pi ^{-}$, $K^{+}K^{-}$ and $p\mathaccentV {bar}016{p}$.\relax }}{18}{figure.caption.19}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Squared particle mass from TOF for candidates of given PID selected based on $dE/dx$ in TPC.\relax }}{18}{figure.caption.20}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Raw distributions of $\chi ^{2}_{dE/dx}$ (left column) and $m^{2}_{\text {TOF}}$ (right column) for exclusive $\pi ^+\pi ^-$ (top row), $K^+K^-$ (middle row) and $p\mathaccentV {bar}016{p}$ (bottom row) candidates after full event selection. Dashed red line and arrow indicate the value of cut imposed on plotted quantity to select exclusive pairs of given particle species.\relax }}{19}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Overall efficiency of the online BBC-small and ZDC veto as a function of instantaneous luminosity.\relax }}{19}{figure.caption.21}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Sample probability of ET\&IT trigger veto due to forward proton interaction with dead material.}}{21}{figure.caption.22}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Sample distribution of $z_{\text {vtx}}$ with fitted normal distribution.}}{22}{figure.caption.23}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Mean and width of the $z_{\text {vtx}}$ distribution as a function of the RHIC fill number.}}{22}{figure.caption.23}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Overall efficiency of online and offlince cuts as a function of instantaneous luminosity.}}{23}{figure.caption.24}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces $dE/dx$ error vs. TOF path length and $\qopname \relax o{log}_{2}(dx)$ vs. TOF path length for exclusive event candidates.}}{24}{figure.caption.25}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Pair identification efficiency and misidentification probability as a function of tracks' $p_{T}$.}}{25}{figure.caption.26}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Sample RP track reconstruction efficiency in a single $z$-vertex bin.}}{26}{figure.caption.27}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Probability of simultaneous inefficiency of the RP track reconstruction calculated from the CEP MC embedded into zero-bias data.\newline \newline \newline \newline \newline \relax }}{26}{figure.caption.27}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Sketch with definition of $\Delta z_{0}$.}}{26}{figure.caption.28}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Distribution of $\Delta z_{0}$ together with fraction of non-exclusive background.}}{28}{figure.caption.29}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Vertexing efficiency.}}{28}{figure.caption.29}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overall efficiency of the online BBC-small and ZDC veto as a function of instantaneous luminosity.\relax }}{21}{figure.caption.19}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Sample probability of ET\&IT trigger veto due to forward proton interaction with dead material.}}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sample distribution of $z_{\text {vtx}}$ with fitted normal distribution.}}{24}{figure.caption.21}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Mean and width of the $z_{\text {vtx}}$ distribution as a function of the RHIC fill number.}}{24}{figure.caption.21}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Overall efficiency of online and offlince cuts as a function of instantaneous luminosity.}}{25}{figure.caption.22}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces $dE/dx$ error vs. TOF path length and $\qopname \relax o{log}_{2}(dx)$ vs. TOF path length for exclusive event candidates.}}{26}{figure.caption.23}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Pair identification efficiency and misidentification probability as a function of tracks' $p_{T}$.}}{27}{figure.caption.24}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Sample RP track reconstruction efficiency in a single $z$-vertex bin.}}{28}{figure.caption.25}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Probability of simultaneous inefficiency of the RP track reconstruction calculated from the CEP MC embedded into zero-bias data.\newline \newline \newline \newline \newline \relax }}{28}{figure.caption.25}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Sketch with definition of $\Delta z_{0}$.}}{29}{figure.caption.26}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Distribution of $\Delta z_{0}$ together with fraction of non-exclusive background.}}{30}{figure.caption.27}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Vertexing efficiency.}}{30}{figure.caption.27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Missing pT.\relax }}{29}{figure.caption.30}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Graph illustrating the misidentification problem.}}{29}{figure.caption.31}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Missing pT.\relax }}{31}{figure.caption.28}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Graph illustrating the misidentification problem.}}{31}{figure.caption.29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces ...}}{32}{figure.caption.32}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces ...}}{33}{figure.caption.33}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces ...}}{34}{figure.caption.34}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces ...}}{35}{figure.caption.35}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Cut flow.\relax }}{36}{figure.caption.36}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces ...}}{34}{figure.caption.30}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces ...}}{35}{figure.caption.31}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces ...}}{36}{figure.caption.32}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces ...}}{37}{figure.caption.33}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Cut flow.\relax }}{38}{figure.caption.34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Distribution of ADC vs. TAC counts (2D) and ADC conunts (1D) per BBC-small channel in abort gaps and colliding bunches.}}{37}{figure.caption.37}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Distribution of ADC vs. TAC counts (2D) and ADC conunts (1D) per BBC-large channel in abort gaps and colliding bunches.}}{43}{figure.caption.43}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Distribution of ADC vs. TAC counts (2D) and ADC conunts (1D) per BBC-small channel in abort gaps and colliding bunches.}}{39}{figure.caption.35}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Distribution of ADC vs. TAC counts (2D) and ADC conunts (1D) per BBC-large channel in abort gaps and colliding bunches.}}{45}{figure.caption.41}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Scheme of two central tracks with common vertex, hitting cells in TOF detector.}}{48}{figure.caption.46}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Scheme of two central tracks with common vertex, hitting cells in TOF detector.}}{50}{figure.caption.44}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces RP track acceptance, reconstruction and selection efficiency on the east (MC embedded into zero-bias data).}}{49}{figure.caption.47}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces RP track acceptance, reconstruction and selection efficiency on the west (MC embedded into zero-bias data).}}{52}{figure.caption.50}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Probability of ET\&IT trigger veto due to forward proton interaction with dead material on the east.}}{55}{figure.caption.53}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Probability of ET\&IT trigger veto due to forward proton interaction with dead material on the west.}}{58}{figure.caption.56}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces RP track acceptance, reconstruction and selection efficiency on the east (MC embedded into zero-bias data).}}{51}{figure.caption.45}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces RP track acceptance, reconstruction and selection efficiency on the west (MC embedded into zero-bias data).}}{54}{figure.caption.48}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Probability of ET\&IT trigger veto due to forward proton interaction with dead material on the east.}}{57}{figure.caption.51}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Probability of ET\&IT trigger veto due to forward proton interaction with dead material on the west.}}{60}{figure.caption.54}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Pair identification efficiency and misidentification probability as a function of tracks' $p$.}}{61}{figure.caption.59}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Pair identification efficiency and misidentification probability as a function of tracks' $p$.}}{63}{figure.caption.57}
