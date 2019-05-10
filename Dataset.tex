@@ -9,17 +9,17 @@
 
 \section{Trigger}\label{seq:trigger}
 
-The main trigger designed for studies of Central Diffraction in run 15 was RP\_CPT2. It was formed of the following conditions combined by logical AND (\&\&):
+Presented analysis made use of data taken in 2015 during $p+p$ collisions at $\sqrt{s}=200$~GeV. The main trigger designed for studies of Central Diffraction in run 15 was RP\_CPT2. It was formed of the following conditions combined by logical AND (\&\&):
 \begin{enumerate}
- \item \textbf{(ET \&\& !IT) $||$ (!ET \&\& IT)} = signal in at least one RP on each side of the STAR central detector - to ensure presence of two forward-scattered protons; a veto was imposed on simultaneous signal in RPs above and below the beamline, which might have originated either from proton dissociation, or pile-up event, or beam halo proton etc.,
- \item \textbf{!BBCE \&\& !BBCW \&\& !ZDCE \&\& !ZDCW} = veto on any signal in small BBC tiles or ZDCs on any side of STAR central detector - such requirement is in accordance with the double-gap topology of CEP events, it mostly filtered out CEP events with parallel pile-up event(s),
+ \item \textbf{(ET \&\& !IT) $||$ (!ET \&\& IT)} = signal in at least one RP on each side of the STAR central detector - to ensure presence of two forward-scattered protons; a veto was imposed on simultaneous signal in RPs above and below the beamline, which might have originated either from proton dissociation, or pile-up event, or beam halo proton etc.,\\[-15pt]
+ \item \textbf{!BBCE \&\& !BBCW \&\& !ZDCE \&\& !ZDCW} = veto on any signal in small BBC tiles or ZDCs on any side of STAR central detector - such requirement is in accordance with the double-gap topology of CEP events, it mostly filtered out CEP events with parallel pile-up event(s),\\[-15pt]
  \item \textbf{TOF$\geq$2} = at least 2 hits in TOF - aim of this condition was to ensure activity in the mid-rapidity; since the lowest multiplicity allowed in CEP is 2, that was the lower threshold of L0 TOF multiplicity.
 \end{enumerate}%
 This trigger was running with an average prescale of 5 and average DAQ rate of 250~Hz, which allowed to collect in total about 560~M events corresponding to 16.5~pb$^{-1}$ of integrated luminosity.  More information about number of events per run, rates etc. can be found under link provided in Ref.~\cite{onlineRpTriggersMonitoring}, which contains selected data from STAR run log~\cite{RunLog}. Luminosity data used in this analysis comes from Ref.~\cite{Luminosity}.
 
 All RP triggers which were intended for usage in diffractive physics analyses or efficiency studies are listed in Tab.~\ref{tab:triggers}. Components used in definitions of these triggers are outlined in Fig.~\ref{fig:triggerBits}. Detailed explanation of all trigger bits can be found in Refs.~\cite{RpTriggers,RpTriggers2}. Explanation of naming convention in Roman Pot system can be found in Ref.~\cite{Labeling}.
 
-\begin{figure}[h]
+\begin{figure}[h]\vspace*{-6pt}
  \centering%
  \includegraphics[width=0.71\linewidth]{graphics/dataset/bits.png}%
  \caption{Sketch of the trigger components used in definitions of diffractive triggers in run 15.}\label{fig:triggerBits}%

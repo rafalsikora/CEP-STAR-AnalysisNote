@@ -24,28 +24,28 @@
 \BOOKMARK [2][-]{subsection.3.2.8}{\(C8\) Particle identification}{section.3.2}% 24
 \BOOKMARK [1][-]{section.3.3}{Signal per integrated luminosity}{chapter.3}% 25
 \BOOKMARK [1][-]{section.3.4}{Cut flow}{chapter.3}% 26
-\BOOKMARK [0][-]{chapter.4}{Corrections}{}% 27
-\BOOKMARK [1][-]{section.4.1}{Method of corrections application}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.2}{Acceptances and efficiencies}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.2.1}{Trigger efficiency}{section.4.2}% 30
-\BOOKMARK [3][-]{subsubsection.4.2.1.1}{Online veto \(BBC-small and ZDC veto\)}{subsection.4.2.1}% 31
-\BOOKMARK [3][-]{subsubsection.4.2.1.2}{RP triggering efficiency}{subsection.4.2.1}% 32
-\BOOKMARK [3][-]{subsubsection.4.2.1.3}{Up and Down RP combination veto \(due to dead material\)}{subsection.4.2.1}% 33
-\BOOKMARK [2][-]{subsection.4.2.2}{Selection efficiency}{section.4.2}% 34
-\BOOKMARK [3][-]{subsubsection.4.2.2.1}{TPC z-vertex cut \(C2\)}{subsection.4.2.2}% 35
-\BOOKMARK [3][-]{subsubsection.4.2.2.2}{TPC-RP z-vertex matching \(C5\)}{subsection.4.2.2}% 36
-\BOOKMARK [3][-]{subsubsection.4.2.2.3}{Primary vertices limit \(C1\), BBC-large veto \(C6\), TOF clusters limit \(C7\) and Up and Down RP combination veto \(due to pile-up\)}{subsection.4.2.2}% 37
-\BOOKMARK [3][-]{subsubsection.4.2.2.4}{Missing pT cut \(C9\)}{subsection.4.2.2}% 38
-\BOOKMARK [3][-]{subsubsection.4.2.2.5}{Particle identification \(C8\)}{subsection.4.2.2}% 39
-\BOOKMARK [2][-]{subsection.4.2.3}{RP track acceptance and reconstruction efficiency}{section.4.2}% 40
-\BOOKMARK [2][-]{subsection.4.2.4}{TPC vertex reconstruction efficiency}{section.4.2}% 41
-\BOOKMARK [1][-]{section.4.3}{Particle energy loss}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.4}{Background subtraction}{chapter.4}% 43
-\BOOKMARK [0][-]{chapter.5}{Backgrounds}{}% 44
-\BOOKMARK [1][-]{section.5.1}{Sources of background}{chapter.5}% 45
-\BOOKMARK [2][-]{subsection.5.1.1}{Non-exclusive background}{section.5.1}% 46
-\BOOKMARK [2][-]{subsection.5.1.2}{Exclusive background \(particle misidentification\)}{section.5.1}% 47
-\BOOKMARK [1][-]{section.5.2}{Relative normalization of background and signal}{chapter.5}% 48
+\BOOKMARK [0][-]{chapter.4}{Backgrounds}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Sources of background}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.1.1}{Non-exclusive background}{section.4.1}% 29
+\BOOKMARK [2][-]{subsection.4.1.2}{Exclusive background \(particle misidentification\)}{section.4.1}% 30
+\BOOKMARK [1][-]{section.4.2}{Relative normalization of background and signal}{chapter.4}% 31
+\BOOKMARK [0][-]{chapter.5}{Corrections}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Method of corrections application}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.2}{Acceptances and efficiencies}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.5.2.1}{Trigger efficiency}{section.5.2}% 35
+\BOOKMARK [3][-]{subsubsection.5.2.1.1}{Online veto \(BBC-small and ZDC veto\)}{subsection.5.2.1}% 36
+\BOOKMARK [3][-]{subsubsection.5.2.1.2}{RP triggering efficiency}{subsection.5.2.1}% 37
+\BOOKMARK [3][-]{subsubsection.5.2.1.3}{Up and Down RP combination veto \(due to dead material\)}{subsection.5.2.1}% 38
+\BOOKMARK [2][-]{subsection.5.2.2}{Selection efficiency}{section.5.2}% 39
+\BOOKMARK [3][-]{subsubsection.5.2.2.1}{TPC z-vertex cut \(C2\)}{subsection.5.2.2}% 40
+\BOOKMARK [3][-]{subsubsection.5.2.2.2}{TPC-RP z-vertex matching \(C5\)}{subsection.5.2.2}% 41
+\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Primary vertices limit \(C1\), BBC-large veto \(C6\), TOF clusters limit \(C7\) and Up and Down RP combination veto \(due to pile-up\)}{subsection.5.2.2}% 42
+\BOOKMARK [3][-]{subsubsection.5.2.2.4}{Missing pT cut \(C9\)}{subsection.5.2.2}% 43
+\BOOKMARK [3][-]{subsubsection.5.2.2.5}{Particle identification \(C8\)}{subsection.5.2.2}% 44
+\BOOKMARK [2][-]{subsection.5.2.3}{RP track acceptance and reconstruction efficiency}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.4}{TPC vertex reconstruction efficiency}{section.5.2}% 46
+\BOOKMARK [1][-]{section.5.3}{Particle energy loss}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.4}{Background subtraction}{chapter.5}% 48
 \BOOKMARK [0][-]{chapter.6}{Systematic errors}{}% 49
 \BOOKMARK [0][-]{chapter.7}{Physics results}{}% 50
 \BOOKMARK [0][-]{Appendix.1.A}{Appendix BBC response}{}% 51
@@ -55,6 +55,6 @@
 \BOOKMARK [1][-]{section.1.D.1}{RP track acceptance, reconstruction and selection efficiency}{Appendix.1.D}% 55
 \BOOKMARK [1][-]{section.1.D.2}{RP trigger veto probability related to dead material}{Appendix.1.D}% 56
 \BOOKMARK [0][-]{Appendix.1.E}{Appendix Particle identification efficiency}{}% 57
-\BOOKMARK [0][-]{chapter*.58}{List of Figures}{}% 58
-\BOOKMARK [0][-]{chapter*.59}{List of Tables}{}% 59
-\BOOKMARK [0][-]{chapter*.60}{References}{}% 60
+\BOOKMARK [0][-]{chapter*.62}{List of Figures}{}% 58
+\BOOKMARK [0][-]{chapter*.63}{List of Tables}{}% 59
+\BOOKMARK [0][-]{chapter*.64}{References}{}% 60

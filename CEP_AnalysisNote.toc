@@ -22,39 +22,39 @@
 \contentsline {subsection}{\numberline {3.2.6}(\ref {enum:CutTofClusters})\nobreakspace {}TOF clusters limit}{16}{subsection.3.2.6}
 \contentsline {subsection}{\numberline {3.2.7}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{T}$ cut)}{17}{subsection.3.2.7}
 \contentsline {subsection}{\numberline {3.2.8}(\ref {enum:CutPid})\nobreakspace {}Particle identification}{17}{subsection.3.2.8}
-\contentsline {section}{\numberline {3.3}Signal per integrated luminosity}{20}{section.3.3}
-\contentsline {section}{\numberline {3.4}Cut flow}{20}{section.3.4}
-\contentsline {chapter}{\numberline {4}Corrections}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Method of corrections application}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}Acceptances and efficiencies}{21}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Trigger efficiency}{21}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Online veto (BBC-small and ZDC veto)}{21}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}RP triggering efficiency}{22}{subsubsection.4.2.1.2}
-\contentsline {subsubsection}{\numberline {4.2.1.3}Up and Down RP combination veto (due to dead material)}{22}{subsubsection.4.2.1.3}
-\contentsline {subsection}{\numberline {4.2.2}Selection efficiency}{23}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}TPC $z$-vertex cut\nobreakspace {}(\ref {enum:CutZVx})}{23}{subsubsection.4.2.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2.2}TPC-RP $z$-vertex matching\nobreakspace {}(\ref {enum:CutDeltaZVx})}{24}{subsubsection.4.2.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.3}Primary vertices limit\nobreakspace {}(\ref {enum:CutPrimVx}), BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}), TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters}) and Up and Down RP combination veto (due to pile-up)}{24}{subsubsection.4.2.2.3}
-\contentsline {subsubsection}{\numberline {4.2.2.4}Missing $p_{T}$ cut\nobreakspace {}(\ref {enum:CutMissingPt})}{25}{subsubsection.4.2.2.4}
-\contentsline {subsubsection}{\numberline {4.2.2.5}Particle identification\nobreakspace {}(\ref {enum:CutPid})}{25}{subsubsection.4.2.2.5}
-\contentsline {subsection}{\numberline {4.2.3}RP track acceptance and reconstruction efficiency}{27}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}TPC vertex reconstruction efficiency}{28}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Particle energy loss}{30}{section.4.3}
-\contentsline {section}{\numberline {4.4}Background subtraction}{30}{section.4.4}
-\contentsline {chapter}{\numberline {5}Backgrounds}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Sources of background}{31}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Non-exclusive background}{31}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Exclusive background (particle misidentification)}{31}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Relative normalization of background and signal}{32}{section.5.2}
-\contentsline {chapter}{\numberline {6}Systematic errors}{33}{chapter.6}
-\contentsline {chapter}{\numberline {7}Physics results}{34}{chapter.7}
-\contentsline {chapter}{Appendix \numberline {A}BBC response}{39}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Formulation of total RP efficiency}{48}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}Reconstruction of $\bf {m}^{2}_{\text {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip TOF}}$}{50}{Appendix.1.C}
-\contentsline {chapter}{Appendix \numberline {D}RP efficiency}{51}{Appendix.1.D}
-\contentsline {section}{\numberline {D.1}RP track acceptance, reconstruction and selection efficiency}{51}{section.1.D.1}
-\contentsline {section}{\numberline {D.2}RP trigger veto probability related to dead material}{57}{section.1.D.2}
-\contentsline {chapter}{Appendix \numberline {E}Particle identification efficiency}{63}{Appendix.1.E}
-\contentsline {chapter}{List of Figures}{65}{chapter*.58}
-\contentsline {chapter}{List of Tables}{65}{chapter*.59}
-\contentsline {chapter}{References}{67}{chapter*.60}
+\contentsline {section}{\numberline {3.3}Signal per integrated luminosity}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}Cut flow}{21}{section.3.4}
+\contentsline {chapter}{\numberline {4}Backgrounds}{22}{chapter.4}
+\contentsline {section}{\numberline {4.1}Sources of background}{22}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Non-exclusive background}{22}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Exclusive background (particle misidentification)}{22}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Relative normalization of background and signal}{23}{section.4.2}
+\contentsline {chapter}{\numberline {5}Corrections}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Method of corrections application}{24}{section.5.1}
+\contentsline {section}{\numberline {5.2}Acceptances and efficiencies}{24}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Trigger efficiency}{24}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}Online veto (BBC-small and ZDC veto)}{24}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {5.2.1.2}RP triggering efficiency}{25}{subsubsection.5.2.1.2}
+\contentsline {subsubsection}{\numberline {5.2.1.3}Up and Down RP combination veto (due to dead material)}{25}{subsubsection.5.2.1.3}
+\contentsline {subsection}{\numberline {5.2.2}Selection efficiency}{26}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}TPC $z$-vertex cut\nobreakspace {}(\ref {enum:CutZVx})}{26}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2.2}TPC-RP $z$-vertex matching\nobreakspace {}(\ref {enum:CutDeltaZVx})}{27}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.3}Primary vertices limit\nobreakspace {}(\ref {enum:CutPrimVx}), BBC-large veto\nobreakspace {}(\ref {enum:CutBbcLarge}), TOF clusters limit\nobreakspace {}(\ref {enum:CutTofClusters}) and Up and Down RP combination veto (due to pile-up)}{27}{subsubsection.5.2.2.3}
+\contentsline {subsubsection}{\numberline {5.2.2.4}Missing $p_{T}$ cut\nobreakspace {}(\ref {enum:CutMissingPt})}{28}{subsubsection.5.2.2.4}
+\contentsline {subsubsection}{\numberline {5.2.2.5}Particle identification\nobreakspace {}(\ref {enum:CutPid})}{28}{subsubsection.5.2.2.5}
+\contentsline {subsection}{\numberline {5.2.3}RP track acceptance and reconstruction efficiency}{31}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}TPC vertex reconstruction efficiency}{32}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Particle energy loss}{33}{section.5.3}
+\contentsline {section}{\numberline {5.4}Background subtraction}{34}{section.5.4}
+\contentsline {chapter}{\numberline {6}Systematic errors}{35}{chapter.6}
+\contentsline {chapter}{\numberline {7}Physics results}{36}{chapter.7}
+\contentsline {chapter}{Appendix \numberline {A}BBC response}{44}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Formulation of total RP efficiency}{53}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}Reconstruction of $\bf {m}^{2}_{\text {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip TOF}}$}{55}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {D}RP efficiency}{56}{Appendix.1.D}
+\contentsline {section}{\numberline {D.1}RP track acceptance, reconstruction and selection efficiency}{56}{section.1.D.1}
+\contentsline {section}{\numberline {D.2}RP trigger veto probability related to dead material}{62}{section.1.D.2}
+\contentsline {chapter}{Appendix \numberline {E}Particle identification efficiency}{68}{Appendix.1.E}
+\contentsline {chapter}{List of Figures}{70}{chapter*.62}
+\contentsline {chapter}{List of Tables}{70}{chapter*.63}
+\contentsline {chapter}{References}{72}{chapter*.64}

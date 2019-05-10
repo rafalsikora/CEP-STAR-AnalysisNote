@@ -171,38 +171,48 @@ In Fig.~\ref{fig:onlineAndOfflineVetoEff} this efficiency is presented as a func
 Comparison of the $\mu$ in Eq.~\eqref{eq:poisson} with the fit parameters in Fig.~\ref{fig:onlineAndOfflineVetoEff} leads to approximate determination of the average interaction probability per bunch crossing equal $0.2-0.9$. The result of the fit, $ \mbox{\LARGE$\epsilon$}^{\text{veto}}_{b_{E}b_{W}}(\mathcal{L})$, is finally used to correct measured data as described in Sec.~\ref{sec:correctionProcedure}. 
 
 Comparison of efficiencies in Fig.~\ref{fig:onlineAndOfflineVetoEff} with similar efficiency in Fig.~\ref{fig:onlineVetoEff} demonstrates that offline selection has much smaller impact on the loss of signal events than online selection. It has to be underlined that online vetoes were necessary to set trigger purity to satisfactory level, as well as reduce prescale of the trigger.
-%---------------------------
+% %---------------------------
+% \begin{figure}[h]
+% \centering
+% \parbox{0.4725\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}
+%                 \subcaptionbox{}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
+%   \end{subfigure}\\
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+%                 \subcaptionbox{}{\includegraphics[width=\linewidth,page=3]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
+%   \end{subfigure}
+% }%
+% \quad\quad%
+% \parbox{0.4725\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+%                 \subcaptionbox{}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
+%   \end{subfigure}\\
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+%                 \subcaptionbox{}{\includegraphics[width=\linewidth,page=4]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
+%   \end{subfigure}
+% }%
+% \caption[Overall efficiency of online and offlince cuts as a function of instantaneous luminosity.]{Overall efficiency of the online BBC-small, ZDC and ET\&IT trigger veto, primary vertices limit~(\ref{enum:CutPrimVx}), BBC-large veto~(\ref{enum:CutBbcLarge}) and TOF clusters limit~(\ref{enum:CutTofClusters}) as a function of instantaneous luminosity for all possible combinations of east and west RP branches. Red and blue points represent runs lasting for less and more than 20 minutes, respectively. Black dotted lines reprent fits of exponential functions to blue points.}\label{fig:onlineAndOfflineVetoEff}%
+% \end{figure}
+% %---------------------------
 \begin{figure}[h]
-\centering
-\parbox{0.4725\textwidth}{
   \centering
-  \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:sampleBbcSmallAdcVsTac}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:sampleBbcSmallAdc}}{\includegraphics[width=\linewidth,page=3]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
-  \end{subfigure}
-}%
-\quad\quad%
-\parbox{0.4725\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
-                \subcaptionbox{\label{fig:sampleBbcLargeAdcVsTac}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:sampleBbcLargeAdc}}{\includegraphics[width=\linewidth,page=4]{graphics/corrections/FullVetoEffVsInstLumi.pdf}}
-  \end{subfigure}
-}%
+  \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}}
+    \subfigimg[width=\linewidth,page=1]{~~~~~~a)}{graphics/corrections/FullVetoEffVsInstLumi.pdf} &
+    \subfigimg[width=\linewidth,page=2]{~~~~~~b)}{graphics/corrections/FullVetoEffVsInstLumi.pdf} \\
+    \subfigimg[width=\linewidth,page=3]{~~~~~~d)}{graphics/corrections/FullVetoEffVsInstLumi.pdf} &
+    \subfigimg[width=\linewidth,page=4]{~~~~~~e)}{graphics/corrections/FullVetoEffVsInstLumi.pdf}
+  \end{tabular}
 \caption[Overall efficiency of online and offlince cuts as a function of instantaneous luminosity.]{Overall efficiency of the online BBC-small, ZDC and ET\&IT trigger veto, primary vertices limit~(\ref{enum:CutPrimVx}), BBC-large veto~(\ref{enum:CutBbcLarge}) and TOF clusters limit~(\ref{enum:CutTofClusters}) as a function of instantaneous luminosity for all possible combinations of east and west RP branches. Red and blue points represent runs lasting for less and more than 20 minutes, respectively. Black dotted lines reprent fits of exponential functions to blue points.}\label{fig:onlineAndOfflineVetoEff}%
 \end{figure}
-%---------------------------
 
 
 
 \subsubsection{Missing \texorpdfstring{$p_{T}$}{pT} cut~(\ref{enum:CutMissingPt})}
 \subsubsection{Particle identification~(\ref{enum:CutPid})}\label{sec:pidEff}
 
-Correction reflecting efficiency of identification requires good modeling of detector response in terms of $dE/dx$ and TOF time ($m^{2}$) measurement which were used for this purpose as described in Sec.~\ref{subsec:pidCuts}. In addition to this, significant number of simulated events is needed to reduce statistical uncertainties of efficiency. The former was provided by adjusting $dE/dx$ spectra from embedded MC to match the data, as elaborated in Chap.~7 of Ref.~\cite{supplementaryNote}. The latter, however, was not easy to achieve for exclusive $K^{+}K^{-}$ and $p\bar{p}$ whose identification is most challenging and information about identification efficiency is the most needed among studied species. Specially for study of particle (exlusive pair) identification a dedicated MC simulation was prepared.
+Correction reflecting efficiency of identification requires good modeling of detector response in terms of $dE/dx$ and TOF time ($\rightarrow m^{2}_{\text{TOF}}$) measurement which were used for this purpose as described in Sec.~\ref{subsec:pidCuts}. In addition to this, significant number of simulated events is needed to reduce statistical uncertainties of efficiency. The former was provided by adjusting $dE/dx$ spectra from embedded MC to match the data, as elaborated in Chap.~7 of Ref.~\cite{supplementaryNote}. The latter, however, was not easy to achieve for exclusive $K^{+}K^{-}$ and $p\bar{p}$ whose identification is most challenging and information about identification efficiency is the most needed among studied species. Specially for study of particle (exlusive pair) identification a dedicated MC simulation was prepared.
 
 This dedicated MC simulation was designed to work as follows (simulation of single CEP event of predefined pair ID is described):
 \begin{enumerate}
@@ -235,11 +245,11 @@ This dedicated MC simulation was designed to work as follows (simulation of sing
 \end{figure} 
 
 
-For the purpose of determination of pair identification efficiency in CEP analysis descibed in this note, parameters of vertex distribution were set to match the data: $\langle z_{\text{vtx}}\rangle=0$ and $\sigma(z_{\text{vtx}})=50$~cm, as well as $z_{\text{vtx}}$ was required to lie within the analysis limits (cut~\ref{enum:CutZVx}). Distribution of particle $\eta$ was set to flat in a range -0.7 and 0.7, while particle $\phi$ was defined uniformly distributed in full azimuth ($2\pi$~rad), both fairly agreeing with expectations from physics models and observations in data.
+For the purpose of determination of pair identification efficiency in CEP analysis descibed in this note, parameters of vertex distribution were set to match the data: $\langle z_{\text{vtx}}\rangle=0$ and $\sigma(z_{\text{vtx}})=50$~cm, as well as $z_{\text{vtx}}$ was required to lie within the analysis limits (cut~\ref{enum:CutZVx}). Distribution of particle $\eta$ was set to flat and limited to analyzed range $|\eta|<0.7$, while particle $\phi$ was defined as uniformly distributed in full azimuth ($2\pi$~rad), both fairly agreeing with expectations from physics models and observations in data.
 
 The identification efficiency/misidentification probability was studied in two dimensions - as a function of particles' momenta. Because of that the shape of momentum distribution for PID efficiency study was not required to match the data and was defined flat, spanning between $0.2$~GeV and 3~GeV, to provide low statistical uncertainties over full momentum space. We considered particles' momenta as the best quantities to study pair identification because $n\sigma_{X}$ and $m^{2}_{\text{TOF}}$ and their resolutions depend nearly solely on magnitude of momentum.
 
-\begin{figure}[t!]\label{fig:pidEffVsPt}
+\begin{figure}[t!]
   \centering
   \begin{tabular}{@{}p{0.315\linewidth}@{\quad}p{0.315\linewidth}@{\quad}p{0.315\linewidth}@{}}
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~a)}{graphics/corrections/EffVsPt.pdf} &
@@ -252,12 +262,22 @@ The identification efficiency/misidentification probability was studied in two d
     \subfigimg[width=\linewidth,page=8]{~~~~~~~~~~~~~~~~~~~~~~~h)}{graphics/corrections/EffVsPt.pdf} &
     \subfigimg[width=\linewidth,page=9]{~~~~~~~~~~~~~~~~~~~~~~~i)}{graphics/corrections/EffVsPt.pdf}    
   \end{tabular}
-  \caption[Pair identification efficiency and misidentification probability as a function of tracks' $p_{T}$.]{Pair identification efficiency (diagonal) and misidentification probability (off-diagonal) as a function of tracks' $p_{T}$ for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ pairs. The results were obtained from the dedicated MC simulation described in the text. Blue lines and arrows mark the cut value on lower of the track $p_{T}$'s for kaons and protons.}
+  \caption[Pair identification efficiency and misidentification probability as a function of tracks' $p_{T}$.]{Pair identification efficiency (diagonal) and misidentification probability (off-diagonal) as a function of tracks' $p_{T}$ for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ pairs. The results were obtained from the dedicated MC simulation described in the text. Blue lines and arrows mark the cut value on lower of the track $p_{T}$'s for kaons and protons.}\label{fig:pidEffVsPt}
 \end{figure}
 
-The identification efficiency and misidentification probability was calculated for each species using the pair selection cuts~\ref{enum:CutPidNoPtLimit} described in more detail in Sec.~\ref{subsec:pidCuts}, following the definition provided in the Eq.~():
+The identification efficiency $\epsilon^{X}$ and misidentification probability $\lambda^{X\rightarrow Y}$ were calculated for each species using the pair selection cuts~\ref{enum:CutPidNoPtLimit} described in more detail in Sec.~\ref{subsec:pidCuts}, following the definitions provided in Eqs.~\eqref{eq:pidEff} and~\eqref{eq:pMisidProb}:\vspace*{-10pt}
 
-
+%
+\begin{tabulary}{\textwidth}{LL}
+\begin{equation}\label{eq:pidEff}
+ \epsilon^{X}(p^{\text{max}}, p^{\text{min}}) = \frac{N^{\text{reco}X}_{\text{true}X}(p^{\text{max}}, p^{\text{min}})}{N_{\text{true}X}(p^{\text{max}}, p^{\text{min}})},
+\end{equation}~~~~~~~~~~~~~~~~~~~~~
+&
+\begin{equation}\label{eq:pMisidProb}
+ \lambda^{X\rightarrow Y}(p^{\text{max}}, p^{\text{min}}) = \frac{N^{\text{reco}Y}_{\text{true}X}(p^{\text{max}}, p^{\text{min}})}{N_{\text{true}X}(p^{\text{max}}, p^{\text{min}})},
+\end{equation}~~~~~~~~~~~~~~~~~~~~~
+\end{tabulary}
+where $N_{\text{true}X}$ is number of $XX$ pairs, $N^{\text{reco}X}_{\text{true}X}$ is number of $XX$ pairs correctly recognized as $XX$, $N^{\text{reco}Y}_{\text{true}X}$ is number of $XX$ pairs misidentified as $YY$ and $p^{\text{max}}$ and $p^{\text{min}}$ are respectively higher and lower momentum of particles in the pair. The results as a function of $(p^{\text{max}}, p^{\text{min}})$ are presented in Fig.~\ref{fig:pidEffVsP} (Appendix~\ref{appendix:pidEff}). Here in Fig.~\ref{fig:pidEffVsPt} we show the same result but presented as a function of higher and lower transverse momentum of particles in the pair $(p_{\text{T}}^{\text{max}}, p_{\text{T}}^{\text{min}})$. This result clearly indicated necessity of adding a cut on the lower transverse momentum of particle in the pair for $K^{+}K^{-}$ and $p\bar{p}$, as above certain $p_{\text{T}}^{\text{min}}$ the identification efficiency drops to a very low level ($<10\%$). The cuts (\ref{enum:CutPidPtLimits}) are $p_{\text{T}}^{\text{min}}>0.7$~GeV for kaons and $p_{\text{T}}^{\text{min}}>1.1$~GeV for protons, indicated with dashed blue lines and arrows.
 
 %---------------------------
 
