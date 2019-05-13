@@ -416,7 +416,7 @@ Observation of high purification of CEP sample with described BBC-large veto in 
 % \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
 \centering%
 \includegraphics[width=0.475\linewidth,page=1]{graphics/eventSelection/NTofClusters.pdf}%
-% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/NTofClusters.pdf}%
+% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/NTofClusters.pdf}% 
 \caption{NTofClusters.}\label{fig:NTofClusters}%
 \end{figure}
 % \end{wrapfigure}
@@ -429,7 +429,7 @@ Particles were identified using combined information from the TPC ($dE/dx$) and 
 Compatibility of track $dE/dx$ with that expected from particle of type $X$ was determined using the quantity $n\sigma_{X}$ widely used at STAR, defined as
 \protect \begin{equation}\label{eq:nSigmaDef} n\sigma_{X} =  \ln{\left[(dE/dx)^\text{measured} / (dE/dx)_{X}^\text{theory}\right]}~~/~~\sigma_{dE/dx}, \end{equation}
 %
-where $(dE/dx)^\text{measured}$ is the ionization energy loss of the TPC track, $(dE/dx)_{X}^\text{theory}$ is the Bethe-Bloch~\cite{Bichsel} expectation for the given particle type ($X=\pi$, $K$, $p$) at reconstructed track momentum, and $\sigma_{dE/dx}$ is the statistical uncertainty of $\ln{(dE/dx)^\text{measured}}$. From $n\sigma_{X}$ of the two tracks the $\chi^{2}$ statistic for a $XX$ pair hypothesis was calculated:
+where $(dE/dx)^\text{measured}$ is the ionization energy loss of the TPC track, $(dE/dx)_{X}^\text{theory}$ is the Bethe-Bloch~\cite{Bichsel} expectation for the given particle type ($X=\pi$, $K$, $p$) at reconstructed track momentum, and $\sigma_{dE/dx}$ is the statistical uncertainty of $\ln{(dE/dx)^\text{measured}}$. Quantity $n\sigma_{X}$ is in fact a pull: $(dE/dx)^\text{measured}$ is (in first order) an average of $\text{Landau}\otimes\text{normal}$-distributed $dE/dx$ in signle TPC hits, hence according to the central limit theorem\footnote{Keeping in mind that it assumes finite mean and variance of the distribution that summed components follow.} the $(dE/dx)^\text{measured}$ is distributed log-normally and $\ln{(dE/dx)^\text{measured}}$ - normally. From $n\sigma_{X}$ of the two tracks the $\chi^{2}$ statistic for a $XX$ pair hypothesis was calculated:
 %
 \begin{equation}\label{eq:chiSqDef}\chi^{2}_{dE/dx}(XX) = \left(n\sigma_{X}^{\text{trk1}}\right)^{2} + \left(n\sigma_{X}^{\text{trk2}}\right)^{2}.\end{equation}
 %
@@ -452,9 +452,40 @@ In case the pair was neither recognized as $p\bar{p}$ or $K^{+}K^{-}$, it was as
 
 
 
-% %---------------------------
+
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:SqRootNSigma2D_a}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/eventSelection/pid/PidSelector_SqRootNSigma2D.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:SqRootNSigma2D_c}}{\includegraphics[width=1.05\linewidth,page=3]{graphics/eventSelection/pid/PidSelector_SqRootNSigma2D.pdf}}
+  \end{subfigure}
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{-13pt}
+                \subcaptionbox{\label{fig:SqRootNSigma2D_b}}{\includegraphics[width=1.05\linewidth,page=2]{graphics/eventSelection/pid/PidSelector_SqRootNSigma2D.pdf}}
+  \end{subfigure}\\
+  \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
+    \caption[$n\sigma^{\text{pair}}_{X}$ vs. $n\sigma^{\text{pair}}_{Y}$.]{Two-dimensional distributions of $n\sigma^{\text{pair}}_{\pi}$ vs.~$n\sigma^{\text{pair}}_{K}$ (\ref{fig:SqRootNSigma2D_a}), $n\sigma^{\text{pair}}_{\pi}$ vs.~$n\sigma^{\text{pair}}_{p}$ and $n\sigma^{\text{pair}}_{K}$ vs.~$n\sigma^{\text{pair}}_{p}$ for exclusive event candidates after full event selection except PID cuts (except cuts~\ref{enum:CutPid}). Dashed lines indicate the value of $n\sigma^{\text{pair}}$ which is used in pair identification~\ref{enum:CutPid} ($n\sigma^{\text{pair}}_{X}=9$ which is equivalent to $\chi^{2}(XX)=9$).}\label{fig:SqRootNSigma2D}
+  \end{minipage}
+}%
+
+\end{figure}
+%--------------------------- 
+
+
+In Fig.~\ref{fig:SqRootNSigma2D} we present two-dimensional distributions of $n\sigma^{\text{pair}}$ variables which help better undestand the behaviour and aim of $n\sigma^{\text{pair}}$ ($\chi^{2}$) cuts in Eqs.~\eqref{eq:pidPPbar}, \eqref{eq:pidKK}. Regions of enriched population of specific pair species are appropriately labeled. Similar connections between $n\sigma^{\text{pair}}$ and $m^{2}_{\text{TOF}}$ are shown in Fig.~\ref{fig:mSqVsNSigmaPair}.
+ 
+
+
+% %--------------------------- 
 % \begin{figure}[ht!]
-% \centering
+% \centering 
 % \parbox{0.315\textwidth}{
 %   \centering
 %   \begin{subfigure}[b]{\linewidth}{
@@ -496,30 +527,8 @@ In case the pair was neither recognized as $p\bar{p}$ or $K^{+}K^{-}$, it was as
 
 
 
-\begin{figure}[h]
-\centering
-\parbox{0.4725\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:SqRootNSigma2D_a}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/eventSelection/pid/PidSelector_SqRootNSigma2D.pdf}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:SqRootNSigma2D_c}}{\includegraphics[width=1.05\linewidth,page=3]{graphics/eventSelection/pid/PidSelector_SqRootNSigma2D.pdf}}
-  \end{subfigure}
-}%
-\quad\quad%
-\parbox{0.4725\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{-13pt}
-                \subcaptionbox{\label{fig:SqRootNSigma2D_b}}{\includegraphics[width=1.05\linewidth,page=2]{graphics/eventSelection/pid/PidSelector_SqRootNSigma2D.pdf}}
-  \end{subfigure}\\
-  \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
-    \caption[$n\sigma^{\text{pair}}_{X}$ vs. $n\sigma^{\text{pair}}_{Y}$.]{Two-dimensional distributions of $n\sigma^{\text{pair}}_{\pi}$ vs.~$n\sigma^{\text{pair}}_{K}$ (\ref{fig:SqRootNSigma2D_a}), $n\sigma^{\text{pair}}_{\pi}$ vs.~$n\sigma^{\text{pair}}_{p}$ and $n\sigma^{\text{pair}}_{K}$ vs.~$n\sigma^{\text{pair}}_{p}$ for exclusive event candidates after full event selection except PID cuts (except cuts~\ref{enum:CutPid}). Dashed lines indicate the value of $n\sigma^{\text{pair}}$ which is used in pair identification~\ref{enum:CutPid} ($n\sigma^{\text{pair}}=9$ which is equivalent to $\chi^{2}(XX)=9$).}\label{fig:SqRootNSigma2D}
-  \end{minipage}
-}%
 
-\end{figure}
-%--------------------------- 
+
 
 %%%%%%%%
 
@@ -541,7 +550,7 @@ In case the pair was neither recognized as $p\bar{p}$ or $K^{+}K^{-}$, it was as
 % \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/SqMassTof_proton.pdf}
 % % 
 % \caption{Raw distributions of $\chi^{2}_{dE/dx}$ (left column) and $m^{2}_{\text{TOF}}$ (right column) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) candidates after full event selection. Dashed red line and arrow indicate the value of cut imposed on plotted quantity to select exclusive pairs of given particle species.}
-% \label{fig:pid_plots}
+% \label{fig:pid_plots} 
 % \end{figure}
 
 
@@ -564,7 +573,7 @@ In case the pair was neither recognized as $p\bar{p}$ or $K^{+}K^{-}$, it was as
 \subsection{(\ref{enum:CutMissingPt})~Exclusivity cut (missing \texorpdfstring{$p_{T}$}{pT} cut)}
 
 
-\begin{figure}[ht!]
+\begin{figure}[ht!]\vspace*{-20pt}
   \centering
   \begin{tabular}{@{}p{0.47\linewidth}@{\quad\quad}p{0.47\linewidth}@{}}
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~a)}{graphics/eventSelection/exclusivity/PxCentralTrksVsProtons_pion.pdf} &
@@ -574,30 +583,28 @@ In case the pair was neither recognized as $p\bar{p}$ or $K^{+}K^{-}$, it was as
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~g)}{graphics/eventSelection/exclusivity/PxCentralTrksVsProtons_proton.pdf} &
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~i)}{graphics/eventSelection/exclusivity/PyCentralTrksVsProtons_proton.pdf}    
   \end{tabular}\vspace*{-5pt}
-    \caption[...]{Two-dimensional distributions of sum of forward protons momenta ($x$-axis) and sum of central tracks momenta ($y$-axis) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates after full event selection, except the exclusivity cut~\ref{enum:CutMissingPt}. Left and right column shows correlation of respectivelty $x$- and $y$-component of tracks' momenta.}\label{fig:PxPyCentralTrksVsProtons}
+    \caption[Two-dimensional distributions of sum of forward protons momenta and sum of central tracks momenta for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates.]{Two-dimensional distributions of sum of forward protons momenta ($x$-axis) and sum of central tracks momenta ($y$-axis) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates after full event selection, except the exclusivity cut~\ref{enum:CutMissingPt}. Left and right column shows correlation of respectivelty $x$- and $y$-component of tracks' momenta. Anti-diagonal representing perfect momentum balance of the central and forward system is limited with dashed lines extending by $\pm2.5\sigma$  ($\sigma\approx 30$~MeV) around the anti-diagonal. Three distinct horizontal regions in plots on the right hand side correspond to different forward proton configurations: elastic-like (protons in branches EU\&WD or ED\&WU, $\left|[\vec{p}^{\text{W}}_{p'}+\vec{p}^{\text{E}}_{p'}]_{y}\right| < 0.2$~GeV) and anti-elastic configuration (protons in branches ED\&WD or EU\&WU, $\left|[\vec{p}^{\text{W}}_{p'}+\vec{p}^{\text{E}}_{p'}]_{y}\right| > 0.4$~GeV).}\label{fig:PxPyCentralTrksVsProtons}
 \end{figure}
 
 
-% %---------------------------
-% \begin{figure}[ht!]
-% \centering
-% \parbox{0.4725\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:PxCentralTrksVsProtons_pion}}{\includegraphics[width=\linewidth]{graphics/eventSelection/PxCentralTrksVsProtons_pion.pdf}}}
-%   \end{subfigure}
-% }
-% \quad
-% \parbox{0.4725\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:PyCentralTrksVsProtons_pion}}{\includegraphics[width=\linewidth]{graphics/eventSelection/PyCentralTrksVsProtons_pion.pdf}}}
-%   \end{subfigure}
-% }%
-% \caption{Correlation between sum of corresponding momentum components ($x$ in Fig.~\ref{fig:PxCentralTrksVsProtons_pion} and $y$ in Fig.~\ref{fig:PyCentralTrksVsProtons_pion}) of Roman Pot proton tracks and TPC tracks.}
-% \end{figure}
-% Tutaj dodac rysunki z suma 1D tych wielkosci i uzasadnic stosowanie ciecia na missing pT takimi samymi rozdzielczosciami w x i y
-%---------------------------
+
+
+\begin{figure}[ht!]
+  \centering
+  \begin{tabular}{@{}p{0.49\linewidth}@{\quad\quad}p{0.49\linewidth}@{}}
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~a)}{graphics/eventSelection/exclusivity/MissingPx_pion.pdf} &
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~b)}{graphics/eventSelection/exclusivity/MissingPy_pion.pdf} \\
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~c)}{graphics/eventSelection/exclusivity/MissingPx_kaon.pdf} &
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~d)}{graphics/eventSelection/exclusivity/MissingPy_kaon.pdf} \\
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~e)}{graphics/eventSelection/exclusivity/MissingPx_proton.pdf} &
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~f)}{graphics/eventSelection/exclusivity/MissingPy_proton.pdf}    
+  \end{tabular}\vspace*{-5pt}
+    \caption[Raw distributions of $p_{x}^{\text{miss}}$ and $p_{y}^{\text{miss}}$ for exclusive $\pi^+\pi^-$, $K^+K^-$ and $p\bar{p}$candidates.]{%
+    Raw distributions of $p_{x}^{\text{miss}}$ (left column) and $p_{y}^{\text{miss}}$ (right column) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) candidates after full event selection, except exclusivity cut~\ref{enum:CutMissingPt}. Solid red line represents the fit of sum of two Gaussian functions representing the exclusive event signal (orange) and non-exclusive background (violet). Parameters of the total momentum resolution for signal events obtained from the fit (given in the plots) roughly agree between all species.
+    }\label{fig:MissingPxPy}
+\end{figure}
+
+
 
 
 %---------------------------

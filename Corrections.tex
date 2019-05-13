@@ -41,7 +41,8 @@
 
 In this section we present calculation of all efficiencies except TPC track reconstruction and TOF hit reconstruction and matching efficiency, which were discussed and presented in Ref.~\cite{supplementaryNote}.
 
-\subsection{Trigger efficiency}\label{sec:triggerEff}
+\subsection{Trigger efficiency}\label{sec:triggerEff} 
+\subsubsection{Online TOF efficiency}\label{sec:tofOnlineEff}
 \subsubsection{Online veto (BBC-small and ZDC veto)}\label{sec:onlineVetoEff}
 
 Vetoeing signal in BBC-small and ZDC detectors on both sides of STAR was implemented in the logic of RP\_CPT2 trigger. Common correction of the online and offline vetoes which is used in the correction procedure explained in Sec.~\ref{sec:correctionProcedure} is presented in. Sec.~\ref{sec:onlineAndOfflineVetoEff}. However, to help quantifiy effect of just the online vetoes in BBC-small and ZDCs we show the Fig.~\ref{fig:onlineVetoEff} with the efficiency of the joint BBC-small and ZDC veto as a function of the instantaneous luminosity calculated from the zero-bias data. Details of the way the efficiency was calculated as well as description of the data in the Figure is the same as explained in Sec.~\ref{sec:onlineAndOfflineVetoEff}.
@@ -123,7 +124,7 @@ The efficiency of the discussed veto which is finally used to correct the data i
 
 
 
-\subsection{Selection efficiency}\label{sec:cutsEff}
+\subsection{Reconstruction and selection efficiency}\label{sec:cutsEff}
 \subsubsection{TPC \texorpdfstring{$z$}{z}-vertex cut~(\ref{enum:CutZVx})}
 
 Removing from analysis specific range of $z$-positions of primary vertices effectively reduces accepted luminosity with respect to that delivered by the collider. This loss of luminosity has to be accounted when calculating the cross sections, which is the goal of presented analysis. Assuming that the distribution of $z_{\text{vtx}}$ of all primary interactions that take place when east and west beams overlap follows a normal distribution ($\mathcal{N}$), then the formula describing efficiency of the cut~\ref{enum:CutZVx} has the following form:
@@ -277,7 +278,7 @@ The identification efficiency $\epsilon^{X}$ and misidentification probability $
  \lambda^{X\rightarrow Y}(p^{\text{max}}, p^{\text{min}}) = \frac{N^{\text{reco}Y}_{\text{true}X}(p^{\text{max}}, p^{\text{min}})}{N_{\text{true}X}(p^{\text{max}}, p^{\text{min}})},
 \end{equation}~~~~~~~~~~~~~~~~~~~~~
 \end{tabulary}
-where $N_{\text{true}X}$ is number of $XX$ pairs, $N^{\text{reco}X}_{\text{true}X}$ is number of $XX$ pairs correctly recognized as $XX$, $N^{\text{reco}Y}_{\text{true}X}$ is number of $XX$ pairs misidentified as $YY$ and $p^{\text{max}}$ and $p^{\text{min}}$ are respectively higher and lower momentum of particles in the pair. The results as a function of $(p^{\text{max}}, p^{\text{min}})$ are presented in Fig.~\ref{fig:pidEffVsP} (Appendix~\ref{appendix:pidEff}). Here in Fig.~\ref{fig:pidEffVsPt} we show the same result but presented as a function of higher and lower transverse momentum of particles in the pair $(p_{\text{T}}^{\text{max}}, p_{\text{T}}^{\text{min}})$. This result clearly indicated necessity of adding a cut on the lower transverse momentum of particle in the pair for $K^{+}K^{-}$ and $p\bar{p}$, as above certain $p_{\text{T}}^{\text{min}}$ the identification efficiency drops to a very low level ($<10\%$). The cuts (\ref{enum:CutPidPtLimits}) are $p_{\text{T}}^{\text{min}}>0.7$~GeV for kaons and $p_{\text{T}}^{\text{min}}>1.1$~GeV for protons, indicated with dashed blue lines and arrows.
+where $N_{\text{true}X}$ is number of $XX$ pairs, $N^{\text{reco}X}_{\text{true}X}$ is number of $XX$ pairs correctly recognized as $XX$, $N^{\text{reco}Y}_{\text{true}X}$ is number of $XX$ pairs misidentified as $YY$ and $p^{\text{max}}$ and $p^{\text{min}}$ are respectively higher and lower momentum of particles in the pair. The results as a function of $(p^{\text{max}}, p^{\text{min}})$ are presented in Fig.~\ref{fig:pidEffVsP} (Appendix~\ref{appendix:pidEff}). Here in Fig.~\ref{fig:pidEffVsPt} we show the result presented as a function of higher and lower transverse momentum of particles in the pair $(p_{\text{T}}^{\text{max}}, p_{\text{T}}^{\text{min}})$. This result clearly indicated necessity of adding a cut on the lower transverse momentum of particle in the pair for $K^{+}K^{-}$ and $p\bar{p}$, as above certain $p_{\text{T}}^{\text{min}}$ the identification efficiency drops to a very low level ($<10\%$). The cuts (\ref{enum:CutPidPtLimits}) are $p_{\text{T}}^{\text{min}}>0.7$~GeV for kaons and $p_{\text{T}}^{\text{min}}>1.1$~GeV for protons, indicated with dashed blue lines and arrows.
 
 %---------------------------
 
@@ -436,3 +437,6 @@ This new momentum was further used in determination of total transverse momentum
 % 
 % 
 % Jakies uwagi?
+
+
+\section{Closure tests}\label{sec:closureTests}
