@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.2.5}(\ref {enum:CutBbcLarge})\nobreakspace {}BBC-large signal veto}{14}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}(\ref {enum:CutTofClusters})\nobreakspace {}TOF clusters limit}{16}{subsection.3.2.6}
 \contentsline {subsection}{\numberline {3.2.7}(\ref {enum:CutPid})\nobreakspace {}Particle identification}{17}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{T}$ cut)}{21}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.8}(\ref {enum:CutMissingPt})\nobreakspace {}Exclusivity cut (missing $p_{\text {T}}$ cut)}{21}{subsection.3.2.8}
 \contentsline {chapter}{\numberline {4}Backgrounds}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Sources of background}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Non-exclusive background}{25}{subsection.4.1.1}

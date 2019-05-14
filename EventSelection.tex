@@ -17,7 +17,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
  \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\text{vx}}|<80$~cm.\label{enum:CutZVx}
  \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}), reconstructed within kinematic region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}), with small distance of closest approach (DCA) to the vertex~(\ref{enum:TpcDcaCuts}) and high proximity to each other at the beamline~(\ref{enum:TpcDeltaZ0Cut}).\label{enum:CutTpcTrks}
     \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
-      \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks and no addional primary tracks matched with BEMC clusters,\label{enum:TpcTofMatched}
+      \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks and no additional primary tracks matched with BEMC clusters,\label{enum:TpcTofMatched}
       \itemm Tracks are of opposite signs,\label{enum:TpcOppoSign}
       \itemm Both tracks are contained within the kinematic range:\label{enum:TpcKinematicCuts}\hspace*{13pt}
       $|\eta|<0.7$,~~~~$p_{T}>0.2~\text{GeV}/c$,
@@ -30,7 +30,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
     \end{enumerate}
  \itemm Exactly 1 RP track on each side of STAR central detector~(\ref{enum:RpOneTrkPerSide}) of good quality~(\ref{enum:RpQualityCuts}), with local angles consistent with the IP being the track origin~(\ref{enum:RpLocalAngles}), lying within fiducial region of high geometrical acceptance~(\ref{enum:RpFiducial}).\label{enum:CutRpTrks}
       \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
-      \itemm RP tracks contain only track-points with at least 3 (out of 4) planes used in reconstrucion,\label{enum:RpQualityCuts}
+      \itemm RP tracks contain only track-points with at least 3 (out of 4) planes used in reconstruction,\label{enum:RpQualityCuts}
       \itemm Local angles ($\theta_{x}^{\text{RP}}$, $\theta_{y}^{\text{RP}}$) consistent with expectation for protons originating from the IP\label{enum:RpLocalAngles}%
       \[-2~\text{mrad}<\theta_{x}^{\text{RP}}-x^{\text{RP}}/|z^{\text{RP}}|<4~\text{mrad},~~~~~-2~\text{mrad}<\theta_{y}^{\text{RP}}-y^{\text{RP}}/|z^{\text{RP}}|<2~\text{mrad},\]
       \itemm Exactly 1 track passing cuts \ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles} per side,\label{enum:RpOneTrkPerSide}
@@ -67,7 +67,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 
 \section{Description of cuts}\label{sec:descriptionOfCuts}
 \subsection{(\ref{enum:CutPrimVx},\ref{enum:CutZVx})~Primary vertex and its \texorpdfstring{$z$}{z}-position}
-As it was designed in the trigger logic, we aim to perform CEP analysis in a clean, pile-up-free environment, therefore we cut on primary vertex multiplicty~(Fig.~\ref{fig:NumberOfPrimaryVertices}) to reject events with more than one interaction per bunch crossing. We require exactly one primary vertex containing TPC tracks matched with hits in TOF (matching of the track with hit in TOF is identified with the TOF match flag being different from 0). Later in the text we refer to such events as a single ``TOF vertex`` events.
+As it was designed in the trigger logic, we aim to perform CEP analysis in a clean, pile-up-free environment, therefore we cut on primary vertex multiplicity~(Fig.~\ref{fig:NumberOfPrimaryVertices}) to reject events with more than one interaction per bunch crossing. We require exactly one primary vertex containing TPC tracks matched with hits in TOF (matching of the track with hit in TOF is identified with the TOF match flag being different from 0). Later in the text we refer to such events as a single ``TOF vertex`` events.
 
 %---------------------------
 \begin{figure}[ht!]%
@@ -75,7 +75,7 @@ As it was designed in the trigger logic, we aim to perform CEP analysis in a cle
 \begin{minipage}{.4725\textwidth}%
   \centering%
   \includegraphics[width=\linewidth]{graphics/eventSelection/NumberOfPrimaryVertices.pdf}%
-  \caption{Primary vertex multiplicty. Red arrow marks bin with events with exactly one primary vertex (with track(s) matched with hit in TOF), which are used in physics analysis.}\label{fig:NumberOfPrimaryVertices}
+  \caption{Primary vertex multiplicity. Red arrow marks bin with events with exactly one primary vertex (with track(s) matched with hit in TOF), which are used in physics analysis.}\label{fig:NumberOfPrimaryVertices}
 \end{minipage}%
 \quad\quad%
 \begin{minipage}{.4725\textwidth}%
@@ -109,7 +109,7 @@ The single TOF vertex is required to be placed within a range $(-80~\text{cm},~8
 
 \subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
 
-The TPC track selection starts from the selection of events with exactly two primary tracks matched with hit in TOF~(Fig.~\ref{fig:NumberOfTofTracksInSingleTofVertex}). Matching with TOF guarantee that analyzed tracks originate from the triggered bunch crossing (ensures that tracks are ''in-time``). It is in accordance with the trigger logic which required at least 2 L0 TOF hits, as well as it enables more accurate particle identification with merged time-of-flight and $dE/dx$ method, comparing to sole usage of $dE/dx$. Primary tracks not matched with hit in TOF, whose average multiplicty in single TOF vertex is $\sim$8, are hardly distinguished between real and fake (off-time) tracks, which is an additional reason for not analyzing events with only one TOF-matched primary TPC track (the other track might be unmatched due to TOF inefficiency).
+The TPC track selection starts from the selection of events with exactly two primary tracks matched with hit in TOF~(Fig.~\ref{fig:NumberOfTofTracksInSingleTofVertex}). Matching with TOF guarantee that analyzed tracks originate from the triggered bunch crossing (ensures that tracks are ''in-time``). It is in accordance with the trigger logic which required at least 2 L0 TOF hits, as well as it enables more accurate particle identification with merged time-of-flight and $dE/dx$ method, comparing to sole usage of $dE/dx$. Primary tracks not matched with hit in TOF, whose average multiplicity in single TOF vertex is $\sim$8, are hardly distinguished between real and fake (off-time) tracks, which is an additional reason for not analyzing events with only one TOF-matched primary TPC track (the other track might be unmatched due to TOF inefficiency).
 
 %---------------------------
 \begin{figure}[t!]%
@@ -134,7 +134,7 @@ Primary TPC tracks from the single TOF vertex which are matched with TOF are all
 \end{equation}
 is less than $R^{\text{match}}_{\text{max}} = 0.05$. Distribution of the distance between the primary TPC track and the closest BEMC cluster is shown in~Fig.~\ref{fig:Rmin}.
 
-However, if there are any primary TPC tracks matched with BEMC cluster and not matched with TOF in the single TOF vertex with two TOF-matched tracks, an event is rejected. Such configuration implies higher-than-2 multiplicty of the real tracks in the vertex, hence an event is unlikely a Central Exclusive Production of two particles.
+However, if there are any primary TPC tracks matched with BEMC cluster and not matched with TOF in the single TOF vertex with two TOF-matched tracks, an event is rejected. Such configuration implies higher-than-2 multiplicity of the real tracks in the vertex, hence an event is unlikely a Central Exclusive Production of two particles.
 
 
 
@@ -158,7 +158,7 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
   \end{subfigure}\\
   \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
     \caption[Comparison of distribution of $N_{\text{hits}}^{\text{fit}}$,~$N_{\text{hits}}^{\text{dE/dx}}$ and $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ in the data and embedded MC]
-    {Comparison of distribution of the number of hits used in TPC track reconstrucion $N_{\text{hits}}^{\text{fit}}$ (\ref{fig:NHitsFit}), number of hits used in specific energy loss reconstrucion $N_{\text{hits}}^{\text{dE/dx}}$ (\ref{fig:NHits_dEdx}) and fraction of number of hits potentially generated by the track and finally used in the reconstrucion $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ (\ref{fig:NHitsFit_to_NHitsPos}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed line and red arrow indicate the range of each quantity which is accepted in analysis.}\label{fig:NHits}
+    {Comparison of distribution of the number of hits used in TPC track reconstruction $N_{\text{hits}}^{\text{fit}}$ (\ref{fig:NHitsFit}), number of hits used in specific energy loss reconstruction $N_{\text{hits}}^{\text{dE/dx}}$ (\ref{fig:NHits_dEdx}) and fraction of number of hits potentially generated by the track and finally used in the reconstruction $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ (\ref{fig:NHitsFit_to_NHitsPos}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed line and red arrow indicate the range of each quantity which is accepted in analysis.}\label{fig:NHits}
   \end{minipage}
 }%
 
@@ -289,7 +289,7 @@ In CEP tracks in the central detector and tracks in Roman Pots originate from th
 \begin{equation}
 z_{\text{vtx}}^{\text{RP}} = c\cdot\frac{t^{\text{RP}}_{\text{W}} - t^{\text{RP}}_{\text{E}}}{2}
 \end{equation}
-independently from TPC, which allows their comparison and rejection of the background if the two values disagree. Time of detection of proton in RP is provided in StMuRpsTrack object - it is an average of all TAC values from PMTs in RPs used to form a track, corrected for the slewing effect and adjusted to have the best correlation with the $z$-position of the vertex measured in TPC, translated to unit of time (all these steps are done at the level of raw data reconstrucion). In Fig.~\ref{fig:zVertexRpTpc} the comparisons of the $z_{\text{vtx}}^{\text{RP}}$ and $z_{\text{vtx}}^{\text{TPC}}$ are shown with some preselection cuts applied. A clear signal from the Central Diffraction (and thus CEP) process is manifesting in high correlation of the two values (diagonal in Fig.~\ref{fig:zVertexRpVsTpc}) or significant and relatively narrow peak centered at 0 for the difference of two values (Fig.~\ref{fig:zVertexRpMinusZVertexTpc}). %
+independently from TPC, which allows their comparison and rejection of the background if the two values disagree. Time of detection of proton in RP is provided in StMuRpsTrack object - it is an average of all TAC values from PMTs in RPs used to form a track, corrected for the slewing effect and adjusted to have the best correlation with the $z$-position of the vertex measured in TPC, translated to unit of time (all these steps are done at the level of raw data reconstruction). In Fig.~\ref{fig:zVertexRpTpc} the comparisons of the $z_{\text{vtx}}^{\text{RP}}$ and $z_{\text{vtx}}^{\text{TPC}}$ are shown with some preselection cuts applied. A clear signal from the Central Diffraction (and thus CEP) process is manifesting in high correlation of the two values (diagonal in Fig.~\ref{fig:zVertexRpVsTpc}) or significant and relatively narrow peak centered at 0 for the difference of two values (Fig.~\ref{fig:zVertexRpMinusZVertexTpc}). %
 %---------------------------
 \begin{figure}[ht!]
 \centering
@@ -429,11 +429,11 @@ Particles were identified using combined information from the TPC ($dE/dx$) and 
 Compatibility of track $dE/dx$ with that expected from particle of type $X$ was determined using the quantity $n\sigma_{X}$ widely used at STAR, defined as
 \protect \begin{equation}\label{eq:nSigmaDef} n\sigma_{X} =  \ln{\left[(dE/dx)^\text{measured} / (dE/dx)_{X}^\text{theory}\right]}~~/~~\sigma_{dE/dx}, \end{equation}
 %
-where $(dE/dx)^\text{measured}$ is the ionization energy loss of the TPC track, $(dE/dx)_{X}^\text{theory}$ is the Bethe-Bloch~\cite{Bichsel} expectation for the given particle type ($X=\pi$, $K$, $p$) at reconstructed track momentum, and $\sigma_{dE/dx}$ is the statistical uncertainty of $\ln{(dE/dx)^\text{measured}}$. Quantity $n\sigma_{X}$ is in fact a pull: $(dE/dx)^\text{measured}$ is (in first order) an average of $\text{Landau}\otimes\text{normal}$-distributed $dE/dx$ in signle TPC hits, hence according to the central limit theorem\footnote{Keeping in mind that it assumes finite mean and variance of the distribution that summed components follow.} the $(dE/dx)^\text{measured}$ is distributed log-normally and $\ln{(dE/dx)^\text{measured}}$ - normally. From $n\sigma_{X}$ of the two tracks the $\chi^{2}$ statistic for a $XX$ pair hypothesis was calculated:
+where $(dE/dx)^\text{measured}$ is the ionization energy loss of the TPC track, $(dE/dx)_{X}^\text{theory}$ is the Bethe-Bloch~\cite{Bichsel} expectation for the given particle type ($X=\pi$, $K$, $p$) at reconstructed track momentum, and $\sigma_{dE/dx}$ is the statistical uncertainty of $\ln{(dE/dx)^\text{measured}}$. Quantity $n\sigma_{X}$ is in fact a pull: $(dE/dx)^\text{measured}$ is (in first order) an average over $\text{Landau}\otimes\text{normal}$-distributed $dE/dx$ of single TPC hits forming the track, hence according to the central limit theorem\footnote{Keeping in mind that it assumes finite mean and variance of the distribution that summed components follow.} the $(dE/dx)^\text{measured}$ is distributed log-normally and $\ln{(dE/dx)^\text{measured}}$ - normally. From $n\sigma_{X}$ of the two tracks the $\chi^{2}$ statistic for a $XX$ pair hypothesis was calculated:
 %
 \begin{equation}\label{eq:chiSqDef}\chi^{2}_{dE/dx}(XX) = \left(n\sigma_{X}^{\text{trk1}}\right)^{2} + \left(n\sigma_{X}^{\text{trk2}}\right)^{2}.\end{equation}
 %
-Sometimes we also quote $n\sigma^{\text{pair}}$ quantity connected with $\chi^{2}$ through relation
+Sometimes we also quote $n\sigma^{\text{pair}}$ quantity (which is no longer a Gaussian pull) connected with $\chi^{2}$ through relation
 %
 \begin{equation}\label{eq:nSigmaPairDef}n\sigma^{\text{pair}}_{X} = \sqrt{\chi^{2}_{dE/dx}(XX)} = \sqrt{\left(n\sigma_{X}^{\text{trk1}}\right)^{2} + \left(n\sigma_{X}^{\text{trk2}}\right)^{2}}.\end{equation}
 %
@@ -570,7 +570,40 @@ In Fig.~\ref{fig:SqRootNSigma2D} we present two-dimensional distributions of $n\
 
 %---------------------------------------------------------------------------------------------------------------
 
-\subsection{(\ref{enum:CutMissingPt})~Exclusivity cut (missing \texorpdfstring{$p_{T}$}{pT} cut)}
+\subsection{(\ref{enum:CutMissingPt})~Exclusivity cut (missing \texorpdfstring{$p_{\text{T}}$}{pT} cut)}
+
+The most important cut which is used in this analysis to select events of exclusively produced pairs of particles is the missing transverse momentum, or the total transverse momentum cut. It benefits from detection and reconstruction of the forward proton in RP detectors - a rare capability among high energy physics experiments which STAR provides. The observable $p_{\text{T}}^{\text{miss}}$ used to select exclusive event is defined as
+\begin{equation}\label{eq:missingPt}
+ p_{\text{T}}^{\text{miss}} = \Big( \vec{p}_{p'}^{\hspace*{2pt}\text{E}} + \vec{p}_{h^{+}} + \vec{p}_{h^{-}} + \vec{p}_{p'}^{\hspace*{2pt}\text{W}} \Big)_{\text{T}} = \sqrt{\Big(p_{x}^{\text{miss}}\Big)^{2} + \Big(p_{y}^{\text{miss}}\Big)^{2}},
+\end{equation}
+with the other total momentum components defined analogously:\\
+\begin{tabulary}{\textwidth}{LL}
+\begin{equation}\label{eq:missingPx}
+ p_{x}^{\text{miss}} = \Big( \vec{p}_{p'}^{\hspace*{2pt}\text{E}} + \vec{p}_{h^{+}} + \vec{p}_{h^{-}} + \vec{p}_{p'}^{\hspace*{2pt}\text{W}} \Big)_{x},
+\end{equation}~~~~~~~~~~~~~~~~~~~~~
+&
+\begin{equation}\label{eq:missingPy}
+ p_{y}^{\text{miss}} = \Big( \vec{p}_{p'}^{\hspace*{2pt}\text{E}} + \vec{p}_{h^{+}} + \vec{p}_{h^{-}} + \vec{p}_{p'}^{\hspace*{2pt}\text{W}} \Big)_{y}.
+\end{equation}~~~~~~~~~~~~~~~~~~~~~
+\end{tabulary}
+
+
+Figure~\ref{fig:PxPyCentralTrksVsProtons} visualize the (anti-)correlation between the momentum components of the forward system (sum of forward protons momenta) and the central system (sum of central tracks momenta). The enhanced band at anti-diagonal restricted by dashed lines contains events balanced in momentum, a signature of exclusivity. Events outside this band are the non exclusive backgrounds, in most cases Central Diffraction events with some particles undected (due to detector inefficiency or produced outside acceptance). Slight horizontal enhancement in all distributions around $[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{x} = [\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{x} =0$ is a signature of the elastic proton-proton scattering background with some non-elastic pile-up interaction which mimics the CEP event. All these backgrounds are reasonably low after the exclusivity cut, as described in Sec.~\ref{sec:nonExclBkgd}.
+
+The momentum balance is shown one-dimensionally in Fig.~\ref{fig:MissingPxPy}, with the sum of $x$- and $y$-components of momentum shown repectively in the left and right column for each analyzed particle species. The sum of signal and background (both assumed to be described a Gaussian) was fitted to $p_{x}^{\text{miss}}$ and $p_{y}^{\text{miss}}$ distributions. Results of the fit are given in each subfigure. One can notice that the widths of Gaussian functions representing the exclusive signal are consistent among species and amount $\sigma_{p_{x}^{\text{miss}}}=27.4$~MeV for the $x$-component of total momentum, and $\sigma_{p_{y}^{\text{miss}}}=28.1$~MeV for the $y$-component of total momentum, taking the values of the lowest statistical uncertainty - for $\pi^{+}\pi^{-}$. These values are measures of the total momentum resolution respectivelty for $p_{x}^{\text{miss}}$ and $p_{y}^{\text{miss}}$. Having these number it is possible to form an elliptical on the missing momentum:
+
+\begin{equation}\label{eq:ptMissEllipse}%
+\left(\frac{p_{x}^{\text{miss}}}{\sigma_{p_{x}^{\text{miss}}}}\right)^{2} + \left(\frac{p_{y}^{\text{miss}}}{\sigma_{p_{y}^{\text{miss}}}}\right)^{2} < n_{\text{cut}}^{2}
+\end{equation}
+%
+where $n_{\text{cut}}$ is the parameter denoting radius of limiting ellipsis in units of standard deviations of distributions of total momentum components (resolutions). Since these resolutions are nearly identical ($\sigma_{p_{x}^{\text{miss}}} = \sigma_{p_{y}^{\text{miss}}} = \sigma_{p_{x,y}^{\text{miss}}}$) such cut can be reduced (multiplying Ineq.~\ref{eq:ptMissEllipse} by $\sigma_{p_{x,y}^{\text{miss}}}^{2}$) to one-dimensional cut on a single quantity:
+
+\begin{equation}%
+\left(p_{x}^{\text{miss}}\right)^{2} + \left(p_{y}^{\text{miss}}\right)^{2} < \Big(n_{\text{cut}}\cdot\sigma_{p_{x,y}^{\text{miss}}}\Big)^{2}~~~~~~~\xrightarrow[~]{\sqrt{~}}~~~~~~~p_{\text{T}}^{\text{miss}} < n_{\text{cut}}\cdot\sigma_{p_{x,y}^{\text{miss}}}~~~~
+\end{equation}%
+%
+In current analysis the $n_{\text{cut}}$ was set to 2.5, which translates to threshold value $2.5\times 30~\text{MeV} = 75$~MeV.
+
 
 
 \begin{figure}[ht!]\vspace*{-20pt}
@@ -583,7 +616,7 @@ In Fig.~\ref{fig:SqRootNSigma2D} we present two-dimensional distributions of $n\
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~g)}{graphics/eventSelection/exclusivity/PxCentralTrksVsProtons_proton.pdf} &
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~i)}{graphics/eventSelection/exclusivity/PyCentralTrksVsProtons_proton.pdf}    
   \end{tabular}\vspace*{-5pt}
-    \caption[Two-dimensional distributions of sum of forward protons momenta and sum of central tracks momenta for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates.]{Two-dimensional distributions of sum of forward protons momenta ($x$-axis) and sum of central tracks momenta ($y$-axis) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates after full event selection, except the exclusivity cut~\ref{enum:CutMissingPt}. Left and right column shows correlation of respectivelty $x$- and $y$-component of tracks' momenta. Anti-diagonal representing perfect momentum balance of the central and forward system is limited with dashed lines extending by $\pm2.5\sigma$  ($\sigma\approx 30$~MeV) around the anti-diagonal. Three distinct horizontal regions in plots on the right hand side correspond to different forward proton configurations: elastic-like (protons in branches EU\&WD or ED\&WU, $\left|[\vec{p}^{\text{W}}_{p'}+\vec{p}^{\text{E}}_{p'}]_{y}\right| < 0.2$~GeV) and anti-elastic configuration (protons in branches ED\&WD or EU\&WU, $\left|[\vec{p}^{\text{W}}_{p'}+\vec{p}^{\text{E}}_{p'}]_{y}\right| > 0.4$~GeV).}\label{fig:PxPyCentralTrksVsProtons}
+    \caption[Two-dimensional distributions of sum of forward protons momenta and sum of central tracks momenta for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates.]{Two-dimensional distributions of sum of forward protons momenta ($x$-axis) and sum of central tracks momenta ($y$-axis) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates after full event selection, except the exclusivity cut~\ref{enum:CutMissingPt}. Left and right column shows correlation of respectivelty $x$- and $y$-component of tracks' momenta. Anti-diagonal representing perfect momentum balance of the central and forward system is limited with dashed lines extending by $\pm2.5\sigma$  ($\sigma\approx 30$~MeV) around the anti-diagonal. Three distinct horizontal regions in plots on the right hand side correspond to different forward proton configurations: elastic-like (protons in branches EU\&WD or ED\&WU, $\left|[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{y}\right| < 0.2$~GeV) and anti-elastic configuration (protons in branches ED\&WD or EU\&WU, $\left|[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{y}\right| > 0.4$~GeV).}\label{fig:PxPyCentralTrksVsProtons}
 \end{figure}
 
 

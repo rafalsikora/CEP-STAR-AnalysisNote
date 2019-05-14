@@ -5,7 +5,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Sketch of the trigger components used in definitions of diffractive triggers in run 15.\relax }}{7}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Primary vertex multiplicty. Red arrow marks bin with events with exactly one primary vertex (with track(s) matched with hit in TOF), which are used in physics analysis.\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Primary vertex multiplicity. Red arrow marks bin with events with exactly one primary vertex (with track(s) matched with hit in TOF), which are used in physics analysis.\relax }}{10}{figure.caption.8}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces $z$-position of the primary vertex in single TOF vertex events. Red dashed line indicate range of longitudinal vertex position accepted in analysis.\newline \relax }}{10}{figure.caption.8}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Multiplicty of primary TPC tracks matched with hit in TOF for single TOF vertex events}}{11}{figure.caption.9}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of a distance in $\eta -\phi $ space between the BEMC cluster closest to primary TPC track ($R_{\text {min}}$)}}{11}{figure.caption.9}
