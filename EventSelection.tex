@@ -129,7 +129,7 @@ The TPC track selection starts from the selection of events with exactly two pri
 %---------------------------
 
 Primary TPC tracks from the single TOF vertex which are matched with TOF are allowed to be also matched with BEMC clusters. Matching with BEMC cluster is claimed if the distance in $\eta-\phi$ space between the BEMC cluster position $(\eta_{\text{clus}},~\phi_{\text{clus}})$ and projected position of the track in BEMC $(\eta_{\text{proj}},~\phi_{\text{proj}})$, defined as
-\begin{equation}
+\begin{equation}\label{eq:etaPhiR}
  R=\sqrt{(\eta_{\text{clus}}-\eta_{\text{proj}})^{2} + (\phi_{\text{clus}}-\phi_{\text{proj}})^{2}},
 \end{equation}
 is less than $R^{\text{match}}_{\text{max}} = 0.05$. Distribution of the distance between the primary TPC track and the closest BEMC cluster is shown in~Fig.~\ref{fig:Rmin}.
@@ -411,6 +411,14 @@ Observation of high purification of CEP sample with described BBC-large veto in 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{(\ref{enum:CutTofClusters})~TOF clusters limit}
 
+The TOF is mainly used to distinguish real TPC tracks from the fakes, as well as it helps to identify particles. However, we also used it to reject non-CEP events in which the TPC tracks were not reconstructed or were not successfully matched to TOF hit. For this we introduced a concept of a TOF cluster - a group of offline TOF hits close in space and time. We expect that such cluster of hits is induced by the single primary particle, eventually associated with the secondaries (e.g. delta rays).
+
+We define a TOF cluster as a group of reconstructed TOF hits with the ($\phi$, $\eta$) space distance $R$ to neighbouring hit (defined similarly to Eq.~\eqref{eq:etaPhiR} not larger than 0.1 and with the time distance to the same hit $\Delta t$ not larger than 1.5~ns. In other words, TOF clusters are formed by the offline hits that form at least one pair with the other hit in the cluster satisfying
+\begin{equation}
+ R<0.1,~~~~~~\Delta t<1.5~\text{ns}.
+\end{equation}
+Per event no more than 1 additional TOF cluster was allowed, thus in total the number of reconstructed TOF clusters $N^{\text{TOF}}_{\text{clstrs}}$ could not exceed 3.
+
 %---------------------------
 \begin{figure}[ht!]
 % \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
@@ -588,7 +596,7 @@ with the other total momentum components defined analogously:\\
 \end{tabulary}
 
 
-Figure~\ref{fig:PxPyCentralTrksVsProtons} visualize the (anti-)correlation between the momentum components of the forward system (sum of forward protons momenta) and the central system (sum of central tracks momenta). The enhanced band at anti-diagonal restricted by dashed lines contains events balanced in momentum, a signature of exclusivity. Events outside this band are the non exclusive backgrounds, in most cases Central Diffraction events with some particles undected (due to detector inefficiency or produced outside acceptance). Slight horizontal enhancement in all distributions around $[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{x} = [\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{x} =0$ is a signature of the elastic proton-proton scattering background with some non-elastic pile-up interaction which mimics the CEP event. All these backgrounds are reasonably low after the exclusivity cut, as described in Sec.~\ref{sec:nonExclBkgd}.
+Figure~\ref{fig:PxPyCentralTrksVsProtons} visualize the (anti-)correlation between the momentum components of the forward system (sum of two forward protons momenta) and the central system (sum of two central tracks momenta). The enhanced band at anti-diagonal restricted by dashed lines contains events balanced in momentum, a signature of exclusivity. Events outside this band are the non exclusive backgrounds, in most cases Central Diffraction events with some particles undected (due to detector inefficiency or produced outside acceptance). Slight horizontal enhancement in all distributions around $[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{x} = [\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{x} =0$ is a signature of the elastic proton-proton scattering background with some non-elastic pile-up interaction which mimics the CEP event. All these backgrounds are reasonably low after the exclusivity cut, as described in Sec.~\ref{sec:nonExclBkgd}.
 
 The momentum balance is shown one-dimensionally in Fig.~\ref{fig:MissingPxPy}, with the sum of $x$- and $y$-components of momentum shown repectively in the left and right column for each analyzed particle species. The sum of signal and background (both assumed to be described a Gaussian) was fitted to $p_{x}^{\text{miss}}$ and $p_{y}^{\text{miss}}$ distributions. Results of the fit are given in each subfigure. One can notice that the widths of Gaussian functions representing the exclusive signal are consistent among species and amount $\sigma_{p_{x}^{\text{miss}}}=27.4$~MeV for the $x$-component of total momentum, and $\sigma_{p_{y}^{\text{miss}}}=28.1$~MeV for the $y$-component of total momentum, taking the values of the lowest statistical uncertainty - for $\pi^{+}\pi^{-}$. These values are measures of the total momentum resolution respectivelty for $p_{x}^{\text{miss}}$ and $p_{y}^{\text{miss}}$. Having these number it is possible to form an elliptical on the missing momentum:
 

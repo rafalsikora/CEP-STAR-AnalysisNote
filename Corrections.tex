@@ -211,6 +211,23 @@ Comparison of efficiencies in Fig.~\ref{fig:onlineAndOfflineVetoEff} with simila
 
 
 \subsubsection{Missing \texorpdfstring{$p_{T}$}{pT} cut~(\ref{enum:CutMissingPt})}
+
+
+%---------------------------
+\begin{figure}[h]
+\centering%
+\parbox{0.4725\textwidth}{%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/corrections/ptmisscuteff.pdf}\label{fig:ptmisscuteff}
+}%
+\quad%
+\parbox{0.4725\textwidth}{%
+    \caption[Efficiency of $p_{\text{T}}^{\text{miss}}$ cut as a function of central tracks' momenta.]{Efficiency of $p_{\text{T}}^{\text{miss}}$ cut as a function of higher ($x$-axis) and lower ($y$-axis) momentum of the central tracks, calculated with MC method descibed in the text of this Section. Lower right corner has no entries/low statistics due to kinematic constraints in the fiducial phase space.}\label{fig:ptMissCutEff}%
+}
+\end{figure}
+%---------------------------
+
+
 \subsubsection{Particle identification~(\ref{enum:CutPid})}\label{sec:pidEff}
 
 Correction reflecting efficiency of identification requires good modeling of detector response in terms of $dE/dx$ and TOF time ($\rightarrow m^{2}_{\text{TOF}}$) measurement which were used for this purpose as described in Sec.~\ref{subsec:pidCuts}. In addition to this, significant number of simulated events is needed to reduce statistical uncertainties of efficiency. The former was provided by adjusting $dE/dx$ spectra from embedded MC to match the data, as elaborated in Chap.~7 of Ref.~\cite{supplementaryNote}. The latter, however, was not easy to achieve for exclusive $K^{+}K^{-}$ and $p\bar{p}$ whose identification is most challenging and information about identification efficiency is the most needed among studied species. Specially for study of particle (exlusive pair) identification a dedicated MC simulation was prepared.
