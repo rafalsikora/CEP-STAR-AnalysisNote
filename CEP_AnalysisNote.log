@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.29)  22 MAY 2019 02:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.29)  24 MAY 2019 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1761,175 +1761,182 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [30 <./graphics/corrections/sampleZVtxHist.pdf, page is rotated 90 degrees> <./
 graphics/corrections/zVxMeanAndSigmaVsFillNumber.pdf, page is rotated 90 degree
-s>]
-<graphics/corrections/ptmisscuteff.pdf, id=2912, 569.12625pt x 552.0625pt>
+s>] [31 <./graphics/corrections/FullVetoEffVsInstLumi.pdf, page is rotated 90 d
+egrees> <./graphics/corrections/FullVetoEffVsInstLumi.pdf, page is rotated 90 d
+egrees> <./graphics/corrections/FullVetoEffVsInstLumi.pdf, page is rotated 90 d
+egrees> <./graphics/corrections/FullVetoEffVsInstLumi.pdf, page is rotated 90 d
+egrees>]
+
+Package caption Warning: \label without proper reference on input line 234.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ptmisscuteff' on page 32 undefined on input line 
+225.
+
+<graphics/corrections/ptmisscuteff.pdf, id=2972, 569.12625pt x 552.0625pt>
 File: graphics/corrections/ptmisscuteff.pdf Graphic file (type pdf)
 <use graphics/corrections/ptmisscuteff.pdf>
 Package pdftex.def Info: graphics/corrections/ptmisscuteff.pdf  used on input l
-ine 222.
+ine 234.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[31 <./graphics/corrections/FullVetoEffVsInstLumi.pdf, page is rotated 90 degre
-es> <./graphics/corrections/FullVetoEffVsInstLumi.pdf, page is rotated 90 degre
-es> <./graphics/corrections/FullVetoEffVsInstLumi.pdf, page is rotated 90 degre
-es> <./graphics/corrections/FullVetoEffVsInstLumi.pdf, page is rotated 90 degre
-es>] [32 <./graphics/corrections/ptmisscuteff.pdf, page is rotated 90 degrees>]
-<graphics/corrections/DEdxErrorVsTofPathLength.pdf, id=3024, 569.12625pt x 552.
+[32 <./graphics/corrections/ptmisscuteff.pdf, page is rotated 90 degrees>]
+<graphics/corrections/DEdxErrorVsTofPathLength.pdf, id=3032, 569.12625pt x 552.
 0625pt>
 File: graphics/corrections/DEdxErrorVsTofPathLength.pdf Graphic file (type pdf)
 
 <use graphics/corrections/DEdxErrorVsTofPathLength.pdf>
 Package pdftex.def Info: graphics/corrections/DEdxErrorVsTofPathLength.pdf  use
-d on input line 254.
+d on input line 266.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-<graphics/corrections/Log2dxVsTofPathLength.pdf, id=3025, 569.12625pt x 552.062
+<graphics/corrections/Log2dxVsTofPathLength.pdf, id=3033, 569.12625pt x 552.062
 5pt>
 File: graphics/corrections/Log2dxVsTofPathLength.pdf Graphic file (type pdf)
 <use graphics/corrections/Log2dxVsTofPathLength.pdf>
 Package pdftex.def Info: graphics/corrections/Log2dxVsTofPathLength.pdf  used o
-n input line 261.
+n input line 273.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-<graphics/corrections/EffVsPt.pdf, id=3031, page=1, 569.12625pt x 552.0625pt>
-File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
-<use graphics/corrections/EffVsPt.pdf, page 1>
-Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page1 used on input
- line 273.
-(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsPt.pdf, id=3032, page=2, 569.12625pt x 552.0625pt>
-File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
-<use graphics/corrections/EffVsPt.pdf, page 2>
-Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page2 used on input
- line 274.
-(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsPt.pdf, id=3033, page=3, 569.12625pt x 552.0625pt>
-File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
-<use graphics/corrections/EffVsPt.pdf, page 3>
-Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page3 used on input
- line 275.
-(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsPt.pdf, id=3034, page=4, 569.12625pt x 552.0625pt>
-File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
-<use graphics/corrections/EffVsPt.pdf, page 4>
-Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page4 used on input
- line 276.
-(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsPt.pdf, id=3035, page=5, 569.12625pt x 552.0625pt>
-File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
-<use graphics/corrections/EffVsPt.pdf, page 5>
-Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page5 used on input
- line 277.
-(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsPt.pdf, id=3036, page=6, 569.12625pt x 552.0625pt>
-File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
-<use graphics/corrections/EffVsPt.pdf, page 6>
-Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page6 used on input
- line 278.
-(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsPt.pdf, id=3037, page=7, 569.12625pt x 552.0625pt>
-File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
-<use graphics/corrections/EffVsPt.pdf, page 7>
-Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page7 used on input
- line 279.
-(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsPt.pdf, id=3038, page=8, 569.12625pt x 552.0625pt>
-File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
-<use graphics/corrections/EffVsPt.pdf, page 8>
-Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page8 used on input
- line 280.
-(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsPt.pdf, id=3039, page=9, 569.12625pt x 552.0625pt>
-File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
-<use graphics/corrections/EffVsPt.pdf, page 9>
-Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page9 used on input
- line 281.
-(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-
-Overfull \hbox (8.64375pt too wide) in paragraph at lines 297--299
-[][]
- []
 
 [33 <./graphics/corrections/DEdxErrorVsTofPathLength.pdf, page is rotated 90 de
 grees> <./graphics/corrections/Log2dxVsTofPathLength.pdf, page is rotated 90 de
-grees>] [34 <./graphics/corrections/EffVsPt.pdf, page is rotated 90 degrees> <.
-/graphics/corrections/EffVsPt.pdf, page is rotated 90 degrees> <./graphics/corr
-ections/EffVsPt.pdf, page is rotated 90 degrees> <./graphics/corrections/EffVsP
-t.pdf, page is rotated 90 degrees> <./graphics/corrections/EffVsPt.pdf, page is
- rotated 90 degrees> <./graphics/corrections/EffVsPt.pdf, page is rotated 90 de
-grees> <./graphics/corrections/EffVsPt.pdf, page is rotated 90 degrees> <./grap
-hics/corrections/EffVsPt.pdf, page is rotated 90 degrees> <./graphics/correctio
-ns/EffVsPt.pdf, page is rotated 90 degrees>]
-<graphics/corrections/mcFullEffPxPy.pdf, id=3197, page=10, 569.12625pt x 538.01
+grees>]
+<graphics/corrections/EffVsPt.pdf, id=3135, page=1, 569.12625pt x 552.0625pt>
+File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
+<use graphics/corrections/EffVsPt.pdf, page 1>
+Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page1 used on input
+ line 285.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+<graphics/corrections/EffVsPt.pdf, id=3136, page=2, 569.12625pt x 552.0625pt>
+File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
+<use graphics/corrections/EffVsPt.pdf, page 2>
+Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page2 used on input
+ line 286.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+<graphics/corrections/EffVsPt.pdf, id=3137, page=3, 569.12625pt x 552.0625pt>
+File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
+<use graphics/corrections/EffVsPt.pdf, page 3>
+Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page3 used on input
+ line 287.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+<graphics/corrections/EffVsPt.pdf, id=3138, page=4, 569.12625pt x 552.0625pt>
+File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
+<use graphics/corrections/EffVsPt.pdf, page 4>
+Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page4 used on input
+ line 288.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+<graphics/corrections/EffVsPt.pdf, id=3139, page=5, 569.12625pt x 552.0625pt>
+File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
+<use graphics/corrections/EffVsPt.pdf, page 5>
+Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page5 used on input
+ line 289.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+<graphics/corrections/EffVsPt.pdf, id=3140, page=6, 569.12625pt x 552.0625pt>
+File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
+<use graphics/corrections/EffVsPt.pdf, page 6>
+Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page6 used on input
+ line 290.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+<graphics/corrections/EffVsPt.pdf, id=3141, page=7, 569.12625pt x 552.0625pt>
+File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
+<use graphics/corrections/EffVsPt.pdf, page 7>
+Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page7 used on input
+ line 291.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+<graphics/corrections/EffVsPt.pdf, id=3142, page=8, 569.12625pt x 552.0625pt>
+File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
+<use graphics/corrections/EffVsPt.pdf, page 8>
+Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page8 used on input
+ line 292.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+<graphics/corrections/EffVsPt.pdf, id=3143, page=9, 569.12625pt x 552.0625pt>
+File: graphics/corrections/EffVsPt.pdf Graphic file (type pdf)
+<use graphics/corrections/EffVsPt.pdf, page 9>
+Package pdftex.def Info: graphics/corrections/EffVsPt.pdf , page9 used on input
+ line 293.
+(pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
+
+Overfull \hbox (15.02486pt too wide) in paragraph at lines 309--311
+[][]
+ []
+
+[34 <./graphics/corrections/EffVsPt.pdf, page is rotated 90 degrees> <./graphic
+s/corrections/EffVsPt.pdf, page is rotated 90 degrees> <./graphics/corrections/
+EffVsPt.pdf, page is rotated 90 degrees> <./graphics/corrections/EffVsPt.pdf, p
+age is rotated 90 degrees> <./graphics/corrections/EffVsPt.pdf, page is rotated
+ 90 degrees> <./graphics/corrections/EffVsPt.pdf, page is rotated 90 degrees> <
+./graphics/corrections/EffVsPt.pdf, page is rotated 90 degrees> <./graphics/cor
+rections/EffVsPt.pdf, page is rotated 90 degrees> <./graphics/corrections/EffVs
+Pt.pdf, page is rotated 90 degrees>]
+<graphics/corrections/mcFullEffPxPy.pdf, id=3208, page=10, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 10>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page10 used o
-n input line 335.
+n input line 347.
 (pdftex.def)             Requested size: 228.54854pt x 216.05396pt.
-<graphics/corrections/SimultaneousEastWestRpTrackLoss.pdf, id=3200, 569.12625pt
+<graphics/corrections/SimultaneousEastWestRpTrackLoss.pdf, id=3211, 569.12625pt
  x 538.01pt>
 File: graphics/corrections/SimultaneousEastWestRpTrackLoss.pdf Graphic file (ty
 pe pdf)
 <use graphics/corrections/SimultaneousEastWestRpTrackLoss.pdf>
 Package pdftex.def Info: graphics/corrections/SimultaneousEastWestRpTrackLoss.p
-df  used on input line 341.
+df  used on input line 353.
 (pdftex.def)             Requested size: 228.54854pt x 216.05396pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--342
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--342
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--342
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--342
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 
  []
 
-<graphics/corrections/deltaZ0Definition2.pdf, id=3202, 182.75998pt x 123.62785p
+[35 <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./g
+raphics/corrections/SimultaneousEastWestRpTrackLoss.pdf, page is rotated 90 deg
+rees>]
+<graphics/corrections/deltaZ0Definition2.pdf, id=3310, 182.75998pt x 123.62785p
 t>
 File: graphics/corrections/deltaZ0Definition2.pdf Graphic file (type pdf)
 <use graphics/corrections/deltaZ0Definition2.pdf>
 Package pdftex.def Info: graphics/corrections/deltaZ0Definition2.pdf  used on i
-nput line 363.
+nput line 375.
 (pdftex.def)             Requested size: 176.552pt x 119.43405pt.
-[35 <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./g
-raphics/corrections/SimultaneousEastWestRpTrackLoss.pdf, page is rotated 90 deg
-rees> <./graphics/corrections/deltaZ0Definition2.pdf>]
-<graphics/corrections/DeltaZ0WithBackground.pdf, id=3330, 569.12625pt x 552.062
+ [36 <./graphics/corrections/deltaZ0Definition2.pdf>]
+<graphics/corrections/DeltaZ0WithBackground.pdf, id=3353, 569.12625pt x 552.062
 5pt>
 File: graphics/corrections/DeltaZ0WithBackground.pdf Graphic file (type pdf)
 <use graphics/corrections/DeltaZ0WithBackground.pdf>
 Package pdftex.def Info: graphics/corrections/DeltaZ0WithBackground.pdf  used o
-n input line 398.
+n input line 410.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
-<graphics/corrections/VertexingEfficiency.pdf, id=3331, 569.12625pt x 552.0625p
+<graphics/corrections/VertexingEfficiency.pdf, id=3354, 569.12625pt x 552.0625p
 t>
 File: graphics/corrections/VertexingEfficiency.pdf Graphic file (type pdf)
 <use graphics/corrections/VertexingEfficiency.pdf>
 Package pdftex.def Info: graphics/corrections/VertexingEfficiency.pdf  used on 
-input line 404.
+input line 416.
 (pdftex.def)             Requested size: 228.54854pt x 221.69716pt.
- [36])
-(./SystematicErrors.tex [37 <./graphics/corrections/DeltaZ0WithBackground.pdf, 
-page is rotated 90 degrees> <./graphics/corrections/VertexingEfficiency.pdf, pa
-ge is rotated 90 degrees>]
+ [37 <./graphics/corrections/DeltaZ0WithBackground.pdf, page is rotated 90 degr
+ees> <./graphics/corrections/VertexingEfficiency.pdf, page is rotated 90 degree
+s>])
+(./SystematicErrors.tex [38]
 Chapter 6.
-) (./PhysicsResults.tex [38
+) (./PhysicsResults.tex [39
 
 ]
 Chapter 7.
-<graphics/physicsResults/FinalResult_InvMass_pion.pdf, id=3448, page=1, 569.126
+<graphics/physicsResults/FinalResult_InvMass_pion.pdf, id=3465, page=1, 569.126
 25pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_pion.pdf Graphic file (type p
 df)
@@ -1937,7 +1944,7 @@ df)
 Package pdftex.def Info: graphics/physicsResults/FinalResult_InvMass_pion.pdf ,
  page1 used on input line 13.
 (pdftex.def)             Requested size: 338.58632pt x 291.4263pt.
-<graphics/physicsResults/FinalResult_InvMass_kaon.pdf, id=3449, page=1, 569.126
+<graphics/physicsResults/FinalResult_InvMass_kaon.pdf, id=3466, page=1, 569.126
 25pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_kaon.pdf Graphic file (type p
 df)
@@ -1945,7 +1952,7 @@ df)
 Package pdftex.def Info: graphics/physicsResults/FinalResult_InvMass_kaon.pdf ,
  page1 used on input line 21.
 (pdftex.def)             Requested size: 232.17242pt x 199.82257pt.
-<graphics/physicsResults/FinalResult_InvMass_proton.pdf, id=3450, page=1, 569.1
+<graphics/physicsResults/FinalResult_InvMass_proton.pdf, id=3467, page=1, 569.1
 2625pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_proton.pdf Graphic file (type
  pdf)
@@ -1956,7 +1963,7 @@ Package pdftex.def Info: graphics/physicsResults/FinalResult_InvMass_proton.pdf
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/physicsResults/Ratio_FinalResult_Rapidity_pion.pdf, id=3451, page=1, 
+<graphics/physicsResults/Ratio_FinalResult_Rapidity_pion.pdf, id=3468, page=1, 
 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_Rapidity_pion.pdf Graphic file 
 (type pdf)
@@ -1964,7 +1971,7 @@ File: graphics/physicsResults/Ratio_FinalResult_Rapidity_pion.pdf Graphic file
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_Rapidity_pio
 n.pdf , page1 used on input line 30.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_Rapidity_kaon.pdf, id=3452, page=1, 
+<graphics/physicsResults/Ratio_FinalResult_Rapidity_kaon.pdf, id=3469, page=1, 
 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_Rapidity_kaon.pdf Graphic file 
 (type pdf)
@@ -1972,7 +1979,7 @@ File: graphics/physicsResults/Ratio_FinalResult_Rapidity_kaon.pdf Graphic file
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_Rapidity_kao
 n.pdf , page1 used on input line 32.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_Rapidity_proton.pdf, id=3453, page=1
+<graphics/physicsResults/Ratio_FinalResult_Rapidity_proton.pdf, id=3470, page=1
 , 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_Rapidity_proton.pdf Graphic fil
 e (type pdf)
@@ -1983,7 +1990,7 @@ ton.pdf , page1 used on input line 34.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion.pdf, id=3454, page=1, 
+<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion.pdf, id=3471, page=1, 
 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion.pdf Graphic file 
 (type pdf)
@@ -1991,7 +1998,7 @@ File: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion.pdf Graphic file
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pio
 n.pdf , page1 used on input line 57.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_kaon.pdf, id=3455, page=1, 
+<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_kaon.pdf, id=3472, page=1, 
 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_kaon.pdf Graphic file 
 (type pdf)
@@ -1999,7 +2006,7 @@ File: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_kaon.pdf Graphic file
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_kao
 n.pdf , page1 used on input line 59.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_proton.pdf, id=3456, page=1
+<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_proton.pdf, id=3473, page=1
 , 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_proton.pdf Graphic fil
 e (type pdf)
@@ -2007,7 +2014,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pro
 ton.pdf , page1 used on input line 61.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion.pdf, id=3457, pa
+<graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion.pdf, id=3474, pa
 ge=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion.pdf Graphic
  file (type pdf)
@@ -2016,7 +2023,7 @@ File: graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion.pdf Graphic
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_MandelstamTS
 um_pion.pdf , page1 used on input line 63.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_kaon.pdf, id=3458, pa
+<graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_kaon.pdf, id=3475, pa
 ge=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_kaon.pdf Graphic
  file (type pdf)
@@ -2025,7 +2032,7 @@ File: graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_kaon.pdf Graphic
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_MandelstamTS
 um_kaon.pdf , page1 used on input line 65.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_proton.pdf, id=3459, 
+<graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_proton.pdf, id=3476, 
 page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_proton.pdf Graph
 ic file (type pdf)
@@ -2037,7 +2044,7 @@ um_proton.pdf , page1 used on input line 67.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_pion.pdf, id=3460, pa
+<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_pion.pdf, id=3477, pa
 ge=1, 569.12625pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_pion.pdf Graphic
  file (type pdf)
@@ -2046,7 +2053,7 @@ File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_pion.pdf Graphic
 Package pdftex.def Info: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBi
 n1_pion.pdf , page1 used on input line 76.
 (pdftex.def)             Requested size: 222.5038pt x 191.5038pt.
-<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_pion.pdf, id=3461, pa
+<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_pion.pdf, id=3478, pa
 ge=1, 569.12625pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_pion.pdf Graphic
  file (type pdf)
@@ -2055,7 +2062,7 @@ File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_pion.pdf Graphic
 Package pdftex.def Info: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBi
 n2_pion.pdf , page1 used on input line 78.
 (pdftex.def)             Requested size: 222.5038pt x 191.5038pt.
-<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_kaon.pdf, id=3462, pa
+<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_kaon.pdf, id=3479, pa
 ge=1, 569.12625pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_kaon.pdf Graphic
  file (type pdf)
@@ -2064,7 +2071,7 @@ File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_kaon.pdf Graphic
 Package pdftex.def Info: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBi
 n1_kaon.pdf , page1 used on input line 82.
 (pdftex.def)             Requested size: 222.5038pt x 191.5038pt.
-<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_kaon.pdf, id=3463, pa
+<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_kaon.pdf, id=3480, pa
 ge=1, 569.12625pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_kaon.pdf Graphic
  file (type pdf)
@@ -2073,7 +2080,7 @@ File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_kaon.pdf Graphic
 Package pdftex.def Info: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBi
 n2_kaon.pdf , page1 used on input line 84.
 (pdftex.def)             Requested size: 222.5038pt x 191.5038pt.
-<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_proton.pdf, id=3464, 
+<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_proton.pdf, id=3481, 
 page=1, 569.12625pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_proton.pdf Graph
 ic file (type pdf)
@@ -2082,7 +2089,7 @@ ic file (type pdf)
 Package pdftex.def Info: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBi
 n1_proton.pdf , page1 used on input line 88.
 (pdftex.def)             Requested size: 222.5038pt x 191.5038pt.
-<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_proton.pdf, id=3465, 
+<graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_proton.pdf, id=3482, 
 page=1, 569.12625pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin2_proton.pdf Graph
 ic file (type pdf)
@@ -2094,7 +2101,7 @@ n2_proton.pdf , page1 used on input line 90.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/physicsResults/Ratio_FinalResult_Rapidity_pion_MassBin_1.pdf, id=3466
+<graphics/physicsResults/Ratio_FinalResult_Rapidity_pion_MassBin_1.pdf, id=3483
 , page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_Rapidity_pion_MassBin_1.pdf Gra
 phic file (type pdf)
@@ -2103,7 +2110,7 @@ e 1>
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_Rapidity_pio
 n_MassBin_1.pdf , page1 used on input line 119.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion_MassBin_1.pdf, id=3467
+<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion_MassBin_1.pdf, id=3484
 , page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion_MassBin_1.pdf Gra
 phic file (type pdf)
@@ -2113,7 +2120,7 @@ Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pio
 n_MassBin_1.pdf , page1 used on input line 121.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
 <graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion_MassBin_1.pdf, i
-d=3468, page=1, 569.12625pt x 694.595pt>
+d=3485, page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion_MassBin_1.p
 df Graphic file (type pdf)
 <use graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion_MassBin_1.pd
@@ -2121,7 +2128,7 @@ f, page 1>
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_MandelstamTS
 um_pion_MassBin_1.pdf , page1 used on input line 123.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_Rapidity_pion_MassBin_2.pdf, id=3469
+<graphics/physicsResults/Ratio_FinalResult_Rapidity_pion_MassBin_2.pdf, id=3486
 , page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_Rapidity_pion_MassBin_2.pdf Gra
 phic file (type pdf)
@@ -2130,7 +2137,7 @@ e 1>
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_Rapidity_pio
 n_MassBin_2.pdf , page1 used on input line 125.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion_MassBin_2.pdf, id=3470
+<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion_MassBin_2.pdf, id=3487
 , page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion_MassBin_2.pdf Gra
 phic file (type pdf)
@@ -2140,7 +2147,7 @@ Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pio
 n_MassBin_2.pdf , page1 used on input line 127.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
 <graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion_MassBin_2.pdf, i
-d=3471, page=1, 569.12625pt x 694.595pt>
+d=3488, page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion_MassBin_2.p
 df Graphic file (type pdf)
 <use graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion_MassBin_2.pd
@@ -2148,7 +2155,7 @@ f, page 1>
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_MandelstamTS
 um_pion_MassBin_2.pdf , page1 used on input line 129.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_Rapidity_pion_MassBin_3.pdf, id=3472
+<graphics/physicsResults/Ratio_FinalResult_Rapidity_pion_MassBin_3.pdf, id=3489
 , page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_Rapidity_pion_MassBin_3.pdf Gra
 phic file (type pdf)
@@ -2157,7 +2164,7 @@ e 1>
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_Rapidity_pio
 n_MassBin_3.pdf , page1 used on input line 131.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion_MassBin_3.pdf, id=3473
+<graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion_MassBin_3.pdf, id=3490
 , page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pion_MassBin_3.pdf Gra
 phic file (type pdf)
@@ -2167,7 +2174,7 @@ Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_DeltaPhi_pio
 n_MassBin_3.pdf , page1 used on input line 133.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
 <graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion_MassBin_3.pdf, i
-d=3474, page=1, 569.12625pt x 694.595pt>
+d=3491, page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion_MassBin_3.p
 df Graphic file (type pdf)
 <use graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_pion_MassBin_3.pd
@@ -2179,7 +2186,7 @@ um_pion_MassBin_3.pdf , page1 used on input line 135.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <graphics/physicsResults/FinalResult_InvMass_pion_SmallDpt_DeltaPhiLessThan90.p
-df, id=3475, page=1, 569.12625pt x 489.83pt>
+df, id=3492, page=1, 569.12625pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_pion_SmallDpt_DeltaPhiLessTha
 n90.pdf Graphic file (type pdf)
 <use graphics/physicsResults/FinalResult_InvMass_pion_SmallDpt_DeltaPhiLessThan
@@ -2188,7 +2195,7 @@ Package pdftex.def Info: graphics/physicsResults/FinalResult_InvMass_pion_Small
 Dpt_DeltaPhiLessThan90.pdf , page1 used on input line 146.
 (pdftex.def)             Requested size: 222.5038pt x 191.5038pt.
 <graphics/physicsResults/FinalResult_InvMass_pion_LargeDpt_DeltaPhiLessThan90.p
-df, id=3476, page=1, 569.12625pt x 489.83pt>
+df, id=3493, page=1, 569.12625pt x 489.83pt>
 File: graphics/physicsResults/FinalResult_InvMass_pion_LargeDpt_DeltaPhiLessTha
 n90.pdf Graphic file (type pdf)
 <use graphics/physicsResults/FinalResult_InvMass_pion_LargeDpt_DeltaPhiLessThan
@@ -2200,7 +2207,7 @@ Dpt_DeltaPhiLessThan90.pdf , page1 used on input line 148.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_MassBin_1.pdf, id=34
-77, page=1, 569.12625pt x 694.595pt>
+94, page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_MassBin_1.pdf G
 raphic file (type pdf)
 <use graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_MassBin_1.pdf, p
@@ -2209,7 +2216,7 @@ Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_CosThetaCS_p
 ion_MassBin_1.pdf , page1 used on input line 160.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
 <graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_MassBin_2.pdf, id=34
-78, page=1, 569.12625pt x 694.595pt>
+95, page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_MassBin_2.pdf G
 raphic file (type pdf)
 <use graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_MassBin_2.pdf, p
@@ -2218,7 +2225,7 @@ Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_CosThetaCS_p
 ion_MassBin_2.pdf , page1 used on input line 162.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
 <graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_MassBin_3.pdf, id=34
-79, page=1, 569.12625pt x 694.595pt>
+96, page=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_MassBin_3.pdf G
 raphic file (type pdf)
 <use graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_MassBin_3.pdf, p
@@ -2226,7 +2233,7 @@ age 1>
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_CosThetaCS_p
 ion_MassBin_3.pdf , page1 used on input line 164.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_1.pdf, id=3480, p
+<graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_1.pdf, id=3497, p
 age=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_1.pdf Graphi
 c file (type pdf)
@@ -2235,7 +2242,7 @@ c file (type pdf)
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_M
 assBin_1.pdf , page1 used on input line 166.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_2.pdf, id=3481, p
+<graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_2.pdf, id=3498, p
 age=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_2.pdf Graphi
 c file (type pdf)
@@ -2244,7 +2251,7 @@ c file (type pdf)
 Package pdftex.def Info: graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_M
 assBin_2.pdf , page1 used on input line 168.
 (pdftex.def)             Requested size: 149.94484pt x 182.99634pt.
-<graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_3.pdf, id=3482, p
+<graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_3.pdf, id=3499, p
 age=1, 569.12625pt x 694.595pt>
 File: graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_3.pdf Graphi
 c file (type pdf)
@@ -2256,27 +2263,27 @@ assBin_3.pdf , page1 used on input line 170.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./Appendix_Bbc.tex [39
+) (./Appendix_Bbc.tex [40
 
  <./graphics/physicsResults/FinalResult_InvMass_pion.pdf, page is rotated 90 de
-grees>] [40 <./graphics/physicsResults/FinalResult_InvMass_kaon.pdf, page is ro
+grees>] [41 <./graphics/physicsResults/FinalResult_InvMass_kaon.pdf, page is ro
 tated 90 degrees> <./graphics/physicsResults/FinalResult_InvMass_proton.pdf, pa
 ge is rotated 90 degrees> <./graphics/physicsResults/Ratio_FinalResult_Rapidity
 _pion.pdf> <./graphics/physicsResults/Ratio_FinalResult_Rapidity_kaon.pdf> <./g
-raphics/physicsResults/Ratio_FinalResult_Rapidity_proton.pdf>] [41 <./graphics/
+raphics/physicsResults/Ratio_FinalResult_Rapidity_proton.pdf>] [42 <./graphics/
 physicsResults/Ratio_FinalResult_DeltaPhi_pion.pdf> <./graphics/physicsResults/
 Ratio_FinalResult_DeltaPhi_kaon.pdf> <./graphics/physicsResults/Ratio_FinalResu
 lt_DeltaPhi_proton.pdf> <./graphics/physicsResults/Ratio_FinalResult_Mandelstam
 TSum_pion.pdf> <./graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_kaon
 .pdf> <./graphics/physicsResults/Ratio_FinalResult_MandelstamTSum_proton.pdf>] 
-[42 <./graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_pion.pdf, page 
+[43 <./graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_pion.pdf, page 
 is rotated 90 degrees> <./graphics/physicsResults/FinalResult_InvMass_DeltaPhiB
 in2_pion.pdf, page is rotated 90 degrees> <./graphics/physicsResults/FinalResul
 t_InvMass_DeltaPhiBin1_kaon.pdf, page is rotated 90 degrees> <./graphics/physic
 sResults/FinalResult_InvMass_DeltaPhiBin2_kaon.pdf, page is rotated 90 degrees>
  <./graphics/physicsResults/FinalResult_InvMass_DeltaPhiBin1_proton.pdf, page i
 s rotated 90 degrees> <./graphics/physicsResults/FinalResult_InvMass_DeltaPhiBi
-n2_proton.pdf, page is rotated 90 degrees>] [43 <./graphics/physicsResults/Rati
+n2_proton.pdf, page is rotated 90 degrees>] [44 <./graphics/physicsResults/Rati
 o_FinalResult_Rapidity_pion_MassBin_1.pdf> <./graphics/physicsResults/Ratio_Fin
 alResult_DeltaPhi_pion_MassBin_1.pdf> <./graphics/physicsResults/Ratio_FinalRes
 ult_MandelstamTSum_pion_MassBin_1.pdf> <./graphics/physicsResults/Ratio_FinalRe
@@ -2285,17 +2292,17 @@ DeltaPhi_pion_MassBin_2.pdf> <./graphics/physicsResults/Ratio_FinalResult_Mande
 lstamTSum_pion_MassBin_2.pdf> <./graphics/physicsResults/Ratio_FinalResult_Rapi
 dity_pion_MassBin_3.pdf> <./graphics/physicsResults/Ratio_FinalResult_DeltaPhi_
 pion_MassBin_3.pdf> <./graphics/physicsResults/Ratio_FinalResult_MandelstamTSum
-_pion_MassBin_3.pdf>] [44 <./graphics/physicsResults/FinalResult_InvMass_pion_S
+_pion_MassBin_3.pdf>] [45 <./graphics/physicsResults/FinalResult_InvMass_pion_S
 mallDpt_DeltaPhiLessThan90.pdf, page is rotated 90 degrees> <./graphics/physics
 Results/FinalResult_InvMass_pion_LargeDpt_DeltaPhiLessThan90.pdf, page is rotat
-ed 90 degrees>] [45 <./graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pio
+ed 90 degrees>] [46 <./graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pio
 n_MassBin_1.pdf> <./graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_M
 assBin_2.pdf> <./graphics/physicsResults/Ratio_FinalResult_CosThetaCS_pion_Mass
 Bin_3.pdf> <./graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_1.pd
 f> <./graphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_2.pdf> <./gr
 aphics/physicsResults/Ratio_FinalResult_PhiCS_pion_MassBin_3.pdf>]
 Appendix A.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5031, page=1, 569.1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5049, page=1, 569.1
 2625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2303,7 +2310,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page1 used on input line 19.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5032, page=2, 569.1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5050, page=2, 569.1
 2625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2311,7 +2318,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page2 used on input line 19.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5033, page=3, 569.1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5051, page=3, 569.1
 2625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2319,7 +2326,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page3 used on input line 19.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5034, page=4, 569.1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5052, page=4, 569.1
 2625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2333,7 +2340,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page1 used on input line 26.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5035, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5053, page=2
 , 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2341,7 +2348,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page2 used on input line 26.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5036, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5054, page=3
 , 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2349,7 +2356,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page3 used on input line 26.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5037, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5055, page=4
 , 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2362,28 +2369,28 @@ File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page1 used o
 n input line 33.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5038, page=2, 569.12625pt x 408.52
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5056, page=2, 569.12625pt x 408.52
 625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 2>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page2 used o
 n input line 33.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5039, page=3, 569.12625pt x 408.52
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5057, page=3, 569.12625pt x 408.52
 625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 3>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page3 used o
 n input line 33.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5040, page=4, 569.12625pt x 408.52
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5058, page=4, 569.12625pt x 408.52
 625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 4>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page4 used o
 n input line 33.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5041, page=5, 569.1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5059, page=5, 569.1
 2625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2391,7 +2398,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page5 used on input line 45.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5042, page=6, 569.1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5060, page=6, 569.1
 2625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2399,7 +2406,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page6 used on input line 45.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5043, page=7, 569.1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5061, page=7, 569.1
 2625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2407,7 +2414,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page7 used on input line 45.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5044, page=8, 569.1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5062, page=8, 569.1
 2625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2415,7 +2422,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page8 used on input line 45.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5045, page=9, 569.1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5063, page=9, 569.1
 2625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2423,7 +2430,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page9 used on input line 45.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5046, page=10, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5064, page=10, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2431,7 +2438,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page10 used on input line 45.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5047, page=5
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5065, page=5
 , 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2439,7 +2446,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page5 used on input line 54.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5048, page=6
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5066, page=6
 , 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2447,7 +2454,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page6 used on input line 54.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5049, page=7
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5067, page=7
 , 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2455,7 +2462,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page7 used on input line 54.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5050, page=8
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5068, page=8
 , 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2463,7 +2470,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page8 used on input line 54.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5051, page=9
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5069, page=9
 , 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2471,7 +2478,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page9 used on input line 54.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5052, page=1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5070, page=1
 0, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2479,49 +2486,49 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page10 used on input line 54.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5053, page=5, 569.12625pt x 408.52
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5071, page=5, 569.12625pt x 408.52
 625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 5>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page5 used o
 n input line 63.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5054, page=6, 569.12625pt x 408.52
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5072, page=6, 569.12625pt x 408.52
 625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 6>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page6 used o
 n input line 63.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5055, page=7, 569.12625pt x 408.52
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5073, page=7, 569.12625pt x 408.52
 625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 7>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page7 used o
 n input line 63.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5056, page=8, 569.12625pt x 408.52
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5074, page=8, 569.12625pt x 408.52
 625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 8>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page8 used o
 n input line 63.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5057, page=9, 569.12625pt x 408.52
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5075, page=9, 569.12625pt x 408.52
 625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 9>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page9 used o
 n input line 63.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5058, page=10, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5076, page=10, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 10>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page10 used 
 on input line 63.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5059, page=11, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5077, page=11, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2529,7 +2536,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page11 used on input line 75.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5060, page=12, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5078, page=12, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2537,7 +2544,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page12 used on input line 75.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5061, page=13, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5079, page=13, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2545,7 +2552,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page13 used on input line 75.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5062, page=14, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5080, page=14, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2553,7 +2560,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page14 used on input line 75.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5063, page=15, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5081, page=15, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2561,7 +2568,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page15 used on input line 75.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5064, page=16, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5082, page=16, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2569,7 +2576,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page16 used on input line 75.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5065, page=1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5083, page=1
 1, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2577,7 +2584,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page11 used on input line 84.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5066, page=1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5084, page=1
 2, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2585,7 +2592,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page12 used on input line 84.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5067, page=1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5085, page=1
 3, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2593,7 +2600,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page13 used on input line 84.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5068, page=1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5086, page=1
 4, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2601,7 +2608,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page14 used on input line 84.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5069, page=1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5087, page=1
 5, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2609,7 +2616,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page15 used on input line 84.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5070, page=1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5088, page=1
 6, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2617,49 +2624,49 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page16 used on input line 84.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5071, page=11, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5089, page=11, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 11>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page11 used 
 on input line 93.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5072, page=12, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5090, page=12, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 12>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page12 used 
 on input line 93.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5073, page=13, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5091, page=13, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 13>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page13 used 
 on input line 93.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5074, page=14, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5092, page=14, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 14>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page14 used 
 on input line 93.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5075, page=15, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5093, page=15, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 15>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page15 used 
 on input line 93.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5076, page=16, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5094, page=16, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 16>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page16 used 
 on input line 93.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5077, page=25, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5095, page=25, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2667,7 +2674,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page25 used on input line 105.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5078, page=26, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5096, page=26, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2675,7 +2682,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page26 used on input line 105.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5079, page=27, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5097, page=27, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2683,7 +2690,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page27 used on input line 105.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5080, page=28, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5098, page=28, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2691,7 +2698,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page28 used on input line 105.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5081, page=29, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5099, page=29, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2699,7 +2706,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page29 used on input line 105.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5082, page=30, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5100, page=30, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2707,7 +2714,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page30 used on input line 105.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5083, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5101, page=2
 5, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2715,7 +2722,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page25 used on input line 114.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5084, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5102, page=2
 6, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2723,7 +2730,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page26 used on input line 114.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5085, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5103, page=2
 7, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2731,7 +2738,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page27 used on input line 114.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5086, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5104, page=2
 8, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2739,7 +2746,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page28 used on input line 114.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5087, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5105, page=2
 9, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2747,7 +2754,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page29 used on input line 114.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5088, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5106, page=3
 0, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2755,49 +2762,49 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page30 used on input line 114.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5089, page=25, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5107, page=25, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 25>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page25 used 
 on input line 123.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5090, page=26, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5108, page=26, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 26>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page26 used 
 on input line 123.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5091, page=27, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5109, page=27, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 27>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page27 used 
 on input line 123.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5092, page=28, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5110, page=28, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 28>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page28 used 
 on input line 123.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5093, page=29, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5111, page=29, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 29>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page29 used 
 on input line 123.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5094, page=30, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5112, page=30, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 30>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page30 used 
 on input line 123.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5095, page=31, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5113, page=31, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2805,7 +2812,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page31 used on input line 135.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5096, page=32, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5114, page=32, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2813,7 +2820,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page32 used on input line 135.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5097, page=33, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5115, page=33, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2821,7 +2828,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page33 used on input line 135.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5098, page=34, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5116, page=34, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2829,7 +2836,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page34 used on input line 135.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5099, page=35, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5117, page=35, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2837,7 +2844,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page35 used on input line 135.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5100, page=36, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5118, page=36, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2845,7 +2852,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page36 used on input line 135.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5101, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5119, page=3
 1, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2853,7 +2860,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page31 used on input line 144.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5102, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5120, page=3
 2, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2861,7 +2868,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page32 used on input line 144.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5103, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5121, page=3
 3, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2869,7 +2876,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page33 used on input line 144.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5104, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5122, page=3
 4, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2877,7 +2884,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page34 used on input line 144.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5105, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5123, page=3
 5, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2885,7 +2892,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page35 used on input line 144.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5106, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5124, page=3
 6, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2893,49 +2900,49 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page36 used on input line 144.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5107, page=31, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5125, page=31, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 31>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page31 used 
 on input line 153.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5108, page=32, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5126, page=32, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 32>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page32 used 
 on input line 153.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5109, page=33, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5127, page=33, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 33>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page33 used 
 on input line 153.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5110, page=34, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5128, page=34, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 34>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page34 used 
 on input line 153.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5111, page=35, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5129, page=35, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 35>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page35 used 
 on input line 153.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5112, page=36, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5130, page=36, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 36>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page36 used 
 on input line 153.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5113, page=37, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5131, page=37, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2943,7 +2950,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page37 used on input line 163.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5114, page=38, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5132, page=38, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2951,7 +2958,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page38 used on input line 163.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5115, page=39, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5133, page=39, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2959,7 +2966,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page39 used on input line 163.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5116, page=40, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5134, page=40, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -2967,7 +2974,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page40 used on input line 163.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5117, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5135, page=3
 7, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2975,7 +2982,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page37 used on input line 170.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5118, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5136, page=3
 8, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2983,7 +2990,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page38 used on input line 170.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5119, page=3
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5137, page=3
 9, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2991,7 +2998,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page39 used on input line 170.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5120, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5138, page=4
 0, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -2999,35 +3006,35 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page40 used on input line 170.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5121, page=37, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5139, page=37, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 37>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page37 used 
 on input line 177.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5122, page=38, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5140, page=38, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 38>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page38 used 
 on input line 177.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5123, page=39, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5141, page=39, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 39>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page39 used 
 on input line 177.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5124, page=40, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5142, page=40, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 40>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page40 used 
 on input line 177.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5125, page=17, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5143, page=17, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3035,7 +3042,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page17 used on input line 196.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5126, page=18, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5144, page=18, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3043,7 +3050,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page18 used on input line 196.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5127, page=19, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5145, page=19, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3051,7 +3058,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page19 used on input line 196.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5128, page=20, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5146, page=20, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3059,7 +3066,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page20 used on input line 196.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5129, page=21, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5147, page=21, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3073,7 +3080,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page17 used on input line 204.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5130, page=1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5148, page=1
 8, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3081,7 +3088,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page18 used on input line 204.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5131, page=1
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5149, page=1
 9, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3089,7 +3096,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page19 used on input line 204.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5132, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5150, page=2
 0, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3097,7 +3104,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page20 used on input line 204.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5133, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5151, page=2
 1, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3110,35 +3117,35 @@ File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page17 used 
 on input line 212.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5134, page=18, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5152, page=18, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 18>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page18 used 
 on input line 212.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5135, page=19, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5153, page=19, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 19>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page19 used 
 on input line 212.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5136, page=20, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5154, page=20, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 20>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page20 used 
 on input line 212.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5137, page=21, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5155, page=21, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 21>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page21 used 
 on input line 212.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5138, page=22, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5156, page=22, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3146,7 +3153,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page22 used on input line 224.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5139, page=23, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5157, page=23, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3154,7 +3161,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page23 used on input line 224.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5140, page=24, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5158, page=24, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3162,7 +3169,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page24 used on input line 224.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5141, page=41, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5159, page=41, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3170,7 +3177,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page41 used on input line 224.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5142, page=42, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5160, page=42, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3178,7 +3185,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page42 used on input line 224.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5143, page=43, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5161, page=43, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3186,7 +3193,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page43 used on input line 224.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5144, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5162, page=2
 2, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3194,7 +3201,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page22 used on input line 233.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5145, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5163, page=2
 3, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3202,7 +3209,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page23 used on input line 233.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5146, page=2
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5164, page=2
 4, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3210,7 +3217,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page24 used on input line 233.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5147, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5165, page=4
 1, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3218,7 +3225,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page41 used on input line 233.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5148, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5166, page=4
 2, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3226,7 +3233,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page42 used on input line 233.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5149, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5167, page=4
 3, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3234,49 +3241,49 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page43 used on input line 233.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5150, page=22, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5168, page=22, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 22>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page22 used 
 on input line 242.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5151, page=23, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5169, page=23, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 23>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page23 used 
 on input line 242.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5152, page=24, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5170, page=24, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 24>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page24 used 
 on input line 242.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5153, page=41, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5171, page=41, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 41>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page41 used 
 on input line 242.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5154, page=42, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5172, page=42, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 42>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page42 used 
 on input line 242.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5155, page=43, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5173, page=43, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 43>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page43 used 
 on input line 242.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5156, page=44, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5174, page=44, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3284,7 +3291,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page44 used on input line 253.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5157, page=45, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5175, page=45, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3292,7 +3299,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page45 used on input line 253.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5158, page=46, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5176, page=46, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3300,7 +3307,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page46 used on input line 253.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5159, page=47, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5177, page=47, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3308,7 +3315,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page47 used on input line 253.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5160, page=48, 569.
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, id=5178, page=48, 569.
 12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
  pdf)
@@ -3316,7 +3323,7 @@ File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf Graphic file (type
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf
  , page48 used on input line 253.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5161, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5179, page=4
 4, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3324,7 +3331,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page44 used on input line 261.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5162, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5180, page=4
 5, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3332,7 +3339,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page45 used on input line 261.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5163, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5181, page=4
 6, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3340,7 +3347,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page46 used on input line 261.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5164, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5182, page=4
 7, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3348,7 +3355,7 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page47 used on input line 261.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5165, page=4
+<graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, id=5183, page=4
 8, 569.12625pt x 408.52625pt>
 File: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf Graphic fil
 e (type pdf)
@@ -3356,42 +3363,42 @@ e (type pdf)
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADCvsTAC_collidingBunc
 hes.pdf , page48 used on input line 261.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5166, page=44, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5184, page=44, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 44>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page44 used 
 on input line 269.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5167, page=45, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5185, page=45, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 45>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page45 used 
 on input line 269.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5168, page=46, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5186, page=46, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 46>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page46 used 
 on input line 269.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5169, page=47, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5187, page=47, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 47>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page47 used 
 on input line 269.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5170, page=48, 569.12625pt x 408.5
+<graphics/eventSelection/bbc/Bbc_ADC.pdf, id=5188, page=48, 569.12625pt x 408.5
 2625pt>
 File: graphics/eventSelection/bbc/Bbc_ADC.pdf Graphic file (type pdf)
 <use graphics/eventSelection/bbc/Bbc_ADC.pdf, page 48>
 Package pdftex.def Info: graphics/eventSelection/bbc/Bbc_ADC.pdf , page48 used 
 on input line 269.
 (pdftex.def)             Requested size: 158.16685pt x 113.53256pt.
-) (./Appendix_FormulationOfTotalRpEffCorr.tex [46
+) (./Appendix_FormulationOfTotalRpEffCorr.tex [47
 
  <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 
 degrees> <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rot
@@ -3403,7 +3410,7 @@ Bbc_ADCvsTAC_collidingBunches.pdf, page is rotated 90 degrees> <./graphics/even
 tSelection/bbc/Bbc_ADCvsTAC_collidingBunches.pdf, page is rotated 90 degrees> <
 ./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graph
 ics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eve
-ntSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees>] [47 <./graphics/event
+ntSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees>] [48 <./graphics/event
 Selection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./graphi
 cs/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <
 ./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 de
@@ -3423,7 +3430,7 @@ page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is
  rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is rotate
 d 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 de
 grees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees>]
- [48 <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated
+ [49 <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated
  90 degrees> <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is
  rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf,
  page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortG
@@ -3443,7 +3450,7 @@ c/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_A
 DC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf,
  page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page i
 s rotated 90 degrees>]
-[49 <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 
+[50 <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 
 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is 
 rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, 
 page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGa
@@ -3462,7 +3469,7 @@ ion/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc
 /Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_AD
 C.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, 
 page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is
- rotated 90 degrees>] [50 <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps
+ rotated 90 degrees>] [51 <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps
 .pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADCvsTAC_a
 bortGaps.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_AD
 CvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bb
@@ -3481,7 +3488,7 @@ rees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <
 ics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eve
 ntSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelec
 tion/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bb
-c/Bbc_ADC.pdf, page is rotated 90 degrees>] [51 <./graphics/eventSelection/bbc/
+c/Bbc_ADC.pdf, page is rotated 90 degrees>] [52 <./graphics/eventSelection/bbc/
 Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./graphics/eventSelect
 ion/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./graphics/eve
 ntSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./grap
@@ -3494,7 +3501,7 @@ c_ADCvsTAC_collidingBunches.pdf, page is rotated 90 degrees> <./graphics/eventS
 election/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelectio
 n/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/B
 bc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADC.
-pdf, page is rotated 90 degrees>] [52 <./graphics/eventSelection/bbc/Bbc_ADCvsT
+pdf, page is rotated 90 degrees>] [53 <./graphics/eventSelection/bbc/Bbc_ADCvsT
 AC_abortGaps.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bb
 c_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./graphics/eventSelectio
 n/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./graphics/event
@@ -3508,7 +3515,7 @@ ADCvsTAC_collidingBunches.pdf, page is rotated 90 degrees> <./graphics/eventSel
 ection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/
 bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc
 _ADC.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_ADC.pd
-f, page is rotated 90 degrees>] [53 <./graphics/eventSelection/bbc/Bbc_ADCvsTAC
+f, page is rotated 90 degrees>] [54 <./graphics/eventSelection/bbc/Bbc_ADCvsTAC
 _abortGaps.pdf, page is rotated 90 degrees> <./graphics/eventSelection/bbc/Bbc_
 ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./graphics/eventSelection/
 bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./graphics/eventSe
@@ -3527,7 +3534,7 @@ degrees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees
 > <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./gr
 aphics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/
 eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/eventSe
-lection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees>] [54 <./graphics/eventSele
+lection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees>] [55 <./graphics/eventSele
 ction/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./graphics/e
 ventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degrees> <./gr
 aphics/eventSelection/bbc/Bbc_ADCvsTAC_abortGaps.pdf, page is rotated 90 degree
@@ -3545,9 +3552,9 @@ egrees> <./graphics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees>
 phics/eventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees> <./graphics/e
 ventSelection/bbc/Bbc_ADC.pdf, page is rotated 90 degrees>]
 Appendix B.
-[55
+[56
 
-]) (./Appendix_ReconstructionOfMSq.tex [56]
+]) (./Appendix_ReconstructionOfMSq.tex [57]
 Appendix C.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -3558,66 +3565,66 @@ Overfull \hbox (0.57016pt too wide) in paragraph at lines 10--18
 [] 
  []
 
-<graphics/eventSelection/TofScheme.pdf, id=5372, 282.96358pt x 103.878pt>
+<graphics/eventSelection/TofScheme.pdf, id=5389, 282.96358pt x 103.878pt>
 File: graphics/eventSelection/TofScheme.pdf Graphic file (type pdf)
 <use graphics/eventSelection/TofScheme.pdf>
 Package pdftex.def Info: graphics/eventSelection/TofScheme.pdf  used on input l
 ine 26.
 (pdftex.def)             Requested size: 140.26883pt x 51.49504pt.
-) (./Appendix_RpEff.tex [57
+) (./Appendix_RpEff.tex [58
 
  <./graphics/eventSelection/TofScheme.pdf>]
 Appendix D.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5395, page=3, 569.12625pt x 538.01p
+<graphics/corrections/mcFullEffPxPy.pdf, id=5412, page=3, 569.12625pt x 538.01p
 t>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 3>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page3 used on
  input line 18.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5396, page=5, 569.12625pt x 538.01p
+<graphics/corrections/mcFullEffPxPy.pdf, id=5413, page=5, 569.12625pt x 538.01p
 t>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 5>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page5 used on
  input line 18.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5397, page=4, 569.12625pt x 538.01p
+<graphics/corrections/mcFullEffPxPy.pdf, id=5414, page=4, 569.12625pt x 538.01p
 t>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 4>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page4 used on
  input line 23.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5398, page=6, 569.12625pt x 538.01p
+<graphics/corrections/mcFullEffPxPy.pdf, id=5415, page=6, 569.12625pt x 538.01p
 t>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 6>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page6 used on
  input line 23.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5399, page=7, 569.12625pt x 538.01p
+<graphics/corrections/mcFullEffPxPy.pdf, id=5416, page=7, 569.12625pt x 538.01p
 t>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 7>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page7 used on
  input line 32.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5400, page=9, 569.12625pt x 538.01p
+<graphics/corrections/mcFullEffPxPy.pdf, id=5417, page=9, 569.12625pt x 538.01p
 t>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 9>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page9 used on
  input line 32.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5401, page=11, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5418, page=11, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 11>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page11 used o
 n input line 32.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5402, page=8, 569.12625pt x 538.01p
+<graphics/corrections/mcFullEffPxPy.pdf, id=5419, page=8, 569.12625pt x 538.01p
 t>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 8>
@@ -3629,194 +3636,194 @@ File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page10 used o
 n input line 38.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5403, page=12, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5420, page=12, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 12>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page12 used o
 n input line 38.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5404, page=13, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5421, page=13, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 13>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page13 used o
 n input line 47.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5405, page=15, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5422, page=15, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 15>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page15 used o
 n input line 47.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5406, page=17, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5423, page=17, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 17>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page17 used o
 n input line 47.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5407, page=14, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5424, page=14, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 14>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page14 used o
 n input line 53.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5408, page=16, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5425, page=16, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 16>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page16 used o
 n input line 53.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5409, page=18, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5426, page=18, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 18>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page18 used o
 n input line 53.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5410, page=23, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5427, page=23, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 23>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page23 used o
 n input line 69.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5411, page=25, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5428, page=25, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 25>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page25 used o
 n input line 69.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5412, page=27, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5429, page=27, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 27>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page27 used o
 n input line 69.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5413, page=24, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5430, page=24, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 24>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page24 used o
 n input line 75.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5414, page=26, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5431, page=26, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 26>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page26 used o
 n input line 75.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5415, page=28, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5432, page=28, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 28>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page28 used o
 n input line 75.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5416, page=29, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5433, page=29, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 29>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page29 used o
 n input line 84.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5417, page=31, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5434, page=31, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 31>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page31 used o
 n input line 84.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5418, page=33, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5435, page=33, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 33>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page33 used o
 n input line 84.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5419, page=30, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5436, page=30, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 30>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page30 used o
 n input line 90.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5420, page=32, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5437, page=32, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 32>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page32 used o
 n input line 90.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5421, page=34, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5438, page=34, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 34>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page34 used o
 n input line 90.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5422, page=35, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5439, page=35, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 35>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page35 used o
 n input line 98.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5423, page=37, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5440, page=37, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 37>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page37 used o
 n input line 98.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5424, page=36, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5441, page=36, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 36>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page36 used o
 n input line 103.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcFullEffPxPy.pdf, id=5425, page=38, 569.12625pt x 538.01
+<graphics/corrections/mcFullEffPxPy.pdf, id=5442, page=38, 569.12625pt x 538.01
 pt>
 File: graphics/corrections/mcFullEffPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcFullEffPxPy.pdf, page 38>
 Package pdftex.def Info: graphics/corrections/mcFullEffPxPy.pdf , page38 used o
 n input line 103.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-[58
+[59
 
  <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./grap
 hics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./graphics/cor
 rections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections
-/mcFullEffPxPy.pdf, page is rotated 90 degrees>] [59 <./graphics/corrections/mc
+/mcFullEffPxPy.pdf, page is rotated 90 degrees>] [60 <./graphics/corrections/mc
 FullEffPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcFullEffP
 xPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcFullEffPxPy.pdf,
  page is rotated 90 degrees> <./graphics/corrections/mcFullEffPxPy.pdf, page is
  rotated 90 degrees> <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated
- 90 degrees>] [60 <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90
+ 90 degrees>] [61 <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90
  degrees> <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degrees
 > <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./gra
 phics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./graphics/co
 rrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./graphics/correction
-s/mcFullEffPxPy.pdf, page is rotated 90 degrees>] [61 <./graphics/corrections/m
+s/mcFullEffPxPy.pdf, page is rotated 90 degrees>] [62 <./graphics/corrections/m
 cFullEffPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcFullEff
 PxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcFullEffPxPy.pdf
 , page is rotated 90 degrees> <./graphics/corrections/mcFullEffPxPy.pdf, page i
 s rotated 90 degrees> <./graphics/corrections/mcFullEffPxPy.pdf, page is rotate
 d 90 degrees> <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 deg
-rees>] [62 <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degree
+rees>] [63 <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degree
 s> <./graphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./gr
 aphics/corrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./graphics/c
 orrections/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./graphics/correctio
 ns/mcFullEffPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcFul
-lEffPxPy.pdf, page is rotated 90 degrees>] [63 <./graphics/corrections/mcFullEf
+lEffPxPy.pdf, page is rotated 90 degrees>] [64 <./graphics/corrections/mcFullEf
 fPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcFullEffPxPy.pd
 f, page is rotated 90 degrees> <./graphics/corrections/mcFullEffPxPy.pdf, page 
 is rotated 90 degrees> <./graphics/corrections/mcFullEffPxPy.pdf, page is rotat
@@ -3826,147 +3833,147 @@ File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page3 use
 d on input line 120.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5500, page=5, 569.12625pt x 538
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5517, page=5, 569.12625pt x 538
 .01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 5>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page5 use
 d on input line 120.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5501, page=4, 569.12625pt x 538
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5518, page=4, 569.12625pt x 538
 .01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 4>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page4 use
 d on input line 125.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5502, page=6, 569.12625pt x 538
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5519, page=6, 569.12625pt x 538
 .01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 6>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page6 use
 d on input line 125.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5503, page=7, 569.12625pt x 538
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5520, page=7, 569.12625pt x 538
 .01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 7>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page7 use
 d on input line 134.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5504, page=9, 569.12625pt x 538
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5521, page=9, 569.12625pt x 538
 .01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 9>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page9 use
 d on input line 134.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5505, page=11, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5522, page=11, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 11>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page11 us
 ed on input line 134.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5506, page=8, 569.12625pt x 538
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5523, page=8, 569.12625pt x 538
 .01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 8>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page8 use
 d on input line 140.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5507, page=10, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5524, page=10, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 10>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page10 us
 ed on input line 140.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5508, page=12, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5525, page=12, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 12>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page12 us
 ed on input line 140.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5509, page=13, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5526, page=13, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 13>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page13 us
 ed on input line 149.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5510, page=15, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5527, page=15, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 15>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page15 us
 ed on input line 149.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5511, page=17, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5528, page=17, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 17>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page17 us
 ed on input line 149.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5512, page=14, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5529, page=14, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 14>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page14 us
 ed on input line 155.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5513, page=16, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5530, page=16, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 16>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page16 us
 ed on input line 155.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5514, page=18, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5531, page=18, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 18>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page18 us
 ed on input line 155.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5515, page=23, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5532, page=23, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 23>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page23 us
 ed on input line 169.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5516, page=25, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5533, page=25, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 25>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page25 us
 ed on input line 169.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5517, page=27, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5534, page=27, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 27>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page27 us
 ed on input line 169.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5518, page=24, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5535, page=24, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 24>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page24 us
 ed on input line 175.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5519, page=26, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5536, page=26, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 26>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page26 us
 ed on input line 175.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5520, page=28, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5537, page=28, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 28>
@@ -3977,165 +3984,165 @@ ed on input line 175.
 
 LaTeX Warning: Float too large for page by 4.32086pt on input line 176.
 
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5521, page=29, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5538, page=29, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 29>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page29 us
 ed on input line 184.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5522, page=31, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5539, page=31, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 31>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page31 us
 ed on input line 184.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5523, page=33, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5540, page=33, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 33>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page33 us
 ed on input line 184.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5524, page=30, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5541, page=30, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 30>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page30 us
 ed on input line 190.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5525, page=32, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5542, page=32, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 32>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page32 us
 ed on input line 190.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5526, page=34, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5543, page=34, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 34>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page34 us
 ed on input line 190.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5527, page=35, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5544, page=35, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 35>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page35 us
 ed on input line 198.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5528, page=37, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5545, page=37, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 37>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page37 us
 ed on input line 198.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5529, page=36, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5546, page=36, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 36>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page36 us
 ed on input line 203.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5530, page=38, 569.12625pt x 53
+<graphics/corrections/mcDeadMatProbPxPy.pdf, id=5547, page=38, 569.12625pt x 53
 8.01pt>
 File: graphics/corrections/mcDeadMatProbPxPy.pdf Graphic file (type pdf)
 <use graphics/corrections/mcDeadMatProbPxPy.pdf, page 38>
 Package pdftex.def Info: graphics/corrections/mcDeadMatProbPxPy.pdf , page38 us
 ed on input line 203.
 (pdftex.def)             Requested size: 239.42758pt x 226.34029pt.
-) (./Appendix_PidEff.tex [64
+) (./Appendix_PidEff.tex [65
 
  <./graphics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./
 graphics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./grap
-hics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees>] [65 <./gra
+hics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees>] [66 <./gra
 phics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphic
 s/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/co
 rrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/correc
 tions/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/correction
 s/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mc
 DeadMatProbPxPy.pdf, page is rotated 90 degrees>]
-[66 <./graphics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> 
+[67 <./graphics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> 
 <./graphics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./g
 raphics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graph
 ics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/
 corrections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/corr
-ections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees>] [67 <./graphics/cor
+ections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees>] [68 <./graphics/cor
 rections/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/correct
 ions/mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections
 /mcDeadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcD
 eadMatProbPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcDeadM
 atProbPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcDeadMatPr
-obPxPy.pdf, page is rotated 90 degrees>] [68 <./graphics/corrections/mcDeadMatP
+obPxPy.pdf, page is rotated 90 degrees>] [69 <./graphics/corrections/mcDeadMatP
 robPxPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcDeadMatProbP
 xPy.pdf, page is rotated 90 degrees> <./graphics/corrections/mcDeadMatProbPxPy.
 pdf, page is rotated 90 degrees> <./graphics/corrections/mcDeadMatProbPxPy.pdf,
  page is rotated 90 degrees> <./graphics/corrections/mcDeadMatProbPxPy.pdf, pag
 e is rotated 90 degrees> <./graphics/corrections/mcDeadMatProbPxPy.pdf, page is
- rotated 90 degrees>] [69 <./graphics/corrections/mcDeadMatProbPxPy.pdf, page i
+ rotated 90 degrees>] [70 <./graphics/corrections/mcDeadMatProbPxPy.pdf, page i
 s rotated 90 degrees> <./graphics/corrections/mcDeadMatProbPxPy.pdf, page is ro
 tated 90 degrees> <./graphics/corrections/mcDeadMatProbPxPy.pdf, page is rotate
 d 90 degrees> <./graphics/corrections/mcDeadMatProbPxPy.pdf, page is rotated 90
  degrees>]
 Appendix E.
-<graphics/corrections/EffVsP.pdf, id=5606, page=1, 569.12625pt x 552.0625pt>
+<graphics/corrections/EffVsP.pdf, id=5623, page=1, 569.12625pt x 552.0625pt>
 File: graphics/corrections/EffVsP.pdf Graphic file (type pdf)
 <use graphics/corrections/EffVsP.pdf, page 1>
 Package pdftex.def Info: graphics/corrections/EffVsP.pdf , page1 used on input 
 line 12.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsP.pdf, id=5607, page=2, 569.12625pt x 552.0625pt>
+<graphics/corrections/EffVsP.pdf, id=5624, page=2, 569.12625pt x 552.0625pt>
 File: graphics/corrections/EffVsP.pdf Graphic file (type pdf)
 <use graphics/corrections/EffVsP.pdf, page 2>
 Package pdftex.def Info: graphics/corrections/EffVsP.pdf , page2 used on input 
 line 13.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsP.pdf, id=5608, page=3, 569.12625pt x 552.0625pt>
+<graphics/corrections/EffVsP.pdf, id=5625, page=3, 569.12625pt x 552.0625pt>
 File: graphics/corrections/EffVsP.pdf Graphic file (type pdf)
 <use graphics/corrections/EffVsP.pdf, page 3>
 Package pdftex.def Info: graphics/corrections/EffVsP.pdf , page3 used on input 
 line 14.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsP.pdf, id=5609, page=4, 569.12625pt x 552.0625pt>
+<graphics/corrections/EffVsP.pdf, id=5626, page=4, 569.12625pt x 552.0625pt>
 File: graphics/corrections/EffVsP.pdf Graphic file (type pdf)
 <use graphics/corrections/EffVsP.pdf, page 4>
 Package pdftex.def Info: graphics/corrections/EffVsP.pdf , page4 used on input 
 line 15.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsP.pdf, id=5610, page=5, 569.12625pt x 552.0625pt>
+<graphics/corrections/EffVsP.pdf, id=5627, page=5, 569.12625pt x 552.0625pt>
 File: graphics/corrections/EffVsP.pdf Graphic file (type pdf)
 <use graphics/corrections/EffVsP.pdf, page 5>
 Package pdftex.def Info: graphics/corrections/EffVsP.pdf , page5 used on input 
 line 16.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsP.pdf, id=5611, page=6, 569.12625pt x 552.0625pt>
+<graphics/corrections/EffVsP.pdf, id=5628, page=6, 569.12625pt x 552.0625pt>
 File: graphics/corrections/EffVsP.pdf Graphic file (type pdf)
 <use graphics/corrections/EffVsP.pdf, page 6>
 Package pdftex.def Info: graphics/corrections/EffVsP.pdf , page6 used on input 
 line 17.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsP.pdf, id=5612, page=7, 569.12625pt x 552.0625pt>
+<graphics/corrections/EffVsP.pdf, id=5629, page=7, 569.12625pt x 552.0625pt>
 File: graphics/corrections/EffVsP.pdf Graphic file (type pdf)
 <use graphics/corrections/EffVsP.pdf, page 7>
 Package pdftex.def Info: graphics/corrections/EffVsP.pdf , page7 used on input 
 line 18.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsP.pdf, id=5613, page=8, 569.12625pt x 552.0625pt>
+<graphics/corrections/EffVsP.pdf, id=5630, page=8, 569.12625pt x 552.0625pt>
 File: graphics/corrections/EffVsP.pdf Graphic file (type pdf)
 <use graphics/corrections/EffVsP.pdf, page 8>
 Package pdftex.def Info: graphics/corrections/EffVsP.pdf , page8 used on input 
 line 19.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-<graphics/corrections/EffVsP.pdf, id=5614, page=9, 569.12625pt x 552.0625pt>
+<graphics/corrections/EffVsP.pdf, id=5631, page=9, 569.12625pt x 552.0625pt>
 File: graphics/corrections/EffVsP.pdf Graphic file (type pdf)
 <use graphics/corrections/EffVsP.pdf, page 9>
 Package pdftex.def Info: graphics/corrections/EffVsP.pdf , page9 used on input 
 line 20.
 (pdftex.def)             Requested size: 152.36569pt x 147.79529pt.
-) [70
+) [71
 
  <./graphics/corrections/EffVsP.pdf, page is rotated 90 degrees> <./graphics/co
 rrections/EffVsP.pdf, page is rotated 90 degrees> <./graphics/corrections/EffVs
@@ -4174,9 +4181,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--37
  [][]  
  []
 
-[71
+[72
 
-] [72])
+] [73])
 \tf@lof=\write5
 \openout5 = `CEP_AnalysisNote.lof'.
 
@@ -4184,11 +4191,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \tf@lot=\write6
 \openout6 = `CEP_AnalysisNote.lot'.
 
- (./CEP_AnalysisNote.bbl [73] [74
+ (./CEP_AnalysisNote.bbl [74] [75
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
- [75]
+ [76]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
 
 (./CEP_AnalysisNote.aux)
@@ -4206,13 +4213,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
  ) 
 Here is how much of TeX's memory you used:
- 14414 strings out of 492982
- 283759 string characters out of 6134895
- 350055 words of memory out of 5000000
- 17377 multiletter control sequences out of 15000+600000
- 31133 words of font info for 113 fonts, out of 8000000 for 9000
+ 14423 strings out of 492982
+ 283883 string characters out of 6134895
+ 350227 words of memory out of 5000000
+ 17381 multiletter control sequences out of 15000+600000
+ 31485 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,26n,67p,1686b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,26n,67p,1913b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
@@ -4239,11 +4246,12 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on CEP_AnalysisNote.pdf (75 pages, 9545028 bytes).
+t/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on CEP_AnalysisNote.pdf (76 pages, 9559696 bytes).
 PDF statistics:
- 5935 PDF objects out of 6186 (max. 8388607)
- 2999 compressed objects within 30 object streams
- 325 named destinations out of 1000 (max. 500000)
+ 5957 PDF objects out of 6186 (max. 8388607)
+ 3018 compressed objects within 31 object streams
+ 329 named destinations out of 1000 (max. 500000)
  2101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
