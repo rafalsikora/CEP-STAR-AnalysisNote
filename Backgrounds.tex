@@ -9,19 +9,72 @@
 \section{Sources of background}
 \subsection{Non-exclusive background}\label{sec:nonExclBkgd}
 
-%---------------------------
-\begin{figure}[ht!]
-\centering%
-\includegraphics[width=0.65\linewidth,page=1]{graphics/backgrounds/Raw_MissingPtPid.pdf}%
-\caption{Missing pT.}\label{fig:missingPtBkgd}%
-\end{figure}
-tutaj dodac szkice spodziewanego tla nieekskluzywnego
-%---------------------------
+The main background present in the final exclusive $\pi^{+}\pi^{-}/K^{+}K^{-}/p\bar{p}$ sample is the non-exclusive background. There are several classes of events which mimic topology of $h^{+}h^{-}$ CEP: two forward protons, two opposite sign central tracks and rapidity gaps. Below we list the most probable cases:
+  \begin{itemize}
+  \item Single physics processes:
+  \begin{itemize}
+  \item Central Diffraction (Fig.~\ref{fig:bkgdSources_cd}) - this process differs from CEP of $h^{+}h^{-}$ only by the number of particles produced in the mid-rapidity; protons originate from the same vertex as the central tracks, hence correlation of reconstructed vertex position from RPs and TPC is still observed.
+  \end{itemize}
+  \item Coincidences (pile-up):
+  \begin{itemize}
+  \item inelastic + elastic interaction (Fig.~\ref{fig:bkgdSources_mb_el}) - there may be overlap of protons from elastic scattering interaction and activity in the central detector from another (inelastic) interaction; it should be supressed by the rapidity gap veto in BBC-small (online) and BBC-large (offline); easy to identify through protons collinearity and lack of correlation of $z$-vertex from RPs and TPC.
+  \end{itemize}\vspace*{-17pt}
+  
+  
+  \hspace*{-7pt}$\left.\begin{tabular}{p{.9\textwidth}}
+  \begin{itemize}
+  \item Single Diffraction + beam halo - there may be overlap of proton from SD on one side and beam halo proton on the opposite side, and activity in the central detector from diffractive state; it should be supressed by the rapidity gap vetos and (low) beam halo rate;
+  \item  2$\times$beam halo + inelastic interaction.
+  \end{itemize}
+  \end{tabular}\right\}_{\rotatebox{90}{~~~~negligibly low\hspace*{-25pt}}}$
+  
+ \end{itemize}
 
+ These backgrounds are graphically presented in Fig.~\ref{fig:bkgdSources}.
+
+%---------------------------
+\begin{figure}[h]
+\centering%
+\parbox{0.315\textwidth}{%
+  \centering%
+  \begin{subfigure}[b]{0.9\linewidth}{
+                \subcaptionbox{\label{fig:bkgdSources_cep}}{\includegraphics[width=\linewidth]{graphics/backgrounds/cep.pdf}}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.315\textwidth}{%
+  \centering%
+  \begin{subfigure}[b]{0.9\linewidth}{
+                \subcaptionbox{\label{fig:bkgdSources_cd}}{\includegraphics[width=\linewidth]{graphics/backgrounds/cd.pdf}}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.315\textwidth}{%
+  \centering%
+  \begin{subfigure}[b]{0.9\linewidth}{
+                \subcaptionbox{\label{fig:bkgdSources_mb_el}}{\includegraphics[width=\linewidth]{graphics/backgrounds/mb_el.pdf}}}
+  \end{subfigure}
+}%
+\caption[Sketches of main processes with CEP event topology.]{Sketches of main processes exhibiting $h^{+}h^{-}$ CEP event topology: the exclusive $h^{+}h^{-}$ signal itself (\ref{fig:bkgdSources_cep}), central diffraction event with some particles not detected (\ref{fig:bkgdSources_cd}) and elastic proton-proton scattering event with pile-up inelastic interaction in the central region (\ref{fig:bkgdSources_mb_el}). Particles represented by arrows are: forward scattered protons (blue), detected mid-rapidity particles (green) and undetected particles (dashed gray). Black dots mark primary interaction vertices.}\label{fig:bkgdSources}
+\end{figure}
+%---------------------------
+ 
+ 
+
+% %---------------------------
+% \begin{figure}[h]
+% \centering%
+% \includegraphics[width=0.65\linewidth,page=1]{graphics/backgrounds/Raw_MissingPtPid.pdf}%
+% \caption{Missing pT.}\label{fig:missingPtBkgd}%
+% \end{figure}
+% %---------------------------
+\newpage
 \subsection{Exclusive background (particle misidentification)}\label{sec:exclBkgd}
 
+Another source of background which is connected with finite particle identification power is the exclusive background from the particle species other than species under study.
+
 %---------------------------
-\begin{figure}[ht!]
+\begin{figure}[h]
 \centering%
 \parbox{0.4725\textwidth}{%
   \centering%
