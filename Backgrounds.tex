@@ -66,6 +66,18 @@ Eqs.~\eqref{eq:misidentificationEqs} can be written in the matrix form, as shown
 \end{equation}
 \end{tabulary}
 
+\section{Non-exclusive background determination}
 
-\section{Relative normalization of background and signal}\label{sec:bkgdSignalNorm}
+Determination of non-exclusive background makes use of the missing transverse momentum which is distributed differently for the signal and for aforementioned background. High statistics of the data allows to apply a data-driven method. What is more, not only integrated over observables but even differentially as a function of these.
+
+It has already been demonstrated in Sec.~\ref{subsec:ptMiss} that $p_{\text{T}}^{\text{miss}}$ from exclusive events is much narrower compared to background, visible as a peak near the axis origin. Additional feature of 
+$p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{\text{T}}^{\text{miss}}$ moving towards the axis origin, enables performing a polynomial fit to $p_{\text{T}}^{\text{miss}}$ distribution in the background-dominated range and extrapolation of this polynomial down to  $p_{\text{T}}^{\text{miss}} = 0$ under the peak of CEP signal. The procedure used to determine non-exclusive background content in the signal region is described below.
+
+%\begin{enumerate}
+% \item 2-dimensional histograms of quantities of interest $q$ (probe $\eta$, probe $p_{T}$, $z_{\text{vtx}}$) vs. $p_{T}^{\text{miss}}$ were filled, separately for all probes and only for probes matched with TOF. Each probe (each entry to the histogram) was associated with the weight $w$ taking into account the trigger efficiency and vertexing efficiency, as given in Eq.~\eqref{eq:tagAndProbeWeight} and explained later in the text.\\[-20pt]%
+%%
+%\item In each bin of quantity of interest $q$ (as a function of which the efficiency was to be determined) the distribution of $p_{T}^{\text{miss}}$ was fitted in the signal-free region with the function describing background shape. The background function was extrapolated to $p_{T}^{\text{miss}}=0$. The signal yield in given bin of $q$ was calculated as the integral of the histogram with subtracted integral of the background function, both in the range $p_{T}^{\text{miss}}<75$~MeV.
+%\end{enumerate}
+
+\section{Normalization of signal and background models}\label{sec:bkgdSignalNorm}
 

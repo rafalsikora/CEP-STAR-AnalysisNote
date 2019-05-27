@@ -26,7 +26,8 @@
 \contentsline {section}{\numberline {4.1}Sources of background}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Non-exclusive background}{25}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Exclusive background (particle misidentification)}{25}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Relative normalization of background and signal}{26}{section.4.2}
+\contentsline {section}{\numberline {4.2}Non-exclusive background determination}{26}{section.4.2}
+\contentsline {section}{\numberline {4.3}Normalization of signal and background models}{26}{section.4.3}
 \contentsline {chapter}{\numberline {5}Corrections}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}Method of corrections application}{27}{section.5.1}
 \contentsline {section}{\numberline {5.2}Acceptances and efficiencies}{27}{section.5.2}
