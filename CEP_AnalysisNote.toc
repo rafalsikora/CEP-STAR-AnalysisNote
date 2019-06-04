@@ -47,7 +47,9 @@
 \contentsline {section}{\numberline {5.3}Particle energy loss}{38}{section.5.3}
 \contentsline {section}{\numberline {5.4}Background subtraction}{39}{section.5.4}
 \contentsline {section}{\numberline {5.5}Closure tests}{39}{section.5.5}
-\contentsline {chapter}{\numberline {6}Systematic errors}{40}{chapter.6}
+\contentsline {chapter}{\numberline {6}Systematic uncertainties}{40}{chapter.6}
+\contentsline {section}{\numberline {6.1}Discussion of systematic effects}{40}{section.6.1}
+\contentsline {section}{\numberline {6.2}Graphical representations of systematic uncertainties}{40}{section.6.2}
 \contentsline {chapter}{\numberline {7}Physics results}{45}{chapter.7}
 \contentsline {chapter}{Appendix \numberline {A}BBC response}{52}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Formulation of total RP efficiency}{61}{Appendix.1.B}

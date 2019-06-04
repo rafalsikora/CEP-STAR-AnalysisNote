@@ -47,15 +47,17 @@
 \BOOKMARK [1][-]{section.5.3}{Particle energy loss}{chapter.5}% 47
 \BOOKMARK [1][-]{section.5.4}{Background subtraction}{chapter.5}% 48
 \BOOKMARK [1][-]{section.5.5}{Closure tests}{chapter.5}% 49
-\BOOKMARK [0][-]{chapter.6}{Systematic errors}{}% 50
-\BOOKMARK [0][-]{chapter.7}{Physics results}{}% 51
-\BOOKMARK [0][-]{Appendix.1.A}{Appendix BBC response}{}% 52
-\BOOKMARK [0][-]{Appendix.1.B}{Appendix Formulation of total RP efficiency}{}% 53
-\BOOKMARK [0][-]{Appendix.1.C}{Appendix Reconstruction of mTOF2}{}% 54
-\BOOKMARK [0][-]{Appendix.1.D}{Appendix RP efficiency}{}% 55
-\BOOKMARK [1][-]{section.1.D.1}{RP track acceptance, reconstruction and selection efficiency}{Appendix.1.D}% 56
-\BOOKMARK [1][-]{section.1.D.2}{RP trigger veto probability related to dead material}{Appendix.1.D}% 57
-\BOOKMARK [0][-]{Appendix.1.E}{Appendix Particle identification efficiency}{}% 58
-\BOOKMARK [0][-]{chapter*.74}{List of Figures}{}% 59
-\BOOKMARK [0][-]{chapter*.75}{List of Tables}{}% 60
-\BOOKMARK [0][-]{chapter*.76}{References}{}% 61
+\BOOKMARK [0][-]{chapter.6}{Systematic uncertainties}{}% 50
+\BOOKMARK [1][-]{section.6.1}{Discussion of systematic effects}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.2}{Graphical representations of systematic uncertainties}{chapter.6}% 52
+\BOOKMARK [0][-]{chapter.7}{Physics results}{}% 53
+\BOOKMARK [0][-]{Appendix.1.A}{Appendix BBC response}{}% 54
+\BOOKMARK [0][-]{Appendix.1.B}{Appendix Formulation of total RP efficiency}{}% 55
+\BOOKMARK [0][-]{Appendix.1.C}{Appendix Reconstruction of mTOF2}{}% 56
+\BOOKMARK [0][-]{Appendix.1.D}{Appendix RP efficiency}{}% 57
+\BOOKMARK [1][-]{section.1.D.1}{RP track acceptance, reconstruction and selection efficiency}{Appendix.1.D}% 58
+\BOOKMARK [1][-]{section.1.D.2}{RP trigger veto probability related to dead material}{Appendix.1.D}% 59
+\BOOKMARK [0][-]{Appendix.1.E}{Appendix Particle identification efficiency}{}% 60
+\BOOKMARK [0][-]{chapter*.74}{List of Figures}{}% 61
+\BOOKMARK [0][-]{chapter*.75}{List of Tables}{}% 62
+\BOOKMARK [0][-]{chapter*.76}{References}{}% 63
