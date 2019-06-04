@@ -251,6 +251,17 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 
 \subsection{(\ref{enum:CutRpTrks})~RP tracks}
 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.465\textwidth]{graphics/eventSelection/RpTracks/PxPyExclusiveAllMerged.pdf}
+%\hfill
+\includegraphics[width=.523\textwidth]{graphics/eventSelection/RpTracks/Paper_MandelstamT.pdf}
+%
+\caption{(left) Merged distributions of diffractively scattered protons momenta $p_y$ vs. $p_x$ in exclusive $h^{+}h^{-}$ events reconstructed with the East and West RP stations, together with the kinematic region used in the measurement marked with the black line. (right) Distributions of measured four momenta transfers at the proton vertices for exclusive $h^{+}h^{-}$ events with all particles in the fiducial phase space are shown for East and West stations with yellow and blue color, respectively.}
+\label{fig:rp_hits}
+\end{figure}
+
 % %---------------------------
 % \begin{figure}[ht!]
 % \centering
@@ -647,17 +658,29 @@ In current analysis the $n_{\text{cut}}$ was set to 2.5, which translates to thr
 
 
 
-
-%---------------------------
-\begin{figure}[ht!]
-% \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
-\centering%
-\includegraphics[width=0.633\linewidth,page=1]{graphics/eventSelection/MissingPt.pdf}%
-% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/MissingPt.pdf}%
-\caption{MissingPt.}\label{fig:MissingPt}%
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:MissingPt_pion}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/eventSelection/exclusivity/Paper_MissingPt_pion.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:MissingPt_kaon}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/eventSelection/exclusivity/Paper_MissingPt_proton.pdf}}
+  \end{subfigure} 
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{17pt}
+                \subcaptionbox{\label{fig:MissingPt_proton}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/eventSelection/exclusivity/Paper_MissingPt_kaon.pdf}}
+  \end{subfigure}\\
+  \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{20pt}
+    \caption[....]{Uncorrected distributions of the CEP event candidates for missing transverse momentum $p_\mathrm{T}^\mathrm{\scriptscriptstyle miss}$ for $\pi^+\pi^-$ (top), $K^+K^-$ (middle) and $p\bar{p}$ (bottom) pairs. Distributions for opposite-sign and same-sign particle pairs are shown as black and red symbols, respectively. The vertical error bars represent statistical uncertainties. The horizontal bars represent bin sizes.}\label{fig:MissingPt}
+  \end{minipage}
+}%
 \end{figure}
-% \end{wrapfigure}
-%---------------------------
+%--------------------------- 
 
  
 
