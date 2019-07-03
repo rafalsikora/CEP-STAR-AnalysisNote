@@ -42,7 +42,18 @@
 In this section we present calculation of all efficiencies except TPC track reconstruction and TOF hit reconstruction and matching efficiency, which were discussed and presented in Ref.~\cite{supplementaryNote}.
 
 \subsection{Trigger efficiency}\label{sec:triggerEff} 
+
+
 \subsubsection{Online TOF efficiency}\label{sec:tofOnlineEff}
+The efficiency of the part of the trigger related to TOF subsystem $\mbox{\LARGE$\varepsilon$}_{\text{TOF}}^{\text{trig}}$ was calculated using the zero-bias data. Events with exactly 1 TOF vertex (cut~\ref{enum:CutPrimVx}), exactly 2 primary good quality TOF-matched TPC tracks (cuts~\ref{enum:TpcTofMatched}, \ref{enum:TpcQualityCuts}) and maximally 3 TOF clusters (cut~\ref{enum:CutTofClusters}) were used to calculate this efficiency defined as a probability of having at least two TOF hits on the trigger level in selected set of events:
+
+\begin{equation}
+ \mbox{\LARGE$\varepsilon$}_{\text{TOF}}^{\text{trig}} = \frac{\text{\#events with $\geq2$ L0 TOF multiplicity and 1 TOF vtx and 2 TOF trks and $\leq3$ TOF cltrs}}{\text{\#events with 1 TOF vtx and 2 TOF trks and $\leq3$ TOF cltrs}}
+\end{equation}
+It has been verified that described efficiency does not depend on the transverse momentum of two tracks, as presented in the Fig.XXX. Therefore a single number for this efficiency is used, equal to 98.7\%. It is important to account for the fact that at some point of data-taking (see Tab.~\ref{tab:triggers}) an upper limit ($<10$) on L0 TOF multiplicity was imposed. Study shows that with the cut on offline TOF cluster multiplicity (cut~\ref{enum:CutTofClusters}) the efficiency of the trigger with and without upper limit of online TOF multiplicity remains unchanged, so the same value of the efficiency is used for the entire dataset.
+
+
+
 \subsubsection{Online veto (BBC-small and ZDC veto)}\label{sec:onlineVetoEff}
 
 Vetoeing signal in BBC-small and ZDC detectors on both sides of STAR was implemented in the logic of RP\_CPT2 trigger. Common correction of the online and offline vetoes which is used in the correction procedure explained in Sec.~\ref{sec:correctionProcedure} is presented in. Sec.~\ref{sec:onlineAndOfflineVetoEff}. However, to help quantifiy effect of just the online vetoes in BBC-small and ZDCs we show the Fig.~\ref{fig:onlineVetoEff} with the efficiency of the joint BBC-small and ZDC veto as a function of the instantaneous luminosity calculated from the zero-bias data. Details of the way the efficiency was calculated as well as description of the data in the Figure is the same as explained in Sec.~\ref{sec:onlineAndOfflineVetoEff}.
