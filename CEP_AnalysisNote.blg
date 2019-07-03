@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: CEP_AnalysisNote.aux
+The style file: utphys.bst
+Database file #1: references.bib.bib
+Warning--empty publisher in pomeronAndQCD
+You've used 22 entries,
+            2328 wiz_defined-function locations,
+            712 strings with 8017 characters,
+and the built_in function-call counts, 4817 in all, are:
+= -- 493
+> -- 131
+< -- 0
++ -- 55
+- -- 33
+* -- 342
+:= -- 528
+add.period$ -- 39
+call.type$ -- 22
+change.case$ -- 46
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 256
+empty$ -- 587
+format.name$ -- 33
+if$ -- 1286
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 34
+newline$ -- 97
+num.names$ -- 15
+pop$ -- 148
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 198
+stack$ -- 0
+substring$ -- 120
+swap$ -- 78
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 25
+width$ -- 24
+write$ -- 180
+(There was 1 warning)
