@@ -1,0 +1,13 @@
+*~
+AutoDict*
+*.backup
+*.aux
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.bbl
+*.synctex.gz
+.DS_Store
