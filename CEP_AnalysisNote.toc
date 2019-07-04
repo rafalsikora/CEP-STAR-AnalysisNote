@@ -47,17 +47,19 @@
 \contentsline {section}{\numberline {5.3}Particle energy loss}{39}{section.5.3}
 \contentsline {section}{\numberline {5.4}Background subtraction}{39}{section.5.4}
 \contentsline {section}{\numberline {5.5}Closure tests}{39}{section.5.5}
-\contentsline {chapter}{\numberline {6}Systematic uncertainties}{40}{chapter.6}
-\contentsline {section}{\numberline {6.1}Discussion of systematic effects}{40}{section.6.1}
-\contentsline {section}{\numberline {6.2}Graphical representations of systematic uncertainties}{40}{section.6.2}
-\contentsline {chapter}{\numberline {7}Physics results}{46}{chapter.7}
-\contentsline {chapter}{Appendix \numberline {A}BBC response}{53}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Formulation of total RP efficiency}{62}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}Reconstruction of $\bf {m}^{2}_{\text {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip TOF}}$}{64}{Appendix.1.C}
-\contentsline {chapter}{Appendix \numberline {D}RP efficiency}{65}{Appendix.1.D}
-\contentsline {section}{\numberline {D.1}RP track acceptance, reconstruction and selection efficiency}{65}{section.1.D.1}
-\contentsline {section}{\numberline {D.2}RP trigger veto probability related to dead material}{71}{section.1.D.2}
-\contentsline {chapter}{Appendix \numberline {E}Particle identification efficiency}{77}{Appendix.1.E}
-\contentsline {chapter}{List of Figures}{81}{chapter*.75}
-\contentsline {chapter}{List of Tables}{81}{chapter*.76}
-\contentsline {chapter}{References}{83}{chapter*.77}
+\contentsline {subsection}{\numberline {5.5.1}Data pull}{39}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Monte Carlo closure tests}{40}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}Systematic uncertainties}{41}{chapter.6}
+\contentsline {section}{\numberline {6.1}Discussion of systematic effects}{41}{section.6.1}
+\contentsline {section}{\numberline {6.2}Graphical representations of systematic uncertainties}{41}{section.6.2}
+\contentsline {chapter}{\numberline {7}Physics results}{47}{chapter.7}
+\contentsline {chapter}{Appendix \numberline {A}BBC response}{54}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Formulation of total RP efficiency}{63}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}Reconstruction of $\bf {m}^{2}_{\text {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip TOF}}$}{65}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {D}RP efficiency}{66}{Appendix.1.D}
+\contentsline {section}{\numberline {D.1}RP track acceptance, reconstruction and selection efficiency}{66}{section.1.D.1}
+\contentsline {section}{\numberline {D.2}RP trigger veto probability related to dead material}{72}{section.1.D.2}
+\contentsline {chapter}{Appendix \numberline {E}Particle identification efficiency}{78}{Appendix.1.E}
+\contentsline {chapter}{List of Figures}{82}{chapter*.76}
+\contentsline {chapter}{List of Tables}{82}{chapter*.77}
+\contentsline {chapter}{References}{84}{chapter*.78}
