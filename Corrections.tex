@@ -50,7 +50,22 @@ The efficiency of the part of the trigger related to TOF subsystem $\mbox{\LARGE
 \begin{equation}
  \mbox{\LARGE$\varepsilon$}_{\text{TOF}}^{\text{trig}} = \frac{\text{\#events with $\geq2$ L0 TOF multiplicity and 1 TOF vtx and 2 TOF trks and $\leq3$ TOF cltrs}}{\text{\#events with 1 TOF vtx and 2 TOF trks and $\leq3$ TOF cltrs}}
 \end{equation}
-It has been verified that described efficiency does not depend on the transverse momentum of two tracks, as presented in the Fig.XXX. Therefore a single number for this efficiency is used, equal to 98.7\%. It is important to account for the fact that at some point of data-taking (see Tab.~\ref{tab:triggers}) an upper limit ($<10$) on L0 TOF multiplicity was imposed. Study shows that with the cut on offline TOF cluster multiplicity (cut~\ref{enum:CutTofClusters}) the efficiency of the trigger with and without upper limit of online TOF multiplicity remains unchanged, so the same value of the efficiency is used for the entire dataset.
+
+%---------------------------
+\begin{figure}[ht!]
+\centering%
+\parbox{0.4725\textwidth}{%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/corrections/TofTrigEff_Final.pdf}\label{fig:tofTrigEff} 
+}%
+\quad%
+\parbox{0.4725\textwidth}{%
+    \caption[TOF trigger efficiency as a function of lower $p_{T}$ of two TOF-matched tracks.]{TOF trigger efficiency as a function of lower $p_{T}$ of two TOF-matched tracks. Black points denote efficiency of requirement of at least 2 online TOF hits, while open blue circles represent efficiency with added upper multiplicity limit (10). These efficiencies are identical therefore the same efficiency (98.7\%, solid red line) is used as a correction factor for all analyzed events.}\label{fig:tofTrigEff2}% 
+}
+\end{figure}
+%---------------------------
+
+It has been verified that described efficiency does not depend on the transverse momentum of two tracks. In Fig.~\ref{fig:tofTrigEff2} we show dependence of the TOF trigger efficiency in one dimension, as a function of lower $p_{T}$ of two TOF-matched tracks. Data points are consistent with constant value, herefore a single number for this efficiency is used, equal to 98.7\%. It is important to account for the fact that at some point of data-taking (see Tab.~\ref{tab:triggers}) an upper limit ($<10$) on L0 TOF multiplicity was imposed. Study shows that with the cut on offline TOF cluster multiplicity (cut~\ref{enum:CutTofClusters}) the efficiency of the trigger with and without upper limit of online TOF multiplicity remains unchanged, so the same value of the efficiency is used for the entire dataset.
 
 
 
