@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {5.2}Acceptances and efficiencies}{28}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Trigger efficiency}{28}{subsection.5.2.1}
 \contentsline {subsubsection}{\numberline {5.2.1.1}Online TOF efficiency}{28}{subsubsection.5.2.1.1}
-\contentsline {subsubsection}{\numberline {5.2.1.2}Online veto (BBC-small and ZDC veto)}{28}{subsubsection.5.2.1.2}
+\contentsline {subsubsection}{\numberline {5.2.1.2}Online veto (BBC-small and ZDC veto)}{29}{subsubsection.5.2.1.2}
 \contentsline {subsubsection}{\numberline {5.2.1.3}RP triggering efficiency}{29}{subsubsection.5.2.1.3}
 \contentsline {subsubsection}{\numberline {5.2.1.4}Up and Down RP combination veto (due to dead material)}{29}{subsubsection.5.2.1.4}
 \contentsline {subsection}{\numberline {5.2.2}Reconstruction and selection efficiency}{30}{subsection.5.2.2}
@@ -44,7 +44,7 @@
 \contentsline {subsubsection}{\numberline {5.2.2.5}Particle identification\nobreakspace {}(\ref {enum:CutPid})}{33}{subsubsection.5.2.2.5}
 \contentsline {subsection}{\numberline {5.2.3}RP track acceptance and reconstruction efficiency}{36}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}TPC vertex reconstruction efficiency}{37}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Particle energy loss}{38}{section.5.3}
+\contentsline {section}{\numberline {5.3}Particle energy loss}{39}{section.5.3}
 \contentsline {section}{\numberline {5.4}Background subtraction}{39}{section.5.4}
 \contentsline {section}{\numberline {5.5}Closure tests}{39}{section.5.5}
 \contentsline {chapter}{\numberline {6}Systematic uncertainties}{40}{chapter.6}
@@ -58,6 +58,6 @@
 \contentsline {section}{\numberline {D.1}RP track acceptance, reconstruction and selection efficiency}{65}{section.1.D.1}
 \contentsline {section}{\numberline {D.2}RP trigger veto probability related to dead material}{71}{section.1.D.2}
 \contentsline {chapter}{Appendix \numberline {E}Particle identification efficiency}{77}{Appendix.1.E}
-\contentsline {chapter}{List of Figures}{81}{chapter*.74}
-\contentsline {chapter}{List of Tables}{81}{chapter*.75}
-\contentsline {chapter}{References}{83}{chapter*.76}
+\contentsline {chapter}{List of Figures}{81}{chapter*.75}
+\contentsline {chapter}{List of Tables}{81}{chapter*.76}
+\contentsline {chapter}{References}{83}{chapter*.77}
