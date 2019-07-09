@@ -28,7 +28,7 @@
 
 
 
-\begin{equation}
+\begin{equation}\label{eq:weight}
 	\mathit{w} = \left[\prod\limits_{\textrm{sign}} \epsilon_{\textrm{\tiny TOF}}(\textrm{sign}, \textrm{PID}, p_{\text{T}},z_{vx},\eta)  \times \prod\limits_{\textrm{sign}} \epsilon_{\textrm{\tiny TPC}}(\textrm{sign}, \textrm{PID}, p_{\text{T}},z_{vx},\eta) \times \prod\limits_{\textrm{side}}\epsilon_{\textrm{\tiny RP}}^{\textrm{side}}(p_{x},p_{y}) \right]^{-1},
 \end{equation}
 \[\textrm{sign}\in\{+,-\},~~\textrm{side}\in\{E,W\}\]
@@ -493,9 +493,20 @@ This new momentum was further used in determination of total transverse momentum
 % 
 % Jakies uwagi?
 
-
 \section{Closure tests}\label{sec:closureTests}
 \subsection{Data pull}
+
+Sanity of the data after applied corrections was verified by preparing a pull histogram of the number of reconstructed events per unit of integrated luminosity. The pull quantity was calculated per run, defined as 
+\begin{equation}\label{eq:pull}
+ \text{Pull}_{i} = \frac{N_{i}/L_{i}-\langle N/L\rangle}{\sigma_{i}/L_{i}},
+\end{equation}
+where $N_{i}$ is a number of events in $i$-th run, $\sigma_{i}$ is a statistical uncertainty of $N_{i}$, $L_{i}$ is a luminosity collected during $i$-th run and $\langle N/L\rangle$ is expected number of events per unit of integrated luminosity. The latter is calculated using an estimator from Eq.~\eqref{eq:estimatorNL}:
+\begin{equation}\label{eq:estimatorNL}
+ \langle N/L\rangle = \frac{\sum\limits_{i}N_{i}}{\sum\limits_{i}L_{i}}.
+\end{equation}
+
+Final pull histogram is shown in Fig.~\ref{fig:pull} for raw event counts (open circles) and efficiency-corrected events weighted according to prescription from Eq.~\eqref{eq:weight} (filled circles). Parameters of the Gaussian fits to data points show agreement of the mean value with 0, as expected from the pull, and significant improvement of the width of distribution after appliance of corrections, which should be consistent with 1.
+
 
 %---------------------------
 \begin{figure}[ht!]
@@ -506,7 +517,7 @@ This new momentum was further used in determination of total transverse momentum
 }%
 \quad%
 \parbox{0.4725\textwidth}{%
-    \caption[Data pull.]{Data pull.}\label{fig:pull}%  
+    \caption[Pull histogram of number of events per unit of integrated luminosity.]{Pull histogram of number of events per unit of integrated luminosity. Open circles fitted with dashed blue Gaussian mark uncorrected data, whereas black dots fitted with red curve denote corrected (weigthed) data. Parameters obtained from the fit are provided in the plot.}\label{fig:pull}%  
 }
 \end{figure}
 %---------------------------
