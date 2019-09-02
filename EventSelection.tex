@@ -252,6 +252,40 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 \subsection{(\ref{enum:CutRpTrks})~RP tracks}
 
 
+% Clear band of primary proton tracks can be distinguished in the plots.
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:localAngle2D_X}}{\includegraphics[width=\linewidth,page=1]{graphics/eventSelection/RpTracks/RpTrackCuts_2.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth,page=2]{graphics/eventSelection/RpTracks/RpTrackCuts_2.pdf}}
+  \end{subfigure}
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:localAngle2D_Y}}{\includegraphics[width=\linewidth,page=3]{graphics/eventSelection/RpTracks/RpTrackCuts_2.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth,page=4]{graphics/eventSelection/RpTracks/RpTrackCuts_2.pdf}}
+  \end{subfigure}
+}%
+\label{fig:localAngleRp}%
+\caption[Local angle vs. position of RP tracks matched with true level primary protons.]{Typical correlation between local angle ($y$-axis) and position ($x$-axis) of RP tracks matched with true level primary protons for $x$- (\ref{fig:localAngle2D_X}) and $y$-coordinate (\ref{fig:localAngle2D_Y}), here shown for branch WU. The same events are contained in \ref{fig:localAngle1D_X} and \ref{fig:localAngle1D_Y} for $x$- and $y$-coordinate respectively, where difference between reconstructed local angle and local angle expected from the elastic track is histogrammed. Red lines and arrows visualize cuts imposed on RP tracks for final selection (cuts~\ref{enum:RpLocalAngles}).}
+\end{figure}
+%---------------------------
+
+
+
+
+
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=.465\textwidth]{graphics/eventSelection/RpTracks/PxPyExclusiveAllMerged.pdf}
@@ -262,33 +296,6 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 \label{fig:rp_hits}
 \end{figure}
 
-% %---------------------------
-% \begin{figure}[ht!]
-% \centering
-% \parbox{0.315\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:LocalAngles_2D}}{\includegraphics[width=\linewidth,page=1]{graphics/eventSelection/LocalAngles.pdf}}}
-%   \end{subfigure}
-% }
-% \quad
-% \parbox{0.315\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:LocalAngles_1D_x}}{\includegraphics[width=\linewidth,page=2]{graphics/eventSelection/LocalAngles.pdf}}}
-%   \end{subfigure}
-% }
-% \quad
-% \parbox{0.315\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:LocalAngles_1D_y}}{\includegraphics[width=\linewidth,page=3]{graphics/eventSelection/LocalAngles.pdf}}}
-%   \end{subfigure}
-% }%
-% \caption{Local angles of global tracks in Roman Pots.}
-% \end{figure}
-% %---------------------------
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -609,7 +616,7 @@ with the other total momentum components defined analogously:\\
 
 Figure~\ref{fig:PxPyCentralTrksVsProtons} visualize the (anti-)correlation between the momentum components of the forward system (sum of two forward protons momenta) and the central system (sum of two central tracks momenta). The enhanced band at anti-diagonal restricted by dashed lines contains events balanced in momentum, a signature of exclusivity. Events outside this band are the non exclusive backgrounds, in most cases Central Diffraction events with some particles undected (due to detector inefficiency or produced outside acceptance). Slight horizontal enhancement in all distributions around $[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{x} = [\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{x} =0$ is a signature of the elastic proton-proton scattering background with some non-elastic pile-up interaction which mimics the CEP event. All these backgrounds are reasonably low after the exclusivity cut, as described in Sec.~\ref{sec:nonExclBkgd}.
 
-The momentum balance is shown one-dimensionally in Fig.~\ref{fig:MissingPxPy}, with the sum of $x$- and $y$-components of momentum shown repectively in the left and right column for each analyzed particle species. The sum of signal and background (both assumed to be described a Gaussian) was fitted to $p_{x}^{\text{miss}}$ and $p_{y}^{\text{miss}}$ distributions. Results of the fit are given in each subfigure. One can notice that the widths of Gaussian functions representing the exclusive signal are consistent among species and amount $\sigma_{p_{x}^{\text{miss}}}=27.4$~MeV for the $x$-component of total momentum, and $\sigma_{p_{y}^{\text{miss}}}=28.1$~MeV for the $y$-component of total momentum, taking the values of the lowest statistical uncertainty - for $\pi^{+}\pi^{-}$. These values are measures of the total momentum resolution respectivelty for $p_{x}^{\text{miss}}$ and $p_{y}^{\text{miss}}$. Having these number it is possible to form an elliptical on the missing momentum:
+The momentum balance is shown one-dimensionally in Fig.~\ref{fig:MissingPxPy}, with the sum of $x$- and $y$-components of momentum shown repectively in the left and right column for each analyzed particle species. The sum of signal and background (both assumed to be described a Gaussian) was fitted to $p_{x}^{\text{miss}}$ and $p_{y}^{\text{miss}}$ distributions. Results of the fit are given in each subfigure. One can notice that the widths of Gaussian functions representing the exclusive signal are consistent among species and amount $\sigma_{p_{x}^{\text{miss}}}=27.4$~MeV for the $x$-component of total momentum, and $\sigma_{p_{y}^{\text{miss}}}=28.1$~MeV for the $y$-component of total momentum, taking the values of the lowest statistical uncertainty - for $\pi^{+}\pi^{-}$. These values are measures of the total momentum resolution respectively for $p_{x}^{\text{miss}}$ and $p_{y}^{\text{miss}}$. Having these number it is possible to form an elliptical on the missing momentum:
 
 \begin{equation}\label{eq:ptMissEllipse}%
 \left(\frac{p_{x}^{\text{miss}}}{\sigma_{p_{x}^{\text{miss}}}}\right)^{2} + \left(\frac{p_{y}^{\text{miss}}}{\sigma_{p_{y}^{\text{miss}}}}\right)^{2} < n_{\text{cut}}^{2}
@@ -635,7 +642,7 @@ In current analysis the $n_{\text{cut}}$ was set to 2.5, which translates to thr
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~g)}{graphics/eventSelection/exclusivity/PxCentralTrksVsProtons_proton.pdf} &
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~i)}{graphics/eventSelection/exclusivity/PyCentralTrksVsProtons_proton.pdf}    
   \end{tabular}\vspace*{-5pt}
-    \caption[Two-dimensional distributions of sum of forward protons momenta and sum of central tracks momenta for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates.]{Two-dimensional distributions of sum of forward protons momenta ($x$-axis) and sum of central tracks momenta ($y$-axis) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates after full event selection, except the exclusivity cut~\ref{enum:CutMissingPt}. Left and right column shows correlation of respectivelty $x$- and $y$-component of tracks' momenta. Anti-diagonal representing perfect momentum balance of the central and forward system is limited with dashed lines extending by $\pm2.5\sigma$  ($\sigma\approx 30$~MeV) around the anti-diagonal. Three distinct horizontal regions in plots on the right hand side correspond to different forward proton configurations: elastic-like (protons in branches EU\&WD or ED\&WU, $\left|[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{y}\right| < 0.2$~GeV) and anti-elastic configuration (protons in branches ED\&WD or EU\&WU, $\left|[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{y}\right| > 0.4$~GeV).}\label{fig:PxPyCentralTrksVsProtons}
+    \caption[Two-dimensional distributions of sum of forward protons momenta and sum of central tracks momenta for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates.]{Two-dimensional distributions of sum of forward protons momenta ($x$-axis) and sum of central tracks momenta ($y$-axis) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) event candidates after full event selection, except the exclusivity cut~\ref{enum:CutMissingPt}. Left and right column shows correlation of respectively $x$- and $y$-component of tracks' momenta. Anti-diagonal representing perfect momentum balance of the central and forward system is limited with dashed lines extending by $\pm2.5\sigma$  ($\sigma\approx 30$~MeV) around the anti-diagonal. Three distinct horizontal regions in plots on the right hand side correspond to different forward proton configurations: elastic-like (protons in branches EU\&WD or ED\&WU, $\left|[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{y}\right| < 0.2$~GeV) and anti-elastic configuration (protons in branches ED\&WD or EU\&WU, $\left|[\vec{p}^{\hspace*{2pt}\text{W}}_{p'}+\vec{p}^{\hspace*{2pt}\text{E}}_{p'}]_{y}\right| > 0.4$~GeV).}\label{fig:PxPyCentralTrksVsProtons}
 \end{figure}
 
 

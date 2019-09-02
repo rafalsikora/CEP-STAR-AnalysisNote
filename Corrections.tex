@@ -124,6 +124,8 @@ Technically the $\mathcal{P}_{\text{DM~veto}}^{\text{side}}$ was obtained in the
 	
 \end{enumerate}
 
+
+
 It should be noted that the momentum components $(p_{x}, p_{y})$ were taken from the proton with accounted effect of the beam divergence (after the original initial momentum smearing). Sample probability of a dead-material-induced veto is shown in Fig.~\ref{fig:sampleRpDeadMatVeto}, with all the remaining results contained in Appendix~\ref{appendix:rpEff}.
 
 The efficiency of the discussed veto which is finally used to correct the data is opposite of the veto probability, namely
@@ -131,13 +133,12 @@ The efficiency of the discussed veto which is finally used to correct the data i
  \mbox{\LARGE$\epsilon$}_{\text{DM~veto}}^{\text{side}} = 1 - \mathcal{P}_{\text{DM~veto}}^{\text{side}}.
 \end{equation}
 
-
 %---------------------------
 \begin{figure}[ht!]
 \centering%
 \parbox{0.4725\textwidth}{%
   \centering%
-  \includegraphics[width=\linewidth,page=3]{graphics/corrections/mcDeadMatProbPxPy.pdf}\label{fig:sampleDeadMatVetoProb}
+  \includegraphics[width=\linewidth,page=10]{graphics/corrections/mcDeadMatProbPxPy.pdf}\label{fig:sampleDeadMatVetoProb}
 }%
 \quad%
 \parbox{0.4725\textwidth}{%
@@ -145,6 +146,7 @@ The efficiency of the discussed veto which is finally used to correct the data i
 }
 \end{figure}
 %---------------------------
+
 
 
 
@@ -512,7 +514,7 @@ This new momentum was further used in determination of total transverse momentum
 %   po stronie protonu też to znamy z embeddingu lub "naszych" zero-bias.
 % 
 %   Dodatkowo dochodza dodatkowe werteksy z oddzialywań wtornych/rozpadow.
-%   Ten efekt znamy z MC. Powinno byc to samo z pile-up'em jak i  bez
+%   Ten efekt znamy z MC. Powinno byc to samo z pile-up'em jak i  bez 
 % 
 % 
 % Jakies uwagi?
@@ -520,14 +522,24 @@ This new momentum was further used in determination of total transverse momentum
 \section{Closure tests}\label{sec:closureTests}
 \subsection{Data pull}
 
-Sanity of the data after applied corrections was verified by preparing a pull histogram of the number of reconstructed events per unit of integrated luminosity. The pull quantity was calculated per run, defined as 
+Sanity of the data after applied corrections was verified by preparing a pull histogram of the number of reconstructed and selected CEP events per unit of integrated luminosity (in other words - an integrated cross section). The pull quantity was calculated per run, defined as 
 \begin{equation}\label{eq:pull}
- \text{Pull}_{i} = \frac{N_{i}/L_{i}-\langle N/L\rangle}{\sigma_{i}/L_{i}},
+  \text{Pull}_{i}=\left\{
+  \begin{array}{@{}ll@{}}
+    \frac{\sigma_{i}-\langle \sigma\rangle}{u^{-}(\sigma_{i})}, & \text{if}\ \sigma_{i}-\langle \sigma\rangle \geq 0, \\[8pt]
+    \frac{\sigma_{i}-\langle \sigma\rangle}{u^{+}(\sigma_{i})}, & \text{if}\ \sigma_{i}-\langle \sigma\rangle < 0,
+  \end{array}\right.
 \end{equation}
-where $N_{i}$ is a number of events in $i$-th run, $\sigma_{i}$ is a statistical uncertainty of $N_{i}$, $L_{i}$ is a luminosity collected during $i$-th run and $\langle N/L\rangle$ is expected number of events per unit of integrated luminosity. The latter is calculated using an estimator from Eq.~\eqref{eq:estimatorNL}:
+where $\sigma_{i}$ is an integrated cross section calculated for $i$-th run with statistical uncertainty equal to $u^{-}(\sigma_{i})$ or $u^{+}(\sigma_{i})$ (lower or upper 68\% confidence level interval), and $\langle \sigma\rangle$ is an expectation value of integrated cross section. For each run the integrated cross section was calculated as
+\begin{equation}\label{eq:crossSecPull}
+ \sigma_{i} = \frac{N_{i}}{L_{i}}.
+\end{equation}
+where $N_{i}$ is a number of CEP events in $i$-th run and $L_{i}$ is a luminosity collected during $i$-th run. The expectation value $\langle \sigma\rangle$ was calculated using an estimator from Eq.~\eqref{eq:estimatorNL}:
+
 \begin{equation}\label{eq:estimatorNL}
- \langle N/L\rangle = \frac{\sum\limits_{i}N_{i}}{\sum\limits_{i}L_{i}}.
+ \langle \sigma\rangle = \frac{\sum\limits_{i}\sigma_{i} \times u^{-2}(\sigma_{i})}{\sum\limits_{i}u^{-2}(\sigma_{i})}
 \end{equation}
+which is simply an average integrated cross section calculated with full dataset, weighted by the uncertainties (by reciprocal of variance).
 
 Final pull histogram is shown in Fig.~\ref{fig:pull} for raw event counts (open circles) and efficiency-corrected events weighted according to prescription from Eq.~\eqref{eq:weight} (filled circles). Parameters of the Gaussian fits to data points show agreement of the mean value with 0, as expected from the pull, and significant improvement of the width of distribution after appliance of corrections, which should be consistent with 1.
 
