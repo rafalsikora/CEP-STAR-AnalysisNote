@@ -34,6 +34,20 @@
 \[\textrm{sign}\in\{+,-\},~~\textrm{side}\in\{E,W\}\]
 % () 
 
+%---------------------------
+\begin{figure}[h!]
+\centering%
+\parbox{0.4725\textwidth}{%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/corrections/Weights.pdf}\label{fig:weights} 
+}%
+\quad%
+\parbox{0.4725\textwidth}{%
+    \caption[Distribution of weights assigned to selected CEP events.]{Distribution of weights assigned to selected CEP events in $\pi^{+}\pi^{-}$~(black circle), $K^{+}K^{-}$~(red square) and $p\bar{p}$~(blue triangle) channel.}\label{fig:weigths}% 
+}
+\end{figure}
+%---------------------------
+
 
 
 
@@ -470,7 +484,38 @@ This new momentum was further used in determination of total transverse momentum
 
 
 
-\section{Migrations into and outside fiducial region}\label{sec:migrations}
+\section{Fake tracks and migrations into and out of fiducial region}\label{sec:migrations}
+
+Finite resolutions play non-negligible role in presented analysis. Smearing of reconstructed quantities with respect to their true value at the hadron level makes some tracks from outside of the fiducial phase space migrating/leaking into it, as well as some tracks from inside the fiducial region escaping from it.
+
+Correction related to migrations and fake tracks was calculated using quantities described in the listing below. It applies to both TPC and RP tracks.
+
+\storestyleof{itemize}
+\begin{listliketab}
+    \begin{tabular}{Llp{0.86\linewidth}}
+        \textbullet & \textbf{$\bm{N_{\textrm{reco}}}$} & - number of true level-matched tracks reconstructed inside fiducial region,\\
+        \textbullet & \textbf{$\bm{N_{\textrm{migr.}}^{\textrm{in}}}$} & - number of true level-matched tracks from outside of fiducial region (at the hadron level), reconstructed inside fiducial regions,\\
+        \textbullet & \textbf{$\bm{N_{\textrm{migr.}}^{\textrm{out}}}$} & - number of true level-matched tracks from inside of fiducial region (at the hadron level), reconstructed outside fiducial region,\\
+        \textbullet & \textbf{$\bm{N_{\textrm{fakes}}}$} & - number of tracks not matched with true level primary but consistent with it, reconstructed inside fiducial region.\\
+    \end{tabular}
+\end{listliketab}
+
+All quantities above are represented as a function of reconstructed values (TPC tracks: $p_{T}$ and $\eta$, RP tracks: $p_{x}$ and $p_{y}$), except $N_{\textrm{migr.}}^{\textrm{out}}$ for which true (hadron) level values are used. Definitions of fraction of migrations into and out of fiducial region, as well as fraction of fake tracks inside the fiducial region, are provided in Eqs.~\eqref{eq:migrIn}-\eqref{eq:fakes} in the sane order:
+
+\begin{tabulary}{\textwidth}{LLL}
+\begin{equation}\label{eq:migrIn}%\hspace*{-10pt}
+	f_{\text{migr.}}^{\text{in}} = \frac{N_{\textrm{migr.}}^{\textrm{in}}}{N_{\textrm{reco}}},
+\end{equation}~~~~~~~~~~~~~~~~~~~~~~~~~~~~&
+\begin{equation}\label{eq:migrOut}%\hspace*{-10pt}
+	f_{\text{migr.}}^{\text{out}} = \frac{N_{\textrm{migr.}}^{\textrm{out}}}{N_{\textrm{reco}}},
+\end{equation}~~~~~~~~~~~~~~~~~~~~~~~~~&
+\begin{equation}\label{eq:fakes}
+f_{\text{fakes}} = \frac{N_{\textrm{fakes}}}{N_{\textrm{reco}}}.
+\end{equation}~~~~~~~~~~~~~~~~~~~~~~~
+\end{tabulary}
+
+Definition of number of fake tracks requires some elaboration. The necessary condition to claim a track being fake is that it is not matched with a true level primary particle. However, such tracks should typically have momentum significantly different from that of unmatched primary, therefore total momentum cut~\ref{enum:CutMissingPt} would not be satisfied and thus these tracks should not be subtracted. For this reason, an additional condition to assign a track as fake is that its reconstructed momentum is consistent with that of primary particle. In case of TPC tracks we use cut on the distance $\delta$ between true and reconstructed $(\eta,\phi)$, $\delta < 0.15$, introduced in Sec.~3.2.2 of Ref.~\cite{supplementaryNote}. For the RP tracks we use cut on the difference between true and reconstructed transverse momentum not greater than~70~MeV. Such value, somewhat arbitrary, is driven by the value used in cut~\ref{enum:CutMissingPt}. We do not consider any systematic effect connected with the fake RP track definition as this effect is believied to be much smaller than most of other systematic uncertainties. In Figs.~\ref{fig:DeltaPhiVsDeltaEta} and~\ref{fig:DeltaPyVsDeltaPx} we present distributions of quantities for matched and not matched tracks with magenta circles drawn on top marking the conditions used in fake track definitions.
+
 
 %--------------------------- 
 \begin{figure}%[ht!] 
@@ -478,46 +523,134 @@ This new momentum was further used in determination of total transverse momentum
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:migrationPtEta}}{\includegraphics[width=\linewidth]{graphics/corrections/Migrations_PtEta.pdf}}}
+                \subcaptionbox{\label{fig:DeltaPhiVsDeltaEta_Matched}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/DeltaPhiVsDeltaEta.pdf}\vspace*{-7pt}}}
   \end{subfigure}
 }
 \quad
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:migrationPxPy}}{\includegraphics[width=\linewidth]{graphics/corrections/Migrations_PxPy.pdf}}}
+                \subcaptionbox{\label{fig:DeltaPhiVsDeltaEta_NotMatched}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/DeltaPhiVsDeltaEta.pdf}\vspace*{-7pt}}}
   \end{subfigure}
 }% 
-\caption[...]{.} \label{fig:migrationsCorrections}
-\end{figure} 
+\caption[Difference between reconstructed and true parameters of the TPC tracks.]{Difference between reconstructed and true parameters of the TPC tracks. Magenta circle of radius 0.15 drawn on top of distributions represent cut on maximum difference between true and reconstructed $\eta$ and $\varphi$ of tracks used for determination of fake tracks fraction, as explained in the text. The same $z$-axis (color) scale has been set up for both plots to better visualize relative content of true and fake tracks.} \label{fig:DeltaPhiVsDeltaEta}
+\end{figure}
+
+
+%--------------------------- 
+\begin{figure}%[ht!] 
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:DeltaPyVsDeltaPx_Matched}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/DeltaPyVsDeltaPx.pdf}\vspace*{-7pt}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:DeltaPyVsDeltaPx_NotMatched}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/DeltaPyVsDeltaPx.pdf}\vspace*{-7pt}}}
+  \end{subfigure}
+}% 
+\caption[Difference between reconstructed and true momentum components of RP tracks.]{Difference between reconstructed and true momentum components of RP tracks matched (\subref{fig:DeltaPyVsDeltaPx_Matched}) and not matched (\subref{fig:DeltaPyVsDeltaPx_NotMatched}) with true level primary forward protons. Magenta circle of radius 70~MeV drawn on top of distributions represent cut on maximum difference between true and reconstructed transverse momentum used for determination of fake tracks fraction, as explained in the text. The same $z$-axis (color) scale has been set up for both plots to better visualize relative content of true and fake tracks.} \label{fig:DeltaPyVsDeltaPx}
+\end{figure}
+
+
+Fraction of tracks, for both TPC and RP detectors, migrating from/to fiducial region and being fake, is shown in Figs.~\ref{fig:migrationsAndFakes_TPC} and~\ref{fig:migrationsAndFakes_RP}. Clearly, all mentioned effects are dominant for RP tracks.
+
+
+
+Multiplicative correction factor (per track) that takes into account all migrations and fakes can be formed as
+\begin{equation}
+ C_{\text{m,f}} = \frac{N_{\textrm{reco}} + N_{\textrm{migr.}}^{\textrm{out}} - N_{\textrm{migr.}}^{\textrm{in}} - N_{\textrm{fakes}}}{N_{\textrm{reco}}} = 1 + f_{\text{migr.}}^{\text{out}} - f_{\text{migr.}}^{\text{in}} - f_{\text{fakes}}.
+\end{equation}
+This correction is graphically represented in Fig.~\ref{fig:migrationsAndFakesCorr} for both TPC (\ref{fig:migrationPtEta}) and RP (\ref{fig:migrationPxPy}) tracks. One can easily notice that most important role plays correction related to migrations at the edge of fiducial region defining accepted forward scattered protons, reaching as much as 25\% correction for tracks at the corners of allowed $(p_{x}, p_{y})$. This is a direct consequence of sizeable angular divergence of proton beams.
+
+
+
+
+%--------------------------- 
+\begin{figure}%[ht!] 
+\centering
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:MigrationsInto_PtEta}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/MigrationsInto_PtEta.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:MigrationsOutside_PtEta}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/MigrationsOutside_PtEta.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:Fakes_PtEta}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/Fakes_PtEta.pdf}}}
+  \end{subfigure}
+}% 
+\caption[Fractions of migrating and fake TPC tracks matched with TOF.]{Fraction of TOF-matched TPC tracks migrating into the fiducial central tracks phase space from outside of it (\subref{fig:MigrationsInto_PtEta}), migrating outside the fiducial phase space from inside of it (\subref{fig:MigrationsOutside_PtEta}), and fraction of fake TOF matched TPC tracks reconstructed in the fiducial phase space (\subref{fig:Fakes_PtEta}). In case of reconstructed ($p_{T}$, $\eta$) escaping the fiducial phase space (\subref{fig:MigrationsOutside_PtEta}) the true value of $p_{T}$ and $\eta$ is used; otherwise reconstructed values are plotted.}
+\label{fig:migrationsAndFakes_TPC}%
+\end{figure}
+
+
+%--------------------------- 
+\begin{figure}%[ht!]
+\centering
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:MigrationsInto_PxPy}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/MigrationsInto_PxPy.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:MigrationsOutside_PxPy}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/MigrationsOutside_PxPy.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:Fakes_PxPy}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/Fakes_PxPy.pdf}}}
+  \end{subfigure}
+}% 
+\caption[Fractions of migrating and fake RP tracks.]{Fraction of RP tracks migrating into the fiducial forward proton momentum area from outside of it (\subref{fig:MigrationsInto_PxPy}), migrating outside the fiducial area from inside of it (\subref{fig:MigrationsOutside_PxPy}), and fraction of fake RP tracks reconstructed in the fiducial area (\subref{fig:Fakes_PxPy}). In case of reconstructed tracks momentum escaping the fiducial area (\subref{fig:MigrationsOutside_PxPy}) the true value of $p_{x}$ and $p_{y}$ is used; otherwise reconstructed momentum components are plotted.} \label{fig:migrationsAndFakes_RP}
+\end{figure}
+
+
+
+
+
+%--------------------------- 
+\begin{figure}%[ht!] 
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:migrationPtEta}}{\includegraphics[width=\linewidth]{graphics/corrections/MigrationsAndFakes_PtEta.pdf}\vspace*{-7pt}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:migrationPxPy}}{\includegraphics[width=\linewidth]{graphics/corrections/MigrationsAndFakes_PxPy.pdf}\vspace*{-7pt}}}
+  \end{subfigure}
+}% 
+\caption[Joint corrections for migrations and fake tracks for TPC and RP tracks.]{Joint correction factors for migrations and fake tracks for TOF-matched TPC tracks (\ref{fig:migrationPtEta}) and RP tracks (\ref{fig:migrationPxPy}).} \label{fig:migrationsAndFakesCorr}
+\end{figure}
 
 
 
 \section{Background subtraction}\label{sec:bkgdSubtraction}
 % \section{Unfolding}\label{sec:unfolding}
-
-% 
-%   W analizie CEP wydajnosc werteksowania to prawdopodobieństwo że
-%  oba pierwotne slady z punktu B tworza werteks (to znaczy sa na liscie
-%  sladow primary wspolnego werteksu i spelniaja ciecia DCA).
-%  Nie patrzymy na dodatkowe werteksy, hity w TOF, BBC_small
-% 
-% E) --- pozostale wydajnosci
-% 
-%   w przypadku analizy CEP jest to pile-up czyli dodatkowy werteks lub
-%   dodatkowy hit w TOF lub sygnal w BBC. Te poprawk mamy z embeddingu
-%   patrzac ile przypadkow z D ma dodatkowy werteks, hist w TOF lub BBC
-% 
-%   To samo powinnismy dostac z analizy "naszych" zero-bias.
-% 
-%   W przypadku analizy SD mamy pile-up czyli dodatkowy werteks, BBC
-%   po stronie protonu też to znamy z embeddingu lub "naszych" zero-bias.
-% 
-%   Dodatkowo dochodza dodatkowe werteksy z oddzialywań wtornych/rozpadow.
-%   Ten efekt znamy z MC. Powinno byc to samo z pile-up'em jak i  bez 
-% 
-% 
-% Jakies uwagi?
 
 \section{Closure tests}\label{sec:closureTests}
 \subsection{Data pull}
@@ -567,11 +700,11 @@ Final pull histogram is shown in Fig.~\ref{fig:pull} for raw event counts (open 
 % %---------------------------
 \begin{figure}[h]
   \centering
-  \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}}
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~a)}{graphics/corrections/FullCorrectionValidation_EffUsingRecoValues_InvMass.pdf} &
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~b)}{graphics/corrections/FullCorrectionValidation_EffUsingRecoValues_Rapidity.pdf} \\
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~d)}{graphics/corrections/FullCorrectionValidation_EffUsingRecoValues_MandelstamTSum.pdf} &
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~e)}{graphics/corrections/FullCorrectionValidation_EffUsingRecoValues_DeltaPhi.pdf}
+  \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}} 
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~a)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_InvMass.pdf} &
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~b)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_Rapidity.pdf} \\
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~d)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_MandelstamTSum.pdf} &
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~e)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_DeltaPhi.pdf}
   \end{tabular}
 \caption[Full closure test.]{ Full closure test.}\label{fig:closureTestFull}%
 \end{figure}
