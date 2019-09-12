@@ -133,6 +133,33 @@ $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{
 \section{Normalization of signal and background models}\label{sec:bkgdSignalNorm}
 
 
+Consistency between data and MC, valuable to demonstrate good understanding of the backgrounds and data themselves, has been tested for exclusive $\pi^{+}\pi^{-}$ channel\footnote{Other channels - $K^{+}K^{-}$ and $p\bar{p}$ - were not subjected to similar study because of poor MC statistics. However, structure of backgrounds and level of agreement with MC is expected to be very similar to that presented for $\pi^{+}\pi^{-}$.}. We considered here only non-exclusive backgrounds because of negligible contribution from misidentifications.
+
+The following MC samples were used in this study:
+\begin{itemize}
+ \item Exclusive $\pi^{+}\pi^{-}$ (signal) - events from GenEx\cite{GenEx} generator passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, fully embedded into zero-bias data,
+ \item CD (background) - Central Diffraction events from Pythia~8.1 generator, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into zero-bias data (only the simulated RP response embedded),
+ \item MB+elastic, (background) - Minimum Bias events from Pythia~8.1 generator filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into elastic trigger (RP\_ET) data (only the simulated RP response embedded).
+\end{itemize}
+
+Listed background samples were not fully embedded since an enormous CPU time would be required to obtain satisfactory statistics. It was also found unnesessary to embed TPC tracks into zero-bias data to obtain reliable agreement between distributions of desired quantities presented below.
+
+MC samples from Pythia generator were additionally filtered before passing through Geant to increase generation efficiency, as well as overcome difficulty arising from missing simulation of the BBC-large in STARsim. For each event, all charged particles were analytically propagated through the magnetic field of TPC with the helical paths resulting from their hadron-level momenta. If any of these particles crossed the volume of BBC-large detector, event was dropped from generation.
+
+Normalization of backgrounds was done separately for two ranges of $\Delta\varphi$. First, MB+elastic background was normalized. By definition this was done only for $\Delta\varphi$ bin representing elastic-like configuration of forward protons ($\Delta\varphi>90^{\circ}$). The MB+elastic MC was scaled to have the same integral as the data in range $|\Delta z_{\text{vtx}}|>100$~cm. In this range we assumed sole presence of this type of background, which is characterized by very wide distribution of $\Delta z_{\text{vtx}}$ because of TPC and RP vertices being independent. Comparison plots are contained in Figs.~\ref{fig:Ratio_DeltaZVtx_DeltaPhiBins} and~\ref{fig:Ratio_DeltaZVtx}. An important cross-check for correctness of this assumption is shown in Fig.~\ref{fig:Ratio_Collinearity}, where the data vs. MC collinearity $\Delta\theta$ is presented, defined as
+%
+\begin{equation}\label{eq:collinearity}
+ \Delta\theta = \sqrt{\left(\Delta\theta_{x}\right)^{2} + \left(\Delta\theta_{y}\right)^{2}} = \sqrt{\left(\theta_{x}^{W}+\theta_{x}^{E}\right)^{2} + \left(\theta_{y}^{W}+\theta_{y}^{E}\right)^{2}}.
+\end{equation}
+%
+One can notice part of distribution close to 0, with nearly perfectly collinear protons. The data is well described by MC, which would unlikely be the case without contribution from the red histogram representing MB+elastic background. An interesting observation related to this background contribution is that almost all MB+elastic events in the final plots originate from the Central Diffraction process, with the forward protons outside of RP acceptance - non-diffractive events do not pass tight CEP event selection.
+
+In the second step the CD MC was normalized. It was scaled to have the same integral as the data (minus MB+elastic MC in $\Delta\varphi>90^{\circ}$ sub-sample) in range $p_{T}^{\text{miss}}>150$~MeV, where no exclusive signal is expected.
+
+In the last step the exclusive $\pi^{+}\pi^{-}$ MC was normalized. It was scaled to have the same integral as the data (minus all considered non-exclusive backgrounds) in range $p_{T}^{\text{miss}}<75$~MeV, where exclusive signal is dominant. The result of this procedure for the distribution of $p_{T}^{\text{miss}}$ is given in Figs.\ref{fig:Ratio_MissingPt_OppositeAndSameSign_DeltaPhiBins} and~\ref{fig:Ratio_MissingPt}. Joint distribution for each quantity - without differentiation with respect to $\Delta\varphi$ - was obtained by adding corresponding event counts from two $\Delta\varphi$ ranges.
+
+As can be observed in the comparison plots, presented data are generally well described by MC. In case of $\Delta z_{\text{vtx}}$ some imperfectness in the position and width of the simulated signal peak can be noticed, most probably arising from slightly underestimated timing resolution of the RP trigger counters in the simulation. Distribution of $p_{T}^{\text{miss}}$ is quite well described, for both signal and control channel. The ratio of number of opposite-sign pairs to same-sign pairs is compatible between data and MC, which was possible to achieve by rejecting in Pythia contributions from events with the central state consisting from two opposite-sign pions and at least one neutral particle. These events should be suppressed by the \DPE\ condition \eqref{eq:DPE_IGJPC}, which seem to be not taken into account in Pythia at the hadronization level. We demonstrate in Fig.~\ref{fig:Ratio_MissingPt_OppositeAndSameSign_NeutralsNotSubtracted} that if these events are preserved, Pythia MC cannot describe data in the background-dominating region (large $p_{T}^{\text{miss}}$).
+
 \begin{figure}[h]
 \centering
 \parbox{0.4725\textwidth}{
@@ -153,7 +180,7 @@ $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{
   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
                 \subcaptionbox{\label{fig:Ratio_Linear_DeltaZVtx_DeltaPhiBin_1}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_Linear_DeltaZVtx_DeltaPhiBin_1.pdf}}
   \end{subfigure} 
-}\caption[Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ between data and embedded MC.]{Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ (left: $\Delta\varphi<90^{\circ}$, right: $\Delta\varphi>90^{\circ}$) between data and embedded MC. Plots in top and bottom row differ only in the $y$-axis (top: logarithmic, bottom: linear). Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:Ratio_DeltaZVtx_DeltaPhiBins}%
+}\caption[Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ between data and embedded MC.]{Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ (left: $\Delta\varphi<90^{\circ}$, right: $\Delta\varphi>90^{\circ}$) between data and embedded MC after full selection (except cut on presented quantity). Plots in top and bottom row differ only in the $y$-axis (top: logarithmic, bottom: linear). Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:Ratio_DeltaZVtx_DeltaPhiBins}%
 \end{figure}
 %--------------------------- 
 
@@ -163,7 +190,7 @@ $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:Ratio_DeltaZVtx}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_DeltaZVtx.pdf}}
+                \subcaptionbox{\label{fig:Ratio_DZVtx}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_DeltaZVtx.pdf}}
   \end{subfigure}
 }%
 \quad\quad%
@@ -172,7 +199,7 @@ $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{
   \begin{subfigure}[b]{\linewidth}
                 \subcaptionbox{\label{fig:Ratio_Linear_DeltaZVtx}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_Linear_DeltaZVtx.pdf}}
   \end{subfigure}
-}\caption[Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events between data and embedded MC.]{Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events between data and embedded MC. Left and right plot differ only in the $y$-axis (left: logarithmic, right: linear). Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:Ratio_DeltaZVtx}%
+}\caption[Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events between data and embedded MC.]{Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events between data and embedded MC after full selection (except cut on presented quantity). Left and right plot differ only in the $y$-axis (left: logarithmic, right: linear). Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:Ratio_DeltaZVtx}%
 \end{figure}
 %---------------------------
 
@@ -191,7 +218,7 @@ $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{
 }%
 \quad%
 \parbox{0.4725\textwidth}{%
-    \caption[Comparison of collinearity $\Delta\theta$ for CEP $\pi^{+}\pi^{-}$ events with $\Delta\varphi>90^{\circ}$, between data and embedded MC.]{Comparison of coliinearity $\Delta\theta$ for CEP $\pi^{+}\pi^{-}$ events with $\Delta\varphi>90^{\circ}$ between data and embedded MC. Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:Ratio_Collinearity}%  
+    \caption[Comparison of collinearity $\Delta\theta$ for CEP $\pi^{+}\pi^{-}$ events with $\Delta\varphi>90^{\circ}$, between data and embedded MC.]{Comparison of coliinearity $\Delta\theta$ for CEP $\pi^{+}\pi^{-}$ events with $\Delta\varphi>90^{\circ}$ between data and embedded MC after full selection. Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:Ratio_Collinearity}%  
 }
 \end{figure}
 %---------------------------
@@ -221,7 +248,7 @@ $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{
   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
                 \subcaptionbox{\label{fig:Ratio_LogY_MissingPt_OppositeAndSameSign_DeltaPhiBin_1}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_LogY_MissingPt_OppositeAndSameSign_DeltaPhiBin_1.pdf}}
   \end{subfigure} 
-}\caption[Comparison of $p_{T}^{\text{miss}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ between data and embedded MC.]{Comparison of $p_{T}^{\text{miss}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ (left: $\Delta\varphi<90^{\circ}$, right: $\Delta\varphi>90^{\circ}$) between data and embedded MC. Plots in top and bottom row differ only in the $y$-axis (top: linear, bottom: logarithmic). In addition to signal channel (opposite-sign particles) also control background channel (same-sign particles) is contained in the plots. Data are represented by black (opposite-sign) or red (same-sign) points, while stacked MC predictions are drawn as filled (opposite-sign) or hatched (same-sign) histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:Ratio_MissingPt_OppositeAndSameSign_DeltaPhiBins}%
+}\caption[Comparison of $p_{T}^{\text{miss}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ between data and embedded MC.]{Comparison of $p_{T}^{\text{miss}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ (left: $\Delta\varphi<90^{\circ}$, right: $\Delta\varphi>90^{\circ}$) between data and embedded MC after full selection (except cut on presented quantity). Plots in top and bottom row differ only in the $y$-axis (top: linear, bottom: logarithmic). In addition to signal channel (opposite-sign particles) also control background channel (same-sign particles) is contained in the plots. Data are represented by black (opposite-sign) or red (same-sign) points, while stacked MC predictions are drawn as filled (opposite-sign) or hatched (same-sign) histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:Ratio_MissingPt_OppositeAndSameSign_DeltaPhiBins}%
 \end{figure}
 %--------------------------- 
 
@@ -245,7 +272,7 @@ $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{
                 \subcaptionbox{\label{fig:Ratio_LogY_MissingPt_OppositeAndSameSign}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_LogY_MissingPt_OppositeAndSameSign.pdf}}
   \end{subfigure}\\
     \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{20pt}
-    \caption[Comparison of $p_{T}^{\text{miss}}$ for CEP $\pi^{+}\pi^{-}$ events between data and embedded MC.]{Comparison of $p_{T}^{\text{miss}}$ for CEP $\pi^{+}\pi^{-}$ events between data and embedded MC. Top left and top right plot differ only in the $y$-axis (left: linear, right: logarithmic). In addition to signal channel (opposite-sign particles) also control background channel (same-sign particles) is contained in the plots. Data are represented by black (opposite-sign) or red (same-sign) points, while stacked MC predictions are drawn as filled (opposite-sign) or hatched (same-sign) histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.\\Left bottom plot differ from the top plots in the content of Pythia MCs - in the bottom plot events with $\pi^{\pm}\pi^{\mp}$+neutrals in the central state were preserved, demonstrating significant inconsitency between data and MC in the ratio of opposite-sign to same-sign events if such events are not rejected.}\label{fig:Ratio_MissingPt_OppositeAndSameSign}%
+    \caption[Comparison of $p_{T}^{\text{miss}}$ for CEP $\pi^{+}\pi^{-}$ events between data and embedded MC.]{Comparison of $p_{T}^{\text{miss}}$ for CEP $\pi^{+}\pi^{-}$ events between data and embedded MC after full selection (except cut on presented quantity). Top left and top right plot differ only in the $y$-axis (left: linear, right: logarithmic). In addition to signal channel (opposite-sign particles) also control background channel (same-sign particles) is contained in the plots. Data are represented by black (opposite-sign) or red (same-sign) points, while stacked MC predictions are drawn as filled (opposite-sign) or hatched (same-sign) histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.\\Left bottom plot differ from the top plots in the content of Pythia MCs - in the bottom plot events with $\pi^{\pm}\pi^{\mp}$+neutrals in the central state were preserved, demonstrating significant inconsitency between data and MC in the ratio of opposite-sign to same-sign events if such events are not rejected.}\label{fig:Ratio_MissingPt}%
   \end{minipage}
 }%
 \end{figure}
