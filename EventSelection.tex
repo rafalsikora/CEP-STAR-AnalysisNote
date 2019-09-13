@@ -9,23 +9,23 @@
 
 \chapter{Event selection}\label{chap:eventSelection}
 
-Complete list of analysis cuts used for signal extraction is presented in Sec.~\ref{sec:listOfCuts}. Detailed description of each cut can be found in Sec.~\ref{sec:descriptionOfCuts}.
+Complete list of analysis cuts used for signal extraction is presented in Sec.~\ref{sec:listOfCuts}. Detailed description of each cut can be found in Sec.~\ref{sec:descriptionOfCuts}. [For PDF readers: you can directly move to description of given cut by clicking on corresponding bold cut number \textbf{CX} at the start of line in the list of cuts.]
 
 \section[List of cuts]{List of cuts\footnote{Some cuts (e.g.~\ref{enum:CutTpcTrks}) are decomposed to constituent sub-cuts. Cut is formed by the logical AND of all its sub-cuts. Events must pass all cuts to be identified as a signal.}}\label{sec:listOfCuts}
-\begin{enumerate}[label=\textbf{C\arabic*},ref=C\arabic*]
+\begin{enumerate}[label=\textbf{\hyperref[sec:C\arabic*]{C\arabic*}},ref=C\arabic*]
  \itemm Exactly 1 primary vertex with TPC track(s) matched with hits in TOF.\label{enum:CutPrimVx}
  \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\text{vx}}|<80$~cm.\label{enum:CutZVx}
- \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}), reconstructed within kinematic region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}), with small distance of closest approach (DCA) to the vertex~(\ref{enum:TpcDcaCuts}) and high proximity to each other at the beamline~(\ref{enum:TpcDeltaZ0Cut}).\label{enum:CutTpcTrks}
+ \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}) and reconstructed within kinematic region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}), with associated global tracks characterized by small distance of closest approach (DCA) to the primary vertex~(\ref{enum:TpcDcaCuts}) and high proximity to each other at the beamline~(\ref{enum:TpcDeltaZ0Cut}).\label{enum:CutTpcTrks}
     \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
       \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks and no additional primary tracks matched with BEMC clusters,\label{enum:TpcTofMatched}
       \itemm Tracks are of opposite signs,\label{enum:TpcOppoSign}
       \itemm Both tracks are contained within the kinematic range:\label{enum:TpcKinematicCuts}\hspace*{13pt}
-      $|\eta|<0.7$,~~~~$p_{T}>0.2~\text{GeV}/c$,
-      \itemm Both tracks satisfy quality criteria:\label{enum:TpcQualityCuts}\hspace*{100pt}
-      $N_{\text{hits}}^{\text{fit}}\geq25$,~~~~$N_{\text{hits}}^{\text{dE/dx}}\geq15$,~~~~$|d_{0}|<1.5$~cm,
-      \itemm Both tracks match well to the primary vertex:\label{enum:TpcDcaCuts}\hspace*{47pt}
+      $|\eta|<0.7$,~~~~$p_{T}>0.2~\text{GeV}$,
+      \itemm Associated global tracks satisfy quality criteria:\label{enum:TpcQualityCuts}\hspace*{44pt}
+      $N_{\text{hits}}^{\text{fit}}\geq25$,~~~$N_{\text{hits}}^{\text{dE/dx}}\geq15$,~~~$|d_{0}|<1.5$~cm,
+      \itemm Associated global tracks match well to the prim. vertex:\label{enum:TpcDcaCuts}\hspace*{3.5pt}
       $\text{DCA}(R)<1.5$~cm,~~~~$|\text{DCA}(z)|<1$~cm,
-      \itemm Tracks are close to each other at the beamline:\label{enum:TpcDeltaZ0Cut}\hspace*{45pt}
+      \itemm Associated global tracks are close at the beamline:\label{enum:TpcDeltaZ0Cut}\hspace*{29pt}
       $|\Delta z_{0}|<2$~cm.
     \end{enumerate}
  \itemm Exactly 1 RP track on each side of STAR central detector~(\ref{enum:RpOneTrkPerSide}) of good quality~(\ref{enum:RpQualityCuts}), with local angles consistent with the IP being the track origin~(\ref{enum:RpLocalAngles}), lying within fiducial region of high geometrical acceptance~(\ref{enum:RpFiducial}).\label{enum:CutRpTrks}
@@ -39,34 +39,39 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
     \end{enumerate}
  \itemm Vertex $z$-positions measured in TPC and reconstructed from the difference of proton detection time in west and east RPs are consistent with each other within the resolution (at $3.5\sigma_{\Delta z_{\text{vtx}}}$ level):
  \[|\Delta z_{\text{vtx}}| = |z_{\text{vx}}^{\text{TPC}}-z_{\text{vx}}^{\text{RP}}|<36~\text{cm}.\vspace{-17pt}\]\label{enum:CutDeltaZVx}
- \itemm No signal in any tile of BBC-large (east or west) with $\text{ADC}>\text{ADC}_{\text{thr}}$ and $100<\text{TDC}<2400$, where $\text{ADC}_{\text{thr}}$ is specific for each channel.\label{enum:CutBbcLarge}%
+ \itemm No signal in any tile of BBC-large (east or west) with $\text{ADC}>\text{ADC}_{\text{thr}}$ and $100<\text{TDC}<2400$, where $\text{ADC}_{\text{thr}}$ is specific for each channel (see Tab.~\ref{tab:bbcLargeThresholds}).\label{enum:CutBbcLarge}%
  %
  \itemm Maximally 3 reconstructed TOF clusters $N^{\text{TOF}}_{\text{clstrs}}\leq 3$.\label{enum:CutTofClusters}%
  %
- \itemm Particle (pair) identification:\label{enum:CutPid}
+ \itemm Particle/pair identification (PID):\label{enum:CutPid}
  \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
-      \itemm Identification of particle pairs based on $\chi^{2}$ or $n\sigma$ (from $dE/dx$) and $m^{2}_{\text{TOF}}$:\label{enum:CutPidNoPtLimit}\\[3pt]
-%         \textbf{~~if~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}<3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.6~\text{GeV}/c^{2}~~\rightarrow~~p\bar{p}$\\%
+      \itemm Identification of particle pairs based on $dE/dx$ ($\chi^{2}$ or $n\sigma$) and $m^{2}_{\text{TOF}}$ (def. in Sec.~\ref{sec:C8} and App.~\ref{appendix:squaredMass}):\label{enum:CutPidNoPtLimit}\\[3pt]
+%         \textbf{~~if~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}<3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.6~\text{GeV}~~\rightarrow~~p\bar{p}$\\%
 %         %
-%         \textbf{elif~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}<3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}>3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.15~\text{GeV}/c^{2}~~\rightarrow~~K^{+}K^{-}$\\%
+%         \textbf{elif~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}<3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}>3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.15~\text{GeV}~~\rightarrow~~K^{+}K^{-}$\\%
 %         %
 %         \textbf{elif~~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~~and~~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi^{+}\pi^{-}$\\%
-        \textbf{~~if~~~}\hspace*{4.5pt}$\chi^{2}(\pi\pi)>9$\textbf{~~and~~}$\chi^{2}(KK)>9$\textbf{~~and~~}$\chi^{2}(pp)<9$\textbf{~~and~~}$m^{2}_{\text{TOF}}>0.6~\text{GeV}/c^{2}~~\rightarrow~~p\bar{p}$\\[5pt]%
+        \textbf{~~if~~~}\hspace*{4.5pt}$\chi^{2}(\pi\pi)>9$\textbf{~~and~~}$\chi^{2}(KK)>9$\textbf{~~and~~}$\chi^{2}(pp)<9$\textbf{~~and~~}$m^{2}_{\text{TOF}}>0.6~\text{GeV}~~\rightarrow~~p\bar{p}$\\[5pt]%
         %
-        \textbf{elif~~}$\chi^{2}(\pi\pi)>9$\textbf{~~and~~}$\chi^{2}(KK)<9$\textbf{~~and~~}$\chi^{2}(pp)>9$\textbf{~~and~~}$m^{2}_{\text{TOF}}>0.15~\text{GeV}/c^{2}~~\rightarrow~~K^{+}K^{-}$\\[5pt]%
+        \textbf{elif~~}$\chi^{2}(\pi\pi)>9$\textbf{~~and~~}$\chi^{2}(KK)<9$\textbf{~~and~~}$\chi^{2}(pp)>9$\textbf{~~and~~}$m^{2}_{\text{TOF}}>0.15~\text{GeV}~~\rightarrow~~K^{+}K^{-}$\\[5pt]%
         %
-        \textbf{elif~~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~~and~~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi^{+}\pi^{-}$.%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\textbf{otherwise~~} event rejected.
-      \itemm Restricting fiducial cuts on $K^{+}K^{-}$ and $p\bar{p}$:\label{enum:CutPidPtLimits}\\[2pt]
-      \textbf{~if~} $p\bar{p}$:~~~~~~~~~~~~\hspace*{1.7pt}$p_{T}>0.4~\text{GeV}/c$,~~~~$min(p_{T}^{+},p_{T}^{-})<1.1~\text{GeV}/c$\\%
-      \textbf{~if~} $K^{+}K^{-}$:~~~~~~$p_{T}>0.3~\text{GeV}/c$,~~~~$min(p_{T}^{+},p_{T}^{-})<0.7~\text{GeV}/c$%
+        \textbf{elif~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~and~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi^{+}\pi^{-}$.%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\textbf{otherwise~~} event rejected.
+      \itemm Restricting fiducial cuts on $K^{+}K^{-}$ and $p\bar{p}$ (to reduce misidentifications and assure high PID eff.):\label{enum:CutPidPtLimits}\\[2pt]
+      \textbf{~if~} $p\bar{p}$:~~~~~~~~~~~~\hspace*{1.7pt}$p_{T}>0.4~\text{GeV}$,~~~~$min(p_{T}^{+},p_{T}^{-})<1.1~\text{GeV}$\\%
+      \textbf{~if~} $K^{+}K^{-}$:~~~~~~$p_{T}>0.3~\text{GeV}$,~~~~$min(p_{T}^{+},p_{T}^{-})<0.7~\text{GeV}$%
 \end{enumerate}
-\itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\text{miss}}<75~\text{MeV}/c$.\label{enum:CutMissingPt}%
+\itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\text{miss}}<75~\text{MeV}$.\label{enum:CutMissingPt}%
  %
  
 \end{enumerate}
-
-\section{Description of cuts}\label{sec:descriptionOfCuts}
-\subsection{(\ref{enum:CutPrimVx},\ref{enum:CutZVx})~Primary vertex and its \texorpdfstring{$z$}{z}-position}
+%
+%
+%
+%
+%
+\section{Description of cuts}\label{sec:descriptionOfCuts}%
+%
+\subsection{(\ref{enum:CutPrimVx},\ref{enum:CutZVx})~Primary vertex and its \texorpdfstring{$z$}{z}-position}\label{sec:C1}\label{sec:C2}
 As it was designed in the trigger logic, we aim to perform CEP analysis in a clean, pile-up-free environment, therefore we cut on primary vertex multiplicity~(Fig.~\ref{fig:NumberOfPrimaryVertices}) to reject events with more than one interaction per bunch crossing. We require exactly one primary vertex containing TPC tracks matched with hits in TOF (matching of the track with hit in TOF is identified with the TOF match flag being different from 0). Later in the text we refer to such events as a single ``TOF vertex`` events.
 
 %---------------------------
@@ -87,7 +92,7 @@ As it was designed in the trigger logic, we aim to perform CEP analysis in a cle
 %---------------------------
 
 
-The single TOF vertex is required to be placed within a range $(-80~\text{cm},~80~\text{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons (comparing to events with vertices close to nominal IP), therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties. See Sec.~3.2.3 in Ref.~\cite{supplementaryNote}
+The single TOF vertex is required to be placed within a range $(-80~\text{cm},~80~\text{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons (comparing to events with vertices close to nominal IP), therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties. See Sec.~3.2.3 in Ref.~\cite{supplementaryNote}.
 
 
 
@@ -96,18 +101,7 @@ The single TOF vertex is required to be placed within a range $(-80~\text{cm},~8
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-\subsection{(\ref{enum:CutTpcTrks})~TPC tracks}
+\subsection{(\ref{enum:CutTpcTrks})~TPC tracks}\label{sec:C3}
 
 The TPC track selection starts from the selection of events with exactly two primary tracks matched with hit in TOF~(Fig.~\ref{fig:NumberOfTofTracksInSingleTofVertex}). Matching with TOF guarantee that analyzed tracks originate from the triggered bunch crossing (ensures that tracks are ''in-time``). It is in accordance with the trigger logic which required at least 2 L0 TOF hits, as well as it enables more accurate particle identification with merged time-of-flight and $dE/dx$ method, comparing to sole usage of $dE/dx$. Primary tracks not matched with hit in TOF, whose average multiplicity in single TOF vertex is $\sim$8, are hardly distinguished between real and fake (off-time) tracks, which is an additional reason for not analyzing events with only one TOF-matched primary TPC track (the other track might be unmatched due to TOF inefficiency).
 
@@ -249,7 +243,7 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 
 
 
-\subsection{(\ref{enum:CutRpTrks})~RP tracks}
+\subsection{(\ref{enum:CutRpTrks})~RP tracks}\label{sec:C4}
 
 
 % Clear band of primary proton tracks can be distinguished in the plots.
@@ -301,7 +295,7 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{(\ref{enum:CutDeltaZVx})~TPC-RP \texorpdfstring{$z$}{z}-vertex matching}
+\subsection{(\ref{enum:CutDeltaZVx})~TPC-RP \texorpdfstring{$z$}{z}-vertex matching}\label{sec:C5}
 
 In CEP tracks in the central detector and tracks in Roman Pots originate from the same interaction vertex. Measurement of the time of detection of forward protons in RPs gives access to reconstruction of the position of the vertex
 \begin{equation}
@@ -346,9 +340,9 @@ The sum of two Gaussian distributions was fitted to data in Fig.~\ref{fig:zVerte
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{(\ref{enum:CutBbcLarge})~BBC-large signal veto}
+\subsection{(\ref{enum:CutBbcLarge})~BBC-large signal veto}\label{sec:C6}
 
-At the trigger level a veto on signal in small BBC detectors was used. During offline analysis we found that the non-exclusive background can be efficiently rejected if an additional veto on signal in large BBC detectors is added. It is connected with the fact that vast majority of selected RP\_CPT2 triggers were from the central diffraction process to which CEP belongs. Many of central diffraction events have particles produced in the rapidity region outside the TPC and TOF acceptance, some hitting large BBC tiles. Presence of signal in large BBC is therefore a signature of background or a pile-up interaction.
+At the trigger level a veto on signal in small BBC detectors was used. During offline analysis we found that the non-exclusive background can be reduced if an additional veto on signal in large BBC detectors is added. It is connected with the fact that vast majority of selected RP\_CPT2 triggers were from the central diffraction process to which CEP belongs. Many of central diffraction events have particles produced in the rapidity region outside the TPC and TOF acceptance, some hitting large BBC tiles. Presence of signal in large BBC is therefore a signature of background or a pile-up interaction.
 
 The response of large BBC tiles is different from that of small BBC tiles, as shown in sample plots in Fig.~\ref{fig:sampleBbcResponse} (similar distributions for all channels can be found in Appendix~\ref{appendix:bbc}). Typically in small BBC tiles a peak visible in ADC distribution around $100-150$ (Figs.~\ref{fig:sampleBbcSmallAdcVsTac},\ref{fig:sampleBbcSmallAdc}), a signature of good separation of the electronics noise and signal from the ionizing particle. No such feature is observed in corresponding distribution for large BBC tile (Figs.~\ref{fig:sampleBbcLargeAdcVsTac},\ref{fig:sampleBbcLargeAdc}), which can be explained by the difference in geometry (in size) of small and large tiles. In large BBC tiles the path that scintillation light must travel to reach PMT is much longer in comparison to smal BBC tiles (multiple reflections on the main tile surface due to small thickness of the tile) therefore it is highly attenuated and extended in time. This is possible reason of lack of signal peak in the ADC distribution in large BBC tile spectrum (Fig.~\ref{fig:sampleBbcLargeAdc}), as well as the late-TAC (TAC$<\sim600$, ADC$<100$) tail in the ADC vs. TAC spectrum (slewing effect, Fig.~\ref{fig:sampleBbcLargeAdcVsTac}). Nevertheless, the above features of BBC-large response does not disqualify this detector from being used as a veto detector, as in this case lower efficiency of the detector only reduce the background rejection power.
 
@@ -375,8 +369,7 @@ The response of large BBC tiles is different from that of small BBC tiles, as sh
                 \subcaptionbox{\label{fig:sampleBbcLargeAdc}}{\includegraphics[width=\linewidth,page=17]{graphics/eventSelection/bbc/Bbc_ADC.pdf}}
   \end{subfigure}
 }%
-\label{fig:sampleBbcResponse}%
-\caption[Sample BBC-small and BBC-large response in zero-bias triggers.]{Sample BBC-small (left column) and BBC-large (right column) response in zero-bias data. Top row shows TAC vs. ADC distributions, bottom row shows projection of the corresponding two-dimensional ditribution on $x$-axis (ADC) in the TAC range quoted in the legend, for both abort gaps and colliding bunches. Red lines and arrows indicate thresholds for a signal in presented channels.}
+\caption[Sample BBC-small and BBC-large response in zero-bias triggers.]{Sample BBC-small (left column) and BBC-large (right column) response in zero-bias data. Top row shows TAC vs. ADC distributions, bottom row shows projection of the corresponding two-dimensional ditribution on $x$-axis (ADC) in the TAC range quoted in the legend, for both abort gaps and colliding bunches. Red lines and arrows indicate thresholds for a signal in presented channels.}\label{fig:sampleBbcResponse}
 \end{figure}
 %---------------------------
 
@@ -427,7 +420,7 @@ Observation of high purification of CEP sample with described BBC-large veto in 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{(\ref{enum:CutTofClusters})~TOF clusters limit}
+\subsection{(\ref{enum:CutTofClusters})~TOF clusters limit}\label{sec:C7}
 
 The TOF is mainly used to distinguish real TPC tracks from the fakes, as well as it helps to identify particles. However, we also used it to reject non-CEP events in which the TPC tracks were not reconstructed or were not successfully matched to TOF hit. For this we introduced a concept of a TOF cluster - a group of offline TOF hits close in space and time. We expect that such cluster of hits is induced by the single primary particle, eventually associated with the secondaries (e.g. delta rays).
 
@@ -448,7 +441,7 @@ Per event no more than 1 additional TOF cluster was allowed, thus in total the n
 % \end{wrapfigure}
 %---------------------------
 
-\subsection{(\ref{enum:CutPid})~Particle identification}\label{subsec:pidCuts}
+\subsection{(\ref{enum:CutPid})~Particle identification}\label{subsec:pidCuts}\label{sec:C8}
 
 Particles were identified using combined information from the TPC ($dE/dx$) and TOF (time of hit detection in the TOF subsystem). Merging informations from two sources led to reduction of misidentifications, as well as gave access to higher kaon and proton momentum range where $dE/dx$ of different species overlap.
 
@@ -596,7 +589,7 @@ In Fig.~\ref{fig:SqRootNSigma2D} we present two-dimensional distributions of $n\
 
 %---------------------------------------------------------------------------------------------------------------
 
-\subsection{(\ref{enum:CutMissingPt})~Exclusivity cut (missing \texorpdfstring{$p_{\text{T}}$}{pT} cut)}\label{subsec:ptMiss}
+\subsection{(\ref{enum:CutMissingPt})~Exclusivity cut (missing \texorpdfstring{$p_{\text{T}}$}{pT} cut)}\label{subsec:ptMiss}\label{sec:C9}%
 
 The most important cut which is used in this analysis to select events of exclusively produced pairs of particles is the missing transverse momentum, or the total transverse momentum cut. It benefits from detection and reconstruction of the forward proton in RP detectors - a rare capability among high energy physics experiments which STAR provides. The observable $p_{\text{T}}^{\text{miss}}$ used to select exclusive event is defined as
 \begin{equation}\label{eq:missingPt}
@@ -691,51 +684,6 @@ In current analysis the $n_{\text{cut}}$ was set to 2.5, which translates to thr
 
  
 
-
-
-
-
-% 
-% \section{Working point for cuts~\ref{enum:CutBbcLarge}, \ref{enum:CutTofClusters} and \ref{enum:CutMissingPt}}
-% 
-% \begin{tabulary}{\textwidth}{LLL}
-% \begin{equation}\label{eq:significance}\hspace*{-10pt}
-% 	\text{Significance} = \frac{N_{\text{signal}}^{\text{cut}}}{\sqrt{N_{\text{signal}}^{\text{cut}} + N_{\text{bkgd}}^{\text{cut}}}},
-% \end{equation}~~~~~~~~~~~~~~~~~&
-% \begin{equation}\label{eq:efficiency}\hspace*{-10pt}
-% 	\text{Efficiency} = \frac{N_{\text{signal}}^{\text{cut}}}{N_{\text{signal}}^{\text{no~cut}}},
-% \end{equation}~~~~~~~~~~~~~~&
-% \begin{equation}\label{eq:purity}\hspace*{-9pt}
-% 	\text{Purity} = \frac{N_{\text{signal}}^{\text{cut}}}{N_{\text{signal}}^{\text{cut}}+N_{\text{bkgd}}^{\text{cut}}},
-% \end{equation}~~~~~~~~~~~~~~~
-% \end{tabulary}
-% 
-% 
-% %---------------------------
-% \begin{figure}[hb]
-% \centering
-% \parbox{0.4725\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}
-%                 \subcaptionbox{\label{fig:SignificanceVsEff}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SignificanceVsEfficiency_pTmiss.pdf}}
-%   \end{subfigure}\\
-%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-%                 \subcaptionbox{\label{fig:EffVsBkgdFrac}}{\includegraphics[width=\linewidth]{graphics/eventSelection/ROC_pTmiss.pdf}}
-%   \end{subfigure}
-% }%
-% \quad\quad%
-% \parbox{0.4725\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
-%                 \subcaptionbox{\label{fig:SignificanceVsBkgdFrac}}{\includegraphics[width=\linewidth]{graphics/eventSelection/BkgdFractionVsEfficiency_pTmiss.pdf}}
-%   \end{subfigure}\\
-%   \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
-%     \caption[Relation between $\pi^{+}\pi^{-}$ significance, efficiency and purity vs. thresholds in cuts~\ref{enum:CutBbcLarge}, \ref{enum:CutTofClusters} and \ref{enum:CutMissingPt}]{Relation between $\pi^{+}\pi^{-}$ signal significance and efficiency (\ref{fig:SignificanceVsEff}), significance and purity (\ref{fig:SignificanceVsBkgdFrac}), and efficiency and purity (\ref{fig:EffVsBkgdFrac}) as a function of cut thresholds in BBC-large veto (\ref{enum:CutBbcLarge}), TOF cluster limit (\ref{enum:CutTofClusters}) and exclusivity cut (\ref{enum:CutMissingPt}). Lines show forementioned relations with changing $p_{T}^\text{miss}$ cut whose some specific values are indicated with different markers. Color denotes ADC threshold in BBC-large veto (black, red or green). Style of line (solid or dashed) denotes $N^{\text{TOF}}_{\text{clstrs}}$ limit. Working point considered optimal is marked with opened blue circle.}\label{fig:workingPoint}
-%   \end{minipage}
-% }%
-% 
-% \end{figure}
-% %--------------------------- 
 
 
 % \section{Signal per integrated luminosity}

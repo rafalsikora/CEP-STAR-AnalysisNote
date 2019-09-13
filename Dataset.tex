@@ -11,8 +11,8 @@
 
 Presented analysis made use of data taken in 2015 during $p+p$ collisions at $\sqrt{s}=200$~GeV. The main trigger designed for studies of Central Diffraction in run 15 was RP\_CPT2. It was formed of the following conditions combined by logical AND (\&\&):
 \begin{enumerate}
- \item \textbf{(ET \&\& !IT) $||$ (!ET \&\& IT)} = signal in at least one RP on each side of the STAR central detector - to ensure presence of two forward-scattered protons; a veto was imposed on simultaneous signal in RPs above and below the beamline, which might have originated either from proton dissociation, or pile-up event, or beam halo proton etc.,\\[-15pt]
- \item \textbf{!BBCE \&\& !BBCW \&\& !ZDCE \&\& !ZDCW} = veto on any signal in small BBC tiles or ZDCs on any side of STAR central detector - such requirement is in accordance with the double-gap topology of CEP events, it mostly filtered out CEP events with parallel pile-up event(s),\\[-15pt]
+ \item \textbf{(ET \&\& !IT) $||$ (!ET \&\& IT)} = signal in at least one RP on each side of the STAR central detector - to ensure presence of two forward-scattered protons; a veto was imposed on simultaneous signal in RPs above and below the beamline, which might have originated either from proton dissociation, or pile-up event,\\[-15pt]
+ \item \textbf{!BBCE \&\& !BBCW \&\& !ZDCE \&\& !ZDCW} = veto on any signal in small BBC tiles or ZDCs on any side of STAR central detector - such requirement is in accordance with the double-gap topology of CEP events, it mostly filtered out CEP events with proton(s) dissociation or parallel pile-up event(s),\\[-15pt]
  \item \textbf{TOF$\geq$2} = at least 2 hits in TOF - aim of this condition was to ensure activity in the mid-rapidity; since the lowest multiplicity allowed in CEP is 2, that was the lower threshold of L0 TOF multiplicity.
 \end{enumerate}%
 This trigger was running with an average prescale of 5 and average DAQ rate of 250~Hz, which allowed to collect in total about 560~M events corresponding to 16.5~pb$^{-1}$ of integrated luminosity.  More information about number of events per run, rates etc. can be found under link provided in Ref.~\cite{onlineRpTriggersMonitoring}, which contains selected data from STAR run log~\cite{RunLog}. Luminosity data used in this analysis comes from Ref.~\cite{Luminosity}.
@@ -30,7 +30,7 @@ All RP triggers which were intended for usage in diffractive physics analyses or
  \begin{tabular}{l|c|c|c}%\hline
  \textbf{\specialcell{Trigger\\name}} &  \textbf{Definition} &  \textbf{Events [M]} &  \textbf{Comment} \\ \hline
  RP\_CP & {EOR \&\& WOR} & 73.3 & \specialcell{Loose trigger (mostly elastic events) designed\\for monitoring/trigger efficiency study}\\ \hline
- RP\_CPT & {\specialcell{\specialcell{EOR \&\& WOR\\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$1}} & 38.9 & \specialcell{Intended to be main CEP trigger (later\\switched to RP\_CPT2 due to large prescale)}\\ \hline
+ RP\_CPT & {\specialcell{\specialcell{EOR \&\& WOR\\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$1}} & 38.9 & \specialcell{Intended to be main CEP trigger (later\\switched to RP\_CPT2 due to large prescale\\avoided in RP\_CPT2 by larger suppresion\\of backgrounds)}\\ \hline
  RP\_CPT2 & {\specialcell{\specialcell{(ET \&\& !IT) $||$ (!ET \&\& IT) \\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$2}} & 556.5 & \specialcell{Main CEP trigger\\Note: On Apr 14 added upper TOF limit (10)} \\ \hline
  RP\_CPX & {\specialcell{\specialcell{IT\\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$2}} & 40.1 & \specialcell{The same as RP\_CPT2\\but only IT configuration}\\ \hline
  RP\_CPEI & {\specialcell{\specialcell{ET \&\& IT\\ \&\& !BBCE \&\& !BBCW} \\ \specialcell{\&\& !ZDCE \&\& !ZDCW} \\ \&\& TOF$\geq$2}} & 15.6 & \specialcell{Control trigger for CPT2 to estimate\\ effect of !(ET \&\& IT) veto } %\\ \hline
