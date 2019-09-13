@@ -348,7 +348,7 @@ The response of large BBC tiles is different from that of small BBC tiles, as sh
 
 
 %---------------------------
-\begin{figure}[h]
+\begin{figure}%[h]
 \centering
 \parbox{0.4725\textwidth}{
   \centering
@@ -374,7 +374,7 @@ The response of large BBC tiles is different from that of small BBC tiles, as sh
 %---------------------------
 
 
-Each channel of the BBC-large has different response to signal from ionizing particle, as well as different level of noise. We decided to set up a signal threshold for each channel based on a study of the noise in abort gaps (in zero-bias data). This noise, in principle, should be solely the electronics noise. We checked for each channel the probability to detect a signal with ADC above certain threshold and with TAC contained within 100 and 2400 (the same window is deafult for small BBC). The result is shown in Fig.~\ref{fig:bbcLargeThresholds}. Next, we established final ADC thresholds in each BBC-large channel by requiring that the noise in BBC-large would cause a veto in maximally $3.5\%$ of events. To transform it to $\text{ADC}_{thr}$ we first assumed that the noise is uncorrelated between the channels. With this assumption one can connect the probability of the veto in whole BBC-large detector (east and west) caused by noise $\mathcal{P}_{\text{veto}}^{\text{noise}}$ with the probability of the signal induced by noise in single BBC-large channel $\mathcal{P}_{i,\text{sig}}^{\text{noise}}$:
+Each channel of the BBC-large has different response to signal from ionizing particle, as well as different level of noise. We decided to set up a signal threshold for each channel based on a study of the noise in abort gaps (in zero-bias data). This noise, in principle, should be solely the electronics noise. We checked for each channel the probability to detect a signal with ADC above certain threshold and with TAC contained within 100 and 2400 (the same window is deafult for small BBC). The result is shown in Fig.~\ref{fig:bbcLargeThresholds}. Next, we established final ADC thresholds in each BBC-large channel by requiring that the noise in BBC-large would cause a veto in maximally $3.5\%$ of events. Such number was chosen because it was consistent with an average ADC threshold of 40, found optimal in terms of selection efficiency and sample purity (see Appendix~\ref{appendix:workingPoint}), as well as it was acceptably low. To transform it to $\text{ADC}_{thr}$ we first assumed that the noise is uncorrelated between the channels. With this assumption one can connect the probability of the veto in whole BBC-large detector (east and west) caused by noise $\mathcal{P}_{\text{veto}}^{\text{noise}}$ with the probability of the signal induced by noise in single BBC-large channel $\mathcal{P}_{i,\text{sig}}^{\text{noise}}$:
 \begin{equation}\label{eq:bbcNoise1}
  \mathcal{P}_{\text{veto}}^{\text{noise}} = 1-\mathcal{P}_{!\text{veto}}^{\text{noise}} = 1-\left( 1-\mathcal{P}_{i,\text{sig}}^{\text{noise}} \right)^{N^{\text{BBC}}_{\text{ch}}}.
 \end{equation}
@@ -386,7 +386,7 @@ In the last step we translated this number to ADC threshold for each channel of 
 
 
 
-\begin{table}[h]
+\begin{table}%[h]
 	\begin{minipage}{0.65\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{graphics/eventSelection/bbc/BbbLargeThreshold.pdf}
@@ -398,9 +398,9 @@ In the last step we translated this number to ADC threshold for each channel of 
 		\begin{tabular}{c|c||c|c}
 			\multicolumn{2}{c||}{East} & \multicolumn{2}{c}{West} \\ \hline
 			$i$  & $\text{ADC}_{\text{thr}}$ & $i$  & $\text{ADC}_{\text{thr}}$ \\ \hline
-			16 & 27 & 40 & 0 \\
+			16 & 27 & 40 & (dead) \\
 			17 & 30 & 41 & 31 \\
-			18 & 26 & 42 & 0 \\
+			18 & 26 & 42 & (dead) \\
 			19 & 37 & 43 & 14 \\
 			20 & 25 & 44 & 29 \\
 			21 & 55 & 45 & 30 \\
@@ -448,7 +448,7 @@ Particles were identified using combined information from the TPC ($dE/dx$) and 
 Compatibility of track $dE/dx$ with that expected from particle of type $X$ was determined using the quantity $n\sigma_{X}$ widely used at STAR, defined as
 \protect \begin{equation}\label{eq:nSigmaDef} n\sigma_{X} =  \ln{\left[(dE/dx)^\text{measured} / (dE/dx)_{X}^\text{theory}\right]}~~/~~\sigma_{dE/dx}, \end{equation}
 %
-where $(dE/dx)^\text{measured}$ is the ionization energy loss of the TPC track, $(dE/dx)_{X}^\text{theory}$ is the Bethe-Bloch~\cite{Bichsel} expectation for the given particle type ($X=\pi$, $K$, $p$) at reconstructed track momentum, and $\sigma_{dE/dx}$ is the statistical uncertainty of $\ln{(dE/dx)^\text{measured}}$. Quantity $n\sigma_{X}$ is in fact a pull: $(dE/dx)^\text{measured}$ is (in first order) an average over $\text{Landau}\otimes\text{normal}$-distributed $dE/dx$ of single TPC hits forming the track, hence according to the central limit theorem\footnote{Keeping in mind that it assumes finite mean and variance of the distribution that summed components follow.} the $(dE/dx)^\text{measured}$ is distributed log-normally and $\ln{(dE/dx)^\text{measured}}$ - normally. From $n\sigma_{X}$ of the two tracks the $\chi^{2}$ statistic for a $XX$ pair hypothesis was calculated:
+where $(dE/dx)^\text{measured}$ is the ionization energy loss of the TPC track, $(dE/dx)_{X}^\text{theory}$ is the Bethe-Bloch~\cite{Bichsel} expectation for the given particle type ($X=\pi$, $K$, $p$) at reconstructed track momentum, and $\sigma_{dE/dx}$ is the statistical uncertainty of $\ln{(dE/dx)^\text{measured}}$. Quantity $n\sigma_{X}$ is in fact a pull: $(dE/dx)^\text{measured}$ is (in first order) an average over $\text{Landau}\otimes\text{normal}$-distributed $dE/dx$ of single TPC hits forming the track, hence the $(dE/dx)^\text{measured}$ is distributed log-normally and $\ln{(dE/dx)^\text{measured}}$ - normally. From $n\sigma_{X}$ of the two tracks the $\chi^{2}$ statistic for a $XX$ pair hypothesis was calculated:
 %
 \begin{equation}\label{eq:chiSqDef}\chi^{2}_{dE/dx}(XX) = \left(n\sigma_{X}^{\text{trk1}}\right)^{2} + \left(n\sigma_{X}^{\text{trk2}}\right)^{2}.\end{equation}
 %
@@ -456,7 +456,7 @@ Sometimes we also quote $n\sigma^{\text{pair}}$ quantity (which is no longer a G
 %
 \begin{equation}\label{eq:nSigmaPairDef}n\sigma^{\text{pair}}_{X} = \sqrt{\chi^{2}_{dE/dx}(XX)} = \sqrt{\left(n\sigma_{X}^{\text{trk1}}\right)^{2} + \left(n\sigma_{X}^{\text{trk2}}\right)^{2}}.\end{equation}
 %
-The time of detection of particle in the TOF system was used to reconstruct its squared mass $m^{2}_{\text{TOF}}$. For this purpose the time of primary interaction is typically used (''start time``), reconstructed by detecting fragments of dissociated beam particles in VPD detectors on both sides of the interaction point\footnote{Time measured from protons in the RP detectors cannot be used because RP readout runs on independent clock from that used by VPD and TOF.}. However, it is not accessible in CEP as the initial protons survive the interaction intact. We therefore assumed that both central tracks are of the same type which is natural consequence of quantum number conservation. With this assumption the time difference between TOF hits and measured tracks' momenta and lengths of helical paths between the primary vertex and TOF then allow to calculate $m^{2}_{\text{TOF}}$. The derivation of formula used to obtain $m^{2}_{\text{TOF}}$ is presented in Appendix~\ref{appendix:squaredMass}.
+The time of detection of particle in the TOF system was used to reconstruct its squared mass $m^{2}_{\text{TOF}}$. For this purpose the time of primary interaction is typically used (''start time``), reconstructed by detecting fragments of dissociated beam particles in VPD detectors on both sides of the interaction point\footnote{Time measured from protons in the RP detectors cannot be used because RP readout runs on independent clock from that used by VPD and TOF.}. However, it is not accessible in CEP as the initial protons survive the interaction intact. We therefore assumed that both central tracks are of the same type which is natural expectation for CEP events. With this assumption the time difference between TOF hits and measured tracks' momenta and lengths of helical paths between the primary vertex and TOF then allow to calculate $m^{2}_{\text{TOF}}$. The derivation of formula used to obtain $m^{2}_{\text{TOF}}$ is presented in Appendix~\ref{appendix:squaredMass}.
 
 Particle identification involved a few steps. First, the $pp$ hypothesis was verified:
 \begin{equation}\label{eq:pidPPbar}\lefteqn{\overbrace{\phantom{\chi^{2}_{dE/dx}(pp)<9\;\;\; \& \;\;\; m^{2}_{\text{TOF}} > 0.6~\mbox{GeV}^{2}}}^{\text{likely}~pp}}\chi^{2}_{dE/dx}(pp)<9\;\;\; \& \;\;\; \underbrace{m^{2}_{\text{TOF}} > 0.6~\mbox{GeV}^{2}\;\;\; \& \;\;\; \chi^{2}_{dE/dx}(\pi\pi)>9\;\;\; \& \;\;\; \chi^{2}_{dE/dx}(KK)>9}_{\text{unlikely}~\pi\pi~\text{or}~KK}.\end{equation}
@@ -501,35 +501,6 @@ In case the pair was neither recognized as $p\bar{p}$ or $K^{+}K^{-}$, it was as
 In Fig.~\ref{fig:SqRootNSigma2D} we present two-dimensional distributions of $n\sigma^{\text{pair}}$ variables which help better undestand the behaviour and aim of $n\sigma^{\text{pair}}$ ($\chi^{2}$) cuts in Eqs.~\eqref{eq:pidPPbar}, \eqref{eq:pidKK}. Regions of enriched population of specific pair species are appropriately labeled. Similar connections between $n\sigma^{\text{pair}}$ and $m^{2}_{\text{TOF}}$ are shown in Fig.~\ref{fig:mSqVsNSigmaPair}.
  
 
-
-% %--------------------------- 
-% \begin{figure}[ht!]
-% \centering 
-% \parbox{0.315\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:SqRootNSigmaPionVsKaon}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaPionVsKaon.pdf}}}
-%   \end{subfigure}
-% }
-% \quad
-% \parbox{0.315\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:SqRootNSigmaPionVsProton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaPionVsProton.pdf}}}
-%   \end{subfigure}
-% }
-% \quad
-% \parbox{0.315\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:SqRootNSigmaKaonVsProton}}{\includegraphics[width=\linewidth]{graphics/eventSelection/SqRootNSigmaKaonVsProton.pdf}}}
-%   \end{subfigure}
-% }%
-% \caption{Correlation between $n\sigma^{\text{pair}}$ from TPC for $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$.} 
-% \end{figure}
-% %---------------------------
-% 
-% 
  
 \begin{figure}[ht!]
   \centering
@@ -548,32 +519,6 @@ In Fig.~\ref{fig:SqRootNSigma2D} we present two-dimensional distributions of $n\
 
 
 
-
-%%%%%%%%
-
-
-% \begin{figure}[tbp]
-% \centering
-% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/Chi2NSigma_pion.pdf}
-% \hfill
-% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/SqMassTof_pion.pdf}
-% \newline
-% \newline
-% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/Chi2NSigma_kaon.pdf}
-% \hfill
-% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/SqMassTof_kaon.pdf}
-% \newline
-% \newline
-% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/Chi2NSigma_proton.pdf}
-% \hfill
-% \includegraphics[width=.49\textwidth,page=1]{graphics/eventSelection/pid/SqMassTof_proton.pdf}
-% % 
-% \caption{Raw distributions of $\chi^{2}_{dE/dx}$ (left column) and $m^{2}_{\text{TOF}}$ (right column) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) candidates after full event selection. Dashed red line and arrow indicate the value of cut imposed on plotted quantity to select exclusive pairs of given particle species.}
-% \label{fig:pid_plots} 
-% \end{figure}
-
-
-
 \begin{figure}[ht!]
   \centering
   \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}}
@@ -584,7 +529,7 @@ In Fig.~\ref{fig:SqRootNSigma2D} we present two-dimensional distributions of $n\
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~g)}{graphics/eventSelection/pid/Chi2NSigma_proton.pdf} &
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~i)}{graphics/eventSelection/pid/SqMassTof_proton.pdf}    
   \end{tabular}
-  \caption[$\chi^{2}_{dE/dx}$ and $m^{2}_{\text{TOF}}$ for exclusive $\pi^+\pi^-$, $K^+K^-$ and $p\bar{p}$ candidates.]{Raw distributions of $\chi^{2}_{dE/dx}$ (left column) and $m^{2}_{\text{TOF}}$ (right column) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) candidates after full event selection. Dashed red line and arrow indicate the value of cut imposed on plotted quantity to select exclusive pairs of given particle species. Presented distributions were obtained after all the cuts were applied, except the cut on presented quantity in the last step in PID algorithm used to select pairs of given species.}\label{fig:pid_plots}
+  \caption[$\chi^{2}_{dE/dx}$ and $m^{2}_{\text{TOF}}$ for exclusive $\pi^+\pi^-$, $K^+K^-$ and $p\bar{p}$ candidates.]{Raw distributions of $\chi^{2}_{dE/dx}$ (left column) and $m^{2}_{\text{TOF}}$ (right column) for exclusive $\pi^+\pi^-$ (top row), $K^+K^-$ (middle row) and $p\bar{p}$ (bottom row) candidates after full event selection. Data are shown as black points, while stacked predictions for signal and backgrounds are shown as color histograms. Dashed red line and arrow indicate the value of cut imposed on plotted quantity to select exclusive pairs of given particle species. Last bins in each subfigure are overflows representing an integral of the tail of distribution. Presented distributions were obtained after all the cuts were applied, except the cut on presented quantity in the last step in PID algorithm used to select pairs of given species. Non-exclusive background was determined with a method described in Sec.~\ref{sec:nonExclBkgdDetermination}, while predictions for exclusive contributions were obtained as described in the text.}\label{fig:pid_plots}
 \end{figure}
 
 %---------------------------------------------------------------------------------------------------------------
@@ -621,7 +566,9 @@ where $n_{\text{cut}}$ is the parameter denoting radius of limiting ellipsis in 
 \left(p_{x}^{\text{miss}}\right)^{2} + \left(p_{y}^{\text{miss}}\right)^{2} < \Big(n_{\text{cut}}\cdot\sigma_{p_{x,y}^{\text{miss}}}\Big)^{2}~~~~~~~\xrightarrow[~]{\sqrt{~}}~~~~~~~p_{\text{T}}^{\text{miss}} < n_{\text{cut}}\cdot\sigma_{p_{x,y}^{\text{miss}}}~~~~
 \end{equation}%
 %
-In current analysis the $n_{\text{cut}}$ was set to 2.5, which translates to threshold value $2.5\times 30~\text{MeV} = 75$~MeV.
+In current analysis the $n_{\text{cut}}$ was set to 2.5, which translates to threshold value $2.5\times 30~\text{MeV} = 75$~MeV. Such value was found optimal considering study described in Appendix~\ref{appendix:workingPoint}.
+
+In Fig.~\ref{fig:MissingPt} the missing transverse momentum distributions are presented for the three studied CEP channels. In Sec.~\ref{sec:bkgdSignalNorm} a demonstration of various background contributions is given for $\pi^{+}\pi^{-}$, explaining all features of the distribution.
 
 
 
