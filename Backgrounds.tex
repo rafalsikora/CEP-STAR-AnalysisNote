@@ -73,25 +73,23 @@ The main background present in the final exclusive $\pi^{+}\pi^{-}/K^{+}K^{-}/p\
 \newpage
 \subsection{Exclusive background (particle misidentification)}\label{sec:exclBkgd}
 
-Another source of background which is connected with finite particle identification power is the exclusive background from the particle species other than species under study.
-
+Another source of background which is connected with finite particle identification power is the exclusive background from the particle species other than species under study. This effect is schematically shown in Fig.~\ref{fig:misidentificationGraph}, %
 %---------------------------
-\begin{figure}[h]
+\begin{figure}[h!]\vspace{5pt}
 \centering%
 \parbox{0.4725\textwidth}{%
   \centering%
-  \includegraphics[width=\linewidth]{graphics/backgrounds/pid-crop2.pdf}\label{fig:misidentificationGraph}
+  \includegraphics[width=\linewidth]{graphics/backgrounds/pid-crop2.pdf}
 }%
 \quad%
 \parbox{0.4725\textwidth}{%
-    \caption[Graph illustrating the misidentification problem.]{Graph illustrating the misidentification problem - the origin of exclusive background in selected samples. Gray arrows represent event rejection due to failed PID selection (\ref{enum:CutPid}). Magenta arrows indicate non-exclusive backgrounds described in Sec.~\ref{sec:nonExclBkgd}. Solid black arrows represent successful identification, whereas dashed black lines show misidentification paths.}
+    \caption[Graph illustrating the misidentification problem.]{Graph illustrating the misidentification problem - the origin of exclusive background in selected samples. Gray arrows represent event rejection due to failed PID selection (\ref{enum:CutPid}). Magenta arrows indicate non-exclusive backgrounds described in Sec.~\ref{sec:nonExclBkgd}. Solid black arrows represent successful identification, whereas dashed black lines show misidentification paths.}\label{fig:misidentificationGraph}
 }%
-
+\vspace{5pt}
 \end{figure}
-%---------------------------
-
-
-\begin{subequations}\label{eq:misidentificationEqs}
+%--------------------------- 
+and written in the form of set of equations~\eqref{eq:misidentificationEqs}, where $N^{XX}_{R}$ is number of reconstructed events identified as $XX$ ($X=\pi, K \text{~or~} p$), $N^{XX}_{T}$ is true number of $XX$ events, $N^{\pi\pi}_{bkgd}$ is number of non-exclusive events among reconstructed $N^{XX}_{R}$, $\epsilon^{XX}$ is identification efficiency for species $XX$, and $\lambda^{XX\rightarrow YY}$ is misidentification probability of species $XX$ as $YY$ (see Sec.~\ref{sec:pidEff}):
+\begin{subequations}\label{eq:misidentificationEqs}\vspace{5pt}
 \begin{equation}
   N^{\pi\pi}_{R}~~=~~\begingroup\color{gray}\underbrace{\color{black}\epsilon^{\pi\pi}\cdot N^{\pi\pi}_{T}}_{\textrm{true pion pairs}}\endgroup~~ + ~~\begingroup\color{gray}\underbrace{\color{black}\lambda^{ KK\rightarrow \pi\pi}\cdot N^{KK}_{T}}_{\substack{\textrm{kaon pairs reconstructed} \\ \textrm{as pion pairs}}}\endgroup~~ + ~~\begingroup\color{gray}\underbrace{\color{black}\lambda^{p\bar{p} \rightarrow \pi\pi} \cdot N^{p\bar{p}}_{T}}_{\substack{\textrm{proton pairs reconstructed} \\ \textrm{as pion pairs}}}\endgroup~~ + ~~\textcolor{magenta}{N^{\pi\pi}_{bkgd}}
 \end{equation}    
@@ -100,10 +98,10 @@ Another source of background which is connected with finite particle identificat
 \end{equation}
 \begin{equation}\hspace*{-25pt}
   N^{p\bar{p}}_{R}~~~= ~~\begingroup\color{gray}\underbrace{\color{black}\lambda^{\pi\pi \rightarrow p\bar{p}} \cdot N^{\pi\pi}_{T}}_{\substack{\textrm{pion pairs reconstructed} \\ \textrm{as proton pairs}}}\endgroup~~ + ~~\begingroup\color{gray}\underbrace{\color{black}\lambda^{ KK\rightarrow p\bar{p}}\cdot N^{KK}_{T}}_{\substack{\textrm{kaon pairs reconstructed} \\ \textrm{as proton pairs}}}\endgroup~~ + ~~\begingroup\color{gray}\underbrace{\color{black}\epsilon^{p\bar{p}}\cdot N^{p\bar{p}}_{T}}_{\textrm{true proton pairs}}\endgroup~~ + ~~\textcolor{magenta}{N^{p\bar{p}}_{bkgd}}
-\end{equation}
+\end{equation}\vspace{5pt}
 \end{subequations}
 
-Eqs.~\eqref{eq:misidentificationEqs} can be written in the matrix form, as shown in Eq.~\eqref{eq:misidentificationMatrix}, from which it is straightforward to obtain final formula for unfolded number of events of given ID, Eq.~\eqref{eq:pidUnfoldingMatrix}:
+We only consider three most significant possible hadronic CEP channels - next in a row would be CEP of $d\bar{d}$, but such events are not observed in the data, although reconstruction efficiency should be similar to $p\bar{p}$. Eqs.~\eqref{eq:misidentificationEqs} can be written in the matrix form, as shown in Eq.~\eqref{eq:misidentificationMatrix}, from which it is straightforward to obtain final formula for restored number of events of given ID, Eq.~\eqref{eq:pidUnfoldingMatrix}:
 
 \begin{tabulary}{\textwidth}{LCL}
 \begin{equation}\label{eq:misidentificationMatrix}\hspace*{-15pt}
@@ -123,10 +121,58 @@ Eqs.~\eqref{eq:misidentificationEqs} can be written in the matrix form, as shown
 
 \section{Non-exclusive background determination}\label{sec:nonExclBkgdDetermination}
 
-Determination of non-exclusive background makes use of the missing transverse momentum which is distributed differently for the signal and for aforementioned background. High statistics of the data allows to apply a data-driven method. What is more, not only integrated over observables but even differentially as a function of these.
+Determination of non-exclusive background makes use of the missing transverse momentum which is distributed differently for the signal and for aforementioned background. High statistics of the data allows to apply a data-driven method, which is desired as it does not introduce model-dependence to results. What is more, not only integrated over observables but differentially as a function of these.
 
 It has already been demonstrated in Sec.~\ref{subsec:ptMiss} that $p_{\text{T}}^{\text{miss}}$ from exclusive events is much narrower compared to background, visible as a peak near the axis origin. Additional feature of 
-$p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{\text{T}}^{\text{miss}}$ moving towards the axis origin, enables performing a polynomial fit to $p_{\text{T}}^{\text{miss}}$ distribution in the background-dominated range and extrapolation of this polynomial down to  $p_{\text{T}}^{\text{miss}} = 0$ under the peak of CEP signal. The procedure used to determine non-exclusive background content in the signal region is described below.
+$p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{\text{T}}^{\text{miss}}$ moving towards the axis origin, helps performing a polynomial fit without constant component to $p_{\text{T}}^{\text{miss}}$ distribution in the background-dominated range and extrapolation of this polynomial down to $p_{\text{T}}^{\text{miss}} = 0$ under the peak of CEP signal. The procedure used to determine non-exclusive background content in the signal region is described below.
+
+
+
+
+%---------------------------
+\begin{figure}[ht!]
+\centering%
+\parbox{0.4725\textwidth}{%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/backgrounds/MissingPt_NonExclBkgdFitDemonstration.pdf}
+}%
+\quad%
+\parbox{0.4725\textwidth}{%
+    \caption[Demonstration of non-exclusive background determination method using $p_{T}^{\text{miss}}$ distribution.]{Demonstration of non-exclusive background determination method using $p_{T}^{\text{miss}}$ distribution. Both data and MC predictions presented in the figure are the same as in Fig.~\ref{fig:Ratio_MissingPt} - here same sign events were ommited, as well as the binning was set finer and axes ranges were adjusted to focus on the background region below the signal peak. Normalization of MC components was explained in Sec.~\ref{sec:bkgdSignalNorm}. The data are shown with black points, stacked MC predictions are shown with filled histograms, and fit of $2^{\text{nd}}$ order polynomial given by Eq.~\eqref{eq:polynomial} representing non-exclusive background, together with its extrapolation to $p_{T}^{\text{miss}}=0$ is drawn with solid and dashed magenta line, respectively.}\label{fig:nonExclBkgdDetermination}%  
+}
+\end{figure}
+%---------------------------
+
+
+% //BEGIN             
+%   TH1D *missingPtHist;
+%   //previous version:
+%   missingPtHist = hMissPtVsX->ProjectionY("tmpNameProjectionY");
+%   //current version (added)
+%   missingPtHist->Reset("ICESM");
+%   for(int i=0; i<=(hMissPtVsX->GetNbinsX()+1); ++i){
+%     TH1D* singleBinProjection = hMissPtVsX->ProjectionY("tmpNameProjectionY_singleBin", i, i);
+%     double singnalRegionIntegral = integratePtMiss( singleBinProjection, ptMissCut );
+%     if( singnalRegionIntegral>0 )
+%       missingPtHist->Add( singleBinProjection );
+%   }
+%   //END               
+%   const double integralLimit_MIN = missingPtHist->GetXaxis()->GetBinLowEdge( missingPtHist->GetXaxis()->FindBin( fitLimitMin ) );
+%   const double integralLimit_MAX = missingPtHist->GetXaxis()->GetBinUpEdge( missingPtHist->GetXaxis()->FindBin( fitLimitMax ) );
+%   if( mode==0 ){ // default mode
+%     TF1 *pTMissExtrapolationFunc = new TF1();
+%     double bkgdFrac = bkgdFraction( missingPtHist, ptMissCut, fitLimitMin, fitLimitMax, pTMissExtrapolationFunc);
+%     const double integralRatio_signalRegion_to_bkgdFreeRegion = pTMissExtrapolationFunc->Integral(0, ptMissCut) / pTMissExtrapolationFunc->Integral(integralLimit_MIN, integralLimit_MAX);
+% //     double nBkgdEvents = bkgdFrac*integratePtMiss( missingPtHist, ptMissCut );
+%     for(int i=0; i<=(hBkgd->GetNbinsX()+1); ++i){
+%       TH1D* hMissPtProj = hMissPtVsX->ProjectionY("tmpNameProjectionY_singleBin", i, i);
+%       double nBkgdInPtMissBin = integralRatio_signalRegion_to_bkgdFreeRegion * hMissPtProj->Integral( hMissPtProj->FindBin( fitLimitMin ), hMissPtProj->FindBin( fitLimitMax ) );
+%       double singnalRegionIntegral = integratePtMiss( hMissPtProj, ptMissCut );
+%       hBkgd->SetBinContent(i, nBkgdInPtMissBin > singnalRegionIntegral ? singnalRegionIntegral : nBkgdInPtMissBin );
+%       hBkgd->SetBinError(i, 0);
+%     }
+%     if(funcVec) funcVec->push_back( pTMissExtrapolationFunc );
+%   }
 
 
 
