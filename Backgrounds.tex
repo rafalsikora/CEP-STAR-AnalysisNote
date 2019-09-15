@@ -124,10 +124,29 @@ We only consider three most significant possible hadronic CEP channels - next in
 Determination of non-exclusive background makes use of the missing transverse momentum which is distributed differently for the signal and for aforementioned background. High statistics of the data allows to apply a data-driven method, which is desired as it does not introduce model-dependence to results. What is more, not only integrated over observables but differentially as a function of these.
 
 It has already been demonstrated in Sec.~\ref{subsec:ptMiss} that $p_{\text{T}}^{\text{miss}}$ from exclusive events is much narrower compared to background, visible as a peak near the axis origin. Additional feature of 
-$p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{\text{T}}^{\text{miss}}$ moving towards the axis origin, helps performing a polynomial fit without constant component to $p_{\text{T}}^{\text{miss}}$ distribution in the background-dominated range and extrapolation of this polynomial down to $p_{\text{T}}^{\text{miss}} = 0$ under the peak of CEP signal. The procedure used to determine non-exclusive background content in the signal region is described below.
+$p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{\text{T}}^{\text{miss}}$ moving towards the axis origin, helps performing a polynomial fit without constant component to $p_{\text{T}}^{\text{miss}}$ distribution in the background-dominated range and extrapolation of this polynomial down to $p_{\text{T}}^{\text{miss}} = 0$ under the peak of CEP signal. The procedure used to determine non-exclusive background content in the signal region is described below. The description assumes determination of non-exclusive background differentially in single observable $X$ (in 1 dimension), but procedure naturally applies also to more dimensions.
 
+\begin{enumerate}
+ \item 2-dimensional distribution of $p_{\text{T}}^{\text{miss}}$ vs. $X$ (by design without cut~\ref{enum:CutMissingPt} applied) was looped over all bins in $X$. Projection onto $p_{\text{T}}^{\text{miss}}$ axis, $\frac{dN_{X}}{dp_{T}^{\text{miss}}}$, was done for only these bins of $X$, in which there are signal candidates (more than 0 counts in the region $p_{\text{T}}^{\text{miss}}<75$~MeV).
+ \item Projections of $p_{\text{T}}^{\text{miss}}$ from bins with signal candidates are summed to a single histogram (like data points in Fig.~\ref{fig:nonExclBkgdDetermination}):
+ \begin{equation}
+  \frac{dN}{dp_{T}^{\text{miss}}} = \sum_{X}\frac{dN_{X}}{dp_{T}^{\text{miss}}}
+ \end{equation}
 
-
+ \item Fit of polynomial given by Eq.~\eqref{eq:polynomial} was performed to $\frac{dN}{dp_{T}^{\text{miss}}}$ in the range $160~\text{MeV}<p_{\text{T}}^{\text{miss}}<240~\text{MeV}$, where dominant non-exclusive background with negligibly low signal content is expected.
+ \begin{equation}\label{eq:polynomial}
+ b\left(p_{T}^{\text{miss}}\right) = c_{1}\cdot p_{T}^{\text{miss}} + c_{2}\cdot\left(p_{T}^{\text{miss}}\right)^2
+\end{equation}
+The left egde of the fitting range was chosen to be close to $p_{\text{T}}^{\text{miss}}=0$, but far enough from the signal peak which could bias fitted background shape. The right egde of the fitting range was set to provide reasonable width of that range, but on the other hand be close enough to $p_{\text{T}}^{\text{miss}}=0$, so that $2^{\text{nd}}$ order polynomial approximation would still be valid for the background shape. Result of the fit is shown in Fig.~\ref{fig:nonExclBkgdDetermination} with semi-transparent magenta line.
+\item Ratio $r_{\text{bkgd}}$ was calculated between the integral of function $b$ in the signal region ($p_{\text{T}}^{\text{miss}}<75$~MeV)) and in the fitted region $160~\text{MeV}<p_{\text{T}}^{\text{miss}}<240~\text{MeV}$:
+\begin{equation}\label{eq:r_bkgd}
+ r_{\text{bkgd}} = \frac{\int\limits_{0}^{75~\text{MeV}} b\left(p_{T}^{\text{miss}}\right) dp_{T}^{\text{miss}}}{\int\limits_{160~\text{MeV}}^{240~\text{MeV}} b\left(p_{T}^{\text{miss}}\right) dp_{T}^{\text{miss}}}.
+\end{equation}
+\item In each bin of $X$ with any signal counts the non-exclusive background was determined as
+\begin{equation}\label{eq:nonExclBkgd}
+ N_{\text{bkgd},X}^{\text{non-excl}} = r_{\text{bkgd}} \cdot \int\limits_{0}^{75~\text{MeV}} \frac{dN_{X}}{dp_{T}^{\text{miss}}} dp_{T}^{\text{miss}}.
+\end{equation}
+\end{enumerate}
 
 %---------------------------
 \begin{figure}[ht!]
@@ -144,6 +163,7 @@ $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{
 %---------------------------
 
 
+One can see in Fig.~\ref{fig:nonExclBkgdDetermination} that fitted polynomial extrapolated to $p_{\text{T}}^{\text{miss}}=0$ matches well predictions from MC. We conservatively estimate possible systematic under/overestimation of the non-exclusive background under the exclusive events peak to $\pm 10\%$, which we use in the systematic errors study presented in Sec.~\ref{sec:systEffectsList}.
 % //BEGIN             
 %   TH1D *missingPtHist;
 %   //previous version:
@@ -179,7 +199,7 @@ $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{
 \section{Normalization of signal and background models}\label{sec:bkgdSignalNorm}
 
 
-Consistency between data and MC, valuable to demonstrate good understanding of the backgrounds and data themselves, has been tested for exclusive $\pi^{+}\pi^{-}$ channel\footnote{Other channels - $K^{+}K^{-}$ and $p\bar{p}$ - were not subjected to similar study because of poor MC statistics. However, structure of backgrounds and level of agreement with MC is expected to be very similar to that presented for $\pi^{+}\pi^{-}$.}. We considered here only non-exclusive backgrounds because of negligible contribution from misidentifications.
+Consistency between data and MC, valuable to demonstrate good understanding of the backgrounds and data themselves, has been tested for exclusive $\pi^{+}\pi^{-}$ channel\footnote{Other channels - $K^{+}K^{-}$ and $p\bar{p}$ - were not subjected to similar study because of poor MC statistics. However, structure of backgrounds and level of agreement with MC is expected to be similar to that presented for $\pi^{+}\pi^{-}$.}. We considered here only non-exclusive backgrounds because of negligible contribution from misidentifications.
 
 The following MC samples were used in this study:
 \begin{itemize}
