@@ -121,7 +121,7 @@ We only consider three most significant possible hadronic CEP channels - next in
 
 \section{Non-exclusive background determination}\label{sec:nonExclBkgdDetermination}
 
-Determination of non-exclusive background makes use of the missing transverse momentum which is distributed differently for the signal and for aforementioned background. High statistics of the data allows to apply a data-driven method, which is desired as it does not introduce model-dependence to results. What is more, not only integrated over observables but differentially as a function of these.
+Determination of non-exclusive background makes use of the missing transverse momentum which is distributed differently for the signal and for aforementioned background. High statistics of the data allows to apply a data-driven method, which is desired as it does not introduce model-dependence to results, especially when models of diffraction do not describe physics observables. What is more, not only integrated over observables but differentially as a function of these.
 
 It has already been demonstrated in Sec.~\ref{subsec:ptMiss} that $p_{\text{T}}^{\text{miss}}$ from exclusive events is much narrower compared to background, visible as a peak near the axis origin. Additional feature of 
 $p_{\text{T}}^{\text{miss}}$ - probability density approaching to zero with $p_{\text{T}}^{\text{miss}}$ moving towards the axis origin, helps performing a polynomial fit without constant component to $p_{\text{T}}^{\text{miss}}$ distribution in the background-dominated range and extrapolation of this polynomial down to $p_{\text{T}}^{\text{miss}} = 0$ under the peak of CEP signal. The procedure used to determine non-exclusive background content in the signal region is described below. The description assumes determination of non-exclusive background differentially in single observable $X$ (in 1 dimension), but procedure naturally applies also to more dimensions.
@@ -153,7 +153,7 @@ The left egde of the fitting range was chosen to be close to $p_{\text{T}}^{\tex
 \centering%
 \parbox{0.4725\textwidth}{%
   \centering%
-  \includegraphics[width=\linewidth]{graphics/backgrounds/MissingPt_NonExclBkgdFitDemonstration.pdf}
+  \includegraphics[width=\linewidth]{graphics/backgrounds/MissingPt_NonExclBkgdFitDemonstration.pdf} 
 }%
 \quad%
 \parbox{0.4725\textwidth}{%
@@ -204,8 +204,8 @@ Consistency between data and MC, valuable to demonstrate good understanding of t
 The following MC samples were used in this study:
 \begin{itemize}
  \item Exclusive $\pi^{+}\pi^{-}$ (signal) - events from GenEx\cite{GenEx} generator passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, fully embedded into zero-bias data,
- \item CD (background) - Central Diffraction events from Pythia~8.1 generator, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into zero-bias data (only the simulated RP response embedded),
- \item MB+elastic, (background) - Minimum Bias events from Pythia~8.1 generator filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into elastic trigger (RP\_ET) data (only the simulated RP response embedded).
+ \item CD (background) - Central Diffraction events from Pythia~8.1 generator with MBR model of \Pom omeron flux, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into zero-bias data (only the simulated RP response embedded),
+ \item MB+elastic, (background) - Minimum Bias events from Pythia~8.1 generator with MBR model of \Pom omeron flux, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into elastic trigger (RP\_ET) data (only the simulated RP response embedded).
 \end{itemize}
 
 Listed background samples were not fully embedded since an enormous CPU time would be required to obtain satisfactory statistics. It was also found unnesessary to embed TPC tracks into zero-bias data to obtain reliable agreement between distributions of desired quantities presented below.
@@ -224,7 +224,7 @@ In the second step the CD MC was normalized. It was scaled to have the same inte
 
 In the last step the exclusive $\pi^{+}\pi^{-}$ MC was normalized. It was scaled to have the same integral as the data (minus all considered non-exclusive backgrounds) in range $p_{T}^{\text{miss}}<75$~MeV, where exclusive signal is dominant. The result of this procedure for the distribution of $p_{T}^{\text{miss}}$ is given in Figs.\ref{fig:Ratio_MissingPt_OppositeAndSameSign_DeltaPhiBins} and~\ref{fig:Ratio_MissingPt}. Joint distribution for each quantity - without differentiation with respect to $\Delta\varphi$ - was obtained by adding corresponding event counts from two $\Delta\varphi$ ranges.
 
-As can be observed in the comparison plots, presented data are generally well described by MC. In case of $\Delta z_{\text{vtx}}$ some imperfectness in the position and width of the simulated signal peak can be noticed, most probably arising from slightly underestimated timing resolution of the RP trigger counters in the simulation. Distribution of $p_{T}^{\text{miss}}$ is quite well described, for both signal and control channel. The ratio of number of opposite-sign pairs to same-sign pairs is compatible between data and MC, which was possible to achieve by rejecting in Pythia contributions from events with the central state consisting from two opposite-sign pions and at least one neutral particle. These events should be suppressed by the \DPE\ condition \eqref{eq:DPE_IGJPC}, which seem to be not taken into account in Pythia at the hadronization level. We demonstrate in Fig.~\ref{fig:Ratio_MissingPt_OppositeAndSameSign_NeutralsNotSubtracted} that if these events are preserved, Pythia MC cannot describe data in the background-dominating region (large $p_{T}^{\text{miss}}$).
+As can be observed in the comparison plots, presented data are generally well described by MC. In case of $\Delta z_{\text{vtx}}$ some imperfectness in the position and width of the simulated signal peak can be noticed, most probably arising from slightly underestimated timing resolution of the RP trigger counters in the simulation. Distribution of $p_{T}^{\text{miss}}$ is very well described, for both signal and control channel. The ratio of number of opposite-sign pairs to same-sign pairs is compatible between data and MC, which was possible to achieve by rejecting in Pythia contributions from events with the central state consisting from two opposite-sign pions and at least one neutral particle. These events should be suppressed by the \DPE\ condition \eqref{eq:DPE_IGJPC}, which seem to be not taken into account in Pythia at the hadronization level. We demonstrate in Fig.~\ref{fig:Ratio_MissingPt_OppositeAndSameSign_NeutralsNotSubtracted} that if these events are preserved, Pythia MC cannot describe data in the background-dominating region (large $p_{T}^{\text{miss}}$).
 
 \begin{figure}[h]
 \centering
