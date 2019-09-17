@@ -164,35 +164,23 @@ The left egde of the fitting range was chosen to be close to $p_{\text{T}}^{\tex
 
 
 One can see in Fig.~\ref{fig:nonExclBkgdDetermination} that fitted polynomial extrapolated to $p_{\text{T}}^{\text{miss}}=0$ matches well predictions from MC. We conservatively estimate possible systematic under/overestimation of the non-exclusive background under the exclusive events peak to $\pm 10\%$, which we use in the systematic errors study presented in Sec.~\ref{sec:systEffectsList}.
-% //BEGIN             
-%   TH1D *missingPtHist;
-%   //previous version:
-%   missingPtHist = hMissPtVsX->ProjectionY("tmpNameProjectionY");
-%   //current version (added)
-%   missingPtHist->Reset("ICESM");
-%   for(int i=0; i<=(hMissPtVsX->GetNbinsX()+1); ++i){
-%     TH1D* singleBinProjection = hMissPtVsX->ProjectionY("tmpNameProjectionY_singleBin", i, i);
-%     double singnalRegionIntegral = integratePtMiss( singleBinProjection, ptMissCut );
-%     if( singnalRegionIntegral>0 )
-%       missingPtHist->Add( singleBinProjection );
-%   }
-%   //END               
-%   const double integralLimit_MIN = missingPtHist->GetXaxis()->GetBinLowEdge( missingPtHist->GetXaxis()->FindBin( fitLimitMin ) );
-%   const double integralLimit_MAX = missingPtHist->GetXaxis()->GetBinUpEdge( missingPtHist->GetXaxis()->FindBin( fitLimitMax ) );
-%   if( mode==0 ){ // default mode
-%     TF1 *pTMissExtrapolationFunc = new TF1();
-%     double bkgdFrac = bkgdFraction( missingPtHist, ptMissCut, fitLimitMin, fitLimitMax, pTMissExtrapolationFunc);
-%     const double integralRatio_signalRegion_to_bkgdFreeRegion = pTMissExtrapolationFunc->Integral(0, ptMissCut) / pTMissExtrapolationFunc->Integral(integralLimit_MIN, integralLimit_MAX);
-% //     double nBkgdEvents = bkgdFrac*integratePtMiss( missingPtHist, ptMissCut );
-%     for(int i=0; i<=(hBkgd->GetNbinsX()+1); ++i){
-%       TH1D* hMissPtProj = hMissPtVsX->ProjectionY("tmpNameProjectionY_singleBin", i, i);
-%       double nBkgdInPtMissBin = integralRatio_signalRegion_to_bkgdFreeRegion * hMissPtProj->Integral( hMissPtProj->FindBin( fitLimitMin ), hMissPtProj->FindBin( fitLimitMax ) );
-%       double singnalRegionIntegral = integratePtMiss( hMissPtProj, ptMissCut );
-%       hBkgd->SetBinContent(i, nBkgdInPtMissBin > singnalRegionIntegral ? singnalRegionIntegral : nBkgdInPtMissBin );
-%       hBkgd->SetBinError(i, 0);
-%     }
-%     if(funcVec) funcVec->push_back( pTMissExtrapolationFunc );
-%   }
+
+In Fig.~\ref{fig:Ratio_InvMass} we demonstrate, that data driven method is necessary to obtain unbiased shape of the background - differences between MC predictions and data-driven estimates can be as high as 50\% both ways. Also, shape of the same-sign background is significantly different from opposite-sign estimate, which disqualifies usage of same-sign background as an estimate of non-exclusive opposite-sign background.
+
+
+%---------------------------
+\begin{figure}[ht!]
+\centering%
+\parbox{0.5725\textwidth}{%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/backgrounds/dataVsMc/Ratio_InvMass.pdf} 
+}%
+\quad%
+\parbox{0.3725\textwidth}{%
+    \caption[Comparison of non-exclusive background as a function of $m(\pi\pi)$ exctracted from data and MC predictions.]{Comparison of non-exclusive background as a function of $m(\pi\pi)$ exctracted from data and MC predictions. All offline selections were applied. Normalization of MC components was explained in Sec.~\ref{sec:bkgdSignalNorm}. Opposite-sign non-exclusive background extracted from data is shown with magneta points, while stacked opposite-sign MC predictions are shown with filled histograms. Control same-sign background events are shown with red points for the data, and stacked hatched histograms for MC predictions.}\label{fig:Ratio_InvMass} %  
+}
+\end{figure}
+%---------------------------
 
 
 
@@ -201,20 +189,20 @@ One can see in Fig.~\ref{fig:nonExclBkgdDetermination} that fitted polynomial ex
 
 Consistency between data and MC, valuable to demonstrate good understanding of the backgrounds and data themselves, has been tested for exclusive $\pi^{+}\pi^{-}$ channel\footnote{Other channels - $K^{+}K^{-}$ and $p\bar{p}$ - were not subjected to similar study because of poor MC statistics. However, structure of backgrounds and level of agreement with MC is expected to be similar to that presented for $\pi^{+}\pi^{-}$.}. We considered here only non-exclusive backgrounds because of negligible contribution from misidentifications.
 
-The following MC samples were used in this study:
+The following MC samples were used in this study:\vspace*{-5pt}
 \begin{itemize}
- \item Exclusive $\pi^{+}\pi^{-}$ (signal) - events from GenEx\cite{GenEx} generator passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, fully embedded into zero-bias data,
- \item CD (background) - Central Diffraction events from Pythia~8.1 generator with MBR model of \Pom omeron flux, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into zero-bias data (only the simulated RP response embedded),
- \item MB+elastic, (background) - Minimum Bias events from Pythia~8.1 generator with MBR model of \Pom omeron flux, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into elastic trigger (RP\_ET) data (only the simulated RP response embedded).
+ \item Exclusive $\pi^{+}\pi^{-}$ (signal) - events from GenEx\cite{GenEx} generator passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, fully embedded into zero-bias data,\vspace*{-5pt}
+ \item CD (background) - Central Diffraction events from Pythia~8.1 generator with MBR model of \Pom omeron flux, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into zero-bias data (only the simulated RP response embedded),\vspace*{-5pt}
+ \item MB+elastic, (background) - Minimum Bias events from Pythia~8.1 generator with MBR model of \Pom omeron flux, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into elastic trigger (RP\_ET) data (only the simulated RP response embedded).\vspace*{-5pt}
 \end{itemize}
 
 Listed background samples were not fully embedded since an enormous CPU time would be required to obtain satisfactory statistics. It was also found unnesessary to embed TPC tracks into zero-bias data to obtain reliable agreement between distributions of desired quantities presented below.
 
 MC samples from Pythia generator were additionally filtered before passing through Geant to increase generation efficiency, as well as overcome difficulty arising from missing simulation of the BBC-large in STARsim. For each event, all charged particles were analytically propagated through the magnetic field of TPC with the helical paths resulting from their hadron-level momenta. If any of these particles crossed the volume of BBC-large detector, event was dropped from generation.
 
-Normalization of backgrounds was done separately for two ranges of $\Delta\varphi$. First, MB+elastic background was normalized. By definition this was done only for $\Delta\varphi$ bin representing elastic-like configuration of forward protons ($\Delta\varphi>90^{\circ}$). The MB+elastic MC was scaled to have the same integral as the data in range $|\Delta z_{\text{vtx}}|>100$~cm. In this range we assumed sole presence of this type of background, which is characterized by very wide distribution of $\Delta z_{\text{vtx}}$ because of TPC and RP vertices being independent. Comparison plots are contained in Figs.~\ref{fig:Ratio_DeltaZVtx_DeltaPhiBins} and~\ref{fig:Ratio_DeltaZVtx}. An important cross-check for correctness of this assumption is shown in Fig.~\ref{fig:Ratio_Collinearity}, where the data vs. MC collinearity $\Delta\theta$ is presented, defined as
+Normalization of backgrounds was done separately for two ranges of $\Delta\varphi$. First, MB+elastic background was normalized. By definition this was done only for $\Delta\varphi$ bin representing elastic-like configuration of forward protons ($\Delta\varphi>90^{\circ}$). The MB+elastic MC was scaled to have the same integral as the data in range $|\Delta z_{\text{vtx}}|>100$~cm. In this range we assumed sole presence of this type of background, which is characterized by very wide distribution of $\Delta z_{\text{vtx}}$ because of TPC and RP vertices being independent. Comparison plots are contained in Figs.~\ref{fig:Ratio_DeltaZVtx_DeltaPhiBins} and~\ref{fig:Ratio_DeltaZVtx}. An important cross-check for correctness of this assumption is shown in Fig.~\ref{fig:Ratio_Collinearity}, where the data vs. MC collinearity $\Delta\theta$ is presented, defined as%\vspace*{-5pt}
 %
-\begin{equation}\label{eq:collinearity}
+\begin{equation}\label{eq:collinearity}%\vspace*{-5pt}
  \Delta\theta = \sqrt{\left(\Delta\theta_{x}\right)^{2} + \left(\Delta\theta_{y}\right)^{2}} = \sqrt{\left(\theta_{x}^{W}+\theta_{x}^{E}\right)^{2} + \left(\theta_{y}^{W}+\theta_{y}^{E}\right)^{2}}.
 \end{equation}
 %
@@ -226,25 +214,32 @@ In the last step the exclusive $\pi^{+}\pi^{-}$ MC was normalized. It was scaled
 
 As can be observed in the comparison plots, presented data are generally well described by MC. In case of $\Delta z_{\text{vtx}}$ some imperfectness in the position and width of the simulated signal peak can be noticed, most probably arising from slightly underestimated timing resolution of the RP trigger counters in the simulation. Distribution of $p_{T}^{\text{miss}}$ is very well described, for both signal and control channel. The ratio of number of opposite-sign pairs to same-sign pairs is compatible between data and MC, which was possible to achieve by rejecting in Pythia contributions from events with the central state consisting from two opposite-sign pions and at least one neutral particle. These events should be suppressed by the \DPE\ condition \eqref{eq:DPE_IGJPC}, which seem to be not taken into account in Pythia at the hadronization level. We demonstrate in Fig.~\ref{fig:Ratio_MissingPt_OppositeAndSameSign_NeutralsNotSubtracted} that if these events are preserved, Pythia MC cannot describe data in the background-dominating region (large $p_{T}^{\text{miss}}$).
 
+It is also worth to mention that the ratio of scaling factors $s$ for CD MC in two ranges of $\Delta\varphi$ amounts%\vspace*{-5pt}
+\begin{equation}\label{eq:scalingCD}%\vspace*{-5pt}
+\frac{s(\Delta\varphi<90^{\circ})}{s(\Delta\varphi>90^{\circ})} = 1.43,  
+% s(\Delta\varphi<90^{\circ})/s(\Delta\varphi>90^{\circ}) = 1.43,
+\end{equation}
+which is compatible with a dominance of the fiducial CEP $\pi^{+}\pi^{-}$ cross section for $\Delta\varphi<90^{\circ}$ over $\Delta\varphi>90^{\circ}$ (Tab.~\ref{tab:xSecSyst}).
+
 \begin{figure}[h]
 \centering
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:Ratio_DeltaZVtx_DeltaPhiBin_0}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_DeltaZVtx_DeltaPhiBin_0.pdf}}
+                \subcaptionbox{\label{fig:Ratio_DeltaZVtx_DeltaPhiBin_0}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_DeltaZVtx_DeltaPhiBin_0.pdf}\vspace*{-10pt}}
   \end{subfigure}\\
   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:Ratio_Linear_DeltaZVtx_DeltaPhiBin_0}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_Linear_DeltaZVtx_DeltaPhiBin_0.pdf}}
+                \subcaptionbox{\label{fig:Ratio_Linear_DeltaZVtx_DeltaPhiBin_0}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_Linear_DeltaZVtx_DeltaPhiBin_0.pdf}\vspace*{-10pt}}
   \end{subfigure}
 }%
 \quad\quad%
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:Ratio_DeltaZVtx_DeltaPhiBin_1}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_DeltaZVtx_DeltaPhiBin_1.pdf}}
+                \subcaptionbox{\label{fig:Ratio_DeltaZVtx_DeltaPhiBin_1}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_DeltaZVtx_DeltaPhiBin_1.pdf}\vspace*{-10pt}}
   \end{subfigure}\\
   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:Ratio_Linear_DeltaZVtx_DeltaPhiBin_1}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_Linear_DeltaZVtx_DeltaPhiBin_1.pdf}}
+                \subcaptionbox{\label{fig:Ratio_Linear_DeltaZVtx_DeltaPhiBin_1}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/backgrounds/dataVsMc/Ratio_Linear_DeltaZVtx_DeltaPhiBin_1.pdf}\vspace*{-10pt}}
   \end{subfigure} 
 }\caption[Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ between data and embedded MC.]{Comparison of $\Delta z_{\text{vtx}}$ for CEP $\pi^{+}\pi^{-}$ events in two ranges of $\Delta\varphi$ (left: $\Delta\varphi<90^{\circ}$, right: $\Delta\varphi>90^{\circ}$) between data and embedded MC after full selection (except cut on presented quantity). Plots in top and bottom row differ only in the $y$-axis (top: logarithmic, bottom: linear). Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in the text. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:Ratio_DeltaZVtx_DeltaPhiBins}%
 \end{figure}

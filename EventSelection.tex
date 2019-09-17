@@ -72,7 +72,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 \section{Description of cuts}\label{sec:descriptionOfCuts}%
 %
 \subsection{(\ref{enum:CutPrimVx},\ref{enum:CutZVx})~Primary vertex and its \texorpdfstring{$z$}{z}-position}\label{sec:C1}\label{sec:C2}
-As it was designed in the trigger logic, we aim to perform CEP analysis in a clean, pile-up-free environment, therefore we cut on primary vertex multiplicity~(Fig.~\ref{fig:NumberOfPrimaryVertices}) to reject events with more than one interaction per bunch crossing. We require exactly one primary vertex containing TPC tracks matched with hits in TOF (matching of the track with hit in TOF is identified with the TOF match flag being different from 0). Later in the text we refer to such events as a single ``TOF vertex`` events.
+As it was designed in the trigger logic, we aim to perform CEP analysis in a clean, pile-up-free environment, therefore we cut on primary vertex multiplicity~(Fig.~\ref{fig:NumberOfPrimaryVertices}) to reject events with more than one interaction per bunch crossing. We required exactly one primary vertex containing TPC tracks matched with hits in TOF (matching of the track with hit in TOF is identified with the TOF match flag being different from 0). Later in the text we refer to such events as a single ``TOF vertex`` events.
 
 %---------------------------
 \begin{figure}[ht!]%
@@ -86,14 +86,30 @@ As it was designed in the trigger logic, we aim to perform CEP analysis in a cle
 \begin{minipage}{.4725\textwidth}%
   \centering
   \includegraphics[width=\linewidth]{graphics/eventSelection/zVertex_oneTof.pdf}%
-  \caption{\texorpdfstring{$z$}{z}-position of the primary vertex in single TOF vertex events. Red dashed line indicate range of longitudinal vertex position accepted in analysis.\newline}\label{fig:zVertexTpc}
+  \caption{\texorpdfstring{$z$}{z}-position of the primary vertex in single TOF vertex events (passing cut~\ref{enum:CutPrimVx}). Red dashed line indicate range of longitudinal vertex position accepted in analysis.}\label{fig:zVertexTpc}
 \end{minipage}%
 \end{figure}%
 %---------------------------
 
 
-The single TOF vertex is required to be placed within a range $(-80~\text{cm},~80~\text{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons (comparing to events with vertices close to nominal IP), therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties. See Sec.~3.2.3 in Ref.~\cite{supplementaryNote}.
+The single TOF vertex was required to be placed within a range $(-80~\text{cm},~80~\text{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons (comparing to events with vertices close to nominal IP), therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties. See Sec.~3.2.3 in Ref.~\cite{supplementaryNote}.
 
+In Fig~\ref{fig:Ratio_Linear_ZVtx} we show comparison of the $z$-position of single TOF primary vertex measured in the TPC, between data and MC generated e.g. to study of detector effects present in analysis. The ratio of distributions which is compatible with unity indicates proper position, width and shape of distribution assumed at MC generation (gaussian with mean at 0 and width of 50~cm).
+
+
+%---------------------------
+\begin{figure}[ht!]
+\centering%
+\parbox{0.5725\textwidth}{%
+  \centering%
+  \includegraphics[width=\linewidth]{graphics/backgrounds/dataVsMc/Ratio_Linear_ZVtx.pdf} 
+}%
+\quad%
+\parbox{0.3725\textwidth}{%
+    \caption[Comparison of $z_{\text{vtx}}$ distribution between data and embedded MC.]{Comparison of $z_{\text{vtx}}$ distribution between data and embedded MC after full selection. Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in Sec.~\ref{sec:bkgdSignalNorm}. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes. Comparison is shown for only $z$-vertex range corresponding to offline selection cut~\ref{enum:CutZVx} due to such limited vertex range used in MC generation for increase of generation efficiency.}\label{fig:Ratio_Linear_ZVtx} %  
+}
+\end{figure}
+%---------------------------
 
 
 
@@ -138,21 +154,21 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:NHitsFit}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/NHitsFit.pdf}}
+                \subcaptionbox{\label{fig:NHitsFit}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/Ratio_Linear_NHitsFit.pdf}}
   \end{subfigure}\\
   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:NHitsFit_to_NHitsPos}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/NHitsFit_to_NHitsPos.pdf}}
+                \subcaptionbox{\label{fig:NHitsFit_to_NHitsPos}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/Ratio_Linear_NHitsFit_to_NHitsPoss.pdf}}
   \end{subfigure}
 }%
 \quad\quad%
 \parbox{0.4725\textwidth}{
   \centering
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
-                \subcaptionbox{\label{fig:NHits_dEdx}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/NHits_dEdx.pdf}}
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{-23pt}
+                \subcaptionbox{\label{fig:NHits_dEdx}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/Ratio_Linear_NHitsDEdx.pdf}}
   \end{subfigure}\\
   \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
-    \caption[Comparison of distribution of $N_{\text{hits}}^{\text{fit}}$,~$N_{\text{hits}}^{\text{dE/dx}}$ and $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ in the data and embedded MC]
-    {Comparison of distribution of the number of hits used in TPC track reconstruction $N_{\text{hits}}^{\text{fit}}$ (\ref{fig:NHitsFit}), number of hits used in specific energy loss reconstruction $N_{\text{hits}}^{\text{dE/dx}}$ (\ref{fig:NHits_dEdx}) and fraction of number of hits potentially generated by the track and finally used in the reconstruction $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ (\ref{fig:NHitsFit_to_NHitsPos}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed line and red arrow indicate the range of each quantity which is accepted in analysis.}\label{fig:NHits}
+    \caption[Comparison of distribution of $N_{\text{hits}}^{\text{fit}}$,~$N_{\text{hits}}^{\text{dE/dx}}$ and $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ in the data and embedded MC.]
+    {Comparison of distribution of the number of hits used in TPC track reconstruction $N_{\text{hits}}^{\text{fit}}$ (\subref{fig:NHitsFit}), number of hits used in specific energy loss reconstruction $N_{\text{hits}}^{\text{dE/dx}}$ (\subref{fig:NHits_dEdx}) and fraction of number of hits potentially generated by the track and finally used in the reconstruction $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ (\subref{fig:NHitsFit_to_NHitsPos}) in the data (black points) and embedded MC (stacked color histograms). Normalizations of the signal and backgrounds were established according to description in Sec.~\ref{sec:bkgdSignalNorm}. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes. Red dashed line and red arrow indicate the range of each quantity which is accepted in analysis (if cut on this quantity is applied).}\label{fig:NHits}
   \end{minipage}
 }%
 
@@ -165,52 +181,8 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 
 
 
-% %---------------------------
-% \begin{figure}[ht!]
-% \centering
-% \parbox{0.4725\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:d0}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/d0.pdf}}}
-%   \end{subfigure}
-% }%
-% \quad\quad%
-% \parbox{0.4725\textwidth}{%
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:z0}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/z0.pdf}}}
-%   \end{subfigure}
-% }%
-% \caption[Comparison of distribution of $d_{0}$ and $z_{0}$ in the data and embedded MC]
-% {Comparison of distribution of the transverse impact parameter $d_{0}$ (\ref{fig:d0}) and the longitudinal impact parameter $z_{0}$ (\ref{fig:z0}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:d0z0}
-% \end{figure}
-% %---------------------------
 
 
-
-
-
-% 
-% %---------------------------
-% \begin{figure}[ht!]
-% \centering
-% \parbox{0.4725\textwidth}{
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:RadialDca}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/RadialDCA.pdf}}}
-%   \end{subfigure}
-% }%
-% \quad\quad%
-% \parbox{0.4725\textwidth}{%
-%   \centering
-%   \begin{subfigure}[b]{\linewidth}{
-%                 \subcaptionbox{\label{fig:LongitudinalDca}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/LongitudinalDCA.pdf}}}
-%   \end{subfigure}
-% }%
-% \caption[Comparison of distribution of $\text{DCA}(R)$ and $\text{DCA}(z)$ in the data and embedded MC]
-% {Comparison of distribution of the distance of closest approach of the track to the vertex in the $xy$-plane $\text{DCA}(R)$ (\ref{fig:RadialDca}) and the the distance of closest approach of the track to the vertex along the $z$-axis $\text{DCA}(z)$ (\ref{fig:LongitudinalDca}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:DCA}
-% \end{figure}
-% %---------------------------
 
 
 
@@ -220,18 +192,18 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:TrackEta}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/TrackEta.pdf}}}
+                \subcaptionbox{\label{fig:TrackEta}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/Ratio_Linear_Eta.pdf}}}
   \end{subfigure}
 }%
 \quad\quad%
 \parbox{0.4725\textwidth}{%
   \centering
   \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:TrackPhi}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/TrackPhi.pdf}}}
+                \subcaptionbox{\label{fig:TrackPhi}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/Ratio_Linear_Phi.pdf}}}
   \end{subfigure}
-}%
-\caption[Comparison of distribution of track $\eta$ and $\phi$ in the data and embedded MC]
-{Comparison of the track pseudorapidity $\eta$ (\ref{fig:TrackEta}) and the track azimuthal angle $\phi$ (\ref{fig:TrackPhi}) in the data and embedded MC. Normalizations of the signal and backgrounds were established from the comparison of $p_{T}^{\text{miss}}$ and $\Delta\theta$ distributions after full selection (without cut on the presented quantity and without exclusivity cut), as described in Sec.~\ref{sec:bkgdSignalNorm}. Red dashed lines and red arrows indicate the range of each quantity which is accepted in analysis.}\label{fig:TrackEtaPhi}
+}%1
+\caption[Comparison of distribution of track $\eta$ and $\phi$ in the data and embedded MC.]
+{Comparison of the track pseudorapidity $\eta$ (\subref{fig:TrackEta}) and the track azimuthal angle $\phi$ (\subref{fig:TrackPhi}) in the data (black points) and embedded MC (stacked color histograms). Normalizations of the signal and backgrounds were established according to description in Sec.~\ref{sec:bkgdSignalNorm}. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes. Red dashed line and red arrow indicate the range of each quantity which is accepted in analysis (if cut on this quantity is applied).}\label{fig:TrackEtaPhi}
 \end{figure}
 %---------------------------
 
@@ -275,6 +247,102 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 \end{figure}
 %---------------------------
 
+
+
+
+
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.31\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:localAngle2D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E1U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W2U.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W1D.pdf}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.31\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:localAngle2D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E2U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E1D.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W2D.pdf}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.31\textwidth}{
+  \centering\vspace*{-22pt}
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:localAngle2D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W1U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E2D.pdf}}
+  \end{subfigure}
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\end{minipage}
+}
+\label{fig:xRp}%
+\caption[....]{..}
+\end{figure}
+%---------------------------
+
+
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.31\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:localAngle2D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E1U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W2U.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W1D.pdf}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.31\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:localAngle2D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E2U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E1D.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W2D.pdf}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.31\textwidth}{
+  \centering\vspace*{-22pt}
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:localAngle2D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W1U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E2D.pdf}}
+  \end{subfigure}
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\end{minipage}
+}
+\label{fig:yRp}%
+\caption[....]{..}
+\end{figure}
+%---------------------------
 
 
 
