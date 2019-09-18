@@ -34,7 +34,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
       \itemm Local angles ($\theta_{x}^{\text{RP}}$, $\theta_{y}^{\text{RP}}$) consistent with expectation for protons originating from the IP\label{enum:RpLocalAngles}%
       \[-2~\text{mrad}<\theta_{x}^{\text{RP}}-x^{\text{RP}}/|z^{\text{RP}}|<4~\text{mrad},~~~~~-2~\text{mrad}<\theta_{y}^{\text{RP}}-y^{\text{RP}}/|z^{\text{RP}}|<2~\text{mrad},\]
       \itemm Exactly 1 track passing cuts \ref{enum:RpQualityCuts}-\ref{enum:RpLocalAngles} per side,\label{enum:RpOneTrkPerSide}
-      \itemm Tracks passing cut~\ref{enum:RpOneTrkPerSide} lie within the fiducial $(p_{x},p_{y})$ region defined as\label{enum:RpFiducial}:\\
+      \itemm Tracks passing cut~\ref{enum:RpOneTrkPerSide} lie within the fiducial $(p_{x},p_{y})$ region defined as\vspace*{-7pt}\label{enum:RpFiducial}:\\
       \[0.2<|p_{y}|<0.4,~~~-0.2<p_{x},~~~(p_{x}+0.3)^{2}+p_{y}^{2}<0.5^{2}~~~(\text{all in GeV}).\]
     \end{enumerate}
  \itemm Vertex $z$-positions measured in TPC and reconstructed from the difference of proton detection time in west and east RPs are consistent with each other within the resolution (at $3.5\sigma_{\Delta z_{\text{vtx}}}$ level):
@@ -45,20 +45,15 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
  %
  \itemm Particle/pair identification (PID):\label{enum:CutPid}
  \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
-      \itemm Identification of particle pairs based on $dE/dx$ ($\chi^{2}$ or $n\sigma$) and $m^{2}_{\text{TOF}}$ (def. in Sec.~\ref{sec:C8} and App.~\ref{appendix:squaredMass}):\label{enum:CutPidNoPtLimit}\\[3pt]
-%         \textbf{~~if~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}<3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.6~\text{GeV}~~\rightarrow~~p\bar{p}$\\%
-%         %
-%         \textbf{elif~~} $n\sigma_{\text{pion}}^{\text{pair}}>3$ \textbf{~~and~~} $n\sigma_{\text{kaon}}^{\text{pair}}<3$ \textbf{~~and~~} $n\sigma_{\text{proton}}^{\text{pair}}>3$ \textbf{~~and~~} $m^{2}_{\text{TOF}}>0.15~\text{GeV}~~\rightarrow~~K^{+}K^{-}$\\%
-%         %
-%         \textbf{elif~~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~~and~~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi^{+}\pi^{-}$\\%
+      \itemm Identification of particle pairs based on $dE/dx$ ($\chi^{2}$) and $m^{2}_{\text{TOF}}$ (def. in Sec.~\ref{sec:C8} and App.~\ref{appendix:squaredMass}):\label{enum:CutPidNoPtLimit}\\[3pt]
         \textbf{~~if~~~}\hspace*{4.5pt}$\chi^{2}(\pi\pi)>9$\textbf{~~and~~}$\chi^{2}(KK)>9$\textbf{~~and~~}$\chi^{2}(pp)<9$\textbf{~~and~~}$m^{2}_{\text{TOF}}>0.6~\text{GeV}~~\rightarrow~~p\bar{p}$\\[5pt]%
         %
         \textbf{elif~~}$\chi^{2}(\pi\pi)>9$\textbf{~~and~~}$\chi^{2}(KK)<9$\textbf{~~and~~}$\chi^{2}(pp)>9$\textbf{~~and~~}$m^{2}_{\text{TOF}}>0.15~\text{GeV}~~\rightarrow~~K^{+}K^{-}$\\[5pt]%
         %
-        \textbf{elif~} $|n\sigma_{\text{pion}}^{\text{trk1}}|<3$ \textbf{~and~} $|n\sigma_{\text{pion}}^{\text{trk2}}|<3~~\rightarrow~~\pi^{+}\pi^{-}$.%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\textbf{otherwise~~} event rejected.
+        \textbf{elif~} $\chi^{2}(\pi\pi)<12~~\rightarrow~~\pi^{+}\pi^{-}$.%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\textbf{otherwise~~} event rejected.
       \itemm Restricting fiducial cuts on $K^{+}K^{-}$ and $p\bar{p}$ (to reduce misidentifications and assure high PID eff.):\label{enum:CutPidPtLimits}\\[2pt]
-      \textbf{~if~} $p\bar{p}$:~~~~~~~~~~~~\hspace*{1.7pt}$p_{T}>0.4~\text{GeV}$,~~~~$min(p_{T}^{+},p_{T}^{-})<1.1~\text{GeV}$\\%
-      \textbf{~if~} $K^{+}K^{-}$:~~~~~~$p_{T}>0.3~\text{GeV}$,~~~~$min(p_{T}^{+},p_{T}^{-})<0.7~\text{GeV}$%
+      \textbf{~if~} $K^{+}K^{-}$:~~~~~~$p_{T}>0.3~\text{GeV}$,~~~~$min(p_{T}^{+},p_{T}^{-})<0.7~\text{GeV}$\\[2pt]%
+      \textbf{~if~} $p\bar{p}$:~~~~~~~~~~~~\hspace*{1.7pt}$p_{T}>0.4~\text{GeV}$,~~~~$min(p_{T}^{+},p_{T}^{-})<1.1~\text{GeV}$%
 \end{enumerate}
 \itemm Missing (total) momentum of TPC tracks and RP tracks $p_{T}^{\text{miss}}<75~\text{MeV}$.\label{enum:CutMissingPt}%
  %
@@ -94,25 +89,22 @@ As it was designed in the trigger logic, we aim to perform CEP analysis in a cle
 
 The single TOF vertex was required to be placed within a range $(-80~\text{cm},~80~\text{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons (comparing to events with vertices close to nominal IP), therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties. See Sec.~3.2.3 in Ref.~\cite{supplementaryNote}.
 
-In Fig~\ref{fig:Ratio_Linear_ZVtx} we show comparison of the $z$-position of single TOF primary vertex measured in the TPC, between data and MC generated e.g. to study of detector effects present in analysis. The ratio of distributions which is compatible with unity indicates proper position, width and shape of distribution assumed at MC generation (gaussian with mean at 0 and width of 50~cm).
-
-
 %---------------------------
-\begin{figure}[ht!]
+\begin{figure}[h]
 \centering%
-\parbox{0.5725\textwidth}{%
+\parbox{0.5325\textwidth}{%
   \centering%
   \includegraphics[width=\linewidth]{graphics/backgrounds/dataVsMc/Ratio_Linear_ZVtx.pdf} 
 }%
 \quad%
-\parbox{0.3725\textwidth}{%
+\parbox{0.4125\textwidth}{%
     \caption[Comparison of $z_{\text{vtx}}$ distribution between data and embedded MC.]{Comparison of $z_{\text{vtx}}$ distribution between data and embedded MC after full selection. Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in Sec.~\ref{sec:bkgdSignalNorm}. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes. Comparison is shown for only $z$-vertex range corresponding to offline selection cut~\ref{enum:CutZVx} due to such limited vertex range used in MC generation for increase of generation efficiency.}\label{fig:Ratio_Linear_ZVtx} %  
 }
 \end{figure}
 %---------------------------
 
 
-
+In Fig~\ref{fig:Ratio_Linear_ZVtx} we show comparison of the $z$-position of single TOF primary vertex measured in the TPC, between data and MC generated e.g. to study of detector effects present in analysis. The ratio of distributions which is compatible with unity indicates proper position, width and shape of distribution assumed at MC generation (gaussian with mean at 0 and width of 50~cm).
 
 
 
@@ -146,7 +138,11 @@ is less than $R^{\text{match}}_{\text{max}} = 0.05$. Distribution of the distanc
 
 However, if there are any primary TPC tracks matched with BEMC cluster and not matched with TOF in the single TOF vertex with two TOF-matched tracks, an event is rejected. Such configuration implies higher-than-2 multiplicity of the real tracks in the vertex, hence an event is unlikely a Central Exclusive Production of two particles.
 
+We apply cuts on the quantities reflecting quality of reconstructed TPC tracks similar to these typically used at STAR. We cut on number of hits used in TPC track reconstruction $N_{\text{hits}}^{\text{fit}} \geq 25$ and number of hits used in specific energy loss reconstruction $N_{\text{hits}}^{\text{dE/dx}} \geq 15$ in order to achieve good momentum and $dE/dx$ resolution. We show distributions of aforementioned quantities together with spectrum of fraction of number of hits potentially generated by the track and finally used in the reconstruction $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ in Fig.~\ref{fig:NHits}. One can see, that embedded MC simulation describes measured data well.
 
+We also require that helices of global tracks associated with selected primary TOF tracks point well to the primary vertex ($\text{DCA}(R)<1.5$~cm and $|\text{DCA}(z)|<1$~cm), as well as the longitudinal separation of helices at the beamline (Fig.~\ref{fig:deltaZ0Sketch}) is small and coincides with cut on $|\text{DCA}(z)|$ ($|\Delta z_{0}|<2$~cm). Distributions of these quantities together with comparison against embedded MC are shown in Fig.~8.5 of Ref.~\cite{supplementaryNote}. In that reference one can also read how appropriate adjustment was derived needed to achieve satisfactory agreement of the $d_{0}$, $\text{DCA}(R)$, $\text{DCA}(z)$ and $|\Delta z_{0}|$ in data and embedded MC.
+
+Figure~\ref{fig:TrackEtaPhi} shows comparison of the track pseudorapidity and azimuthal angle between data and embedded MC. These distributions are quite well described by MC. Large modulation in the $\phi$ distribution (enhancement at $\phi=\pm\pi/2$) is connected with the RP acceptance mostly at $\varphi=\pm\pi/2$ - central particles pair is always back-to-back in azumith with respect to pair of forward scattered protons, therefore pairs produced in ''up`` or ''down`` direction are preferred.
 
 %---------------------------
 \begin{figure}[hb]
@@ -168,18 +164,12 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
   \end{subfigure}\\
   \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
     \caption[Comparison of distribution of $N_{\text{hits}}^{\text{fit}}$,~$N_{\text{hits}}^{\text{dE/dx}}$ and $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ in the data and embedded MC.]
-    {Comparison of distribution of the number of hits used in TPC track reconstruction $N_{\text{hits}}^{\text{fit}}$ (\subref{fig:NHitsFit}), number of hits used in specific energy loss reconstruction $N_{\text{hits}}^{\text{dE/dx}}$ (\subref{fig:NHits_dEdx}) and fraction of number of hits potentially generated by the track and finally used in the reconstruction $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ (\subref{fig:NHitsFit_to_NHitsPos}) in the data (black points) and embedded MC (stacked color histograms). Normalizations of the signal and backgrounds were established according to description in Sec.~\ref{sec:bkgdSignalNorm}. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes. Red dashed line and red arrow indicate the range of each quantity which is accepted in analysis (if cut on this quantity is applied).}\label{fig:NHits}
+    {Comparison of distribution of the number of hits used in TPC track reconstruction $N_{\text{hits}}^{\text{fit}}$ (\subref{fig:NHitsFit}), number of hits used in specific energy loss reconstruction $N_{\text{hits}}^{\text{dE/dx}}$ (\subref{fig:NHits_dEdx}) and fraction of number of hits potentially generated by the track and finally used in the reconstruction $N_{\text{hits}}^{\text{fit}}/N_{\text{hits}}^{\text{poss}}$ (\subref{fig:NHitsFit_to_NHitsPos}) in the data (black points) and embedded MC (stacked color histograms). Normalizations of the signal and backgrounds were established according to description in Sec.~\ref{sec:bkgdSignalNorm}. Predictions for MCs other than GenEx (yellow) were replaced by predictions for GenEx scaled to have the same integrals as replaced histograms - this was driven by the fact that only GenEx was embedded into zero-bias TPC data, which is required to describe the three presented quantities. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes. Red dashed line and red arrow indicate the range of each quantity which is accepted in analysis (if cut on this quantity is applied).}\label{fig:NHits}
   \end{minipage}
 }%
 
 \end{figure}
 %---------------------------
-
-
-
-
-
-
 
 
 
@@ -217,11 +207,13 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 
 \subsection{(\ref{enum:CutRpTrks})~RP tracks}\label{sec:C4}
 
+In presented physics analysis highest-level forward objects were used - the RP tracks. They are obtained through the reconstruction starting from the signals in single channels of silicon strip detectors housed inside RPs. General description of the reconstruction procedure has been given in Sec.~6.2 of the supplementary analysis note~\cite{supplementaryNote} and reference therein. A bit more detail description is available in elastic proton-proton scattering measurement note~\cite{elasticNote}.
 
-% Clear band of primary proton tracks can be distinguished in the plots.
+
+Roman Pot data was analyzed offline as follows. First, all RP tracks which contain track points that had been formed of less than 3 hits of out 4 maximally possible (1 hit per silicon plane), were rejected. This is natural consequence of very high single plane efficiency $>99.5\%$, and prevents including to analysis tracks with track points formed from unmatched pairs of clusters in both $x$- and $y$-coordinate (e.g. from electronics noise).
 
 %---------------------------
-\begin{figure}[h]
+\begin{figure}[b!]
 \centering
 \parbox{0.4725\textwidth}{
   \centering
@@ -242,113 +234,29 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
                 \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth,page=4]{graphics/eventSelection/RpTracks/RpTrackCuts_2.pdf}}
   \end{subfigure}
 }%
-\label{fig:localAngleRp}%
-\caption[Local angle vs. position of RP tracks matched with true level primary protons.]{Typical correlation between local angle ($y$-axis) and position ($x$-axis) of RP tracks matched with true level primary protons for $x$- (\subref{fig:localAngle2D_X}) and $y$-coordinate (\subref{fig:localAngle2D_Y}), here shown for branch WU. The same events are contained in \subref{fig:localAngle1D_X} and \subref{fig:localAngle1D_Y} for $x$- and $y$-coordinate respectively, where difference between reconstructed local angle and local angle expected from the elastic track is histogrammed. Red lines and arrows visualize cuts imposed on RP tracks for final selection (cuts~\ref{enum:RpLocalAngles}).}
+\caption[Local angle vs. position of RP tracks matched with true level primary protons.]{Typical correlation between local angle ($y$-axis) and position ($x$-axis) of RP tracks matched with true level primary protons for $x$- (\subref{fig:localAngle2D_X}) and $y$-coordinate (\subref{fig:localAngle2D_Y}), here shown for branch WU. The same events are contained in \subref{fig:localAngle1D_X} and \subref{fig:localAngle1D_Y} for $x$- and $y$-coordinate respectively, where difference between reconstructed local angle and local angle expected from the elastic track is histogrammed. Red lines and arrows visualize cuts imposed on RP tracks for final selection (cuts~\ref{enum:RpLocalAngles}).}\label{fig:localAngleRp}%
 \end{figure}
 %---------------------------
 
+Next, preselected tracks were verified for consistency of their local angles with hypothesis of their origin being at the STAR IR. Using Geant4 simulation of RP system (see Sec.~6.3. of Ref.~\cite{supplementaryNote}) the impact of apertures limiting RP acceptance for the forward scattered protons generated at STAR IR was tested. The result is shown in Fig.~\ref{fig:localAngleRp}, where density maps of reconstructed RP track local angle $\theta^{\text{RP}}$ and corresponding track coordinate in RP station are drawn (we show it only for branch WU as the picture is the same in the remaing branches). Only RP tracks matched with generated primary forward protons were used to fill the histograms. Clear bands of primary proton tracks can be distinguished in the top plots (Figs.~\ref{fig:localAngle2D_X} and~\ref{fig:localAngle2D_Y}), with some very small number of tracks significantly scattered on the beampipe/DX/detector material. One-dimensional representation of the correlation between local angle and position can be obtained by constructing quantities
+\begin{equation}
+ \widetilde{\Delta}\theta_{x}^{RP} = \theta_{x}^{\text{RP}}-x^{\text{RP}}/|z^{\text{RP}}|,
+\end{equation}
+\begin{equation}
+ \widetilde{\Delta}\theta_{y}^{RP} = \theta_{y}^{\text{RP}}-y^{\text{RP}}/|z^{\text{RP}}|,
+\end{equation}%
+which reflect deviation of reconstructed local angle from expectation for forward proton of the beam momentum, and whose distributions are presented in Fig.~\ref{fig:localAngle1D_X} and Fig.~\ref{fig:localAngle1D_Y}, respectively (black histograms). On these one-dimensional histograms we clearly see peaks from the true primary tracks. We considered optimal to restrict accepted $\widetilde{\Delta}\theta_{x}^{RP}$ from -2~mrad to 4~mrad, and $\widetilde{\Delta}\theta_{y}^{RP}$ from -2~mrad to 2~mrad. The upper cut on $\widetilde{\Delta}\theta_{x}^{RP}$ equal to  4~mrad may look too inclusive, but intention was to preserve tracks of protons with very large $\xi$, whose local angle highly deviates from that of elastically scattered protons (DX magnets bends more protons with lower momentum) and which might have been underpopulated in MC (GenEx predictions were used). It is also worth to comment on the blue histograms in Figs.~\ref{fig:localAngle1D_X} and~\ref{fig:localAngle1D_Y}, which represent local tracks (formed of single track points). These tracks are reconstructed assuming their momentum is equal to the beam momentum (angle at vertex equal to angle at RP station), therefore $\widetilde{\Delta}\theta_{x}^{RP}$ and $\widetilde{\Delta}\theta_{y}^{RP}$ is 0 by definition.
 
 
+Once the set of cuts above was applied we required that on each side of STAR there was exactly one selected RP track. We did not allow higher number of tracks on one side because of no clear way to discriminate real tracks of primary protons.
 
+In addition to cuts above, we restricted our measurement to the fiducial region defined as
+\begin{equation}\label{eq:RpFiducial}
+0.2<|p_{y}|<0.4,~~~-0.2<p_{x},~~~(p_{x}+0.3)^{2}+p_{y}^{2}<0.5^{2}~~~(\text{all in GeV}), 
+\end{equation}
+therefore both RP tracks were required to be contained within above envelope in $(p_{x}, p_{y})$ space. This fiducial area is drawn with black solid line on top of the $(p_{x}, p_{y})$ distribution of all measured CEP candidates (Fig.~\ref{fig:rp_hits}). It was chosen to compromize signal statistics and systematic uncertainties of the RP-related efficiencies (see e.g. Sec.~10.3 of Ref.~\cite{supplementaryNote}).
 
-
-
-%---------------------------
-\begin{figure}[h]
-\centering
-\parbox{0.31\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:localAngle2D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E1U.pdf}\vspace*{-10pt}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W2U.pdf}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W1D.pdf}}
-  \end{subfigure}
-}%
-\quad%
-\parbox{0.31\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
-                \subcaptionbox{\label{fig:localAngle2D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E2U.pdf}\vspace*{-10pt}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E1D.pdf}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W2D.pdf}}
-  \end{subfigure}
-}%
-\quad%
-\parbox{0.31\textwidth}{
-  \centering\vspace*{-22pt}
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
-                \subcaptionbox{\label{fig:localAngle2D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W1U.pdf}\vspace*{-10pt}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E2D.pdf}}
-  \end{subfigure}
-    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\end{minipage}
-}
-\label{fig:xRp}%
-\caption[....]{..}
-\end{figure}
-%---------------------------
-
-
-
-
-%---------------------------
-\begin{figure}[h]
-\centering
-\parbox{0.31\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:localAngle2D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E1U.pdf}\vspace*{-10pt}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W2U.pdf}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W1D.pdf}}
-  \end{subfigure}
-}%
-\quad%
-\parbox{0.31\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
-                \subcaptionbox{\label{fig:localAngle2D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E2U.pdf}\vspace*{-10pt}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E1D.pdf}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_X}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W2D.pdf}}
-  \end{subfigure}
-}%
-\quad%
-\parbox{0.31\textwidth}{
-  \centering\vspace*{-22pt}
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
-                \subcaptionbox{\label{fig:localAngle2D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W1U.pdf}\vspace*{-10pt}}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:localAngle1D_Y}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E2D.pdf}}
-  \end{subfigure}
-    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\end{minipage}
-}
-\label{fig:yRp}%
-\caption[....]{..}
-\end{figure}
-%---------------------------
-
-
-
-
-
-\begin{figure}[h]
+\begin{figure}[b!]
 \centering
 \includegraphics[width=.465\textwidth]{graphics/eventSelection/RpTracks/PxPyExclusiveAllMerged.pdf}
 %\hfill
@@ -357,6 +265,128 @@ However, if there are any primary TPC tracks matched with BEMC cluster and not m
 \caption{(left) Merged distributions of diffractively scattered protons momenta $p_y$ vs. $p_x$ in exclusive $h^{+}h^{-}$ events reconstructed with the East and West RP stations, together with the kinematic region used in the measurement marked with the black line. (right) Distributions of measured four momenta transfers at the proton vertices for exclusive $h^{+}h^{-}$ events with all particles in the fiducial phase space are shown for East and West stations with yellow and blue color, respectively.}
 \label{fig:rp_hits}
 \end{figure}
+
+
+In the remaining part of the section we show comparisons of the track points position distributions between the data and embedded MC. In Fig.~\ref{fig:hitMap_DataVsMC} we present side-by-side comparisons of two-dimensional hit maps from the data and embedded MC. Figures~\ref{fig:xRp} and~\ref{fig:yRp} show the same comparisons, but between their $x$- and $y$-projections for each RP separately. One can see, that simulation generally describes data well, both in terms of shapes (which is mainly sensitive to detector alignment and geometry/apertures) and track points normalizations in various RPs (which is mainly sensitive to reconstruction efficiency).
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:E1_HitMap}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/E1_HitMap.pdf}}
+  \end{subfigure}\\[10pt]
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:W1_HitMap}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/W1_HitMap.pdf}}
+  \end{subfigure}
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:E2_HitMap}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/E2_HitMap.pdf}}
+  \end{subfigure}\\[10pt]
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:W2_HitMap}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/W2_HitMap.pdf}}
+  \end{subfigure}
+}%
+\caption[Comparison of two-dimensional track point density map in the data and embedded MC.]
+    {Comparison of two-dimensional track point density map in the data (left panel in subfigures) and stacked embedded MC (right panel in subfigures). Each subfigure corresponds to single RP station with position of track points measured in upper and lower RP visible at positive and negative $y$, respectively. Normalizations of the signal and backgrounds were established according to description in Sec.~\ref{sec:bkgdSignalNorm}.}\label{fig:hitMap_DataVsMC}%
+\end{figure}
+%---------------------------
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.31\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:Ratio_Linear_x_E1U}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E1U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\[5pt]
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_x_W2U}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W2U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\[5pt]
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_x_W1D}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W1D.pdf}\vspace*{-10pt}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.31\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:Ratio_Linear_x_E2U}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E2U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\[5pt]
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_x_E1D}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E1D.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\[5pt]
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_x_W2D}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W2D.pdf}\vspace*{-10pt}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.31\textwidth}{
+  \centering\vspace*{-22pt}
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:Ratio_Linear_x_W1U}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_W1U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\[5pt]
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_x_E2D}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_x_E2D.pdf}\vspace*{-10pt}}
+  \end{subfigure}
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\end{minipage}
+}
+\caption[Comparison of $x$-position of track point between the data and stacked embedded MC.]{Comparison of $x$-position of track point between the data (black points) and stacked embedded MC (color histograms). Each subfigure corresponds to single RP station, whose name is printed in the right part subfigure. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes. Normalizations of the signal and backgrounds were established according to description in Sec.~\ref{sec:bkgdSignalNorm}.}\label{fig:xRp}% 
+\end{figure}
+%---------------------------
+
+
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.31\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:Ratio_Linear_y_E1U}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E1U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\[5pt]
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_y_W2U}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W2U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\[5pt]
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_y_W1D}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W1D.pdf}\vspace*{-10pt}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.31\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:Ratio_Linear_y_E2U}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E2U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\[5pt]
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_y_E1D}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E1D.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_y_W2D}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W2D.pdf}\vspace*{-10pt}}
+  \end{subfigure}
+}%
+\quad%
+\parbox{0.31\textwidth}{
+  \centering\vspace*{-22pt}
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:Ratio_Linear_y_W1U}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_W1U.pdf}\vspace*{-10pt}}
+  \end{subfigure}\\[5pt]
+  \begin{subfigure}[b]{\linewidth}%\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:Ratio_Linear_y_E2D}}{\includegraphics[width=\linewidth]{graphics/eventSelection/RpTracks/Ratio_Linear_y_E2D.pdf}\vspace*{-10pt}}
+  \end{subfigure}
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\end{minipage}
+}
+\caption[Comparison of $y$-position of track point between the data and stacked embedded MC.]{Comparison of $y$-position of track point between the data (black points) and stacked embedded MC (color histograms). Each subfigure corresponds to single RP station, whose name is printed in the middle of subfigure. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes. Normalizations of the signal and backgrounds were established according to description in Sec.~\ref{sec:bkgdSignalNorm}.}\label{fig:yRp}% 
+\end{figure}
+%---------------------------
+
 
 
 
