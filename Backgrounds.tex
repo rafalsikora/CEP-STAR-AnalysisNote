@@ -196,14 +196,35 @@ In Fig.~\ref{fig:Ratio_InvMass} we demonstrate, that data driven method is neces
 
 \subsection{Exclusive background}\label{sec:exclBkgdDetermination}
 
-Exclusive background arising from wrong identification have been estimated with the help of semi-data-driven method. This method uses fast MC generator introduced in Sec.~\ref{sec:pidEff}, in which all quantities relevant for particle identification ($dE/dx$ and its resolution, TOF time measurement resolution etc.) were set according to their distribution/magnitude in the data. In order to determine absolute size of migrations between three measured species of particle pairs it was required to know the full distribution of particles' (transverse) momenta - especially in the regions of momentum space where the migrations are significant (regions of non-zero $\lambda^{X\rightarrow Y}$ in Fig.~\ref{fig:pidEffVsPt}). There are no models of CEP of $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ which describe measured data, therefore we decided to use measured distributions as an input models of $(p_{T}^{+}, p_{T}^{-})$\footnote{$(p_{T}^{\text{max}}, p_{T}^{\text{min}})$ could be used same well.}. We assumed that selected CEP pairs have low contamination from the exclusive background (we know that non-exclusive is less than 7\%) and thus $(p_{T}^{+}, p_{T}^{-})$ distributions are representative for all particle species. Such assumption was motivated by restrictive particle identification algorithm, which based on study from Sec.~\ref{sec:pidEff} provides high level of identification efficiency and low level of misidentification probability. Also, in the distributions of $\chi^{2}_{dE/dx}$ and $m^{2}_{\text{TOF}}$ presented in Fig.~\ref{fig:pid_plots} we see clear features expected for given pair types, without signs of excessful exclusive background. Having commented that, raw distributions of $(p_{T}^{+}, p_{T}^{-})$ for selected CEP events without additional lower track $p_{T}$ cut~\ref{enum:CutPidPtLimits} for kaon and proton pairs (Figs.~\ref{fig:PtPlusVsPtMinus_pion_1}, \ref{fig:PtPlusVsPtMinus_kaon_1} and~\ref{fig:PtPlusVsPtMinus_proton_1}) were assumed to properly represent corresponding detected and reconstructed particle species.
+Exclusive background arising from wrong identification have been estimated with the help of semi-data-driven method. This method uses fast MC generator introduced in Sec.~\ref{sec:pidEff}, in which all quantities relevant for particle identification ($dE/dx$ and its resolution, TOF time measurement resolution etc.) were set according to their distribution/magnitude in the data. In order to determine absolute size of migrations between three measured species of particle pairs it was required to know the full distribution of particles' (transverse) momenta - especially in the regions of momentum space where the migrations are significant (regions of non-zero $\lambda^{X\rightarrow Y}$ in Fig.~\ref{fig:pidEffVsPt}). There are no models of CEP of $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ which describe measured data, therefore we decided to use measured distributions as an input models of $(p_{T}^{+}, p_{T}^{-})$\footnote{$(p_{T}^{\text{max}}, p_{T}^{\text{min}})$ could be used same well.}. We assumed that selected CEP pairs have low contamination from the exclusive background (we know that non-exclusive is less than 7\%) and thus $(p_{T}^{+}, p_{T}^{-})$ distributions are representative for all particle species. Such assumption was motivated by restrictive particle identification algorithm, which based on study from Sec.~\ref{sec:pidEff} provides high level of identification efficiency and low level of misidentification probability. Also, in the distributions of $\chi^{2}_{dE/dx}$ and $m^{2}_{\text{TOF}}$ presented in Fig.~\ref{fig:pid_plots} we see clear features expected for given pair types, without signs of excessful exclusive background. Having commented that, raw distributions of $(p_{T}^{+}, p_{T}^{-})$ for selected CEP events without additional lower track $p_{T}$ cut~\ref{enum:CutPidPtLimits} for kaon and proton pairs (Figs.~\ref{fig:PtPlusVsPtMinus_pion_1}, \ref{fig:PtPlusVsPtMinus_kaon_1} and~\ref{fig:PtPlusVsPtMinus_proton_1}) were assumed to properly represent corresponding detected, reconstructed and identified particle species.
 
 The following procedure was conducted to prepare $(p_{T}^{+}, p_{T}^{-})$ distributions finally used to determine exclusive background in all three CEP samples:
 
 \begin{enumerate}
- \item 
+ \item Distributions exhibit natural symmetry around $p_{T}^{+}=p_{T}^{-}$ therefore corresponding mirror-image bins with respect to diagonal were averaged:
+ \begin{equation}
+  N_{X,avg}(p_{T}^{+}, p_{T}^{-}) = N_{X,avg}(p_{T}^{-}, p_{T}^{+}) = \frac{N_{X}(p_{T}^{-}, p_{T}^{+}) + N_{X}(p_{T}^{+}, p_{T}^{-})}{2}.
+ \end{equation}
+Outcome for all three species is shown in Figs.~\ref{fig:PtPlusVsPtMinus_pion_2}, \ref{fig:PtPlusVsPtMinus_kaon_2} and~\ref{fig:PtPlusVsPtMinus_proton_2}.
+ \item Distributions were corrected for the identification efficiency from Fig.~\ref{fig:pidEffVsPt}:
+ \begin{equation}
+  N_{X,corr}(p_{T}^{+}, p_{T}^{-}) = \frac{N_{X,avg}(p_{T}^{-}, p_{T}^{+})}{ \mbox{\LARGE$\epsilon$}^{X}\left(max(p_{T}^{-}, p_{T}^{+}), min(p_{T}^{-}, p_{T}^{+})\right) }.
+ \end{equation}
+ At this stage distributions $N_{X,corr}$ represent detected and reconstructed events before identification. They are drawn in Figs.~\ref{fig:PtPlusVsPtMinus_pion_3}, \ref{fig:PtPlusVsPtMinus_kaon_3} and~\ref{fig:PtPlusVsPtMinus_proton_3}.
+ \item Last step of preparation of $(p_{T}^{+}, p_{T}^{-})$ distributions applies only to $K^{+}K^{-}$ and $p\bar{p}$, as it is related with the upper cut on $min(p_{T}^{-}, p_{T}^{+})$. Because of this cut we do not have acces to region where both-tracks' carry high $p_{T}$. We overcome this difficulty by performing an extrapolation of the distributions into the unmeasured region. This is done for the histograms binned as shown in figures mentioned earlier. In a loop over all bins in $p_{T}^{-}$ (index $i$) and in $p_{T}^{+}$ (index $j$) the following prescription is used to fill empty bins, starting from the bins covering $min(p_{T}^{-}, p_{T}^{+})$ cuts specific for $K^{+}K^{-}$ and $p\bar{p}$:
+ \begin{equation}
+  N_{X,extr}(p_{T,i}^{+}, p_{T,j}^{-}) = f_{extr}\cdot\frac{N_{X,extr}(p_{T,i-1}^{-}, p_{T,j-1}^{+}) + N_{X,extr}(p_{T,i-2}^{+}, p_{T,j-2}^{-})}{2}.
+ \end{equation}
+In above furmula factor $f_{extr}$ determines the ``steepnes'' of the distribution with growing track's $p_{T}$. As we observe in $\pi^{+}\pi^{-}$ channel the high-$p_{T}$ tail in the distribution tends to diminish and disappears around $(2~\text{GeV}, 2~\text{GeV})$. We find that $f_{extr}=0.8$ is reasonable to provide picture similar to $\pi^{+}\pi^{-}$ in the two remaining CEP channels. Final distributions for $K^{+}K^{-}$ and $p\bar{p}$ are drawn in Figs.~\ref{fig:PtPlusVsPtMinus_kaon_4} and~\ref{fig:PtPlusVsPtMinus_proton_4}, respectively.
 \end{enumerate}
 
+Prepared $(p_{T}^{+}, p_{T}^{-})$ distributions were used to obtain predictions for the misidentifications. Samples of exclusive $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ simulated with fast MC, with uniformly distributed $(p_{T}^{+}, p_{T}^{-})$ over $0.2~\text{GeV}<p_{T}^{+}, p_{T}^{-}<3~\text{GeV}$, were subjected to PID algorithm~\ref{enum:CutPid}. Each event was assigned with the weight equal to the data-extracted event density for given $(p_{T}^{+}, p_{T}^{-})$, such that relative number of $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ pairs was exactly the same as it resulted from $(p_{T}^{+}, p_{T}^{-})$ maps in Fig.~\ref{fig:PtPlusVsPtMinus_pion_3}, \ref{fig:PtPlusVsPtMinus_kaon_4} and~\ref{fig:PtPlusVsPtMinus_proton_4}. Histograms of $\chi^{2}_{dE/dx}$ and $m^{2}_{\text{TOF}}$ were filled with reconstructed quantities and using aforementioned weight. There were were seperate histograms for different true-level PIDs and reconstructed PIDs, so that they formed $3\times3$ array of histograms.
+
+The last step involved proper normalization of the histograms obtained earlier. Predictions for each true-level pair type were normalized independently, but the same normalization was preserved for all quantities and for all reconstructed pair types. For example, normalization of histograms representing prediction for exclusive $\pi^{+}\pi^{-}$ was obtained by ...
+
+\begin{equation}
+ F_{\pi\pi}^{\text{MC}} = \frac{\left(1-f_{bkgd}^{non-excl}\right)\int\limits_{0}^{12}\frac{dN_{\pi\pi}^{\text{data}}}{d\chi^{2}_{dE/dx}}d\chi^{2}_{dE/dx}}{\int\limits_{0}^{12}\left(\frac{dN_{\pi\pi\rightarrow\pi\pi}^{\text{MC}}}{d\chi^{2}_{dE/dx}} + \frac{dN_{KK\rightarrow\pi\pi}^{\text{MC}}}{d\chi^{2}_{dE/dx}} + \frac{dN_{pp\rightarrow\pi\pi}^{\text{MC}}}{d\chi^{2}_{dE/dx}}\right)d\chi^{2}_{dE/dx} }
+\end{equation}
 
 
 
@@ -320,14 +341,14 @@ In the last step the exclusive $\pi^{+}\pi^{-}$ MC was normalized. It was scaled
 
 As can be observed in the comparison plots, presented data are generally well described by MC. In case of $\Delta z_{\text{vtx}}$ some imperfectness in the position and width of the simulated signal peak can be noticed, most probably arising from slightly underestimated timing resolution of the RP trigger counters in the simulation. Distribution of $p_{T}^{\text{miss}}$ is very well described, for both signal and control channel. The ratio of number of opposite-sign pairs to same-sign pairs is compatible between data and MC, which was possible to achieve by rejecting in Pythia contributions from events with the central state consisting from two opposite-sign pions and at least one neutral particle. These events should be suppressed by the \DPE\ condition \eqref{eq:DPE_IGJPC}, which seem to be not taken into account in Pythia at the hadronization level. We demonstrate in Fig.~\ref{fig:Ratio_MissingPt_OppositeAndSameSign_NeutralsNotSubtracted} that if these events are preserved, Pythia MC cannot describe data in the background-dominating region (large $p_{T}^{\text{miss}}$).
 
-It is also worth to mention that the ratio of scaling factors $s$ for CD MC in two ranges of $\Delta\varphi$ amounts%\vspace*{-5pt}
-\begin{equation}\label{eq:scalingCD}%\vspace*{-5pt}
-\frac{s(\Delta\varphi<90^{\circ})}{s(\Delta\varphi>90^{\circ})} = 1.1,  
-% s(\Delta\varphi<90^{\circ})/s(\Delta\varphi>90^{\circ}) = 1.43,
+It is also worth to mention that the ratio of scaling factors $s$ for CD MC in two ranges of $\Delta\varphi$ amounts\vspace*{-5pt}
+\begin{equation}\label{eq:scalingCD}\vspace*{-5pt}
+% \frac{s(\Delta\varphi<90^{\circ})}{s(\Delta\varphi>90^{\circ})} = 1.1,  
+s(\Delta\varphi<90^{\circ})/s(\Delta\varphi>90^{\circ}) = 1.1,
 \end{equation}
 which is compatible with a dominance of the fiducial CEP $\pi^{+}\pi^{-}$ cross section for $\Delta\varphi<90^{\circ}$ over $\Delta\varphi>90^{\circ}$ (Tab.~\ref{tab:xSecSyst}).
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \parbox{0.4725\textwidth}{
   \centering
