@@ -220,12 +220,27 @@ In above furmula factor $f_{extr}$ determines the ``steepnes'' of the distributi
 
 Prepared $(p_{T}^{+}, p_{T}^{-})$ distributions were used to obtain predictions for the misidentifications. Samples of exclusive $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ simulated with fast MC, with uniformly distributed $(p_{T}^{+}, p_{T}^{-})$ over $0.2~\text{GeV}<p_{T}^{+}, p_{T}^{-}<3~\text{GeV}$, were subjected to PID algorithm~\ref{enum:CutPid}. Each event was assigned with the weight equal to the data-extracted event density for given $(p_{T}^{+}, p_{T}^{-})$, such that relative number of $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ pairs was exactly the same as it resulted from $(p_{T}^{+}, p_{T}^{-})$ maps in Fig.~\ref{fig:PtPlusVsPtMinus_pion_3}, \ref{fig:PtPlusVsPtMinus_kaon_4} and~\ref{fig:PtPlusVsPtMinus_proton_4}. Histograms of $\chi^{2}_{dE/dx}$ and $m^{2}_{\text{TOF}}$ were filled with reconstructed quantities and using aforementioned weight. There were were seperate histograms for different true-level PIDs and reconstructed PIDs, so that they formed $3\times3$ array of histograms.
 
-The last step involved proper normalization of the histograms obtained earlier. Predictions for each true-level pair type were normalized independently, but the same normalization was preserved for all quantities and for all reconstructed pair types. For example, normalization of histograms representing prediction for exclusive $\pi^{+}\pi^{-}$ was obtained by ...
+The last step involved proper normalization of the histograms obtained earlier. Predictions for each true-level pair type were normalized independently, but the same normalization was preserved for all quantities and for all reconstructed pair types. Normalization $F^{\text{MC}}_{X}$ of histograms representing prediction for exclusive $XX$ was established such that the number of predicted $XX$ events in the $XX$ signal-dominating region (fiducial region of $\chi^{2}_{dE/dx}(XX)<6$), $N_{X\rightarrow X, \text{fid}}^{\text{MC}}$, was equal to the number of measured $XX$ events in that region ($N_{X,\text{fid}}^{\text{data}}$) less a number of non-exclusive background events in the same region ($N_{\text{bkgd},X,\text{fid}}^{\text{non-excl}}$) extracted with a method introduced in Sec.~\ref{sec:nonExclBkgdDetermination}. It is expressed with the formula in Eq.~\eqref{eq:exclBkgdNorm}:
 
-\begin{equation}
- F_{\pi\pi}^{\text{MC}} = \frac{\left(1-f_{bkgd}^{non-excl}\right)\int\limits_{0}^{12}\frac{dN_{\pi\pi}^{\text{data}}}{d\chi^{2}_{dE/dx}}d\chi^{2}_{dE/dx}}{\int\limits_{0}^{12}\left(\frac{dN_{\pi\pi\rightarrow\pi\pi}^{\text{MC}}}{d\chi^{2}_{dE/dx}} + \frac{dN_{KK\rightarrow\pi\pi}^{\text{MC}}}{d\chi^{2}_{dE/dx}} + \frac{dN_{pp\rightarrow\pi\pi}^{\text{MC}}}{d\chi^{2}_{dE/dx}}\right)d\chi^{2}_{dE/dx} }
+\begin{equation}\label{eq:exclBkgdNorm}
+ F_{X}^{\text{MC}} = \frac{ N_{X,\text{fid}}^{\text{data}} - N_{\text{bkgd},X,\text{fid}}^{\text{non-excl}} }{ N_{X\rightarrow X, \text{fid}}^{\text{MC}} }
+\end{equation}% 
+%
+where all components are excplicitly given in Eqs.~\eqref{eq:exclBkgdNorm_1}-\eqref{eq:exclBkgdNorm_3}:\newline
+%
+\begin{tabulary}{\textwidth}{LCR}
+\begin{equation}\label{eq:exclBkgdNorm_1}\hspace*{-2pt}
+	 N_{\text{bkgd},X,\text{fid}}^{\text{non-excl}} = \int\limits_{0}^{6}\frac{dN_{\text{bkgd},X,\text{fid}}^{\text{non-excl}}}{d\chi^{2}_{dE/dx}}d\chi^{2}_{dE/dx},
+\end{equation}&
+\begin{equation}\label{eq:exclBkgdNorm_2}~~~~~~~
+	N_{X,\text{fid}}^{\text{data}} = \int\limits_{0}^{6}\frac{dN_{X}^{\text{data}}}{d\chi^{2}_{dE/dx}}d\chi^{2}_{dE/dx},
+\end{equation}&
+\begin{equation}\label{eq:exclBkgdNorm_3}\hspace*{10pt}
+	N_{X\rightarrow X, \text{fid}}^{\text{MC}} = \int\limits_{0}^{6}\frac{dN_{X\rightarrow X}^{\text{MC}}}{d\chi^{2}_{dE/dx}}d\chi^{2}_{dE/dx}.
 \end{equation}
+\end{tabulary}%
 
+The relation between resultant normalization factors $F_{\pi\pi}^{\text{MC}}/F_{KK}^{\text{MC}}/F_{pp}^{\text{MC}}$ amounts 1/1.01/0.88. Comparisons of the data with the fast MC predictions normalized according above prescription are shown in Fig.~\ref{fig:pid_plots}. Fast MC well reproduces measured spectra of $\chi^{2}_{dE/dx}$ and $m^{2}_{\text{TOF}}$ for all selected particle pair species.
 
 
 \begin{figure}[h]
@@ -307,6 +322,25 @@ The last step involved proper normalization of the histograms obtained earlier. 
 
 
 
+\subsection{Estimated background content}\label{sec:bkgdSummary}
+
+
+Numerical summary of the background determination is given in Tab.~\ref{tab:bkgdSummary}. One can see that the dominant source of background is non-exclusive background, which was suppressed down to 5\% ($\pi^{+}\pi^{-}$, $K^{+}K^{-}$) and 8\% ($p\bar{p}$). The exclusive background is typically not larger than 1\%, except the case of misidentification of $\pi^{+}\pi^{-}$ as $K^{+}K^{-}$ (3\%).
+
+{
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[h]\centering
+\begin{tabular}{cccccc}
+& \multirow{2}{*}{\vspace*{5pt}\specialcell{\textbf{Selected}\\[-5pt] \textbf{events}}} & \multirow{2}{*}{\vspace*{5pt}\specialcell{\textbf{Non-exclusive}\\[-5pt] \textbf{background}}} &  \multicolumn{3}{c}{\textbf{Exclusive background}}\vspace{-4pt} \\
+& &   & \multicolumn{1}{c}{$\bm{\pi^{+}\pi^{-}}$} & \multicolumn{1}{c}{$\bm{K^{+}K^{-}}$} & \multicolumn{1}{c}{$\bm{p\bar{p}}$} \\ \hline
+$\bm{ \pi^{+}\pi^{-} }$ & 85617 & 4554~(5.3\%) & - & 653~(0.8\%) & 19~(0.0\%) \\
+$\bm{ K^{+}K^{-} }$ & 931 & 50~(5.4\%) & 28~(3.1\%) & - & 0~(0.0\%) \\
+$\bm{ p\bar{p} }$ & 68 & 5~(7.9\%) & 1~(1.6\%) & $<$\hspace*{-1pt}1~(0.1\%) & -\\
+\end{tabular}
+\caption{Summary of backgrounds in CEP $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ channel. Values in brackets are fractions calculated with respect to number of selected events.}\label{tab:bkgdSummary}
+\end{table}
+}
+
 
 
 
@@ -341,10 +375,10 @@ In the last step the exclusive $\pi^{+}\pi^{-}$ MC was normalized. It was scaled
 
 As can be observed in the comparison plots, presented data are generally well described by MC. In case of $\Delta z_{\text{vtx}}$ some imperfectness in the position and width of the simulated signal peak can be noticed, most probably arising from slightly underestimated timing resolution of the RP trigger counters in the simulation. Distribution of $p_{T}^{\text{miss}}$ is very well described, for both signal and control channel. The ratio of number of opposite-sign pairs to same-sign pairs is compatible between data and MC, which was possible to achieve by rejecting in Pythia contributions from events with the central state consisting from two opposite-sign pions and at least one neutral particle. These events should be suppressed by the \DPE\ condition \eqref{eq:DPE_IGJPC}, which seem to be not taken into account in Pythia at the hadronization level. We demonstrate in Fig.~\ref{fig:Ratio_MissingPt_OppositeAndSameSign_NeutralsNotSubtracted} that if these events are preserved, Pythia MC cannot describe data in the background-dominating region (large $p_{T}^{\text{miss}}$).
 
-It is also worth to mention that the ratio of scaling factors $s$ for CD MC in two ranges of $\Delta\varphi$ amounts\vspace*{-5pt}
-\begin{equation}\label{eq:scalingCD}\vspace*{-5pt}
-% \frac{s(\Delta\varphi<90^{\circ})}{s(\Delta\varphi>90^{\circ})} = 1.1,  
-s(\Delta\varphi<90^{\circ})/s(\Delta\varphi>90^{\circ}) = 1.1,
+It is also worth to mention that the ratio of scaling factors $s$ for CD MC in two ranges of $\Delta\varphi$ amounts%\vspace*{-5pt}
+\begin{equation}\label{eq:scalingCD}%\vspace*{-5pt}
+\frac{s(\Delta\varphi<90^{\circ})}{s(\Delta\varphi>90^{\circ})} = 1.1,  
+% s(\Delta\varphi<90^{\circ})/s(\Delta\varphi>90^{\circ}) = 1.1,
 \end{equation}
 which is compatible with a dominance of the fiducial CEP $\pi^{+}\pi^{-}$ cross section for $\Delta\varphi<90^{\circ}$ over $\Delta\varphi>90^{\circ}$ (Tab.~\ref{tab:xSecSyst}).
 
