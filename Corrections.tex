@@ -1,16 +1,25 @@
 %%===========================================================%%
-%%                                                           %%
-%%                        CORRECTIONS                        %%
-%%                                                           %%
+%%                                                                                                                      %%
+%%                                                  CORRECTIONS                                             %%
+%%                                                                                                                      %%
 %%===========================================================%%
 
 
 \chapter{Corrections}\label{chap:corrections}
 
+In this chapter we describe methodology of correcting the data to the hadron-level cross sections. We describe technical details of the procedure (Sec.~\ref{sec:correctionProcedure}), as well as present derivation of relevant acceptances and efficiencies (Sec.~\ref{sec:acceptanceAndEff}). At the end of the chapter we show the closure tests performed on MC to validate data correction procedure together with the entire set of efficiencies.
+
+%%%%%%%
+
 \section{Method of corrections application}\label{sec:correctionProcedure}
-\begin{equation}
-  \frac{d\sigma}{dq} = \frac{1}{\Delta q} \times \frac{1}{\varepsilon} \times \frac{N^{\mathit{w}}-N^{\mathit{w}}_\textrm{bkgd}}{\mathit{L}_{\textrm{int}}^{\textrm{eff}}}
-\end{equation}
+
+Differential cross section in every bin of measured quantity of interest $q$ have been calculated according to Eq.~\eqref{eq:crossSec}:
+
+\begin{equation}\label{eq:crossSec}
+  \frac{d\sigma}{dq} = \frac{1}{\Delta q} \times \frac{1}{\varepsilon} \times \frac{N^{\mathit{w}}-N^{\mathit{w}}_\textrm{bkgd}}{\mathit{L}_{\textrm{int}}^{\textrm{eff}}},
+\end{equation}%
+%
+where $N^{w}$ is weighted number of measured events in given bin, $N^{w}_{\text{bkgd}}$ is weighted number of background events in given bin, $\Delta q$ is width of the bin, $\varepsilon$ is joint efficiency of 
 
 %remembed about accounting for RP trigger eff!!!
 \begin{equation}\label{eq:effectiveLumi}
@@ -51,7 +60,7 @@
 
 
 
-\section{Acceptances and efficiencies}
+\section{Acceptances and efficiencies}\label{sec:acceptanceAndEff}
 
 In this section we present calculation of all efficiencies except TPC track reconstruction and TOF hit reconstruction and matching efficiency, which were discussed and presented in Ref.~\cite{supplementaryNote}.
 
