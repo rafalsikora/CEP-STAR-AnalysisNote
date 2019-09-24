@@ -350,17 +350,6 @@ $\bm{ p\bar{p} }$ & 68 & 5~(7.9\%) & 1~(1.6\%) & $<$\hspace*{-1pt}1~(0.1\%) & -\
 
 Consistency between data and MC, valuable to demonstrate good understanding of the backgrounds and data themselves, has been tested for exclusive $\pi^{+}\pi^{-}$ channel\footnote{Other channels - $K^{+}K^{-}$ and $p\bar{p}$ - were not subjected to similar study because of poor MC statistics. However, structure of backgrounds and level of agreement with MC is expected to be similar to that presented for $\pi^{+}\pi^{-}$.}. We considered here only non-exclusive backgrounds because of negligible contribution from misidentifications.
 
-The following MC samples were used in this study:\vspace*{-5pt}
-\begin{itemize}
- \item Exclusive $\pi^{+}\pi^{-}$ (signal) - events from GenEx\cite{GenEx} generator passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, fully embedded into zero-bias data,\vspace*{-5pt}
- \item CD (background) - Central Diffraction events from Pythia~8.1 generator with MBR model of \Pom omeron flux, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into zero-bias data (only the simulated RP response embedded),\vspace*{-5pt}
- \item MB+elastic, (background) - Minimum Bias events from Pythia~8.1 generator with MBR model of \Pom omeron flux, filtered at generation to ensure lack of signal in BBC-large, passed through Geant3 simulation of the STAR detector (STARsim) and Geant4 simulation of the RP Phase II* detectors, partially embedded into elastic trigger (RP\_ET) data (only the simulated RP response embedded).\vspace*{-5pt}
-\end{itemize}
-
-Listed background samples were not fully embedded since an enormous CPU time would be required to obtain satisfactory statistics. It was also found unnesessary to embed TPC tracks into zero-bias data to obtain reliable agreement between distributions of desired quantities presented below.
-
-MC samples from Pythia generator were additionally filtered before passing through Geant to increase generation efficiency, as well as overcome difficulty arising from missing simulation of the BBC-large in STARsim. For each event, all charged particles were analytically propagated through the magnetic field of TPC with the helical paths resulting from their hadron-level momenta. If any of these particles crossed the volume of BBC-large detector, event was dropped from generation.
-
 Normalization of backgrounds was done separately for two ranges of $\Delta\varphi$. First, MB+elastic background was normalized. By definition this was done only for $\Delta\varphi$ bin representing elastic-like configuration of forward protons ($\Delta\varphi>90^{\circ}$). The MB+elastic MC was scaled to have the same integral as the data in range $|\Delta z_{\text{vtx}}|>100$~cm. In this range we assumed sole presence of this type of background, which is characterized by very wide distribution of $\Delta z_{\text{vtx}}$ because of TPC and RP vertices being independent. Comparison plots are contained in Figs.~\ref{fig:Ratio_DeltaZVtx_DeltaPhiBins} and~\ref{fig:Ratio_DeltaZVtx}. An important cross-check for correctness of this assumption is shown in Fig.~\ref{fig:Ratio_Collinearity}, where the data vs. MC collinearity $\Delta\theta$ is presented, defined as%\vspace*{-5pt}
 %
 \begin{equation}\label{eq:collinearity}%\vspace*{-5pt}

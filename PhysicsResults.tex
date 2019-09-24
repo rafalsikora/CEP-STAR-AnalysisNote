@@ -7,6 +7,7 @@
 
 \chapter{Physics results}\label{chap:physicsResults}
 
+\section{Differential cross sections}
 
 \begin{figure}[h]
 \centering
@@ -193,3 +194,26 @@
 \caption{Differential cross sections for CEP of $\pi^+\pi^-$ pairs as a function of $\cos{\theta^\mathrm{CS}}$ (top) and of $\phi^\mathrm{CS}$ (bottom)  measured in the fiducial region explained on the plots, separately for three ranges of the $\pi^+\pi^-$ pair invariant mass: $m<1$ GeV (left column), $1<m<1.5$ GeV (middle column) and $m>1.5$ GeV (right column). Data are shown as solid points with error bars representing the statistical uncertainties. The typical systematic uncertainties are shown as gray boxes for only few data points as they are almost fully correlated between neighboring bins. Predictions from MC models GenEx, DiMe and MBR are shown as histograms. In the lower panels the ratios of the MC predictions scaled to data and the data are shown.}
 \label{results_7}
 \end{figure}
+
+
+\section{Invariant mass spectrum modelling}
+
+\[A_{\textrm{S-wave}}(m)~~~=~~~A_{\textrm{cont}}\times\sqrt{f_{\textrm{cont}}(m)}~~+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\]\vspace{-15pt}
+\[~~~~~+~~A_{\textrm{f}_0(980)}\times \textrm{BW}\left(m;M_{f_0(980)},\Gamma_{f_0(980)}\right)\]
+\[~~~~~~~~+~~A_{\textrm{f}_0(1500)}\times \textrm{BW}\left(m;M_{f_0(1500)},\Gamma_{f_0(1500)}\right)\]\vspace{-10pt}
+\[A_{\textrm{D-wave}}(m)~~~=~~~A_{\textrm{f}_2(1270)}\times \textrm{BW}\left(m;M_{f_2(1270)},\Gamma_{f_2(1270)}\right)~~~~~~~~~~~~\]\vspace*{-5pt}
+where\vspace{5pt}
+\[A_{\textrm{cont}},A_{\textrm{f}_2(1270)}\in\mathbb{R},~~~A_{\textrm{f}_0(980)},A_{\textrm{f}_0(1500)}\in\mathbb{C}~~~~\rightarrow~~~~A=|A|e^{i\phi}.\]
+
+Continuum model:
+ \[f_{\textrm{cont}}(m) = (m-2m_{\pi})^{B}\times e^{-C\cdot m}\]
+ Breit-Wigner form (relativistic Breit-Wigner with mass-dependent width):\vspace{-5pt}
+\[\hspace*{-5pt}\textrm{BW}(m;M,\Gamma_{0}) = \frac{M\sqrt{\Gamma_{0}}\sqrt{\Gamma(m)}}{M^{2}-m^{2}-i M\Gamma(m)},~~\Gamma(m) = \Gamma_{0}\frac{q}{m}\frac{M}{q_{0}}\left(\frac{B_{J}((qR)^{2})}{B_{J}((q_{0}R)^{2})}\right)^{2},\]\vspace*{-7pt}
+\[q(m) = \frac{1}{2}\sqrt{m^{2}-4m_{\pi}^{2}},~~~~~~q_{0} = q(M),~~~~~~R=1~\textrm{fm}\]\vspace*{-15pt}
+\begin{itemize}
+ \item masses and widths of $f_{2}(1270)$ are well known therefore they were fixed in the fit (used PDG values)
+ \item fit was done simultaneously to $d\sigma/dm$ in $\Delta\phi<45^{\circ}$ and $\Delta\phi>135^{\circ}$ mass bins
+ \item phases and amplitudes were independent is two $\Delta\phi$ bins, while masses and widths were forced to be the same
+ \item no residual background was accounted since we already subtracted it (background determined using data-driven method, using missing $p_{T}$)
+ \item data were corrected using assumption of the $\pi\pi$ pair being S-wave
+\end{itemize}
