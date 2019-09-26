@@ -523,10 +523,12 @@ Observation of high purification of CEP sample with described BBC-large veto in 
 The TOF is mainly used to distinguish real TPC tracks from the fakes, as well as it helps to identify particles. However, we also used it to reject non-CEP events in which the TPC tracks were not reconstructed or were not successfully matched to TOF hit. For this we introduced a concept of a TOF cluster - a group of offline TOF hits close in space and time. We expect that such cluster of hits is induced by the single primary particle, eventually associated with the secondaries (e.g. delta rays).
 
 We defined a TOF cluster as a group of reconstructed TOF hits with the ($\phi$, $\eta$) space distance $R$ to neighbouring hit (defined similarly to Eq.~\eqref{eq:etaPhiR} not larger than 0.1 and with the time distance to the same hit $\Delta t$ not larger than 1.5~ns. In other words, TOF clusters were formed by the offline hits that form at least one pair with the other hit in the cluster satisfying
-\begin{equation}
+\begin{equation}\label{eq:tofClustering}
  R<0.1,~~~~~~\Delta t<1.5~\text{ns}.
 \end{equation}
-Per event no more than 1 additional TOF cluster was allowed, thus in total the number of reconstructed TOF clusters $N^{\text{TOF}}_{\text{cltrs}}$ could not exceed 3.
+In Fig.~\ref{fig:TofClusterHitDistance} distribution of $R$ and $\Delta t$ is presented. From these pictures one can find justification for the limits used in Ineqs.~\eqref{eq:tofClustering}. Clear enhancement is visible at $R<0.1$ and $\Delta t<1.5~\text{ns}$, which arises from the TOF hits originating from the same particle. Distribution of $\Delta t$ significantly differs from the zero-bias embedded signal MC, however observed mismatch between data and MC could be assigned to imperfect TOF simulation which e.g. does not account all real environment effects. Data and MC are in qualitative agreement in a sense that the main part of the time signal is in both cases contained at $\Delta t<1.5$~ns. We consider this level of description of data by MC sufficient, given that efficiency correction related to cut on $N^{\text{TOF}}_{\text{cltrs}}$ is extracted from the data themselves.
+
+Comparison of data and MC in terms of multiplicity of TOF clusters is presented in Fig.~\ref{fig:NTofClusters}. The agreement between the two is acceptable. From the comparisons one can see that higher multiplicities are features of backgrounds (e.g. TOF hits reconstructed but TPC tracks not, or matching between TPC track and TOF hit unsuccessful), hence no more than 1 additional TOF cluster was allowed per event - in total the number of reconstructed TOF clusters $N^{\text{TOF}}_{\text{cltrs}}$ could not exceed 3.
 
 
 
@@ -547,7 +549,7 @@ Per event no more than 1 additional TOF cluster was allowed, thus in total the n
                 \subcaptionbox{\label{fig:TofClusterHitDistance_Time}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TofClusterHitDistance_Time.pdf}}}
   \end{subfigure}
 }%
-\caption[...]{...}\label{fig:TofClusterHitDistance}
+\caption[Distribution of space and time distance between TOF hits and existing TOF clusters.]{Distribution of space~(\subref{fig:TofClusterHitDistance_Space}) and time~(\subref{fig:TofClusterHitDistance_Time}) distance between TOF hits and existing TOF clusters in the clustering procedure. Each of distributions contains entries from cluster-hit pairs satisfying matching requirement imposed on the other quantity. Data are shown as black points with vertical error bars representing statistical uncertainties and horizontal bars representing bin sizes. Expectations from embedded $\pi^{+}\pi^{-}$ signal MC, normalized to the same integrals at $R>0.5$~(\subref{fig:TofClusterHitDistance_Space}) or at $\Delta t>2$~ns~(\subref{fig:TofClusterHitDistance_Time}), has also been shown. Dashed red lines mark limits used in the TOF clustering algorithm.}\label{fig:TofClusterHitDistance}
 \end{figure}%
 %---------------------------
 
@@ -569,7 +571,7 @@ Per event no more than 1 additional TOF cluster was allowed, thus in total the n
                 \subcaptionbox{\label{fig:NTofClusters_log}}{\includegraphics[width=\linewidth]{graphics/eventSelection/Ratio_NTofClusters.pdf}}}
   \end{subfigure}
 }%
-\caption[...]{...}\label{fig:NTofClusters}
+\caption[Distribution of TOF cluster multiplicity $N^{\text{TOF}}_{\text{cltr}}$.]{Distribution of TOF cluster multiplicity $N^{\text{TOF}}_{\text{cltr}}$ after all selection cuts except cut~\ref{enum:CutTofClusters}. Left and right plot differ only in the $y$-axis (left: linear, right: logarithmic). Data are represented by black points, while stacked MC predictions are drawn as histograms of different colors. Histogram from each MC process has been normalized according to prescription in Sec.~\ref{sec:bkgdSignalNorm}. Vertical error bars represent statistical uncertainties, horizontal bars represent bin sizes.}\label{fig:NTofClusters}
 \end{figure}%
 %---------------------------
 
