@@ -75,7 +75,6 @@ The main background present in the final exclusive $\pi^{+}\pi^{-}/K^{+}K^{-}/p\
 \newpage
 \subsection{Exclusive background (particle misidentification)}\label{sec:exclBkgd}
 
-Another source of background which is connected with finite particle identification power is the exclusive background from the particle species other than species under study. This effect is schematically shown in Fig.~\ref{fig:misidentificationGraph}, %
 %---------------------------
 \begin{figure}[h!]\vspace{5pt}
 \centering%
@@ -90,7 +89,8 @@ Another source of background which is connected with finite particle identificat
 \vspace{5pt}
 \end{figure}
 %--------------------------- 
-and written in the form of set of equations~\eqref{eq:misidentificationEqs}, where $N^{XX}_{R}$ is number of reconstructed events identified as $XX$ ($X=\pi, K \text{~or~} p$), $N^{XX}_{T}$ is true number of $XX$ events, $N^{\pi\pi}_{bkgd}$ is number of non-exclusive events among reconstructed $N^{XX}_{R}$, $\epsilon^{XX}$ is identification efficiency for species $XX$, and $\lambda^{XX\rightarrow YY}$ is misidentification probability of species $XX$ as $YY$ (see Sec.~\ref{sec:pidEff}):
+
+Another source of background which is connected with finite particle identification power is the exclusive background from the particle species other than species under study. This effect is schematically shown in Fig.~\ref{fig:misidentificationGraph}, and written in the form of set of equations~\eqref{eq:misidentificationEqs}, where $N^{XX}_{R}$ is number of reconstructed events identified as $XX$ ($X=\pi, K \text{~or~} p$), $N^{XX}_{T}$ is true number of $XX$ events, $N^{\pi\pi}_{bkgd}$ is number of non-exclusive events among reconstructed $N^{XX}_{R}$, $\epsilon^{XX}$ is identification efficiency for species $XX$, and $\lambda^{XX\rightarrow YY}$ is misidentification probability of species $XX$ as $YY$ (see Sec.~\ref{sec:pidEff}):
 \begin{subequations}\label{eq:misidentificationEqs}\vspace{5pt}
 \begin{equation}
   N^{\pi\pi}_{R}~~=~~\begingroup\color{gray}\underbrace{\color{black}\epsilon^{\pi\pi}\cdot N^{\pi\pi}_{T}}_{\textrm{true pion pairs}}\endgroup~~ + ~~\begingroup\color{gray}\underbrace{\color{black}\lambda^{ KK\rightarrow \pi\pi}\cdot N^{KK}_{T}}_{\substack{\textrm{kaon pairs reconstructed} \\ \textrm{as pion pairs}}}\endgroup~~ + ~~\begingroup\color{gray}\underbrace{\color{black}\lambda^{p\bar{p} \rightarrow \pi\pi} \cdot N^{p\bar{p}}_{T}}_{\substack{\textrm{proton pairs reconstructed} \\ \textrm{as pion pairs}}}\endgroup~~ + ~~\textcolor{magenta}{N^{\pi\pi}_{bkgd}}

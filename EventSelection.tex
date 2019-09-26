@@ -14,7 +14,7 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
 \section[List of cuts]{List of cuts\footnote{Some cuts (e.g.~\ref{enum:CutTpcTrks}) are decomposed to constituent sub-cuts. Cut is formed by the logical AND of all its sub-cuts. Events must pass all cuts to be identified as a signal.}}\label{sec:listOfCuts}
 \begin{enumerate}[label=\textbf{\hyperref[sec:C\arabic*]{C\arabic*}},ref=C\arabic*]
  \itemm Exactly 1 primary vertex with TPC track(s) matched with hits in TOF.\label{enum:CutPrimVx}
- \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\text{vx}}|<80$~cm.\label{enum:CutZVx}
+ \itemm TPC vertex from~\ref{enum:CutPrimVx} is placed within $|z_{\text{vtx}}|<80$~cm.\label{enum:CutZVx}
  \itemm Exactly 2 opposite-sign primary TPC tracks~(\ref{enum:TpcOppoSign}) of good quality~(\ref{enum:TpcQualityCuts}) matched with hits in TOF~(\ref{enum:TpcTofMatched}) and reconstructed within kinematic region of high TPC acceptance~(\ref{enum:TpcKinematicCuts}), with associated global tracks characterized by small distance of closest approach (DCA) to the primary vertex~(\ref{enum:TpcDcaCuts}) and high proximity to each other at the beamline~(\ref{enum:TpcDeltaZ0Cut}).\label{enum:CutTpcTrks}
     \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
       \itemm Exactly 2 TOF-matched (match flag $>0$) primary tracks and no additional primary tracks matched with BEMC clusters,\label{enum:TpcTofMatched}
@@ -38,10 +38,10 @@ Complete list of analysis cuts used for signal extraction is presented in Sec.~\
       \[0.2<|p_{y}|<0.4,~~~-0.2<p_{x},~~~(p_{x}+0.3)^{2}+p_{y}^{2}<0.5^{2}~~~(\text{all in GeV}).\]
     \end{enumerate}
  \itemm Vertex $z$-positions measured in TPC and reconstructed from the difference of proton detection time in west and east RPs are consistent with each other within the resolution (at $3.5\sigma_{\Delta z_{\text{vtx}}}$ level):
- \[|\Delta z_{\text{vtx}}| = |z_{\text{vx}}^{\text{TPC}}-z_{\text{vx}}^{\text{RP}}|<36~\text{cm}.\vspace{-17pt}\]\label{enum:CutDeltaZVx}
+ \[|\Delta z_{\text{vtx}}| = |z_{\text{vtx}}^{\text{TPC}}-z_{\text{vtx}}^{\text{RP}}|<36~\text{cm}.\vspace{-17pt}\]\label{enum:CutDeltaZVx}
  \itemm No signal in any tile of BBC-large (east or west) with $\text{ADC}>\text{ADC}_{\text{thr}}$ and $100<\text{TDC}<2400$, where $\text{ADC}_{\text{thr}}$ is specific for each channel (see Tab.~\ref{tab:bbcLargeThresholds}).\label{enum:CutBbcLarge}%
  %
- \itemm Maximally 3 reconstructed TOF clusters $N^{\text{TOF}}_{\text{clstrs}}\leq 3$.\label{enum:CutTofClusters}%
+ \itemm Maximally 3 reconstructed TOF clusters $N^{\text{TOF}}_{\text{cltrs}}\leq 3$.\label{enum:CutTofClusters}%
  %
  \itemm Particle/pair identification (PID):\label{enum:CutPid}
  \begin{enumerate}[label=\textbf{\theenumi.\arabic*},ref=\theenumi.\arabic*]
@@ -75,16 +75,16 @@ As it was designed in the trigger logic, we aim to perform CEP analysis in a cle
 \begin{minipage}{.4725\textwidth}%
   \centering%
   \includegraphics[width=\linewidth]{graphics/eventSelection/NumberOfPrimaryVertices.pdf}%
-  \caption{Primary vertex multiplicity. Red arrow marks bin with events with exactly one primary vertex (with track(s) matched with hit in TOF), which are used in physics analysis.}\label{fig:NumberOfPrimaryVertices}
+  \caption{Primary vertex multiplicity. Red arrow marks bin with events with exactly one primary vertex (with track(s) matched with hit in TOF), which are used in physics analysis. Expectations from embedded $\pi^{+}\pi^{-}$ signal MC (normalized to the content of the single TOF vertex bin) has also been shown.}\label{fig:NumberOfPrimaryVertices}
 \end{minipage}%
 \quad\quad%
 \begin{minipage}{.4725\textwidth}%
   \centering
   \includegraphics[width=\linewidth]{graphics/eventSelection/zVertex_oneTof.pdf}%
-  \caption{\texorpdfstring{$z$}{z}-position of the primary vertex in single TOF vertex events (passing cut~\ref{enum:CutPrimVx}). Red dashed line indicate range of longitudinal vertex position accepted in analysis.}\label{fig:zVertexTpc}
+  \caption{\texorpdfstring{$z$}{z}-position of the primary vertex in single TOF vertex events (passing cut~\ref{enum:CutPrimVx}). Red dashed line indicate range of longitudinal vertex position accepted in analysis.\newline\newline}\label{fig:zVertexTpc}
 \end{minipage}%
 \end{figure}%
-%---------------------------
+%--------------------------- 
 
 
 The single TOF vertex was required to be placed within a range $(-80~\text{cm},~80~\text{cm})$ along the $z$-axis~(Fig.~\ref{fig:zVertexTpc}). Events with vertices away from the nominal IP have low acceptance both for the central tracks and the forward protons (comparing to events with vertices close to nominal IP), therefore we reject them as their inclusion to analysis would naturally introduce large systematic uncertainties. See Sec.~3.2.3 in Ref.~\cite{supplementaryNote}.
@@ -92,7 +92,7 @@ The single TOF vertex was required to be placed within a range $(-80~\text{cm},~
 %---------------------------
 \begin{figure}[h]
 \centering%
-\parbox{0.5325\textwidth}{%
+\parbox{0.5325\textwidth}{% 
   \centering%
   \includegraphics[width=\linewidth]{graphics/backgrounds/dataVsMc/Ratio_Linear_ZVtx.pdf} 
 }%
@@ -119,13 +119,13 @@ The TPC track selection starts from the selection of events with exactly two pri
 \begin{minipage}{.4725\textwidth}%
   \centering%
   \includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/NumberOfTofTracksInSingleTofVertex.pdf}%
-  \caption[Multiplicty of primary TPC tracks matched with hit in TOF for single TOF vertex events]{Multiplicty of primary TPC tracks matched with hit in TOF for single TOF vertex events. Red arrow marks bin with events with exactly two primary tracks matched with hit in TOF, which are used in physics analysis.\newline}\label{fig:NumberOfTofTracksInSingleTofVertex}
+  \caption[Multiplicty of primary TPC tracks matched with hit in TOF for single TOF vertex events]{Multiplicty of primary TPC tracks matched with hit in TOF for single TOF vertex events. Red arrow marks bin with events with exactly two primary tracks matched with hit in TOF, which are used in physics analysis. Expectations from embedded $\pi^{+}\pi^{-}$ signal MC (normalized to the content of the bin representing 2 TOF tracks) has also been shown.}\label{fig:NumberOfTofTracksInSingleTofVertex}
 \end{minipage}%
 \quad\quad%
 \begin{minipage}{.4725\textwidth}%
   \centering
   \includegraphics[width=\linewidth]{graphics/eventSelection/TpcTracks/Rmin.pdf}%
-  \caption[Distribution of a distance in $\eta-\phi$ space between the BEMC cluster closest to primary TPC track ($R_{\text{min}}$)]{Distribution of a distance in $\eta-\phi$ space between the BEMC cluster closest to primary TPC track matched (filled circle) or not matched (opened circle) with hit in TOF, for single TOF vertex events. Red dashed line indicate matching threshold $R^{\text{match}}_{\text{max}} = 0.05$.}\label{fig:Rmin} %which are expected to reack BEMC
+  \caption[Distribution of a distance in $\eta-\phi$ space between the BEMC cluster closest to primary TPC track ($R_{\text{min}}$)]{Distribution of a distance in $\eta-\phi$ space between the BEMC cluster closest to primary TPC track matched (filled circle) or not matched (opened circle) with hit in TOF, for single TOF vertex events. Red dashed line indicate matching threshold $R^{\text{match}}_{\text{max}} = 0.05$.\newline\newline}\label{fig:Rmin} %which are expected to reack BEMC
 \end{minipage}%
 \end{figure}%
 %---------------------------
@@ -207,7 +207,7 @@ Figure~\ref{fig:TrackEtaPhi} shows comparison of the track pseudorapidity and az
 
 \subsection{(\ref{enum:CutRpTrks})~RP tracks}\label{sec:C4}
 
-In presented physics analysis highest-level forward objects were used - the RP tracks. They are obtained through the reconstruction starting from the signals in single channels of silicon strip detectors housed inside RPs. General description of the reconstruction procedure has been given in Sec.~6.2 of the supplementary analysis note~\cite{supplementaryNote} and reference therein. A bit more detail description is available in elastic proton-proton scattering measurement note~\cite{elasticNote}.
+In presented physics analysis the highest-level forward objects were used - RP tracks. They were obtained through the reconstruction process, starting from merging the signals (clustering) in single channels of silicon strip detectors housed inside RPs. General description of the reconstruction procedure has been given in Sec.~6.2 of the supplementary analysis note~\cite{supplementaryNote} and reference therein. A bit more detail description is available in elastic proton-proton scattering measurement analysis note~\cite{elasticNote}.
 
 
 Roman Pot data was analyzed offline as follows. First, all RP tracks which contain track points that had been formed of less than 3 hits of out 4 maximally possible (1 hit per silicon plane), were rejected. This is natural consequence of very high single plane efficiency $>99.5\%$, and prevents including to analysis tracks with track points formed from unmatched pairs of clusters in both $x$- and $y$-coordinate (e.g. from electronics noise).
@@ -522,21 +522,55 @@ Observation of high purification of CEP sample with described BBC-large veto in 
 
 The TOF is mainly used to distinguish real TPC tracks from the fakes, as well as it helps to identify particles. However, we also used it to reject non-CEP events in which the TPC tracks were not reconstructed or were not successfully matched to TOF hit. For this we introduced a concept of a TOF cluster - a group of offline TOF hits close in space and time. We expect that such cluster of hits is induced by the single primary particle, eventually associated with the secondaries (e.g. delta rays).
 
-We define a TOF cluster as a group of reconstructed TOF hits with the ($\phi$, $\eta$) space distance $R$ to neighbouring hit (defined similarly to Eq.~\eqref{eq:etaPhiR} not larger than 0.1 and with the time distance to the same hit $\Delta t$ not larger than 1.5~ns. In other words, TOF clusters are formed by the offline hits that form at least one pair with the other hit in the cluster satisfying
+We defined a TOF cluster as a group of reconstructed TOF hits with the ($\phi$, $\eta$) space distance $R$ to neighbouring hit (defined similarly to Eq.~\eqref{eq:etaPhiR} not larger than 0.1 and with the time distance to the same hit $\Delta t$ not larger than 1.5~ns. In other words, TOF clusters were formed by the offline hits that form at least one pair with the other hit in the cluster satisfying
 \begin{equation}
  R<0.1,~~~~~~\Delta t<1.5~\text{ns}.
 \end{equation}
-Per event no more than 1 additional TOF cluster was allowed, thus in total the number of reconstructed TOF clusters $N^{\text{TOF}}_{\text{clstrs}}$ could not exceed 3.
+Per event no more than 1 additional TOF cluster was allowed, thus in total the number of reconstructed TOF clusters $N^{\text{TOF}}_{\text{cltrs}}$ could not exceed 3.
+
+
+
 
 %---------------------------
 \begin{figure}[ht!]
-% \begin{wrapfigure}{l}{0.475\textwidth}%[ht!]
-\centering%
-\includegraphics[width=0.475\linewidth,page=1]{graphics/eventSelection/NTofClusters.pdf}%
-% % \includegraphics[width=\linewidth,page=1]{graphics/eventSelection/NTofClusters.pdf}% 
-\caption{NTofClusters.}\label{fig:NTofClusters}%
-\end{figure}
-% \end{wrapfigure}
+\centering
+\parbox{0.475\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:TofClusterHitDistance_Space}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TofClusterHitDistance_Space.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.475\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:TofClusterHitDistance_Time}}{\includegraphics[width=\linewidth]{graphics/eventSelection/TofClusterHitDistance_Time.pdf}}}
+  \end{subfigure}
+}%
+\caption[...]{...}\label{fig:TofClusterHitDistance}
+\end{figure}%
+%---------------------------
+
+
+
+%---------------------------
+\begin{figure}[ht!]
+\centering
+\parbox{0.475\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:NTofClusters_linear}}{\includegraphics[width=\linewidth]{graphics/eventSelection/Ratio_Linear_NTofClusters.pdf}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.475\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:NTofClusters_log}}{\includegraphics[width=\linewidth]{graphics/eventSelection/Ratio_NTofClusters.pdf}}}
+  \end{subfigure}
+}%
+\caption[...]{...}\label{fig:NTofClusters}
+\end{figure}%
 %---------------------------
 
 \subsection{(\ref{enum:CutPid})~Particle identification}\label{subsec:pidCuts}\label{sec:C8}
