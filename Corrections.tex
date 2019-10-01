@@ -628,36 +628,198 @@ This correction is graphically represented in Fig.~\ref{fig:migrationsAndFakesCo
 
 \section{Detector resolutions}
 
+% %---------------------------
+% \begin{figure}[h]
+% \centering
+% \parbox{0.4725\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}
+%                 \subcaptionbox{\label{fig:ResponseMatrix_InvMass}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_InvMass.pdf}\vspace*{-70pt}}\vspace{50pt}
+%   \end{subfigure}\\
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+%                 \subcaptionbox{\label{fig:ResponseMatrix_MandelstamTSum}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_MandelstamTSum.pdf}\vspace*{-70pt}}\vspace{50pt}
+%   \end{subfigure}\\
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+%                 \subcaptionbox{\label{fig:ResponseMatrix_CosThetaCS}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_CosThetaCS.pdf}\vspace*{-70pt}}\vspace{50pt}
+%   \end{subfigure}
+% }%
+% \quad\quad%
+% \parbox{0.4725\textwidth}{
+%   \centering
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-4}
+%                 \subcaptionbox{\label{fig:ResponseMatrix_PairRapidity}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_PairRapidity.pdf}\vspace*{-70pt}}\vspace{50pt}
+%   \end{subfigure}\\
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+%                 \subcaptionbox{\label{fig:ResponseMatrix_DeltaPhi}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_DeltaPhi.pdf}\vspace*{-70pt}}\vspace{50pt}
+%   \end{subfigure}\\
+%   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+%                 \subcaptionbox{\label{fig:ResponseMatrix_PhiCS}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_PhiCS.pdf}\vspace*{-70pt}}\vspace{50pt}
+%   \end{subfigure}
+% }%
+% \caption[Response matrices.]{Response matrices. Probabilities in each bin of the true-level value ($y$-axis) sum up to 1.}\label{fig:responseMatrices}
+% \end{figure}
+% %---------------------------
+
+
+
+%---------------------------
 \begin{figure}[h]
 \centering
 \parbox{0.4725\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}
-                \subcaptionbox{\label{fig:ResponseMatrix_InvMass}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_InvMass.pdf}\vspace*{-70pt}}\vspace{50pt}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsReco_InvMass}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsReco_InvMass.pdf}}
   \end{subfigure}\\
   \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:ResponseMatrix_MandelstamTSum}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_MandelstamTSum.pdf}\vspace*{-70pt}}\vspace{50pt}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:ResponseMatrix_CosThetaCS}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_CosThetaCS.pdf}\vspace*{-70pt}}\vspace{50pt}
-  \end{subfigure}
+                \subcaptionbox{\label{fig:ResponseMatrix_InvMass}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/ResponseMatrix_InvMass.pdf}}
+  \end{subfigure} 
 }%
 \quad\quad%
 \parbox{0.4725\textwidth}{
   \centering
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-4}
-                \subcaptionbox{\label{fig:ResponseMatrix_PairRapidity}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_PairRapidity.pdf}\vspace*{-70pt}}\vspace{50pt}
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{-12pt}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsTrue_InvMass}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsTrue_InvMass.pdf}}
   \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:ResponseMatrix_DeltaPhi}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_DeltaPhi.pdf}\vspace*{-70pt}}\vspace{50pt}
-  \end{subfigure}\\
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:ResponseMatrix_PhiCS}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/ResponseMatrix_PhiCS.pdf}\vspace*{-70pt}}\vspace{50pt}
-  \end{subfigure}
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
+    \caption[Resolution of the invariant mass measurement from embedded $\pi^{+}\pi^{-}$ MC.]{Resolution of the invariant mass measurement from embedded $\pi^{+}\pi^{-}$ MC. Figure~\subref{fig:RecoMinusTrueVsReco_InvMass} and~\subref{fig:RecoMinusTrueVsTrue_InvMass} show the difference between reconstructed and hadron level invariant mass of $\pi^{+}\pi^{-}$ ($y$-axis) as a function of the reconstructed and hadron level invariant mass ($x$-axis), respectively. Probabilities in each $x$-axis bin were normalized to sum up to 1. On top of the two-dimensional distribution (in color) a candle plot is drawn. For each $x$-axis bin a circle indicate average difference, a box represents 68\% coverage of the distribution of difference ($1\sigma$), while vertical lines extending beyond the box represent 99.3\% coverage of the distribution of difference ($2.7\sigma$). A dashed black line is drawn across the plot to mark the difference between reconstructed and hadron level value equal to 0. Figure~\subref{fig:ResponseMatrix_InvMass} shows the response matrix - correlation between reconstructed ($x$-axis) and hadron level ($y$-axis) invariant mass. Probabilities in each bin of the true-level value were normalized to sum up to 1.}\label{fig:Response_InvMass}%
+  \end{minipage}
 }%
-\caption[Response matrices.]{Response matrices. Probabilities in each bin of the true-level value ($y$-axis) sum up to 1.}\label{fig:responseMatrices}
 \end{figure}
 %---------------------------
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsReco_PairRapidity}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsReco_PairRapidity.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:ResponseMatrix_PairRapidity}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/ResponseMatrix_PairRapidity.pdf}}
+  \end{subfigure} 
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{-12pt}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsTrue_PairRapidity}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsTrue_PairRapidity.pdf}}
+  \end{subfigure}\\
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
+    \caption[Resolution of the rapidity measurement from embedded $\pi^{+}\pi^{-}$ MC.]{Resolution of the rapidity measurement from embedded $\pi^{+}\pi^{-}$ MC. Figure~\subref{fig:RecoMinusTrueVsReco_PairRapidity} and~\subref{fig:RecoMinusTrueVsTrue_PairRapidity} show the difference between reconstructed and hadron level rapidity of $\pi^{+}\pi^{-}$ ($y$-axis) as a function of the reconstructed and hadron level rapidity ($x$-axis), respectively. Probabilities in each $x$-axis bin were normalized to sum up to 1. On top of the two-dimensional distribution (in color) a candle plot is drawn. For each $x$-axis bin a circle indicate average difference, a box represents 68\% coverage of the distribution of difference ($1\sigma$), while vertical lines extending beyond the box represent 99.3\% coverage of the distribution of difference ($2.7\sigma$). A dashed black line is drawn across the plot to mark the difference between reconstructed and hadron level value equal to 0. Figure~\subref{fig:ResponseMatrix_PairRapidity} shows the response matrix - correlation between reconstructed ($x$-axis) and hadron level ($y$-axis) rapidity. Probabilities in each bin of the true-level value were normalized to sum up to 1.}\label{fig:Response_PairRapidity}%
+  \end{minipage}
+}%
+\end{figure}
+%---------------------------
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsReco_DeltaPhi}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsReco_DeltaPhi.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:ResponseMatrix_DeltaPhi}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/ResponseMatrix_DeltaPhi.pdf}}
+  \end{subfigure} 
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{-12pt}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsTrue_DeltaPhi}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsTrue_DeltaPhi.pdf}}
+  \end{subfigure}\\
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
+    \caption[Resolution of the $\Delta\varphi$ measurement from embedded $\pi^{+}\pi^{-}$ MC.]{Resolution of the $\Delta\varphi$ measurement from embedded $\pi^{+}\pi^{-}$ MC. Figure~\subref{fig:RecoMinusTrueVsReco_DeltaPhi} and~\subref{fig:RecoMinusTrueVsTrue_DeltaPhi} show the difference between reconstructed and hadron level $\Delta\varphi$ between forward scattered protons ($y$-axis) as a function of the reconstructed and hadron level $\Delta\varphi$ ($x$-axis), respectively. Probabilities in each $x$-axis bin were normalized to sum up to 1. On top of the two-dimensional distribution (in color) a candle plot is drawn. For each $x$-axis bin a circle indicate average difference, a box represents 68\% coverage of the distribution of difference ($1\sigma$), while vertical lines extending beyond the box represent 99.3\% coverage of the distribution of difference ($2.7\sigma$). A dashed black line is drawn across the plot to mark the difference between reconstructed and hadron level value equal to 0. Figure~\subref{fig:ResponseMatrix_DeltaPhi} shows the response matrix - correlation between reconstructed ($x$-axis) and hadron level ($y$-axis) $\Delta\varphi$. Probabilities in each bin of the true-level value were normalized to sum up to 1.}\label{fig:Response_DeltaPhi}%
+  \end{minipage}
+}%
+\end{figure}
+%---------------------------
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsReco_MandelstamTSum}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsReco_MandelstamTSum.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:ResponseMatrix_MandelstamTSum}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/ResponseMatrix_MandelstamTSum.pdf}}
+  \end{subfigure} 
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{-12pt}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsTrue_MandelstamTSum}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsTrue_MandelstamTSum.pdf}}
+  \end{subfigure}\\
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
+    \caption[Resolution of the $|t_{1}+t_{2}|$ measurement from embedded $\pi^{+}\pi^{-}$ MC.]{Resolution of the $|t_{1}+t_{2}|$ measurement from embedded $\pi^{+}\pi^{-}$ MC. Figure~\subref{fig:RecoMinusTrueVsReco_MandelstamTSum} and~\subref{fig:RecoMinusTrueVsTrue_MandelstamTSum} show the difference between reconstructed and hadron level $|t_{1}+t_{2}|$ ($y$-axis) as a function of the reconstructed and hadron level $|t_{1}+t_{2}|$ ($x$-axis), respectively. Probabilities in each $x$-axis bin were normalized to sum up to 1. On top of the two-dimensional distribution (in color) a candle plot is drawn. For each $x$-axis bin a circle indicate average difference, a box represents 68\% coverage of the distribution of difference ($1\sigma$), while vertical lines extending beyond the box represent 99.3\% coverage of the distribution of difference ($2.7\sigma$). A dashed black line is drawn across the plot to mark the difference between reconstructed and hadron level value equal to 0. Figure~\subref{fig:ResponseMatrix_MandelstamTSum} shows the response matrix - correlation between reconstructed ($x$-axis) and hadron level ($y$-axis) $|t_{1}+t_{2}|$. Probabilities in each bin of the true-level value were normalized to sum up to 1.}\label{fig:Response_MandelstamTSum}%
+  \end{minipage}
+}%
+\end{figure}
+%---------------------------
+
+
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsReco_CosThetaCS}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsReco_CosThetaCS.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:ResponseMatrix_CosThetaCS}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/ResponseMatrix_CosThetaCS.pdf}}
+  \end{subfigure} 
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{-12pt}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsTrue_CosThetaCS}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsTrue_CosThetaCS.pdf}}
+  \end{subfigure}\\
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
+    \caption[Resolution of the $\cos\theta^{\text{CS}}$ measurement from embedded $\pi^{+}\pi^{-}$ MC.]{Resolution of the $\cos\theta^{\text{CS}}$ measurement from embedded $\pi^{+}\pi^{-}$ MC. Figure~\subref{fig:RecoMinusTrueVsReco_CosThetaCS} and~\subref{fig:RecoMinusTrueVsTrue_CosThetaCS} show the difference between reconstructed and hadron level $\cos\theta^{\text{CS}}$ of $\pi^{+}\pi^{-}$ ($y$-axis) as a function of the reconstructed and hadron level $\cos\theta^{\text{CS}}$ ($x$-axis), respectively. Probabilities in each $x$-axis bin were normalized to sum up to 1. On top of the two-dimensional distribution (in color) a candle plot is drawn. For each $x$-axis bin a circle indicate average difference, a box represents 68\% coverage of the distribution of difference ($1\sigma$), while vertical lines extending beyond the box represent 99.3\% coverage of the distribution of difference ($2.7\sigma$). A dashed black line is drawn across the plot to mark the difference between reconstructed and hadron level value equal to 0. Figure~\subref{fig:ResponseMatrix_CosThetaCS} shows the response matrix - correlation between reconstructed ($x$-axis) and hadron level ($y$-axis) $\cos\theta^{\text{CS}}$. Probabilities in each bin of the true-level value were normalized to sum up to 1.}\label{fig:Response_CosThetaCS}%
+  \end{minipage}
+}%
+\end{figure}
+%---------------------------
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsReco_PhiCS}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsReco_PhiCS.pdf}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:ResponseMatrix_PhiCS}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/ResponseMatrix_PhiCS.pdf}}
+  \end{subfigure} 
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}\vspace*{-12pt}
+                \subcaptionbox{\label{fig:RecoMinusTrueVsTrue_PhiCS}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/RecoMinusTrueVsTrue_PhiCS.pdf}}
+  \end{subfigure}\\
+    \begin{minipage}[t][1.042\linewidth][t]{\linewidth}\vspace{10pt}
+    \caption[Resolution of the $\phi^{\text{CS}}$ measurement from embedded $\pi^{+}\pi^{-}$ MC.]{Resolution of the $\phi^{\text{CS}}$ measurement from embedded $\pi^{+}\pi^{-}$ MC. Figure~\subref{fig:RecoMinusTrueVsReco_PhiCS} and~\subref{fig:RecoMinusTrueVsTrue_PhiCS} show the difference between reconstructed and hadron level $\phi^{\text{CS}}$ of $\pi^{+}\pi^{-}$ ($y$-axis) as a function of the reconstructed and hadron level $\phi^{\text{CS}}$ ($x$-axis), respectively. Probabilities in each $x$-axis bin were normalized to sum up to 1. On top of the two-dimensional distribution (in color) a candle plot is drawn. For each $x$-axis bin a circle indicate average difference, a box represents 68\% coverage of the distribution of difference ($1\sigma$), while vertical lines extending beyond the box represent 99.3\% coverage of the distribution of difference ($2.7\sigma$). A dashed black line is drawn across the plot to mark the difference between reconstructed and hadron level value equal to 0. Figure~\subref{fig:ResponseMatrix_PhiCS} shows the response matrix - correlation between reconstructed ($x$-axis) and hadron level ($y$-axis) $\phi^{\text{CS}}$. Probabilities in each bin of the true-level value were normalized to sum up to 1.}\label{fig:Response_PhiCS}%
+  \end{minipage}
+}%
+\end{figure}
+%---------------------------
+
+
 
 \section{Closure tests}\label{sec:closureTests}
 \subsection{Data pull}
