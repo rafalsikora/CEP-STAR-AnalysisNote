@@ -861,8 +861,8 @@ Final pull histogram is shown in Fig.~\ref{fig:pull} for raw event counts (open 
 %---------------------------
 
 \subsection{Monte Carlo closure tests}
-\subsubsection{TPC and TOF efficiency correction validation}
-\subsubsection{RP efficiency correction validation}
+% \subsubsection{TPC and TOF efficiency correction validation}
+% \subsubsection{RP efficiency correction validation}
 \subsubsection{Total correction validation}
 
 
@@ -870,10 +870,53 @@ Final pull histogram is shown in Fig.~\ref{fig:pull} for raw event counts (open 
 \begin{figure}[h]
   \centering
   \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}} 
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~a)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_InvMass.pdf} &
+    \subfigimg[width=\linewidth,page=1]{a)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_InvMass.pdf} &
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~b)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_Rapidity.pdf} \\
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~d)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_MandelstamTSum.pdf} &
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~e)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_DeltaPhi.pdf}
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~c)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_MandelstamTSum.pdf} &
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~d)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_DeltaPhi.pdf}
   \end{tabular}
-\caption[Full closure test.]{ Full closure test.}\label{fig:closureTestFull}%
+\caption[Full closure test.]{Full closure test.}\label{fig:closureTestFull}%
+\end{figure}
+
+
+\section{Geometrical correction}\label{sec:geomCorr}
+
+
+One of the goals of the analysis is to obtain information about the production of resonances in CEP process. Invariant mass distributions in the fiducial region of the measurement can not be directly used to extract and quantitatively describe possible resonances without extrapolation to the full kinematic region of the central pions pair, given by $p_\mathrm{T}\rightarrow 0$ and $|\eta|\rightarrow\infty$  (full solid angle in the central system rest frame). Extrapolation to unmeasured region is always model dependent. Here we present corrections to the full phase-space obtained with various assumptions (models). To limit size of the corrections, the measurement is restricted to $|y(\pi^+\pi^-)|<0.4$. In the correction calculation factorization of the central system and forward protons phase space is assumed. For the forward protons phase space a uniform distributions of the azimuthal angles are assumed while polar angles are generated according to exponential $t$ distribution with $t$-slope of 6~GeV$^{-2}$.
+
+The measurement is extrapolated from the part of the fiducial region given by Eq.~\eqref{eq:RpFiducial} covering $0.05 \leq -t_1 , -t_2 \leq 0.16$ GeV$^2$ to such defined Lorentz invariant $t$ interval and full azimuthal angle of forward protons.
+The measurement is further restricted to two regions of $\Delta\varphi<45^\circ$ and $\Delta\varphi>135^\circ$ which reduces size of acceptance corrections and related systematic uncertainties.
+
+% %---------------------------
+\begin{figure}[h]
+  \centering
+  \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}} 
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~a)}{graphics/corrections/GeomAcc.pdf} &
+    \subfigimg[width=\linewidth,page=2]{~~~~~~~~~~b)}{graphics/corrections/GeomAcc.pdf}
+  \end{tabular}
+\caption[Geometrical acceptance for $\pi^{+}\pi^{-}$.]{Geometrical acceptance for the $\pi^{+}\pi^{-}$ being in the fiducial region of the measurement ($|\eta(\pi^{\pm})|<0.7$, $p_{\text{T}}(\pi^{\pm})>0.2$~GeV) if forward protons separated in azimuth by (left) $\Delta\varphi<45^{\circ}$ and (right)  $\Delta\varphi>135^{\circ}$. Dashed red lines limit the $m(\pi^{+}\pi^{-})$ region in which the fit is perfomed, as described in Sec.~\ref{sec:InvMassFit}.}\label{fig:centralStateGeomCorr}% 
+\end{figure}
+
+
+% %---------------------------
+\begin{figure}[h]
+  \centering
+  \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}} 
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~a)}{graphics/corrections/deltaPhiAcceptance.pdf} &
+    \subfigimg[width=\linewidth,page=2]{~~~~~~~~~~b)}{graphics/corrections/deltaPhiAcceptance.pdf}
+  \end{tabular}\vspace*{-15pt}
+\caption[Geometrical acceptance for forward protons.]{Geometrical acceptance for the forward protons being both in the fiducial region given by Eq.~\eqref{eq:RpFiducial} if separated in azimuth by (left) $\Delta\varphi<45^{\circ}$ and (right)  $\Delta\varphi>135^{\circ}$. Phase-space MC assuming flat distribution of  azimuthal angle of the forward protons $\varphi$ has been used for determination of this acceptance. Solid magenta lines limit the region selected for the measurement, which provides reasonably high geometrical acceptance.}\label{fig:forwardProtonsGeomCorr}%
+\end{figure}
+
+
+% %---------------------------
+\begin{figure}[h]
+  \centering
+  \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}} 
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~a)}{graphics/corrections/deltaPhiAcceptance_Ratio_DiMeToPhaseSpace.pdf} &
+    \subfigimg[width=\linewidth,page=2]{~~~~~~~~~~b)}{graphics/corrections/deltaPhiAcceptance_Ratio_DiMeToPhaseSpace.pdf} \\
+    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~c)}{graphics/corrections/deltaPhiAcceptance_Ratio_GenExToPhaseSpace.pdf} &
+    \subfigimg[width=\linewidth,page=2]{~~~~~~~~~~d)}{graphics/corrections/deltaPhiAcceptance_Ratio_GenExToPhaseSpace.pdf} \\
+  \end{tabular}\vspace*{-15pt}
+\caption[Geometrical acceptance comparison between DiMe, GenEx and phase-space MC.]{Geometrical acceptance comparison between DiMe and phase-space MC (top) and GenEx and phase-space MC (bottom) for (left) $\Delta\varphi<45^{\circ}$ and (right) $\Delta\varphi>135^{\circ}$.}\label{fig:forwardProtonsGeomCorrRatio}%
 \end{figure}
