@@ -9,6 +9,8 @@
 
 \section{Differential cross sections}
 
+In this subsection we present differential fiducial cross sections.
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=.7\textwidth,page=1]{graphics/physicsResults/FinalResult_InvMass_pion.pdf}
@@ -103,9 +105,9 @@
 \begin{tabular}{cc c c}
 ~ & ~ & \multicolumn{2}{c}{$\bm{ \sigma_{\text{\bf{fid}}} \pm \delta_{\text{\bf{stat}}} \pm \delta_{\text{\bf{syst}}}}$} \\
  \bf{PID} & \bf{unit} & $\bm{\Delta\varphi<90^{\circ}}$ & $\bm{\Delta\varphi>90^{\circ}}$ \\ \hline\hline
- $\bm{\pi^{+}\pi^{-}}$ & \bf{nb} & $38.1\pm0.2^{+4.3}_{-4.0}$ & $18.4\pm0.1^{+2.0}_{-1.8}$ \\ %\hline
- $\bm{K^{+}K^{-}}$ & \bf{pb} & $976\pm46^{+156}_{-140}$ & $533\pm33^{+84}_{-76}$ \\ %\hline
- $\bm{p\bar{p}}$ & \bf{pb} & $17.7\pm3.6^{+2.3}_{-2.1}$ & $31.5\pm5.4^{+3.9}_{-3.6}$\\ %\hline%\hline
+ $\bm{\pi^{+}\pi^{-}}$ & \bf{nb} & $38.2\pm0.2^{+4.5}_{-3.9}$ & $18.5\pm0.1^{+2.0}_{-1.8}$ \\ %\hline
+ $\bm{K^{+}K^{-}}$ & \bf{pb} & $971\pm50^{+160}_{-140}$ & $528\pm38^{+89}_{-78}$ \\ %\hline
+ $\bm{p\bar{p}}$ & \bf{pb} & $16.2\pm4.1^{+3.0}_{-2.8}$ & $30.3\pm5.7^{+4.7}_{-4.3}$\\ %\hline%\hline
 \end{tabular}
 \caption{Integrated fiducial cross sections for CEP of $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ pairs in two ranges of azimuthal angle difference $\Delta\varphi$ between forward scattered protons. Statistical and systematic uncertainties are provided for each cross section.}\label{tab:xSec}
 \end{table}
@@ -195,10 +197,10 @@
 
 \section{Invariant mass spectrum modelling}\label{sec:InvMassFit}
 
-We make an attempt to fit extrapolated differential cross-section with a simplified model of the $\pi^{+}\pi^{-}$ invariant mass spectrum. In this model we assume contributions from the direct pair production and three resonances in the mass range of $0.6-1.7$ GeV: $f_0(980)$, $f_2(1270)$ and $f_0(1500)$. It is important to note, that only $f_{2}(1270)$ has in the fit fixed mass and width and thus is explicitely assumed. For the other two resonances the masses and widths are left free, however their fitted masses and widths are compatible with $f_0(980)$ and $f_0(1500)$, therefore we use such labeling from the very beginning.
+We make an attempt to fit extrapolated (using acceptance corrections from Sec.~\ref{sec:geomCorr}) differential cross-section with a simplified model of the $\pi^{+}\pi^{-}$ invariant mass spectrum. In this model we assume contributions from the direct pair production and three resonances in the mass range of $0.6-1.7$ GeV: $f_0(980)$, $f_2(1270)$ and $f_0(1500)$. It is important to note, that in the fit only $f_{2}(1270)$ has fixed mass and width and thus is explicitly assumed. For the other two resonances the masses and widths are left free, however their fitted masses and widths are compatible with $f_0(980)$ and $f_0(1500)$, therefore we use such labeling from the very beginning.
 
 The total amplitude for the exclusive $\pi^{+}\pi^{-}$ production is given by:
-%
+% 
 \begin{equation}
 \label{eq:amplitude}
 \begin{aligned}
@@ -213,7 +215,7 @@ thus all states are added coherently (interfere with each other). The amplitude 
 \begin{equation}A_{\textrm{cont}}\in\mathbb{R},~~~A_{\textrm{f}_0(980)},A_{\textrm{f}_2(1270)},A_{\textrm{f}_0(1500)}\in\mathbb{C}~~~~\rightarrow~~~~A_{\textrm{f}}=|A_{\textrm{f}}|e^{i\phi_{\textrm{f}}}.\end{equation}
 %
 The shape of the continuum amplitude is assumed to have the form
-\begin{equation}f_{\textrm{cont}}(m) = \sqrt{\frac{q}{m}}\times e^{-\frac{B}{2}\cdot m}\end{equation}
+\begin{equation}f_{\textrm{cont}}(m) = \sqrt{\frac{q}{m}}\times e^{-\frac{B}{2}\cdot q}\end{equation}
 with the break-up momentum $q$ equal to
 \begin{equation}\label{eq:breakupMom}
 q(m) = \frac{1}{2}\sqrt{m^{2}-4m_{\pi}^{2}}.
@@ -237,15 +239,15 @@ In the fit the ratio $g_{K}/g_{\pi}$ is fixed to 4.21, the value well constraine
 
 Squared amplitude from Eq.~\eqref{eq:amplitude}, $|A|^{2}$, is convoluted for the purpose of the fit with the normal distribution $\mathcal{N}(m; \sigma_{\text{res}})$ representing finite resolution of reconstructed invariant mass of the pion pair. The resolution parameter $\sigma_{\text{res}}$ is provided to the fitting algorithm; it is set to grow linearly with increasing invariant mass according to MC simulation of the STAR TPC detector. The $m(\pi^{+}\pi^{-})$ resolution at the lower and upper limit of the fit range is equal to 4~MeV and 13~MeV, respectively. The final form of function fitted to extrapolated $d\sigma/dm(\pi^{+}\pi^{-})$ is given by
 \begin{equation}
-    \mathcal{F}(m) = \int\limits_{m-3.5\cdot\sigma_{\text{res}}(m)}^{m+3.5\cdot\sigma_{\text{res}}(m)}dm'\mathcal{N}\left(m'-m; \sigma_{\text{res}}(m)\right)|A(m')|^{2}.
+    \mathcal{F}(m) = \int\limits_{m-3.5\cdot\sigma_{\text{res}}(m)}^{m+3.5\cdot\sigma_{\text{res}}(m)}dm'\mathcal{N}\left(m'-m; \sigma_{\text{res}}(m')\right)|A(m')|^{2}.
 \end{equation}
 
 The fitting is performed using Minuit2 toolkit~\cite{Minuit2} within the ROOT analysis software~\cite{ROOT}. The standard-defined $\chi^{2}$ is minimized simultaneously in two $\Delta\varphi$ ranges with the masses and widths of both $f_0$'s forced to be equal, while phases and absolute values of $f_2$ and $f_0$'s amplitudes left independent in the two $\Delta\varphi$ subsets. The mass and width of $f_2(1270)$ resonance is fixed to the well known Particle Data Group values~\cite{pdg}.
 %
+Experimental systematic uncertainties of the model parameters are estimated through the independent fits to extrapolated $d\sigma/dm(\pi^{+}\pi^{-})$ (Appendix~\ref{appendix:invMassSystFits}) with applied each of the systematic variations described in Sec.~\ref{sec:systEffectsList}. In addition to this we take into consideration sensitivity of the fit result related to the modelling of extrapolation to full kinematic region. We check the effect of extrapolation to full solid angle in $\pi^{+}\pi^{-}$ rest frame assuming smooth transition from the angular distributions for pure $S_{0}$ wave up to 1~GeV, to the angular distributions for pure $D_{0}$-wave starting from 1.2~GeV. We also check the effect of using extrapolation calculated with predictions from DiMe and GenEx generators, for both the central state and for the forward scattered protons. Also, we check the result of the fit with the ratio $g_{K}/g_{\pi}$ varied within its uncertainties.
+At the end, systematic uncertainty on a parameter is calculated as a quadratic sum of the differences between the nominal fit result and the result of the fit to $d\sigma/dm(\pi^{+}\pi^{-})$ with each systematic effect considered except differences related to the extrapolation which are separated from experimental uncertainties and quoted as the largest deviation from nominal result.
 
-Systematic uncertainties of the model parameters are estimated through the independent fits to extrapolated $d\sigma/dm(\pi^{+}\pi^{-})$ with applied each of the systematic variations described in Sec.~\ref{sec:systematics}. In addition to this we take into consideration uncertainties related to the geometrical acceptance correction - we check the effect of extrapolation to full kinematic region of the pions determined with the pure $D_{0}$-wave instead of nominally used $S_{0}$-wave. At the end, systematic uncertainty on the parameter is calculated as a quadratic sum of the differences between the nominal fit result and the result of the fit to $d\sigma/dm(\pi^{+}\pi^{-})$ with each systematic effect considered.
-
-\begin{figure}%[t]
+\begin{figure}%[t] 
 \centering
 \includegraphics[width=\textwidth,page=1]{graphics/physicsResults/InvMassFit/RatioAndInterference_PiPiInvMass_Fit.pdf}
 %
@@ -253,43 +255,41 @@ Systematic uncertainties of the model parameters are estimated through the indep
 \label{invMassFit}
 \end{figure}
 
-The extrapolated cross-sections are shown in Fig.~\ref{invMassFit} together with the result of the fit described above. The model parameters providing minimum $\chi^{2}$ are listed in Tab.~\ref{tab:fitRes}. The fit with the total of 20 free parameters gives $\chi^2$/ndf = 289/200 which shows that the data and model are in reasonable agreement in the fit region. Three resonances are required in the mass range of $0.6-1.7$~GeV: $f_0(980)$, $f_2(1270)$ and $f_0(1500)$. The deviation of the fitted model from the extrapolated data is the most significant at the end part of the fitted mass range, above $1.5-1.55$~GeV. This might result from the presence of $f_{0}(1710)$ and other wide resonances above the fit limits, which are not included in the model.
+The extrapolated cross-sections are shown in Fig.~\ref{invMassFit} together with the result of the fit described above. The model parameters providing minimum $\chi^{2}$ are listed in Tab.~\ref{tab:fitRes}. The fit with the total of 20 free parameters gives $\chi^2$/ndf = 178/180 which shows that the data and the model are in excellent agreement in the fit region. Alternative extrapolation models show similar fit quality, although some parameters change significantly as can be noted from the model-related uncertainties in Tab.~\ref{tab:fitRes}.
+The fitted model shows small deviation from the extrapolated data around $1.37$~GeV. This might result from the presence of $f_{0}(1370)$, which is however not necessary to describe the data. The cross-section for $f_0(1500)$ production differs by 7 and 2 standard deviations from zero in  $\Delta\varphi<45^\circ$ and $\Delta\varphi>135^\circ$ regions, respectively. Removing of $f_0(1500)$  (Fig.~\ref{invMassFit_NO_F01500}) makes $\chi^2$/ndf change to 355/186, a 7.1 standard deviations effect. From the above we infer that the shape of $d\sigma/dm(\pi^{+}\pi^{-})$ around 1.4-1.6~GeV - the high-mass part of the $f_{2}(1270)$ region, is determined by the presence of $f_0(1500)$ interfering mainly with $\pi^{+}\pi^{-}$ continuum.
 
 {
 \renewcommand{\arraystretch}{1.5}
 \begin{table}[]\centering
-\begin{tabular}{ccc c c} ~ & ~ & ~ &\multicolumn{2}{c}{$\bm{ p \pm \delta_{\text{\bf{stat}}} \pm \delta_{\text{\bf{syst}}} \pm \delta_{\text{\bf{model}}}}$} \\ ~ & \bf{parameter} & \bf{unit} & $\bm{\Delta\varphi<45^{\circ}}$ & $\bm{\Delta\varphi>135^{\circ}}$ \\ \hline\hline \multirow{2}{*}{\bf{Continuum}} & $\bm{A}$ & $\bm{\left(\text{\bf{nb/GeV}}\right)^{\frac{1}{2}}}$ & $63.9 \pm 3.8 ^{+4.5}_{-8.1}$ & $35.8 \pm 1.8 ^{+3.0}_{-2.9}$ \\ %\hline
-& $\bm{B}$ & $\bm{\text{\bf{GeV}}^{-1}}$ & $6.3 \pm 0.4 ^{+0.1}_{-0.2}$ & $4.7 \pm 0.3 ^{+0.2}_{-0.2}$ \\ \hline
-\multirow{5}{*}{$\bm{f_{0}(980)}$} & $\bm{|A|}$ & $\bm{\left(\text{\bf{nb/GeV}}\right)^{\frac{1}{2}}}$ & $20.9 \pm 0.5 ^{+1.1}_{-1.4}$ & $7.8 \pm 0.4 ^{+0.4}_{-0.5}$ \\ %\hline
-& $\bm{\phi}$ & \bf{rad} & $0.68 \pm 0.07 ^{+0.02}_{-0.03}$ & $0.54 \pm 0.08 ^{+0.01}_{-0.02}$ \\ %\hline
-& $\bm{M}$ & \bf{MeV} & \multicolumn{2}{c}{$955.6 \pm 5.6 ^{+0.9}_{-3.3}$} \\ %\hline
-& $\bm{\Gamma_{0}}$ & \bf{MeV} & \multicolumn{2}{c}{$161.6 \pm 21.1 ^{+4.4}_{-3.8}$} \\ %\hline
-& $\bm{\sigma}$ & \bf{nb} & $38.7 \pm 3.5 ^{+3.9}_{-4.8}$ & $5.4 \pm 0.7 ^{+0.5}_{-0.6}$ \\ \hline
-\multirow{3}{*}{$\bm{f_{2}(1270)}$} & $\bm{|A|}$ & $\bm{\left(\text{\bf{nb/GeV}}\right)^{\frac{1}{2}}}$ & $4.0 \pm 0.4 ^{+0.3}_{-0.3}$ & $7.9 \pm 0.3 ^{+0.4}_{-0.5}$ \\ %\hline
-& $\bm{\phi}$ & \bf{rad} & $-1.83 \pm 0.10 ^{+0.03}_{-0.01}$ & $-0.86 \pm 0.04 ^{+0.03}_{-0.03}$ \\ %\hline
-& $\bm{\sigma}$ & \bf{nb} & $4.4 \pm 0.9 ^{+0.6}_{-0.6}$ & $16.9 \pm 1.3 ^{+1.9}_{-2.1}$ \\ \hline
-\multirow{5}{*}{$\bm{f_{0}(1500)}$} & $\bm{|A|}$ & $\bm{\left(\text{\bf{nb/GeV}}\right)^{\frac{1}{2}}}$ & $4.2 \pm 0.3 ^{+0.3}_{-0.3}$ & $0.9 \pm 0.3 ^{+0.1}_{-0.1}$ \\ %\hline
-& $\bm{\phi}$ & \bf{rad} & $0.31 \pm 0.11 ^{+0.09}_{-0.06}$ & $1.45 \pm 0.31 ^{+0.05}_{-0.03}$ \\ %\hline
-& $\bm{M}$ & \bf{MeV} & \multicolumn{2}{c}{$1471.7 \pm 6.3 ^{+2.1}_{-1.3}$} \\ %\hline
-& $\bm{\Gamma_{0}}$ & \bf{MeV} & \multicolumn{2}{c}{$83.8 \pm 11.0 ^{+2.2}_{-3.0}$} \\ %\hline
-& $\bm{\sigma}$ & \bf{nb} & $2.3 \pm 0.4 ^{+0.3}_{-0.3}$ & $0.1 \pm 0.1 ^{+0.0}_{-0.0}$ \\ \hline
+\begin{tabular}{ccc c c}% ~ & ~ & ~ &\multicolumn{2}{c}{$\bm{ p \pm \delta_{\text{\bf{stat}}} \pm \delta_{\text{\bf{syst}}} \pm \delta_{\text{\bf{model}}}}$} \\ ~ & \bf{parameter} & \bf{unit} & $\bm{\Delta\varphi<45^{\circ}}$ & $\bm{\Delta\varphi>135^{\circ}}$ \\ \hline
+~ & ~ & \bf{unit} & $\bm{\Delta\varphi<45^{\circ}}$ & $\bm{\Delta\varphi>135^{\circ}}$ \\ \hline\hline \multirow{2}{*}{\bf{Continuum}} & $\bm{A}$ & $\bm{\left(\text{\bf{nb/GeV}}\right)^{\frac{1}{2}}}$ & $64.5 \pm 0.5 \,^{+4.0}_{-3.7}\,^{+0.8}_{-11.6}$ & $34.9 \pm 0.3\,^{+2.8}_{-2.6}\,^{+1.7}_{-8.6}$ \\ %\hline
+& $\bm{B}$ & $\bm{\text{\bf{GeV}}^{-1}}$ & $6.4 \pm 0.0\,^{+0.1}_{-0.1} \,^{+0.1}_{-0.9}$ & $4.5 \pm 0.0\,^{+0.2}_{-0.2}\,^{+0.3}_{-1.1}$ \\ \hline
+\multirow{4}{*}{$\bm{f_{0}(980)}$} & $\bm{\sigma}$ & \bf{nb} & $37.2 \pm 1.3 \,^{+4.0}_{-3.4}\,^{+2.3}_{-3.8}$ & $5.2 \pm 0.5\,^{+0.5}_{-0.5}\,^{+0.2}_{-1.5}$ \\
+& $\bm{\phi}$ & \bf{rad} & $0.65 \pm 0.04\,^{+0.02}_{-0.02}\,^{+0.02}_{-0.06}$ & $0.57 \pm 0.05\,^{+0.01}_{-0.01}\,^{+0.01}_{-0.09}$ \\ %\hline
+& $\bm{M}$ & \bf{MeV} & \multicolumn{2}{c}{$956.1 \pm 4.6\,^{+1.1}_{-0.9} \,^{+4.1}_{-5.3}$} \\ %\hline
+& $\bm{\Gamma_{0}}$ & \bf{MeV} & \multicolumn{2}{c}{$158.7 \pm 7.9\,^{+3.6}_{-3.8} \,^{+16.1}_{-19.1}$} \\ \hline
+\multirow{2}{*}{$\bm{f_{2}(1270)}$} & $\bm{\sigma}$ & \bf{nb} & $4.2 \pm 0.3 \,^{+0.5}_{-0.5}\,^{+0.3}_{-1.8}$ & $15.6 \pm 0.5\,^{+1.7}_{-1.5}\,^{+0.2}_{-4.5}$ \\ %\hline
+& $\bm{\phi}$ & \bf{rad} & $-1.84 \pm 0.06\,^{+0.01}_{-0.01}\,^{+0.04}_{-0.12}$ & $-0.91 \pm 0.03\,^{+0.03}_{-0.03}\,^{+0.06}_{-0.22}$ \\ \hline
+\multirow{4}{*}{$\bm{f_{0}(1500)}$} & $\bm{\sigma}$ & \bf{nb} & $2.1 \pm 0.3 \,^{+0.2}_{-0.2}\,^{+1.0}_{-0.6}$ & $0.2 \pm 0.1\,^{+0.0}_{-0.0}\,^{+0.1}_{-0.0}$ \\ %\hline
+& $\bm{\phi}$ & \bf{rad} & $0.16 \pm 0.08\,^{+0.03}_{-0.04}\,^{+0.03}_{-0.14}$ & $1.56 \pm 0.18\,^{+0.04}_{-0.05}\,^{+0.04}_{-0.08}$ \\ %\hline
+& $\bm{M}$ & \bf{MeV} & \multicolumn{2}{c}{$1469.5 \pm 3.7\,^{+1.0}_{-1.3} \,^{+2.0}_{-2.8}$} \\ %\hline
+& $\bm{\Gamma_{0}}$ & \bf{MeV} & \multicolumn{2}{c}{$88.8 \pm 7.4\,^{+2.1}_{-1.8} \,^{+3.5}_{-2.6}$} \\ \hline
 \end{tabular}
 \caption{Results of the fit described in the text in two ranges of azimuthal angle difference $\Delta\varphi$ between forward scattered protons. Statistical and systematic uncertainties are provided for each parameter.}\label{tab:fitRes}\vspace{-5pt} %temporary
 \end{table}
 }
 %
 %
+Since the masses and widths of $f_0(980)$ and $f_0(1500)$ are free parameters it is allowed to confront their fitted values with the PDG data~\cite{pdg}. In the case of $f_0(980)$ the mass and width is found to be respectively $M_{f_0(980)}=956 \pm 5 (\text{stat.})\,^{+1.1}_{-0.9} (\text{syst.})\,^{+4}_{-5} (\text{mod.})$~MeV and $\Gamma_{0,f_0(980)} = 159 \pm 8 (\text{stat.}) \pm 4 (\text{syst.})\,^{+16}_{-19} (\text{mod.})$~MeV. Such numbers differ from the PDG estimates of mass ($990 \pm 20$~MeV) and width (from 10~MeV to 100~MeV), nonetheless PDG emphasizes strong dependence of the resonance parameters on the model of amplitude. Some measurements listed in Ref.~\cite{pdg} are in reasonable agreement with obtained numbers. In addition to this, mass and width of $f_0(980)$ resulting from the fit with the Breit-Wigner form of amplitude (Fig.~\ref{invMassFit_F0980_BREITWIGNER}) gives result $M_{f_0(980)}=974 \pm 1 (\text{stat.}) \pm 1 (\text{syst.})$~MeV and $\Gamma_{0,f_0(980)} = 65 \pm 3 (\text{stat.}) \pm 1 (\text{syst.})$~MeV, albeit with notably worse $\chi^{2}$/ndf of 225/180 being an evidence for significant  branching fraction for the decay into $K\bar{K}$ which needs to be accounted in the resonance parametrization. These values are in excellent agreement with PDG estimates and $f_0(980)$ parameters from other measurements assuming Breit-Wigner resonance shape~\cite{pdg}.
 
-Since the masses and widths of $f_0(980)$ and $f_0(1500)$ are free parameters it is possible to confront their fitted values with the PDG data~\cite{pdg}. In the case of $f_0(980)$ the mass and width is found to be respectively $M_{f_0(980)}=956 \pm 6 (\text{stat.}) ^{+1}_{-3} (\text{syst.})$~MeV and $\Gamma_{0,f_0(980)} = 162 \pm 21 (\text{stat.}) \pm 4 (\text{syst.})$~MeV. Such numbers differ from the PDG estimates of mass ($990 \pm 20$~MeV) and width (from 10~MeV to 100~MeV), nonetheless PDG emphasizes strong dependence of the resonance parameters on the model of amplitude. Some measurements listed in Ref.~\cite{pdg} are in very good agreement with obtained numbers. In addition to this, mass and width of $f_0(980)$ resulting from the fit with the Breit-Wigner form of amplitude gives result $M_{f_0(980)}=972 \pm 1 (\text{stat.}) \pm 1 (\text{syst.})$~MeV and $\Gamma_{0,f_0(980)} = 65 \pm 3 (\text{stat.}) \pm 1 (\text{syst.})$~MeV, albeit with notably worse $\chi^{2}$/ndf of 361/200. These values are in excellent agreement with PDG estimates and $f_0(980)$ parameters from other measurements assuming Breit-Wigner resonance shape~\cite{pdg}. From this we conclude that the structures in the mass spectrum around 1~GeV are indisputably due to interference of $f_0(980)$ with the remaining states, dominantly with the $\pi^{+}\pi^{-}$ continuum.
-%
-%
+%%
+For $f_0(1500)$ we obtain from the fit $M_{f_0(1500)}=1469 \pm 4 (\text{stat.})\,\pm 1 (\text{syst.})\,^{+2}_{-3} (\text{mod.})$~MeV and $\Gamma_{0,f_0(1500)} = 89 \pm 7 (\text{stat.})\,\pm 2 (\text{syst.})\,^{+4}_{-3} (\text{mod.})$~MeV. These numbers also deviate from the PDG averages: $1505\pm 6$~MeV for the mass and $109\pm 7$~MeV for the width. However, numerous measurements on $f_{0}(1500)$ referenced in PDG (and not used for averages calculation) report masses below 1500~MeV and widths below 100~MeV, which are consistent with our result.
 
-For the $f_0(1500)$ we obtain from the fit $M_{f_0(1500)}=1472 \pm 6 (\text{stat.}) \pm 2 (\text{syst.})$~MeV and $\Gamma_{0,f_0(1500)} = 84 \pm 11 (\text{stat.}) \pm 3 (\text{syst.})$~MeV. These numbers also deviate from the PDG averages: $1505\pm 6$~MeV for the mass and $109\pm 7$~MeV for the width. However, numerous measurements on $f_{0}(1500)$ referenced in PDG (and not used for averages calculation) report mass below 1500~MeV and width below 100~MeV, which are consistent with our result. Removing $f_0(1500)$ from the fit doubles the $\chi^2$ to value 590, a 300 standard deviations effect. From above we infer that the shape of $d\sigma/dm(\pi^{+}\pi^{-})$ around 1.4-1.6~GeV - the high-mass part of the $f_{2}(1270)$ region, is determined by the presence of $f_0(1500)$ interfering mainly with $\pi^{+}\pi^{-}$ continuum and also with $f_{2}(1270)$.
 %
 
 \begin{figure}%[t]
 \centering
-\includegraphics[width=\textwidth,page=1]{graphics/physicsResults/InvMassFit/F0980_BREITWIGNER/RatioAndInterference_PiPiInvMass_Fit.pdf}
+\includegraphics[width=\textwidth,page=1]{graphics/physicsResults/InvMassFit/F0980_BREITWIGNER/Ratio_PiPiInvMass_Fit.pdf}
 %
 \caption{Extrapolated $d\sigma/dm(\pi^{+}\pi^{-})$ with the fit assuming Breit-Wigner amplitude for $f_{0}(980)$.}
 \label{invMassFit_F0980_BREITWIGNER}
@@ -297,7 +297,7 @@ For the $f_0(1500)$ we obtain from the fit $M_{f_0(1500)}=1472 \pm 6 (\text{stat
 
 \begin{figure}%[t]
 \centering
-\includegraphics[width=\textwidth,page=1]{graphics/physicsResults/InvMassFit/NO_F01500/RatioAndInterference_PiPiInvMass_Fit.pdf}
+\includegraphics[width=\textwidth,page=1]{graphics/physicsResults/InvMassFit/NO_F01500/Ratio_PiPiInvMass_Fit.pdf}
 %
 \caption{Extrapolated $d\sigma/dm(\pi^{+}\pi^{-})$ with the fit ignoring $f_{0}(1500)$ component.}
 \label{invMassFit_NO_F01500}
@@ -305,48 +305,90 @@ For the $f_0(1500)$ we obtain from the fit $M_{f_0(1500)}=1472 \pm 6 (\text{stat
 
 \begin{figure}%[t]
 \centering
-\includegraphics[width=\textwidth,page=1]{graphics/physicsResults/InvMassFit/EXTRA_RESONANCE/RatioAndInterference_PiPiInvMass_Fit.pdf}
+\includegraphics[width=\textwidth,page=1]{graphics/physicsResults/InvMassFit/EXTRA_RESONANCE/Ratio_PiPiInvMass_Fit.pdf}
 %
 \caption{Extrapolated $d\sigma/dm(\pi^{+}\pi^{-})$ with the fit accounting for an additional $f_{0}(X)$ component.}
 \label{invMassFit_EXTRA_RESONANCE}
 \end{figure}
 
 
+% \begin{figure}%[t] 
+% \centering
+% \includegraphics[width=\textwidth,page=1]{graphics/physicsResults/InvMassFit/WITH_RHO/RatioAndInterference_PiPiInvMass_Fit.pdf}
+% %
+% \caption{Extrapolated $d\sigma/dm(\pi^{+}\pi^{-})$ with the fit accounting for $\rho_{0}(770)$ production.}
+% \label{invMassFit_WITH_RHO}
+% \end{figure}
+
+%
+We have tested a possibility of existence of an additional resonance produced in the mass range $1.2-1.5$ GeV  (Fig.~\ref{invMassFit_EXTRA_RESONANCE}). With $f_0$-like component added to the model from Eq.~\eqref{eq:amplitude} the best fit is achieved for $M_{f_0}=1367 \pm 25 (\text{stat.})$~MeV and $\Gamma_{0,f_0} = 53 \pm 25 (\text{stat.})$~MeV. In that case the $\chi^{2}$/ndf is somewhat improved and equals 161/174 - the dip in $d\sigma/dm(\pi^{+}\pi^{-})$ at 1.32~GeV for $\Delta\varphi<45^{\circ}$ is better described compared to the nominal fit. Other parameters in the fit change slightly and remain compatible with their original values. Noteworthy is increase of the statistical uncertainty of $f_{0}(1500)$ width - $\Gamma_{0,f_0(1500)} = 93 \pm 30 (\text{stat.})$~MeV, which makes it consistent with the PDG average. The fitted content of additional resonance $f_0$ at $\Delta\varphi<45^{\circ}$ is several times lower than extracted yield of $f_{0}(1500)$, while for $\Delta\varphi>135^{\circ}$ it is consistent with 0. The value of mass agrees with that of $f_{0}(1370)$ resonance, however the obtained width is much lower than PDG estimates of about 200-500~MeV.
+%
+
+{
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[]\centering
+\begin{tabular}{cc c c}%
+~ & \multicolumn{2}{c}{$\bm{\frac{\sigma}{\sigma_{f_{2}(1270)}}}$} & \multirow{2}{*}{$\bm{\frac{\sigma(\Delta\varphi<45^{\circ})}{\sigma(\Delta\varphi>135^{\circ})}}$} \\
+~ & $\bm{\Delta\varphi<45^{\circ}}$ & $\bm{\Delta\varphi>135^{\circ}}$ & \\ \hline\hline
+$\bm{f_{0}(980)}$ & $8.77 \pm 0.62\,^{+0.58}_{-0.40}\,^{+7.16}_{-0.23}$ & $0.33 \pm 0.03\,^{+0.01}_{-0.01}\,^{+0.13}_{-0.08}$ & $\phantom{1}7.14 \pm 0.66 \,^{+0.18}_{-0.18}\,^{+2.25}_{-0.21}$\\ %\hline
+$\bm{f_{2}(1270)}$ & 1 & 1 & $\phantom{1}0.27 \pm 0.02\,^{+0.01}_{-0.01} \,^{+0.02}_{-0.05}$\\ %\hline
+$\bm{f_{0}(1500)}$ & $0.49 \pm 0.08\,^{+0.04}_{-0.02}\,^{+0.25}_{-0.05}$ & $0.01 \pm 0.01\,^{+0.00}_{-0.00}\,^{+0.00}_{-0.00}$ & $11.87 \pm 5.76\,^{+0.83}_{-0.67} \,^{+2.09}_{-3.40}$\\ %\hline
+\end{tabular}
+\caption{Ratios of integrated cross-sections on resonance production. For each ratio a statistical, systematic and model uncertainties are provided, in that order.}\label{tab:resonanceRatio}
+\end{table}
+}
+%
+\indent
+We also calculated ratios of total cross sections $\sigma_{f_0(980)}/\sigma_{f_2(1270)}$ and $\sigma_{f_0(1500)}/\sigma_{f_2(1270)}$ in two $\Delta \varphi$ regions as well as $\sigma(\Delta \varphi<45^{\circ})/\sigma(\Delta \varphi>135^{\circ})$ for 
+all resonances, as listed in Tab.~\ref{tab:resonanceRatio}. In the ratios many of the systematic uncertainties cancelled out.
+We observe a significant dependence of the resonance production cross-sections on the azimuthal separation of the forward scattered protons. The two scalar mesons $f_{0}(980)$ and $f_{0}(1500)$ are dominantly produced at $\Delta\varphi<45^{\circ}$, whereas the tensor meson $f_{2}(1270)$ at $\Delta\varphi>135^{\circ}$. This $\Delta\varphi$ dependence is consistent with the observation made by WA102 Collaboration~\cite{WA102}.
+
+
+
+
+
+
+\section{Extraction of exponential slope parameter of $d\sigma/dt$}\label{sec:InvMassFit}
+
+
+
+Apart from the extrapolation and modelling of the $\pi^{+}\pi^{-}$ invariant mass cross-section we have also applied geometrical corrections to the $d\sigma/dt_{1}dt_{2}$ in the same Lorentz invariant phase-space given by $|y(\pi^+\pi^-)|<0.4$ and $0.05 \leq -t_1 , -t_2 \leq 0.16$ GeV$^2$ and two $\Delta\varphi$ ranges ($\Delta\varphi<45^{\circ}$ and $\Delta\varphi>135^{\circ}$). 
+These cross-sections were fitted in two dimensions with the exponent $\propto \exp{\left[\beta t_{1}\right]}\cdot\exp{\left[\beta t_{2}\right]}$ separately in three selected ranges of $m(\pi^{+}\pi^{-})$ (Figs.~\ref{fig:slope_1} and~\ref{fig:slope_2}). Obtained $\beta$ values are provided in Tab.~\ref{tab:slopes}. 
+We do not separate modelling uncertainties since they are generally much smaller than experimental uncertainties. This is the consequence of uniform $\varphi$ distribution in all the models and rather weak dependence of the cross-sections within measured $\Delta\varphi$ ranges. Such approximation is well founded and in good agreement with the data.
+Variations of the slope $\beta$ with $m(\pi^{+}\pi^{-})$ and $\Delta\varphi$ can give important constrains for model developers.%  For example, it was pointed out~\cite{lebiedowicz_1} that $f_2(1270)$ cross section may show an enhancement when  $t_1\rightarrow 0$, $t_2\rightarrow 0$ for some couplings while for others a suppression is expected which results in respectively larger or smaller value of $\beta$.
+%
+
+{
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[b]\centering
+\begin{tabular}{c|| cc}%
+~ & $\bm{\Delta\varphi<45^{\circ}}$ & $\bm{\Delta\varphi>135^{\circ}}$\\ \hline\hline
+$\bm{0.6~\text{\bf{GeV}} < m <1~\text{\bf{GeV}}}$ & $8.65 \pm 0.28 \,^{+0.91}_{-0.69}$ & $13.95 \pm 0.47\,^{+0.57}_{-0.95}$\\ %\hline
+$\bm{1~\text{\bf{GeV}} < m < 1.5~\text{\bf{GeV}}}$ & $9.78 \pm 0.65 \,^{+0.70}_{-0.74}$ & $\phantom{1}4.34 \pm 0.40\,^{+0.73}_{-0.77}$\\ %\hline
+$\bm{m>1.5~\text{\bf{GeV}}}$ & $8.00 \pm 1.16\,^{+0.75}_{-0.79}$ & $\phantom{1}4.67 \pm 0.97\,^{+0.78}_{-0.84}$\\ %\hline
+\end{tabular}
+\caption{Slope $\beta$ (in GeV$^{-2}$) of the $-t$ distribution in three ranges of $m(\pi^{+}\pi^{-})$ and two two ranges of $\Delta\varphi$. For each number a statistical and systematic uncertainties are provided, in that order.}\label{tab:slopes}
+\end{table}
+}
+
+
 \begin{figure}%[t]
 \centering
-\includegraphics[width=\textwidth,page=1]{graphics/physicsResults/InvMassFit/WITH_RHO/RatioAndInterference_PiPiInvMass_Fit.pdf}
+\includegraphics[width=0.9\textwidth,page=1]{graphics/physicsResults/SlopeExtraction.pdf}\\[7pt]
+\includegraphics[width=0.9\textwidth,page=2]{graphics/physicsResults/SlopeExtraction.pdf}\\[7pt]
+\includegraphics[width=0.9\textwidth,page=3]{graphics/physicsResults/SlopeExtraction.pdf}
 %
-\caption{Extrapolated $d\sigma/dm(\pi^{+}\pi^{-})$ with the fit accounting for $\rho_{0}(770)$ production.}
-\label{invMassFit_WITH_RHO}
+\caption{Extrapolated $d^{2}\sigma/dt_{1}dt_{2}$ for $\Delta\varphi<45^{\circ}$ with the exponential fit (left) and projections on the $t_{1}$ and $t_{2}$ axes (right) in three mass ranges provided in the plots.}
+\label{fig:slope_1}
 \end{figure}
 
+
+\begin{figure}%[t]
+\centering
+\includegraphics[width=0.9\textwidth,page=4]{graphics/physicsResults/SlopeExtraction.pdf}\\[7pt]
+\includegraphics[width=0.9\textwidth,page=5]{graphics/physicsResults/SlopeExtraction.pdf}\\[7pt]
+\includegraphics[width=0.9\textwidth,page=6]{graphics/physicsResults/SlopeExtraction.pdf}
 %
-
-We have tested possibility of existence of an additional resonance produced in CEP between 1.2 and 1.5 GeV. With component $A_{f_0} \times \mathcal{R}_{\textrm{BW}}\left(m;M_{f_0},\Gamma_{f_0}\right)$ added to the model from Eq.~\eqref{eq:amplitude} the best fit is achieved for $M_{f_0}=1326 \pm 9 (\text{stat.})$~MeV and $\Gamma_{0,f_0} = 22 \pm 11 (\text{stat.})$~MeV. In that case the $\chi^{2}$/ndf is improved and equals 270/194 - the dip in $d\sigma/dm(\pi^{+}\pi^{-})$ at $\Delta\varphi<45^{\circ}$ is much better described compared to the nominal fit. Other parameters in the fit change slightly and remain compatible with their original values. Noteworthy is widening of $f_{0}(1500)$ to $\Gamma_{0,f_0(1500)} = 98 \pm 15 (\text{stat.})$~MeV, which gets consistent with the PDG average. The fitted content of additional resonance $f_0$ at $\Delta\varphi<45^{\circ}$ is several times lower than extracted yield of $f_{0}(1500)$, while for $\Delta\varphi>135^{\circ}$ it is consistent with 0. The value of mass agrees with that of $f_{0}(1370)$ resonance, however the obtained width is much lower than PDG estimates of about 200-500~MeV. Given that there are no known resonances of the observed properties we abstain from making definite statements about existence of an additional resonance in the measured exclusive $\pi^{+}\pi^{-}$.
-%
-
-From fitted parameters of resonances it is finally possible to calculate integrated cross-section $\sigma$ on their production and decay in the $\pi^{+}\pi^{-}$ channel within earlier defined $|y|$ and $-t$ limits. It is obtained by integrating squared total amplitude on resonance production over entire invariant mass domain. Calculated values of $\sigma$ are provided for each resonance in Tab~\ref{tab:fitRes}. We observe significant dependence of the resonance production cross-section on the azimuthal separation of the forward scattered protons. Two scalar mesons $f_{0}(980)$ and $f_{0}(1500)$ are dominantly produced at $\Delta\varphi<45^{\circ}$, whereas tensor meson $f_{2}(1270)$ - at $\Delta\varphi>135^{\circ}$. This $\Delta\varphi$ dependence is consistent with the observation made by WA102 Collaboration~\cite{WA102}.
-
-
-
-
-% \[A_{\textrm{S-wave}}(m)~~~=~~~A_{\textrm{cont}}\times\sqrt{f_{\textrm{cont}}(m)}~~+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\]\vspace{-15pt}
-% \[~~~~~+~~A_{\textrm{f}_0(980)}\times \textrm{BW}\left(m;M_{f_0(980)},\Gamma_{f_0(980)}\right)\]
-% \[~~~~~~~~+~~A_{\textrm{f}_0(1500)}\times \textrm{BW}\left(m;M_{f_0(1500)},\Gamma_{f_0(1500)}\right)\]\vspace{-10pt}
-% \[A_{\textrm{D-wave}}(m)~~~=~~~A_{\textrm{f}_2(1270)}\times \textrm{BW}\left(m;M_{f_2(1270)},\Gamma_{f_2(1270)}\right)~~~~~~~~~~~~\]\vspace*{-5pt}
-% where\vspace{5pt}
-% \[A_{\textrm{cont}},A_{\textrm{f}_2(1270)}\in\mathbb{R},~~~A_{\textrm{f}_0(980)},A_{\textrm{f}_0(1500)}\in\mathbb{C}~~~~\rightarrow~~~~A=|A|e^{i\phi}.\]
-% 
-% Continuum model:
-%  \[f_{\textrm{cont}}(m) = (m-2m_{\pi})^{B}\times e^{-C\cdot m}\]
-%  Breit-Wigner form (relativistic Breit-Wigner with mass-dependent width):\vspace{-5pt}
-% \[\hspace*{-5pt}\textrm{BW}(m;M,\Gamma_{0}) = \frac{M\sqrt{\Gamma_{0}}\sqrt{\Gamma(m)}}{M^{2}-m^{2}-i M\Gamma(m)},~~\Gamma(m) = \Gamma_{0}\frac{q}{m}\frac{M}{q_{0}}\left(\frac{B_{J}((qR)^{2})}{B_{J}((q_{0}R)^{2})}\right)^{2},\]\vspace*{-7pt}
-% \[q(m) = \frac{1}{2}\sqrt{m^{2}-4m_{\pi}^{2}},~~~~~~q_{0} = q(M),~~~~~~R=1~\textrm{fm}\]\vspace*{-15pt}
-% \begin{itemize}
-%  \item masses and widths of $f_{2}(1270)$ are well known therefore they were fixed in the fit (used PDG values)
-%  \item fit was done simultaneously to $d\sigma/dm$ in $\Delta\phi<45^{\circ}$ and $\Delta\phi>135^{\circ}$ mass bins
-%  \item phases and amplitudes were independent is two $\Delta\phi$ bins, while masses and widths were forced to be the same
-%  \item no residual background was accounted since we already subtracted it (background determined using data-driven method, using missing $p_{T}$)
-%  \item data were corrected using assumption of the $\pi\pi$ pair being S-wave
-% \end{itemize}
-
+\caption{Extrapolated $d^{2}\sigma/dt_{1}dt_{2}$ for $\Delta\varphi>135^{\circ}$ with the exponential fit (left) and projections on the $t_{1}$ and $t_{2}$ axes (right) in three mass ranges provided in the plots.}
+\label{fig:slope_2}
+\end{figure}

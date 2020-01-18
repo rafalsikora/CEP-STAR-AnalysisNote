@@ -1,16 +1,20 @@
 %%===========================================================%%
 %%                                                           %%
 %%                   SYSTEMATIC ERRORS                       %%
-%%                                                           %%
+%%                                                           %% 
 %%===========================================================%%
 
 
-\chapter{Systematic uncertainties}\label{chap:systematicErrors}
+\chapter{Systematic uncertainties}\label{chap:systematicErrors} 
+
+\section{Luminosity}\label{sec:lumiSyst}
+In the determination of the systematic uncertainty of the integrated luminosity we use the results of dedicated study of the data from vernier scans~\cite{lumiNote} targeted on providing a precise calculation of the luminosity and an estimate of its uncertainty for the elastic proton-proton scattering measurement~\cite{elasticNote}. From this study we learn that the effective cross-secton visible in the ZDC detectors is equal to 0.294~mb with 4\% systematic uncertainty. The number is different from the effective ZDC cross-section used in the initial calculation of the luminosity at STAR, equal to 0.264~mb. The ratio of these numbers is 1.114. From this one concludes that the initial calculations of the luminosity based on the comparison of the coincidence rate of the East and West ZDC detectors, were overestimated by factor 1.114. Therefore, for the cross-section calculation we use a corrected integrated luminosity - a nominal integrated luminosity divided by aforementioned factor.
+
+Systematic uncertainty....
 
 \section{Trigger veto effect (due to dead material)}\label{sec:systTrigVeto}
 
-Systematic uncertainty related to the trigger veto correction (Sec.~\ref{sec:rpDeadMat}) has been studied with elastic scattering events, in a way similar to analyses presented in Sec.~10.3 (and following) of Ref.~\cite{supplementaryNote}.
-
+Systematic uncertainty related to the trigger veto correction (Sec.~\ref{sec:rpDeadMat}) has been studied with elastic scattering events, in a way similar to analyses presented in Sec.~10.3 (and following) of Ref.~\cite{supplementaryNote}. 
 
 Triggers dedicated for elastic scattering process (RP\_ET triggers) have been studied. The trigger required signal in at least one PMT (out of four) in two RP branches opposite to each other with respect to interaction region. In addition to trigger selection, vetoes were imposed offline on any activity in other STAR detectors, such as BBC (small and large), ZDC, TOF and VPD - it reduced probability of a non-elastic pile-up interaction. It has been demonstrated in Sec.~10.3.1 of Ref.~\cite{supplementaryNote} that once the single good quality RP track is required on one side, such sample consists only of elastic proton-proton scattering events.
 
@@ -140,7 +144,7 @@ In this section we present relative contributions of effects listed in Sec.~\ref
 % \end{tabular}
 % \caption{Systematic uncertainties of integrated fiducial cross sections for CEP of $\pi^{+}\pi^{-}$, $K^{+}K^{-}$ and $p\bar{p}$ pairs in two ranges of azimuthal angle difference $\Delta\varphi$ between forward scattered protons. Provided numbers are decomposed into major components. Single number in a cell indicates symmetric uncertainty, while positive and negative number denotes asymmetric uncertainty.}\label{tab:xSecSyst}
 % \end{table}
-% }
+% } 
 
 
 
@@ -150,7 +154,7 @@ In this section we present relative contributions of effects listed in Sec.~\ref
 \begin{tabular}{c ccccc|c}
  ~ & \multicolumn{6}{c}{  $\bm{ \delta_{\text{\bf{syst}}}/\sigma_{\text{\bf{fid}}}~[\text{\bf{\%}}]}$   } \\
  ~ & \bf{TOF} & \bf{TPC} & \bf{RP} & \bf{Other} & \bf{Lumi.} & \bf{Total} \\ \hline\hline
-$\bm{\pi^{+}\pi^{-}}$ & $\prescript{3.1}{-2.9}{~~~}$ & $\prescript{3.3}{-3.1}{~~~}$ & $\prescript{7.3}{-6.1}{~~~}$ & $\prescript{2.6}{-2.4}{~~~}$ & \multirow{3}{*}{7.0} & $\prescript{11.4}{-10.5}{~~~}$  \\
+$\bm{\pi^{+}\pi^{-}}$ & $\prescript{3.1}{-2.9}{~~~}$ & $\prescript{3.3}{-3.1}{~~~}$ & $\prescript{7.3}{-6.1}{~~~}$ & $\prescript{2.6}{-2.4}{~~~}$ & \multirow{3}{*}{$\prescript{7.5}{-6.5}{~}$} & $\prescript{11.4}{-10.5}{~~~}$  \\
 $\bm{K^{+}K^{-}}$  & $\prescript{10.0}{-8.6}{~~~}$ & $\prescript{6.6}{-6.1}{~~~}$ & $\prescript{7.4}{-6.2}{~~~}$ & $\prescript{2.7}{-2.4}{~~~}$ &  & $\prescript{16.0}{-14.3}{~~~}$ \\
 $\bm{p\bar{p}}$  &  $\prescript{5.4}{-4.9}{~~~}$ & $\prescript{3.6}{-3.4}{~~~}$ & $\prescript{8.4}{-6.9}{~~~}$ & $\prescript{2.9}{-2.4}{~~~}$ &  & $\prescript{13.0}{-11.8}{~~~}$ \\
 \end{tabular}

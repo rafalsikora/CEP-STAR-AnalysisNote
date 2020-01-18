@@ -28,7 +28,7 @@ The total efficiency related to both east and west forward protons in CEP event 
 where the r.h.s. part of the equation is factorized using the rules of conditional probability to two components describing reconstruction and selection efficiency (first) and trigger efficiency (second).
 
 
-The reconstruction and selection efficiency part can be represented as a product of single-proton reconstruction and selection efficiencies described in Sec.~\ref{sec:rpAccAndEff} with an additional scaling factor in the denominator:
+The reconstruction and selection efficiency part can be represented as a product of single-proton reconstruction and selection efficiencies described in Sec.~\ref{sec:rpAccAndEff} with an additional component that accounts for the correlation between east and west efficiencies. This correlation is defined in Eq.~\eqref{eq:rpEffCorrelation}:
 
 %\begin{equation}
 %\begin{split}
@@ -36,19 +36,26 @@ The reconstruction and selection efficiency part can be represented as a product
 %\end{split}
 %\end{equation}
 
+\begin{equation}\label{eq:rpEffCorrelation}
+ \rho_{\text{EW}} = 
+ \frac{\mbox{\LARGE$\varepsilon$}_{\text{EW}} - \mbox{\LARGE$\varepsilon$}_{\text{E}} \times \mbox{\LARGE$\varepsilon$}_{\text{W}} }
+ { \sqrt{ \mbox{\LARGE$\varepsilon$}_{\text{E}} \times (1-\mbox{\LARGE$\varepsilon$}_{\text{E}}) \times \mbox{\LARGE$\varepsilon$}_{\text{W}} \times (1-\mbox{\LARGE$\varepsilon$}_{\text{W}}) } },
+\end{equation}
+where \[\mbox{\LARGE$\varepsilon$}_{\text{E}} = \mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\land~!\TRNE\right.\right),~~~~~~~~~\mbox{\LARGE$\varepsilon$}_{\text{W}} = \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\land~!\TRNW\right.\right),\] \[\mbox{\LARGE$\varepsilon$}_{\text{EW}} = \mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right).\]%
+%
+From that we get%
 \begin{equation}
-\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)=\frac{\mbox{\LARGE$\varepsilon$}\left(\RPE\left|\TRE\land~!\TRNE\right.\right) \times \mbox{\LARGE$\varepsilon$}\left(\RPW\left|\TRW\land~!\TRNW\right.\right)}{1-\mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right)}
+\mbox{\LARGE$\varepsilon$}\left(\RPE\land\RPW\left|\TRE\land\TRW\land~!\V\right.\right)=\mbox{\LARGE$\varepsilon$}_{\text{E}} \times \mbox{\LARGE$\varepsilon$}_{\text{W}} + \rho_{\text{EW}}\times \sqrt{ \mbox{\LARGE$\varepsilon$}_{\text{E}} \times (1-\mbox{\LARGE$\varepsilon$}_{\text{E}}) \times \mbox{\LARGE$\varepsilon$}_{\text{W}} \times (1-\mbox{\LARGE$\varepsilon$}_{\text{W}}) }.
 \end{equation}
 
-This denominator accounts for the fact that the efficiencies of the east and west RPs are correlated. To be more precise, unsuccessful reconstruction/selection of RP track on the east and west side in the same event can be a result of a pile-up interaction, typically of elastic proton-proton scattering, producing additional tracks/showers simultaneously in east and west RPs and thus introducing simultaneous east and west RP inefficiency. Without this factor the sole product of east and west efficiencies would account for discussed inefficiency twice - the total RP efficiency woule be then underestimated. The effect is small (as can be read from Fig.~\ref{fig:SimultaneousEastWestRpTrackLoss}), but we correct for it for completeness.
-
+The correlation coefficient $\rho_{\text{EW}}$ governs information about simultaneous unsuccessful reconstruction/selection of RP track on the east and west side in the same event. This can be a result of e.g. a pile-up interaction, typically of elastic proton-proton scattering, producing additional tracks/showers simultaneously in east and west RPs and thus introducing simultaneous east and west RP inefficiency. Also, some corruption of the data stream might lead to unsuccessful reconstruction of the entire event. With the above correlation taken into account we are able to properly reconstruct the yield of true-level events and shape of distributions from the measured events, as shown in the closure test in Sec.~\ref{subsec:closureTestRp}.
 
 In the component of RP efficiency related to the trigger we can use again the conditional probability and factorize it to part connected with the trigger veto (first) and the efficiency of detecting a signal of both forward protons by the trigger system (second):
 \begin{equation}
 \mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\land~!\V\right) = \mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)\times\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right).
 \end{equation}
 
-Efficiency of the triggering $\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right)$ is basically 1. Efficiency of the (lack of) veto if forward protons are triggering in east and west RPs can be decomposed to efficiency of the veto induced by the pile-up interaction in the same bunch crossing ($\Vpu$) and efficiency of the veto induced by the interaction of the CEP protons with the material of the accelerator and detectors ($\Vdm$):
+Efficiency of the triggering $\mbox{\LARGE$\varepsilon$}\left(\TRE\land\TRW\right)$ is much above 99\% (see the Ref.~\cite{supplementaryNote}). Efficiency of the (lack of) veto if forward protons are triggering in east and west RPs can be decomposed to efficiency of the veto induced by the pile-up interaction in the same bunch crossing ($\Vpu$) and efficiency of the veto induced by the interaction of the CEP protons with the material of the accelerator and detectors ($\Vdm$):
 \begin{equation}\label{eq:trigerEffFact}
 \begin{split}
 \mbox{\LARGE$\varepsilon$}\left(!\V\left|\TRE\land\TRW\right.\right)=\Bigg|\V=\Vpu\vee\Vdm\Bigg|=\mbox{\LARGE$\varepsilon$}\left(!\Vpu\land~!\Vdm\left|\TRE\land\TRW\right.\right) = \\ 

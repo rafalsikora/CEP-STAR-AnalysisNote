@@ -43,6 +43,8 @@ where $N^{w}$ is weighted number of measured events in given bin, $N^{w}_{\text{
 \[\textrm{sign}\in\{+,-\},~~\textrm{side}\in\{E,W\}\]
 % () 
 
+Figure~\ref{fig:weights} shows the distribution of weights for all three types of analyzed particle pairs. These correction factors are large,  however they are products of many other factors which are in general close to 1.
+
 %---------------------------
 \begin{figure}[h!]
 \centering%
@@ -263,7 +265,7 @@ Comparison of efficiencies in Fig.~\ref{fig:onlineAndOfflineVetoEff} with simila
 
 \subsubsection{Missing \texorpdfstring{$p_{\text{T}}$}{pT} cut~(\ref{enum:CutMissingPt})}
 
-The resolution of the total transverse momentum is in general determined by the angular divergence of the proton beams. This angular divergence is connected with imperfect collimation of the beams - protons do not circulate in RHIC along a single closed line, they rather move within certain volume\footnote{In other words, their phase-space during orbitation is not point-like, it is elliptic. The area of this elliptic phase space is called emittance. The lower the emittance is, the better collimation of the beam is and lower transverse size of the beam is.}. Based on known parameters of the beams in run 15 (see Ref.~\cite{run15Overview}) expected divergence for a single beam (and single transverse spatial coordinate) amounts 180~$\mu$rad. In forward proton track reconstruction the direction of the incoming proton is assumed to be the same in each event (aligned with nominal $z$-axis), hence effectively the transverse components of reconstructed forward protons momenta are smeared by this amount. One can check the comparison of the collinerities of elastically scattered protons in the data and embedded MC (Fig.~10.19 of Ref.~\cite{supplementaryNote}) to see the satisfactory agreement between the two with assumed MC divergence equal to 180~$\mu$rad. For 100~GeV beam such divergence results in smearing of the tranverse momentum components for (elastically) scattered protons equal $100~\text{GeV}\times 180\cdot 10^{-6} = 18~\text{MeV}$. Using this value to calculate the resolution of total $p_{x}$($p_{y}$) momentum of two forward protons we get $\sqrt{2}\times 18~\text{MeV} = 25.5~\text{MeV}$. One can compare it with the output of fits to distributions of  $p_{x}^{\text{miss}}$($p_{y}^{\text{miss}}$) and find that indeed the angular beam divergence dominates the resolution of the total transverse momentum in CEP events. 
+The resolution of the total transverse momentum is in general determined by the angular divergence of the proton beams. Based on known parameters of the beams in run 15 (see Ref.~\cite{run15Overview}) expected divergence for a single beam amounts 180~$\mu$rad. In forward proton track reconstruction the direction of the incoming proton is assumed to be the same in each event (aligned with nominal $z$-axis), hence effectively the transverse components of reconstructed forward protons momenta are smeared by this amount. One can check the comparison of the collinerities of elastically scattered protons in the data and embedded MC (Fig.~10.19 of Ref.~\cite{supplementaryNote}) to see the satisfactory agreement between the two with assumed MC angular divergence equal to 180~$\mu$rad. For 100~GeV beam such divergence results in smearing of the tranverse momentum components for (elastically) scattered protons equal $100~\text{GeV}\times 180\cdot 10^{-6} = 18~\text{MeV}$. Using this value to calculate the resolution of total $p_{x}$($p_{y}$) momentum of two forward protons we get $\sqrt{2}\times 18~\text{MeV} = 25.5~\text{MeV}$. One can compare it with the output of fits to distributions of  $p_{x}^{\text{miss}}$($p_{y}^{\text{miss}}$) and find that indeed the angular beam divergence dominates the resolution of the total transverse momentum in CEP events. 
 
 There is, however, another ingredient to the total transverse momentum resolution, namely the momentum resolution of the central tracks, whose significance rises up together with increasing track $p_{\text{T}}$. Most of CEP events is characterized by low invariant mass of the central tracks pair ($\lesssim 1.5$~GeV) which is inextricably linked with low momentum of tracks ($\lesssim 0.7$~GeV), therefore an effect of $p_{\text{T}}^{\text{miss}}$ widening is barely visible in the missing momentum distribution integrated over mass (e.g. Fig.~\ref{fig:MissingPxPy}). Nevertheless one can calculate the efficiency of the exclusivity cut as a function of the central tracks momenta to directly see this effect.
 
@@ -365,24 +367,29 @@ It should be noted that the momentum components $(p_{x}, p_{y})$ were taken from
 \end{minipage}%
 \quad\quad%
 \begin{minipage}{.4725\textwidth}%
-  \centering
-  \includegraphics[width=\linewidth]{graphics/corrections/SimultaneousEastWestRpTrackLoss.pdf}%
-  \caption{Probability of simultaneous inefficiency of the RP track reconstruction calculated from the CEP MC embedded into zero-bias data.\newline\newline\newline\newline\newline}\label{fig:SimultaneousEastWestRpTrackLoss}
+  \centering%
+% % %   \includegraphics[width=\linewidth]{graphics/corrections/SimultaneousEastWestRpTrackLoss.pdf}%
+% % %   \caption{Probability of simultaneous inefficiency of the RP track reconstruction calculated from the CEP MC embedded into zero-bias data.\newline\newline\newline\newline\newline}\label{fig:SimultaneousEastWestRpTrackLoss}
+  \includegraphics[width=\linewidth]{graphics/corrections/RpTotalEffEastWestCorrelationVsMandelstamTSum.pdf}%
+  \caption{Correlation between joint RP track reconstruction and trigger efficiency (no dead material veto) in east and west RPs calculated from the CEP MC embedded into zero-bias data. The result for protons within the fiducial region and with vertex position $|z_{\text{vtx}}|<80$~cm in four different combinations of east and west branches are presented as a function of the total squared four-momentum transfer.}\label{fig:SimultaneousEastWestRpTrackLoss}
 \end{minipage}%
 \end{figure}%
 %---------------------------
 
 
-The efficiency calculated in the way described above is, by design, the acceptance, reconstruction and selection efficiency for a single proton on one side of the IP. In CEP event there are two independent forward protons which may be simultaneously not reconstructed or rejected by the selection algorithm due to e.g. elastic pile-up interaction providing additional good quality proton tracks on both sides of IP. One could, in principle, calculate 5-dimensional efficiency for both forward protons (in variables $p_{x}^{\text{E}}, p_{y}^{\text{E}}, p_{x}^{\text{W}}, p_{y}^{\text{W}}$ and $z_{\text{vtx}}$) which would ultimately account for the simultaneous east and west inefficiency, however this would require orders of magnitude larger statistics of MC to provide reasonably low statistical uncertainty of the efficiency. Instead, on top of the 3-dimensional reconstruction and selection efficiencies for east and west RPs we calculate (from embedded MC) probability that the proton tracks are simultaneously not reconstructed or selected on the east and west side, despite the trigger signal solely in expected RP branches (no trigger veto) and true-level $(p_{x}, p_{y})$ of both forward protons contained in the fiducial region. This probability, denoted as
-\begin{equation}
-\mathcal{P}^{\text{E\&W}}_{\text{loss}} = \mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right),
-\end{equation}
- is presented in Fig.~\ref{fig:SimultaneousEastWestRpTrackLoss} for all four comibnations of east and west RP branches.
+The efficiency calculated in the way described above is, by design, the acceptance, reconstruction and selection efficiency for a single proton on one side of the IP. In CEP event there are two independent forward protons which may be simultaneously not reconstructed or rejected by the selection algorithm due to e.g. elastic pile-up interaction providing additional good quality proton tracks on both sides of IP. One could, in principle, calculate 5-dimensional efficiency for both forward protons (in variables $p_{x}^{\text{E}}, p_{y}^{\text{E}}, p_{x}^{\text{W}}, p_{y}^{\text{W}}$ and $z_{\text{vtx}}$) which would ultimately account for the simultaneous east and west inefficiency, however this would require orders of magnitude larger statistics of MC to provide reasonably low statistical uncertainty of the efficiency. Instead, on top of the 3-dimensional reconstruction and selection efficiencies for east and west RPs we calculate (from embedded MC) correlation between these efficiencies, as defined in Eq.~\eqref{eq:rpEffCorrelation} of appendix~\ref{appendix:totalRpEffFormulation}. It is shown in 
+Fig.~\ref{fig:SimultaneousEastWestRpTrackLoss} for all four comibnations of east and west RP branches. A need to account for this correlation was found based on the closure tests performed on the MC sample.
+
+% probability that the proton tracks are simultaneously not reconstructed or selected on the east and west side, despite the trigger signal solely in expected RP branches (no trigger veto) and true-level $(p_{x}, p_{y})$ of both forward protons contained in the fiducial region. This probability, denoted as
+% \begin{equation}
+% \mathcal{P}^{\text{E\&W}}_{\text{loss}} = \mbox{\LARGE$\varepsilon$}\left(!\RPE\land~!\RPW\Big|\TRE\land\TRW\land~!\V\Big.\right),
+% \end{equation}
+%  is presented in Fig.~\ref{fig:SimultaneousEastWestRpTrackLoss} for all four comibnations of east and west RP branches.
 
 
 
 
-
+\newpage
 \subsection{TPC vertex reconstruction efficiency}\label{sec:tpcVxRecoEff}
 
 %---------------------------
@@ -416,7 +423,8 @@ where $z_{0}^{+}$ and $z_{0}^{-}$ are longitudinal impact parameters ($z$-coordi
   \end{equation}
 \end{enumerate}
 
-Distribution of $|\Delta z_{0}|$ between two CEP global track candidates after full selection ($set A$) is presented in Fig.~\ref{fig:deltaZ0}. The vertexing efficiency obtained with described method is shown in Fig.~\ref{fig:vertexingEff}. Solid green points represent efficiency calculated with the non-exclusive background preserved, while open black points represent efficiency with this background subtracted (using method described in Sec.~\ref{sec:bkgdSubtraction}). Since the vertexing efficiency does not depend on the physics process and background is purely of physics origin the black and green points should overlap. Such picture emerges from presented comparison. We have calculated the same efficiency using CEP MC embedded into zero-bias data, the result is shown in Fig.~\ref{fig:vertexingEff} with red points. There is very good agreement between vertexing efficiency in the data and embedded MC for $|\Delta z_{0}|<1$~cm, where most ($\sim80\%$) of the signal is present. The differences in high-$|\Delta z_{0}|$ tail are understood as a result of the imperfect description of the pointing resolution (here: the transverse resolution) of TPC tracks in STARsim. Although the pointing resolution is adjusted to gain more accurate description of the data by MC simulation as described in Chapter~8 of Ref.~\cite{supplementaryNote}, this does not help with the vertexing which is performed at the level of raw data (MC) processing to MuDst. Another reason could be different $p_{\text{T}}$ (thus also $d_{0}$) spectrum of CEP tracks in the data and MC (GenEx).
+Distribution of $|\Delta z_{0}|$ between two CEP global track candidates after full selection ($set A$) is presented in Fig.~\ref{fig:deltaZ0}. The vertexing efficiency obtained with described method is shown in Fig.~\ref{fig:vertexingEff}. Solid green points represent efficiency calculated with the non-exclusive background preserved, while open black points represent efficiency with this background subtracted% (using method described in Sec.~\ref{sec:bkgdSubtraction})%
+. Since the vertexing efficiency does not depend on the physics process and background is purely of physics origin the black and green points should overlap. Such picture emerges from presented comparison. We have calculated the same efficiency using CEP MC embedded into zero-bias data, the result is shown in Fig.~\ref{fig:vertexingEff} with red points. There is very good agreement between vertexing efficiency in the data and embedded MC for $|\Delta z_{0}|<1$~cm, where most ($\sim80\%$) of the signal is present. The differences in high-$|\Delta z_{0}|$ tail are understood as a result of the imperfect description of the pointing resolution (here: the transverse resolution) of TPC tracks in STARsim. Although the pointing resolution is adjusted to gain more accurate description of the data by MC simulation as described in Chapter~8 of Ref.~\cite{supplementaryNote}, this does not help with the vertexing which is performed at the level of raw data (MC) processing to MuDst. Another reason could be different $p_{\text{T}}$ (thus also $d_{0}$) spectrum of CEP tracks in the data and MC (GenEx).
 
 %---------------------------
 \begin{figure}[ht!]%
@@ -542,38 +550,36 @@ Multiplicative correction factor (per track) that takes into account all migrati
 This correction is graphically represented in Fig.~\ref{fig:migrationsAndFakesCorr} for both TPC (\ref{fig:migrationPtEta}) and RP (\ref{fig:migrationPxPy}) tracks. One can easily notice that most important role plays correction related to migrations at the edge of fiducial region defining accepted forward scattered protons, reaching as much as 25\% correction for tracks at the corners of allowed $(p_{x}, p_{y})$. This is a direct consequence of sizeable angular divergence of proton beams.
 
 
-
-
 %--------------------------- 
-\begin{figure}%[ht!] 
+\begin{figure}\vspace{-30pt}%[ht!] 
 \centering
 \parbox{0.315\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:MigrationsInto_PtEta}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/MigrationsInto_PtEta.pdf}}}
+                \subcaptionbox{\label{fig:MigrationsInto_PtEta}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/MigrationsInto_PtEta.pdf}\vspace*{-5pt}}}
   \end{subfigure}
 }
 \quad
 \parbox{0.315\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:MigrationsOutside_PtEta}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/MigrationsOutside_PtEta.pdf}}}
+                \subcaptionbox{\label{fig:MigrationsOutside_PtEta}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/MigrationsOutside_PtEta.pdf}\vspace*{-5pt}}}
   \end{subfigure}
 }
 \quad
 \parbox{0.315\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:Fakes_PtEta}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/Fakes_PtEta.pdf}}}
+                \subcaptionbox{\label{fig:Fakes_PtEta}}{\includegraphics[width=1.05\linewidth]{graphics/corrections/Fakes_PtEta.pdf}\vspace*{-5pt}}}
   \end{subfigure}
-}% 
+}\vspace*{-5pt}% 
 \caption[Fractions of migrating and fake TPC tracks matched with TOF.]{Fraction of TOF-matched TPC tracks migrating into the fiducial central tracks phase space from outside of it (\subref{fig:MigrationsInto_PtEta}), migrating outside the fiducial phase space from inside of it (\subref{fig:MigrationsOutside_PtEta}), and fraction of fake TOF matched TPC tracks reconstructed in the fiducial phase space (\subref{fig:Fakes_PtEta}). In case of reconstructed ($p_{T}$, $\eta$) escaping the fiducial phase space (\subref{fig:MigrationsOutside_PtEta}) the true value of $p_{T}$ and $\eta$ is used; otherwise reconstructed values are plotted.}
 \label{fig:migrationsAndFakes_TPC}%
 \end{figure}
 
 
 %--------------------------- 
-\begin{figure}%[ht!]
+\begin{figure}%[ht!] 
 \centering
 \parbox{0.315\textwidth}{
   \centering
@@ -623,10 +629,12 @@ This correction is graphically represented in Fig.~\ref{fig:migrationsAndFakesCo
 
 
 
-\section{Background subtraction}\label{sec:bkgdSubtraction}
+% \section{Background subtraction}\label{sec:bkgdSubtraction}
 % \section{Unfolding}\label{sec:unfolding}
 
-\section{Detector resolutions}
+\section{Detector resolutions}\label{sec:resolutions}
+
+In this section we present studies of detector resolutions of quantities relevant in the physics analysis. These resolutions were used to establish proper binning of the measured differential cross sections.
 
 % %---------------------------
 % \begin{figure}[h]
@@ -843,7 +851,7 @@ where $N_{i}$ is a number of CEP events in $i$-th run and $L_{i}$ is a luminosit
 \end{equation}
 which is simply an average integrated cross section calculated with full dataset, weighted by the uncertainties (by reciprocal of variance).
 
-Final pull histogram is shown in Fig.~\ref{fig:pull} for raw event counts (open circles) and efficiency-corrected events weighted according to prescription from Eq.~\eqref{eq:weight} (filled circles). Parameters of the Gaussian fits to data points show agreement of the mean value with 0, as expected from the pull, and significant improvement of the width of distribution after appliance of corrections, which should be consistent with 1.
+Final pull histogram is shown in Fig.~\ref{fig:pull} for raw event counts (open circles) and efficiency-corrected events weighted according to prescription from Eq.~\eqref{eq:weight} (filled circles). Parameters of the Gaussian fits to data points show some deviation of the mean value from 0, and significant improvement of the width of distribution after appliance of corrections, which should be consistent with 1, as observed.
 
 
 %---------------------------
@@ -860,22 +868,171 @@ Final pull histogram is shown in Fig.~\ref{fig:pull} for raw event counts (open 
 \end{figure}
 %---------------------------
 
-\subsection{Monte Carlo closure tests}
-% \subsubsection{TPC and TOF efficiency correction validation}
-% \subsubsection{RP efficiency correction validation}
-\subsubsection{Total correction validation}
+\subsection{Monte Carlo closure tests}\label{subsec:mcClosure}
 
+To verify that corrections are properly applied and reconstructed+corrected distributions reproduce these at the true-level, the closure tests are performed. Monte Carlo events are subjected to the same analysis flow as the data, and the corrected observables are compared with the MC input.
 
-% %---------------------------
+In the closure tests presented below, distributions at the true level are assumed to be known with infinite statistical precision (count uncertainties are assumed to be equal to 0). This enables statistical comparison of the reconstructed and corrected distributions with those at the true level.
+
+\subsubsection{TPC and TOF efficiency correction validation}\label{subsec:closureTestTpcTof}
+
+%---------------------------
 \begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
   \centering
-  \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}} 
-    \subfigimg[width=\linewidth,page=1]{a)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_InvMass.pdf} &
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~b)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_Rapidity.pdf} \\
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~c)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_MandelstamTSum.pdf} &
-    \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~d)}{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_DeltaPhi.pdf}
-  \end{tabular}
-\caption[Full closure test.]{Full closure test.}\label{fig:closureTestFull}%
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:tpcTofSingleTrkClosureTrackPt}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_TrackPtTrueCutSet1.pdf}\vspace*{-15pt}}
+  \end{subfigure} 
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:tpcTofSingleTrkClosureTrackEta}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_TrackEtaTrueCutSet1.pdf}\vspace*{-15pt}}
+  \end{subfigure}
+}%
+\caption[Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample.]{Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample. Distributions of the true-level track $p_{\text{T}}$~\subref{fig:tpcTofSingleTrkClosureTrackPt} and true-level $\eta$~\subref{fig:tpcTofSingleTrkClosureTrackEta} corrected for single-particle TPC efficiency (red points) and single-particle TPC and TOF efficiency (blue points) are compared with the true-level distributions of corresponding observables (black points). }\label{fig:closureTestTpcTofSingleTrk}%
+\end{figure}
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:tpcTofClosureInvMass}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_PairInvMassTrueCutSet1.pdf}\vspace*{-15pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:tpcTofClosureMandelstamTSum}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_MandelstamTSumTrueCutSet1.pdf}\vspace*{-15pt}}
+  \end{subfigure} 
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:tpcTofClosureRapidity}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_PairRapidityTrueCutSet1.pdf}\vspace*{-15pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:tpcTofClosureDeltaPhi}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_DeltaPhiDegreesTrueCutSet1.pdf}\vspace*{-15pt}}
+  \end{subfigure}
+}%
+\caption[Results of TPC and TOF efficiency correction closure test on embedded signal MC sample.]{Results of TPC and TOF efficiency correction closure test on embedded signal MC sample. Distributions of the true-level pion pair invariant mass~\subref{fig:tpcTofClosureInvMass} and rapidity~\subref{fig:tpcTofClosureRapidity}, as well as forward proton total squared four-momentum transfer~\subref{fig:tpcTofClosureMandelstamTSum} and azimuthal separation~\subref{fig:tpcTofClosureDeltaPhi} for events with both central state pion TPC tracks reconstructed (red points) and additionally matched with TOF (blue points), are compared with the true level distributions of corresponding observables (black points). All events were required to be contained within the fiducial region of the measurement.}\label{fig:closureTestTpcTof}%
+\end{figure}
+
+
+
+
+
+
+\subsubsection{RP efficiency correction validation}\label{subsec:closureTestRp}
+The joint RP track reconstruction and selection efficiency and the dead-material-induced veto efficiency is tested here.
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:EffValidation_RP_SingleTrack_px_East}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_SingleTrack_px_East.pdf}\vspace*{-15pt}}\\
+  \end{subfigure}\\ 
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:EffValidation_RP_SingleTrack_px_West}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_SingleTrack_px_West.pdf}\vspace*{-15pt}}\\
+  \end{subfigure}
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:EffValidation_RP_SingleTrack_py_East}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_SingleTrack_py_East.pdf}\vspace*{-15pt}}\\
+  \end{subfigure}\\ 
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:EffValidation_RP_SingleTrack_py_West}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_SingleTrack_py_West.pdf}\vspace*{-15pt}}\\
+  \end{subfigure}
+}%
+\caption[Results of RP single-track efficiency correction closure test on embedded signal MC sample.]{Results of RP single-track efficiency correction closure test on embedded signal MC sample. Distributions of the true-level track $p_{x}$ (left) and $p_{y}$ (right) for East (top) and West (bottom) RPs corrected for single-particle RP efficiency (red points) are compared with the true-level distributions of corresponding observables (black points). The true-level quantities here are taken after the angular beam divergence being applied.}\label{fig:closureTestTpcTofSingleTrk}%
+\end{figure}
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:EffValidation_RP_px_East}}{\includegraphics[width=0.96\linewidth,page=1]{graphics/corrections/EffValidation_RP_px_East.pdf}\vspace*{-15pt}}\\
+  \end{subfigure}\\ 
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:EffValidation_RP_px_West}}{\includegraphics[width=0.96\linewidth,page=1]{graphics/corrections/EffValidation_RP_px_West.pdf}\vspace*{-15pt}}\\
+  \end{subfigure}\\ 
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:EffValidation_RP_DeltaPhi}}{\includegraphics[width=0.96\linewidth,page=1]{graphics/corrections/EffValidation_RP_DeltaPhi.pdf}\vspace*{-15pt}}
+  \end{subfigure}
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-4}
+                \subcaptionbox{\label{fig:EffValidation_RP_py_East}}{\includegraphics[width=0.96\linewidth,page=1]{graphics/corrections/EffValidation_RP_py_East.pdf}\vspace*{-15pt}}\\
+  \end{subfigure}\\ 
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:EffValidation_RP_py_West}}{\includegraphics[width=0.96\linewidth,page=1]{graphics/corrections/EffValidation_RP_py_West.pdf}\vspace*{-15pt}}\\
+  \end{subfigure}\\ 
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:EffValidation_RP_MandelstamTSum}}{\includegraphics[width=0.96\linewidth,page=1]{graphics/corrections/EffValidation_RP_MandelstamTSum.pdf}\vspace*{-15pt}}
+  \end{subfigure}
+}%
+\caption[Results of RP efficiency correction closure test on embedded signal MC sample.]{Results of RP efficiency correction closure test on embedded signal MC sample. Distributions of the true-level track $p_{x}$, $p_{y}$, as well as $\Delta\varphi$ and $|t_{1}+t_{2}|$ corrected for full two-proton RP efficiency (red points) are compared with the true-level distributions of corresponding observables (black points). The true-level quantities here are taken after the angular beam divergence being applied.}\label{fig:closureTestTpcTofSingleTrk}%
+\end{figure}
+
+
+
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering 
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:EffValidation_RP_DeltaPhi_NoMatchingRequired}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_DeltaPhi_NoMatchingRequired.pdf}\vspace*{-15pt}}
+  \end{subfigure}
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:EffValidation_RP_MandelstamTSum_NoMatchingRequired}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_MandelstamTSum_NoMatchingRequired.pdf}\vspace*{-15pt}}
+  \end{subfigure}
+}%
+\caption[Results of RP efficiency, migrations and fakes correction closure test on embedded signal MC sample.]{Results of RP efficiency,  migrations and fakes correction closure test on embedded signal MC sample. Distributions of the reconstructed and corrected $\Delta\varphi$ and $|t_{1}+t_{2}|$ corrected for full two-proton RP efficiency (red points) are compared with the true generator-level distributions of corresponding observables (black circles). By definition, both forward protons were required to be contained within the fiducial region of the measurement, either at the generator level (black) or reconstructed level (red).}\label{fig:closureTestTpcTofSingleTrk}% 
+\end{figure}
+
+
+
+
+\subsubsection{Total correction validation}\label{subsec:closureTestFull} 
+
+%---------------------------
+\begin{figure}[h]
+\centering
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+                \subcaptionbox{\label{fig:fullClosureInvMass}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_InvMass.pdf}\vspace*{-15pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:fullClosureMandelstamTSum}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_MandelstamTSum.pdf}\vspace*{-15pt}}
+  \end{subfigure} 
+}%
+\quad\quad%
+\parbox{0.4725\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+                \subcaptionbox{\label{fig:fullClosureRapidity}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_Rapidity.pdf}\vspace*{-15pt}}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+                \subcaptionbox{\label{fig:fullClosureDeltaPhi}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/FullCorrectionValidation_NoMatchingRequired_EffUsingRecoValues_DeltaPhi.pdf}\vspace*{-15pt}}
+  \end{subfigure}
+}%
+\caption[Results of full closure test on embedded signal MC sample.]{Results of full closure test on embedded signal MC sample. Reconstructed and corrected distributions of the pion pair invariant mass~\subref{fig:fullClosureInvMass} and rapidity~\subref{fig:fullClosureRapidity}, as well as forward proton total squared four-momentum transfer~\subref{fig:fullClosureMandelstamTSum} and azimuthal separation~\subref{fig:fullClosureDeltaPhi} after CEP event selection, are compared with the true generator-level distributions of corresponding observables. By definition, all events were required to be contained within the fiducial region of the measurement, either at the generator level (black) or reconstructed level (red).}\label{fig:closureTestFull}%
 \end{figure}
 
 
@@ -899,7 +1056,7 @@ The measurement is further restricted to two regions of $\Delta\varphi<45^\circ$
 
 
 % %---------------------------
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \begin{tabular}{@{}p{0.49\linewidth}@{\quad}p{0.49\linewidth}@{}} 
     \subfigimg[width=\linewidth,page=1]{~~~~~~~~~~a)}{graphics/corrections/deltaPhiAcceptance.pdf} &
