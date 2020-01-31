@@ -30,29 +30,6 @@ Finally, the total systematic uncertainty of the integrated luminosity is a quad
 \end{equation}
 
 
-% w obszarze wspólnym z analizą elastyczna stosunek N/lumi = 5.40 +- 0.16
-% 
-% W całym zakresie
-% 
-% N/lumi = 5.15
-% 
-% 
-% Co daje zmianę (0.25+-0.15) /5  =  5 +- 3 %
-% 
-% 
-% Mozna dać oszacowanie mało konserwatywne i stwierdzić że różnica 5 + - 3
-% nie jest
-% znacząca i przyjąć bład statystyczny 3% jako dodatkowy błąd na lumi.
-% Czyli całkowity błąd sqrt(16+9) = 5 %
-% 
-% Można być bardziej ostrożnym i przyjąć 5% jako dodatkowy błąd na
-% nrmalizację:
-% 
-% 
-% Czyli całkowity błąd sqrt(16+25) = 7 %
-
-
-
 \begin{figure}[h]
 \centering
 \includegraphics[width=.48\textwidth,page=2]{graphics/systematics/sigmaVsRunNumber.pdf}~~~~%
@@ -91,55 +68,20 @@ Results presented in Fig.~\ref{fig:systDMveto} indicate imperfect description of
 
 \section{TPC track quality cuts variation}\label{sec:systTpcQuaCuts}
 
+We have tested senstivity of the fiducial cross-sections on the variation of the quality cuts used in TPC track selection. Any change of these cuts requires re-calculation of the TPC track reconstruction and TOF matching efficiencies (the latter is conditional w.r.t. the former). We have checked two working points, 'loose' and 'tight, with different set of cuts on $d_{0}$, $N_{\text{fit}}^{\text{hits}}$ and $N^{\text{hits}}_{\text{dE/dx}}$ compared to nominal working point. Definition of 'loose' and 'tight' cuts is provided in Sec.~3.2.4 of Ref.~\cite{supplementaryNote}, together with depiction of resulted changes of the efficiencies.
+
+Observed ratios of the cross-sections obtained with modified cuts and accordingly redefined TPC and TOF efficiencies, to the nominal cross-section, are shown in Fig.~\ref{fig:tpcQuaVariation}. The upward and downward relative changes of the cross-sections were added in quadrature. The resulting systematic uncertainty of the cross-section related to TPC track quality cuts is estimated to be $^{+2.0}_{-1.5}\%$.
+ 
 \begin{figure}[h]
 \centering
 \includegraphics[width=.8\textwidth,page=2]{graphics/systematics/TrackQualityCutVariation_InvMass.pdf}
 %
-\caption{Result of variation of the TPC track quality cuts on the fiducial differential exclusive $\pi^{+}\pi^{-}$ production cross-section as a function of the invariant mass of pion pair.}
-\label{systematics_01}
+\caption[Result of variation of the TPC track quality cuts on $d\sigma/dm(\pi^{+}\pi^{-})$.]{Result of variation of the TPC track quality cuts on the fiducial differential exclusive $\pi^{+}\pi^{-}$ production cross-section as a function of the invariant mass of $\pi^{+}\pi^{-}$. Dashed horizontal lines respresent an average ratio for a modified cut marked with the same color.}
+\label{fig:tpcQuaVariation}
 \end{figure}
 
-%% OLDER VERSION
-% Triggers dedicated for elastic scattering process (RP\_ET triggers) have been studied. The trigger required signal in at least one PMT (out of four) in two RP branches opposite to each other with respect to interaction region. In addition to trigger selection, vetoes were imposed offline on any activity in other STAR detectors, such as BBC (small and large), ZDC, TOF and VPD - it reduced probability of a non-elastic pile-up interaction. Next, single good quality RP tracks on both sides of the IP were required, as it is done in nominal CEP analysis. The difference was that an event was accepted only if tracks were reconstructed in opposite branches. The tracks were required collinear at $3\sigma$ level (see Fig.~10.19 in Ref.~\cite{supplementaryNote}). This assured that tracks originated from elastically scattered protons and significantly reduced possibility of analyzing events with reconstructed fake protons.
-% 
-% 
-% %---------------------------
-% \begin{figure}[ht!]
-% \centering%
-% \parbox{0.4725\textwidth}{%
-%   \centering%
-%   \includegraphics[width=\linewidth,page=10]{graphics/corrections/mcDeadMatProbPxPy_trackRequired.pdf}\label{fig:sampleDeadMatVetoProb}
-% }%
-% \quad%
-% \parbox{0.4725\textwidth}{%
-%     \caption[Sample probability of ET\&IT trigger veto due to forward proton interaction with dead material with required RP track.]{Sample probability of ET\&IT trigger veto due to forward proton interaction with dead material, under condition of well reconstructed RP track matched with true level primary proton. Results were obtained from forward proton MC simulation embedded into zero-bias data.}\label{fig:sampleRpDeadMatVeto_trackRequired}%
-% }
-% \end{figure}
-% %---------------------------
-% 
-% 
-% Once the sample of events was selected with above cut flow, each side (branch) was analyzed independently. Two histograms were filled per event. The first histogram was filled with all selected events. The second histogram was filled only if there was no simultaneous signal in upper and lower RP on studied side (no ET and IT trigger bits fired at the same time) - just the same as it was implemented in RP\_CPT2 trigger. However, the second histogram was filled with weight equal to inverse efficiency of the veto, $1/\mbox{\LARGE$\epsilon$}_{\text{DM~veto}}^{\text{side}}$. The ratio of the second to first histogram,
-% \begin{equation}
-%  R_{\text{DM~veto}} = \frac{\text{histogram of events with satisfied veto, filled with weight } 1/\mbox{\LARGE$\epsilon$}_{\text{DM~veto}}^{\text{side}}}{\text{histogram of all events, fill with unit weight}},
-% \end{equation}
-% has been presented in Fig.~\ref{fig:systDMveto}.
-% 
-% \begin{figure}[h]
-% \centering
-% \includegraphics[width=.48\textwidth,page=1]{graphics/systematics/deadMatSyst_protonTrackRequired.pdf}~~~~%
-% \includegraphics[width=.48\textwidth,page=2]{graphics/systematics/deadMatSyst_protonTrackRequired.pdf}%
-% \caption[Estimated systematic uncertainty related to trigger veto induced by interaction with dead material.]{Ratio $R_{\text{DM~veto}}$ illustrating systematic uncertainty of the dead material trigger veto correction in east (left) and west (right) Roman Pots.}
-% \label{fig:systDMveto}
-% \end{figure}
-% 
-% Results presented in Fig.~\ref{fig:systDMveto} indicate imperfect description of the dead material of the elements surrounding RPs (DX-D0 chamber, RF shield), which has been also overved in studies of systematic uncertainties related to RP track reconstruction efficiency, presented in Ref.~\cite{supplementaryNote}. Based on current study, systematic uncertainty of the dead material veto efficiency $\mbox{\LARGE$\epsilon$}_{\text{DM~veto}}^{\text{side}}$ is assumed to have following form: 
-% \begin{itemize}
-%  \item in the part of fiducial region other than that limited by Ineq.~10.5 of Ref.~\cite{supplementaryNote}, marked with dashed yellow line in Fig.~\ref{fig:systDMveto}, the systematic uncertainty is assumed to be equal to $|R_{\text{DM~veto}}|$, therefore propagation of this systematic effect is done by variating the efficiency $\mbox{\LARGE$\epsilon$}_{\text{DM~veto}}^{\text{side}}$ by the multiplicative factor equal to $\pm|R_{\text{DM~veto}}|$,
-%  \item in the part of fiducial region limited by Ineq.~10.5 of Ref.~\cite{supplementaryNote} (corners with $R_{\text{DM~veto}}$ significantly exceeding unity) a multiplicative correction is applied to $\mbox{\LARGE$\epsilon$}_{\text{DM~veto}}^{\text{side}}$, equal to $\frac{1}{2}R_{\text{DM~veto}}$, and propagation of this systematic effect is done by variating the corrected efficiency by the multiplicative factor equal to $\pm\frac{1}{2}|R_{\text{DM~veto}}|$.
-% \end{itemize}
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 \section{Discussion of systematic effects}\label{sec:systEffectsList}
 The following contributions to the overall systematic uncertainty have been studied. Influence of each systematic effect on measured cross sections has been tested by changing amount of the quantity that the systematic effect refers to and comparing the result with that obtained using nominal values.
@@ -153,6 +95,9 @@ The following contributions to the overall systematic uncertainty have been stud
  %
  \item \textbf{Modelling of the dead material in front of the TPC ($\bm{\Delta\varepsilon_{\text{TPC}}}$ (dead mat.)).}\\
  Not all detector elements are fully modeled in the MC simulation, quite often some simplifications are used. This leads to inaccuracies in efiiciencies derived from the simulation. We estimated systematic uncertainty related to amount of simulated material between the primary vertex and STAR TPC to be 25\% which translates to $\approx 0.5\%$ of uncertainty of the TPC track reconstruction efficiency. See Chap.~9 of Ref.~\cite{supplementaryNote} for details.
+ %
+ \item \textbf{Modelling of TPC track quality parameters in embedded MC ($\bm{N^{\text{hits}}}$ and $\bm{d_{0}/\text{DCA}(R)}$).}\\
+ We have checked the impact of variation of the track quality cuts on the obtained cross-sections. It reflects systematic uncertainty related to the quality of modeeling of the quantities used to select the primary TPC tracks. The estimated uncertainty on the fiducial cross-section amounts $^{+2.0}_{-1.5}\%$. See Sec.~\ref{sec:systTpcQuaCuts}.
   %
  \item \textbf{Vertexing ($\bm{\Delta\epsilon_{\text{vtx}}}$).}\\
  Vertexing efficiency has been obtained using data-driven method presented in Sec.~\ref{sec:tpcVxRecoEff}, thus systematic uncertainty related to this efficiency has been significantly reduced. Systematic uncertainty has been estimated as a difference between efficiency with and without subtracted background.
