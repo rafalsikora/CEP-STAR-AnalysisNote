@@ -8,35 +8,41 @@
 \chapter{Systematic uncertainties}\label{chap:systematicErrors} 
 
 \section{Luminosity}\label{sec:lumiSyst}
-For determination of the systematic uncertainty of the integrated luminosity we use the results of dedicated study of data from vernier scans~\cite{lumiNote} performed during fill \#18915. These scans were targeted on providing a precise calculation of the luminosity and an estimate of its uncertainty for the elastic proton-proton scattering measurement~\cite{elasticNote}. From this study we learn that the effective cross-secton visible in the ZDC detectors is equal to 0.294~mb with 4\% systematic uncertainty. The number is different from the effective ZDC cross-section used in the initial calculation of the luminosity at STAR, equal to 0.264~mb. The ratio of these numbers is 1.114. One concludes that the initial calculations of the luminosity based on the comparison of the coincidence rate of the East and West ZDC detectors, were overestimated by factor 1.114. Therefore, for the cross-section calculation we use a corrected integrated luminosity - a nominal integrated luminosity divided by aforementioned factor.
+Relative luminosity at STAR is determined by the coincidence rate in ZDC detectors at both beam directions. Absolute calibration is given by a special Van der Meer scan~\cite{vanderMeer}. For determination of the systematic uncertainty of the integrated luminosity we use the results of a dedicated study of data from Van der Meer scans~\cite{lumiNote} performed during fill \#18915. These scans were targeted on providing a precise calculation of the luminosity and an estimate of its uncertainty for the elastic proton-proton scattering measurement~\cite{elasticNote}. From this study we learn that the effective cross-secton visible in the ZDC detectors is equal to 0.294~mb with 4\% systematic uncertainty. The number is different from the effective ZDC cross-section used in the initial calculation of the luminosity at STAR, equal to 0.264~mb. The ratio of these numbers is 1.114. One concludes that the initial calculations of the luminosity based on the comparison of the coincidence rate of the East and West ZDC detectors, were overestimated by factor 1.114. Therefore, for the cross-section calculation we use a corrected integrated luminosity - a nominal integrated luminosity divided by aforementioned factor.
 
-Additional component of the systematic uncertainty on the integrated luminosity accounts for a consistency between integrated cross-section measured within reference fill \#18915, and measured with the entire dataset. The integrated cross-section measured using solely data from fill \#18915 is equal to
-\begin{equation}
- \sigma_{\text{fid}}^{\text{CEP}} = 55.3\pm2.4~\text{mb},
-\end{equation}
-while using entire dataset we obtain
-\begin{equation}
- \sigma_{\text{fid}}^{\text{CEP}} = 51.3\pm0.4~\text{mb}.
-\end{equation}
-The absolute and relative difference between the two is, respectively,
-\begin{equation}
- \Delta\sigma_{\text{fid}}^{\text{CEP}} = 4.0\pm2.4~\text{mb},~~~~~~~~~\Delta\sigma_{\text{fid}}^{\text{CEP}}/\sigma_{\text{fid}}^{\text{CEP}} = \left(7.8\pm4.7\right)~\%.
-\end{equation}
+\indent
+To account for possible fill-by-fill dependence in the luminosity measurement an additional 4\% uncertainty was assigned to the luminosity. It was determined by comparing variations of the effective cross-sections for elastic scattering process relative to the measurement done solely based on data collected during the fill \#18915.
 
-Finally, the total systematic uncertainty of the integrated luminosity is a quadratic sum of generic uncertainty equal to 4\%, and uncertainty arising from the consistentsy between cross-section measured using data from fill \#18915 and entire dataset, equal to 7.8\%:
+\indent
+The overall luminosity uncertainty of 6.0\% was estimated by the quadratic sum of the two uncertainty sources described above.
 
-\begin{equation}
-\Delta\mathcal{L}/\mathcal{L} = 4.0\%\oplus7.8\% = 8.8\%. 
-\end{equation}
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=.48\textwidth,page=2]{graphics/systematics/sigmaVsRunNumber.pdf}~~~~%
-\includegraphics[width=.48\textwidth,page=1]{graphics/systematics/sigmaVsRunNumber.pdf}% 
-\caption[Luminosity uncertainty systematics.]{Integrated fiducial CEP cross-section for runs from fill \#18915~(left) and for all runs~(right).}
-\label{fig:lumiSyst}
-\end{figure}
+% Additional component of the systematic uncertainty on the integrated luminosity accounts for a consistency between integrated cross-section measured within reference fill \#18915, and measured with the entire dataset. The integrated cross-section measured using solely data from fill \#18915 is equal to
+% \begin{equation}
+%  \sigma_{\text{fid}}^{\text{CEP}} = 55.3\pm2.4~\text{mb},
+% \end{equation}
+% while using entire dataset we obtain
+% \begin{equation}
+%  \sigma_{\text{fid}}^{\text{CEP}} = 51.3\pm0.4~\text{mb}.
+% \end{equation}
+% The absolute and relative difference between the two is, respectively,
+% \begin{equation}
+%  \Delta\sigma_{\text{fid}}^{\text{CEP}} = 4.0\pm2.4~\text{mb},~~~~~~~~~\Delta\sigma_{\text{fid}}^{\text{CEP}}/\sigma_{\text{fid}}^{\text{CEP}} = \left(7.8\pm4.7\right)~\%.
+% \end{equation}
+% 
+% Finally, the total systematic uncertainty of the integrated luminosity is a quadratic sum of generic uncertainty equal to 4\%, and uncertainty arising from the consistentsy between cross-section measured using data from fill \#18915 and entire dataset, equal to 7.8\%:
+% 
+% \begin{equation}
+% \Delta\mathcal{L}/\mathcal{L} = 4.0\%\oplus7.8\% = 8.8\%. 
+% \end{equation}
+% 
+% 
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=.48\textwidth,page=2]{graphics/systematics/sigmaVsRunNumber.pdf}~~~~%
+% \includegraphics[width=.48\textwidth,page=1]{graphics/systematics/sigmaVsRunNumber.pdf}% 
+% \caption[Luminosity uncertainty systematics.]{Integrated fiducial CEP cross-section for runs from fill \#18915~(left) and for all runs~(right).}
+% \label{fig:lumiSyst}
+% \end{figure}
 
 
 \section{Trigger veto effect (due to dead material)}\label{sec:systTrigVeto}
