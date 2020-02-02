@@ -11,7 +11,7 @@
 Relative luminosity at STAR is determined by the coincidence rate in ZDC detectors at both beam directions. Absolute calibration is given by a special Van der Meer scan~\cite{vanderMeer}. For determination of the systematic uncertainty of the integrated luminosity we use the results of a dedicated study of data from Van der Meer scans~\cite{lumiNote} performed during fill \#18915. These scans were targeted on providing a precise calculation of the luminosity and an estimate of its uncertainty for the elastic proton-proton scattering measurement~\cite{elasticNote}. From this study we learn that the effective cross-secton visible in the ZDC detectors is equal to 0.294~mb with 4\% systematic uncertainty. The number is different from the effective ZDC cross-section used in the initial calculation of the luminosity at STAR, equal to 0.264~mb. The ratio of these numbers is 1.114. One concludes that the initial calculations of the luminosity based on the comparison of the coincidence rate of the East and West ZDC detectors, were overestimated by factor 1.114. Therefore, for the cross-section calculation we use a corrected integrated luminosity - a nominal integrated luminosity divided by aforementioned factor.
 
 \indent
-To account for possible fill-by-fill dependence in the luminosity measurement an additional 4\% uncertainty was assigned to the luminosity. It was determined by comparing variations of the effective cross-sections for elastic scattering process relative to the measurement done solely based on data collected during the fill \#18915.
+To account for possible fill-by-fill dependence in the luminosity measurement an additional 4\% uncertainty was assigned to the luminosity. It was determined by comparing variations of the effective cross-sections for elastic scattering process relative to the measurement done solely based on data collected during the fill \#18915~(Fig.~\ref{fig:lumiSyst_elastic}). This effective cross-section was determined from the elastic proton-proton scattering events reconstructed with the same proton track selection as in the CEP analysis. For this purpose fiducial region for elastically-scattered proton tracks was chosen to correspond to area matching the rectangular $(|t|, \varphi)$ window of 100\% geometrical acceptance. This window is determined by $0.04 < |t| < 0.1~\text{GeV}^{2}$ and $1.3<|\varphi|<1.9$.
 
 \indent
 The overall luminosity uncertainty of 6.0\% was estimated by the quadratic sum of the two uncertainty sources described above.
@@ -36,13 +36,13 @@ The overall luminosity uncertainty of 6.0\% was estimated by the quadratic sum o
 % \end{equation}
 % 
 % 
-% \begin{figure}[h]
-% \centering
-% \includegraphics[width=.48\textwidth,page=2]{graphics/systematics/sigmaVsRunNumber.pdf}~~~~%
-% \includegraphics[width=.48\textwidth,page=1]{graphics/systematics/sigmaVsRunNumber.pdf}% 
-% \caption[Luminosity uncertainty systematics.]{Integrated fiducial CEP cross-section for runs from fill \#18915~(left) and for all runs~(right).}
-% \label{fig:lumiSyst}
-% \end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=.48\textwidth,page=5]{graphics/systematics/sigmaVsRunNumber_elastic.pdf}~~~~
+\includegraphics[width=.48\textwidth]{graphics/systematics/sigmaVsRunNumber_elastic.pdf}
+\caption[Luminosity uncertainty systematics.]{Integrated fiducial elastic proton-proton scattering cross-section for runs from fill \#18915~(left) and for all runs~(right). Dashed red lines mark an average fiducial cross-section within displayed run range. Solid blue lines mark $\pm4\%$ uncertainty bands assigned to the luminosity to account to fill-by-fill variations.}
+\label{fig:lumiSyst_elastic}
+\end{figure}
 
 
 \section{Trigger veto effect (due to dead material)}\label{sec:systTrigVeto}
