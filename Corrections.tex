@@ -210,6 +210,9 @@ For every fill of RHIC the distribution of $z_{\text{vtx}}$ of single TOF vertic
 
 
 \subsubsection{TPC-RP \texorpdfstring{$z$}{z}-vertex matching~(\ref{enum:CutDeltaZVx})}
+
+
+
 \subsubsection{Primary vertices limit~(\ref{enum:CutPrimVx}), BBC-large veto~(\ref{enum:CutBbcLarge}), TOF clusters limit~(\ref{enum:CutTofClusters}) and Up and Down RP combination veto (due to pile-up)}\label{sec:onlineAndOfflineVetoEff}
 
 Combined efficiency of the online veto in BBC-small and ZDC (Sec.~\ref{sec:onlineVetoEff}) and offline cuts (vetoes) on extra TPC-TOF vertices, extra TOF clusters, signal in BBC-large and simultaneous signal in Up and Down RPs, was calculated using the zero-bias data. For each run a fraction of events (for colliding bunches) was calculated in which all mentioned cuts would be satisfied in case of the CEP $\pi^{+}\pi^{-}$/$K^{+}K^{-}$/$p\bar{p}$ event (event would not be vetoed). One can tranform this prescription to simple formula below:
@@ -262,6 +265,10 @@ Comparison of efficiencies in Fig.~\ref{fig:onlineAndOfflineVetoEff} with simila
 \end{figure}
 
 
+
+\subsubsection{TOF clusters limit~(\ref{enum:CutTofClusters})}\label{sec:tofClusterLimitEff}
+
+Correction described in previous section (Sec.~\ref{sec:onlineAndOfflineVetoEff}) covers inefficiency related to the pile-up interactions. It is also possible that a higher multiplicity of TOF clusters is generated in the exclusive $h^{+}h^{-}$ signal event. Therefore, the upper limit on the number of TOF clusters equal to 3 introduces some inefficiency. To study this effect a no-pile-up signal MC was analyzed (pure STARsim without embedding into zero-bias data). In Fig.~X the multiplicity of TOF clusters is shown for the signal MC, where one can clearly notice that with cut on $N^{\text{TOF}}_{\text{cltrs}}\leq 3$ some part of the signal is truncated.
 
 \subsubsection{Missing \texorpdfstring{$p_{\text{T}}$}{pT} cut~(\ref{enum:CutMissingPt})}
 
