@@ -473,8 +473,29 @@ Distribution of $|\Delta z_{0}|$ between two CEP global track candidates after f
 \end{figure}%
 %---------------------------
 
-Based on the width of $|\Delta z_{0}|$ distribution, the background content as a function of $|\Delta z_{0}|$, and the value of $\mbox{\LARGE$\epsilon$}_{\text{vtx}}$ as a function of $|\Delta z_{0}|$, we decided to accept in analysis only tracks which satisfy $|\Delta z_{0}|<2$~cm. This assures that the vertexing efficiency does not drop below $\approx 30\%$, as well as it coincides with the primary tracks requirement of $|\text{DCA}(z)|<1$~cm. In the correction procedure we nominally use the vertexing efficiency represented by open black points in Fig.~\ref{fig:vertexingEff} (to correct the MC e.g. in closure tests we use red points instead). The additional correction factor connected with the cut on maximum $|\Delta z_{0}|$ (2~cm) was calculated from the data and equals $2.4\%$ (Fig.~\ref{fig:deltaZ0}). This correction is used as an additional normalization correction factor, which is different from $\mbox{\LARGE$\epsilon$}_{\text{vtx}}(|\Delta z_{0}|)$ applied in form of a weight to each selected CEP event.
+Based on the width of $|\Delta z_{0}|$ distribution, the background content as a function of $|\Delta z_{0}|$, and the value of $\mbox{\LARGE$\epsilon$}_{\text{vtx}}$ as a function of $|\Delta z_{0}|$, we decided to accept in analysis only tracks which satisfy $|\Delta z_{0}|<2$~cm. This assures that the vertexing efficiency does not drop below $\approx 30\%$, as well as it coincides with the primary tracks requirement of $|\text{DCA}(z)|<1$~cm. In the correction procedure we nominally use the vertexing efficiency represented by open black points in Fig.~\ref{fig:vertexingEff} (to correct the MC e.g. in closure tests we use red points instead).
 
+The cut on maximum $|\Delta z_{0}|$ (2~cm) rejects some small fraction of the signal events. An additional correction connected with the limit on $|\Delta z_{0}|$ was calculated from the data as a function of the average $p_{\text{T}}$ of two tracks in a pair. This quantity was chosen because the distribution of $\Delta z_{0}$ gets narrower with increasing $p_{\text{T}}$ of the tracks (with increasing invariant mass of the pair), and the largest contribution to the width of $\Delta z_{0}$ comes from the track of lower $p_{\text{T}}$. The efficiency was calculated in the similar way to the vertexing efficiency, with a modification of the $set~B$ to events with the global tracks from $set~A$ satisfying a limit $|\Delta z_{0}|<2~\text{cm}$ (called $set~B'$):
+	\begin{equation}\label{eq:deltaZ0EffDef}
+\mbox{\LARGE$\epsilon$}_{|\Delta z_{0}|} = \frac{|\Delta z_{0}|~\text{histogram for events from}~set~B'}{|\Delta z_{0}|~\text{histogram for events from}~set~A}.
+\end{equation}
+
+Figure~\ref{fig:DeltaZ0Eff} presents the efficiency of $|\Delta z_{0}|<2~\text{cm}$ as a function of the lower $p_{\text{T}}$ of the central tracks. One can see that the MC simulation (with helices adjusted to match the pointing resolution in data) reasonably well describes the data-driven efficiency.
+
+%---------------------------
+\begin{figure}[ht!]
+	\centering%
+	\parbox{0.4725\textwidth}{%
+		\centering%
+		\includegraphics[width=\linewidth]{graphics/corrections/DeltaZ0Efficiency_2.pdf}
+	}%
+	\quad%
+	\parbox{0.4725\textwidth}{%
+		\caption[Efficiency of limit $|\Delta z_{0}|<2~\text{cm}$.]{Efficiency of cut on $|\Delta z_{0}|$ calculated from the data (open black and full green points) and from embedded MC (red points) as a function of the lower $p_{T}$ of the two global tracks in CEP event candidates.}\label{fig:DeltaZ0Eff}%  
+	}
+\end{figure}
+%---------------------------
+\newpage
 
 \section{Particle energy loss}\label{sec:energyLoss}
 
