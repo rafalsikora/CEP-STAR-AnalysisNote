@@ -211,7 +211,7 @@ For every fill of RHIC the distribution of $z_{\text{vtx}}$ of single TOF vertic
 
 \subsubsection{TPC-RP \texorpdfstring{$z$}{z}-vertex matching~(\ref{enum:CutDeltaZVx})}
 
-
+This cut was safely set to $3.5\sigma_{\Delta z_{\text{vtx}}}$, therefore the correction for the introduced inefficiency is negligible.
 
 \subsubsection{Primary vertices limit~(\ref{enum:CutPrimVx}), BBC-large veto~(\ref{enum:CutBbcLarge}), TOF clusters limit~(\ref{enum:CutTofClusters}) and Up and Down RP combination veto (due to pile-up)}\label{sec:onlineAndOfflineVetoEff}
 
@@ -268,7 +268,30 @@ Comparison of efficiencies in Fig.~\ref{fig:onlineAndOfflineVetoEff} with simila
 
 \subsubsection{TOF clusters limit~(\ref{enum:CutTofClusters})}\label{sec:tofClusterLimitEff}
 
-Correction described in previous section (Sec.~\ref{sec:onlineAndOfflineVetoEff}) covers inefficiency related to the pile-up interactions. It is also possible that a higher multiplicity of TOF clusters is generated in the exclusive $h^{+}h^{-}$ signal event. Therefore, the upper limit on the number of TOF clusters equal to 3 introduces some inefficiency. To study this effect a no-pile-up signal MC was analyzed (pure STARsim without embedding into zero-bias data). In Fig.~X the multiplicity of TOF clusters is shown for the signal MC, where one can clearly notice that with cut on $N^{\text{TOF}}_{\text{cltrs}}\leq 3$ some part of the signal is truncated.
+Correction described in previous section (Sec.~\ref{sec:onlineAndOfflineVetoEff}) covers inefficiency related to the pile-up interactions. It is also possible that a higher multiplicity of TOF clusters is generated in the exclusive $h^{+}h^{-}$ signal event. Therefore, the upper limit on the number of TOF clusters equal to 3 introduces some inefficiency. To study this effect a no-pile-up signal MC was analyzed (pure STARsim without embedding into zero-bias data).
+
+In Fig.~\ref{fig:NTofClustersStarsim} the multiplicity of TOF clusters is shown for the signal MC. One can clearly notice that with cut on $N^{\text{TOF}}_{\text{cltrs}}\leq 3$ some part of the signal is truncated. The level of truncation is presented in Fig.~\ref{fig:NTofClustersEff} as a function of the invariant of the $\pi^{+}\pi^{-}$. No significant mass dependence is observed hence we use a single efficiency correction number equal to 95.7\%, which results from the fit of a constant to efficiency points.
+
+
+
+%---------------------------
+\begin{figure}[ht!]% 
+	\centering%
+	\begin{minipage}{.4725\textwidth}%
+		\centering%
+		\includegraphics[width=\linewidth]{graphics/corrections/NTofClusters2.pdf}%
+		\caption[Multiplicity of $N^{\text{TOF}}_{\text{cltrs}}$ in simulated CEP $\pi^{+}\pi^{-}$ events.]{Multiplicity of $N^{\text{TOF}}_{\text{cltrs}}$ in CEP $\pi^{+}\pi^{-}$ events passed through STAR detector simulation without embedding into zero-bias data. Red dashed line and arrow mark the limit on number of TOF clusters accepted in analysis.}\label{fig:NTofClustersStarsim}
+	\end{minipage}% 
+	\quad\quad%
+	\begin{minipage}{.4725\textwidth}%
+		\centering%
+		\includegraphics[width=\linewidth]{graphics/corrections/NTofClustersCutEff.pdf}%
+		\caption[Efficiency of upper limit of $N^{\text{TOF}}_{\text{cltrs}}$.]{Efficiency of upper limit of $N^{\text{TOF}}_{\text{cltrs}}$ as a function of the invariant mass of the $\pi^{+}\pi^{-}$, based on the STAR simulation of exclusive $\pi^{+}\pi^{-}$ without embedding into zero-bias data. Red line shows the fit of a constant to all efficiency points. }\label{fig:NTofClustersEff}
+	\end{minipage}%
+\end{figure}%
+%---------------------------
+
+
 
 \subsubsection{Missing \texorpdfstring{$p_{\text{T}}$}{pT} cut~(\ref{enum:CutMissingPt})}
 
