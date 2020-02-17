@@ -293,7 +293,7 @@ In Fig.~\ref{fig:NTofClustersStarsim} the multiplicity of TOF clusters is shown 
 
 
 
-\subsubsection{Missing \texorpdfstring{$p_{\text{T}}$}{pT} cut~(\ref{enum:CutMissingPt})}
+\subsubsection{Missing \texorpdfstring{$p_{\text{T}}$}{pT} cut~(\ref{enum:CutMissingPt})}\label{sec:ptMissCutEff}
 
 The resolution of the total transverse momentum is in general determined by the angular divergence of the proton beams. Based on known parameters of the beams in run 15 (see Ref.~\cite{run15Overview}) expected divergence for a single beam amounts 180~$\mu$rad. In forward proton track reconstruction the direction of the incoming proton is assumed to be the same in each event (aligned with nominal $z$-axis), hence effectively the transverse components of reconstructed forward protons momenta are smeared by this amount. One can check the comparison of the collinerities of elastically scattered protons in the data and embedded MC (Fig.~10.19 of Ref.~\cite{supplementaryNote}) to see the satisfactory agreement between the two with assumed MC angular divergence equal to 180~$\mu$rad. For 100~GeV beam such divergence results in smearing of the tranverse momentum components for (elastically) scattered protons equal $100~\text{GeV}\times 180\cdot 10^{-6} = 18~\text{MeV}$. Using this value to calculate the resolution of total $p_{x}$($p_{y}$) momentum of two forward protons we get $\sqrt{2}\times 18~\text{MeV} = 25.5~\text{MeV}$. One can compare it with the output of fits to distributions of  $p_{x}^{\text{miss}}$($p_{y}^{\text{miss}}$) and find that indeed the angular beam divergence dominates the resolution of the total transverse momentum in CEP events. 
 
@@ -305,20 +305,30 @@ A simple CEP event generator was used to produce large sample of CEP events (kin
 \begin{equation}\label{eq:ptMissCutEff}
  \mbox{\LARGE$\epsilon$}_{p_{\text{T}}^{\text{miss}}}(p^{\text{max}}, p^{\text{min}}) = \frac{N_{p_{\text{T}}^{\text{miss}}}(p^{\text{max}}, p^{\text{min}})}{N_{\text{all}}(p^{\text{max}}, p^{\text{min}})},
 \end{equation}
-where $N_{\text{all}}$ is a number of all generated CEP events and $N_{p_{\text{T}}^{\text{miss}}} $ is number of events passing exclusivity cut \ref{enum:CutMissingPt}. The result is shown in Fig.~\ref{fig:ptMissCutEff}. The cut efficiency for very low tracks momenta (low pair invariant mass) obtained from simple MC (96.8\%) agrees perfectly with the efficiency calculated using embedded MC sample for the same momenta range (96.4\%), which validates presented efficiency. Clearly, the deterioration of the central track momentum resolution starts to play significant role in efficiency of $p_{\text{T}}^{\text{miss}}$ cut at about 1~GeV track momentum.
+where $N_{\text{all}}$ is a number of all generated CEP events and $N_{p_{\text{T}}^{\text{miss}}} $ is number of events passing exclusivity cut \ref{enum:CutMissingPt}. The result is shown in Fig.~\ref{fig:ptMissCutEff_MC}.
+
+The cut efficiency for very low tracks momenta (low pair invariant mass) obtained from simple MC (96.8\%) agrees perfectly with the efficiency calculated using embedded MC sample (96.4\%) for the same momenta range $p^{max}, p^{min}<0.4$~GeV, which validates presented efficiency. Another validation comes from the comparisons with the efficiency estimated using data-driven method. The same definition of efficiency was used (Eq.~\eqref{eq:ptMissCutEff}), but $N_{p_{\text{T}}^{\text{miss}}}$ and $N_{\text{all}}$ were estimated from the $p_{\text{T}}^{\text{miss}}$ distributions after all selection cuts except~\ref{enum:CutMissingPt}, in bins of $(p^{\text{max}}, p^{\text{min}})$. The result for the data is shown in Fig.~\ref{fig:ptMissCutEff_DATA}. The efficiency for $p^{max}, p^{min}<0.4$~GeV ($(96.8\pm0.1)$\%) perfectly agrees with the simulation. Efficiencies for other selected bins also agree between data and simulation.
+
+Clearly, the deterioration of the central track momentum resolution starts to play significant role in efficiency of $p_{\text{T}}^{\text{miss}}$ cut at about 1~GeV track momentum.
 
 
 %---------------------------
 \begin{figure}[h]
-\centering%
-\parbox{0.4725\textwidth}{%
-  \centering%
-  \includegraphics[width=\linewidth]{graphics/corrections/ptmisscuteff.pdf}
-}%
-\quad%
-\parbox{0.4725\textwidth}{%
-    \caption[Efficiency of $p_{\text{T}}^{\text{miss}}$ cut as a function of central tracks' momenta.]{Efficiency of $p_{\text{T}}^{\text{miss}}$ cut as a function of higher ($x$-axis) and lower ($y$-axis) momentum of the central tracks, calculated with MC method descibed in the text of this Section. Efficiency in a few points of ($p^{\text{min}}$,~$p^{\text{max}}$) space is printed on top of the plot. Lower right corner has no entries/low statistics due to kinematic constraints in the fiducial phase space; this region is not polpulated with events in the data.}\label{fig:ptMissCutEff}%
-}
+	\centering
+	\parbox{0.4725\textwidth}{
+		\centering
+		\begin{subfigure}[b]{\linewidth}{
+				\subcaptionbox{\label{fig:ptMissCutEff_MC}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/ptmisscuteff.pdf}\vspace*{-7pt}}}
+		\end{subfigure}
+	}
+	\quad
+	\parbox{0.4725\textwidth}{
+		\centering
+		\begin{subfigure}[b]{\linewidth}{
+				\subcaptionbox{\label{fig:ptMissCutEff_DATA}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/ptMissEff.pdf}\vspace*{-7pt}}}
+		\end{subfigure}
+	}% 
+    \caption[Efficiency of $p_{\text{T}}^{\text{miss}}$ cut as a function of central tracks' momenta.]{Efficiency of $p_{\text{T}}^{\text{miss}}$ cut as a function of higher ($x$-axis) and lower ($y$-axis) momentum of the central tracks, calculated with MC method described in the text of this Section~(\subref{fig:ptMissCutEff_MC}) and with the data-driven method~(\subref{fig:ptMissCutEff_DATA}). Efficiency in a few points of ($p^{\text{min}}$,~$p^{\text{max}}$) space is printed on top of each of the plots. Lower right corners have no entries/low statistics due to kinematic constraints in the fiducial phase space (this region is not polpulated with events in the data). Binning for the data is significantly wider than for the simulation due to limited data statistics.}\label{fig:ptMissCutEff}%
 \end{figure}
 %---------------------------
 
@@ -445,7 +455,7 @@ The vertexing efficiency was calculated from the data in the following way:
 \end{equation}
 where $z_{0}^{+}$ and $z_{0}^{-}$ are longitudinal impact parameters ($z$-coordinates of points of closest approach to the beamline) of positive and negative charge particle tracks, respectively. The vertex position was normally required to satisfy cut~\ref{enum:CutZVx}. Events after full selection, classified as exclusive $\pi^{+}\pi^{-}$ candidates, formed $set~A$.
 
-\item The two global TOF tracks were checked if they have associated primary tracks, and the two primary tracks are assigned to the same primary vertex. If yes, the tracks were additionally subjected to cut~\ref{enum:TpcDcaCuts}. Events passing descibed selection formed $set~B$.
+\item The two global TOF tracks were checked if they have associated primary tracks, and the two primary tracks are assigned to the same primary vertex. If yes, the tracks were additionally subjected to cut~\ref{enum:TpcDcaCuts}. Events passing described selection formed $set~B$.
 
 	\item The efficiency was determined by the ratio of histograms from $set~B$ and $set~A$:
 	\begin{equation}\label{eq:vertexingEffDef}
