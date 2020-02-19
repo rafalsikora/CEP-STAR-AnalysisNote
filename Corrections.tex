@@ -527,7 +527,7 @@ This new momentum was further used in determination of total transverse momentum
 
 
 
-\section{Fake tracks and migrations into and out of fiducial region}\label{sec:migrations}
+\section{Fake tracks and migrations into and out of the fiducial region}\label{sec:migrations}
 
 Finite resolutions play non-negligible role in presented analysis. Smearing of reconstructed quantities with respect to their true value at the hadron level makes some tracks from outside of the fiducial phase space migrating/leaking into it, as well as some tracks from inside the fiducial region escaping from it.
 
@@ -557,7 +557,7 @@ f_{\text{fakes}} = \frac{N_{\textrm{fakes}}}{N_{\textrm{reco}}}.
 \end{equation}~~~~~~~~~~~~~~~~~~~~~~~
 \end{tabulary}
 
-Definition of number of fake tracks requires some elaboration. The necessary condition to claim a track being fake is that it is not matched with a true level primary particle. However, such tracks should typically have momentum significantly different from that of unmatched primary, therefore total momentum cut~\ref{enum:CutMissingPt} would not be satisfied and thus these tracks should not be subtracted. For this reason, an additional condition to assign a track as fake is that its reconstructed momentum is consistent with that of primary particle. In case of TPC tracks we use cut on the distance $\delta$ between true and reconstructed $(\eta,\phi)$, $\delta < 0.15$, introduced in Sec.~3.2.2 of Ref.~\cite{supplementaryNote}. For the RP tracks we use cut on the difference between true and reconstructed transverse momentum not greater than~70~MeV. Such value, somewhat arbitrary, is driven by the value used in cut~\ref{enum:CutMissingPt}. We do not consider any systematic effect connected with the fake RP track definition as this effect is believied to be much smaller than most of other systematic uncertainties. In Figs.~\ref{fig:DeltaPhiVsDeltaEta} and~\ref{fig:DeltaPyVsDeltaPx} we present distributions of quantities for matched and not matched tracks with magenta circles drawn on top marking the conditions used in fake track definitions.
+Definition of number of fake tracks requires some elaboration. The necessary condition to claim a track being fake is that it is not matched with a true level primary particle. However, such tracks should typically have momentum significantly different from that of unmatched primary, therefore total momentum cut~\ref{enum:CutMissingPt} would not be satisfied and thus these tracks should not be subtracted. For this reason, an additional condition to assign a track as fake is that its reconstructed momentum is consistent with that of primary particle. In case of TPC tracks we use cut on the distance $\delta$ between true and reconstructed $(\eta,\phi)$, $\delta < 0.15$, introduced in Sec.~3.2.2 of Ref.~\cite{supplementaryNote}. For the RP tracks we use cut on the difference between true and reconstructed transverse momentum not greater than~100~MeV. Such value, somewhat arbitrary, is driven by the width of distribution of the difference between the true and reconstructed transverse momentum components for matched tracks.  In Figs.~\ref{fig:DeltaPhiVsDeltaEta} and~\ref{fig:DeltaPyVsDeltaPx} we present distributions of quantities for matched and not matched tracks with magenta circles drawn on top marking the conditions used in fake track definitions. We do not consider any systematic effects connected with the fake track definitions as this effect is believed to be much smaller than most of other systematic uncertainties.
 
 
 %--------------------------- 
@@ -576,7 +576,7 @@ Definition of number of fake tracks requires some elaboration. The necessary con
                 \subcaptionbox{\label{fig:DeltaPhiVsDeltaEta_NotMatched}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/DeltaPhiVsDeltaEta.pdf}\vspace*{-7pt}}}
   \end{subfigure}
 }% 
-\caption[Difference between reconstructed and true parameters of the TPC tracks.]{Difference between reconstructed and true parameters of the TPC tracks. Magenta circle of radius 0.15 drawn on top of distributions represent cut on maximum difference between true and reconstructed $\eta$ and $\varphi$ of tracks used for determination of fake tracks fraction, as explained in the text. The same $z$-axis (color) scale has been set up for both plots to better visualize relative content of true and fake tracks.} \label{fig:DeltaPhiVsDeltaEta}
+\caption[Difference between reconstructed and true parameters of the TPC tracks.]{Difference between reconstructed and true parameters of the TPC tracks. Magenta circle of radius 0.15 drawn on top of distributions represents cut on maximum difference between true and reconstructed $\eta$ and $\varphi$ of tracks used for determination of fake tracks fraction, as explained in the text. The same $z$-axis (color) scale has been set up for both plots to better visualize relative content of true and fake tracks.} \label{fig:DeltaPhiVsDeltaEta}
 \end{figure}
 
 
@@ -596,7 +596,7 @@ Definition of number of fake tracks requires some elaboration. The necessary con
                 \subcaptionbox{\label{fig:DeltaPyVsDeltaPx_NotMatched}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/DeltaPyVsDeltaPx.pdf}\vspace*{-7pt}}}
   \end{subfigure}
 }% 
-\caption[Difference between reconstructed and true momentum components of RP tracks.]{Difference between reconstructed and true momentum components of RP tracks matched (\subref{fig:DeltaPyVsDeltaPx_Matched}) and not matched (\subref{fig:DeltaPyVsDeltaPx_NotMatched}) with true level primary forward protons. Magenta circle of radius 70~MeV drawn on top of distributions represent cut on maximum difference between true and reconstructed transverse momentum used for determination of fake tracks fraction, as explained in the text. The same $z$-axis (color) scale has been set up for both plots to better visualize relative content of true and fake tracks.} \label{fig:DeltaPyVsDeltaPx}
+\caption[Difference between reconstructed and true momentum components of RP tracks.]{Difference between reconstructed and true momentum components of RP tracks matched (\subref{fig:DeltaPyVsDeltaPx_Matched}) and not matched (\subref{fig:DeltaPyVsDeltaPx_NotMatched}) with true level primary forward protons. Magenta circle of radius 100~MeV drawn on top of distributions represent cut on maximum difference between true and reconstructed transverse momentum used for determination of fake tracks fraction, as explained in the text. The same $z$-axis (color) scale has been set up for both plots to better visualize relative content of true and fake tracks.} \label{fig:DeltaPyVsDeltaPx}
 \end{figure}
 
 
@@ -608,7 +608,7 @@ Multiplicative correction factor (per track) that takes into account all migrati
 \begin{equation}
  C_{\text{m,f}} = \frac{N_{\textrm{reco}} + N_{\textrm{migr.}}^{\textrm{out}} - N_{\textrm{migr.}}^{\textrm{in}} - N_{\textrm{fakes}}}{N_{\textrm{reco}}} = 1 + f_{\text{migr.}}^{\text{out}} - f_{\text{migr.}}^{\text{in}} - f_{\text{fakes}}.
 \end{equation}
-This correction is graphically represented in Fig.~\ref{fig:migrationsAndFakesCorr} for both TPC (\ref{fig:migrationPtEta}) and RP (\ref{fig:migrationPxPy}) tracks. One can easily notice that most important role plays correction related to migrations at the edge of fiducial region defining accepted forward scattered protons, reaching as much as 25\% correction for tracks at the corners of allowed $(p_{x}, p_{y})$. This is a direct consequence of sizeable angular divergence of proton beams.
+This correction is graphically represented in Fig.~\ref{fig:migrationsAndFakesCorr} for both TPC (\ref{fig:migrationPtEta}) and RP (\ref{fig:migrationPxPy}) tracks. One can easily notice that the most important role plays correction related to migrations at the edge of fiducial region defining accepted forward scattered protons, reaching as much as 30\% correction for tracks at the corners of allowed $(p_{x}, p_{y})$. This is a direct consequence of sizeable angular divergence of proton beams.
 
 
 %--------------------------- 
@@ -968,6 +968,29 @@ In the closure tests presented below, distributions at the true level are assume
 
 \subsubsection{TPC and TOF efficiency correction validation}\label{subsec:closureTestTpcTof}
 
+
+
+%---------------------------
+\begin{figure}[h]
+	\centering
+	\parbox{0.4725\textwidth}{
+		\centering
+		\begin{subfigure}[b]{\linewidth}
+			\subcaptionbox{\label{fig:tpcTofSingleTrkClosureTrackPt_SingleParticleEmbeddingCorrection}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_TrackPtTrueCutSet1.pdf}\vspace*{-15pt}}
+		\end{subfigure} 
+	}%
+	\quad\quad%
+	\parbox{0.4725\textwidth}{
+		\centering
+		\begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+			\subcaptionbox{\label{fig:tpcTofSingleTrkClosureTrackEta_SingleParticleEmbeddingCorrection}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_TrackEtaTrueCutSet1.pdf}\vspace*{-15pt}}
+		\end{subfigure}
+	}%
+	\caption[Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample (using nominal eff.).]{Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample. Distributions of the true-level track $p_{\text{T}}$~\subref{fig:tpcTofSingleTrkClosureTrackPt} and true-level $\eta$~\subref{fig:tpcTofSingleTrkClosureTrackEta} corrected for single-particle TPC efficiency (red points) and single-particle TPC and TOF efficiency (blue points) are compared with the true-level distributions of corresponding observables (black points). }\label{fig:closureTestTpcTofSingleTrk_SingleParticleEmbeddingCorrection}%
+\end{figure}
+%---------------------------
+
+
 %---------------------------
 \begin{figure}[h]
 \centering
@@ -986,7 +1009,6 @@ In the closure tests presented below, distributions at the true level are assume
 }%
 \caption[Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample.]{Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample. Distributions of the true-level track $p_{\text{T}}$~\subref{fig:tpcTofSingleTrkClosureTrackPt} and true-level $\eta$~\subref{fig:tpcTofSingleTrkClosureTrackEta} corrected for single-particle TPC efficiency (red points) and single-particle TPC and TOF efficiency (blue points) are compared with the true-level distributions of corresponding observables (black points). }\label{fig:closureTestTpcTofSingleTrk}%
 \end{figure}
-
 %---------------------------
 \begin{figure}[h]
 \centering
@@ -1078,24 +1100,24 @@ The joint RP track reconstruction and selection efficiency and the dead-material
 
 
 
-%---------------------------
-\begin{figure}[h]
-\centering
-\parbox{0.4725\textwidth}{
-  \centering 
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:EffValidation_RP_DeltaPhi_NoMatchingRequired}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_DeltaPhi_NoMatchingRequired.pdf}\vspace*{-15pt}}
-  \end{subfigure}
-}%
-\quad\quad%
-\parbox{0.4725\textwidth}{
-  \centering
-  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
-                \subcaptionbox{\label{fig:EffValidation_RP_MandelstamTSum_NoMatchingRequired}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_MandelstamTSum_NoMatchingRequired.pdf}\vspace*{-15pt}}
-  \end{subfigure}
-}%
-\caption[Results of RP efficiency, migrations and fakes correction closure test on embedded signal MC sample.]{Results of RP efficiency,  migrations and fakes correction closure test on embedded signal MC sample. Distributions of the reconstructed and corrected $\Delta\varphi$ and $|t_{1}+t_{2}|$ corrected for full two-proton RP efficiency (red points) are compared with the true generator-level distributions of corresponding observables (black circles). By definition, both forward protons were required to be contained within the fiducial region of the measurement, either at the generator level (black) or reconstructed level (red).}\label{fig:closureTestTpcTofSingleTrk}% 
-\end{figure}
+%%---------------------------
+%\begin{figure}[h]
+%\centering
+%\parbox{0.4725\textwidth}{
+%  \centering 
+%  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+%                \subcaptionbox{\label{fig:EffValidation_RP_DeltaPhi_NoMatchingRequired}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_DeltaPhi_NoMatchingRequired.pdf}\vspace*{-15pt}}
+%  \end{subfigure}
+%}%
+%\quad\quad%
+%\parbox{0.4725\textwidth}{
+%  \centering
+%  \begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{1}
+%                \subcaptionbox{\label{fig:EffValidation_RP_MandelstamTSum_NoMatchingRequired}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffValidation_RP_MandelstamTSum_NoMatchingRequired.pdf}\vspace*{-15pt}}
+%  \end{subfigure}
+%}%
+%\caption[Results of RP efficiency, migrations and fakes correction closure test on embedded signal MC sample.]{Results of RP efficiency,  migrations and fakes correction closure test on embedded signal MC sample. Distributions of the reconstructed and corrected $\Delta\varphi$ and $|t_{1}+t_{2}|$ corrected for full two-proton RP efficiency (red points) are compared with the true generator-level distributions of corresponding observables (black circles). By definition, both forward protons were required to be contained within the fiducial region of the measurement, either at the generator level (black) or reconstructed level (red).}\label{fig:closureTestTpcTofSingleTrk}% 
+%\end{figure}
 
 
 
