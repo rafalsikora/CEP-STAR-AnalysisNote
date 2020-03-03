@@ -13,44 +13,50 @@ In this chapter we describe methodology of correcting the data to the hadron-lev
 
 \section{Method of corrections application}\label{sec:correctionProcedure}
 
-Differential cross section in every bin of measured quantity of interest $q$ have been calculated according to Eq.~\eqref{eq:crossSec}:
+Differential cross section in every bin of measured quantity of interest $q$ has been calculated according to Eq.~\eqref{eq:crossSec}:
 
 \begin{equation}\label{eq:crossSec} 
   \frac{d\sigma}{dq} = \frac{1}{\Delta q} \times \frac{1}{\varepsilon} \times \frac{N^{\mathit{w}}-N^{\mathit{w}}_\textrm{bkgd}}{\mathit{L}_{\textrm{int}}^{\textrm{eff}}},
 \end{equation}%
 %
-where $N^{w}$ is weighted number of measured events in given bin, $N^{w}_{\text{bkgd}}$ is weighted number of background events in given bin, $\Delta q$ is width of the bin, $\varepsilon$ is joint efficiency of 
+where $N^{w}$ is weighted number of measured events in given bin, $N^{w}_{\text{bkgd}}$ is weighted number of background events in given bin, $\Delta q$ is width of the bin, $\varepsilon$ is joint efficiency of effects/cuts which does not change on event-by-event basis and $\mathit{L}_{\textrm{int}}^{\textrm{eff}}$ is an effective integrated luminosity, defined as
 
-%remembed about accounting for RP trigger eff!!!
+
 \begin{equation}\label{eq:effectiveLumi}
-	\mathit{L}_{\textrm{int}}^{\textrm{eff}} = \sum\limits_{\textrm{run}}\mathit{L}_{\textrm{int}}^{\textrm{run}} \times \epsilon_{\textrm{veto}}(L^{\textrm{run}})
+	\mathit{L}_{\textrm{int}}^{\textrm{eff}} = \sum\limits_{\textrm{run}}\mathit{L}_{\textrm{int}}^{\textrm{run}} \times \epsilon_{\textrm{veto}}(L^{\textrm{run}}).
 \end{equation}
 % \left(\epsilon_{\textrm{veto}}^{\textrm{online}} \oplus \epsilon_{\textrm{veto}}^{\textrm{offline}}(L_{\textrm{run}}) \right)
 
-\begin{equation}
-	\varepsilon = \epsilon_{\textrm{\tiny ET/IT}} \times \epsilon_{\textrm{vrtx}}(q) \times \epsilon_{\ref{enum:CutZVx}} \times \epsilon_{\ref{enum:CutDeltaZVx}} \times \epsilon_{\ref{enum:CutMissingPt}} \times \epsilon_{\textrm{\tiny PID}}(q)
-\end{equation}
+%\begin{equation}
+%	\varepsilon = \epsilon_{\textrm{\tiny ET/IT}} \times \epsilon_{\textrm{vrtx}}(q) \times \epsilon_{\ref{enum:CutZVx}} \times \epsilon_{\ref{enum:CutDeltaZVx}} \times \epsilon_{\ref{enum:CutMissingPt}} \times \epsilon_{\textrm{\tiny PID}}(q)
+%\end{equation}
 
-\begin{equation}
-	N^{\mathit{w}} = \sum\limits_{\textrm{event}}\mathit{w}_{\textrm{event}}
-\end{equation}
+% \begin{equation}
+% 	N^{\mathit{w}} = \sum\limits_{\textrm{event}}\mathit{w}_{\textrm{event}}
+% \end{equation}
 
 
-
+The weight assigned to each event is equal to
 \begin{equation}\label{eq:weight}
-	\mathit{w} = \left[\prod\limits_{\textrm{sign}} \epsilon_{\textrm{\tiny TOF}}(\textrm{sign}, \textrm{PID}, p_{\text{T}},z_{vx},\eta)  \times \prod\limits_{\textrm{sign}} \epsilon_{\textrm{\tiny TPC}}(\textrm{sign}, \textrm{PID}, p_{\text{T}},z_{vx},\eta) \times \prod\limits_{\textrm{side}}\epsilon_{\textrm{\tiny RP}}^{\textrm{side}}(p_{x},p_{y}) \right]^{-1},
+	\mathit{w} = \mathit{w}_{\text{TOF\&TPC}}\times \mathit{w}_{\text{RP}}\times \mathit{w}_{\text{other}},
 \end{equation}
-\[\textrm{sign}\in\{+,-\},~~\textrm{side}\in\{E,W\}\]
-% () 
+where
+\begin{equation}
+	\mathit{w}_{\text{TOF\&TPC}} = \left[\prod\limits_{\textrm{sign}} \epsilon_{\textrm{\tiny TOF}}(\textrm{sign}, \textrm{PID}, p_{\text{T}},z_{vx},\eta)  \times \prod\limits_{\textrm{sign}} \epsilon_{\textrm{\tiny TPC}}(\textrm{sign}, \textrm{PID}, p_{\text{T}},z_{vx},\eta)\right]^{-1},~~\textrm{sign}\in\{+,-\},
+\end{equation}
+\begin{equation}\label{eq:weight}
+	\mathit{w}_{\text{RP}} = \left[ \epsilon_{\textrm{\tiny RP}}^{\textrm{E}}(p_{x},p_{y})\times\epsilon_{\textrm{\tiny RP}}^{\textrm{W}}(p_{x},p_{y}) + \rho_{\text{EW}}\times\sqrt{\epsilon_{\textrm{\tiny RP}}^{\textrm{E}}(p_{x},p_{y})\times\left(1-\epsilon_{\textrm{\tiny RP}}^{\textrm{W}}(p_{x},p_{y})\right)\times\epsilon_{\textrm{\tiny RP}}^{\textrm{W}}(p_{x},p_{y})\times\left(1-\epsilon_{\textrm{\tiny RP}}^{\textrm{E}}(p_{x},p_{y})\right)} \right]^{-1},
+\end{equation}
+and $\mathit{w}_{\text{other}}$ is equal to inversed product of all the remaining efficiencies.
 
-Figure~\ref{fig:weights} shows the distribution of weights for all three types of analyzed particle pairs. These correction factors are large,  however they are products of many other factors which are in general close to 1.
+Figure~\ref{fig:weigths} shows the distribution of weights for all three types of analyzed particle pairs. These correction factors are large,  however they are products of many other factors which are in general close to 1.
 
 %---------------------------
 \begin{figure}[h!]
 \centering%
 \parbox{0.4725\textwidth}{%
   \centering%
-  \includegraphics[width=\linewidth]{graphics/corrections/Weights.pdf}\label{fig:weights} 
+  \includegraphics[width=\linewidth]{graphics/corrections/Weights.pdf}
 }%
 \quad%
 \parbox{0.4725\textwidth}{%
@@ -61,7 +67,7 @@ Figure~\ref{fig:weights} shows the distribution of weights for all three types o
 
 
 
-
+\newpage
 \section{Acceptances and efficiencies}\label{sec:acceptanceAndEff}
 
 In this section we present calculation of all efficiencies except TPC track reconstruction and TOF hit reconstruction and matching efficiency, which were discussed and presented in Ref.~\cite{supplementaryNote}.
@@ -403,22 +409,21 @@ It should be noted that the momentum components $(p_{x}, p_{y})$ were taken from
 \begin{minipage}{.4725\textwidth}%
   \centering%
   \includegraphics[width=\linewidth,page=10]{graphics/corrections/mcFullEffPxPy.pdf}%
-  \caption[Sample RP track reconstruction efficiency in a single $z$-vertex bin.]{Sample RP track reconstruction efficiency in a single $z$-vertex bin on the east STAR side. The efficiency was calculated using forward proton MC simulation embedded into zero-bias data. Green envelopes mark the fiducial region of the measurement, while dashed yellow lines mark the part of the fiducial region with a data-driven efficiency correction needed, as explained in Sec.~10.3.1 of Ref.~\cite{supplementaryNote}.}\label{fig:rpEffSample}
+  \caption[Sample RP track reconstruction efficiency in a single $z$-vertex bin.]{Sample RP track reconstruction efficiency in a single $z$-vertex bin on the east STAR side. The efficiency was calculated using forward proton MC simulation embedded into zero-bias data. Green envelopes mark the fiducial region of the measurement, while dashed yellow lines mark the part of the fiducial region with a data-driven efficiency correction needed, as explained in Sec.~10.3.1 of Ref.~\cite{supplementaryNote}.\newline}\label{fig:rpEffSample}
 \end{minipage}%
 \quad\quad%
 \begin{minipage}{.4725\textwidth}%
   \centering%
 % % %   \includegraphics[width=\linewidth]{graphics/corrections/SimultaneousEastWestRpTrackLoss.pdf}%
 % % %   \caption{Probability of simultaneous inefficiency of the RP track reconstruction calculated from the CEP MC embedded into zero-bias data.\newline\newline\newline\newline\newline}\label{fig:SimultaneousEastWestRpTrackLoss}
-  \includegraphics[width=\linewidth]{graphics/corrections/RpTotalEffEastWestCorrelationVsMandelstamTSum.pdf}%
-  \caption{Correlation between joint RP track reconstruction and trigger efficiency (no dead material veto) in east and west RPs calculated from the CEP MC embedded into zero-bias data. The result for protons within the fiducial region and with vertex position $|z_{\text{vtx}}|<80$~cm in four different combinations of east and west branches are presented as a function of the total squared four-momentum transfer.}\label{fig:SimultaneousEastWestRpTrackLoss}
+  \includegraphics[width=\linewidth]{graphics/corrections/RpTotalEffEastWestCorrelationVsMandelstamT.pdf}%
+  \caption[Sample correlation of joint RP track reconstruction and trigger efficiency between east and west RPs.]{Sample correlation of joint RP track reconstruction and trigger efficiency (no dead material veto) between east and west RPs calculated from the CEP MC embedded into zero-bias data. The result for protons within the fiducial region and with vertex position $|z_{\text{vtx}}|<80$~cm in for given combination of east and west branches is presented as a function of the squared four-momenta transferred in proton vertices.}\label{fig:SimultaneousEastWestRpTrackLoss}
 \end{minipage}%
 \end{figure}%
 %---------------------------
 
 
-The efficiency calculated in the way described above is, by design, the acceptance, reconstruction and selection efficiency for a single proton on one side of the IP. In CEP event there are two independent forward protons which may be simultaneously not reconstructed or rejected by the selection algorithm due to e.g. elastic pile-up interaction providing additional good quality proton tracks on both sides of IP. One could, in principle, calculate 5-dimensional efficiency for both forward protons (in variables $p_{x}^{\text{E}}, p_{y}^{\text{E}}, p_{x}^{\text{W}}, p_{y}^{\text{W}}$ and $z_{\text{vtx}}$) which would ultimately account for the simultaneous east and west inefficiency, however this would require orders of magnitude larger statistics of MC to provide reasonably low statistical uncertainty of the efficiency. Instead, on top of the 3-dimensional reconstruction and selection efficiencies for east and west RPs we calculate (from embedded MC) correlation between these efficiencies, as defined in Eq.~\eqref{eq:rpEffCorrelation} of appendix~\ref{appendix:totalRpEffFormulation}. It is shown in 
-Fig.~\ref{fig:SimultaneousEastWestRpTrackLoss} for all four comibnations of east and west RP branches. A need to account for this correlation was found based on the closure tests performed on the MC sample.
+The efficiency calculated in the way described above is, by design, the acceptance, reconstruction and selection efficiency for a single proton on one side of the IP. In CEP event there are two independent forward protons which may be simultaneously not reconstructed or rejected by the selection algorithm due to e.g. elastic pile-up interaction providing additional good quality proton tracks on both sides of IP. One could, in principle, calculate 5-dimensional efficiency for both forward protons (in variables $p_{x}^{\text{E}}, p_{y}^{\text{E}}, p_{x}^{\text{W}}, p_{y}^{\text{W}}$ and $z_{\text{vtx}}$) which would ultimately account for the simultaneous east and west inefficiency, however this would require orders of magnitude larger statistics of MC to provide reasonably low statistical uncertainty of the efficiency. Instead, on top of the 3-dimensional reconstruction and selection efficiencies for east and west RPs we calculate (from embedded MC) correlation between these efficiencies, as defined in Eq.~\eqref{eq:rpEffCorrelation} of appendix~\ref{appendix:totalRpEffFormulation}. An example for a signle branches combination is shown in Fig.~\ref{fig:SimultaneousEastWestRpTrackLoss}. The results for remaining branches combinations can be found in Appendix~\ref{appendix:rpEff}. A need to account for this correlation was found based on the closure tests performed on the MC sample.
 
 % probability that the proton tracks are simultaneously not reconstructed or selected on the east and west side, despite the trigger signal solely in expected RP branches (no trigger veto) and true-level $(p_{x}, p_{y})$ of both forward protons contained in the fiducial region. This probability, denoted as
 % \begin{equation}
@@ -608,7 +613,7 @@ Multiplicative correction factor (per track) that takes into account all migrati
 \begin{equation}
  C_{\text{m,f}} = \frac{N_{\textrm{reco}} + N_{\textrm{migr.}}^{\textrm{out}} - N_{\textrm{migr.}}^{\textrm{in}} - N_{\textrm{fakes}}}{N_{\textrm{reco}}} = 1 + f_{\text{migr.}}^{\text{out}} - f_{\text{migr.}}^{\text{in}} - f_{\text{fakes}}.
 \end{equation}
-This correction is graphically represented in Fig.~\ref{fig:migrationsAndFakesCorr} for both TPC (\ref{fig:migrationPtEta}) and RP (\ref{fig:migrationPxPy}) tracks. One can easily notice that the most important role plays correction related to migrations at the edge of fiducial region defining accepted forward scattered protons, reaching as much as 30\% correction for tracks at the corners of allowed $(p_{x}, p_{y})$. This is a direct consequence of sizeable angular divergence of proton beams.
+This correction is graphically represented in Fig.~\ref{fig:migrationsAndFakesCorr} for both TPC (\ref{fig:migrationPtEta}) and RP (\ref{fig:migrationPxPy_EAST}, \ref{fig:migrationPxPy_WEST}) tracks. One can easily notice that the most important role plays correction related to migrations at the edge of fiducial region defining accepted forward scattered protons, reaching as much as 30\% correction for tracks at the corners of allowed $(p_{x}, p_{y})$. This is a direct consequence of sizeable angular divergence of proton beams. The correction for the RP tracks is different for the two sides of the IP due to changes in alignment and in the reconstruction efficiency of the detectors, between two sides of the IP.
 
 
 %--------------------------- 
@@ -672,20 +677,27 @@ This correction is graphically represented in Fig.~\ref{fig:migrationsAndFakesCo
 %--------------------------- 
 \begin{figure}%[ht!] 
 \centering
-\parbox{0.4725\textwidth}{
+\parbox{0.315\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}{
                 \subcaptionbox{\label{fig:migrationPtEta}}{\includegraphics[width=\linewidth]{graphics/corrections/MigrationsAndFakes_PtEta.pdf}\vspace*{-7pt}}}
   \end{subfigure}
 }
 \quad
-\parbox{0.4725\textwidth}{
+\parbox{0.315\textwidth}{
   \centering
   \begin{subfigure}[b]{\linewidth}{
-                \subcaptionbox{\label{fig:migrationPxPy}}{\includegraphics[width=\linewidth]{graphics/corrections/MigrationsAndFakes_PxPy.pdf}\vspace*{-7pt}}}
+                \subcaptionbox{\label{fig:migrationPxPy_EAST}}{\includegraphics[width=\linewidth,page=1]{graphics/corrections/MigrationsAndFakes_PxPy_PerSide.pdf}\vspace*{-7pt}}}
+  \end{subfigure}
+}
+\quad
+\parbox{0.315\textwidth}{
+  \centering
+  \begin{subfigure}[b]{\linewidth}{
+                \subcaptionbox{\label{fig:migrationPxPy_WEST}}{\includegraphics[width=\linewidth,page=2]{graphics/corrections/MigrationsAndFakes_PxPy_PerSide.pdf}\vspace*{-7pt}}}
   \end{subfigure}
 }% 
-\caption[Joint corrections for migrations and fake tracks for TPC and RP tracks.]{Joint correction factors for migrations and fake tracks for TOF-matched TPC tracks (\ref{fig:migrationPtEta}) and RP tracks (\ref{fig:migrationPxPy}).} \label{fig:migrationsAndFakesCorr}
+\caption[Joint corrections for migrations and fake tracks for TPC and RP tracks.]{Joint correction factors for migrations and fake tracks for TOF-matched TPC tracks (\subref{fig:migrationPtEta}) and RP tracks (\subref{fig:migrationPxPy_EAST} for the east, \subref{fig:migrationPxPy_WEST} for the west).} \label{fig:migrationsAndFakesCorr}
 \end{figure}
 
 
@@ -970,25 +982,25 @@ In the closure tests presented below, distributions at the true level are assume
 
 
 
-%---------------------------
-\begin{figure}[h]
-	\centering
-	\parbox{0.4725\textwidth}{
-		\centering
-		\begin{subfigure}[b]{\linewidth}
-			\subcaptionbox{\label{fig:tpcTofSingleTrkClosureTrackPt_SingleParticleEmbeddingCorrection}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_TrackPtTrueCutSet1.pdf}\vspace*{-15pt}}
-		\end{subfigure} 
-	}%
-	\quad\quad%
-	\parbox{0.4725\textwidth}{
-		\centering
-		\begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
-			\subcaptionbox{\label{fig:tpcTofSingleTrkClosureTrackEta_SingleParticleEmbeddingCorrection}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_TrackEtaTrueCutSet1.pdf}\vspace*{-15pt}}
-		\end{subfigure}
-	}%
-	\caption[Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample (using nominal eff.).]{Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample. Distributions of the true-level track $p_{\text{T}}$~\subref{fig:tpcTofSingleTrkClosureTrackPt} and true-level $\eta$~\subref{fig:tpcTofSingleTrkClosureTrackEta} corrected for single-particle TPC efficiency (red points) and single-particle TPC and TOF efficiency (blue points) are compared with the true-level distributions of corresponding observables (black points). }\label{fig:closureTestTpcTofSingleTrk_SingleParticleEmbeddingCorrection}%
-\end{figure}
-%---------------------------
+% %---------------------------
+% \begin{figure}[h]
+% 	\centering
+% 	\parbox{0.4725\textwidth}{
+% 		\centering
+% 		\begin{subfigure}[b]{\linewidth}
+% 			\subcaptionbox{\label{fig:tpcTofSingleTrkClosureTrackPt_SingleParticleEmbeddingCorrection}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_TrackPtTrueCutSet1.pdf}\vspace*{-15pt}}
+% 		\end{subfigure} 
+% 	}%
+% 	\quad\quad%
+% 	\parbox{0.4725\textwidth}{
+% 		\centering
+% 		\begin{subfigure}[b]{\linewidth}\addtocounter{subfigure}{-2}
+% 			\subcaptionbox{\label{fig:tpcTofSingleTrkClosureTrackEta_SingleParticleEmbeddingCorrection}}{\includegraphics[width=1.05\linewidth,page=1]{graphics/corrections/EffCorrConsistencyCheck_TrackEtaTrueCutSet1.pdf}\vspace*{-15pt}}
+% 		\end{subfigure}
+% 	}%
+% 	\caption[Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample (using nominal eff.).]{Results of TPC and TOF single-track efficiency correction closure test on embedded signal MC sample. Distributions of the true-level track $p_{\text{T}}$~\subref{fig:tpcTofSingleTrkClosureTrackPt} and true-level $\eta$~\subref{fig:tpcTofSingleTrkClosureTrackEta} corrected for single-particle TPC efficiency (red points) and single-particle TPC and TOF efficiency (blue points) are compared with the true-level distributions of corresponding observables (black points). }\label{fig:closureTestTpcTofSingleTrk_SingleParticleEmbeddingCorrection}%
+% \end{figure}
+% %---------------------------
 
 
 %---------------------------

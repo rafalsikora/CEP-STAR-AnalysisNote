@@ -26,7 +26,8 @@
   %
   \begin{tabular}{>{\raggedright}p{0.15\linewidth}p{0.1\linewidth}p{0.7\linewidth}}
   	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  	21 Nov 2019 & ver. 1.0 & Initial revision\\
+  	21 Nov 2019 & ver. 1.0 & Initial revision\newline%
+  	\\[-1pt]%
   	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	~~3 Feb 2020 & ver. 2.0 & Modifications and corrections at the GPC level:%
   	\newline- corrected detector resolutions (Sec.~\ref{sec:resolutions}),%
@@ -34,12 +35,15 @@
   	\newline- extended the closure tests (Sec.~\ref{subsec:mcClosure}),%
   	\newline- added luminosity uncertainty systematics (Sec.~\ref{sec:lumiSyst}),%
   	\newline- added systematic uncertainty related to TPC track quality cuts (Sec.~\ref{sec:systTpcQuaCuts}),%
-  	\newline- corrected MC predictions drawn on Figs.~\ref{fig:Ratio_MissingPt_OppositeAndSameSign_DeltaPhiBins} and~\ref{fig:Ratio_MissingPt}\\
+  	\newline- corrected MC predictions drawn on Figs.~\ref{fig:Ratio_MissingPt_OppositeAndSameSign_DeltaPhiBins} and~\ref{fig:Ratio_MissingPt}\newline%
+  	\\[-1pt]%
   	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   	~21 Feb 2020 & ver. 3.0 & Modifications and corrections at the GPC level (2):%
   	\newline- calculated efficiency correction for cut~\ref{enum:CutTofClusters} (Sec.~\ref{sec:tofClusterLimitEff}),%
   	\newline- added data-driven efficiency of $p_{\text{T}}^{\text{miss}}$ cut to Sec.~\ref{sec:ptMissCutEff}
   	\newline- calculated efficiency for $|\Delta z_{0}|$ cut differentially (Sec.~\ref{sec:tpcVxRecoEff}),%
+  	\newline- modified RP migrations correction to be independent for two sides (Sec.~\ref{sec:migrations}),%
+  	\newline- modified RP total efficiency correlation to be two-dimensional (Sec.~\ref{sec:rpAccAndEff}),%
   	\newline- further extended the closure tests and fixed non-closure (Sec.~\ref{subsec:mcClosure}),%
   	\newline- changed PYTHIA version to the latest PYTHIA8.244,%
   	\newline- updated all numbers/tables
